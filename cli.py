@@ -1,12 +1,23 @@
-from brain import *
+#from brain import *
 
-print("Enter the command below. Enter 'EXIT' without the quotes to exit.")
+import brain2
+from Modules.importer import *
 
-exit = False
+from sys import argv
 
-while not exit:
-    command = input("> ")
-    if command == "EXIT":
-        exit = True
-    else:
-        print(process(command))
+
+if __name__ == "__main__":
+
+    print("Enter the command below. Enter 'bye' without the quotes to exit.")
+
+    exit = False
+
+    while not exit:
+        command = input("> ")
+        if command.lower() == "bye":
+            exit = True
+        else:
+            print(brain2.process(command))
+
+def cl_api(sentence):
+    print(brain2.process(sentence))

@@ -1,5 +1,10 @@
 from tkinter import *
+from tkinter.ttk import *
+
 from brain import *
+
+#from brain2 import *
+#from Modules.importer import *
 
 class Application(Frame):
     
@@ -16,6 +21,7 @@ class Application(Frame):
     def createWidgets(self):
         self.enterText = Entry(self)
         self.enterText.grid()
+        self.enterText.bind("<Return>", lambda e: self.think(self.enterText, self.talkLabel))
         self.talkLabel = Label (self, text="Hi, I'm Paul")
         self.goButton = Button (self, text='Go', command=lambda: self.think(self.enterText, self.talkLabel))
         self.goButton.grid()        
