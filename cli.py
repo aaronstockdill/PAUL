@@ -17,6 +17,7 @@ if __name__ == "__main__":
         if command.lower() == "bye":
             exit = True
         else:
+            #print(process(command))
             print(brain2.process(command))
 
 def cl_api(sentence):

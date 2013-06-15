@@ -3,6 +3,8 @@ A rewrite of brain.
 """
 
 import random
+import os
+
 import vocab
 import user_info
 from Modules.importer import *
@@ -128,7 +130,7 @@ def guess_unknown(sentence):
                 i = sentence.index(word)
                 sentence.pop(i)
                 sentence.insert(i, (word[0], vital_parts[0]))
-                print(word)
+                if user_info.VERBOSE: print(word)
     
     return sentence
 
@@ -187,4 +189,5 @@ def process(line):
     else:
         response = acknowledge(sentence)
     
+    if user_info.NOISY: os.system('say "{}"'.format(response))
     return response

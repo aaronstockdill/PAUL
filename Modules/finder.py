@@ -137,8 +137,8 @@ def process(sentence):
     
     if objects:
         all_together += objects
-    if catch_wh:
-        all_together += catch_wh
+    #if catch_wh:
+        #all_together += catch_wh
     if keywords:
         all_together += keywords
     

@@ -7,4 +7,6 @@ info = {
 
 VERBOSE = False
 
+NOISY = False
+
 nouns_association = {}
