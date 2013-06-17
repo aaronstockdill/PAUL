@@ -15,6 +15,8 @@ def weather():
     
     temp = int(items[5])
     
+    user_info.info['it'] = "{}°C".format(temp)
+    
     return "It's {}°C, and {}.".format(temp, condition)
 
 def main():
@@ -30,7 +32,9 @@ def main():
         "hot": lambda sentence: process(sentence),
         "humid": lambda sentence: process(sentence),
     }
+    
     user_info.nouns_association.update(known_nouns)
+    
     if user_info.VERBOSE: print("Successfully imported", __name__)
 
 main()

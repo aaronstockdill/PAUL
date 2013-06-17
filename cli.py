@@ -18,7 +18,7 @@ if __name__ == "__main__":
             exit = True
         else:
             #print(process(command))
-            print(brain2.process(command))
+            brain2.process(command)
 
 def cl_api(sentence):
-    print(brain2.process(sentence))
+    brain2.process(sentence)

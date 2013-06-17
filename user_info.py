@@ -1,12 +1,15 @@
+## Global info that all systems should use. 
 info = {
-    "woeid": "2348327",
-    "name": "Master",
-    "home": "1 Infinite Loop, Cupertino, CA",
-    "computer": "paul",
+    "woeid": "2348327", # Your WOEID (Yahoo weather location id)
+    "name": "Master", # Your Name
+    "computer": "paul", # Name of the computer system.
+    "it": None, # Whatever 'it' could be
 }
 
-VERBOSE = False
-
+## Flags for the system. Verbose is for debug info, noisy for paul to talk
+VERBOSE = True
 NOISY = False
 
+## Lists that get updated with what to do with each word
 nouns_association = {}
+verbs_association = {}

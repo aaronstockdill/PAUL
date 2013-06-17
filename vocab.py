@@ -274,6 +274,22 @@ class Name(Word):
             'display_name': self.name,
             'tag': "X"
         }
+        
+
+class Ordinal(Word):
+    def __init__(self, base):
+        self.base = base
+        super().__init__(self.base)
+        ordinals = ['first', 'second', 'third', 'fourth', 'fifth']
+        self.items = {
+            'base': self.base,
+            'tag': "OR",
+            'value': ordinals.index(self.base) + 1
+        }
+    
+    
+    
+#####  ALL WORD DEFINITIONS DONE  #####
 
 
 class Point(object):
@@ -284,9 +300,12 @@ class Point(object):
         return vocabulary[self.name]
 
 
+
 def add_new():
     for noun in user_info.nouns_association.keys():
         vocabulary.update({noun: Noun(noun),})
+    for verb in user_info.verbs_association.keys():
+        vocabulary.update({verb: Verb(verb),})
     create_irregulars()   
     generate_transforms()
 
@@ -431,4 +450,10 @@ vocabulary = {
     'with':        Preposition("with"), 
     'within':      Preposition("within"), 
     'without':     Preposition("without"),
+    
+    'first':       Ordinal("first"),
+    'second':      Ordinal("second"),
+    'third':       Ordinal("third"),
+    'fourth':      Ordinal("fourth"),
+    'fifth':       Ordinal("fifth"),
 }

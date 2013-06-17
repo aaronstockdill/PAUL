@@ -5,6 +5,17 @@ from operator import *
 import user_info
 import brain2
 
+
+def choose(list):
+    question = "Which of these do you want?\n"
+    options = "\n".join([str(index + 1) + ". " + item.split("/").pop() for 
+                         index, item in enumerate(list)])
+    choice = brain2.interact(question + options, True)
+    if choice is not None:
+        return list[choice - 1]
+    return None
+
+
 def join_sequential(items):
     
     words = [item[0] for item in items]
@@ -40,7 +51,7 @@ def find(search, params="", look_in=False):
     ]
     
     command = 'mdfind -onlyin {}/ "{}{}"'.format(home, params, search)
-    if user_info.VERBOSE: print(command)
+    if user_info.VERBOSE: print("COMMAND:", command)
     
     results = os.popen(command).readlines()
     filtered_results = []
@@ -52,10 +63,15 @@ def find(search, params="", look_in=False):
                 append = False
         if append:
             filtered_results.append(line)
-    if user_info.VERBOSE: print(filtered_results[:10])
+    if user_info.VERBOSE: print("RESULTS FIRST 5:", filtered_results[:10])
     
     if len(filtered_results) > 0:
-        return filtered_results[0] 
+        decision = choose(filtered_results[:5])
+        if user_info.VERBOSE: print("DECISION:", decision)
+        user_info.info["it"] = decision
+        if user_info.VERBOSE: print('IT: {}'.format(
+                                    user_info.info["it"]))
+        return decision
     else:
         return None
 
@@ -98,8 +114,8 @@ def process(sentence):
         'keynote': "kind:presentation ",
         'document': "kind:word ",
         'word': "kind:word ",
-        'spreadsheet': "kind:excel ",
-        'excel': "kind:excel ",
+        'spreadsheet': "kind:spreadsheet ",
+        'excel': "kind:spreadsheet ",
         'picture': "kind:image ",
         'image': "kind:image ",
         'movie': "kind:movie ",
@@ -131,6 +147,7 @@ def process(sentence):
     objects = brain2.get_parts(sentence, "NO", True)
     #catch_wh = brain2.get_parts(sentence, "WH", True)
     preps = brain2.get_parts(sentence, "PP", True)
+    names = brain2.get_parts(sentence, "XO", True)
     keywords = brain2.get_parts(sentence, "??", True)
     
     all_together = []
@@ -139,11 +156,13 @@ def process(sentence):
         all_together += objects
     #if catch_wh:
         #all_together += catch_wh
+    if names:
+        all_together += names
     if keywords:
         all_together += keywords
     
     keywords = join_sequential(all_together)
-    if user_info.VERBOSE: print(keywords)
+    if user_info.VERBOSE: print("KEYWORDS:", keywords)
     
     if keywords[0][0] in types.keys():
         get_type = keywords[0][0]
@@ -162,7 +181,9 @@ def process(sentence):
         where = False
         params = "{}".format(types[get_type])
     
-    return commands[verb](find(search, params, where))
+    if search.startswith("/Users/"): return commands[verb](search)
+    
+    else: return commands[verb](find(search, params, where))
 
 
 def main():
@@ -175,7 +196,19 @@ def main():
         "application": lambda sentence: process(sentence),
         "app": lambda sentence: process(sentence),
     }
+    
+    known_verbs = {
+        "open": lambda sentence: process(sentence),
+        "launch": lambda sentence: process(sentence),
+        "get": lambda sentence: process(sentence),
+        "find": lambda sentence: process(sentence),
+        "reveal": lambda sentence: process(sentence),
+        "locate": lambda sentence: process(sentence),
+    }
+    
     user_info.nouns_association.update(known_nouns)
+    user_info.verbs_association.update(known_verbs)
+    
     if user_info.VERBOSE: print("Successfully imported", __name__)
 
 main()

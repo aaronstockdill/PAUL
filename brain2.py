@@ -9,6 +9,24 @@ import vocab
 import user_info
 from Modules.importer import *
 
+def interact(statement, response=False):
+    if user_info.NOISY: os.system('say "{}"'.format(statement))
+    print(statement)
+    if response:
+        bringback = input("> ")
+        words = [clean(word) for word in bringback.lower().split(' ')]
+        sentence = tag_sentence(words)
+        ordinal = get_parts(sentence, "OR")
+        declines = ['none', 'neither']
+        if ordinal:
+            if user_info.VERBOSE: print("ORDINALS: ", ordinal)
+            return vocab.vocabulary[ordinal[0]]['value']
+        elif bringback.lower() in declines:
+            return None
+        if user_info.VERBOSE: print("NUMBER:", int(bringback))
+        return int(bringback)
+    
+
 
 def log_unknown(word, options):
     file = open("Unknown_words.csv", "a")
@@ -16,15 +34,15 @@ def log_unknown(word, options):
     file.close
 
 
-def get_parts(sentence, part, indexes=False, prepos=False):
+def get_parts(sentence, part, indexes=False, prepositions=False):
     ''' return the first object in a sentence, or None '''
     if part == "NO" or part == "XO":
-        if prepos:
+        if prepositions:
             part = ["NO", "PO"]
         else:
             part = [part]
     elif part == "NS" or part == "XS":
-        if prepos:
+        if prepositions:
             part = ["NS", "PS"]
         else:
             part = [part]
@@ -38,21 +56,10 @@ def get_parts(sentence, part, indexes=False, prepos=False):
                  for word in sentence if word[1] in part]
     if len(parts) > 0:
         return parts
-    elif not prepos:
-        return get_parts(sentence, part, prepos=True)
+    elif not prepositions:
+        return get_parts(sentence, part, prepositions=True)
     else:
         return None
-
-
-def try_find(sentence):
-    opening_verbs = [
-        "open", "launch", "find", "reveal",
-    ]
-    
-    if get_parts(sentence, "VB")[0] in opening_verbs:
-        return user_info.nouns_association["file"](sentence)
-    else:
-        return False
 
 
 def commands(sentence):
@@ -68,17 +75,18 @@ def commands(sentence):
     else:
         object = None
     
+    verb = get_parts(sentence, "VB")[0]
+    
     if object is not None:
         object_noun = "the {}".format(object[0])
         if object[0] in user_info.nouns_association:
             return user_info.nouns_association[object[0]](sentence)
         else:
-            if try_find(sentence):
-                return try_find(sentence)
-    else:
+            if verb in user_info.verbs_association:
+                user_info.verbs_association[verb](sentence)
+    elif verb in user_info.verbs_association:
         object_noun = "it"
-        if try_find(sentence):
-            return try_find(sentence)
+        return user_info.verbs_association[verb](sentence)
     discover.process(sentence)
     return "Let me find out for you..."
 
@@ -130,7 +138,7 @@ def guess_unknown(sentence):
                 i = sentence.index(word)
                 sentence.pop(i)
                 sentence.insert(i, (word[0], vital_parts[0]))
-                if user_info.VERBOSE: print(word)
+                if user_info.VERBOSE: print("UNKNOWN WORD:", word)
     
     return sentence
 
@@ -147,13 +155,10 @@ def classify(sentence):
     else:
         kind = "DEC"
     return kind
-        
 
-def process(line):
-    ''' Process the given line '''
+
+def tag_sentence(words):
     sentence = []
-    words = [clean(word) for word in line.lower().split(' ')]
-    
     verb_index = 999999
     object_index = 999999
     for i in range(len(words)):
@@ -163,6 +168,9 @@ def process(line):
                 sentence.append((base, part))
                 sentence.append(("be", "VB"))
                 verb_index = i
+        elif word in ["it", "that"]:
+            sentence.append((user_info.info["it"], "XO"))
+            if user_info.VERBOSE: print("IT:", user_info.info['it'])
         elif part in ["N", "P", "X"]:
             if i < verb_index:
                 part = part + "S"
@@ -179,15 +187,22 @@ def process(line):
             sentence.append((base, part))
         else:
             sentence.append((base, part))
+    return sentence
+        
+
+def process(line):
+    ''' Process the given line '''
+    words = [clean(word) for word in line.lower().split(' ')]
+    sentence = tag_sentence(words)
+    
     sentence = guess_unknown(sentence)
-    if user_info.VERBOSE: print(sentence)
+    if user_info.VERBOSE: print("SENTENCE:", sentence)
     sentence_kind = classify(sentence)
-    if user_info.VERBOSE: print(sentence_kind)
+    if user_info.VERBOSE: print("KIND:", sentence_kind)
     
     if sentence_kind == "IMP" or sentence_kind == "INT":
         response = commands(sentence)
     else:
         response = acknowledge(sentence)
     
-    if user_info.NOISY: os.system('say "{}"'.format(response))
-    return response
+    interact(response)
