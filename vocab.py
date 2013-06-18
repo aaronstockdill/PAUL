@@ -1,6 +1,8 @@
 """
-This is an attempt at rewriting the brain backend.
-It is a little... primitive, right now.
+vocab.py
+This is where the words, their classes, and how to deal with them are all
+stored for paul to deal with. This will grow very very fast.
+Author: Aaron Stockdill
 """
 import user_info
 
@@ -10,6 +12,7 @@ WHISTLE_SINGLE = ['s', 'x', 'z', 'o']
 WHISTLE_DOUBLE = ['sh', 'ch']
 
 class Word(object):
+    """ A Standard word, providing most of the 'set and get' methods """
     
     def __init__(self, base):
         self.base = base
@@ -19,15 +22,19 @@ class Word(object):
         return self.items[key]
     
     def __setitem__(self, key, value):
+        ''' Provide a nice way to set wrong values correctly '''
         self.items[key] = value
         
     def __str__(self):
+        ''' For nice printing should it be necessary '''
         return self.base
     
     def tag(self):
+        ''' A nicer way to get the word tag '''
         return self['tag']
 
 class Verb(Word):
+    """ Verbs """
     
     def __init__(self, base):
         super().__init__(base)
@@ -193,8 +200,7 @@ class Noun(Word):
 class Pronoun(Word):
     
     def __init__(self, base):
-        self.base = base
-        super().__init__(self.base)
+        super().__init__(base)
         self.items = {
             'base': self.base,
             'tag': 'P',
@@ -205,8 +211,7 @@ class Pronoun(Word):
 class PronounSubject(Pronoun):
     
     def __init__(self, base):
-        self.base = base
-        super().__init__(self.base)
+        super().__init__(base)
         self.items['tag'] = 'PS'
         self.items['plural'] = ('we' if self.base == "i" else 'they')
         self.items['possess_plural'] = ('our' if self.base == 'i' 
@@ -215,8 +220,7 @@ class PronounSubject(Pronoun):
 class PronounObject(Pronoun):
     
     def __init__(self, base):
-        self.base = base
-        super().__init__(self.base)
+        super().__init__(base)
         self.bases = {
             'me': 'i',
             'him': 'he',
@@ -232,8 +236,7 @@ class PronounObject(Pronoun):
 class Question(Word):
     
     def __init__(self, base, open_ended=True):
-        self.base = base
-        super().__init__(self.base)
+        super().__init__(base)
         self.items = {
             'base': self.base,
             'tag': "WH",
@@ -245,8 +248,7 @@ class Question(Word):
 class Article(Word):
     
     def __init__(self):
-        self.base = 'the'
-        super().__init__(self.base)
+        super().__init__('the')
         self.items = {
             'base': self.base,
             'tag': "AR",
@@ -255,8 +257,7 @@ class Article(Word):
 class Preposition(Word):
     
     def __init__(self, base):
-        self.base = base
-        super().__init__(self.base)
+        super().__init__(base)
         self.items = {
             'base': self.base,
             'tag': "PP"
@@ -265,9 +266,8 @@ class Preposition(Word):
 
 class Name(Word):
     def __init__(self, base):
-        self.base = base
+        super().__init__(base)
         self.name = self.base.capitalize()
-        super().__init__(self.base)
         self.items = {
             'base': self.base,
             'name': self.base,
@@ -278,8 +278,7 @@ class Name(Word):
 
 class Ordinal(Word):
     def __init__(self, base):
-        self.base = base
-        super().__init__(self.base)
+        super().__init__(base)
         ordinals = ['first', 'second', 'third', 'fourth', 'fifth']
         self.items = {
             'base': self.base,
@@ -293,6 +292,9 @@ class Ordinal(Word):
 
 
 class Point(object):
+    """ A pointer class, so all variations of a word 
+        point to the base word """
+    
     def __init__(self, name):
         self.name = name
     
@@ -302,6 +304,8 @@ class Point(object):
 
 
 def add_new():
+    """ Add all the new nouns and verbs from the modules """
+    
     for noun in user_info.nouns_association.keys():
         vocabulary.update({noun: Noun(noun),})
     for verb in user_info.verbs_association.keys():
@@ -354,7 +358,8 @@ def create_irregulars():
     
     
 vocabulary = {
-    'paul':        Name('paul'),
+    user_info.info['computer']:        Name(user_info.info['computer']),
+    user_info.info['name']:        Name(user_info.info['name']),
     
     'be':          Verb("be"),
     'close':       Verb("close"),

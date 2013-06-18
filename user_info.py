@@ -1,3 +1,11 @@
+"""
+user_info.py
+This is the 'global variable' storage, to share between all the 
+different functions. Unfortunately, necessary given the current
+designs.
+Author: Aaron Stockdill
+"""
+
 ## Global info that all systems should use. 
 info = {
     "woeid": "2348327", # Your WOEID (Yahoo weather location id)

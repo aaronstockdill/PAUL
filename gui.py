@@ -1,10 +1,16 @@
+"""
+gui.py
+The graphical user interface of Paul, one of the main interfaces to PAUL
+Author: Aaron Stockdill
+"""
+
 from tkinter import *
 from tkinter.ttk import *
 
-from brain import *
+#from brain import *
 
-#from brain2 import *
-#from Modules.importer import *
+from brain2 import *
+from Modules.importer import *
 
 class Application(Frame):
     

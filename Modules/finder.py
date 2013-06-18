@@ -1,3 +1,11 @@
+"""
+finder.py
+This is the filesystem interface for Paul. He can find and open files that
+spotlight can find. He ignores some files, though, including library files
+and caches, log and property files.
+Author: Aaron Stockdill
+"""
+
 import os
 from itertools import *
 from operator import *
@@ -7,16 +15,20 @@ import brain2
 
 
 def choose(list):
+    ''' Choose the item from what we found '''
+    
     question = "Which of these do you want?\n"
     options = "\n".join([str(index + 1) + ". " + item.split("/").pop() for 
                          index, item in enumerate(list)])
-    choice = brain2.interact(question + options, True)
+    choice = brain2.interact(question + options, "list")
     if choice is not None:
         return list[choice - 1]
     return None
 
 
 def join_sequential(items):
+    ''' Join things not split by prepositions, as they probably
+        "belong" together '''
     
     words = [item[0] for item in items]
     new_items = []
@@ -37,6 +49,8 @@ def join_sequential(items):
     
 
 def find(search, params="", look_in=False):
+    ''' Find the item that was searched for with necessary paramenters '''
+    
     if look_in:
         home = look_in
     else:
@@ -49,6 +63,8 @@ def find(search, params="", look_in=False):
         ".log",
         ".properties",
     ]
+    
+    #home = "/"
     
     command = 'mdfind -onlyin {}/ "{}{}"'.format(home, params, search)
     if user_info.VERBOSE: print("COMMAND:", command)
@@ -77,6 +93,8 @@ def find(search, params="", look_in=False):
 
 
 def get(location):
+    ''' Open the location '''
+    
     if location:
         message = "Opening {}"
         os.system('open "{}"'.format(location))
@@ -86,6 +104,8 @@ def get(location):
 
 
 def reveal(location):
+    ''' Show the location in the Finder '''
+    
     if location:
         message = "I found {}"
         os.popen('osascript -e "tell application \\"Finder\\" to '
@@ -96,6 +116,8 @@ def reveal(location):
     
     
 def process(sentence):
+    ''' Process the sentence '''
+    
     commands = {
         'open': lambda location: get(location),
         'get': lambda location: get(location),
@@ -187,6 +209,8 @@ def process(sentence):
 
 
 def main():
+    ''' The main function '''
+    
     known_nouns = {
         "file": lambda sentence: process(sentence), 
         "script": lambda sentence: process(sentence), 

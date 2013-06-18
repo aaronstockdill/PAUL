@@ -1,5 +1,9 @@
 """
-A rewrite of brain.
+brain.py
+A rewrite of brain.py, this is where the sentence is tagged so it can be
+used by the modules more easily, and exactly which module is required is
+also decided here. It really is the brain.
+Author: Aaron Stockdill
 """
 
 import random
@@ -9,7 +13,11 @@ import vocab
 import user_info
 from Modules.importer import *
 
-def interact(statement, response=False):
+def interact(statement, response=None):
+    """ Standard function for interacting with the user. Use this function,
+        not anything custom if possible. Response can be 'list', 'y_n', 
+        or None """
+        
     if user_info.NOISY: os.system('say "{}"'.format(statement))
     print(statement)
     if response:
@@ -18,32 +26,51 @@ def interact(statement, response=False):
         sentence = tag_sentence(words)
         ordinal = get_parts(sentence, "OR")
         declines = ['none', 'neither']
-        if ordinal:
-            if user_info.VERBOSE: print("ORDINALS: ", ordinal)
-            return vocab.vocabulary[ordinal[0]]['value']
-        elif bringback.lower() in declines:
-            return None
-        if user_info.VERBOSE: print("NUMBER:", int(bringback))
-        return int(bringback)
+        negatives = ['no', 'nope']
+        positives = ['yes', 'yep', 'yeah']
+        
+        if response == 'list':
+            if ordinal:
+                if user_info.VERBOSE: print("ORDINALS: ", ordinal)
+                return vocab.vocabulary[ordinal[0]]['value']
+            elif bringback.lower() in declines:
+                return None
+            if user_info.VERBOSE: print("NUMBER:", int(bringback))
+            return int(bringback)
+            
+        elif response == 'y_n':
+            if bringback.lower() in negatives:
+                return False
+            elif bringback.lower() in positives:
+                return True
+            else:
+                return None
+    
+    return statement
     
 
 
 def log_unknown(word, options):
+    ''' Log the unknown words that we come across, and what we think it is '''
+    
     file = open("Unknown_words.csv", "a")
     file.write("'{}': {}\n".format(word, options))
     file.close
 
 
 def get_parts(sentence, part, indexes=False, prepositions=False):
-    ''' return the first object in a sentence, or None '''
+    ''' Return the objects in a sentence of type part, or None.
+        Set indexes if you want the index of the word in the sentence,
+        and prepositions if prepositions can be included in the sentence'''
+        
     if part == "NO" or part == "XO":
         if prepositions:
-            part = ["NO", "PO"]
+            part = [part, "PO"]
         else:
             part = [part]
     elif part == "NS" or part == "XS":
         if prepositions:
-            part = ["NS", "PS"]
+            part = [part, "PS"]
         else:
             part = [part]
     else:
@@ -63,24 +90,29 @@ def get_parts(sentence, part, indexes=False, prepositions=False):
 
 
 def commands(sentence):
-    ''' process a command '''
+    ''' Process a command, based on nouns and verbs in the sentence '''
+    
     subs = get_parts(sentence, "NS")
     objs = get_parts(sentence, "NO")
     if subs and objs:
-        object = subs + objs
+        objects = subs + objs
     elif subs:
-        object = subs
+        objects = subs
     elif objs:
-        object = objs
+        objects = objs
     else:
-        object = None
+        objects = None
     
-    verb = get_parts(sentence, "VB")[0]
+    verbs = get_parts(sentence, "VB")
+    if verbs:
+        verb = verbs[0]
+    else:
+        verb = None
     
-    if object is not None:
-        object_noun = "the {}".format(object[0])
-        if object[0] in user_info.nouns_association:
-            return user_info.nouns_association[object[0]](sentence)
+    if objects is not None:
+        object_noun = "the {}".format(objects[0])
+        if objects[0] in user_info.nouns_association:
+            return user_info.nouns_association[objects[0]](sentence)
         else:
             if verb in user_info.verbs_association:
                 user_info.verbs_association[verb](sentence)
@@ -91,26 +123,33 @@ def commands(sentence):
     return "Let me find out for you..."
 
 
-def acknowledge(sentence):
+def acknowledge():
+    ''' Simply acknowledge the user, without any real thought into
+        the respose '''
+    
     name = random.choice(['', ', {}'.format(user_info.info['name'])])
     acknowledgements = [
         "Ok{}.".format(name),
         "Sure{}.".format(name),
-        "Whatever you say{}.".format(name),
+        "Of course{}.".format(name),
         "Certainly{}.".format(name),
     ]
-    return random.choice(acknowledgements)
+    result = random.choice(acknowledgements)
+    interact(result)
+    return result
 
 
 def clean(word):
     ''' Clean the text, removing unwanted characters '''
+    
     for to_remove in list(" ,.?'\";:\\!$&<>@#%^*{}[]+-=_"):
         word = word.strip(to_remove)
     return word
 
 
-def tag(word):
-    """ Tag the word's part of speech """
+def tag_word(word):
+    """ Tag the word's part of speech, returning the word's base and tag
+        in a tuple """
     
     if word not in vocab.vocabulary:
         return (word, "??")
@@ -119,6 +158,7 @@ def tag(word):
 
 def guess_unknown(sentence):
     ''' See if it can work out what the ?? is '''
+    
     vital_parts = ["NS", "NO", "VB"]
     for word in sentence:
         if word[1] in ["NS", "PS", "WH"]:
@@ -134,7 +174,7 @@ def guess_unknown(sentence):
     for word in sentence:
         if word[1] == "??":
             log_unknown(word[0], vital_parts)
-            if len(vital_parts) == 1 and vital_parts[0] == "NO":
+            if len(vital_parts) == 1:# and vital_parts[0] == "NO":
                 i = sentence.index(word)
                 sentence.pop(i)
                 sentence.insert(i, (word[0], vital_parts[0]))
@@ -146,6 +186,7 @@ def classify(sentence):
     ''' Determines what the concept of the sentence is.
         Can be declarative (DEC), Interrogative (INT),
         or Imperative (IMP)'''
+        
     if (sentence[0][1] == "VB" or 
         sentence[0][0] == user_info.info["computer"]):
         kind = "IMP"
@@ -158,12 +199,15 @@ def classify(sentence):
 
 
 def tag_sentence(words):
+    ''' Tag all the words in a sentence, applying various rules as
+        necessary to fix up oddities '''
+    
     sentence = []
     verb_index = 999999
     object_index = 999999
     for i in range(len(words)):
         word = words[i]
-        base, part = tag(word)
+        base, part = tag_word(word)
         if part == "WH" and word[-2:] == "'s":
                 sentence.append((base, part))
                 sentence.append(("be", "VB"))
@@ -192,6 +236,7 @@ def tag_sentence(words):
 
 def process(line):
     ''' Process the given line '''
+    
     words = [clean(word) for word in line.lower().split(' ')]
     sentence = tag_sentence(words)
     
@@ -201,8 +246,7 @@ def process(line):
     if user_info.VERBOSE: print("KIND:", sentence_kind)
     
     if sentence_kind == "IMP" or sentence_kind == "INT":
-        response = commands(sentence)
+        response = commands(sentence)    
+        return interact(response)
     else:
-        response = acknowledge(sentence)
-    
-    interact(response)
+        return acknowledge()
