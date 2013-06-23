@@ -10,7 +10,7 @@ import brain2
 
 def process(sentence):
     ''' Process the sentence, act as necessary '''
-    brain2.acknowledge()
+    brain2.loading()
     return weather()
 
 def weather():

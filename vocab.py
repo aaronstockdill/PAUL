@@ -368,7 +368,6 @@ vocabulary = {
     'pause':       Verb("pause"),
     'quit':        Verb("quit"),
     'stop':        Verb("stop"),
-    'study':       Verb("study"),
     'shut':        Verb("shut"),
     'show':        Verb("show"),
     'get':         Verb("get"),

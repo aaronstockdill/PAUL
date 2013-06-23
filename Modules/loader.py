@@ -34,6 +34,7 @@ def main():
     }
     
     known_verbs = {
+        "load": lambda sentence: process(sentence),
         "reload": lambda sentence: process(sentence),
         "relaunch": lambda sentence: process(sentence),
         "restart": lambda sentence: process(sentence),

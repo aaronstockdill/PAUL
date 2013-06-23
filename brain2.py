@@ -8,18 +8,69 @@ Author: Aaron Stockdill
 
 import random
 import os
+import itertools
+import operator
 
 import vocab
 import user_info
 from Modules.importer import *
+
+def forward(sentence, keyword):
+    ''' If you think you know which module should deal with this instead
+        of who brain2 picked, pass it here with a keyword. '''
+    
+    if keyword in user_info.nouns_association.keys():
+        return user_info.nouns_association[keyword](sentence)
+    elif keyword in user_info.verbs_association.keys():
+        return user_info.verbs_association[keyword](sentence)
+    else:
+        return discover.process(sentence)
+    
+
+def group_together(sentence):
+    ''' Join things not split by prepositions and stuff, as they probably
+        "belong" together. Ideal for getting keywords. '''
+    
+    objects = get_parts(sentence, "NO", True)
+    names = get_parts(sentence, "XO", True)
+    keywords = get_parts(sentence, "??", True)
+    
+    all_together = []
+    
+    if objects:
+        all_together += objects
+    if names:
+        all_together += names
+    if keywords:
+        all_together += keywords
+    
+    words = [item[0] for item in all_together]
+    new_items = []
+    for word in words:
+        #if word not in ignore:
+        word_index = [item[1] for item in all_together if item[0] == word][0]
+        new_items.append((word, word_index))
+    
+    item_list = []
+    iterhelper = lambda i: i[0]-i[1][1]
+    for k, g in itertools.groupby(enumerate(new_items), iterhelper):
+        final_items = (list(map(operator.itemgetter(1), g)))
+        ind = final_items[0][1]
+        final_items = ' '.join([item[0] for item in final_items])
+        item_list.append((final_items, ind))
+    
+    final_list = item_list
+    if user_info.VERBOSE: print("GROUPINGS:", final_list)
+    return sorted(final_list, key=operator.itemgetter(1))
+
 
 def interact(statement, response=None):
     """ Standard function for interacting with the user. Use this function,
         not anything custom if possible. Response can be 'list', 'y_n', 
         or None """
         
-    if user_info.NOISY: os.system('say "{}"'.format(statement))
     print(statement)
+    if user_info.NOISY: os.system('say "{}"'.format(statement))
     if response:
         bringback = input("> ")
         words = [clean(word) for word in bringback.lower().split(' ')]
@@ -115,7 +166,7 @@ def commands(sentence):
             return user_info.nouns_association[objects[0]](sentence)
         else:
             if verb in user_info.verbs_association:
-                user_info.verbs_association[verb](sentence)
+                return user_info.verbs_association[verb](sentence)
     elif verb in user_info.verbs_association:
         object_noun = "it"
         return user_info.verbs_association[verb](sentence)
@@ -133,6 +184,19 @@ def acknowledge():
         "Sure{}.".format(name),
         "Of course{}.".format(name),
         "Certainly{}.".format(name),
+    ]
+    result = random.choice(acknowledgements)
+    interact(result)
+    return result
+
+def loading():
+    ''' Let the user know that Paul is working '''
+    name = random.choice(['', ', {}'.format(user_info.info['name'])])
+    acknowledgements = [
+        "Just a moment{}.".format(name),
+        "Hang on{}...".format(name),
+        "Coming up{}.".format(name),
+        "Let me see{}...".format(name),
     ]
     result = random.choice(acknowledgements)
     interact(result)
@@ -156,31 +220,6 @@ def tag_word(word):
     else:
         return (vocab.vocabulary[word].base, vocab.vocabulary[word].tag())
 
-def guess_unknown(sentence):
-    ''' See if it can work out what the ?? is '''
-    
-    vital_parts = ["NS", "NO", "VB"]
-    for word in sentence:
-        if word[1] in ["NS", "PS", "WH"]:
-            if "NS" in vital_parts:
-                vital_parts.remove("NS")
-        elif word[1] in ["NO", "PO"]:
-            if "NO" in vital_parts:
-                vital_parts.remove("NO")
-        elif word[1] == "VB":
-            if "VB" in vital_parts:
-                vital_parts.remove("VB")
-    
-    for word in sentence:
-        if word[1] == "??":
-            log_unknown(word[0], vital_parts)
-            if len(vital_parts) == 1:# and vital_parts[0] == "NO":
-                i = sentence.index(word)
-                sentence.pop(i)
-                sentence.insert(i, (word[0], vital_parts[0]))
-                if user_info.VERBOSE: print("UNKNOWN WORD:", word)
-    
-    return sentence
 
 def classify(sentence):
     ''' Determines what the concept of the sentence is.
@@ -240,7 +279,6 @@ def process(line):
     words = [clean(word) for word in line.lower().split(' ')]
     sentence = tag_sentence(words)
     
-    sentence = guess_unknown(sentence)
     if user_info.VERBOSE: print("SENTENCE:", sentence)
     sentence_kind = classify(sentence)
     if user_info.VERBOSE: print("KIND:", sentence_kind)

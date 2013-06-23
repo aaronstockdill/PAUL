@@ -32,10 +32,10 @@ There is a more detailed guide at the bottom of this README [here]("#building-pa
 Not so much a roadmap as a wishlist:
 
 * Verb-based decisions too. If no nouns lead to somewhere, Paul should try and use the verbs to work out what is happening. E.g. so far finder has some hard-coded exceptions to the nouns rule. Why should it be special? let all apps add to a global 'verb dict' like the nouns do. We already handle verbs pretty good with the built-ins. **UPDATE:** This is partially implemented. If no known nouns are found, it searches the knwon verbs, and uses them. Modules must be updated to use this new functionality.
-* Better weather. Sure, today's weather is nice, but if you ask for tomorrow's weather, you get todays too. I need to know!
+* Better weather. Sure, today's weather is nice, but if you ask for tomorrow's weather, you get todays too. I need to know tomorrow's!
 * Reminders, events, time etc. This would be GREAT, but probably rather tricky.
 * An alternative to Wolfram Alpha would be nice, to get text results back, but nothing else comes close. Damn. Probably not happening.
-* Music controls. Basically the only thing version 1 *could* do, this one cannot.
+* Deeper music controls. Basic play and pause stuff is nice, but song requests, shuffle, all that sort of thing, could be so much better!
 * Brightness and volume (general system) controls. It'd be nice, hopefully not to difficult.
 
 ##Building PAUL Modules

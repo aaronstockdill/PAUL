@@ -9,7 +9,6 @@ Author: Aaron Stockdill
 #from brain import *
 
 import brain2
-#from Modules.importer import *
 
 from sys import argv
 

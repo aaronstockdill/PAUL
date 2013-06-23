@@ -7,8 +7,6 @@ Author: Aaron Stockdill
 """
 
 import os
-from itertools import *
-from operator import *
 
 import user_info
 import brain2
@@ -24,28 +22,6 @@ def choose(list):
     if choice is not None:
         return list[choice - 1]
     return None
-
-
-def join_sequential(items):
-    ''' Join things not split by prepositions, as they probably
-        "belong" together '''
-    
-    words = [item[0] for item in items]
-    new_items = []
-    for word in words:
-        #if word not in ignore:
-        word_index = [item[1] for item in items if item[0] == word][0]
-        new_items.append((word, word_index))
-    
-    item_list = []
-    for k, g in groupby(enumerate(new_items), lambda i: i[0]-i[1][1]):
-        final_items = (list(map(itemgetter(1), g)))
-        ind = final_items[0][1]
-        final_items = ' '.join([item[0] for item in final_items])
-        item_list.append((final_items, ind))
-    
-    return item_list
-    
     
 
 def find(search, params="", look_in=False):
@@ -160,30 +136,18 @@ def process(sentence):
         "executable": "kind:application ",
     }
     
+    preps = brain2.get_parts(sentence, "PP")
+    if preps:
+        if preps[0] == "out":
+            return brain2.forward(sentence, "research")
+    
     try:
         object = brain2.get_parts(sentence, "NO")[0]
     except:
         object = None
     verb = brain2.get_parts(sentence, "VB")[0]
     
-    objects = brain2.get_parts(sentence, "NO", True)
-    #catch_wh = brain2.get_parts(sentence, "WH", True)
-    preps = brain2.get_parts(sentence, "PP", True)
-    names = brain2.get_parts(sentence, "XO", True)
-    keywords = brain2.get_parts(sentence, "??", True)
-    
-    all_together = []
-    
-    if objects:
-        all_together += objects
-    #if catch_wh:
-        #all_together += catch_wh
-    if names:
-        all_together += names
-    if keywords:
-        all_together += keywords
-    
-    keywords = join_sequential(all_together)
+    keywords = brain2.group_together(sentence)
     if user_info.VERBOSE: print("KEYWORDS:", keywords)
     
     if keywords[0][0] in types.keys():
@@ -204,6 +168,7 @@ def process(sentence):
         params = "{}".format(types[get_type])
     
     if search.startswith("/Users/"): return commands[verb](search)
+    elif search.startswith("http"): return commands[verb](search)
     
     else: return commands[verb](find(search, params, where))
 
