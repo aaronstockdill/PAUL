@@ -29,7 +29,7 @@ def simple_commands(action):
 def process(sentence):
     ''' Process the sentence '''
     
-    verb = brain2.get_parts(sentence, "VB")[0]
+    verb = sentence.get_parts("VB")[0]
     
     commands = {
         'play': lambda: simple_commands('play'),

@@ -25,18 +25,25 @@ def findIt(what):
     url = ('http://en.wikipedia.org/w/index.php?title='
           '{}&printable=yes'.format(re.sub(' ', '_', what)))
     url2 = ('http://en.wikipedia.org/wiki/{}'.format(re.sub(' ', '_', what)))
-    infile = opener.open(url)
-    page = [str(line, encoding='utf8').strip() for line in infile.readlines()]
-    index1 = page.index([line for line in page if line.startswith('<p')][0])
-    #index2 = page.index([line for line in page if line.startswith('<p')][1])
+    try:
+        infile = opener.open(url)
+        page = [str(line, encoding='utf8').strip() for line
+                in infile.readlines()]
+        
+        content_start = page.index([line for line in page
+                             if line.startswith("</table")][0])
+        index1 = page.index([line for line in page[content_start:]
+                             if line.startswith("<p")][0])
     
-    user_info.info['it'] = url2
-    return stripIt(''.join(page[index1])) + "\n\n" + url2
+        user_info.info['it'] = url2
+        return stripIt(''.join(page[index1])) + "\n\n" + url2
+    except urllib.error.HTTPError:
+        return "Nothing was found, sorry!"
     
 def process(sentence):
     ''' Process the sentence '''
     
-    keywords = brain2.group_together(sentence)
+    keywords = sentence.keywords()
     if user_info.VERBOSE: print("KEYWORDS:", keywords)
     
     ignores = ["i", "wikipedia"]

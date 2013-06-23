@@ -136,18 +136,18 @@ def process(sentence):
         "executable": "kind:application ",
     }
     
-    preps = brain2.get_parts(sentence, "PP")
+    preps = sentence.get_parts("PP")
     if preps:
         if preps[0] == "out":
-            return brain2.forward(sentence, "research")
+            return sentence.forward("research")
     
     try:
-        object = brain2.get_parts(sentence, "NO")[0]
+        object = sentence.get_parts("NO")[0]
     except:
         object = None
-    verb = brain2.get_parts(sentence, "VB")[0]
+    verb = sentence.get_parts("VB")[0]
     
-    keywords = brain2.group_together(sentence)
+    keywords = sentence.keywords()
     if user_info.VERBOSE: print("KEYWORDS:", keywords)
     
     if keywords[0][0] in types.keys():
