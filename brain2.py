@@ -42,7 +42,7 @@ class Sentence(object):
         return iter(self.sentence)
         
 
-    def keywords(self):
+    def keywords(self, ignore=[]):
         ''' Join things not split by prepositions and stuff, as they probably
             "belong" together. Ideal for getting keywords. If keywords have 
             been found before, use them rather than trying to find them 
@@ -53,7 +53,6 @@ class Sentence(object):
             if user_info.VERBOSE: print("KEYWORDS: Short-circuit successful.")
             return self.keyword_list
         else:
-            if user_info.VERBOSE: print("KEYWORDS: Unable to short-circuit.")
             objects = self.get_parts("NO", True)
             names = self.get_parts("XO", True)
             keywords = self.get_parts("??", True)
@@ -67,7 +66,7 @@ class Sentence(object):
             if keywords:
                 all_together += keywords
     
-            words = [item[0] for item in all_together]
+            words = [item[0] for item in all_together if item[0] not in ignore]
             new_items = []
             for word in words:
                 word_index = [item[1] for item in all_together 
