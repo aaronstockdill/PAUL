@@ -69,7 +69,7 @@ You should add all the words you know how to deal with, for both nouns and verbs
 
 ###The Module itself.
 
-Now you need something in the process(sentence) function. A sentence is given to you in the form:
+Now you need something in the process(sentence) function. A sentence object is given to you, with an internal structure in the form:
 
     [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('like', 'PP'), ('today', '??')]
     
@@ -87,15 +87,23 @@ As you can see, the word is reduced to its most basic form (the sentence is from
 
 Given all this information it is up to you to use it. Some functions are provided in brain2 for your use. For easily accessing the parts of the sentence:
 
-    list_of_parts = brain2.get_parts(sentence, tag[, indexes=False, prepositions=False])
+    list_of_parts = sentence.get_parts(tag[, indexes=False, prepositions=False])
 
-For interacting with the user:
+For interacting with the user (if you want a repsonse, make it obvious how you want the reply, e.g. a list of a few options, or clearly a yes/no question):
 
-    response = brain2.interact(question+options[, response=None])
+    user_response = brain2.interact(question[, response=None])
     
 For a generic reply:
 
     brain2.acknowledge()
+
+If you need to provide a way to say you are working but there is no immediate response:
+
+    brain2.loading()
+
+A fairly new function is "forward", which is used if you can identify a sentence that the brain passed to you that is clearly not yours. Include a keyword that you think would help in finding the correct module, otherwise the user will not get any useful response.
+
+    brain2.forward(sentence, keyword)
 
 More API functions tend to be added over time (as I find I need them). The rest is basically up to you, using standard Python programming, using the os module to execute applescript or other stuff as necessary. It's basically anything goes! Be as creative as you can, be it X10 Home Automation, jokes, or something else you've dreamed up!
 
