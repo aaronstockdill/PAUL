@@ -362,6 +362,7 @@ vocabulary = {
     user_info.info['name']:        Name(user_info.info['name']),
     
     'be':          Verb("be"),
+    'will':        Verb("will"),
     'close':       Verb("close"),
     'open':        Verb("open"),
     'play':        Verb("play"),
@@ -387,14 +388,14 @@ vocabulary = {
     'her':         PronounObject("her"),
     'you':         Pronoun("you"),
     'it':          Pronoun("it"),
+    'this':        Pronoun("this"),
+    'that':        Pronoun("that"),
+    'these':       Pronoun("these"),
+    'those':       Pronoun("those"),
     
     'a':           Article(),
     'an':          Article(),
     'the':         Article(),
-    'this':        Article(),
-    'that':        Article(),
-    'these':       Article(),
-    'those':       Article(),
     
     'who':         Question("who", open_ended=True),
     'why':         Question("why", open_ended=True),

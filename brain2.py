@@ -24,14 +24,14 @@ class Sentence(object):
             as some other variables '''
         
         self.sentence_string = sentence_string.lower()
-        words = [self.clean(word) for word in sentence_string.split(' ')]
+        words = [self.clean(word) for word in self.sentence_string.split(' ')]
         self.sentence = self.tag_sentence(words)
         self.kind = self.classify()
         self.keyword_list = None
     
     
     def __repr__(self):
-        return self.sentence
+        return str(self.sentence)
     
     
     def __str__(self):

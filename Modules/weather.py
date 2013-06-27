@@ -60,7 +60,7 @@ def weather(day_index=0):
     
     else:
         items = lines[day_index].split("\"")[1:-1]
-        items = ['text'] + [item.strip().strip('=') for item in items]
+        items = ['day'] + [item.strip().strip('=') for item in items]
     
         if user_info.VERBOSE: print("ITEMS:", items)
     
