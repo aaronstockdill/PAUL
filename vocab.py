@@ -310,12 +310,21 @@ def add_new():
         vocabulary.update({noun: Noun(noun),})
     for verb in user_info.verbs_association.keys():
         vocabulary.update({verb: Verb(verb),})
+    for word, values in user_info.word_associations.items():
+        for _, pos in values:
+            if pos == "verb":
+                vocabulary.update({word: Verb(word),})
+            elif pos == "noun":
+                vocabulary.update({word: Noun(word),})
+        
     create_irregulars()   
     generate_transforms()
 
 
+
 def generate_transforms():
     ''' Generate all forms of a verb to check for, which point to the root '''
+    
     parts_dict = {}
     to_add = False
     for word in vocabulary.keys():
@@ -363,6 +372,7 @@ vocabulary = {
     
     'be':          Verb("be"),
     'will':        Verb("will"),
+    'go':          Verb("go"),
     'close':       Verb("close"),
     'open':        Verb("open"),
     'play':        Verb("play"),

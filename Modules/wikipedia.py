@@ -14,7 +14,7 @@ import brain2
 def stripIt(s):
     ''' remove useless stuff '''
     txt = re.sub('<[^<]+?>', '', s)
-    txt = re.sub('\[(\d)\]', '', txt)
+    txt = re.sub('\[(\d)+\]', '', txt)
     txt = re.sub('&#160;', '', txt)
     return re.sub('\s+', ' ', txt)
 
@@ -22,10 +22,11 @@ def findIt(what):
     ''' Get wikipedia's opening statement on the topic '''
     opener = urllib.request.build_opener()
     opener.addheaders = [('User-agent', 'Mozilla/5.0')]
-    url = ('http://en.wikipedia.org/w/index.php?title='
-          '{}&printable=yes'.format(re.sub(' ', '_', what)))
-    url2 = ('http://en.wikipedia.org/wiki/{}'.format(re.sub(' ', '_', what)))
+    #url = ('http://en.wikipedia.org/w/index.php?title='
+          #'{}&printable=yes'.format(re.sub(' ', '_', what)))
+    url = ('http://en.wikipedia.org/wiki/{}'.format(re.sub(' ', '_', what)))
     try:
+        if user_info.VERBOSE: print("URL ATTEMPT:", url)
         infile = opener.open(url)
         page = [str(line, encoding='utf8').strip() for line
                 in infile.readlines()]
@@ -35,13 +36,17 @@ def findIt(what):
         index1 = page.index([line for line in page[content_start:]
                              if line.startswith("<p")][0])
     
-        user_info.info['it'] = url2
-        return stripIt(''.join(page[index1])) + "\n\n" + url2
+        user_info.info['it'] = url
+        return stripIt(''.join(page[index1])) + "\n\n" + url
     except urllib.error.HTTPError:
-        return "Nothing was found, sorry!"
+        return brain2.forward(sentence, "wolfram")
+    except urllib.error.URLError:
+        return "I couldn't complete the research for some reason!"
     
 def process(sentence):
     ''' Process the sentence '''
+    
+    sentence.replace_it()
     
     keywords = sentence.keywords()
     if user_info.VERBOSE: print("KEYWORDS:", keywords)
@@ -65,9 +70,23 @@ def main():
         "define": lambda sentence: process(sentence),
         "search": lambda sentence: process(sentence),
     }
+    
+    words = {
+        "wikipedia": ("wikipedia", "noun"),
+        "tell": ("wikipedia", "verb"),
+        "research": ("wikipedia", "verb"),
+        "define": ("wikipedia", "verb"),
+        "search": ("wikipedia", "verb"),
+        "about": ("wikipedia", "preposition"),
+        "find": ("wikipedia", "verb"),
+    }
 
-    user_info.nouns_association.update(known_nouns)
-    user_info.verbs_association.update(known_verbs)
+    #user_info.nouns_association.update(known_nouns)
+    #user_info.verbs_association.update(known_verbs)
+    
+    #user_info.word_associations.update(words)
+    user_info.associate(words)
+    user_info.word_actions["wikipedia"] = lambda sentence: process(sentence)
 
     if user_info.VERBOSE: print("Successfully imported", __name__)
 

@@ -47,23 +47,25 @@ The first thing is to do the basic setup:
 
     import user_info
     
+    NOUNS = [known nouns]   # These can be non-global if desired, but it can
+    VERBS = [known verbs]   # be useful if they are needed for 'ignore' lists.
+    
     def process(sentence):
         # The stuff you want to do
     
     def main():
-        known_nouns = {}
-        known_verbs = {}
+        words = {word: ("*module_name*", "noun") for word in NOUNS}
+        words.update({word: ("*module_name*", "verb") for word in VERBS})
+        ## update words with any other known words here too
         
-        user_info.nouns_association.update(known_nouns)
-        user_info.verbs_association.update(known_verbs)
+        user_info.associate(words)
+        user_info.word_actions["*module_name*"] = lambda sentence: process(sentence)
         
         if user_info.VERBOSE: print("Successfully imported", __name__)
     
     main()
 
-Inside this template, you need to add some key things. Notably, you need AT LEAST one known\_noun key (the word you program will know, e.g. "rain"). All keys will have a value of:
-
-    lambda sentence: process(sentence)
+Inside this template, you need to add some key things. Notably, you need AT LEAST one NOUN items (the word you program will know, e.g. "rain").
     
 You should add all the words you know how to deal with, for both nouns and verbs (other word types are not very useful in making a decision - you can use other word types later, just do not rely upon them being there.)
 
@@ -71,7 +73,7 @@ You should add all the words you know how to deal with, for both nouns and verbs
 
 Now you need something in the process(sentence) function. A sentence object is given to you, with an internal structure in the form:
 
-    [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('like', 'PP'), ('today', '??')]
+    [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('like', 'PP'), ('today', 'NO')]
     
 As you can see, the word is reduced to its most basic form (the sentence is from the query "What's the weather like today?") - "is" became "be". The tags are:
 
@@ -101,7 +103,11 @@ If you need to provide a way to say you are working but there is no immediate re
 
     brain2.loading()
 
-A fairly new function is "forward", which is used if you can identify a sentence that the brain passed to you that is clearly not yours. Include a keyword that you think would help in finding the correct module, otherwise the user will not get any useful response.
+If your module has the potential to handle an 'it', such as a previously found url, file, or something else, use this method at the top of processing:
+
+    sentence.replace_it()
+
+The function is "forward" is used if you can identify a sentence that the brain passed to you that is clearly not yours. Include a keyword that you think would help in finding the correct module, otherwise the user will not get any useful response.
 
     brain2.forward(sentence, keyword)
 

@@ -21,3 +21,12 @@ NOISY = False
 ## Lists that get updated with what to do with each word
 nouns_association = {}
 verbs_association = {}
+word_associations = {}
+word_actions = {}
+
+def associate(words_dict):
+    ''' Add this words_dict to the associations list '''
+    
+    for word, info in words_dict.items():
+        old = word_associations.get(word, [])
+        word_associations[word] = old + [info]

@@ -12,8 +12,8 @@ def process(sentence):
     ''' Load the files, then restart Paul '''
     
     files = [file[:-3] for file in os.listdir("Modules/") 
-             if file != "__init__.py" 
-             and file != "__pycache__"
+             if file[-3:] == ".py" 
+             and file != "__init__.py"
              and file != "importer.py"]
     importer = open("Modules/importer.py", 'w')
     for file in files:
@@ -41,8 +41,22 @@ def main():
         "reboot": lambda sentence: process(sentence),
     }
     
-    user_info.nouns_association.update(known_nouns)
-    user_info.verbs_association.update(known_verbs)
+    words = {
+        "module": ("loader", "noun"),
+        "function": ("loader", "noun"),
+        "load": ("loader", "verb"),
+        "reload": ("loader", "verb"),
+        "relaunch": ("loader", "verb"),
+        "restart": ("loader", "verb"),
+        "reboot": ("loader", "verb"),
+    }
+    
+    #user_info.nouns_association.update(known_nouns)
+    #user_info.verbs_association.update(known_verbs)
+    
+    #user_info.word_associations.update(words)
+    user_info.associate(words)
+    user_info.word_actions["loader"] = lambda sentence: process(sentence)
     
     if user_info.VERBOSE: print("Successfully imported", __name__)
 

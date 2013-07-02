@@ -11,16 +11,58 @@ import os
 import user_info
 import brain2
 
+NOUNS = [
+    'file',
+    'folder',
+    'powerpoint',
+    'keynote',
+    'document',
+    'word',
+    'spreadsheet',
+    'excel',
+    'picture',
+    'image',
+    'movie',
+    'film',
+    'video',
+    'audio',
+    'music',
+    'email',
+    'person',
+    'contact',
+    'event',
+    'pdf',
+    'preference',
+    'bookmark',
+    'favourite',
+    'font',
+    'widget',
+    "app", 
+    "application", 
+    "program", 
+    "executable",
+    'script',
+]
 
-def choose(list):
+VERBS = [
+    "open",
+    "launch",
+    "get",
+    "find",
+    "reveal",
+    "locate",
+]
+
+def choose(list_choices):
     ''' Choose the item from what we found '''
     
     question = "Which of these do you want?\n"
     options = "\n".join([str(index + 1) + ". " + item.split("/").pop() for 
-                         index, item in enumerate(list)])
+                         index, item in enumerate(list_choices)])
     choice = brain2.interact(question + options, "list")
     if choice is not None:
-        return list[choice - 1]
+        if user_info.VERBOSE: print("CHOICE:", choice)
+        return list_choices[choice - 1]
     return None
     
 
@@ -117,6 +159,7 @@ def process(sentence):
         'picture': "kind:image ",
         'image': "kind:image ",
         'movie': "kind:movie ",
+        'film': "kind:movie",
         'video': "kind:movie ",
         'audio': "kind:audio ",
         'music': "kind:music ",
@@ -136,6 +179,8 @@ def process(sentence):
         "executable": "kind:application ",
     }
     
+    sentence.replace_it()
+    
     preps = sentence.get_parts("PP")
     if preps:
         if preps[0] == "out":
@@ -147,7 +192,9 @@ def process(sentence):
         object = None
     verb = sentence.get_parts("VB")[0]
     
-    keywords = sentence.keywords()
+    ignore = list(types.keys()) + list(commands.keys())
+    
+    keywords = sentence.keywords(ignore)
     if user_info.VERBOSE: print("KEYWORDS:", keywords)
     
     if keywords[0][0] in types.keys():
@@ -168,7 +215,7 @@ def process(sentence):
         params = "{}".format(types[get_type])
     
     if search.startswith("/Users/"): return commands[verb](search)
-    elif search.startswith("http"): return commands[verb](search)
+    elif search.startswith("http"): return commands["open"](search)
     
     else: return commands[verb](find(search, params, where))
 
@@ -176,27 +223,51 @@ def process(sentence):
 def main():
     ''' The main function '''
     
-    known_nouns = {
-        "file": lambda sentence: process(sentence), 
-        "script": lambda sentence: process(sentence), 
-        "document": lambda sentence: process(sentence), 
-        "image": lambda sentence: process(sentence),
-        "folder": lambda sentence: process(sentence),
-        "application": lambda sentence: process(sentence),
-        "app": lambda sentence: process(sentence),
-    }
+#    known_nouns = {
+#        "file": lambda sentence: process(sentence), 
+#        "script": lambda sentence: process(sentence), 
+#        "document": lambda sentence: process(sentence), 
+#        "image": lambda sentence: process(sentence),
+#        "folder": lambda sentence: process(sentence),
+#        "application": lambda sentence: process(sentence),
+#        "app": lambda sentence: process(sentence),
+#    }
+#    
+#    known_verbs = {
+#        "open": lambda sentence: process(sentence),
+#        "launch": lambda sentence: process(sentence),
+#        "get": lambda sentence: process(sentence),
+#        "find": lambda sentence: process(sentence),
+#        "reveal": lambda sentence: process(sentence),
+#        "locate": lambda sentence: process(sentence),
+#    }
+#    
+#    words = {
+#        "file": ("finder", "noun"), 
+#        "script": ("finder", "noun"), 
+#        "document": ("finder", "noun"), 
+#        "image": ("finder", "noun"),
+#        "folder": ("finder", "noun"),
+#        "application": ("finder", "noun"),
+#        "app": ("finder", "noun"),
+#        "open": ("finder", "verb"),
+#        "launch": ("finder", "verb"),
+#        "get": ("finder", "verb"),
+#        "find": ("finder", "verb"),
+#        "reveal": ("finder", "verb"),
+#        "locate": ("finder", "verb"),
+#        "show": ("finder", "verb"),
+#    }
+#    
+#    user_info.nouns_association.update(known_nouns)
+#    user_info.verbs_association.update(known_verbs)
+
+    words = {word: ("finder", "noun") for word in NOUNS}
+    words.update({word: ("finder", "verb") for word in VERBS})
     
-    known_verbs = {
-        "open": lambda sentence: process(sentence),
-        "launch": lambda sentence: process(sentence),
-        "get": lambda sentence: process(sentence),
-        "find": lambda sentence: process(sentence),
-        "reveal": lambda sentence: process(sentence),
-        "locate": lambda sentence: process(sentence),
-    }
-    
-    user_info.nouns_association.update(known_nouns)
-    user_info.verbs_association.update(known_verbs)
+    #user_info.word_associations.update(words)
+    user_info.associate(words)
+    user_info.word_actions["finder"] = lambda sentence: process(sentence)
     
     if user_info.VERBOSE: print("Successfully imported", __name__)
 

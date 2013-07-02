@@ -136,7 +136,7 @@ class Sentence(object):
     def clean(self, word):
         ''' Clean the text, removing unwanted characters '''
     
-        for to_remove in list(" ,.?'\";:\\!$&<>@#%^*{}[]+-=_"):
+        for to_remove in list(" ,.?'\";:\\!$&<>@#%^*}{[]+-=_"):
             word = word.strip(to_remove)
         return word
 
@@ -174,16 +174,20 @@ class Sentence(object):
         sentence = []
         verb_index = 999999
         object_index = 999999
+        add_are = False
         for i in range(len(words)):
             word = words[i]
-            base, part = self.tag_word(word)
+            if word[-3:] == "'re":
+                base, part = self.tag_word(word[:-3])
+                add_are = True
+            else:
+                base, part = self.tag_word(word)
             if part == "WH" and word[-2:] == "'s":
                     sentence.append((base, part))
                     sentence.append(("be", "VB"))
                     verb_index = i
             elif word in ["it", "that"]:
-                sentence.append((user_info.info["it"], "XO"))
-                if user_info.VERBOSE: print("IT:", user_info.info['it'])
+                sentence.append(("it", "PO"))
             elif part in ["N", "P", "X"]:
                 if i < verb_index:
                     part = part + "S"
@@ -200,42 +204,50 @@ class Sentence(object):
                 sentence.append((base, part))
             else:
                 sentence.append((base, part))
+            if add_are:
+                sentence.append(("be", "VB"))
+                add_are = False
         return sentence
         
+        
+        
+    def replace_it(self):
+        ''' Replace 'it' or 'that' with the current global concept '''
+        
+        for i, word in enumerate(self.sentence):
+            if word[0] == 'it':
+                if user_info.VERBOSE: print("IT:", user_info.info['it'])
+                self.sentence.pop(i)
+                self.sentence.insert(i, (user_info.info["it"], "XO"))
+
 
 
 def commands(sentence):
     ''' Process a command, based on nouns and verbs in the sentence '''
-
-    subs = sentence.get_parts("NS")
-    objs = sentence.get_parts("NO")
-    if subs and objs:
-        objects = subs + objs
-    elif subs:
-        objects = subs
-    elif objs:
-        objects = objs
+    
+    actions = {}
+    weights = {}
+    
+    for word, _ in sentence:
+        if word in user_info.word_associations:
+            modules = [mod for mod, _ in user_info.word_associations[word]]
+            for module in modules:
+                actions[module] = actions.get(module, 0) + 1
+    
+    if user_info.VERBOSE: print("ACTIONS:", actions)
+    
+    for key, value in actions.items():
+        weights[value] = weights.get(value, []) + [key]
+    
+    if user_info.VERBOSE: print("WEIGHTS:", weights)
+    
+    if weights != {}:
+        best = weights[sorted(weights.keys(), reverse=True)[0]][0]
+        if user_info.VERBOSE: print("BEST:", best)
+        return user_info.word_actions[best](sentence)
     else:
-        objects = None
-
-    verbs = sentence.get_parts("VB")
-    if verbs:
-        verb = verbs[0]
-    else:
-        verb = None
-
-    if objects is not None:
-        object_noun = "the {}".format(objects[0])
-        if objects[0] in user_info.nouns_association:
-            return user_info.nouns_association[objects[0]](sentence)
-        else:
-            if verb in user_info.verbs_association:
-                return user_info.verbs_association[verb](sentence)
-    elif verb in user_info.verbs_association:
-        object_noun = "it"
-        return user_info.verbs_association[verb](sentence)
-    discover.process(sentence)
-    return "Let me find out for you..."
+        discover.process(sentence)
+        return "Let me find out for you..."
 
 
 
@@ -247,20 +259,30 @@ def interact(statement, response=None):
     print(statement)
     if user_info.NOISY: os.system('say "{}"'.format(statement))
     if response:
-        bringback = Sentence(input("> "))
+        bringback = input("> ")
+        numbers = {
+            '1': "first",
+            '2': "second",
+            '3': "third",
+            '4': "fourth",
+            '5': "fifth",
+        }
+        if bringback in numbers.keys():
+            bringback = Sentence(numbers[bringback])
+        else:
+            bringback = Sentence(bringback)
         ordinal = bringback.get_parts("OR")
-        declines = ['none', 'neither']
+        declines = ['none', 'neither', 'no', 'nope']
         negatives = ['no', 'nope']
         positives = ['yes', 'yep', 'yeah']
     
         if response == 'list':
             if ordinal:
-                if user_info.VERBOSE: print("ORDINALS: ", ordinal)
-                return vocab.vocabulary[ordinal[0]]['value']
-            elif bringback.lower() in declines:
+                if user_info.VERBOSE: print("ORDINALS:", ordinal)
+                int_version = vocab.vocabulary[ordinal[0]]['value']
+                return int_version
+            elif bringback.get_parts("??")[0] in declines:
                 return None
-            if user_info.VERBOSE: print("NUMBER:", int(bringback))
-            return int(bringback)
         
         elif response == 'y_n':
             if bringback.lower() in negatives:
@@ -324,7 +346,7 @@ def process(line):
     
     sentence = Sentence(line)
     
-    if user_info.VERBOSE: print("SENTENCE:", sentence)
+    if user_info.VERBOSE: print("SENTENCE:", repr(sentence))
     if user_info.VERBOSE: print("KIND:", sentence.kind)
     
     if sentence.kind == "IMP" or sentence.kind == "INT":

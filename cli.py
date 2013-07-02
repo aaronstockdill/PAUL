@@ -9,9 +9,7 @@ Author: Aaron Stockdill
 #from brain import *
 
 import brain2
-
 from sys import argv
-
 
 def main():
     """ The main function, how the system is mostly interacted with """

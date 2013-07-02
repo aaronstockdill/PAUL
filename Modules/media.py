@@ -29,6 +29,8 @@ def simple_commands(action):
 def process(sentence):
     ''' Process the sentence '''
     
+    sentence.replace_it()
+    
     verb = sentence.get_parts("VB")[0]
     
     commands = {
@@ -65,8 +67,24 @@ def main():
         "back": lambda sentence: process(sentence),
     }
     
-    user_info.nouns_association.update(known_nouns)
-    user_info.verbs_association.update(known_verbs)
+    words = {
+        "itunes": ("media", "noun"),
+        "music": ("media", "verb"),
+        "play": ("media", "verb"), 
+        "pause": ("media", "verb"), 
+        "stop": ("media", "verb"), 
+        "next": ("media", "verb"), 
+        "previous": ("media", "verb"), 
+        "skip": ("media", "verb"),
+        "back": ("media", "verb"),
+    }
+    
+    #user_info.nouns_association.update(known_nouns)
+    #user_info.verbs_association.update(known_verbs)
+    
+    #user_info.word_associations.update(words)
+    user_info.associate(words)
+    user_info.word_actions["media"] = lambda sentence: process(sentence)
     
     if user_info.VERBOSE: print("Successfully imported", __name__)
 
