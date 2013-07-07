@@ -1,0 +1,375 @@
+Thu,04-Jul-2013~20:16 Successfully imported Modules.clock
+Thu,04-Jul-2013~20:16 Successfully imported Modules.clock
+Thu,04-Jul-2013~20:16 Successfully imported Modules.discover
+Thu,04-Jul-2013~20:16 Successfully imported Modules.finder
+Thu,04-Jul-2013~20:16 Successfully imported Modules.media
+Thu,04-Jul-2013~20:16 Successfully imported Modules.weather
+Thu,04-Jul-2013~20:16 Successfully imported Modules.wikipedia
+Thu,04-Jul-2013~20:16 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,04-Jul-2013~20:16 KIND: INT
+Thu,04-Jul-2013~20:16 ACTIONS: {'clock': 1}
+Thu,04-Jul-2013~20:16 WEIGHTS: {1: ['clock']}
+Thu,04-Jul-2013~20:16 BEST: clock
+Thu,04-Jul-2013~20:16 KEYWORDS: ['time']
+Thu,04-Jul-2013~21:47 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,04-Jul-2013~21:47 KIND: INT
+Thu,04-Jul-2013~21:47 ACTIONS: {'clock': 1}
+Thu,04-Jul-2013~21:47 WEIGHTS: {1: ['clock']}
+Thu,04-Jul-2013~21:47 BEST: clock
+Thu,04-Jul-2013~21:47 KEYWORDS: ['time']
+Thu,04-Jul-2013~21:47 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,04-Jul-2013~21:47 KIND: INT
+Thu,04-Jul-2013~21:47 ACTIONS: {'clock': 1}
+Thu,04-Jul-2013~21:47 WEIGHTS: {1: ['clock']}
+Thu,04-Jul-2013~21:47 BEST: clock
+Thu,04-Jul-2013~21:47 KEYWORDS: ['day']
+Thu,04-Jul-2013~21:56 SENTENCE: [('You', 'PS'), ('will', 'VB'), ('it', 'PO'), ('be', 'VB'), ('cold', 'NO'), ('tomorrow', 'NO')]
+Thu,04-Jul-2013~21:56 KIND: IMP
+Thu,04-Jul-2013~21:56 ACTIONS: {'weather': 2}
+Thu,04-Jul-2013~21:56 WEIGHTS: {2: ['weather']}
+Thu,04-Jul-2013~21:56 BEST: weather
+Thu,04-Jul-2013~21:56 KEYWORDS: [('tomorrow', 5)]
+Thu,04-Jul-2013~21:56 Successfully imported Modules.clock
+Thu,04-Jul-2013~21:56 Successfully imported Modules.discover
+Thu,04-Jul-2013~21:56 Successfully imported Modules.finder
+Thu,04-Jul-2013~21:56 Successfully imported Modules.media
+Thu,04-Jul-2013~21:56 Successfully imported Modules.weather
+Thu,04-Jul-2013~21:56 Successfully imported Modules.wikipedia
+Thu,04-Jul-2013~21:56 SENTENCE: [('You', 'PS'), ('will', 'VB'), ('it', 'PO'), ('be', 'VB'), ('cold', 'NO'), ('tomorrow', 'NO')]
+Thu,04-Jul-2013~21:56 KIND: IMP
+Thu,04-Jul-2013~21:56 ACTIONS: {'weather': 2}
+Thu,04-Jul-2013~21:56 WEIGHTS: {2: ['weather']}
+Thu,04-Jul-2013~21:56 BEST: weather
+Thu,04-Jul-2013~21:56 KEYWORDS: [('tomorrow', 5)]
+Thu,04-Jul-2013~21:56 TODAY: 3
+Thu,04-Jul-2013~21:56 DAY: 2
+Thu,04-Jul-2013~21:56 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="9"  date="Thu, 04 Jul 2013 9:01 pm NZST" />\n', '<yweather:forecast day="Thu" date="4 Jul 2013" low="4" high="13" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Fri" date="5 Jul 2013" low="9" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="6 Jul 2013" low="8" high="14" text="AM Showers/Wind" code="39" />\n', '<yweather:forecast day="Sun" date="7 Jul 2013" low="1" high="13" text="Partly Cloudy/Wind" code="24" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n']
+Thu,04-Jul-2013~21:56 ITEMS: ['day', 'Fri', 'date', '5 Jul 2013', 'low', '9', 'high', '16', 'text', 'Partly Cloudy', 'code', '30']
+Thu,04-Jul-2013~22:00 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Thu,04-Jul-2013~22:00 KIND: IMP
+Thu,04-Jul-2013~22:00 ACTIONS: {'loader': 1}
+Thu,04-Jul-2013~22:00 WEIGHTS: {1: ['loader']}
+Thu,04-Jul-2013~22:00 BEST: loader
+Thu,04-Jul-2013~22:00 Successfully imported Modules.clock
+Thu,04-Jul-2013~22:00 Successfully imported Modules.discover
+Thu,04-Jul-2013~22:00 Successfully imported Modules.finder
+Thu,04-Jul-2013~22:00 Successfully imported Modules.media
+Thu,04-Jul-2013~22:00 Successfully imported Modules.weather
+Thu,04-Jul-2013~22:00 Successfully imported Modules.wikipedia
+Thu,04-Jul-2013~22:00 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cold', 'NO')]
+Thu,04-Jul-2013~22:00 KIND: IMP
+Thu,04-Jul-2013~22:00 ACTIONS: {'weather': 1}
+Thu,04-Jul-2013~22:00 WEIGHTS: {1: ['weather']}
+Thu,04-Jul-2013~22:00 BEST: weather
+Thu,04-Jul-2013~22:00 KEYWORDS: []
+Thu,04-Jul-2013~22:00 TODAY: 3
+Thu,04-Jul-2013~22:00 DAY: 0
+Thu,04-Jul-2013~22:00 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="48"  date="Thu, 04 Jul 2013 9:01 pm NZST" />\n', '<yweather:forecast day="Thu" date="4 Jul 2013" low="39" high="56" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Fri" date="5 Jul 2013" low="48" high="61" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="6 Jul 2013" low="47" high="58" text="AM Showers/Wind" code="39" />\n', '<yweather:forecast day="Sun" date="7 Jul 2013" low="34" high="55" text="Partly Cloudy/Wind" code="24" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="37" high="53" text="Partly Cloudy" code="30" />\n']
+Thu,04-Jul-2013~22:00 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '48', 'date', 'Thu, 04 Jul 2013 9:01 pm NZST']
+Thu,04-Jul-2013~22:01 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Thu,04-Jul-2013~22:01 KIND: IMP
+Thu,04-Jul-2013~22:01 ACTIONS: {'loader': 1}
+Thu,04-Jul-2013~22:01 WEIGHTS: {1: ['loader']}
+Thu,04-Jul-2013~22:01 BEST: loader
+Thu,04-Jul-2013~22:01 Successfully imported Modules.clock
+Thu,04-Jul-2013~22:01 Successfully imported Modules.discover
+Thu,04-Jul-2013~22:01 Successfully imported Modules.finder
+Thu,04-Jul-2013~22:01 Successfully imported Modules.media
+Thu,04-Jul-2013~22:01 Successfully imported Modules.weather
+Thu,04-Jul-2013~22:01 Successfully imported Modules.wikipedia
+Thu,04-Jul-2013~22:01 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,04-Jul-2013~22:01 KIND: INT
+Thu,04-Jul-2013~22:01 ACTIONS: {'weather': 1}
+Thu,04-Jul-2013~22:01 WEIGHTS: {1: ['weather']}
+Thu,04-Jul-2013~22:01 BEST: weather
+Thu,04-Jul-2013~22:01 KEYWORDS: []
+Thu,04-Jul-2013~22:01 TODAY: 3
+Thu,04-Jul-2013~22:01 DAY: 0
+Thu,04-Jul-2013~22:01 Successfully imported Modules.clock
+Thu,04-Jul-2013~22:01 Successfully imported Modules.discover
+Thu,04-Jul-2013~22:01 Successfully imported Modules.finder
+Thu,04-Jul-2013~22:01 Successfully imported Modules.media
+Thu,04-Jul-2013~22:01 Successfully imported Modules.weather
+Thu,04-Jul-2013~22:01 Successfully imported Modules.wikipedia
+Thu,04-Jul-2013~22:01 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cold', 'NO')]
+Thu,04-Jul-2013~22:01 KIND: IMP
+Thu,04-Jul-2013~22:01 ACTIONS: {'weather': 1}
+Thu,04-Jul-2013~22:01 WEIGHTS: {1: ['weather']}
+Thu,04-Jul-2013~22:01 BEST: weather
+Thu,04-Jul-2013~22:01 KEYWORDS: []
+Thu,04-Jul-2013~22:01 TODAY: 3
+Thu,04-Jul-2013~22:01 DAY: 0
+Thu,04-Jul-2013~22:01 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="9"  date="Thu, 04 Jul 2013 9:01 pm NZST" />\n', '<yweather:forecast day="Thu" date="4 Jul 2013" low="4" high="13" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Fri" date="5 Jul 2013" low="9" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="6 Jul 2013" low="8" high="14" text="AM Showers/Wind" code="39" />\n', '<yweather:forecast day="Sun" date="7 Jul 2013" low="1" high="13" text="Partly Cloudy/Wind" code="24" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n']
+Thu,04-Jul-2013~22:01 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '9', 'date', 'Thu, 04 Jul 2013 9:01 pm NZST']
+Thu,04-Jul-2013~22:43 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,04-Jul-2013~22:43 KIND: INT
+Thu,04-Jul-2013~22:43 ACTIONS: {'clock': 1}
+Thu,04-Jul-2013~22:43 WEIGHTS: {1: ['clock']}
+Thu,04-Jul-2013~22:43 BEST: clock
+Thu,04-Jul-2013~22:43 KEYWORDS: ['day']
+Thu,04-Jul-2013~22:43 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('date', 'NO')]
+Thu,04-Jul-2013~22:43 KIND: INT
+Thu,04-Jul-2013~22:43 ACTIONS: {'clock': 1}
+Thu,04-Jul-2013~22:43 WEIGHTS: {1: ['clock']}
+Thu,04-Jul-2013~22:43 BEST: clock
+Thu,04-Jul-2013~22:43 KEYWORDS: ['date']
+Thu,04-Jul-2013~22:43 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('the', 'AR'), ('friday', 'NO')]
+Thu,04-Jul-2013~22:43 KIND: IMP
+Thu,04-Jul-2013~22:43 ACTIONS: {'weather': 1}
+Thu,04-Jul-2013~22:43 WEIGHTS: {1: ['weather']}
+Thu,04-Jul-2013~22:43 BEST: weather
+Thu,04-Jul-2013~22:43 KEYWORDS: [('friday', 4)]
+Thu,04-Jul-2013~22:43 TODAY: 3
+Thu,04-Jul-2013~22:43 DAY: 2
+Thu,04-Jul-2013~22:43 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="8"  date="Thu, 04 Jul 2013 10:01 pm NZST" />\n', '<yweather:forecast day="Thu" date="4 Jul 2013" low="4" high="13" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Fri" date="5 Jul 2013" low="9" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="6 Jul 2013" low="8" high="14" text="AM Showers/Wind" code="39" />\n', '<yweather:forecast day="Sun" date="7 Jul 2013" low="1" high="13" text="Partly Cloudy/Wind" code="24" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n']
+Thu,04-Jul-2013~22:43 ITEMS: ['day', 'Fri', 'date', '5 Jul 2013', 'low', '9', 'high', '16', 'text', 'Partly Cloudy', 'code', '30']
+Thu,04-Jul-2013~22:44 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Thu,04-Jul-2013~22:44 KIND: IMP
+Thu,04-Jul-2013~22:44 ACTIONS: {'loader': 1}
+Thu,04-Jul-2013~22:44 WEIGHTS: {1: ['loader']}
+Thu,04-Jul-2013~22:44 BEST: loader
+Thu,04-Jul-2013~22:44 Successfully imported Modules.clock
+Thu,04-Jul-2013~22:44 Successfully imported Modules.discover
+Thu,04-Jul-2013~22:44 Successfully imported Modules.finder
+Thu,04-Jul-2013~22:44 Successfully imported Modules.media
+Thu,04-Jul-2013~22:44 Successfully imported Modules.weather
+Thu,04-Jul-2013~22:44 Successfully imported Modules.wikipedia
+Thu,04-Jul-2013~22:44 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('friday', 'NO')]
+Thu,04-Jul-2013~22:44 KIND: IMP
+Thu,04-Jul-2013~22:44 ACTIONS: {'clock': 1, 'weather': 1}
+Thu,04-Jul-2013~22:44 WEIGHTS: {1: ['clock', 'weather']}
+Thu,04-Jul-2013~22:44 BEST: clock
+Thu,04-Jul-2013~22:44 KEYWORDS: ['friday']
+Thu,04-Jul-2013~22:47 Successfully imported Modules.clock
+Thu,04-Jul-2013~22:47 Successfully imported Modules.discover
+Thu,04-Jul-2013~22:47 Successfully imported Modules.finder
+Thu,04-Jul-2013~22:47 Successfully imported Modules.media
+Thu,04-Jul-2013~22:47 Successfully imported Modules.weather
+Thu,04-Jul-2013~22:47 Successfully imported Modules.wikipedia
+Thu,04-Jul-2013~22:47 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('friday', 'NO')]
+Thu,04-Jul-2013~22:47 KIND: IMP
+Thu,04-Jul-2013~22:47 ACTIONS: {'weather': 1, 'clock': 1}
+Thu,04-Jul-2013~22:47 WEIGHTS: {1: ['weather', 'clock']}
+Thu,04-Jul-2013~22:47 BEST: weather
+Thu,04-Jul-2013~22:47 KEYWORDS: [('friday', 3)]
+Thu,04-Jul-2013~22:47 TODAY: 3
+Thu,04-Jul-2013~22:47 DAY: 2
+Thu,04-Jul-2013~22:47 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="8"  date="Thu, 04 Jul 2013 10:01 pm NZST" />\n', '<yweather:forecast day="Thu" date="4 Jul 2013" low="4" high="13" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Fri" date="5 Jul 2013" low="9" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="6 Jul 2013" low="8" high="14" text="AM Showers/Wind" code="39" />\n', '<yweather:forecast day="Sun" date="7 Jul 2013" low="1" high="13" text="Partly Cloudy/Wind" code="24" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n']
+Thu,04-Jul-2013~22:47 ITEMS: ['day', 'Fri', 'date', '5 Jul 2013', 'low', '9', 'high', '16', 'text', 'Partly Cloudy', 'code', '30']
+Thu,04-Jul-2013~22:48 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('the', 'AR'), ('day', 'NO'), ('friday', 'NO')]
+Thu,04-Jul-2013~22:48 KIND: IMP
+Thu,04-Jul-2013~22:48 ACTIONS: {'weather': 1, 'clock': 2}
+Thu,04-Jul-2013~22:48 WEIGHTS: {1: ['weather'], 2: ['clock']}
+Thu,04-Jul-2013~22:48 BEST: clock
+Thu,04-Jul-2013~22:48 KEYWORDS: ['day friday']
+Thu,04-Jul-2013~22:50 Successfully imported Modules.clock
+Thu,04-Jul-2013~22:50 Successfully imported Modules.discover
+Thu,04-Jul-2013~22:50 Successfully imported Modules.finder
+Thu,04-Jul-2013~22:50 Successfully imported Modules.media
+Thu,04-Jul-2013~22:50 Successfully imported Modules.weather
+Thu,04-Jul-2013~22:50 Successfully imported Modules.wikipedia
+Thu,04-Jul-2013~22:51 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('the', 'AR'), ('day', 'NO'), ('friday', 'NO')]
+Thu,04-Jul-2013~22:51 KIND: IMP
+Thu,04-Jul-2013~22:51 ACTIONS: {'clock': 2, 'weather': 1}
+Thu,04-Jul-2013~22:51 WEIGHTS: {1: ['weather'], 2: ['clock']}
+Thu,04-Jul-2013~22:51 BEST: clock
+Thu,04-Jul-2013~22:51 KEYWORDS: [['day', 'friday']]
+Thu,04-Jul-2013~22:51 Successfully imported Modules.clock
+Thu,04-Jul-2013~22:51 Successfully imported Modules.discover
+Thu,04-Jul-2013~22:51 Successfully imported Modules.finder
+Thu,04-Jul-2013~22:51 Successfully imported Modules.media
+Thu,04-Jul-2013~22:51 Successfully imported Modules.weather
+Thu,04-Jul-2013~22:51 Successfully imported Modules.wikipedia
+Thu,04-Jul-2013~22:52 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('the', 'AR'), ('day', 'NO'), ('friday', 'NO')]
+Thu,04-Jul-2013~22:52 KIND: IMP
+Thu,04-Jul-2013~22:52 ACTIONS: {'clock': 2, 'weather': 1}
+Thu,04-Jul-2013~22:52 WEIGHTS: {1: ['weather'], 2: ['clock']}
+Thu,04-Jul-2013~22:52 BEST: clock
+Thu,04-Jul-2013~22:52 KEYWORDS: ['day', 'friday']
+Thu,04-Jul-2013~22:52 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,04-Jul-2013~22:52 KIND: INT
+Thu,04-Jul-2013~22:52 ACTIONS: {'clock': 1}
+Thu,04-Jul-2013~22:52 WEIGHTS: {1: ['clock']}
+Thu,04-Jul-2013~22:52 BEST: clock
+Thu,04-Jul-2013~22:52 KEYWORDS: ['day']
+Thu,04-Jul-2013~22:57 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('friday', 'NO')]
+Thu,04-Jul-2013~22:57 KIND: IMP
+Thu,04-Jul-2013~22:57 ACTIONS: {'clock': 1, 'weather': 1}
+Thu,04-Jul-2013~22:57 WEIGHTS: {1: ['clock', 'weather']}
+Thu,04-Jul-2013~22:57 BEST: clock
+Thu,04-Jul-2013~22:57 KEYWORDS: ['friday']
+Thu,04-Jul-2013~22:57 SENTENCE: [('You', 'PS'), ('find', 'VB')]
+Thu,04-Jul-2013~22:57 KIND: IMP
+Thu,04-Jul-2013~22:57 ACTIONS: {'finder': 1, 'wikipedia': 1}
+Thu,04-Jul-2013~22:57 WEIGHTS: {1: ['finder', 'wikipedia']}
+Thu,04-Jul-2013~22:57 BEST: finder
+Thu,04-Jul-2013~22:57 KEYWORDS: []
+Thu,04-Jul-2013~23:05 Successfully imported Modules.clock
+Thu,04-Jul-2013~23:05 Successfully imported Modules.discover
+Thu,04-Jul-2013~23:05 Successfully imported Modules.finder
+Thu,04-Jul-2013~23:05 Successfully imported Modules.media
+Thu,04-Jul-2013~23:05 Successfully imported Modules.weather
+Thu,04-Jul-2013~23:05 Successfully imported Modules.wikipedia
+Thu,04-Jul-2013~23:06 Successfully imported Modules.clock
+Thu,04-Jul-2013~23:06 Successfully imported Modules.discover
+Thu,04-Jul-2013~23:06 Successfully imported Modules.finder
+Thu,04-Jul-2013~23:06 Successfully imported Modules.media
+Thu,04-Jul-2013~23:06 Successfully imported Modules.weather
+Thu,04-Jul-2013~23:06 Successfully imported Modules.wikipedia
+Thu,04-Jul-2013~23:06 SENTENCE: [('You', 'PS'), ('find', 'VB')]
+Thu,04-Jul-2013~23:06 KIND: IMP
+Thu,04-Jul-2013~23:06 ACTIONS: {'wikipedia': 1, 'finder': 1}
+Thu,04-Jul-2013~23:06 WEIGHTS: {1: ['wikipedia', 'finder']}
+Thu,04-Jul-2013~23:06 BEST: wikipedia
+Thu,04-Jul-2013~23:06 KEYWORDS: []
+Thu,04-Jul-2013~23:07 Successfully imported Modules.clock
+Thu,04-Jul-2013~23:07 Successfully imported Modules.discover
+Thu,04-Jul-2013~23:07 Successfully imported Modules.finder
+Thu,04-Jul-2013~23:07 Successfully imported Modules.media
+Thu,04-Jul-2013~23:07 Successfully imported Modules.weather
+Thu,04-Jul-2013~23:07 Successfully imported Modules.wikipedia
+Thu,04-Jul-2013~23:07 SENTENCE: [('You', 'PS'), ('find', 'VB')]
+Thu,04-Jul-2013~23:07 KIND: IMP
+Thu,04-Jul-2013~23:07 ACTIONS: {'finder': 1, 'wikipedia': 1}
+Thu,04-Jul-2013~23:07 WEIGHTS: {1: ['finder', 'wikipedia']}
+Thu,04-Jul-2013~23:07 BEST: finder
+Thu,04-Jul-2013~23:07 KEYWORDS: []
+Thu,04-Jul-2013~23:07 Successfully imported Modules.clock
+Thu,04-Jul-2013~23:07 Successfully imported Modules.discover
+Thu,04-Jul-2013~23:07 Successfully imported Modules.finder
+Thu,04-Jul-2013~23:07 Successfully imported Modules.media
+Thu,04-Jul-2013~23:07 Successfully imported Modules.weather
+Thu,04-Jul-2013~23:07 Successfully imported Modules.wikipedia
+Thu,04-Jul-2013~23:07 SENTENCE: [('You', 'PS'), ('find', 'VB')]
+Thu,04-Jul-2013~23:07 KIND: IMP
+Thu,04-Jul-2013~23:07 ACTIONS: {'wikipedia': 1, 'finder': 1}
+Thu,04-Jul-2013~23:07 WEIGHTS: {1: ['wikipedia', 'finder']}
+Thu,04-Jul-2013~23:07 BEST: wikipedia
+Thu,04-Jul-2013~23:07 KEYWORDS: []
+Thu,04-Jul-2013~23:09 Successfully imported Modules.clock
+Thu,04-Jul-2013~23:09 Successfully imported Modules.discover
+Thu,04-Jul-2013~23:09 Successfully imported Modules.finder
+Thu,04-Jul-2013~23:09 Successfully imported Modules.media
+Thu,04-Jul-2013~23:09 Successfully imported Modules.weather
+Thu,04-Jul-2013~23:09 Successfully imported Modules.wikipedia
+Thu,04-Jul-2013~23:09 SENTENCE: [('You', 'PS'), ('find', 'VB')]
+Thu,04-Jul-2013~23:09 KIND: IMP
+Thu,04-Jul-2013~23:09 ACTIONS: {'finder': 1, 'wikipedia': 1}
+Thu,04-Jul-2013~23:09 WEIGHTS: {1: ['finder', 'wikipedia']}
+Thu,04-Jul-2013~23:09 BEST: finder
+Thu,04-Jul-2013~23:09 KEYWORDS: []
+Thu,04-Jul-2013~23:09 SENTENCE: [('You', 'PS'), ('find', 'VB')]
+Thu,04-Jul-2013~23:09 KIND: IMP
+Thu,04-Jul-2013~23:09 ACTIONS: {'finder': 1, 'wikipedia': 1}
+Thu,04-Jul-2013~23:09 WEIGHTS: {1: ['finder', 'wikipedia']}
+Thu,04-Jul-2013~23:09 BEST: finder
+Thu,04-Jul-2013~23:09 KEYWORDS: []
+Thu,04-Jul-2013~23:10 Successfully imported Modules.clock
+Thu,04-Jul-2013~23:10 Successfully imported Modules.discover
+Thu,04-Jul-2013~23:10 Successfully imported Modules.finder
+Thu,04-Jul-2013~23:10 Successfully imported Modules.media
+Thu,04-Jul-2013~23:10 Successfully imported Modules.weather
+Thu,04-Jul-2013~23:10 Successfully imported Modules.wikipedia
+Thu,04-Jul-2013~23:10 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cold', 'NO')]
+Thu,04-Jul-2013~23:10 KIND: IMP
+Thu,04-Jul-2013~23:10 ACTIONS: {'weather': 1}
+Thu,04-Jul-2013~23:10 WEIGHTS: {1: ['weather']}
+Thu,04-Jul-2013~23:10 BEST: weather
+Thu,04-Jul-2013~23:10 KEYWORDS: []
+Thu,04-Jul-2013~23:10 TODAY: 3
+Thu,04-Jul-2013~23:10 DAY: 0
+Thu,04-Jul-2013~23:10 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="8"  date="Thu, 04 Jul 2013 10:01 pm NZST" />\n', '<yweather:forecast day="Thu" date="4 Jul 2013" low="4" high="13" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Fri" date="5 Jul 2013" low="9" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="6 Jul 2013" low="8" high="14" text="AM Showers/Wind" code="39" />\n', '<yweather:forecast day="Sun" date="7 Jul 2013" low="1" high="13" text="Partly Cloudy/Wind" code="24" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n']
+Thu,04-Jul-2013~23:10 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '8', 'date', 'Thu, 04 Jul 2013 10:01 pm NZST']
+Thu,04-Jul-2013~23:10 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cold', 'NO'), ('tomorrow', 'NO')]
+Thu,04-Jul-2013~23:10 KIND: IMP
+Thu,04-Jul-2013~23:10 ACTIONS: {'weather': 2}
+Thu,04-Jul-2013~23:10 WEIGHTS: {2: ['weather']}
+Thu,04-Jul-2013~23:10 BEST: weather
+Thu,04-Jul-2013~23:10 KEYWORDS: [('tomorrow', 4)]
+Thu,04-Jul-2013~23:10 TODAY: 3
+Thu,04-Jul-2013~23:10 DAY: 2
+Thu,04-Jul-2013~23:10 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="8"  date="Thu, 04 Jul 2013 10:01 pm NZST" />\n', '<yweather:forecast day="Thu" date="4 Jul 2013" low="4" high="13" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Fri" date="5 Jul 2013" low="9" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="6 Jul 2013" low="8" high="14" text="AM Showers/Wind" code="39" />\n', '<yweather:forecast day="Sun" date="7 Jul 2013" low="1" high="13" text="Partly Cloudy/Wind" code="24" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n']
+Thu,04-Jul-2013~23:10 ITEMS: ['day', 'Fri', 'date', '5 Jul 2013', 'low', '9', 'high', '16', 'text', 'Partly Cloudy', 'code', '30']
+Thu,04-Jul-2013~23:10 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cold', 'NO'), ('tuesday', 'NO')]
+Thu,04-Jul-2013~23:10 KIND: IMP
+Thu,04-Jul-2013~23:10 ACTIONS: {'clock': 1, 'weather': 2}
+Thu,04-Jul-2013~23:10 WEIGHTS: {1: ['clock'], 2: ['weather']}
+Thu,04-Jul-2013~23:10 BEST: weather
+Thu,04-Jul-2013~23:10 KEYWORDS: [('tuesday', 4)]
+Thu,04-Jul-2013~23:10 TODAY: 3
+Thu,04-Jul-2013~23:10 DAY: -1
+Thu,04-Jul-2013~23:10 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="8"  date="Thu, 04 Jul 2013 10:01 pm NZST" />\n', '<yweather:forecast day="Thu" date="4 Jul 2013" low="4" high="13" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Fri" date="5 Jul 2013" low="9" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="6 Jul 2013" low="8" high="14" text="AM Showers/Wind" code="39" />\n', '<yweather:forecast day="Sun" date="7 Jul 2013" low="1" high="13" text="Partly Cloudy/Wind" code="24" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n']
+Thu,04-Jul-2013~23:10 ITEMS: ['day', 'Mon', 'date', '8 Jul 2013', 'low', '3', 'high', '12', 'text', 'Partly Cloudy', 'code', '30']
+Thu,04-Jul-2013~23:13 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Thu,04-Jul-2013~23:13 KIND: IMP
+Thu,04-Jul-2013~23:13 ACTIONS: {'loader': 1}
+Thu,04-Jul-2013~23:13 WEIGHTS: {1: ['loader']}
+Thu,04-Jul-2013~23:13 BEST: loader
+Thu,04-Jul-2013~23:13 Successfully imported Modules.clock
+Thu,04-Jul-2013~23:13 Successfully imported Modules.discover
+Thu,04-Jul-2013~23:13 Successfully imported Modules.finder
+Thu,04-Jul-2013~23:13 Successfully imported Modules.media
+Thu,04-Jul-2013~23:13 Successfully imported Modules.weather
+Thu,04-Jul-2013~23:13 Successfully imported Modules.wikipedia
+Thu,04-Jul-2013~23:13 SENTENCE: [('You', 'PS'), ('will', 'VB'), ('it', 'PO'), ('be', 'VB'), ('cold', 'NO'), ('on', 'PP'), ('tuesday', 'NO')]
+Thu,04-Jul-2013~23:13 KIND: IMP
+Thu,04-Jul-2013~23:13 ACTIONS: {'weather': 2, 'clock': 1}
+Thu,04-Jul-2013~23:13 WEIGHTS: {1: ['clock'], 2: ['weather']}
+Thu,04-Jul-2013~23:13 BEST: weather
+Thu,04-Jul-2013~23:13 KEYWORDS: [('tuesday', 6)]
+Thu,04-Jul-2013~23:13 TODAY: 3
+Thu,04-Jul-2013~23:13 DAY: -1
+Thu,04-Jul-2013~23:13 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="8"  date="Thu, 04 Jul 2013 10:01 pm NZST" />\n', '<yweather:forecast day="Thu" date="4 Jul 2013" low="4" high="13" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Fri" date="5 Jul 2013" low="9" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="6 Jul 2013" low="8" high="14" text="AM Showers/Wind" code="39" />\n', '<yweather:forecast day="Sun" date="7 Jul 2013" low="1" high="13" text="Partly Cloudy/Wind" code="24" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n']
+Thu,04-Jul-2013~23:13 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,04-Jul-2013~23:13 KIND: INT
+Thu,04-Jul-2013~23:13 ACTIONS: {'clock': 1}
+Thu,04-Jul-2013~23:13 WEIGHTS: {1: ['clock']}
+Thu,04-Jul-2013~23:13 BEST: clock
+Thu,04-Jul-2013~23:13 KEYWORDS: ['day']
+Thu,04-Jul-2013~23:13 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,04-Jul-2013~23:13 KIND: INT
+Thu,04-Jul-2013~23:13 ACTIONS: {'clock': 1}
+Thu,04-Jul-2013~23:13 WEIGHTS: {1: ['clock']}
+Thu,04-Jul-2013~23:13 BEST: clock
+Thu,04-Jul-2013~23:13 KEYWORDS: ['time']
+Thu,04-Jul-2013~23:13 SENTENCE: [('what', 'WH'), ('month', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,04-Jul-2013~23:13 KIND: INT
+Thu,04-Jul-2013~23:13 ACTIONS: {'clock': 1}
+Thu,04-Jul-2013~23:13 WEIGHTS: {1: ['clock']}
+Thu,04-Jul-2013~23:13 BEST: clock
+Thu,04-Jul-2013~23:13 KEYWORDS: ['month']
+Thu,04-Jul-2013~23:14 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('friday', 'NO')]
+Thu,04-Jul-2013~23:14 KIND: IMP
+Thu,04-Jul-2013~23:14 ACTIONS: {'clock': 1, 'weather': 1}
+Thu,04-Jul-2013~23:14 WEIGHTS: {1: ['clock', 'weather']}
+Thu,04-Jul-2013~23:14 BEST: clock
+Thu,04-Jul-2013~23:14 KEYWORDS: ['friday']
+Sun,07-Jul-2013~16:06 Successfully imported Modules.clock
+Sun,07-Jul-2013~16:06 Successfully imported Modules.discover
+Sun,07-Jul-2013~16:06 Successfully imported Modules.finder
+Sun,07-Jul-2013~16:06 Successfully imported Modules.media
+Sun,07-Jul-2013~16:06 Successfully imported Modules.weather
+Sun,07-Jul-2013~16:06 Successfully imported Modules.wikipedia
+Sun,07-Jul-2013~16:06 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sun,07-Jul-2013~16:06 KIND: INT
+Sun,07-Jul-2013~16:06 ACTIONS: {'clock': 1}
+Sun,07-Jul-2013~16:06 WEIGHTS: {1: ['clock']}
+Sun,07-Jul-2013~16:06 BEST: clock
+Sun,07-Jul-2013~16:06 KEYWORDS: ['time']
+Sun,07-Jul-2013~16:07 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sun,07-Jul-2013~16:07 KIND: INT
+Sun,07-Jul-2013~16:07 ACTIONS: {'clock': 1}
+Sun,07-Jul-2013~16:07 WEIGHTS: {1: ['clock']}
+Sun,07-Jul-2013~16:07 BEST: clock
+Sun,07-Jul-2013~16:07 KEYWORDS: ['day']
+Sun,07-Jul-2013~16:07 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('friady', '??')]
+Sun,07-Jul-2013~16:07 KIND: IMP
+Sun,07-Jul-2013~16:07 ACTIONS: {}
+Sun,07-Jul-2013~16:07 WEIGHTS: {}
+Sun,07-Jul-2013~16:07 IT: None
+Sun,07-Jul-2013~16:07 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('friday', 'NO')]
+Sun,07-Jul-2013~16:07 KIND: IMP
+Sun,07-Jul-2013~16:07 ACTIONS: {'clock': 1, 'weather': 1}
+Sun,07-Jul-2013~16:07 WEIGHTS: {1: ['clock', 'weather']}
+Sun,07-Jul-2013~16:07 BEST: clock
+Sun,07-Jul-2013~16:07 KEYWORDS: ['friday']

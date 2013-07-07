@@ -7,7 +7,7 @@ Author: Aaron Stockdill
 from tkinter import *
 from tkinter.ttk import *
 
-#from brain import *
+#from brain_old import *
 
 from brain2 import *
 from Modules.importer import *

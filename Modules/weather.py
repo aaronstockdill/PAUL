@@ -30,7 +30,7 @@ NOUNS = [
     "thursday",
     "friday",
     "saturday",
-    "sunday"
+    "sunday",
 ]
 
 def process(sentence):
@@ -50,10 +50,10 @@ def process(sentence):
         "humid",
     ]
     keywords = sentence.keywords(ignore)
-    keywords = [word for word in keywords if word[0] != 'weather']
-    if user_info.VERBOSE: print("KEYWORDS:", keywords)
+    keywords = [word for word in keywords]
+    user_info.log("KEYWORDS: " + str(keywords))
     today = datetime.date.today().weekday()
-    if user_info.VERBOSE: print("TODAY:", today)
+    user_info.log("TODAY: " + str(today))
     
     day_index = 0
     
@@ -67,21 +67,24 @@ def process(sentence):
     elif keywords[0][0] in weekdays:
         day_index = weekdays.index(keywords[0][0]) - today + 1
     
-    if user_info.VERBOSE: print("DAY:", day_index)
+    user_info.log("DAY: " + str(day_index))
     
     return weather(day_index)
+
+
 
 def weather(day_index=0):
     ''' Simply get the weather for today '''
     try:
         page = urllib.request.urlopen("http://weather.yahooapis.com/"
-               "forecastrss?u=c&w=" + user_info.info['woeid'])
+               "forecastrss?u=" + user_info.info['temp'].lower() + "&w="
+               + user_info.info['woeid'])
     except urllib.error.URLError:
         return "I couldn't retrieve the weather."
     lines = page.readlines()
     lines = [str(line, encoding='utf8') for line in lines[28:48]
              if str(line, encoding='utf8').startswith("<yweather")]
-    if user_info.VERBOSE: print("WEATHER_RAW:", lines)
+    user_info.log("WEATHER_RAW: " + str(lines))
     
     user_info.info['it'] = "http://weather.yahoo.com/"
     
@@ -89,64 +92,39 @@ def weather(day_index=0):
         items = lines[day_index].split("\"")[1:-1]
         items = ['text'] + [item.strip().strip('=') for item in items]
     
-        if user_info.VERBOSE: print(items)
+        user_info.log("ITEMS: " + str(items))
     
         condition = items[1].lower()
         temp = int(items[5])
         
-        return "It's {}°C, and {}.".format(temp, condition)
+        return "It's {}°{}, and {}.".format(temp, user_info.info['temp'],
+                                            condition)
+    
+    elif day_index < 0:
+        return "I can't see that far ahead. Sorry!"
     
     else:
         items = lines[day_index].split("\"")[1:-1]
         items = ['day'] + [item.strip().strip('=') for item in items]
     
-        if user_info.VERBOSE: print("ITEMS:", items)
+        user_info.log("ITEMS: " + str(items))
     
         condition = items[9].lower()
         temp = "{} to {}".format(items[5], items[7])
     
         return ("It will have a low of "
-               "{}°C, a high of {}°C, and will be {}.".format(
-               items[5], items[7], items[9].lower()))
+               "{}°{}, a high of {}°{}, and will be {}.".format(
+               items[5], user_info.info['temp'], items[7],
+               user_info.info['temp'], items[9].lower()))
 
 def main():
     ''' The main function '''
     
-#    known_nouns = {
-#        "weather": lambda sentence: process(sentence),
-#        "forecast": lambda sentence: process(sentence),
-#        "rainy": lambda sentence: process(sentence), 
-#        "rain": lambda sentence: process(sentence),
-#        "raining": lambda sentence: process(sentence), 
-#        "sun": lambda sentence: process(sentence),
-#        "sunny": lambda sentence: process(sentence), 
-#        "temperature": lambda sentence: process(sentence),
-#        "cold": lambda sentence: process(sentence),
-#        "hot": lambda sentence: process(sentence),
-#        "humid": lambda sentence: process(sentence),
-#    }
-    
-#    words = {
-#        "weather": ("weather", "noun"),
-#        "forecast": ("weather", "noun"),
-#        "rainy": ("weather", "noun"),
-#        "rain": ("weather", "noun"),
-#        "raining": ("weather", "noun"),
-#        "sun": ("weather", "noun"),
-#        "sunny": ("weather", "noun"),
-#        "temperature": ("weather", "noun"),
-#        "cold": ("weather", "noun"),
-#        "hot": ("weather", "noun"),
-#        "humid": ("weather", "noun"),
-#    }
-    
     words = {word: ("weather", "noun") for word in NOUNS}
     
-    #user_info.nouns_association.update(known_nouns)
-    #user_info.word_associations.update(words)
     user_info.associate(words)
     user_info.word_actions["weather"] = lambda sentence: process(sentence)
     
-    if user_info.VERBOSE: print("Successfully imported", __name__)
+    user_info.log("Successfully imported " + __name__)
 
 main()

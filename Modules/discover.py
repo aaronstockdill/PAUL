@@ -26,10 +26,9 @@ def main():
     
     words = {word: ("discover", "noun") for word in NOUNS}
     
-    #user_info.word_associations.update(words)
     user_info.associate(words)
     user_info.word_actions["wikipedia"] = lambda sentence: process(sentence)
     
-    if user_info.VERBOSE: print("Successfully imported", __name__)
+    user_info.log("Successfully imported " + __name__)
 
 main()

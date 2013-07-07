@@ -6,7 +6,7 @@ line parser.
 Author: Aaron Stockdill
 """
 
-#from brain import *
+#from brain_old import *
 
 import brain2
 from sys import argv

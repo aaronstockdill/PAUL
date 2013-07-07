@@ -61,7 +61,7 @@ def choose(list_choices):
                          index, item in enumerate(list_choices)])
     choice = brain2.interact(question + options, "list")
     if choice is not None:
-        if user_info.VERBOSE: print("CHOICE:", choice)
+        user_info.log("CHOICE: " + str(choice))
         return list_choices[choice - 1]
     return None
     
@@ -85,7 +85,7 @@ def find(search, params="", look_in=False):
     #home = "/"
     
     command = 'mdfind -onlyin {}/ "{}{}"'.format(home, params, search)
-    if user_info.VERBOSE: print("COMMAND:", command)
+    user_info.log("COMMAND: " + command)
     
     results = os.popen(command).readlines()
     filtered_results = []
@@ -97,14 +97,13 @@ def find(search, params="", look_in=False):
                 append = False
         if append:
             filtered_results.append(line)
-    if user_info.VERBOSE: print("RESULTS FIRST 5:", filtered_results[:10])
+    user_info.log("RESULTS FIRST 5: " + str(filtered_results[:10]))
     
     if len(filtered_results) > 0:
         decision = choose(filtered_results[:5])
-        if user_info.VERBOSE: print("DECISION:", decision)
+        user_info.log("DECISION: " + str(decision))
         user_info.info["it"] = decision
-        if user_info.VERBOSE: print('IT: {}'.format(
-                                    user_info.info["it"]))
+        user_info.log('IT: {}'.format(user_info.info["it"]))
         return decision
     else:
         return None
@@ -195,7 +194,10 @@ def process(sentence):
     ignore = list(types.keys()) + list(commands.keys())
     
     keywords = sentence.keywords(ignore)
-    if user_info.VERBOSE: print("KEYWORDS:", keywords)
+    user_info.log("KEYWORDS: " + str(keywords))
+    
+    if keywords == []:
+        return "I don't understand. Sorry."
     
     if keywords[0][0] in types.keys():
         get_type = keywords[0][0]
@@ -205,6 +207,7 @@ def process(sentence):
         
     
     apps = ["app", "application", "program", "executable"]
+    
     
     search = keywords[0][0]
     
@@ -222,53 +225,13 @@ def process(sentence):
 
 def main():
     ''' The main function '''
-    
-#    known_nouns = {
-#        "file": lambda sentence: process(sentence), 
-#        "script": lambda sentence: process(sentence), 
-#        "document": lambda sentence: process(sentence), 
-#        "image": lambda sentence: process(sentence),
-#        "folder": lambda sentence: process(sentence),
-#        "application": lambda sentence: process(sentence),
-#        "app": lambda sentence: process(sentence),
-#    }
-#    
-#    known_verbs = {
-#        "open": lambda sentence: process(sentence),
-#        "launch": lambda sentence: process(sentence),
-#        "get": lambda sentence: process(sentence),
-#        "find": lambda sentence: process(sentence),
-#        "reveal": lambda sentence: process(sentence),
-#        "locate": lambda sentence: process(sentence),
-#    }
-#    
-#    words = {
-#        "file": ("finder", "noun"), 
-#        "script": ("finder", "noun"), 
-#        "document": ("finder", "noun"), 
-#        "image": ("finder", "noun"),
-#        "folder": ("finder", "noun"),
-#        "application": ("finder", "noun"),
-#        "app": ("finder", "noun"),
-#        "open": ("finder", "verb"),
-#        "launch": ("finder", "verb"),
-#        "get": ("finder", "verb"),
-#        "find": ("finder", "verb"),
-#        "reveal": ("finder", "verb"),
-#        "locate": ("finder", "verb"),
-#        "show": ("finder", "verb"),
-#    }
-#    
-#    user_info.nouns_association.update(known_nouns)
-#    user_info.verbs_association.update(known_verbs)
 
     words = {word: ("finder", "noun") for word in NOUNS}
     words.update({word: ("finder", "verb") for word in VERBS})
     
-    #user_info.word_associations.update(words)
     user_info.associate(words)
     user_info.word_actions["finder"] = lambda sentence: process(sentence)
     
-    if user_info.VERBOSE: print("Successfully imported", __name__)
+    user_info.log("Successfully imported " + __name__)
 
 main()

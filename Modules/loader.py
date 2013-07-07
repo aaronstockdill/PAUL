@@ -28,19 +28,6 @@ def process(sentence):
 def main():
     ''' The main function '''
     
-    known_nouns = {
-        "module": lambda sentence: process(sentence), 
-        "function": lambda sentence: process(sentence),
-    }
-    
-    known_verbs = {
-        "load": lambda sentence: process(sentence),
-        "reload": lambda sentence: process(sentence),
-        "relaunch": lambda sentence: process(sentence),
-        "restart": lambda sentence: process(sentence),
-        "reboot": lambda sentence: process(sentence),
-    }
-    
     words = {
         "module": ("loader", "noun"),
         "function": ("loader", "noun"),
@@ -51,10 +38,6 @@ def main():
         "reboot": ("loader", "verb"),
     }
     
-    #user_info.nouns_association.update(known_nouns)
-    #user_info.verbs_association.update(known_verbs)
-    
-    #user_info.word_associations.update(words)
     user_info.associate(words)
     user_info.word_actions["loader"] = lambda sentence: process(sentence)
     

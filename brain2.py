@@ -42,7 +42,7 @@ class Sentence(object):
         return iter(self.sentence)
         
 
-    def keywords(self, ignore=[]):
+    def keywords(self, ignore=[], include=[]):
         ''' Join things not split by prepositions and stuff, as they probably
             "belong" together. Ideal for getting keywords. If keywords have 
             been found before, use them rather than trying to find them 
@@ -50,12 +50,21 @@ class Sentence(object):
             is not stored in a variable, the performance hit is negligible. '''
         
         if self.keyword_list is not None:
-            if user_info.VERBOSE: print("KEYWORDS: Short-circuit successful.")
+            user_info.log("KEYWORDS: Short-circuit successful.")
             return self.keyword_list
         else:
             objects = self.get_parts("NO", True)
             names = self.get_parts("XO", True)
             keywords = self.get_parts("??", True)
+            
+            if include != []:
+                other = []
+                for key in include:
+                    part = self.get_parts(key, True)
+                    if part:
+                        other = other + part
+            else:
+                other = None
     
             all_together = []
     
@@ -65,6 +74,8 @@ class Sentence(object):
                 all_together += names
             if keywords:
                 all_together += keywords
+            if other:
+                all_together += other
     
             words = [item[0] for item in all_together if item[0] not in ignore]
             new_items = []
@@ -88,8 +99,8 @@ class Sentence(object):
     
     
     def group_together(self):
-        if user_info.VERBOSE: print("WARNING: use of 'group_together'"
-                                    "is deprecated. Use 'keywords' instead.")
+        user_info.log("WARNING: use of 'group_together' is deprecated."
+            " Use 'keywords' instead.")
         return self.keywords()
 
 
@@ -216,7 +227,7 @@ class Sentence(object):
         
         for i, word in enumerate(self.sentence):
             if word[0] == 'it':
-                if user_info.VERBOSE: print("IT:", user_info.info['it'])
+                user_info.log("IT: " + str(user_info.info['it']))
                 self.sentence.pop(i)
                 self.sentence.insert(i, (user_info.info["it"], "XO"))
 
@@ -234,16 +245,16 @@ def commands(sentence):
             for module in modules:
                 actions[module] = actions.get(module, 0) + 1
     
-    if user_info.VERBOSE: print("ACTIONS:", actions)
+    user_info.log("ACTIONS: " + str(actions))
     
     for key, value in actions.items():
         weights[value] = weights.get(value, []) + [key]
     
-    if user_info.VERBOSE: print("WEIGHTS:", weights)
+    user_info.log("WEIGHTS: " + str(weights))
     
     if weights != {}:
         best = weights[sorted(weights.keys(), reverse=True)[0]][0]
-        if user_info.VERBOSE: print("BEST:", best)
+        user_info.log("BEST: " + str(best))
         return user_info.word_actions[best](sentence)
     else:
         discover.process(sentence)
@@ -278,7 +289,7 @@ def interact(statement, response=None):
     
         if response == 'list':
             if ordinal:
-                if user_info.VERBOSE: print("ORDINALS:", ordinal)
+                user_info.log("ORDINALS: " + (ordinal))
                 int_version = vocab.vocabulary[ordinal[0]]['value']
                 return int_version
             elif bringback.get_parts("??")[0] in declines:
@@ -346,8 +357,8 @@ def process(line):
     
     sentence = Sentence(line)
     
-    if user_info.VERBOSE: print("SENTENCE:", repr(sentence))
-    if user_info.VERBOSE: print("KIND:", sentence.kind)
+    user_info.log("SENTENCE: " + repr(sentence))
+    user_info.log("KIND: " + sentence.kind)
     
     if sentence.kind == "IMP" or sentence.kind == "INT":
         response = commands(sentence)    

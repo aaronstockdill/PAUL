@@ -31,11 +31,12 @@ There is a more detailed guide at the bottom of this README [here]("#building-pa
 
 Not so much a roadmap as a wishlist:
 
-* Verb-based decisions too. If no nouns lead to somewhere, Paul should try and use the verbs to work out what is happening. E.g. so far finder has some hard-coded exceptions to the nouns rule. Why should it be special? let all apps add to a global 'verb dict' like the nouns do. We already handle verbs pretty good with the built-ins. **UPDATE:** This is partially implemented. If no known nouns are found, it searches the knwon verbs, and uses them. Modules must be updated to use this new functionality.
-* Reminders, events, time etc. This would be GREAT, but probably rather tricky.
+* Reminders, events, etc. This would be GREAT, but probably rather tricky.
 * An alternative to Wolfram Alpha would be nice, to get text results back, but nothing else comes close. Damn. Probably not happening.
 * Deeper music controls. Basic play and pause stuff is nice, but song requests, shuffle, all that sort of thing, could be so much better!
 * Brightness and volume (general system) controls. It'd be nice, hopefully not to difficult.
+* Conversational interaction. If you say something that isn't an instruction, PAUL gives back a generic acknowledgement. Something more relevant would be good. At this time, the plan is an ineraction module.
+* A weighted word association system. Not all words give the same information about which module it should be. For example, the weather module knows the days of the week, but so does the clock. Both score 1 point on "Is it Friday?", so which module gets used run is essentially random, and it can be tricky for the module to tell if it really is what was wanted, there are no clear hints that this is the wrong module from the words alone. If the words were weighted, it would be better. For example, using the day of the week in a sentence isn't actually that likely to be about the weather, it would have a low weighting for that module, but it is important to anything about a clock, so it would have a high weighting for that module. So it would be more like 0.7: clock.py and 0.3: weather -- clearly clock wins.
 
 ##Building PAUL Modules
 
@@ -61,7 +62,7 @@ The first thing is to do the basic setup:
         user_info.associate(words)
         user_info.word_actions["*module_name*"] = lambda sentence: process(sentence)
         
-        if user_info.VERBOSE: print("Successfully imported", __name__)
+        user_info.log("Successfully imported " + __name__)
     
     main()
 
@@ -91,7 +92,7 @@ Given all this information it is up to you to use it. Some functions are provide
 
     list_of_parts = sentence.get_parts(tag[, indexes=False, prepositions=False])
 
-For interacting with the user (if you want a repsonse, make it obvious how you want the reply, e.g. a list of a few options, or clearly a yes/no question):
+For interacting with the user (if you want a repsonse, make it obvious how you want the reply, e.g. a list of a few options, or clearly a yes/no question, then set response to either "list" or "y\_n"):
 
     user_response = brain2.interact(question[, response=None])
     
@@ -110,6 +111,8 @@ If your module has the potential to handle an 'it', such as a previously found u
 The function is "forward" is used if you can identify a sentence that the brain passed to you that is clearly not yours. Include a keyword that you think would help in finding the correct module, otherwise the user will not get any useful response.
 
     brain2.forward(sentence, keyword)
+
+To log anything, use the brain2.log(string) method, passing a what you want logged in the string. If the VERBOSE flag is set in user\_info, it will be shown on the screen. It is always logged to log.txt.
 
 More API functions tend to be added over time (as I find I need them). The rest is basically up to you, using standard Python programming, using the os module to execute applescript or other stuff as necessary. It's basically anything goes! Be as creative as you can, be it X10 Home Automation, jokes, or something else you've dreamed up!
 

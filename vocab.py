@@ -306,10 +306,6 @@ class Point(object):
 def add_new():
     """ Add all the new nouns and verbs from the modules """
     
-    for noun in user_info.nouns_association.keys():
-        vocabulary.update({noun: Noun(noun),})
-    for verb in user_info.verbs_association.keys():
-        vocabulary.update({verb: Verb(verb),})
     for word, values in user_info.word_associations.items():
         for _, pos in values:
             if pos == "verb":

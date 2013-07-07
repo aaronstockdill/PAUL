@@ -14,12 +14,12 @@ import vocab
 def simple_commands(action):
     ''' Execute simple commands '''
     
-    if user_info.VERBOSE: print("MEDIA:", action)
+    user_info.log("MEDIA: " + action)
     
     command = ('osascript -e "tell application \\"iTunes\\" to '
                '{}"'.format(action))
                
-    if user_info.VERBOSE: print("COMMAND:", command)
+    user_info.log("COMMAND: " + command)
     
     os.system(command)
     
@@ -53,19 +53,6 @@ def process(sentence):
 
 def main():
     ''' The main function '''
-    known_nouns = {
-        "itunes": lambda sentence: process(sentence),
-    }
-    
-    known_verbs = {
-        "play": lambda sentence: process(sentence), 
-        "pause": lambda sentence: process(sentence), 
-        "stop": lambda sentence: process(sentence), 
-        "next": lambda sentence: process(sentence), 
-        "previous": lambda sentence: process(sentence), 
-        "skip": lambda sentence: process(sentence),
-        "back": lambda sentence: process(sentence),
-    }
     
     words = {
         "itunes": ("media", "noun"),
@@ -79,13 +66,9 @@ def main():
         "back": ("media", "verb"),
     }
     
-    #user_info.nouns_association.update(known_nouns)
-    #user_info.verbs_association.update(known_verbs)
-    
-    #user_info.word_associations.update(words)
     user_info.associate(words)
     user_info.word_actions["media"] = lambda sentence: process(sentence)
     
-    if user_info.VERBOSE: print("Successfully imported", __name__)
+    user_info.log("Successfully imported " + __name__)
 
 main()
