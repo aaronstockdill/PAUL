@@ -15,6 +15,12 @@ while not exiting:
         exiting = True
     else:
         s.send(bytes(in_data, "utf-8"))
-        data = s.recv(1024)
-        print (str(data, encoding="utf8"))
+        done = False
+        while not done:
+            data = s.recv(1024)
+            data = str(data, encoding="utf8").strip()
+            if data == "paul_done":
+                done = True
+            else:
+                print(data)
 s.close()

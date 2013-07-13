@@ -517,3 +517,2388 @@ Sun,07-Jul-2013~17:44 Successfully imported Modules.finder
 Sun,07-Jul-2013~17:44 Successfully imported Modules.media
 Sun,07-Jul-2013~17:44 Successfully imported Modules.weather
 Sun,07-Jul-2013~17:44 Successfully imported Modules.wikipedia
+Sun,07-Jul-2013~18:07 Successfully imported Modules.clock
+Sun,07-Jul-2013~18:07 Successfully imported Modules.discover
+Sun,07-Jul-2013~18:07 Successfully imported Modules.finder
+Sun,07-Jul-2013~18:07 Successfully imported Modules.media
+Sun,07-Jul-2013~18:07 Successfully imported Modules.weather
+Sun,07-Jul-2013~18:07 Successfully imported Modules.wikipedia
+Sun,07-Jul-2013~18:07 SENTENCE: [('hello', '??')]
+Sun,07-Jul-2013~18:07 KIND: DEC
+Sun,07-Jul-2013~18:08 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('time', 'NO')]
+Sun,07-Jul-2013~18:08 KIND: INT
+Sun,07-Jul-2013~18:08 ACTIONS: {'clock': 1}
+Sun,07-Jul-2013~18:08 WEIGHTS: {1: ['clock']}
+Sun,07-Jul-2013~18:08 BEST: clock
+Sun,07-Jul-2013~18:08 KEYWORDS: ['time']
+Sun,07-Jul-2013~18:08 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sun,07-Jul-2013~18:08 KIND: INT
+Sun,07-Jul-2013~18:08 ACTIONS: {'clock': 1}
+Sun,07-Jul-2013~18:08 WEIGHTS: {1: ['clock']}
+Sun,07-Jul-2013~18:08 BEST: clock
+Sun,07-Jul-2013~18:08 KEYWORDS: ['day']
+Sun,07-Jul-2013~18:08 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('date', 'NO')]
+Sun,07-Jul-2013~18:08 KIND: INT
+Sun,07-Jul-2013~18:08 ACTIONS: {'clock': 1}
+Sun,07-Jul-2013~18:08 WEIGHTS: {1: ['clock']}
+Sun,07-Jul-2013~18:08 BEST: clock
+Sun,07-Jul-2013~18:08 KEYWORDS: ['date']
+Sun,07-Jul-2013~18:08 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cold', 'NO'), ('outside', 'PP')]
+Sun,07-Jul-2013~18:08 KIND: IMP
+Sun,07-Jul-2013~18:08 ACTIONS: {'weather': 1}
+Sun,07-Jul-2013~18:08 WEIGHTS: {1: ['weather']}
+Sun,07-Jul-2013~18:08 BEST: weather
+Sun,07-Jul-2013~18:08 KEYWORDS: []
+Sun,07-Jul-2013~18:08 TODAY: 6
+Sun,07-Jul-2013~18:08 DAY: 0
+Sun,07-Jul-2013~18:08 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="10"  date="Sun, 07 Jul 2013 5:00 pm NZST" />\n', '<yweather:forecast day="Sun" date="7 Jul 2013" low="2" high="13" text="Clear" code="31" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Sunny" code="32" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="10" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="3" high="8" text="AM Showers" code="39" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n']
+Sun,07-Jul-2013~18:08 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '10', 'date', 'Sun, 07 Jul 2013 5:00 pm NZST']
+Sun,07-Jul-2013~18:09 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('saturday', 'NO')]
+Sun,07-Jul-2013~18:09 KIND: IMP
+Sun,07-Jul-2013~18:09 ACTIONS: {'clock': 1, 'weather': 1}
+Sun,07-Jul-2013~18:09 WEIGHTS: {1: ['clock', 'weather']}
+Sun,07-Jul-2013~18:09 BEST: clock
+Sun,07-Jul-2013~18:09 KEYWORDS: ['saturday']
+Sun,07-Jul-2013~18:09 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('out', 'PP'), ('about', 'PP'), ('tomatos', '??')]
+Sun,07-Jul-2013~18:09 KIND: IMP
+Sun,07-Jul-2013~18:09 ACTIONS: {'finder': 1, 'wikipedia': 2}
+Sun,07-Jul-2013~18:09 WEIGHTS: {1: ['finder'], 2: ['wikipedia']}
+Sun,07-Jul-2013~18:09 BEST: wikipedia
+Sun,07-Jul-2013~18:09 KEYWORDS: [('tomatos', 4)]
+Sun,07-Jul-2013~18:09 URL ATTEMPT: http://en.wikipedia.org/wiki/tomatos
+Sun,07-Jul-2013~18:09 SENTENCE: [('You', 'PS'), ('play', 'VB')]
+Sun,07-Jul-2013~18:09 KIND: IMP
+Sun,07-Jul-2013~18:09 ACTIONS: {'media': 1}
+Sun,07-Jul-2013~18:09 WEIGHTS: {1: ['media']}
+Sun,07-Jul-2013~18:09 BEST: media
+Sun,07-Jul-2013~18:09 MEDIA: play
+Sun,07-Jul-2013~18:09 COMMAND: osascript -e "tell application \"iTunes\" to play"
+Sun,07-Jul-2013~18:10 SENTENCE: [('You', 'PS'), ('pause', 'VB')]
+Sun,07-Jul-2013~18:10 KIND: IMP
+Sun,07-Jul-2013~18:10 ACTIONS: {'media': 1}
+Sun,07-Jul-2013~18:10 WEIGHTS: {1: ['media']}
+Sun,07-Jul-2013~18:10 BEST: media
+Sun,07-Jul-2013~18:10 MEDIA: pause
+Sun,07-Jul-2013~18:10 COMMAND: osascript -e "tell application \"iTunes\" to pause"
+Sun,07-Jul-2013~18:10 SENTENCE: [('You', 'PS'), ('play', 'VB')]
+Sun,07-Jul-2013~18:10 KIND: IMP
+Sun,07-Jul-2013~18:10 ACTIONS: {'media': 1}
+Sun,07-Jul-2013~18:10 WEIGHTS: {1: ['media']}
+Sun,07-Jul-2013~18:10 BEST: media
+Sun,07-Jul-2013~18:10 MEDIA: play
+Sun,07-Jul-2013~18:10 COMMAND: osascript -e "tell application \"iTunes\" to play"
+Sun,07-Jul-2013~18:10 SENTENCE: [('You', 'PS'), ('pause', 'VB')]
+Sun,07-Jul-2013~18:10 KIND: IMP
+Sun,07-Jul-2013~18:10 ACTIONS: {'media': 1}
+Sun,07-Jul-2013~18:10 WEIGHTS: {1: ['media']}
+Sun,07-Jul-2013~18:10 BEST: media
+Sun,07-Jul-2013~18:10 MEDIA: pause
+Sun,07-Jul-2013~18:10 COMMAND: osascript -e "tell application \"iTunes\" to pause"
+Sun,07-Jul-2013~18:10 SENTENCE: [('You', 'PS'), ('next', 'VB')]
+Sun,07-Jul-2013~18:10 KIND: IMP
+Sun,07-Jul-2013~18:10 ACTIONS: {'media': 1}
+Sun,07-Jul-2013~18:10 WEIGHTS: {1: ['media']}
+Sun,07-Jul-2013~18:10 BEST: media
+Sun,07-Jul-2013~18:10 MEDIA: next track
+Sun,07-Jul-2013~18:10 COMMAND: osascript -e "tell application \"iTunes\" to next track"
+Sun,07-Jul-2013~18:10 SENTENCE: [('You', 'PS'), ('next', 'VB')]
+Sun,07-Jul-2013~18:10 KIND: IMP
+Sun,07-Jul-2013~18:10 ACTIONS: {'media': 1}
+Sun,07-Jul-2013~18:10 WEIGHTS: {1: ['media']}
+Sun,07-Jul-2013~18:10 BEST: media
+Sun,07-Jul-2013~18:10 MEDIA: next track
+Sun,07-Jul-2013~18:10 COMMAND: osascript -e "tell application \"iTunes\" to next track"
+Sun,07-Jul-2013~18:10 SENTENCE: [('You', 'PS'), ('next', 'VB')]
+Sun,07-Jul-2013~18:10 KIND: IMP
+Sun,07-Jul-2013~18:10 ACTIONS: {'media': 1}
+Sun,07-Jul-2013~18:10 WEIGHTS: {1: ['media']}
+Sun,07-Jul-2013~18:10 BEST: media
+Sun,07-Jul-2013~18:10 MEDIA: next track
+Sun,07-Jul-2013~18:10 COMMAND: osascript -e "tell application \"iTunes\" to next track"
+Sun,07-Jul-2013~21:23 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('uc', '??'), ('timetable', '??')]
+Sun,07-Jul-2013~21:23 KIND: IMP
+Sun,07-Jul-2013~21:23 ACTIONS: {'finder': 1}
+Sun,07-Jul-2013~21:23 WEIGHTS: {1: ['finder']}
+Sun,07-Jul-2013~21:23 BEST: finder
+Sun,07-Jul-2013~21:23 KEYWORDS: [('uc timetable', 2)]
+Sun,07-Jul-2013~21:23 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "uc timetable"
+Sun,07-Jul-2013~21:23 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/Programming/GitHub/Timetable Widget/Timetable_wdgt/index.html']
+Sun,07-Jul-2013~21:24 DECISION: None
+Sun,07-Jul-2013~21:24 IT: None
+Sun,07-Jul-2013~21:24 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('timetable', '??')]
+Sun,07-Jul-2013~21:24 KIND: IMP
+Sun,07-Jul-2013~21:24 ACTIONS: {'finder': 1}
+Sun,07-Jul-2013~21:24 WEIGHTS: {1: ['finder']}
+Sun,07-Jul-2013~21:24 BEST: finder
+Sun,07-Jul-2013~21:24 KEYWORDS: [('timetable', 2)]
+Sun,07-Jul-2013~21:24 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "timetable"
+Sun,07-Jul-2013~21:24 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/Programming/GitHub/PAUL/log.txt', '/Users/aaronstockdill/Documents/Programming/GitHub/aaronstockdill.github.com/_posts/2013-02-15-Repo-Number-One.markdown', '/Users/aaronstockdill/Documents/Programming/GitHub/Timetable Widget', '/Users/aaronstockdill/Documents/Programming/GitHub/Timetable Widget/README.markdown', '/Users/aaronstockdill/Documents/Programming/GitHub/Timetable Widget/Timetable_wdgt/timetable.json', '/Users/aaronstockdill/Documents/Programming/GitHub/Timetable Widget/Timetable_wdgt/script.js', '/Users/aaronstockdill/Documents/Programming/GitHub/Timetable Widget/Timetable.wdgt', '/Users/aaronstockdill/Documents/Programming/GitHub/Timetable Widget/Timetable_wdgt', '/Users/aaronstockdill/Documents/Programming/GitHub/Timetable Widget/Timetable_wdgt/index.html', '/Users/aaronstockdill/Dropbox/School/Year 10/French/L’École Idéale.pptx']
+Sun,07-Jul-2013~21:24 DECISION: None
+Sun,07-Jul-2013~21:24 IT: None
+Sun,07-Jul-2013~22:22 Successfully imported Modules.clock
+Sun,07-Jul-2013~22:22 Successfully imported Modules.discover
+Sun,07-Jul-2013~22:22 Successfully imported Modules.finder
+Sun,07-Jul-2013~22:22 Successfully imported Modules.media
+Sun,07-Jul-2013~22:22 Successfully imported Modules.weather
+Sun,07-Jul-2013~22:22 Successfully imported Modules.wikipedia
+Sun,07-Jul-2013~22:23 SENTENCE: [('hello', '??')]
+Sun,07-Jul-2013~22:23 KIND: DEC
+Sun,07-Jul-2013~22:23 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('like', 'PP')]
+Sun,07-Jul-2013~22:23 KIND: INT
+Sun,07-Jul-2013~22:23 ACTIONS: {'weather': 1}
+Sun,07-Jul-2013~22:23 WEIGHTS: {1: ['weather']}
+Sun,07-Jul-2013~22:23 BEST: weather
+Sun,07-Jul-2013~22:23 KEYWORDS: []
+Sun,07-Jul-2013~22:23 TODAY: 6
+Sun,07-Jul-2013~22:23 DAY: 0
+Sun,07-Jul-2013~22:23 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="8"  date="Sun, 07 Jul 2013 9:59 pm NZST" />\n', '<yweather:forecast day="Sun" date="7 Jul 2013" low="2" high="13" text="Clear" code="31" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Sunny" code="32" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="10" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="3" high="8" text="AM Showers" code="39" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n']
+Sun,07-Jul-2013~22:23 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '8', 'date', 'Sun, 07 Jul 2013 9:59 pm NZST']
+Sun,07-Jul-2013~22:23 SENTENCE: [('You', 'PS'), ('will', 'VB'), ('it', 'PO'), ('rain', 'NO'), ('tomorrow', 'NO')]
+Sun,07-Jul-2013~22:23 KIND: IMP
+Sun,07-Jul-2013~22:23 ACTIONS: {'weather': 2}
+Sun,07-Jul-2013~22:23 WEIGHTS: {2: ['weather']}
+Sun,07-Jul-2013~22:23 BEST: weather
+Sun,07-Jul-2013~22:23 KEYWORDS: [('tomorrow', 4)]
+Sun,07-Jul-2013~22:23 TODAY: 6
+Sun,07-Jul-2013~22:23 DAY: 2
+Sun,07-Jul-2013~22:23 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="8"  date="Sun, 07 Jul 2013 9:59 pm NZST" />\n', '<yweather:forecast day="Sun" date="7 Jul 2013" low="2" high="13" text="Clear" code="31" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Sunny" code="32" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="10" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="3" high="8" text="AM Showers" code="39" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n']
+Sun,07-Jul-2013~22:23 ITEMS: ['day', 'Mon', 'date', '8 Jul 2013', 'low', '1', 'high', '12', 'text', 'Sunny', 'code', '32']
+Mon,08-Jul-2013~09:21 SENTENCE: [('what', 'WH'), ('will', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('do', '??'), ('today', 'NO')]
+Mon,08-Jul-2013~09:21 KIND: INT
+Mon,08-Jul-2013~09:21 ACTIONS: {'weather': 2}
+Mon,08-Jul-2013~09:21 WEIGHTS: {2: ['weather']}
+Mon,08-Jul-2013~09:21 BEST: weather
+Mon,08-Jul-2013~09:21 KEYWORDS: [('do', 4), ('today', 5)]
+Mon,08-Jul-2013~09:21 TODAY: 0
+Mon,08-Jul-2013~09:21 DAY: 0
+Mon,08-Jul-2013~09:21 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="1"  date="Mon, 08 Jul 2013 8:01 am NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Sunny" code="32" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="10" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="3" high="8" text="Few Showers" code="11" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n']
+Mon,08-Jul-2013~09:21 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '1', 'date', 'Mon, 08 Jul 2013 8:01 am NZST']
+Mon,08-Jul-2013~09:41 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('time', 'NO')]
+Mon,08-Jul-2013~09:41 KIND: INT
+Mon,08-Jul-2013~09:41 ACTIONS: {'clock': 1}
+Mon,08-Jul-2013~09:41 WEIGHTS: {1: ['clock']}
+Mon,08-Jul-2013~09:41 BEST: clock
+Mon,08-Jul-2013~09:41 KEYWORDS: ['time']
+Mon,08-Jul-2013~09:41 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~09:41 KIND: INT
+Mon,08-Jul-2013~09:41 ACTIONS: {'clock': 1}
+Mon,08-Jul-2013~09:41 WEIGHTS: {1: ['clock']}
+Mon,08-Jul-2013~09:41 BEST: clock
+Mon,08-Jul-2013~09:41 KEYWORDS: ['day']
+Mon,08-Jul-2013~09:41 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('raining', 'NO')]
+Mon,08-Jul-2013~09:41 KIND: IMP
+Mon,08-Jul-2013~09:41 ACTIONS: {'weather': 1}
+Mon,08-Jul-2013~09:41 WEIGHTS: {1: ['weather']}
+Mon,08-Jul-2013~09:41 BEST: weather
+Mon,08-Jul-2013~09:41 KEYWORDS: []
+Mon,08-Jul-2013~09:41 TODAY: 0
+Mon,08-Jul-2013~09:41 DAY: 0
+Mon,08-Jul-2013~09:41 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="1"  date="Mon, 08 Jul 2013 9:00 am NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Sunny" code="32" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="10" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="3" high="8" text="Few Showers" code="11" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n']
+Mon,08-Jul-2013~09:41 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '1', 'date', 'Mon, 08 Jul 2013 9:00 am NZST']
+Mon,08-Jul-2013~09:42 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('amelia', '??')]
+Mon,08-Jul-2013~09:42 KIND: IMP
+Mon,08-Jul-2013~09:42 ACTIONS: {'wikipedia': 2}
+Mon,08-Jul-2013~09:42 WEIGHTS: {2: ['wikipedia']}
+Mon,08-Jul-2013~09:42 BEST: wikipedia
+Mon,08-Jul-2013~09:42 KEYWORDS: [('amelia', 4)]
+Mon,08-Jul-2013~09:42 URL ATTEMPT: http://en.wikipedia.org/wiki/amelia
+Mon,08-Jul-2013~09:42 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~09:42 KIND: IMP
+Mon,08-Jul-2013~09:42 ACTIONS: {'finder': 1}
+Mon,08-Jul-2013~09:42 WEIGHTS: {1: ['finder']}
+Mon,08-Jul-2013~09:42 BEST: finder
+Mon,08-Jul-2013~09:42 IT: http://en.wikipedia.org/wiki/amelia
+Mon,08-Jul-2013~09:42 KEYWORDS: [('http://en.wikipedia.org/wiki/amelia', 2)]
+Mon,08-Jul-2013~09:59 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('temperature', 'NO')]
+Mon,08-Jul-2013~09:59 KIND: INT
+Mon,08-Jul-2013~09:59 ACTIONS: {'weather': 1}
+Mon,08-Jul-2013~09:59 WEIGHTS: {1: ['weather']}
+Mon,08-Jul-2013~09:59 BEST: weather
+Mon,08-Jul-2013~09:59 KEYWORDS: []
+Mon,08-Jul-2013~09:59 TODAY: 0
+Mon,08-Jul-2013~09:59 DAY: 0
+Mon,08-Jul-2013~09:59 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="1"  date="Mon, 08 Jul 2013 9:00 am NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Sunny" code="32" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="10" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="3" high="8" text="Few Showers" code="11" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n']
+Mon,08-Jul-2013~09:59 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '1', 'date', 'Mon, 08 Jul 2013 9:00 am NZST']
+Mon,08-Jul-2013~10:53 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~10:53 KIND: INT
+Mon,08-Jul-2013~10:53 ACTIONS: {'weather': 1}
+Mon,08-Jul-2013~10:53 WEIGHTS: {1: ['weather']}
+Mon,08-Jul-2013~10:53 BEST: weather
+Mon,08-Jul-2013~10:53 KEYWORDS: []
+Mon,08-Jul-2013~10:53 TODAY: 0
+Mon,08-Jul-2013~10:53 DAY: 0
+Mon,08-Jul-2013~10:53 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="5"  date="Mon, 08 Jul 2013 10:00 am NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Sunny" code="32" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="10" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="3" high="8" text="Few Showers" code="11" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n']
+Mon,08-Jul-2013~10:53 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '5', 'date', 'Mon, 08 Jul 2013 10:00 am NZST']
+Mon,08-Jul-2013~10:53 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~10:53 KIND: INT
+Mon,08-Jul-2013~10:53 ACTIONS: {'clock': 1}
+Mon,08-Jul-2013~10:53 WEIGHTS: {1: ['clock']}
+Mon,08-Jul-2013~10:53 BEST: clock
+Mon,08-Jul-2013~10:53 KEYWORDS: ['time']
+Mon,08-Jul-2013~10:53 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~10:53 KIND: INT
+Mon,08-Jul-2013~10:53 ACTIONS: {'clock': 1}
+Mon,08-Jul-2013~10:53 WEIGHTS: {1: ['clock']}
+Mon,08-Jul-2013~10:53 BEST: clock
+Mon,08-Jul-2013~10:53 KEYWORDS: ['day']
+Mon,08-Jul-2013~10:54 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('python', '??')]
+Mon,08-Jul-2013~10:54 KIND: IMP
+Mon,08-Jul-2013~10:54 ACTIONS: {'wikipedia': 2}
+Mon,08-Jul-2013~10:54 WEIGHTS: {2: ['wikipedia']}
+Mon,08-Jul-2013~10:54 BEST: wikipedia
+Mon,08-Jul-2013~10:54 KEYWORDS: [('python', 4)]
+Mon,08-Jul-2013~10:54 URL ATTEMPT: http://en.wikipedia.org/wiki/python
+Mon,08-Jul-2013~10:56 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('python', '??'), ('programming', '??')]
+Mon,08-Jul-2013~10:56 KIND: IMP
+Mon,08-Jul-2013~10:56 ACTIONS: {'wikipedia': 2}
+Mon,08-Jul-2013~10:56 WEIGHTS: {2: ['wikipedia']}
+Mon,08-Jul-2013~10:56 BEST: wikipedia
+Mon,08-Jul-2013~10:56 KEYWORDS: [('python programming', 4)]
+Mon,08-Jul-2013~10:56 URL ATTEMPT: http://en.wikipedia.org/wiki/python_programming
+Mon,08-Jul-2013~10:56 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~10:56 KIND: IMP
+Mon,08-Jul-2013~10:56 ACTIONS: {'finder': 1}
+Mon,08-Jul-2013~10:56 WEIGHTS: {1: ['finder']}
+Mon,08-Jul-2013~10:56 BEST: finder
+Mon,08-Jul-2013~10:56 IT: http://en.wikipedia.org/wiki/python_programming
+Mon,08-Jul-2013~10:56 KEYWORDS: [('http://en.wikipedia.org/wiki/python_programming', 2)]
+Mon,08-Jul-2013~14:03 Successfully imported Modules.clock
+Mon,08-Jul-2013~14:03 Successfully imported Modules.discover
+Mon,08-Jul-2013~14:03 Successfully imported Modules.finder
+Mon,08-Jul-2013~14:03 Successfully imported Modules.media
+Mon,08-Jul-2013~14:03 Successfully imported Modules.weather
+Mon,08-Jul-2013~14:03 Successfully imported Modules.wikipedia
+Mon,08-Jul-2013~14:45 SENTENCE: [('asf', '??')]
+Mon,08-Jul-2013~14:45 KIND: DEC
+Mon,08-Jul-2013~14:45 SENTENCE: [('msg:asdfg', '??')]
+Mon,08-Jul-2013~14:45 KIND: DEC
+Mon,08-Jul-2013~14:49 SENTENCE: [('msg:hello', '??')]
+Mon,08-Jul-2013~14:49 KIND: DEC
+Mon,08-Jul-2013~14:49 SENTENCE: [('msg:what', '??'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO')]
+Mon,08-Jul-2013~14:49 KIND: DEC
+Mon,08-Jul-2013~14:49 SENTENCE: [('msg', '??')]
+Mon,08-Jul-2013~14:49 KIND: DEC
+Mon,08-Jul-2013~14:50 SENTENCE: [('msg:what', '??'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO')]
+Mon,08-Jul-2013~14:50 KIND: DEC
+Mon,08-Jul-2013~14:50 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO')]
+Mon,08-Jul-2013~14:50 KIND: INT
+Mon,08-Jul-2013~14:50 ACTIONS: {'weather': 1}
+Mon,08-Jul-2013~14:50 WEIGHTS: {1: ['weather']}
+Mon,08-Jul-2013~14:50 BEST: weather
+Mon,08-Jul-2013~14:50 KEYWORDS: []
+Mon,08-Jul-2013~14:50 TODAY: 0
+Mon,08-Jul-2013~14:50 DAY: 0
+Mon,08-Jul-2013~14:50 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="30"  temp="11"  date="Mon, 08 Jul 2013 1:59 pm NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Mostly Clear" code="33" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="8" text="Showers" code="11" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n']
+Mon,08-Jul-2013~14:50 ITEMS: ['text', 'Partly Cloudy', 'code', '30', 'temp', '11', 'date', 'Mon, 08 Jul 2013 1:59 pm NZST']
+Mon,08-Jul-2013~14:57 SENTENCE: [('dfghj', '??')]
+Mon,08-Jul-2013~14:57 KIND: DEC
+Mon,08-Jul-2013~14:57 SENTENCE: [('test', '??')]
+Mon,08-Jul-2013~14:57 KIND: DEC
+Mon,08-Jul-2013~14:58 SENTENCE: [('hello', '??')]
+Mon,08-Jul-2013~14:58 KIND: DEC
+Mon,08-Jul-2013~14:59 SENTENCE: [('asdfghj', '??')]
+Mon,08-Jul-2013~14:59 KIND: DEC
+Mon,08-Jul-2013~15:00 SENTENCE: [('hello', '??'), ('there', '??')]
+Mon,08-Jul-2013~15:00 KIND: DEC
+Mon,08-Jul-2013~15:01 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~15:01 KIND: INT
+Mon,08-Jul-2013~15:01 ACTIONS: {'weather': 1}
+Mon,08-Jul-2013~15:01 WEIGHTS: {1: ['weather']}
+Mon,08-Jul-2013~15:01 BEST: weather
+Mon,08-Jul-2013~15:01 KEYWORDS: []
+Mon,08-Jul-2013~15:01 TODAY: 0
+Mon,08-Jul-2013~15:01 DAY: 0
+Mon,08-Jul-2013~15:01 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="30"  temp="11"  date="Mon, 08 Jul 2013 1:59 pm NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Mostly Clear" code="33" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="8" text="Showers" code="11" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n']
+Mon,08-Jul-2013~15:01 ITEMS: ['text', 'Partly Cloudy', 'code', '30', 'temp', '11', 'date', 'Mon, 08 Jul 2013 1:59 pm NZST']
+Mon,08-Jul-2013~15:02 SENTENCE: [('hello', '??')]
+Mon,08-Jul-2013~15:02 KIND: DEC
+Mon,08-Jul-2013~15:23 SENTENCE: [('asdfghjk', '??')]
+Mon,08-Jul-2013~15:23 KIND: DEC
+Mon,08-Jul-2013~15:23 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO')]
+Mon,08-Jul-2013~15:23 KIND: INT
+Mon,08-Jul-2013~15:23 ACTIONS: {'weather': 1}
+Mon,08-Jul-2013~15:23 WEIGHTS: {1: ['weather']}
+Mon,08-Jul-2013~15:23 BEST: weather
+Mon,08-Jul-2013~15:23 KEYWORDS: []
+Mon,08-Jul-2013~15:23 TODAY: 0
+Mon,08-Jul-2013~15:23 DAY: 0
+Mon,08-Jul-2013~15:23 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="30"  temp="11"  date="Mon, 08 Jul 2013 2:59 pm NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Mostly Clear" code="33" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n']
+Mon,08-Jul-2013~15:23 ITEMS: ['text', 'Partly Cloudy', 'code', '30', 'temp', '11', 'date', 'Mon, 08 Jul 2013 2:59 pm NZST']
+Mon,08-Jul-2013~15:24 SENTENCE: [('sadkjghsfh', '??')]
+Mon,08-Jul-2013~15:24 KIND: DEC
+Mon,08-Jul-2013~15:24 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~15:24 KIND: INT
+Mon,08-Jul-2013~15:24 ACTIONS: {'weather': 1}
+Mon,08-Jul-2013~15:24 WEIGHTS: {1: ['weather']}
+Mon,08-Jul-2013~15:24 BEST: weather
+Mon,08-Jul-2013~15:24 KEYWORDS: []
+Mon,08-Jul-2013~15:24 TODAY: 0
+Mon,08-Jul-2013~15:24 DAY: 0
+Mon,08-Jul-2013~15:24 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="30"  temp="11"  date="Mon, 08 Jul 2013 2:59 pm NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Mostly Clear" code="33" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n']
+Mon,08-Jul-2013~15:24 ITEMS: ['text', 'Partly Cloudy', 'code', '30', 'temp', '11', 'date', 'Mon, 08 Jul 2013 2:59 pm NZST']
+Mon,08-Jul-2013~15:24 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('python', '??'), ('programming', '??')]
+Mon,08-Jul-2013~15:24 KIND: IMP
+Mon,08-Jul-2013~15:24 ACTIONS: {'wikipedia': 2}
+Mon,08-Jul-2013~15:24 WEIGHTS: {2: ['wikipedia']}
+Mon,08-Jul-2013~15:24 BEST: wikipedia
+Mon,08-Jul-2013~15:24 KEYWORDS: [('python programming', 4)]
+Mon,08-Jul-2013~15:24 URL ATTEMPT: http://en.wikipedia.org/wiki/python_programming
+Mon,08-Jul-2013~15:25 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~15:25 KIND: IMP
+Mon,08-Jul-2013~15:25 ACTIONS: {'finder': 1}
+Mon,08-Jul-2013~15:25 WEIGHTS: {1: ['finder']}
+Mon,08-Jul-2013~15:25 BEST: finder
+Mon,08-Jul-2013~15:25 IT: http://en.wikipedia.org/wiki/python_programming
+Mon,08-Jul-2013~15:25 KEYWORDS: [('http://en.wikipedia.org/wiki/python_programming', 2)]
+Mon,08-Jul-2013~15:30 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~15:30 KIND: INT
+Mon,08-Jul-2013~15:30 ACTIONS: {'weather': 1}
+Mon,08-Jul-2013~15:30 WEIGHTS: {1: ['weather']}
+Mon,08-Jul-2013~15:30 BEST: weather
+Mon,08-Jul-2013~15:30 KEYWORDS: []
+Mon,08-Jul-2013~15:30 TODAY: 0
+Mon,08-Jul-2013~15:30 DAY: 0
+Mon,08-Jul-2013~15:30 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="30"  temp="11"  date="Mon, 08 Jul 2013 2:59 pm NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Mostly Clear" code="33" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n']
+Mon,08-Jul-2013~15:30 ITEMS: ['text', 'Partly Cloudy', 'code', '30', 'temp', '11', 'date', 'Mon, 08 Jul 2013 2:59 pm NZST']
+Mon,08-Jul-2013~15:30 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~15:30 KIND: INT
+Mon,08-Jul-2013~15:30 ACTIONS: {'clock': 1}
+Mon,08-Jul-2013~15:30 WEIGHTS: {1: ['clock']}
+Mon,08-Jul-2013~15:30 BEST: clock
+Mon,08-Jul-2013~15:30 KEYWORDS: ['time']
+Mon,08-Jul-2013~15:32 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('python', '??'), ('programming', '??')]
+Mon,08-Jul-2013~15:32 KIND: IMP
+Mon,08-Jul-2013~15:32 ACTIONS: {'wikipedia': 2}
+Mon,08-Jul-2013~15:32 WEIGHTS: {2: ['wikipedia']}
+Mon,08-Jul-2013~15:32 BEST: wikipedia
+Mon,08-Jul-2013~15:32 KEYWORDS: [('python programming', 4)]
+Mon,08-Jul-2013~15:32 URL ATTEMPT: http://en.wikipedia.org/wiki/python_programming
+Mon,08-Jul-2013~15:32 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('python', '??'), ('programming', '??')]
+Mon,08-Jul-2013~15:32 KIND: IMP
+Mon,08-Jul-2013~15:32 ACTIONS: {'wikipedia': 2}
+Mon,08-Jul-2013~15:32 WEIGHTS: {2: ['wikipedia']}
+Mon,08-Jul-2013~15:32 BEST: wikipedia
+Mon,08-Jul-2013~15:32 KEYWORDS: [('python programming', 4)]
+Mon,08-Jul-2013~15:32 URL ATTEMPT: http://en.wikipedia.org/wiki/python_programming
+Mon,08-Jul-2013~15:35 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~15:35 KIND: INT
+Mon,08-Jul-2013~15:35 ACTIONS: {'weather': 1}
+Mon,08-Jul-2013~15:35 WEIGHTS: {1: ['weather']}
+Mon,08-Jul-2013~15:35 BEST: weather
+Mon,08-Jul-2013~15:35 KEYWORDS: []
+Mon,08-Jul-2013~15:35 TODAY: 0
+Mon,08-Jul-2013~15:35 DAY: 0
+Mon,08-Jul-2013~15:35 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="30"  temp="11"  date="Mon, 08 Jul 2013 2:59 pm NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Mostly Clear" code="33" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n']
+Mon,08-Jul-2013~15:35 ITEMS: ['text', 'Partly Cloudy', 'code', '30', 'temp', '11', 'date', 'Mon, 08 Jul 2013 2:59 pm NZST']
+Mon,08-Jul-2013~15:37 SENTENCE: [('asdfghjk', '??')]
+Mon,08-Jul-2013~15:37 KIND: DEC
+Mon,08-Jul-2013~15:37 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~15:37 KIND: INT
+Mon,08-Jul-2013~15:37 ACTIONS: {'weather': 1}
+Mon,08-Jul-2013~15:37 WEIGHTS: {1: ['weather']}
+Mon,08-Jul-2013~15:37 BEST: weather
+Mon,08-Jul-2013~15:37 KEYWORDS: []
+Mon,08-Jul-2013~15:37 TODAY: 0
+Mon,08-Jul-2013~15:37 DAY: 0
+Mon,08-Jul-2013~15:37 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="30"  temp="11"  date="Mon, 08 Jul 2013 2:59 pm NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Mostly Clear" code="33" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n']
+Mon,08-Jul-2013~15:37 ITEMS: ['text', 'Partly Cloudy', 'code', '30', 'temp', '11', 'date', 'Mon, 08 Jul 2013 2:59 pm NZST']
+Mon,08-Jul-2013~15:37 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~15:37 KIND: INT
+Mon,08-Jul-2013~15:37 ACTIONS: {'weather': 1}
+Mon,08-Jul-2013~15:37 WEIGHTS: {1: ['weather']}
+Mon,08-Jul-2013~15:37 BEST: weather
+Mon,08-Jul-2013~15:37 KEYWORDS: []
+Mon,08-Jul-2013~15:37 TODAY: 0
+Mon,08-Jul-2013~15:37 DAY: 0
+Mon,08-Jul-2013~15:37 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="30"  temp="11"  date="Mon, 08 Jul 2013 2:59 pm NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Mostly Clear" code="33" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n']
+Mon,08-Jul-2013~15:37 ITEMS: ['text', 'Partly Cloudy', 'code', '30', 'temp', '11', 'date', 'Mon, 08 Jul 2013 2:59 pm NZST']
+Mon,08-Jul-2013~15:37 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('einstein', '??')]
+Mon,08-Jul-2013~15:37 KIND: IMP
+Mon,08-Jul-2013~15:37 ACTIONS: {'wikipedia': 2}
+Mon,08-Jul-2013~15:37 WEIGHTS: {2: ['wikipedia']}
+Mon,08-Jul-2013~15:37 BEST: wikipedia
+Mon,08-Jul-2013~15:37 KEYWORDS: [('einstein', 4)]
+Mon,08-Jul-2013~15:37 URL ATTEMPT: http://en.wikipedia.org/wiki/einstein
+Mon,08-Jul-2013~19:06 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('time', 'NO')]
+Mon,08-Jul-2013~19:06 KIND: INT
+Mon,08-Jul-2013~19:06 ACTIONS: {'clock': 1}
+Mon,08-Jul-2013~19:06 WEIGHTS: {1: ['clock']}
+Mon,08-Jul-2013~19:06 BEST: clock
+Mon,08-Jul-2013~19:06 KEYWORDS: ['time']
+Mon,08-Jul-2013~19:17 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO')]
+Mon,08-Jul-2013~19:17 KIND: INT
+Mon,08-Jul-2013~19:17 ACTIONS: {'weather': 1}
+Mon,08-Jul-2013~19:17 WEIGHTS: {1: ['weather']}
+Mon,08-Jul-2013~19:17 BEST: weather
+Mon,08-Jul-2013~19:17 KEYWORDS: []
+Mon,08-Jul-2013~19:17 TODAY: 0
+Mon,08-Jul-2013~19:17 DAY: 0
+Mon,08-Jul-2013~19:17 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="29"  temp="5"  date="Mon, 08 Jul 2013 5:58 pm NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Mostly Clear" code="33" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n']
+Mon,08-Jul-2013~19:17 ITEMS: ['text', 'Partly Cloudy', 'code', '29', 'temp', '5', 'date', 'Mon, 08 Jul 2013 5:58 pm NZST']
+Mon,08-Jul-2013~19:17 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('it', 'PO'), ('be', 'VB')]
+Mon,08-Jul-2013~19:17 KIND: INT
+Mon,08-Jul-2013~19:17 ACTIONS: {'weather': 1}
+Mon,08-Jul-2013~19:17 WEIGHTS: {1: ['weather']}
+Mon,08-Jul-2013~19:17 BEST: weather
+Mon,08-Jul-2013~19:17 KEYWORDS: []
+Mon,08-Jul-2013~19:17 TODAY: 0
+Mon,08-Jul-2013~19:17 DAY: 0
+Mon,08-Jul-2013~19:17 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="29"  temp="5"  date="Mon, 08 Jul 2013 5:58 pm NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Mostly Clear" code="33" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n']
+Mon,08-Jul-2013~19:17 ITEMS: ['text', 'Partly Cloudy', 'code', '29', 'temp', '5', 'date', 'Mon, 08 Jul 2013 5:58 pm NZST']
+Mon,08-Jul-2013~19:17 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('will', 'VB'), ('it', 'PO'), ('be', 'VB'), ('tomorrow', 'NO')]
+Mon,08-Jul-2013~19:17 KIND: INT
+Mon,08-Jul-2013~19:17 ACTIONS: {'weather': 2}
+Mon,08-Jul-2013~19:17 WEIGHTS: {2: ['weather']}
+Mon,08-Jul-2013~19:17 BEST: weather
+Mon,08-Jul-2013~19:17 KEYWORDS: [('tomorrow', 5)]
+Mon,08-Jul-2013~19:17 TODAY: 0
+Mon,08-Jul-2013~19:17 DAY: 2
+Mon,08-Jul-2013~19:17 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="29"  temp="5"  date="Mon, 08 Jul 2013 5:58 pm NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Mostly Clear" code="33" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n']
+Mon,08-Jul-2013~19:17 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '3', 'high', '11', 'text', 'PM Showers', 'code', '39']
+Mon,08-Jul-2013~19:30 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('time', 'NO')]
+Mon,08-Jul-2013~19:30 KIND: INT
+Mon,08-Jul-2013~19:30 ACTIONS: {'clock': 1}
+Mon,08-Jul-2013~19:30 WEIGHTS: {1: ['clock']}
+Mon,08-Jul-2013~19:30 BEST: clock
+Mon,08-Jul-2013~19:30 KEYWORDS: ['time']
+Mon,08-Jul-2013~19:40 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('time', 'NO')]
+Mon,08-Jul-2013~19:40 KIND: INT
+Mon,08-Jul-2013~19:40 ACTIONS: {'clock': 1}
+Mon,08-Jul-2013~19:40 WEIGHTS: {1: ['clock']}
+Mon,08-Jul-2013~19:40 BEST: clock
+Mon,08-Jul-2013~19:40 KEYWORDS: ['time']
+Mon,08-Jul-2013~19:54 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('time', 'NO')]
+Mon,08-Jul-2013~19:54 KIND: INT
+Mon,08-Jul-2013~19:54 ACTIONS: {'clock': 1}
+Mon,08-Jul-2013~19:54 WEIGHTS: {1: ['clock']}
+Mon,08-Jul-2013~19:54 BEST: clock
+Mon,08-Jul-2013~19:54 KEYWORDS: ['time']
+Mon,08-Jul-2013~19:54 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~19:54 KIND: INT
+Mon,08-Jul-2013~19:54 ACTIONS: {'weather': 1}
+Mon,08-Jul-2013~19:54 WEIGHTS: {1: ['weather']}
+Mon,08-Jul-2013~19:54 BEST: weather
+Mon,08-Jul-2013~19:54 KEYWORDS: []
+Mon,08-Jul-2013~19:54 TODAY: 0
+Mon,08-Jul-2013~19:54 DAY: 0
+Mon,08-Jul-2013~19:54 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="29"  temp="5"  date="Mon, 08 Jul 2013 6:58 pm NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Mostly Clear" code="33" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n']
+Mon,08-Jul-2013~19:54 ITEMS: ['text', 'Partly Cloudy', 'code', '29', 'temp', '5', 'date', 'Mon, 08 Jul 2013 6:58 pm NZST']
+Mon,08-Jul-2013~19:56 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~19:56 KIND: INT
+Mon,08-Jul-2013~19:56 ACTIONS: {'clock': 1}
+Mon,08-Jul-2013~19:56 WEIGHTS: {1: ['clock']}
+Mon,08-Jul-2013~19:56 BEST: clock
+Mon,08-Jul-2013~19:56 KEYWORDS: ['time']
+Mon,08-Jul-2013~19:57 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~19:57 KIND: INT
+Mon,08-Jul-2013~19:57 ACTIONS: {'clock': 1}
+Mon,08-Jul-2013~19:57 WEIGHTS: {1: ['clock']}
+Mon,08-Jul-2013~19:57 BEST: clock
+Mon,08-Jul-2013~19:57 KEYWORDS: ['time']
+Mon,08-Jul-2013~20:00 SENTENCE: [('saf', '??')]
+Mon,08-Jul-2013~20:00 KIND: DEC
+Mon,08-Jul-2013~20:29 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO')]
+Mon,08-Jul-2013~20:29 KIND: INT
+Mon,08-Jul-2013~20:29 ACTIONS: {'weather': 1}
+Mon,08-Jul-2013~20:29 WEIGHTS: {1: ['weather']}
+Mon,08-Jul-2013~20:29 BEST: weather
+Mon,08-Jul-2013~20:29 KEYWORDS: []
+Mon,08-Jul-2013~20:29 TODAY: 0
+Mon,08-Jul-2013~20:29 DAY: 0
+Mon,08-Jul-2013~20:29 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="29"  temp="1"  date="Mon, 08 Jul 2013 8:02 pm NZST" />\n', '<yweather:forecast day="Mon" date="8 Jul 2013" low="1" high="12" text="Mostly Clear" code="33" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="3" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n']
+Mon,08-Jul-2013~20:29 ITEMS: ['text', 'Partly Cloudy', 'code', '29', 'temp', '1', 'date', 'Mon, 08 Jul 2013 8:02 pm NZST']
+Mon,08-Jul-2013~20:33 SENTENCE: [('how', 'WH'), ('long', '??'), ('be', 'VB'), ('the', 'AR'), ('soccer', '??'), ('field', '??')]
+Mon,08-Jul-2013~20:33 KIND: INT
+Mon,08-Jul-2013~20:33 ACTIONS: {}
+Mon,08-Jul-2013~20:33 WEIGHTS: {}
+Mon,08-Jul-2013~20:35 Successfully imported Modules.clock
+Mon,08-Jul-2013~20:35 Successfully imported Modules.discover
+Mon,08-Jul-2013~20:35 Successfully imported Modules.finder
+Mon,08-Jul-2013~20:35 Successfully imported Modules.media
+Mon,08-Jul-2013~20:35 Successfully imported Modules.weather
+Mon,08-Jul-2013~20:35 Successfully imported Modules.wikipedia
+Mon,08-Jul-2013~20:35 Successfully imported Modules.clock
+Mon,08-Jul-2013~20:35 Successfully imported Modules.discover
+Mon,08-Jul-2013~20:35 Successfully imported Modules.finder
+Mon,08-Jul-2013~20:35 Successfully imported Modules.media
+Mon,08-Jul-2013~20:35 Successfully imported Modules.weather
+Mon,08-Jul-2013~20:35 Successfully imported Modules.wikipedia
+Mon,08-Jul-2013~20:35 Successfully imported Modules.clock
+Mon,08-Jul-2013~20:35 Successfully imported Modules.discover
+Mon,08-Jul-2013~20:35 Successfully imported Modules.finder
+Mon,08-Jul-2013~20:35 Successfully imported Modules.media
+Mon,08-Jul-2013~20:35 Successfully imported Modules.weather
+Mon,08-Jul-2013~20:35 Successfully imported Modules.wikipedia
+Mon,08-Jul-2013~20:35 Successfully imported Modules.clock
+Mon,08-Jul-2013~20:35 Successfully imported Modules.discover
+Mon,08-Jul-2013~20:35 Successfully imported Modules.finder
+Mon,08-Jul-2013~20:35 Successfully imported Modules.media
+Mon,08-Jul-2013~20:35 Successfully imported Modules.weather
+Mon,08-Jul-2013~20:35 Successfully imported Modules.wikipedia
+Mon,08-Jul-2013~20:35 Successfully imported Modules.clock
+Mon,08-Jul-2013~20:35 Successfully imported Modules.discover
+Mon,08-Jul-2013~20:35 Successfully imported Modules.finder
+Mon,08-Jul-2013~20:35 Successfully imported Modules.media
+Mon,08-Jul-2013~20:35 Successfully imported Modules.weather
+Mon,08-Jul-2013~20:35 Successfully imported Modules.wikipedia
+Mon,08-Jul-2013~20:35 SENTENCE: [('hello', '??')]
+Mon,08-Jul-2013~20:35 KIND: DEC
+Mon,08-Jul-2013~20:38 Successfully imported Modules.clock
+Mon,08-Jul-2013~20:38 Successfully imported Modules.discover
+Mon,08-Jul-2013~20:38 Successfully imported Modules.finder
+Mon,08-Jul-2013~20:38 Successfully imported Modules.media
+Mon,08-Jul-2013~20:38 Successfully imported Modules.weather
+Mon,08-Jul-2013~20:38 Successfully imported Modules.wikipedia
+Mon,08-Jul-2013~20:38 Successfully imported Modules.clock
+Mon,08-Jul-2013~20:38 Successfully imported Modules.discover
+Mon,08-Jul-2013~20:38 Successfully imported Modules.finder
+Mon,08-Jul-2013~20:38 Successfully imported Modules.media
+Mon,08-Jul-2013~20:38 Successfully imported Modules.weather
+Mon,08-Jul-2013~20:38 Successfully imported Modules.wikipedia
+Mon,08-Jul-2013~20:38 Successfully imported Modules.clock
+Mon,08-Jul-2013~20:38 Successfully imported Modules.discover
+Mon,08-Jul-2013~20:38 Successfully imported Modules.finder
+Mon,08-Jul-2013~20:38 Successfully imported Modules.media
+Mon,08-Jul-2013~20:38 Successfully imported Modules.weather
+Mon,08-Jul-2013~20:38 Successfully imported Modules.wikipedia
+Mon,08-Jul-2013~20:38 Successfully imported Modules.clock
+Mon,08-Jul-2013~20:38 Successfully imported Modules.discover
+Mon,08-Jul-2013~20:38 Successfully imported Modules.finder
+Mon,08-Jul-2013~20:38 Successfully imported Modules.media
+Mon,08-Jul-2013~20:38 Successfully imported Modules.weather
+Mon,08-Jul-2013~20:38 Successfully imported Modules.wikipedia
+Mon,08-Jul-2013~20:38 Successfully imported Modules.clock
+Mon,08-Jul-2013~20:38 Successfully imported Modules.discover
+Mon,08-Jul-2013~20:38 Successfully imported Modules.finder
+Mon,08-Jul-2013~20:38 Successfully imported Modules.media
+Mon,08-Jul-2013~20:38 Successfully imported Modules.weather
+Mon,08-Jul-2013~20:38 Successfully imported Modules.wikipedia
+Mon,08-Jul-2013~20:38 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~20:38 KIND: INT
+Mon,08-Jul-2013~20:38 ACTIONS: {'clock': 1}
+Mon,08-Jul-2013~20:38 WEIGHTS: {1: ['clock']}
+Mon,08-Jul-2013~20:38 BEST: clock
+Mon,08-Jul-2013~20:38 KEYWORDS: ['time']
+Mon,08-Jul-2013~20:39 SENTENCE: [('who', 'WH'), ('be', 'VB'), ('you', 'PO')]
+Mon,08-Jul-2013~20:39 KIND: INT
+Mon,08-Jul-2013~20:39 ACTIONS: {}
+Mon,08-Jul-2013~20:39 WEIGHTS: {}
+Mon,08-Jul-2013~20:39 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,08-Jul-2013~20:39 KIND: IMP
+Mon,08-Jul-2013~20:39 ACTIONS: {'loader': 1}
+Mon,08-Jul-2013~20:39 WEIGHTS: {1: ['loader']}
+Mon,08-Jul-2013~20:39 BEST: loader
+Mon,08-Jul-2013~20:39 Successfully imported Modules.clock
+Mon,08-Jul-2013~20:39 Successfully imported Modules.discover
+Mon,08-Jul-2013~20:39 Successfully imported Modules.finder
+Mon,08-Jul-2013~20:39 Successfully imported Modules.media
+Mon,08-Jul-2013~20:39 Successfully imported Modules.weather
+Mon,08-Jul-2013~20:39 Successfully imported Modules.wikipedia
+Mon,08-Jul-2013~20:40 Successfully imported Modules.clock
+Mon,08-Jul-2013~20:40 Successfully imported Modules.discover
+Mon,08-Jul-2013~20:40 Successfully imported Modules.finder
+Mon,08-Jul-2013~20:40 Successfully imported Modules.media
+Mon,08-Jul-2013~20:40 Successfully imported Modules.weather
+Mon,08-Jul-2013~20:40 Successfully imported Modules.wikipedia
+Mon,08-Jul-2013~20:40 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~20:40 KIND: INT
+Mon,08-Jul-2013~20:40 ACTIONS: {'clock': 1}
+Mon,08-Jul-2013~20:40 WEIGHTS: {1: ['clock']}
+Mon,08-Jul-2013~20:40 BEST: clock
+Mon,08-Jul-2013~20:40 KEYWORDS: ['time']
+Mon,08-Jul-2013~20:40 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,08-Jul-2013~20:40 KIND: INT
+Mon,08-Jul-2013~20:40 ACTIONS: {'weather': 1}
+Mon,08-Jul-2013~20:40 WEIGHTS: {1: ['weather']}
+Mon,08-Jul-2013~20:40 BEST: weather
+Mon,08-Jul-2013~20:41 Successfully imported Modules.clock
+Mon,08-Jul-2013~20:41 Successfully imported Modules.discover
+Mon,08-Jul-2013~20:41 Successfully imported Modules.finder
+Mon,08-Jul-2013~20:41 Successfully imported Modules.media
+Mon,08-Jul-2013~20:41 Successfully imported Modules.weather
+Mon,08-Jul-2013~20:41 Successfully imported Modules.wikipedia
+Mon,08-Jul-2013~20:41 SENTENCE: [('hello', '??')]
+Mon,08-Jul-2013~20:41 KIND: DEC
+Tue,09-Jul-2013~06:34 Successfully imported Modules.clock
+Tue,09-Jul-2013~06:34 Successfully imported Modules.discover
+Tue,09-Jul-2013~06:34 Successfully imported Modules.finder
+Tue,09-Jul-2013~06:34 Successfully imported Modules.media
+Tue,09-Jul-2013~06:34 Successfully imported Modules.weather
+Tue,09-Jul-2013~06:34 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~06:34 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~06:34 KIND: INT
+Tue,09-Jul-2013~06:34 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~06:34 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~06:34 BEST: weather
+Tue,09-Jul-2013~06:34 Successfully imported Modules.clock
+Tue,09-Jul-2013~06:34 Successfully imported Modules.discover
+Tue,09-Jul-2013~06:34 Successfully imported Modules.finder
+Tue,09-Jul-2013~06:34 Successfully imported Modules.media
+Tue,09-Jul-2013~06:34 Successfully imported Modules.weather
+Tue,09-Jul-2013~06:34 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~06:34 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~06:34 KIND: INT
+Tue,09-Jul-2013~06:34 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~06:34 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~06:34 BEST: weather
+Tue,09-Jul-2013~06:34 KEYWORDS: []
+Tue,09-Jul-2013~06:34 TODAY: 1
+Tue,09-Jul-2013~06:34 DAY: 0
+Tue,09-Jul-2013~06:34 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="1"  date="Tue, 09 Jul 2013 5:59 am NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="2" high="12" text="Sunny" code="32" />\n']
+Tue,09-Jul-2013~06:34 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '1', 'date', 'Tue, 09 Jul 2013 5:59 am NZST']
+Tue,09-Jul-2013~06:38 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,09-Jul-2013~06:38 KIND: IMP
+Tue,09-Jul-2013~06:38 ACTIONS: {'loader': 1}
+Tue,09-Jul-2013~06:38 WEIGHTS: {1: ['loader']}
+Tue,09-Jul-2013~06:38 BEST: loader
+Tue,09-Jul-2013~06:38 Successfully imported Modules.clock
+Tue,09-Jul-2013~06:38 Successfully imported Modules.discover
+Tue,09-Jul-2013~06:38 Successfully imported Modules.finder
+Tue,09-Jul-2013~06:38 Successfully imported Modules.media
+Tue,09-Jul-2013~06:38 Successfully imported Modules.weather
+Tue,09-Jul-2013~06:38 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~06:38 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~06:38 KIND: INT
+Tue,09-Jul-2013~06:38 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~06:38 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~06:38 BEST: weather
+Tue,09-Jul-2013~06:38 KEYWORDS: []
+Tue,09-Jul-2013~06:38 TODAY: 1
+Tue,09-Jul-2013~06:38 DAY: 0
+Tue,09-Jul-2013~06:38 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="1"  date="Tue, 09 Jul 2013 5:59 am NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="2" high="12" text="Sunny" code="32" />\n']
+Tue,09-Jul-2013~06:38 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '1', 'date', 'Tue, 09 Jul 2013 5:59 am NZST']
+Tue,09-Jul-2013~06:38 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'PM Showers', 'code', '39']
+Tue,09-Jul-2013~06:38 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,09-Jul-2013~06:38 KIND: IMP
+Tue,09-Jul-2013~06:38 ACTIONS: {'loader': 1}
+Tue,09-Jul-2013~06:38 WEIGHTS: {1: ['loader']}
+Tue,09-Jul-2013~06:38 BEST: loader
+Tue,09-Jul-2013~06:38 Successfully imported Modules.clock
+Tue,09-Jul-2013~06:38 Successfully imported Modules.discover
+Tue,09-Jul-2013~06:38 Successfully imported Modules.finder
+Tue,09-Jul-2013~06:38 Successfully imported Modules.media
+Tue,09-Jul-2013~06:38 Successfully imported Modules.weather
+Tue,09-Jul-2013~06:38 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~06:38 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~06:38 KIND: INT
+Tue,09-Jul-2013~06:38 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~06:38 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~06:38 BEST: weather
+Tue,09-Jul-2013~06:38 KEYWORDS: []
+Tue,09-Jul-2013~06:38 TODAY: 1
+Tue,09-Jul-2013~06:38 DAY: 0
+Tue,09-Jul-2013~06:38 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="1"  date="Tue, 09 Jul 2013 5:59 am NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="2" high="12" text="Sunny" code="32" />\n']
+Tue,09-Jul-2013~06:38 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '1', 'date', 'Tue, 09 Jul 2013 5:59 am NZST']
+Tue,09-Jul-2013~06:38 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'PM Showers', 'code', '39']
+Tue,09-Jul-2013~06:39 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,09-Jul-2013~06:39 KIND: IMP
+Tue,09-Jul-2013~06:39 ACTIONS: {'loader': 1}
+Tue,09-Jul-2013~06:39 WEIGHTS: {1: ['loader']}
+Tue,09-Jul-2013~06:39 BEST: loader
+Tue,09-Jul-2013~06:39 Successfully imported Modules.clock
+Tue,09-Jul-2013~06:39 Successfully imported Modules.discover
+Tue,09-Jul-2013~06:39 Successfully imported Modules.finder
+Tue,09-Jul-2013~06:39 Successfully imported Modules.media
+Tue,09-Jul-2013~06:39 Successfully imported Modules.weather
+Tue,09-Jul-2013~06:39 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~06:39 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~06:39 KIND: INT
+Tue,09-Jul-2013~06:39 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~06:39 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~06:39 BEST: weather
+Tue,09-Jul-2013~06:39 KEYWORDS: []
+Tue,09-Jul-2013~06:39 TODAY: 1
+Tue,09-Jul-2013~06:39 DAY: 0
+Tue,09-Jul-2013~06:39 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="1"  date="Tue, 09 Jul 2013 5:59 am NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="2" high="12" text="Sunny" code="32" />\n']
+Tue,09-Jul-2013~06:39 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '1', 'date', 'Tue, 09 Jul 2013 5:59 am NZST']
+Tue,09-Jul-2013~06:39 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'PM Showers', 'code', '39']
+Tue,09-Jul-2013~09:01 Successfully imported Modules.clock
+Tue,09-Jul-2013~09:01 Successfully imported Modules.discover
+Tue,09-Jul-2013~09:01 Successfully imported Modules.finder
+Tue,09-Jul-2013~09:01 Successfully imported Modules.media
+Tue,09-Jul-2013~09:01 Successfully imported Modules.weather
+Tue,09-Jul-2013~09:01 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~09:01 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~09:01 KIND: INT
+Tue,09-Jul-2013~09:01 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~09:01 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~09:01 BEST: clock
+Tue,09-Jul-2013~09:01 KEYWORDS: ['time']
+Tue,09-Jul-2013~09:01 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~09:01 KIND: INT
+Tue,09-Jul-2013~09:01 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~09:01 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~09:01 BEST: weather
+Tue,09-Jul-2013~09:04 Successfully imported Modules.clock
+Tue,09-Jul-2013~09:04 Successfully imported Modules.discover
+Tue,09-Jul-2013~09:04 Successfully imported Modules.finder
+Tue,09-Jul-2013~09:04 Successfully imported Modules.media
+Tue,09-Jul-2013~09:04 Successfully imported Modules.weather
+Tue,09-Jul-2013~09:04 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~09:04 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~09:04 KIND: INT
+Tue,09-Jul-2013~09:04 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~09:04 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~09:04 BEST: weather
+Tue,09-Jul-2013~09:05 Successfully imported Modules.clock
+Tue,09-Jul-2013~09:05 Successfully imported Modules.discover
+Tue,09-Jul-2013~09:05 Successfully imported Modules.finder
+Tue,09-Jul-2013~09:05 Successfully imported Modules.media
+Tue,09-Jul-2013~09:05 Successfully imported Modules.weather
+Tue,09-Jul-2013~09:05 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~09:05 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~09:05 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('hot', 'NO')]
+Tue,09-Jul-2013~09:05 KIND: IMP
+Tue,09-Jul-2013~09:05 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~09:05 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~09:05 BEST: weather
+Tue,09-Jul-2013~09:08 Successfully imported Modules.clock
+Tue,09-Jul-2013~09:08 Successfully imported Modules.discover
+Tue,09-Jul-2013~09:08 Successfully imported Modules.finder
+Tue,09-Jul-2013~09:08 Successfully imported Modules.media
+Tue,09-Jul-2013~09:08 Successfully imported Modules.weather
+Tue,09-Jul-2013~09:08 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~09:08 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~09:08 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('snowing', '??'), ('yet', '??')]
+Tue,09-Jul-2013~09:08 KIND: IMP
+Tue,09-Jul-2013~09:08 ACTIONS: {}
+Tue,09-Jul-2013~09:08 WEIGHTS: {}
+Tue,09-Jul-2013~09:08 IT: None
+Tue,09-Jul-2013~09:08 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~09:12 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~09:12 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~09:12 KIND: INT
+Tue,09-Jul-2013~09:12 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~09:12 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~09:12 BEST: weather
+Tue,09-Jul-2013~09:12 CONNECTION: None
+Tue,09-Jul-2013~09:13 Successfully imported Modules.clock
+Tue,09-Jul-2013~09:13 Successfully imported Modules.discover
+Tue,09-Jul-2013~09:13 Successfully imported Modules.finder
+Tue,09-Jul-2013~09:13 Successfully imported Modules.media
+Tue,09-Jul-2013~09:13 Successfully imported Modules.weather
+Tue,09-Jul-2013~09:13 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~09:13 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~09:13 SENTENCE: [('hw', '??'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~09:13 KIND: DEC
+Tue,09-Jul-2013~09:13 CONNECTION: None
+Tue,09-Jul-2013~09:15 Successfully imported Modules.clock
+Tue,09-Jul-2013~09:15 Successfully imported Modules.discover
+Tue,09-Jul-2013~09:15 Successfully imported Modules.finder
+Tue,09-Jul-2013~09:15 Successfully imported Modules.media
+Tue,09-Jul-2013~09:15 Successfully imported Modules.weather
+Tue,09-Jul-2013~09:15 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~09:15 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~09:15 KIND: INT
+Tue,09-Jul-2013~09:15 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~09:15 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~09:15 BEST: weather
+Tue,09-Jul-2013~09:15 KEYWORDS: []
+Tue,09-Jul-2013~09:15 TODAY: 1
+Tue,09-Jul-2013~09:15 DAY: 0
+Tue,09-Jul-2013~09:15 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="3"  date="Tue, 09 Jul 2013 7:58 am NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="2" high="12" text="Sunny" code="32" />\n']
+Tue,09-Jul-2013~09:15 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '3', 'date', 'Tue, 09 Jul 2013 7:58 am NZST']
+Tue,09-Jul-2013~09:15 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'PM Showers', 'code', '39']
+Tue,09-Jul-2013~09:16 Successfully imported Modules.clock
+Tue,09-Jul-2013~09:16 Successfully imported Modules.discover
+Tue,09-Jul-2013~09:16 Successfully imported Modules.finder
+Tue,09-Jul-2013~09:16 Successfully imported Modules.media
+Tue,09-Jul-2013~09:16 Successfully imported Modules.weather
+Tue,09-Jul-2013~09:16 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~09:16 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~09:16 KIND: INT
+Tue,09-Jul-2013~09:16 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~09:16 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~09:16 BEST: weather
+Tue,09-Jul-2013~09:16 KEYWORDS: []
+Tue,09-Jul-2013~09:16 TODAY: 1
+Tue,09-Jul-2013~09:16 DAY: 0
+Tue,09-Jul-2013~09:16 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="3"  date="Tue, 09 Jul 2013 7:58 am NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="2" high="12" text="Sunny" code="32" />\n']
+Tue,09-Jul-2013~09:16 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '3', 'date', 'Tue, 09 Jul 2013 7:58 am NZST']
+Tue,09-Jul-2013~09:16 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'PM Showers', 'code', '39']
+Tue,09-Jul-2013~09:16 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,09-Jul-2013~09:16 KIND: IMP
+Tue,09-Jul-2013~09:16 ACTIONS: {'loader': 1}
+Tue,09-Jul-2013~09:16 WEIGHTS: {1: ['loader']}
+Tue,09-Jul-2013~09:16 BEST: loader
+Tue,09-Jul-2013~09:16 Successfully imported Modules.clock
+Tue,09-Jul-2013~09:16 Successfully imported Modules.discover
+Tue,09-Jul-2013~09:16 Successfully imported Modules.finder
+Tue,09-Jul-2013~09:16 Successfully imported Modules.media
+Tue,09-Jul-2013~09:16 Successfully imported Modules.weather
+Tue,09-Jul-2013~09:16 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~09:16 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~09:16 KIND: INT
+Tue,09-Jul-2013~09:16 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~09:16 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~09:16 BEST: weather
+Tue,09-Jul-2013~09:16 KEYWORDS: []
+Tue,09-Jul-2013~09:16 TODAY: 1
+Tue,09-Jul-2013~09:16 DAY: 0
+Tue,09-Jul-2013~09:16 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="3"  date="Tue, 09 Jul 2013 7:58 am NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="2" high="12" text="Sunny" code="32" />\n']
+Tue,09-Jul-2013~09:16 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '3', 'date', 'Tue, 09 Jul 2013 7:58 am NZST']
+Tue,09-Jul-2013~09:16 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'PM Showers', 'code', '39']
+Tue,09-Jul-2013~09:17 Successfully imported Modules.clock
+Tue,09-Jul-2013~09:17 Successfully imported Modules.discover
+Tue,09-Jul-2013~09:17 Successfully imported Modules.finder
+Tue,09-Jul-2013~09:17 Successfully imported Modules.media
+Tue,09-Jul-2013~09:17 Successfully imported Modules.weather
+Tue,09-Jul-2013~09:17 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~09:18 Successfully imported Modules.clock
+Tue,09-Jul-2013~09:18 Successfully imported Modules.discover
+Tue,09-Jul-2013~09:18 Successfully imported Modules.finder
+Tue,09-Jul-2013~09:18 Successfully imported Modules.media
+Tue,09-Jul-2013~09:18 Successfully imported Modules.weather
+Tue,09-Jul-2013~09:18 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~09:18 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~09:18 KIND: INT
+Tue,09-Jul-2013~09:18 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~09:18 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~09:18 BEST: weather
+Tue,09-Jul-2013~09:18 KEYWORDS: []
+Tue,09-Jul-2013~09:18 TODAY: 1
+Tue,09-Jul-2013~09:18 DAY: 0
+Tue,09-Jul-2013~09:18 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="3"  date="Tue, 09 Jul 2013 7:58 am NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="2" high="12" text="Sunny" code="32" />\n']
+Tue,09-Jul-2013~09:18 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '3', 'date', 'Tue, 09 Jul 2013 7:58 am NZST']
+Tue,09-Jul-2013~09:18 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'PM Showers', 'code', '39']
+Tue,09-Jul-2013~09:19 Successfully imported Modules.clock
+Tue,09-Jul-2013~09:19 Successfully imported Modules.discover
+Tue,09-Jul-2013~09:19 Successfully imported Modules.finder
+Tue,09-Jul-2013~09:19 Successfully imported Modules.media
+Tue,09-Jul-2013~09:19 Successfully imported Modules.weather
+Tue,09-Jul-2013~09:19 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~09:19 Successfully imported Modules.clock
+Tue,09-Jul-2013~09:19 Successfully imported Modules.discover
+Tue,09-Jul-2013~09:19 Successfully imported Modules.finder
+Tue,09-Jul-2013~09:19 Successfully imported Modules.media
+Tue,09-Jul-2013~09:19 Successfully imported Modules.weather
+Tue,09-Jul-2013~09:19 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~09:19 Successfully imported Modules.clock
+Tue,09-Jul-2013~09:19 Successfully imported Modules.discover
+Tue,09-Jul-2013~09:19 Successfully imported Modules.finder
+Tue,09-Jul-2013~09:19 Successfully imported Modules.media
+Tue,09-Jul-2013~09:19 Successfully imported Modules.weather
+Tue,09-Jul-2013~09:19 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~09:19 Successfully imported Modules.clock
+Tue,09-Jul-2013~09:19 Successfully imported Modules.discover
+Tue,09-Jul-2013~09:19 Successfully imported Modules.finder
+Tue,09-Jul-2013~09:19 Successfully imported Modules.media
+Tue,09-Jul-2013~09:19 Successfully imported Modules.weather
+Tue,09-Jul-2013~09:19 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~09:19 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~09:19 KIND: INT
+Tue,09-Jul-2013~09:19 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~09:19 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~09:19 BEST: weather
+Tue,09-Jul-2013~09:19 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~09:19 KEYWORDS: []
+Tue,09-Jul-2013~09:19 TODAY: 1
+Tue,09-Jul-2013~09:19 DAY: 0
+Tue,09-Jul-2013~09:19 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="3"  date="Tue, 09 Jul 2013 7:58 am NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="2" high="12" text="Sunny" code="32" />\n']
+Tue,09-Jul-2013~09:19 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '3', 'date', 'Tue, 09 Jul 2013 7:58 am NZST']
+Tue,09-Jul-2013~09:19 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'PM Showers', 'code', '39']
+Tue,09-Jul-2013~09:19 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~09:20 SENTENCE: [('asdf', '??')]
+Tue,09-Jul-2013~09:20 KIND: DEC
+Tue,09-Jul-2013~09:20 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~09:20 SENTENCE: [('j', '??')]
+Tue,09-Jul-2013~09:20 KIND: DEC
+Tue,09-Jul-2013~09:20 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~09:20 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~09:20 KIND: INT
+Tue,09-Jul-2013~09:20 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~09:20 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~09:20 BEST: clock
+Tue,09-Jul-2013~09:20 KEYWORDS: ['time']
+Tue,09-Jul-2013~09:20 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~13:18 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO')]
+Tue,09-Jul-2013~13:18 KIND: INT
+Tue,09-Jul-2013~13:18 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~13:18 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~13:18 BEST: weather
+Tue,09-Jul-2013~13:18 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~13:18 KEYWORDS: []
+Tue,09-Jul-2013~13:18 TODAY: 1
+Tue,09-Jul-2013~13:18 DAY: 0
+Tue,09-Jul-2013~13:18 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="9"  date="Tue, 09 Jul 2013 12:02 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="2" high="12" text="Sunny" code="32" />\n']
+Tue,09-Jul-2013~13:18 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '9', 'date', 'Tue, 09 Jul 2013 12:02 pm NZST']
+Tue,09-Jul-2013~13:18 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'PM Showers', 'code', '39']
+Tue,09-Jul-2013~13:18 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~13:19 SENTENCE: [('hello', '??')]
+Tue,09-Jul-2013~13:19 KIND: DEC
+Tue,09-Jul-2013~13:19 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~13:19 Successfully imported Modules.clock
+Tue,09-Jul-2013~13:19 Successfully imported Modules.discover
+Tue,09-Jul-2013~13:19 Successfully imported Modules.finder
+Tue,09-Jul-2013~13:19 Successfully imported Modules.media
+Tue,09-Jul-2013~13:19 Successfully imported Modules.weather
+Tue,09-Jul-2013~13:19 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~13:20 Successfully imported Modules.clock
+Tue,09-Jul-2013~13:20 Successfully imported Modules.discover
+Tue,09-Jul-2013~13:20 Successfully imported Modules.finder
+Tue,09-Jul-2013~13:20 Successfully imported Modules.media
+Tue,09-Jul-2013~13:20 Successfully imported Modules.weather
+Tue,09-Jul-2013~13:20 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~13:20 Successfully imported Modules.clock
+Tue,09-Jul-2013~13:20 Successfully imported Modules.discover
+Tue,09-Jul-2013~13:20 Successfully imported Modules.finder
+Tue,09-Jul-2013~13:20 Successfully imported Modules.media
+Tue,09-Jul-2013~13:20 Successfully imported Modules.weather
+Tue,09-Jul-2013~13:20 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~13:20 Successfully imported Modules.clock
+Tue,09-Jul-2013~13:20 Successfully imported Modules.discover
+Tue,09-Jul-2013~13:20 Successfully imported Modules.finder
+Tue,09-Jul-2013~13:20 Successfully imported Modules.media
+Tue,09-Jul-2013~13:20 Successfully imported Modules.weather
+Tue,09-Jul-2013~13:20 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~13:20 Successfully imported Modules.clock
+Tue,09-Jul-2013~13:20 Successfully imported Modules.discover
+Tue,09-Jul-2013~13:20 Successfully imported Modules.finder
+Tue,09-Jul-2013~13:20 Successfully imported Modules.media
+Tue,09-Jul-2013~13:20 Successfully imported Modules.weather
+Tue,09-Jul-2013~13:20 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~13:20 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~13:20 KIND: INT
+Tue,09-Jul-2013~13:20 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~13:20 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~13:20 BEST: clock
+Tue,09-Jul-2013~13:20 KEYWORDS: ['time']
+Tue,09-Jul-2013~13:20 CONNECTION: None
+Tue,09-Jul-2013~13:21 Successfully imported Modules.clock
+Tue,09-Jul-2013~13:21 Successfully imported Modules.discover
+Tue,09-Jul-2013~13:21 Successfully imported Modules.finder
+Tue,09-Jul-2013~13:21 Successfully imported Modules.media
+Tue,09-Jul-2013~13:21 Successfully imported Modules.weather
+Tue,09-Jul-2013~13:21 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~13:21 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~13:21 KIND: INT
+Tue,09-Jul-2013~13:21 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~13:21 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~13:21 BEST: clock
+Tue,09-Jul-2013~13:21 KEYWORDS: ['time']
+Tue,09-Jul-2013~13:21 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~13:21 KIND: INT
+Tue,09-Jul-2013~13:21 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~13:21 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~13:21 BEST: weather
+Tue,09-Jul-2013~13:21 KEYWORDS: []
+Tue,09-Jul-2013~13:21 TODAY: 1
+Tue,09-Jul-2013~13:21 DAY: 0
+Tue,09-Jul-2013~13:21 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="9"  date="Tue, 09 Jul 2013 12:02 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="PM Showers" code="39" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="9" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="2" high="11" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="2" high="12" text="Sunny" code="32" />\n']
+Tue,09-Jul-2013~13:21 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '9', 'date', 'Tue, 09 Jul 2013 12:02 pm NZST']
+Tue,09-Jul-2013~13:21 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'PM Showers', 'code', '39']
+Tue,09-Jul-2013~13:21 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('tangled', '??')]
+Tue,09-Jul-2013~13:21 KIND: IMP
+Tue,09-Jul-2013~13:21 ACTIONS: {'wikipedia': 1, 'finder': 1}
+Tue,09-Jul-2013~13:21 WEIGHTS: {1: ['wikipedia', 'finder']}
+Tue,09-Jul-2013~13:21 BEST: wikipedia
+Tue,09-Jul-2013~13:21 KEYWORDS: [('tangled', 2)]
+Tue,09-Jul-2013~13:21 URL ATTEMPT: http://en.wikipedia.org/wiki/tangled
+Tue,09-Jul-2013~13:22 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('file', 'NO'), ('tangled', '??')]
+Tue,09-Jul-2013~13:22 KIND: IMP
+Tue,09-Jul-2013~13:22 ACTIONS: {'wikipedia': 1, 'finder': 2}
+Tue,09-Jul-2013~13:22 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,09-Jul-2013~13:22 BEST: finder
+Tue,09-Jul-2013~13:22 KEYWORDS: [('tangled', 4)]
+Tue,09-Jul-2013~13:22 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "tangled"
+Tue,09-Jul-2013~13:22 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/Programming/GitHub/PAUL/log.txt', '/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v', '/Users/aaronstockdill/Documents/Programming/C/LCTHW/valgrind-3.8.0/memcheck/mc_translate.c']
+Tue,09-Jul-2013~14:28 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:28 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:28 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:28 Successfully imported Modules.media
+Tue,09-Jul-2013~14:28 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:28 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:30 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('like', 'PP')]
+Tue,09-Jul-2013~14:30 KIND: INT
+Tue,09-Jul-2013~14:30 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~14:30 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~14:30 BEST: weather
+Tue,09-Jul-2013~14:30 KEYWORDS: []
+Tue,09-Jul-2013~14:30 TODAY: 1
+Tue,09-Jul-2013~14:30 DAY: 0
+Tue,09-Jul-2013~14:30 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="9"  date="Tue, 09 Jul 2013 2:01 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~14:30 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '9', 'date', 'Tue, 09 Jul 2013 2:01 pm NZST']
+Tue,09-Jul-2013~14:30 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~14:30 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:30 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:30 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:30 Successfully imported Modules.media
+Tue,09-Jul-2013~14:30 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:30 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:31 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~14:31 KIND: INT
+Tue,09-Jul-2013~14:31 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~14:31 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~14:31 BEST: weather
+Tue,09-Jul-2013~14:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:31 KEYWORDS: []
+Tue,09-Jul-2013~14:31 TODAY: 1
+Tue,09-Jul-2013~14:31 DAY: 0
+Tue,09-Jul-2013~14:31 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="9"  date="Tue, 09 Jul 2013 2:01 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~14:31 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '9', 'date', 'Tue, 09 Jul 2013 2:01 pm NZST']
+Tue,09-Jul-2013~14:31 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~14:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:31 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~14:31 KIND: INT
+Tue,09-Jul-2013~14:31 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~14:31 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~14:31 BEST: weather
+Tue,09-Jul-2013~14:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:31 KEYWORDS: []
+Tue,09-Jul-2013~14:31 TODAY: 1
+Tue,09-Jul-2013~14:31 DAY: 0
+Tue,09-Jul-2013~14:31 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="9"  date="Tue, 09 Jul 2013 2:01 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~14:31 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '9', 'date', 'Tue, 09 Jul 2013 2:01 pm NZST']
+Tue,09-Jul-2013~14:31 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~14:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:33 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:33 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:33 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:33 Successfully imported Modules.media
+Tue,09-Jul-2013~14:33 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:33 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:34 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:34 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:34 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:34 Successfully imported Modules.media
+Tue,09-Jul-2013~14:34 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:34 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:34 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('potatos', '??')]
+Tue,09-Jul-2013~14:34 KIND: IMP
+Tue,09-Jul-2013~14:34 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~14:34 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~14:34 BEST: wikipedia
+Tue,09-Jul-2013~14:34 KEYWORDS: [('potatos', 4)]
+Tue,09-Jul-2013~14:34 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:34 URL ATTEMPT: http://en.wikipedia.org/wiki/potatos
+Tue,09-Jul-2013~14:34 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:34 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~14:34 KIND: INT
+Tue,09-Jul-2013~14:34 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~14:34 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~14:34 BEST: clock
+Tue,09-Jul-2013~14:34 KEYWORDS: ['time']
+Tue,09-Jul-2013~14:34 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:35 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~14:35 KIND: INT
+Tue,09-Jul-2013~14:35 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~14:35 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~14:35 BEST: weather
+Tue,09-Jul-2013~14:35 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:35 KEYWORDS: []
+Tue,09-Jul-2013~14:35 TODAY: 1
+Tue,09-Jul-2013~14:35 DAY: 0
+Tue,09-Jul-2013~14:35 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="9"  date="Tue, 09 Jul 2013 2:01 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~14:35 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '9', 'date', 'Tue, 09 Jul 2013 2:01 pm NZST']
+Tue,09-Jul-2013~14:35 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~14:35 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:37 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:37 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:37 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:37 Successfully imported Modules.media
+Tue,09-Jul-2013~14:37 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:37 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:37 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:37 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:37 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:37 Successfully imported Modules.media
+Tue,09-Jul-2013~14:37 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:37 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:38 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:38 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:38 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:38 Successfully imported Modules.media
+Tue,09-Jul-2013~14:38 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:38 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:38 SENTENCE: [('hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhcold', '??'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~14:38 KIND: DEC
+Tue,09-Jul-2013~14:38 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:38 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~14:38 KIND: INT
+Tue,09-Jul-2013~14:38 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~14:38 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~14:38 BEST: clock
+Tue,09-Jul-2013~14:38 KEYWORDS: ['time']
+Tue,09-Jul-2013~14:38 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:38 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~14:38 KIND: INT
+Tue,09-Jul-2013~14:38 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~14:38 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~14:38 BEST: weather
+Tue,09-Jul-2013~14:38 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:38 KEYWORDS: []
+Tue,09-Jul-2013~14:38 TODAY: 1
+Tue,09-Jul-2013~14:38 DAY: 0
+Tue,09-Jul-2013~14:38 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="9"  date="Tue, 09 Jul 2013 2:01 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~14:38 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '9', 'date', 'Tue, 09 Jul 2013 2:01 pm NZST']
+Tue,09-Jul-2013~14:38 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~14:38 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:41 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:41 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:41 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:41 Successfully imported Modules.media
+Tue,09-Jul-2013~14:43 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:43 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:43 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:43 Successfully imported Modules.media
+Tue,09-Jul-2013~14:43 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:43 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:43 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~14:43 KIND: INT
+Tue,09-Jul-2013~14:43 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~14:43 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~14:43 BEST: weather
+Tue,09-Jul-2013~14:43 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:43 KEYWORDS: []
+Tue,09-Jul-2013~14:43 TODAY: 1
+Tue,09-Jul-2013~14:43 DAY: 0
+Tue,09-Jul-2013~14:43 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="9"  date="Tue, 09 Jul 2013 2:01 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~14:43 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '9', 'date', 'Tue, 09 Jul 2013 2:01 pm NZST']
+Tue,09-Jul-2013~14:43 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~14:43 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:46 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:46 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:46 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:46 Successfully imported Modules.media
+Tue,09-Jul-2013~14:46 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:46 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:46 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:46 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:46 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:46 Successfully imported Modules.media
+Tue,09-Jul-2013~14:46 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:46 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:47 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:47 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:47 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:47 Successfully imported Modules.media
+Tue,09-Jul-2013~14:47 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:47 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:47 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~14:47 KIND: INT
+Tue,09-Jul-2013~14:47 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~14:47 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~14:47 BEST: weather
+Tue,09-Jul-2013~14:47 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:47 KEYWORDS: []
+Tue,09-Jul-2013~14:47 TODAY: 1
+Tue,09-Jul-2013~14:47 DAY: 0
+Tue,09-Jul-2013~14:47 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="9"  date="Tue, 09 Jul 2013 2:01 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~14:47 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '9', 'date', 'Tue, 09 Jul 2013 2:01 pm NZST']
+Tue,09-Jul-2013~14:47 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~14:47 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:47 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~14:47 KIND: INT
+Tue,09-Jul-2013~14:47 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~14:47 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~14:47 BEST: clock
+Tue,09-Jul-2013~14:47 KEYWORDS: ['time']
+Tue,09-Jul-2013~14:47 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:47 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('monday', 'NO')]
+Tue,09-Jul-2013~14:47 KIND: IMP
+Tue,09-Jul-2013~14:47 ACTIONS: {'weather': 1, 'clock': 1}
+Tue,09-Jul-2013~14:47 WEIGHTS: {1: ['weather', 'clock']}
+Tue,09-Jul-2013~14:47 BEST: weather
+Tue,09-Jul-2013~14:47 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:47 KEYWORDS: [('monday', 3)]
+Tue,09-Jul-2013~14:47 TODAY: 1
+Tue,09-Jul-2013~14:47 DAY: 0
+Tue,09-Jul-2013~14:47 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="9"  date="Tue, 09 Jul 2013 2:01 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~14:47 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '9', 'date', 'Tue, 09 Jul 2013 2:01 pm NZST']
+Tue,09-Jul-2013~14:47 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~14:47 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:47 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('friday', 'NO')]
+Tue,09-Jul-2013~14:47 KIND: IMP
+Tue,09-Jul-2013~14:47 ACTIONS: {'weather': 1, 'clock': 1}
+Tue,09-Jul-2013~14:47 WEIGHTS: {1: ['weather', 'clock']}
+Tue,09-Jul-2013~14:47 BEST: weather
+Tue,09-Jul-2013~14:47 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:47 KEYWORDS: [('friday', 3)]
+Tue,09-Jul-2013~14:47 TODAY: 1
+Tue,09-Jul-2013~14:47 DAY: 4
+Tue,09-Jul-2013~14:47 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="9"  date="Tue, 09 Jul 2013 2:01 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~14:47 ITEMS: ['day', 'Fri', 'date', '12 Jul 2013', 'low', '3', 'high', '11', 'text', 'Partly Cloudy', 'code', '30']
+Tue,09-Jul-2013~14:47 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:47 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~14:47 KIND: INT
+Tue,09-Jul-2013~14:47 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~14:47 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~14:47 BEST: clock
+Tue,09-Jul-2013~14:47 KEYWORDS: ['day']
+Tue,09-Jul-2013~14:47 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:47 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('tangled', '??')]
+Tue,09-Jul-2013~14:47 KIND: IMP
+Tue,09-Jul-2013~14:47 ACTIONS: {'wikipedia': 1, 'finder': 1}
+Tue,09-Jul-2013~14:47 WEIGHTS: {1: ['wikipedia', 'finder']}
+Tue,09-Jul-2013~14:47 BEST: wikipedia
+Tue,09-Jul-2013~14:47 KEYWORDS: [('tangled', 2)]
+Tue,09-Jul-2013~14:47 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:47 URL ATTEMPT: http://en.wikipedia.org/wiki/tangled
+Tue,09-Jul-2013~14:48 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:48 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('uc', '??'), ('timetable', '??')]
+Tue,09-Jul-2013~14:48 KIND: IMP
+Tue,09-Jul-2013~14:48 ACTIONS: {'finder': 1}
+Tue,09-Jul-2013~14:48 WEIGHTS: {1: ['finder']}
+Tue,09-Jul-2013~14:48 BEST: finder
+Tue,09-Jul-2013~14:48 KEYWORDS: [('uc timetable', 2)]
+Tue,09-Jul-2013~14:48 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "uc timetable"
+Tue,09-Jul-2013~14:48 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/Programming/GitHub/PAUL/log.txt', '/Users/aaronstockdill/Documents/Programming/GitHub/Timetable Widget/Timetable_wdgt/index.html']
+Tue,09-Jul-2013~14:48 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:48 ORDINALS: ['first']
+Tue,09-Jul-2013~14:48 CHOICE: 1
+Tue,09-Jul-2013~14:48 DECISION: /Users/aaronstockdill/Documents/Programming/GitHub/PAUL/log.txt
+Tue,09-Jul-2013~14:48 IT: /Users/aaronstockdill/Documents/Programming/GitHub/PAUL/log.txt
+Tue,09-Jul-2013~14:48 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:51 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:51 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:51 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:51 Successfully imported Modules.media
+Tue,09-Jul-2013~14:51 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:51 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:52 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:52 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:52 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:52 Successfully imported Modules.media
+Tue,09-Jul-2013~14:52 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:52 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:52 SENTENCE: [('wolfram', 'NS'), ('potato', '??')]
+Tue,09-Jul-2013~14:52 KIND: DEC
+Tue,09-Jul-2013~14:52 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('potato', '??')]
+Tue,09-Jul-2013~14:52 KIND: INT
+Tue,09-Jul-2013~14:52 ACTIONS: {}
+Tue,09-Jul-2013~14:52 WEIGHTS: {}
+Tue,09-Jul-2013~14:53 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,09-Jul-2013~14:53 KIND: IMP
+Tue,09-Jul-2013~14:53 ACTIONS: {'loader': 1}
+Tue,09-Jul-2013~14:53 WEIGHTS: {1: ['loader']}
+Tue,09-Jul-2013~14:53 BEST: loader
+Tue,09-Jul-2013~14:53 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:53 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:53 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:53 Successfully imported Modules.media
+Tue,09-Jul-2013~14:53 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:53 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:53 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('potato', '??')]
+Tue,09-Jul-2013~14:53 KIND: INT
+Tue,09-Jul-2013~14:53 ACTIONS: {}
+Tue,09-Jul-2013~14:53 WEIGHTS: {}
+Tue,09-Jul-2013~14:54 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,09-Jul-2013~14:54 KIND: IMP
+Tue,09-Jul-2013~14:54 ACTIONS: {'loader': 1}
+Tue,09-Jul-2013~14:54 WEIGHTS: {1: ['loader']}
+Tue,09-Jul-2013~14:54 BEST: loader
+Tue,09-Jul-2013~14:54 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:54 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:54 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:54 Successfully imported Modules.media
+Tue,09-Jul-2013~14:54 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:54 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:54 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('potato', '??')]
+Tue,09-Jul-2013~14:54 KIND: INT
+Tue,09-Jul-2013~14:54 ACTIONS: {}
+Tue,09-Jul-2013~14:54 WEIGHTS: {}
+Tue,09-Jul-2013~14:54 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:54 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:54 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:54 Successfully imported Modules.media
+Tue,09-Jul-2013~14:54 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:54 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:54 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~14:54 KIND: INT
+Tue,09-Jul-2013~14:54 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~14:54 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~14:54 BEST: clock
+Tue,09-Jul-2013~14:54 KEYWORDS: ['time']
+Tue,09-Jul-2013~14:54 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:54 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('tangled', '??')]
+Tue,09-Jul-2013~14:54 KIND: IMP
+Tue,09-Jul-2013~14:54 ACTIONS: {'wikipedia': 1, 'finder': 1}
+Tue,09-Jul-2013~14:54 WEIGHTS: {1: ['wikipedia', 'finder']}
+Tue,09-Jul-2013~14:54 BEST: wikipedia
+Tue,09-Jul-2013~14:54 KEYWORDS: [('tangled', 2)]
+Tue,09-Jul-2013~14:54 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:54 URL ATTEMPT: http://en.wikipedia.org/wiki/tangled
+Tue,09-Jul-2013~14:55 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:55 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('the', 'AR'), ('video', 'NO'), ('teen', '??'), ('wolf', '??')]
+Tue,09-Jul-2013~14:55 KIND: IMP
+Tue,09-Jul-2013~14:55 ACTIONS: {'finder': 2}
+Tue,09-Jul-2013~14:55 WEIGHTS: {2: ['finder']}
+Tue,09-Jul-2013~14:55 BEST: finder
+Tue,09-Jul-2013~14:55 KEYWORDS: [('teen wolf', 4)]
+Tue,09-Jul-2013~14:55 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "teen wolf"
+Tue,09-Jul-2013~14:55 RESULTS FIRST 5: ["/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Teen Wolf"]
+Tue,09-Jul-2013~14:55 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:56 DECISION: None
+Tue,09-Jul-2013~14:56 IT: None
+Tue,09-Jul-2013~14:56 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:56 Successfully imported Modules.clock
+Tue,09-Jul-2013~14:56 Successfully imported Modules.discover
+Tue,09-Jul-2013~14:56 Successfully imported Modules.finder
+Tue,09-Jul-2013~14:56 Successfully imported Modules.media
+Tue,09-Jul-2013~14:56 Successfully imported Modules.weather
+Tue,09-Jul-2013~14:56 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~14:56 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('teen', '??'), ('wolf', '??')]
+Tue,09-Jul-2013~14:56 KIND: IMP
+Tue,09-Jul-2013~14:56 ACTIONS: {'finder': 2}
+Tue,09-Jul-2013~14:56 WEIGHTS: {2: ['finder']}
+Tue,09-Jul-2013~14:56 BEST: finder
+Tue,09-Jul-2013~14:56 KEYWORDS: [('teen wolf', 4)]
+Tue,09-Jul-2013~14:56 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "teen wolf"
+Tue,09-Jul-2013~14:56 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/Programming/GitHub/PAUL/log.txt', "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Teen Wolf"]
+Tue,09-Jul-2013~14:56 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:56 ORDINALS: ['second']
+Tue,09-Jul-2013~14:56 CHOICE: 2
+Tue,09-Jul-2013~14:56 DECISION: /Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Teen Wolf
+Tue,09-Jul-2013~14:56 IT: /Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Teen Wolf
+Tue,09-Jul-2013~14:56 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:58 SENTENCE: [('You', 'PS'), ('play', 'VB')]
+Tue,09-Jul-2013~14:58 KIND: IMP
+Tue,09-Jul-2013~14:58 ACTIONS: {'media': 1}
+Tue,09-Jul-2013~14:58 WEIGHTS: {1: ['media']}
+Tue,09-Jul-2013~14:58 BEST: media
+Tue,09-Jul-2013~14:58 MEDIA: play
+Tue,09-Jul-2013~14:58 COMMAND: osascript -e "tell application \"iTunes\" to play"
+Tue,09-Jul-2013~14:58 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:58 SENTENCE: [('You', 'PS'), ('pause', 'VB')]
+Tue,09-Jul-2013~14:58 KIND: IMP
+Tue,09-Jul-2013~14:58 ACTIONS: {'media': 1}
+Tue,09-Jul-2013~14:58 WEIGHTS: {1: ['media']}
+Tue,09-Jul-2013~14:58 BEST: media
+Tue,09-Jul-2013~14:58 MEDIA: pause
+Tue,09-Jul-2013~14:58 COMMAND: osascript -e "tell application \"iTunes\" to pause"
+Tue,09-Jul-2013~14:58 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:58 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('the', 'AR'), ('msuic', '??'), ('uprising', '??'), ('muse', '??')]
+Tue,09-Jul-2013~14:58 KIND: IMP
+Tue,09-Jul-2013~14:58 ACTIONS: {'finder': 1}
+Tue,09-Jul-2013~14:58 WEIGHTS: {1: ['finder']}
+Tue,09-Jul-2013~14:58 BEST: finder
+Tue,09-Jul-2013~14:58 KEYWORDS: [('msuic uprising muse', 3)]
+Tue,09-Jul-2013~14:58 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "msuic uprising muse"
+Tue,09-Jul-2013~14:58 RESULTS FIRST 5: []
+Tue,09-Jul-2013~14:58 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:58 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('the', 'AR'), ('music', 'VB'), ('uprising', '??')]
+Tue,09-Jul-2013~14:58 KIND: IMP
+Tue,09-Jul-2013~14:58 ACTIONS: {'media': 1, 'finder': 2}
+Tue,09-Jul-2013~14:58 WEIGHTS: {1: ['media'], 2: ['finder']}
+Tue,09-Jul-2013~14:58 BEST: finder
+Tue,09-Jul-2013~14:58 KEYWORDS: [('uprising', 4)]
+Tue,09-Jul-2013~14:58 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "uprising"
+Tue,09-Jul-2013~14:58 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/Programming/GitHub/PAUL/log.txt', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Music/Muse/The Resistance/01 Uprising.m4a', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Music/Muse/The Resistance/12 Uprising.m4v']
+Tue,09-Jul-2013~14:58 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:58 ORDINALS: ['second']
+Tue,09-Jul-2013~14:58 CHOICE: 2
+Tue,09-Jul-2013~14:58 DECISION: /Users/aaronstockdill/Music/iTunes/iTunes Media/Music/Muse/The Resistance/01 Uprising.m4a
+Tue,09-Jul-2013~14:58 IT: /Users/aaronstockdill/Music/iTunes/iTunes Media/Music/Muse/The Resistance/01 Uprising.m4a
+Tue,09-Jul-2013~14:58 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:58 SENTENCE: [('You', 'PS'), ('pause', 'VB')]
+Tue,09-Jul-2013~14:58 KIND: IMP
+Tue,09-Jul-2013~14:58 ACTIONS: {'media': 1}
+Tue,09-Jul-2013~14:58 WEIGHTS: {1: ['media']}
+Tue,09-Jul-2013~14:58 BEST: media
+Tue,09-Jul-2013~14:58 MEDIA: pause
+Tue,09-Jul-2013~14:58 COMMAND: osascript -e "tell application \"iTunes\" to pause"
+Tue,09-Jul-2013~14:58 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:58 SENTENCE: [('You', 'PS'), ('play', 'VB')]
+Tue,09-Jul-2013~14:58 KIND: IMP
+Tue,09-Jul-2013~14:58 ACTIONS: {'media': 1}
+Tue,09-Jul-2013~14:58 WEIGHTS: {1: ['media']}
+Tue,09-Jul-2013~14:58 BEST: media
+Tue,09-Jul-2013~14:58 MEDIA: play
+Tue,09-Jul-2013~14:58 COMMAND: osascript -e "tell application \"iTunes\" to play"
+Tue,09-Jul-2013~14:58 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:58 SENTENCE: [('You', 'PS'), ('next', 'VB')]
+Tue,09-Jul-2013~14:58 KIND: IMP
+Tue,09-Jul-2013~14:58 ACTIONS: {'media': 1}
+Tue,09-Jul-2013~14:58 WEIGHTS: {1: ['media']}
+Tue,09-Jul-2013~14:58 BEST: media
+Tue,09-Jul-2013~14:58 MEDIA: next track
+Tue,09-Jul-2013~14:58 COMMAND: osascript -e "tell application \"iTunes\" to next track"
+Tue,09-Jul-2013~14:58 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:59 SENTENCE: [('You', 'PS'), ('pause', 'VB')]
+Tue,09-Jul-2013~14:59 KIND: IMP
+Tue,09-Jul-2013~14:59 ACTIONS: {'media': 1}
+Tue,09-Jul-2013~14:59 WEIGHTS: {1: ['media']}
+Tue,09-Jul-2013~14:59 BEST: media
+Tue,09-Jul-2013~14:59 MEDIA: pause
+Tue,09-Jul-2013~14:59 COMMAND: osascript -e "tell application \"iTunes\" to pause"
+Tue,09-Jul-2013~14:59 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:59 SENTENCE: [('prev', '??')]
+Tue,09-Jul-2013~14:59 KIND: DEC
+Tue,09-Jul-2013~14:59 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:59 SENTENCE: [('You', 'PS'), ('previous', 'VB')]
+Tue,09-Jul-2013~14:59 KIND: IMP
+Tue,09-Jul-2013~14:59 ACTIONS: {'media': 1}
+Tue,09-Jul-2013~14:59 WEIGHTS: {1: ['media']}
+Tue,09-Jul-2013~14:59 BEST: media
+Tue,09-Jul-2013~14:59 MEDIA: previous track
+Tue,09-Jul-2013~14:59 COMMAND: osascript -e "tell application \"iTunes\" to previous track"
+Tue,09-Jul-2013~14:59 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~14:59 SENTENCE: [('You', 'PS'), ('previous', 'VB')]
+Tue,09-Jul-2013~14:59 KIND: IMP
+Tue,09-Jul-2013~14:59 ACTIONS: {'media': 1}
+Tue,09-Jul-2013~14:59 WEIGHTS: {1: ['media']}
+Tue,09-Jul-2013~14:59 BEST: media
+Tue,09-Jul-2013~14:59 MEDIA: previous track
+Tue,09-Jul-2013~14:59 COMMAND: osascript -e "tell application \"iTunes\" to previous track"
+Tue,09-Jul-2013~14:59 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:35 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~15:35 KIND: INT
+Tue,09-Jul-2013~15:35 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~15:35 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~15:35 BEST: clock
+Tue,09-Jul-2013~15:35 KEYWORDS: ['time']
+Tue,09-Jul-2013~15:35 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:36 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~15:36 KIND: INT
+Tue,09-Jul-2013~15:36 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~15:36 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~15:36 BEST: clock
+Tue,09-Jul-2013~15:36 KEYWORDS: ['time']
+Tue,09-Jul-2013~15:36 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:40 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('potatos', '??')]
+Tue,09-Jul-2013~15:40 KIND: IMP
+Tue,09-Jul-2013~15:40 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~15:40 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~15:40 BEST: wikipedia
+Tue,09-Jul-2013~15:40 KEYWORDS: [('potatos', 4)]
+Tue,09-Jul-2013~15:40 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:40 URL ATTEMPT: http://en.wikipedia.org/wiki/potatos
+Tue,09-Jul-2013~15:40 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:41 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('einstein', '??')]
+Tue,09-Jul-2013~15:41 KIND: IMP
+Tue,09-Jul-2013~15:41 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~15:41 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~15:41 BEST: wikipedia
+Tue,09-Jul-2013~15:41 KEYWORDS: [('einstein', 4)]
+Tue,09-Jul-2013~15:41 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:41 URL ATTEMPT: http://en.wikipedia.org/wiki/einstein
+Tue,09-Jul-2013~15:41 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:42 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~15:42 KIND: INT
+Tue,09-Jul-2013~15:42 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~15:42 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~15:42 BEST: clock
+Tue,09-Jul-2013~15:42 KEYWORDS: ['time']
+Tue,09-Jul-2013~15:42 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:42 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('einstein', '??')]
+Tue,09-Jul-2013~15:42 KIND: IMP
+Tue,09-Jul-2013~15:42 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~15:42 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~15:42 BEST: wikipedia
+Tue,09-Jul-2013~15:42 KEYWORDS: [('einstein', 4)]
+Tue,09-Jul-2013~15:42 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:42 URL ATTEMPT: http://en.wikipedia.org/wiki/einstein
+Tue,09-Jul-2013~15:42 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:47 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~15:47 KIND: INT
+Tue,09-Jul-2013~15:47 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~15:47 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~15:47 BEST: clock
+Tue,09-Jul-2013~15:47 KEYWORDS: ['time']
+Tue,09-Jul-2013~15:47 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:47 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~15:47 KIND: INT
+Tue,09-Jul-2013~15:47 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~15:47 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~15:47 BEST: weather
+Tue,09-Jul-2013~15:47 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:47 KEYWORDS: []
+Tue,09-Jul-2013~15:47 TODAY: 1
+Tue,09-Jul-2013~15:47 DAY: 0
+Tue,09-Jul-2013~15:47 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="7"  date="Tue, 09 Jul 2013 3:01 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~15:47 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '7', 'date', 'Tue, 09 Jul 2013 3:01 pm NZST']
+Tue,09-Jul-2013~15:47 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~15:47 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:51 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~15:51 KIND: INT
+Tue,09-Jul-2013~15:51 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~15:51 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~15:51 BEST: clock
+Tue,09-Jul-2013~15:51 KEYWORDS: ['time']
+Tue,09-Jul-2013~15:51 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:52 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~15:52 KIND: INT
+Tue,09-Jul-2013~15:52 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~15:52 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~15:52 BEST: weather
+Tue,09-Jul-2013~15:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:52 KEYWORDS: []
+Tue,09-Jul-2013~15:52 TODAY: 1
+Tue,09-Jul-2013~15:52 DAY: 0
+Tue,09-Jul-2013~15:52 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="7"  date="Tue, 09 Jul 2013 3:01 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~15:52 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '7', 'date', 'Tue, 09 Jul 2013 3:01 pm NZST']
+Tue,09-Jul-2013~15:52 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~15:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:54 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~15:54 KIND: INT
+Tue,09-Jul-2013~15:54 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~15:54 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~15:54 BEST: weather
+Tue,09-Jul-2013~15:54 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:54 KEYWORDS: []
+Tue,09-Jul-2013~15:54 TODAY: 1
+Tue,09-Jul-2013~15:54 DAY: 0
+Tue,09-Jul-2013~15:54 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="7"  date="Tue, 09 Jul 2013 3:01 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~15:54 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '7', 'date', 'Tue, 09 Jul 2013 3:01 pm NZST']
+Tue,09-Jul-2013~15:54 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~15:54 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:54 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~15:54 KIND: INT
+Tue,09-Jul-2013~15:54 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~15:54 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~15:54 BEST: clock
+Tue,09-Jul-2013~15:54 KEYWORDS: ['time']
+Tue,09-Jul-2013~15:54 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:54 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('despicable', '??'), ('me', 'PO')]
+Tue,09-Jul-2013~15:54 KIND: IMP
+Tue,09-Jul-2013~15:54 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~15:54 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~15:54 BEST: wikipedia
+Tue,09-Jul-2013~15:54 KEYWORDS: [('despicable', 4)]
+Tue,09-Jul-2013~15:54 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:54 URL ATTEMPT: http://en.wikipedia.org/wiki/despicable
+Tue,09-Jul-2013~15:54 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:54 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~15:54 KIND: IMP
+Tue,09-Jul-2013~15:54 ACTIONS: {'finder': 1}
+Tue,09-Jul-2013~15:54 WEIGHTS: {1: ['finder']}
+Tue,09-Jul-2013~15:54 BEST: finder
+Tue,09-Jul-2013~15:54 IT: http://en.wikipedia.org/wiki/despicable
+Tue,09-Jul-2013~15:54 KEYWORDS: [('http://en.wikipedia.org/wiki/despicable', 2)]
+Tue,09-Jul-2013~15:54 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:56 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~15:56 KIND: INT
+Tue,09-Jul-2013~15:56 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~15:56 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~15:56 BEST: clock
+Tue,09-Jul-2013~15:56 KEYWORDS: ['time']
+Tue,09-Jul-2013~15:56 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:56 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO'), ('oustide', '??')]
+Tue,09-Jul-2013~15:56 KIND: INT
+Tue,09-Jul-2013~15:56 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~15:56 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~15:56 BEST: weather
+Tue,09-Jul-2013~15:56 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:56 KEYWORDS: [('oustide', 4)]
+Tue,09-Jul-2013~15:56 TODAY: 1
+Tue,09-Jul-2013~15:56 DAY: 0
+Tue,09-Jul-2013~15:56 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="7"  date="Tue, 09 Jul 2013 3:01 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~15:56 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '7', 'date', 'Tue, 09 Jul 2013 3:01 pm NZST']
+Tue,09-Jul-2013~15:56 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~15:56 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~15:58 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~15:58 KIND: INT
+Tue,09-Jul-2013~15:58 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~15:58 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~15:58 BEST: clock
+Tue,09-Jul-2013~15:58 KEYWORDS: ['time']
+Tue,09-Jul-2013~15:58 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~16:01 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~16:01 KIND: INT
+Tue,09-Jul-2013~16:01 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~16:01 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~16:01 BEST: clock
+Tue,09-Jul-2013~16:01 KEYWORDS: ['time']
+Tue,09-Jul-2013~16:01 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~16:20 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~16:20 KIND: INT
+Tue,09-Jul-2013~16:20 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~16:20 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~16:20 BEST: clock
+Tue,09-Jul-2013~16:20 KEYWORDS: ['time']
+Tue,09-Jul-2013~16:20 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~16:20 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~16:20 KIND: INT
+Tue,09-Jul-2013~16:20 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~16:20 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~16:20 BEST: clock
+Tue,09-Jul-2013~16:20 KEYWORDS: ['time']
+Tue,09-Jul-2013~16:20 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~16:51 SENTENCE: [('hwo', '??'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~16:51 KIND: DEC
+Tue,09-Jul-2013~16:51 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~16:51 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~16:51 KIND: INT
+Tue,09-Jul-2013~16:51 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~16:51 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~16:51 BEST: weather
+Tue,09-Jul-2013~16:51 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~16:51 KEYWORDS: []
+Tue,09-Jul-2013~16:51 TODAY: 1
+Tue,09-Jul-2013~16:51 DAY: 0
+Tue,09-Jul-2013~16:51 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="30"  temp="7"  date="Tue, 09 Jul 2013 4:01 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~16:51 ITEMS: ['text', 'Partly Cloudy', 'code', '30', 'temp', '7', 'date', 'Tue, 09 Jul 2013 4:01 pm NZST']
+Tue,09-Jul-2013~16:51 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~16:51 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~16:52 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~16:52 KIND: INT
+Tue,09-Jul-2013~16:52 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~16:52 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~16:52 BEST: weather
+Tue,09-Jul-2013~16:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~16:52 KEYWORDS: []
+Tue,09-Jul-2013~16:52 TODAY: 1
+Tue,09-Jul-2013~16:52 DAY: 0
+Tue,09-Jul-2013~16:52 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="30"  temp="7"  date="Tue, 09 Jul 2013 4:01 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~16:52 ITEMS: ['text', 'Partly Cloudy', 'code', '30', 'temp', '7', 'date', 'Tue, 09 Jul 2013 4:01 pm NZST']
+Tue,09-Jul-2013~16:52 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~16:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~16:52 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('thumbalina', '??')]
+Tue,09-Jul-2013~16:52 KIND: IMP
+Tue,09-Jul-2013~16:52 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~16:52 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~16:52 BEST: wikipedia
+Tue,09-Jul-2013~16:52 KEYWORDS: [('thumbalina', 4)]
+Tue,09-Jul-2013~16:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~16:52 URL ATTEMPT: http://en.wikipedia.org/wiki/thumbalina
+Tue,09-Jul-2013~16:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~17:05 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~17:05 KIND: INT
+Tue,09-Jul-2013~17:05 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~17:05 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~17:05 BEST: clock
+Tue,09-Jul-2013~17:05 KEYWORDS: ['day']
+Tue,09-Jul-2013~17:05 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~17:08 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~17:08 KIND: INT
+Tue,09-Jul-2013~17:08 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~17:08 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~17:08 BEST: clock
+Tue,09-Jul-2013~17:08 KEYWORDS: ['time']
+Tue,09-Jul-2013~17:08 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~17:10 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~17:10 KIND: INT
+Tue,09-Jul-2013~17:10 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~17:10 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~17:10 BEST: clock
+Tue,09-Jul-2013~17:10 KEYWORDS: ['time']
+Tue,09-Jul-2013~17:10 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~17:13 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~17:13 KIND: INT
+Tue,09-Jul-2013~17:13 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~17:13 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~17:13 BEST: clock
+Tue,09-Jul-2013~17:13 KEYWORDS: ['time']
+Tue,09-Jul-2013~17:13 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~17:13 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~17:13 KIND: INT
+Tue,09-Jul-2013~17:13 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~17:13 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~17:13 BEST: clock
+Tue,09-Jul-2013~17:13 KEYWORDS: ['time']
+Tue,09-Jul-2013~17:13 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~17:14 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~17:14 KIND: INT
+Tue,09-Jul-2013~17:14 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~17:14 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~17:14 BEST: clock
+Tue,09-Jul-2013~17:14 KEYWORDS: ['time']
+Tue,09-Jul-2013~17:14 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~17:15 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('potatos', '??')]
+Tue,09-Jul-2013~17:15 KIND: IMP
+Tue,09-Jul-2013~17:15 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~17:15 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~17:15 BEST: wikipedia
+Tue,09-Jul-2013~17:15 KEYWORDS: [('potatos', 4)]
+Tue,09-Jul-2013~17:15 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~17:15 URL ATTEMPT: http://en.wikipedia.org/wiki/potatos
+Tue,09-Jul-2013~17:15 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~17:16 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~17:16 KIND: INT
+Tue,09-Jul-2013~17:16 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~17:16 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~17:16 BEST: clock
+Tue,09-Jul-2013~17:16 KEYWORDS: ['time']
+Tue,09-Jul-2013~17:16 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~17:16 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('potatos', '??')]
+Tue,09-Jul-2013~17:16 KIND: IMP
+Tue,09-Jul-2013~17:16 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~17:16 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~17:16 BEST: wikipedia
+Tue,09-Jul-2013~17:16 KEYWORDS: [('potatos', 4)]
+Tue,09-Jul-2013~17:16 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~17:16 URL ATTEMPT: http://en.wikipedia.org/wiki/potatos
+Tue,09-Jul-2013~17:16 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~17:57 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~17:57 KIND: INT
+Tue,09-Jul-2013~17:57 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~17:57 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~17:57 BEST: clock
+Tue,09-Jul-2013~17:57 KEYWORDS: ['time']
+Tue,09-Jul-2013~17:57 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~17:58 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~17:58 KIND: INT
+Tue,09-Jul-2013~17:58 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~17:58 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~17:58 BEST: weather
+Tue,09-Jul-2013~17:58 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~17:58 KEYWORDS: []
+Tue,09-Jul-2013~17:58 TODAY: 1
+Tue,09-Jul-2013~17:58 DAY: 0
+Tue,09-Jul-2013~17:58 WEATHER_RAW: ['<yweather:condition  text="Showers in the Vicinity"  code="30"  temp="7"  date="Tue, 09 Jul 2013 5:00 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~17:58 ITEMS: ['text', 'Showers in the Vicinity', 'code', '30', 'temp', '7', 'date', 'Tue, 09 Jul 2013 5:00 pm NZST']
+Tue,09-Jul-2013~17:58 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~17:58 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:03 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:03 KIND: INT
+Tue,09-Jul-2013~18:03 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:03 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:03 BEST: clock
+Tue,09-Jul-2013~18:03 KEYWORDS: ['time']
+Tue,09-Jul-2013~18:03 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:03 Successfully imported Modules.clock
+Tue,09-Jul-2013~18:03 Successfully imported Modules.discover
+Tue,09-Jul-2013~18:03 Successfully imported Modules.finder
+Tue,09-Jul-2013~18:03 Successfully imported Modules.media
+Tue,09-Jul-2013~18:03 Successfully imported Modules.weather
+Tue,09-Jul-2013~18:03 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~18:04 Successfully imported Modules.clock
+Tue,09-Jul-2013~18:04 Successfully imported Modules.discover
+Tue,09-Jul-2013~18:04 Successfully imported Modules.finder
+Tue,09-Jul-2013~18:04 Successfully imported Modules.media
+Tue,09-Jul-2013~18:04 Successfully imported Modules.weather
+Tue,09-Jul-2013~18:04 Successfully imported Modules.wikipedia
+Tue,09-Jul-2013~18:04 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('potatoes', '??')]
+Tue,09-Jul-2013~18:04 KIND: IMP
+Tue,09-Jul-2013~18:04 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~18:04 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~18:04 BEST: wikipedia
+Tue,09-Jul-2013~18:04 KEYWORDS: [('potatoes', 4)]
+Tue,09-Jul-2013~18:04 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:04 URL ATTEMPT: http://en.wikipedia.org/wiki/potatoes
+Tue,09-Jul-2013~18:04 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:05 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:05 KIND: INT
+Tue,09-Jul-2013~18:05 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:05 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:05 BEST: clock
+Tue,09-Jul-2013~18:05 KEYWORDS: ['time']
+Tue,09-Jul-2013~18:05 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:08 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:08 KIND: INT
+Tue,09-Jul-2013~18:08 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:08 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:08 BEST: clock
+Tue,09-Jul-2013~18:08 KEYWORDS: ['day']
+Tue,09-Jul-2013~18:08 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:12 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('inception', '??')]
+Tue,09-Jul-2013~18:12 KIND: IMP
+Tue,09-Jul-2013~18:12 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~18:12 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~18:12 BEST: wikipedia
+Tue,09-Jul-2013~18:12 KEYWORDS: [('inception', 4)]
+Tue,09-Jul-2013~18:12 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:12 URL ATTEMPT: http://en.wikipedia.org/wiki/inception
+Tue,09-Jul-2013~18:12 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:13 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:13 KIND: INT
+Tue,09-Jul-2013~18:13 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:13 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:13 BEST: clock
+Tue,09-Jul-2013~18:13 KEYWORDS: ['day']
+Tue,09-Jul-2013~18:13 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:14 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:14 KIND: INT
+Tue,09-Jul-2013~18:14 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~18:14 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~18:14 BEST: weather
+Tue,09-Jul-2013~18:14 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:14 KEYWORDS: []
+Tue,09-Jul-2013~18:14 TODAY: 1
+Tue,09-Jul-2013~18:14 DAY: 0
+Tue,09-Jul-2013~18:14 WEATHER_RAW: ['<yweather:condition  text="Showers in the Vicinity"  code="30"  temp="7"  date="Tue, 09 Jul 2013 5:00 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~18:14 ITEMS: ['text', 'Showers in the Vicinity', 'code', '30', 'temp', '7', 'date', 'Tue, 09 Jul 2013 5:00 pm NZST']
+Tue,09-Jul-2013~18:14 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~18:14 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:16 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('oranges', '??')]
+Tue,09-Jul-2013~18:16 KIND: IMP
+Tue,09-Jul-2013~18:16 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~18:16 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~18:16 BEST: wikipedia
+Tue,09-Jul-2013~18:16 KEYWORDS: [('oranges', 4)]
+Tue,09-Jul-2013~18:16 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:16 URL ATTEMPT: http://en.wikipedia.org/wiki/oranges
+Tue,09-Jul-2013~18:16 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:16 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('dracula', '??')]
+Tue,09-Jul-2013~18:16 KIND: IMP
+Tue,09-Jul-2013~18:16 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~18:16 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~18:16 BEST: wikipedia
+Tue,09-Jul-2013~18:16 KEYWORDS: [('dracula', 4)]
+Tue,09-Jul-2013~18:16 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:16 URL ATTEMPT: http://en.wikipedia.org/wiki/dracula
+Tue,09-Jul-2013~18:16 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:20 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:20 KIND: INT
+Tue,09-Jul-2013~18:20 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:20 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:20 BEST: clock
+Tue,09-Jul-2013~18:20 KEYWORDS: ['day']
+Tue,09-Jul-2013~18:20 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:21 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('apples', '??')]
+Tue,09-Jul-2013~18:21 KIND: IMP
+Tue,09-Jul-2013~18:21 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~18:21 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~18:21 BEST: wikipedia
+Tue,09-Jul-2013~18:21 KEYWORDS: [('apples', 4)]
+Tue,09-Jul-2013~18:21 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:21 URL ATTEMPT: http://en.wikipedia.org/wiki/apples
+Tue,09-Jul-2013~18:21 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:22 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('apples', '??')]
+Tue,09-Jul-2013~18:22 KIND: IMP
+Tue,09-Jul-2013~18:22 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~18:22 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~18:22 BEST: wikipedia
+Tue,09-Jul-2013~18:22 KEYWORDS: [('apples', 4)]
+Tue,09-Jul-2013~18:22 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:22 URL ATTEMPT: http://en.wikipedia.org/wiki/apples
+Tue,09-Jul-2013~18:22 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:22 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:22 KIND: INT
+Tue,09-Jul-2013~18:22 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:22 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:22 BEST: clock
+Tue,09-Jul-2013~18:22 KEYWORDS: ['day']
+Tue,09-Jul-2013~18:22 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:23 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('earth', '??')]
+Tue,09-Jul-2013~18:23 KIND: IMP
+Tue,09-Jul-2013~18:23 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~18:23 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~18:23 BEST: wikipedia
+Tue,09-Jul-2013~18:23 KEYWORDS: [('earth', 4)]
+Tue,09-Jul-2013~18:23 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:23 URL ATTEMPT: http://en.wikipedia.org/wiki/earth
+Tue,09-Jul-2013~18:23 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:24 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('apples', '??')]
+Tue,09-Jul-2013~18:24 KIND: IMP
+Tue,09-Jul-2013~18:24 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~18:24 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~18:24 BEST: wikipedia
+Tue,09-Jul-2013~18:24 KEYWORDS: [('apples', 4)]
+Tue,09-Jul-2013~18:24 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:24 URL ATTEMPT: http://en.wikipedia.org/wiki/apples
+Tue,09-Jul-2013~18:25 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:27 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO')]
+Tue,09-Jul-2013~18:27 KIND: INT
+Tue,09-Jul-2013~18:27 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~18:27 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~18:27 BEST: weather
+Tue,09-Jul-2013~18:27 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:27 KEYWORDS: []
+Tue,09-Jul-2013~18:27 TODAY: 1
+Tue,09-Jul-2013~18:27 DAY: 0
+Tue,09-Jul-2013~18:27 WEATHER_RAW: ['<yweather:condition  text="Rain"  code="12"  temp="7"  date="Tue, 09 Jul 2013 6:00 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~18:27 ITEMS: ['text', 'Rain', 'code', '12', 'temp', '7', 'date', 'Tue, 09 Jul 2013 6:00 pm NZST']
+Tue,09-Jul-2013~18:27 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~18:27 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:28 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:28 KIND: INT
+Tue,09-Jul-2013~18:28 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:28 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:28 BEST: clock
+Tue,09-Jul-2013~18:28 KEYWORDS: ['day']
+Tue,09-Jul-2013~18:28 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:29 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:29 KIND: INT
+Tue,09-Jul-2013~18:29 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:29 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:29 BEST: clock
+Tue,09-Jul-2013~18:29 KEYWORDS: ['day']
+Tue,09-Jul-2013~18:29 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:30 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('apples', '??')]
+Tue,09-Jul-2013~18:30 KIND: IMP
+Tue,09-Jul-2013~18:30 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~18:30 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~18:30 BEST: wikipedia
+Tue,09-Jul-2013~18:30 KEYWORDS: [('apples', 4)]
+Tue,09-Jul-2013~18:30 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:30 URL ATTEMPT: http://en.wikipedia.org/wiki/apples
+Tue,09-Jul-2013~18:30 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:31 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO')]
+Tue,09-Jul-2013~18:31 KIND: INT
+Tue,09-Jul-2013~18:31 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~18:31 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~18:31 BEST: weather
+Tue,09-Jul-2013~18:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:31 KEYWORDS: []
+Tue,09-Jul-2013~18:31 TODAY: 1
+Tue,09-Jul-2013~18:31 DAY: 0
+Tue,09-Jul-2013~18:31 WEATHER_RAW: ['<yweather:condition  text="Rain"  code="12"  temp="7"  date="Tue, 09 Jul 2013 6:00 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~18:31 ITEMS: ['text', 'Rain', 'code', '12', 'temp', '7', 'date', 'Tue, 09 Jul 2013 6:00 pm NZST']
+Tue,09-Jul-2013~18:31 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~18:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:32 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:32 KIND: INT
+Tue,09-Jul-2013~18:32 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:32 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:32 BEST: clock
+Tue,09-Jul-2013~18:32 KEYWORDS: ['day']
+Tue,09-Jul-2013~18:32 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:32 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:32 KIND: INT
+Tue,09-Jul-2013~18:32 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:32 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:32 BEST: clock
+Tue,09-Jul-2013~18:32 KEYWORDS: ['day']
+Tue,09-Jul-2013~18:32 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:33 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:33 KIND: INT
+Tue,09-Jul-2013~18:33 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:33 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:33 BEST: clock
+Tue,09-Jul-2013~18:33 KEYWORDS: ['day']
+Tue,09-Jul-2013~18:33 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:36 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:36 KIND: INT
+Tue,09-Jul-2013~18:36 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:36 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:36 BEST: clock
+Tue,09-Jul-2013~18:36 KEYWORDS: ['time']
+Tue,09-Jul-2013~18:36 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:36 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:36 KIND: INT
+Tue,09-Jul-2013~18:36 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~18:36 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~18:36 BEST: weather
+Tue,09-Jul-2013~18:36 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:36 KEYWORDS: []
+Tue,09-Jul-2013~18:36 TODAY: 1
+Tue,09-Jul-2013~18:36 DAY: 0
+Tue,09-Jul-2013~18:36 WEATHER_RAW: ['<yweather:condition  text="Rain"  code="12"  temp="7"  date="Tue, 09 Jul 2013 6:00 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~18:36 ITEMS: ['text', 'Rain', 'code', '12', 'temp', '7', 'date', 'Tue, 09 Jul 2013 6:00 pm NZST']
+Tue,09-Jul-2013~18:36 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~18:36 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:36 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:36 KIND: IMP
+Tue,09-Jul-2013~18:36 ACTIONS: {'finder': 1}
+Tue,09-Jul-2013~18:36 WEIGHTS: {1: ['finder']}
+Tue,09-Jul-2013~18:36 BEST: finder
+Tue,09-Jul-2013~18:36 IT: http://weather.yahoo.com/
+Tue,09-Jul-2013~18:36 KEYWORDS: [('http://weather.yahoo.com/', 2)]
+Tue,09-Jul-2013~18:36 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:37 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('raining', 'NO')]
+Tue,09-Jul-2013~18:37 KIND: IMP
+Tue,09-Jul-2013~18:37 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~18:37 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~18:37 BEST: weather
+Tue,09-Jul-2013~18:37 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:37 KEYWORDS: []
+Tue,09-Jul-2013~18:37 TODAY: 1
+Tue,09-Jul-2013~18:37 DAY: 0
+Tue,09-Jul-2013~18:37 WEATHER_RAW: ['<yweather:condition  text="Rain"  code="12"  temp="7"  date="Tue, 09 Jul 2013 6:00 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~18:37 ITEMS: ['text', 'Rain', 'code', '12', 'temp', '7', 'date', 'Tue, 09 Jul 2013 6:00 pm NZST']
+Tue,09-Jul-2013~18:37 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~18:37 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:38 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:38 KIND: INT
+Tue,09-Jul-2013~18:38 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:38 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:38 BEST: clock
+Tue,09-Jul-2013~18:38 KEYWORDS: ['time']
+Tue,09-Jul-2013~18:38 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:41 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('apples', '??')]
+Tue,09-Jul-2013~18:41 KIND: IMP
+Tue,09-Jul-2013~18:41 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~18:41 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~18:41 BEST: wikipedia
+Tue,09-Jul-2013~18:41 KEYWORDS: [('apples', 4)]
+Tue,09-Jul-2013~18:41 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:41 URL ATTEMPT: http://en.wikipedia.org/wiki/apples
+Tue,09-Jul-2013~18:42 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:43 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:43 KIND: INT
+Tue,09-Jul-2013~18:43 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:43 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:43 BEST: clock
+Tue,09-Jul-2013~18:43 KEYWORDS: ['day']
+Tue,09-Jul-2013~18:43 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:43 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:43 KIND: INT
+Tue,09-Jul-2013~18:43 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:43 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:43 BEST: clock
+Tue,09-Jul-2013~18:43 KEYWORDS: ['time']
+Tue,09-Jul-2013~18:43 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:44 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:44 KIND: INT
+Tue,09-Jul-2013~18:44 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:44 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:44 BEST: clock
+Tue,09-Jul-2013~18:44 KEYWORDS: ['time']
+Tue,09-Jul-2013~18:44 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:44 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:44 KIND: INT
+Tue,09-Jul-2013~18:44 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:44 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:44 BEST: clock
+Tue,09-Jul-2013~18:44 KEYWORDS: ['time']
+Tue,09-Jul-2013~18:44 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:46 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:46 KIND: INT
+Tue,09-Jul-2013~18:46 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:46 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:46 BEST: clock
+Tue,09-Jul-2013~18:46 KEYWORDS: ['time']
+Tue,09-Jul-2013~18:46 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:48 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:48 KIND: INT
+Tue,09-Jul-2013~18:48 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:48 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:48 BEST: clock
+Tue,09-Jul-2013~18:48 KEYWORDS: ['time']
+Tue,09-Jul-2013~18:48 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:49 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:49 KIND: INT
+Tue,09-Jul-2013~18:49 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:49 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:49 BEST: clock
+Tue,09-Jul-2013~18:49 KEYWORDS: ['time']
+Tue,09-Jul-2013~18:49 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:49 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:49 KIND: INT
+Tue,09-Jul-2013~18:49 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:49 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:49 BEST: clock
+Tue,09-Jul-2013~18:49 KEYWORDS: ['time']
+Tue,09-Jul-2013~18:49 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:51 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:51 KIND: INT
+Tue,09-Jul-2013~18:51 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:51 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:51 BEST: clock
+Tue,09-Jul-2013~18:51 KEYWORDS: ['day']
+Tue,09-Jul-2013~18:51 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:53 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:53 KIND: INT
+Tue,09-Jul-2013~18:53 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:53 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:53 BEST: clock
+Tue,09-Jul-2013~18:53 KEYWORDS: ['day']
+Tue,09-Jul-2013~18:53 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:53 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('apples', '??')]
+Tue,09-Jul-2013~18:53 KIND: IMP
+Tue,09-Jul-2013~18:53 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~18:53 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~18:53 BEST: wikipedia
+Tue,09-Jul-2013~18:53 KEYWORDS: [('apples', 4)]
+Tue,09-Jul-2013~18:53 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:53 URL ATTEMPT: http://en.wikipedia.org/wiki/apples
+Tue,09-Jul-2013~18:53 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:54 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('potatos', '??')]
+Tue,09-Jul-2013~18:54 KIND: IMP
+Tue,09-Jul-2013~18:54 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~18:54 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~18:54 BEST: wikipedia
+Tue,09-Jul-2013~18:54 KEYWORDS: [('potatos', 4)]
+Tue,09-Jul-2013~18:54 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:54 URL ATTEMPT: http://en.wikipedia.org/wiki/potatos
+Tue,09-Jul-2013~18:54 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:55 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:55 KIND: INT
+Tue,09-Jul-2013~18:55 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:55 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:55 BEST: clock
+Tue,09-Jul-2013~18:55 KEYWORDS: ['time']
+Tue,09-Jul-2013~18:55 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:56 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:56 KIND: INT
+Tue,09-Jul-2013~18:56 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:56 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:56 BEST: clock
+Tue,09-Jul-2013~18:56 KEYWORDS: ['day']
+Tue,09-Jul-2013~18:56 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:56 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('einstein', '??')]
+Tue,09-Jul-2013~18:56 KIND: IMP
+Tue,09-Jul-2013~18:56 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~18:56 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~18:56 BEST: wikipedia
+Tue,09-Jul-2013~18:56 KEYWORDS: [('einstein', 4)]
+Tue,09-Jul-2013~18:56 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:56 URL ATTEMPT: http://en.wikipedia.org/wiki/einstein
+Tue,09-Jul-2013~18:56 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:57 SENTENCE: [('asdf', '??')]
+Tue,09-Jul-2013~18:57 KIND: DEC
+Tue,09-Jul-2013~18:57 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:57 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:57 KIND: INT
+Tue,09-Jul-2013~18:57 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:57 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:57 BEST: clock
+Tue,09-Jul-2013~18:57 KEYWORDS: ['day']
+Tue,09-Jul-2013~18:57 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:58 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:58 KIND: INT
+Tue,09-Jul-2013~18:58 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:58 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:58 BEST: clock
+Tue,09-Jul-2013~18:58 KEYWORDS: ['day']
+Tue,09-Jul-2013~18:58 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~18:59 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~18:59 KIND: INT
+Tue,09-Jul-2013~18:59 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~18:59 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~18:59 BEST: clock
+Tue,09-Jul-2013~18:59 KEYWORDS: ['time']
+Tue,09-Jul-2013~18:59 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:06 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:06 KIND: INT
+Tue,09-Jul-2013~19:06 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:06 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:06 BEST: clock
+Tue,09-Jul-2013~19:06 KEYWORDS: ['day']
+Tue,09-Jul-2013~19:06 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:09 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:09 KIND: INT
+Tue,09-Jul-2013~19:09 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:09 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:09 BEST: clock
+Tue,09-Jul-2013~19:09 KEYWORDS: ['day']
+Tue,09-Jul-2013~19:09 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:09 SENTENCE: [('who', 'WH'), ('be', 'VB'), ('you', 'PO')]
+Tue,09-Jul-2013~19:09 KIND: INT
+Tue,09-Jul-2013~19:09 ACTIONS: {}
+Tue,09-Jul-2013~19:09 WEIGHTS: {}
+Tue,09-Jul-2013~19:09 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:09 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:09 KIND: INT
+Tue,09-Jul-2013~19:09 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:09 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:09 BEST: clock
+Tue,09-Jul-2013~19:09 KEYWORDS: ['time']
+Tue,09-Jul-2013~19:09 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:09 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:09 KIND: INT
+Tue,09-Jul-2013~19:09 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:09 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:09 BEST: clock
+Tue,09-Jul-2013~19:09 KEYWORDS: ['time']
+Tue,09-Jul-2013~19:09 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:10 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:10 KIND: INT
+Tue,09-Jul-2013~19:10 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:10 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:10 BEST: clock
+Tue,09-Jul-2013~19:10 KEYWORDS: ['time']
+Tue,09-Jul-2013~19:10 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:11 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:11 KIND: INT
+Tue,09-Jul-2013~19:11 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:11 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:11 BEST: clock
+Tue,09-Jul-2013~19:11 KEYWORDS: ['day']
+Tue,09-Jul-2013~19:11 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:13 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:13 KIND: INT
+Tue,09-Jul-2013~19:13 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:13 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:13 BEST: clock
+Tue,09-Jul-2013~19:13 KEYWORDS: ['day']
+Tue,09-Jul-2013~19:13 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:14 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:14 KIND: INT
+Tue,09-Jul-2013~19:14 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:14 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:14 BEST: clock
+Tue,09-Jul-2013~19:14 KEYWORDS: ['time']
+Tue,09-Jul-2013~19:14 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:15 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:15 KIND: INT
+Tue,09-Jul-2013~19:15 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:15 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:15 BEST: clock
+Tue,09-Jul-2013~19:15 KEYWORDS: ['time']
+Tue,09-Jul-2013~19:15 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:15 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:15 KIND: INT
+Tue,09-Jul-2013~19:15 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:15 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:15 BEST: clock
+Tue,09-Jul-2013~19:15 KEYWORDS: ['time']
+Tue,09-Jul-2013~19:15 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:15 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:15 KIND: INT
+Tue,09-Jul-2013~19:15 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:15 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:15 BEST: clock
+Tue,09-Jul-2013~19:15 KEYWORDS: ['time']
+Tue,09-Jul-2013~19:15 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:16 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:16 KIND: INT
+Tue,09-Jul-2013~19:16 ACTIONS: {'weather': 1}
+Tue,09-Jul-2013~19:16 WEIGHTS: {1: ['weather']}
+Tue,09-Jul-2013~19:16 BEST: weather
+Tue,09-Jul-2013~19:16 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:16 KEYWORDS: []
+Tue,09-Jul-2013~19:16 TODAY: 1
+Tue,09-Jul-2013~19:16 DAY: 0
+Tue,09-Jul-2013~19:16 WEATHER_RAW: ['<yweather:condition  text="Rain"  code="12"  temp="7"  date="Tue, 09 Jul 2013 6:00 pm NZST" />\n', '<yweather:forecast day="Tue" date="9 Jul 2013" low="2" high="11" text="Showers Early" code="45" />\n', '<yweather:forecast day="Wed" date="10 Jul 2013" low="2" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Thu" date="11 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="11" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="3" high="13" text="Partly Cloudy" code="30" />\n']
+Tue,09-Jul-2013~19:16 ITEMS: ['text', 'Rain', 'code', '12', 'temp', '7', 'date', 'Tue, 09 Jul 2013 6:00 pm NZST']
+Tue,09-Jul-2013~19:16 ITEMS: ['day', 'Tue', 'date', '9 Jul 2013', 'low', '2', 'high', '11', 'text', 'Showers Early', 'code', '45']
+Tue,09-Jul-2013~19:16 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:18 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:18 KIND: INT
+Tue,09-Jul-2013~19:18 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:18 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:18 BEST: clock
+Tue,09-Jul-2013~19:18 KEYWORDS: ['day']
+Tue,09-Jul-2013~19:18 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:21 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:21 KIND: INT
+Tue,09-Jul-2013~19:21 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:21 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:21 BEST: clock
+Tue,09-Jul-2013~19:21 KEYWORDS: ['time']
+Tue,09-Jul-2013~19:21 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:21 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:21 KIND: INT
+Tue,09-Jul-2013~19:21 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:21 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:21 BEST: clock
+Tue,09-Jul-2013~19:21 KEYWORDS: ['day']
+Tue,09-Jul-2013~19:21 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:26 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:26 KIND: INT
+Tue,09-Jul-2013~19:26 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:26 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:26 BEST: clock
+Tue,09-Jul-2013~19:26 KEYWORDS: ['day']
+Tue,09-Jul-2013~19:26 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:34 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:34 KIND: INT
+Tue,09-Jul-2013~19:34 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:34 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:34 BEST: clock
+Tue,09-Jul-2013~19:34 KEYWORDS: ['day']
+Tue,09-Jul-2013~19:34 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:35 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:35 KIND: INT
+Tue,09-Jul-2013~19:35 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:35 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:35 BEST: clock
+Tue,09-Jul-2013~19:35 KEYWORDS: ['day']
+Tue,09-Jul-2013~19:35 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:36 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:36 KIND: INT
+Tue,09-Jul-2013~19:36 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:36 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:36 BEST: clock
+Tue,09-Jul-2013~19:36 KEYWORDS: ['day']
+Tue,09-Jul-2013~19:36 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:36 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:36 KIND: INT
+Tue,09-Jul-2013~19:36 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:36 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:36 BEST: clock
+Tue,09-Jul-2013~19:36 KEYWORDS: ['day']
+Tue,09-Jul-2013~19:36 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:37 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:37 KIND: INT
+Tue,09-Jul-2013~19:37 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:37 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:37 BEST: clock
+Tue,09-Jul-2013~19:37 KEYWORDS: ['day']
+Tue,09-Jul-2013~19:37 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:37 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:37 KIND: INT
+Tue,09-Jul-2013~19:37 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:37 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:37 BEST: clock
+Tue,09-Jul-2013~19:37 KEYWORDS: ['time']
+Tue,09-Jul-2013~19:37 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:37 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:37 KIND: INT
+Tue,09-Jul-2013~19:37 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:37 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:37 BEST: clock
+Tue,09-Jul-2013~19:37 KEYWORDS: ['time']
+Tue,09-Jul-2013~19:37 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:37 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:37 KIND: INT
+Tue,09-Jul-2013~19:37 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:37 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:37 BEST: clock
+Tue,09-Jul-2013~19:37 KEYWORDS: ['time']
+Tue,09-Jul-2013~19:37 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:52 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:52 KIND: INT
+Tue,09-Jul-2013~19:52 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:52 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:52 BEST: clock
+Tue,09-Jul-2013~19:52 KEYWORDS: ['time']
+Tue,09-Jul-2013~19:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:52 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:52 KIND: INT
+Tue,09-Jul-2013~19:52 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:52 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:52 BEST: clock
+Tue,09-Jul-2013~19:52 KEYWORDS: ['time']
+Tue,09-Jul-2013~19:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:52 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:52 KIND: INT
+Tue,09-Jul-2013~19:52 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:52 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:52 BEST: clock
+Tue,09-Jul-2013~19:52 KEYWORDS: ['day']
+Tue,09-Jul-2013~19:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:52 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('apples', '??')]
+Tue,09-Jul-2013~19:52 KIND: IMP
+Tue,09-Jul-2013~19:52 ACTIONS: {'wikipedia': 2}
+Tue,09-Jul-2013~19:52 WEIGHTS: {2: ['wikipedia']}
+Tue,09-Jul-2013~19:52 BEST: wikipedia
+Tue,09-Jul-2013~19:52 KEYWORDS: [('apples', 4)]
+Tue,09-Jul-2013~19:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:52 URL ATTEMPT: http://en.wikipedia.org/wiki/apples
+Tue,09-Jul-2013~19:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,09-Jul-2013~19:54 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,09-Jul-2013~19:54 KIND: INT
+Tue,09-Jul-2013~19:54 ACTIONS: {'clock': 1}
+Tue,09-Jul-2013~19:54 WEIGHTS: {1: ['clock']}
+Tue,09-Jul-2013~19:54 BEST: clock
+Tue,09-Jul-2013~19:54 KEYWORDS: ['time']
+Tue,09-Jul-2013~19:54 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Fri,12-Jul-2013~09:59 Successfully imported Modules.clock
+Fri,12-Jul-2013~09:59 Successfully imported Modules.discover
+Fri,12-Jul-2013~09:59 Successfully imported Modules.finder
+Fri,12-Jul-2013~09:59 Successfully imported Modules.media
+Fri,12-Jul-2013~09:59 Successfully imported Modules.weather
+Fri,12-Jul-2013~09:59 Successfully imported Modules.wikipedia
+Fri,12-Jul-2013~09:59 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Fri,12-Jul-2013~09:59 KIND: INT
+Fri,12-Jul-2013~09:59 ACTIONS: {'clock': 1}
+Fri,12-Jul-2013~09:59 WEIGHTS: {1: ['clock']}
+Fri,12-Jul-2013~09:59 BEST: clock
+Fri,12-Jul-2013~09:59 KEYWORDS: ['time']
+Fri,12-Jul-2013~09:59 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Fri,12-Jul-2013~09:59 SENTENCE: [('hwo', '??'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Fri,12-Jul-2013~09:59 KIND: DEC
+Fri,12-Jul-2013~09:59 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Fri,12-Jul-2013~10:00 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Fri,12-Jul-2013~10:00 KIND: INT
+Fri,12-Jul-2013~10:00 ACTIONS: {'weather': 1}
+Fri,12-Jul-2013~10:00 WEIGHTS: {1: ['weather']}
+Fri,12-Jul-2013~10:00 BEST: weather
+Fri,12-Jul-2013~10:00 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Fri,12-Jul-2013~10:00 KEYWORDS: []
+Fri,12-Jul-2013~10:00 TODAY: 4
+Fri,12-Jul-2013~10:00 DAY: 0
+Fri,12-Jul-2013~10:00 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="30"  temp="-2"  date="Fri, 12 Jul 2013 9:00 am NZST" />\n', '<yweather:forecast day="Fri" date="12 Jul 2013" low="3" high="10" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="13 Jul 2013" low="2" high="12" text="AM Showers" code="39" />\n', '<yweather:forecast day="Sun" date="14 Jul 2013" low="2" high="7" text="Showers/Wind" code="11" />\n', '<yweather:forecast day="Mon" date="15 Jul 2013" low="2" high="9" text="Showers" code="11" />\n', '<yweather:forecast day="Tue" date="16 Jul 2013" low="3" high="12" text="Partly Cloudy" code="30" />\n']
+Fri,12-Jul-2013~10:00 ITEMS: ['text', 'Partly Cloudy', 'code', '30', 'temp', '-2', 'date', 'Fri, 12 Jul 2013 9:00 am NZST']
+Fri,12-Jul-2013~10:00 ITEMS: ['day', 'Fri', 'date', '12 Jul 2013', 'low', '3', 'high', '10', 'text', 'Partly Cloudy', 'code', '30']
+Fri,12-Jul-2013~10:00 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Fri,12-Jul-2013~10:01 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('apples', '??')]
+Fri,12-Jul-2013~10:01 KIND: IMP
+Fri,12-Jul-2013~10:01 ACTIONS: {'wikipedia': 2}
+Fri,12-Jul-2013~10:01 WEIGHTS: {2: ['wikipedia']}
+Fri,12-Jul-2013~10:01 BEST: wikipedia
+Fri,12-Jul-2013~10:01 KEYWORDS: [('apples', 4)]
+Fri,12-Jul-2013~10:01 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Fri,12-Jul-2013~10:01 URL ATTEMPT: http://en.wikipedia.org/wiki/apples
+Fri,12-Jul-2013~10:01 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Fri,12-Jul-2013~10:01 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Fri,12-Jul-2013~10:01 KIND: IMP
+Fri,12-Jul-2013~10:01 ACTIONS: {'finder': 1}
+Fri,12-Jul-2013~10:01 WEIGHTS: {1: ['finder']}
+Fri,12-Jul-2013~10:01 BEST: finder
+Fri,12-Jul-2013~10:01 IT: http://en.wikipedia.org/wiki/apples
+Fri,12-Jul-2013~10:01 KEYWORDS: [('http://en.wikipedia.org/wiki/apples', 2)]
+Fri,12-Jul-2013~10:01 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>

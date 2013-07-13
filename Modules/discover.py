@@ -17,7 +17,7 @@ def process(sentence):
     ''' Process the sentence, and go to wolfram Alpha '''
     sentence.replace_it()
     
-    query = "+".join([word[0] for word in sentence.sentence_string])
+    query = "+".join([word for word in sentence.sentence_string.split(' ')])
     os.system("open http://www.wolframalpha.com/input/?i=" 
                + quote(query).replace("%2B", "+"))
 

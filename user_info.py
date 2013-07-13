@@ -17,9 +17,13 @@ info = {
     "temp": "C", # Use F for Fahrenheit, C for Celcius.
 }
 
-## Flags for the system. Verbose is for debug info, noisy for paul to talk
+## Flags for the system. 
+#  Verbose is for debug info, 
+#  noisy for paul to talk,
+#  server_mode is for the server to switch
 VERBOSE = True
 NOISY = False
+SERVER = False
 
 ## Lists that get updated with what to do with each word
 word_associations = {}

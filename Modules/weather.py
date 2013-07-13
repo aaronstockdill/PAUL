@@ -35,6 +35,7 @@ NOUNS = [
 
 def process(sentence):
     ''' Process the sentence, act as necessary '''
+    
     brain2.loading()
     ignore = [
         "weather",
@@ -97,8 +98,16 @@ def weather(day_index=0):
         condition = items[1].lower()
         temp = int(items[5])
         
-        return "It's {}°{}, and {}.".format(temp, user_info.info['temp'],
-                                            condition)
+        items2 = lines[1].split("\"")[1:-1]
+        items2 = ['day'] + [item.strip().strip('=') for item in items2]
+    
+        user_info.log("ITEMS: " + str(items2))
+    
+        condition2 = items2[9].lower()
+        temp2 = "{}".format(items2[7])
+        
+        return "It's {0}°{1}, and {2}. It will get to {3}°{1}, {4}.".format(
+        temp, user_info.info['temp'], condition, temp2, condition2)
     
     elif day_index < 0:
         return "I can't see that far ahead. Sorry!"
@@ -112,10 +121,11 @@ def weather(day_index=0):
         condition = items[9].lower()
         temp = "{} to {}".format(items[5], items[7])
     
-        return ("It will have a low of "
+        rep = ("It will have a low of "
                "{}°{}, a high of {}°{}, and will be {}.".format(
                items[5], user_info.info['temp'], items[7],
                user_info.info['temp'], items[9].lower()))
+        return rep
 
 def main():
     ''' The main function '''

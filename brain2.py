@@ -10,6 +10,7 @@ import random
 import os
 import itertools
 import operator
+import socket
 
 import vocab
 import user_info
@@ -269,8 +270,18 @@ def interact(statement, response=None):
     
     print(statement)
     if user_info.NOISY: os.system('say "{}"'.format(statement))
+    if user_info.SERVER != False:
+        user_info.log("CONNECTION: " + repr(user_info.SERVER))
+        user_info.SERVER.send(bytes(statement + "{}".format(
+                                        " " * (1024 - len(statement))),
+                                    'utf-8'))
     if response:
-        bringback = input("> ")
+        if user_info.SERVER == False:
+            bringback = input("> ")
+        else:
+            user_info.SERVER.send(bytes("paul_done", "utf-8"))
+            bringback = user_info.SERVER.recv(1024)
+            bringback = str(bringback, encoding="utf8")
         numbers = {
             '1': "first",
             '2': "second",
@@ -289,7 +300,7 @@ def interact(statement, response=None):
     
         if response == 'list':
             if ordinal:
-                user_info.log("ORDINALS: " + (ordinal))
+                user_info.log("ORDINALS: " + str(ordinal))
                 int_version = vocab.vocabulary[ordinal[0]]['value']
                 return int_version
             elif bringback.get_parts("??")[0] in declines:
@@ -361,7 +372,7 @@ def process(line):
     user_info.log("KIND: " + sentence.kind)
     
     if sentence.kind == "IMP" or sentence.kind == "INT":
-        response = commands(sentence)    
-        return interact(response)
+        reply = commands(sentence)
+        return interact(reply)
     else:
         return acknowledge()
