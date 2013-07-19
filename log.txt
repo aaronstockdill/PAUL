@@ -2902,3 +2902,1221 @@ Fri,12-Jul-2013~10:01 BEST: finder
 Fri,12-Jul-2013~10:01 IT: http://en.wikipedia.org/wiki/apples
 Fri,12-Jul-2013~10:01 KEYWORDS: [('http://en.wikipedia.org/wiki/apples', 2)]
 Fri,12-Jul-2013~10:01 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Tue,16-Jul-2013~21:24 Successfully imported Modules.clock
+Tue,16-Jul-2013~21:24 Successfully imported Modules.discover
+Tue,16-Jul-2013~21:24 Successfully imported Modules.finder
+Tue,16-Jul-2013~21:24 Successfully imported Modules.media
+Tue,16-Jul-2013~21:24 Successfully imported Modules.weather
+Tue,16-Jul-2013~21:24 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~21:24 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('from', 'PP'), ('yesterday', '??'), ('called', 'PP'), ('tangled', '??')]
+Tue,16-Jul-2013~21:24 KIND: IMP
+Tue,16-Jul-2013~21:24 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~21:24 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~21:24 BEST: finder
+Tue,16-Jul-2013~21:24 KEYWORDS: [('yesterday', 5), ('tangled', 7)]
+Tue,16-Jul-2013~21:24 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "yesterday"
+Tue,16-Jul-2013~21:24 RESULTS FIRST 5: ['/Users/aaronstockdill/Downloads/Hawaii-Tutorial-Tsujii.ppt', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Music/Nickelback/Dark Horse/10 If Today Was Your Last Day.mp3', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Music/Lostprophets/Liberation Transmission/09 4_AM Forever.mp3', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Music/30 Seconds to Mars/A Beautiful Lie/07 From Yesterday.m4a', '/Users/aaronstockdill/Desktop/Desktop Crap/Grandparents/Poppa 75/Unknown Artist/Unknown Album/01 Yesterday.m4a', '/Users/aaronstockdill/Dropbox/School/Year 13/DMP301/phpBB3/includes/session.php', '/Users/aaronstockdill/Dropbox/School/Year 13/DMP301/phpBB3/language/en/common.php', '/Users/aaronstockdill/Dropbox/School/Year 10/Health/The Aliens are here!.docx']
+Tue,16-Jul-2013~21:25 DECISION: None
+Tue,16-Jul-2013~21:25 IT: None
+Tue,16-Jul-2013~21:25 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,16-Jul-2013~21:25 KIND: IMP
+Tue,16-Jul-2013~21:25 ACTIONS: {'loader': 1}
+Tue,16-Jul-2013~21:25 WEIGHTS: {1: ['loader']}
+Tue,16-Jul-2013~21:25 BEST: loader
+Tue,16-Jul-2013~21:25 Successfully imported Modules.clock
+Tue,16-Jul-2013~21:25 Successfully imported Modules.discover
+Tue,16-Jul-2013~21:25 Successfully imported Modules.finder
+Tue,16-Jul-2013~21:25 Successfully imported Modules.media
+Tue,16-Jul-2013~21:25 Successfully imported Modules.weather
+Tue,16-Jul-2013~21:25 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~21:25 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??'), ('from', 'PP'), ('yesterday', '??')]
+Tue,16-Jul-2013~21:25 KIND: IMP
+Tue,16-Jul-2013~21:25 ACTIONS: {'wikipedia': 1, 'finder': 2}
+Tue,16-Jul-2013~21:25 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~21:25 BEST: finder
+Tue,16-Jul-2013~21:25 KEYWORDS: [('movie tangled', 3), ('yesterday', 6)]
+Tue,16-Jul-2013~21:25 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "movie tangled"
+Tue,16-Jul-2013~21:25 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/Programming/GitHub/PAUL/log.txt', '/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v']
+Tue,16-Jul-2013~21:25 DECISION: None
+Tue,16-Jul-2013~21:25 IT: None
+Tue,16-Jul-2013~21:27 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,16-Jul-2013~21:27 KIND: IMP
+Tue,16-Jul-2013~21:27 ACTIONS: {'loader': 1}
+Tue,16-Jul-2013~21:27 WEIGHTS: {1: ['loader']}
+Tue,16-Jul-2013~21:27 BEST: loader
+Tue,16-Jul-2013~21:27 Successfully imported Modules.clock
+Tue,16-Jul-2013~21:27 Successfully imported Modules.discover
+Tue,16-Jul-2013~21:27 Successfully imported Modules.finder
+Tue,16-Jul-2013~21:27 Successfully imported Modules.media
+Tue,16-Jul-2013~21:27 Successfully imported Modules.weather
+Tue,16-Jul-2013~21:27 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~21:27 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('spreadsheet', 'NO'), ('called', 'PP'), ('timetable', '??'), ('from', 'PP'), ('last', '??'), ('week', '??')]
+Tue,16-Jul-2013~21:27 KIND: IMP
+Tue,16-Jul-2013~21:27 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~21:27 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~21:27 BEST: finder
+Tue,16-Jul-2013~21:28 Successfully imported Modules.clock
+Tue,16-Jul-2013~21:28 Successfully imported Modules.discover
+Tue,16-Jul-2013~21:28 Successfully imported Modules.finder
+Tue,16-Jul-2013~21:28 Successfully imported Modules.media
+Tue,16-Jul-2013~21:28 Successfully imported Modules.weather
+Tue,16-Jul-2013~21:28 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~21:28 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('spreadsheet', 'NO'), ('timetable', '??'), ('from', 'PP'), ('last', '??'), ('week', '??')]
+Tue,16-Jul-2013~21:28 KIND: IMP
+Tue,16-Jul-2013~21:28 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~21:28 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~21:28 BEST: finder
+Tue,16-Jul-2013~21:28 PREPS: ['from']
+Tue,16-Jul-2013~21:28 KEYWORDS: [('timetable', 4), ('last week', 6)]
+Tue,16-Jul-2013~21:28 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "timetable"
+Tue,16-Jul-2013~21:28 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/Programming/GitHub/PAUL/log.txt', '/Users/aaronstockdill/Documents/Programming/GitHub/Timetable Widget/Timetable.wdgt', '/Users/aaronstockdill/Documents/Programming/GitHub/Timetable Widget/Timetable_wdgt/script.js', '/Users/aaronstockdill/Documents/Programming/GitHub/Timetable Widget/Timetable_wdgt/timetable.json', '/Users/aaronstockdill/Documents/Programming/GitHub/Timetable Widget/README.markdown', '/Users/aaronstockdill/Documents/Programming/GitHub/Timetable Widget', '/Users/aaronstockdill/Documents/Programming/GitHub/Timetable Widget/Timetable_wdgt', '/Users/aaronstockdill/Documents/Programming/GitHub/aaronstockdill.github.com/_posts/2013-02-15-Repo-Number-One.markdown', '/Users/aaronstockdill/Dropbox/School/Year 10/French/L’École Idéale.pptx', '/Users/aaronstockdill/Dropbox/School/Year 11/Other/Mock Exams Study Timetable.docx']
+Tue,16-Jul-2013~21:28 DECISION: None
+Tue,16-Jul-2013~21:28 IT: None
+Tue,16-Jul-2013~21:29 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,16-Jul-2013~21:29 KIND: IMP
+Tue,16-Jul-2013~21:29 ACTIONS: {'loader': 1}
+Tue,16-Jul-2013~21:29 WEIGHTS: {1: ['loader']}
+Tue,16-Jul-2013~21:29 BEST: loader
+Tue,16-Jul-2013~21:29 Successfully imported Modules.clock
+Tue,16-Jul-2013~21:29 Successfully imported Modules.discover
+Tue,16-Jul-2013~21:29 Successfully imported Modules.finder
+Tue,16-Jul-2013~21:29 Successfully imported Modules.media
+Tue,16-Jul-2013~21:29 Successfully imported Modules.weather
+Tue,16-Jul-2013~21:29 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~21:29 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('spreadsheet', 'NO'), ('from', 'PP'), ('last', '??'), ('week', '??')]
+Tue,16-Jul-2013~21:29 KIND: IMP
+Tue,16-Jul-2013~21:29 ACTIONS: {'wikipedia': 1, 'finder': 2}
+Tue,16-Jul-2013~21:29 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~21:29 BEST: finder
+Tue,16-Jul-2013~21:29 PREPS: [('from', 4)]
+Tue,16-Jul-2013~21:29 KEYWORDS: [('last week', 5)]
+Tue,16-Jul-2013~21:29 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "last week"
+Tue,16-Jul-2013~21:29 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/Programming/GitHub/PAUL/log.txt', '/Users/aaronstockdill/Dropbox/Documents/GWA_Speech.markdown', '/Users/aaronstockdill/.Trash/PivotTableDataSet.xlsx', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Music/Various Artists/The Best Christmas Album In The World...Ever!/1-20 Christmas Countdown (The Twelve Days Of Christmas).mp3', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Music/The Killers/Killers Christmas EP/01 A Great Big Sled (Featuring Toni Halliday).mp3', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Books/Apple/iPad User Guide.pdf', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Books/Apple/iMac User Guide.pdf', '/Users/aaronstockdill/Documents/Programming/C/LCTHW/valgrind-3.8.0/memcheck/docs/mc-tech-docs.xml', '/Users/aaronstockdill/Documents/Programming/C/LCTHW/valgrind-3.8.0/docs/internals/release-HOWTO.txt', '/Users/aaronstockdill/Documents/Programming/C/LCTHW/valgrind-3.8.0/docs/html/dist.news.old.html']
+Tue,16-Jul-2013~21:30 DECISION: None
+Tue,16-Jul-2013~21:30 IT: None
+Tue,16-Jul-2013~22:20 Successfully imported Modules.clock
+Tue,16-Jul-2013~22:20 Successfully imported Modules.discover
+Tue,16-Jul-2013~22:20 Successfully imported Modules.finder
+Tue,16-Jul-2013~22:20 Successfully imported Modules.media
+Tue,16-Jul-2013~22:20 Successfully imported Modules.weather
+Tue,16-Jul-2013~22:20 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~22:20 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('spreadsheet', 'NO'), ('called', 'PP'), ('uc', '??'), ('timetbale', '??')]
+Tue,16-Jul-2013~22:20 KIND: IMP
+Tue,16-Jul-2013~22:20 ACTIONS: {'wikipedia': 1, 'finder': 2}
+Tue,16-Jul-2013~22:20 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~22:20 BEST: finder
+Tue,16-Jul-2013~22:20 PREPS: [('called', 4)]
+Tue,16-Jul-2013~22:20 KEYWORDS: [('uc timetbale', 5)]
+Tue,16-Jul-2013~22:20 Successfully imported Modules.clock
+Tue,16-Jul-2013~22:20 Successfully imported Modules.discover
+Tue,16-Jul-2013~22:21 Successfully imported Modules.clock
+Tue,16-Jul-2013~22:21 Successfully imported Modules.discover
+Tue,16-Jul-2013~22:21 Successfully imported Modules.finder
+Tue,16-Jul-2013~22:21 Successfully imported Modules.media
+Tue,16-Jul-2013~22:21 Successfully imported Modules.weather
+Tue,16-Jul-2013~22:21 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~22:21 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('spreadsheet', 'NO'), ('called', 'PP'), ('uc', '??'), ('timetbale', '??')]
+Tue,16-Jul-2013~22:21 KIND: IMP
+Tue,16-Jul-2013~22:21 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~22:21 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~22:21 BEST: finder
+Tue,16-Jul-2013~22:21 PREPS: [('called', 4)]
+Tue,16-Jul-2013~22:21 KEYWORDS: [('uc timetbale', 5)]
+Tue,16-Jul-2013~22:22 Successfully imported Modules.clock
+Tue,16-Jul-2013~22:22 Successfully imported Modules.discover
+Tue,16-Jul-2013~22:22 Successfully imported Modules.finder
+Tue,16-Jul-2013~22:22 Successfully imported Modules.media
+Tue,16-Jul-2013~22:22 Successfully imported Modules.weather
+Tue,16-Jul-2013~22:22 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~22:22 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('file', 'NO'), ('called', 'PP'), ('uc', '??'), ('timetable', '??')]
+Tue,16-Jul-2013~22:22 KIND: IMP
+Tue,16-Jul-2013~22:22 ACTIONS: {'wikipedia': 1, 'finder': 2}
+Tue,16-Jul-2013~22:22 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~22:22 BEST: finder
+Tue,16-Jul-2013~22:22 PREPS: [('called', 4)]
+Tue,16-Jul-2013~22:22 KEYWORDS: [('uc timetable', 5)]
+Tue,16-Jul-2013~22:22 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "=uc timetable"
+Tue,16-Jul-2013~22:22 RESULTS FIRST 5: ["Failed to create query for '=uc timetable'."]
+Tue,16-Jul-2013~22:23 DECISION: None
+Tue,16-Jul-2013~22:23 IT: None
+Tue,16-Jul-2013~22:23 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,16-Jul-2013~22:23 KIND: IMP
+Tue,16-Jul-2013~22:23 ACTIONS: {'loader': 1}
+Tue,16-Jul-2013~22:23 WEIGHTS: {1: ['loader']}
+Tue,16-Jul-2013~22:23 BEST: loader
+Tue,16-Jul-2013~22:23 Successfully imported Modules.clock
+Tue,16-Jul-2013~22:23 Successfully imported Modules.discover
+Tue,16-Jul-2013~22:23 Successfully imported Modules.finder
+Tue,16-Jul-2013~22:23 Successfully imported Modules.media
+Tue,16-Jul-2013~22:23 Successfully imported Modules.weather
+Tue,16-Jul-2013~22:23 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~22:23 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('spreadsheet', 'NO'), ('called', 'PP'), ('uc', '??'), ('timetable', '??')]
+Tue,16-Jul-2013~22:23 KIND: IMP
+Tue,16-Jul-2013~22:23 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~22:23 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~22:23 BEST: finder
+Tue,16-Jul-2013~22:23 PREPS: [('called', 4)]
+Tue,16-Jul-2013~22:23 KEYWORDS: [('uc timetable', 5)]
+Tue,16-Jul-2013~22:23 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "uc timetable"
+Tue,16-Jul-2013~22:23 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/Programming/GitHub/PAUL/log.txt', '/Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx', '/Users/aaronstockdill/Dropbox/University/2013/UC Timetable S1.pdf']
+Tue,16-Jul-2013~22:25 ORDINALS: ['second']
+Tue,16-Jul-2013~22:25 CHOICE: 2
+Tue,16-Jul-2013~22:25 DECISION: /Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx
+Tue,16-Jul-2013~22:25 IT: /Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx
+Tue,16-Jul-2013~22:25 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Tue,16-Jul-2013~22:25 KIND: IMP
+Tue,16-Jul-2013~22:25 ACTIONS: {'finder': 1}
+Tue,16-Jul-2013~22:25 WEIGHTS: {1: ['finder']}
+Tue,16-Jul-2013~22:25 BEST: finder
+Tue,16-Jul-2013~22:25 IT: /Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx
+Tue,16-Jul-2013~22:25 PREPS: None
+Tue,16-Jul-2013~22:25 KEYWORDS: [('/Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx', 2)]
+Tue,16-Jul-2013~22:26 Successfully imported Modules.clock
+Tue,16-Jul-2013~22:26 Successfully imported Modules.discover
+Tue,16-Jul-2013~22:26 Successfully imported Modules.finder
+Tue,16-Jul-2013~22:26 Successfully imported Modules.media
+Tue,16-Jul-2013~22:26 Successfully imported Modules.weather
+Tue,16-Jul-2013~22:26 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~22:26 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('will', 'VB'), ('it', 'PO'), ('be', 'VB'), ('tomorrow', 'NO')]
+Tue,16-Jul-2013~22:26 KIND: INT
+Tue,16-Jul-2013~22:26 ACTIONS: {'weather': 2}
+Tue,16-Jul-2013~22:26 WEIGHTS: {2: ['weather']}
+Tue,16-Jul-2013~22:26 BEST: weather
+Tue,16-Jul-2013~22:26 KEYWORDS: [('tomorrow', 5)]
+Tue,16-Jul-2013~22:26 TODAY: 1
+Tue,16-Jul-2013~22:26 DAY: 2
+Tue,16-Jul-2013~22:26 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="6"  date="Tue, 16 Jul 2013 9:01 pm NZST" />\n', '<yweather:forecast day="Tue" date="16 Jul 2013" low="4" high="12" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Wed" date="17 Jul 2013" low="8" high="15" text="Sunny" code="32" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="6" high="16" text="Cloudy" code="26" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="6" high="13" text="AM Showers" code="39" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="7" high="17" text="Partly Cloudy" code="30" />\n']
+Tue,16-Jul-2013~22:26 ITEMS: ['day', 'Wed', 'date', '17 Jul 2013', 'low', '8', 'high', '15', 'text', 'Sunny', 'code', '32']
+Tue,16-Jul-2013~22:27 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('spreadsheet', 'NO'), ('called', 'PP'), ('uc', '??'), ('timetable', '??')]
+Tue,16-Jul-2013~22:27 KIND: IMP
+Tue,16-Jul-2013~22:27 ACTIONS: {'wikipedia': 1, 'finder': 2}
+Tue,16-Jul-2013~22:27 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~22:27 BEST: finder
+Tue,16-Jul-2013~22:27 PREPS: [('called', 4)]
+Tue,16-Jul-2013~22:27 KEYWORDS: [('uc timetable', 5)]
+Tue,16-Jul-2013~22:27 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "uc timetable"
+Tue,16-Jul-2013~22:27 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/Programming/GitHub/PAUL/log.txt', '/Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx', '/Users/aaronstockdill/Dropbox/University/2013/UC Timetable S1.pdf']
+Tue,16-Jul-2013~22:28 DECISION: None
+Tue,16-Jul-2013~22:28 IT: None
+Tue,16-Jul-2013~22:28 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,16-Jul-2013~22:28 KIND: IMP
+Tue,16-Jul-2013~22:28 ACTIONS: {'loader': 1}
+Tue,16-Jul-2013~22:28 WEIGHTS: {1: ['loader']}
+Tue,16-Jul-2013~22:28 BEST: loader
+Tue,16-Jul-2013~22:28 Successfully imported Modules.clock
+Tue,16-Jul-2013~22:28 Successfully imported Modules.discover
+Tue,16-Jul-2013~22:28 Successfully imported Modules.finder
+Tue,16-Jul-2013~22:28 Successfully imported Modules.media
+Tue,16-Jul-2013~22:28 Successfully imported Modules.weather
+Tue,16-Jul-2013~22:28 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~22:29 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('called', 'PP'), ('tangled', '??')]
+Tue,16-Jul-2013~22:29 KIND: IMP
+Tue,16-Jul-2013~22:29 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~22:29 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~22:29 BEST: finder
+Tue,16-Jul-2013~22:29 PREPS: [('called', 4)]
+Tue,16-Jul-2013~22:29 KEYWORDS: [('tangled', 5)]
+Tue,16-Jul-2013~22:29 Successfully imported Modules.clock
+Tue,16-Jul-2013~22:29 Successfully imported Modules.discover
+Tue,16-Jul-2013~22:29 Successfully imported Modules.finder
+Tue,16-Jul-2013~22:29 Successfully imported Modules.media
+Tue,16-Jul-2013~22:29 Successfully imported Modules.weather
+Tue,16-Jul-2013~22:29 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~22:29 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('called', 'PP'), ('tangled', '??')]
+Tue,16-Jul-2013~22:29 KIND: IMP
+Tue,16-Jul-2013~22:29 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~22:29 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~22:29 BEST: finder
+Tue,16-Jul-2013~22:29 PREPS: [('called', 4)]
+Tue,16-Jul-2013~22:29 KEYWORDS: [('tangled', 5)]
+Tue,16-Jul-2013~22:30 Successfully imported Modules.clock
+Tue,16-Jul-2013~22:30 Successfully imported Modules.discover
+Tue,16-Jul-2013~22:30 Successfully imported Modules.finder
+Tue,16-Jul-2013~22:30 Successfully imported Modules.media
+Tue,16-Jul-2013~22:30 Successfully imported Modules.weather
+Tue,16-Jul-2013~22:30 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~22:30 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('called', 'PP'), ('tangled', '??')]
+Tue,16-Jul-2013~22:30 KIND: IMP
+Tue,16-Jul-2013~22:30 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~22:30 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~22:30 BEST: finder
+Tue,16-Jul-2013~22:30 PREPS: [('called', 4)]
+Tue,16-Jul-2013~22:30 KEYWORDS: [('tangled', 5)]
+Tue,16-Jul-2013~22:30 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "tangled kind:kind:movie "
+Tue,16-Jul-2013~22:30 RESULTS FIRST 5: []
+Tue,16-Jul-2013~22:31 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,16-Jul-2013~22:31 KIND: IMP
+Tue,16-Jul-2013~22:31 ACTIONS: {'loader': 1}
+Tue,16-Jul-2013~22:31 WEIGHTS: {1: ['loader']}
+Tue,16-Jul-2013~22:31 BEST: loader
+Tue,16-Jul-2013~22:31 Successfully imported Modules.clock
+Tue,16-Jul-2013~22:31 Successfully imported Modules.discover
+Tue,16-Jul-2013~22:31 Successfully imported Modules.finder
+Tue,16-Jul-2013~22:31 Successfully imported Modules.media
+Tue,16-Jul-2013~22:31 Successfully imported Modules.weather
+Tue,16-Jul-2013~22:31 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~22:31 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('called', 'PP'), ('tangled', '??')]
+Tue,16-Jul-2013~22:31 KIND: IMP
+Tue,16-Jul-2013~22:31 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~22:31 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~22:31 BEST: finder
+Tue,16-Jul-2013~22:31 PREPS: [('called', 4)]
+Tue,16-Jul-2013~22:31 KEYWORDS: [('tangled', 5)]
+Tue,16-Jul-2013~22:31 PARAMETERS: tangled kind:kind:movie 
+Tue,16-Jul-2013~22:31 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "tangled kind:kind:movie "
+Tue,16-Jul-2013~22:31 RESULTS FIRST 5: []
+Tue,16-Jul-2013~22:32 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,16-Jul-2013~22:32 KIND: IMP
+Tue,16-Jul-2013~22:32 ACTIONS: {'loader': 1}
+Tue,16-Jul-2013~22:32 WEIGHTS: {1: ['loader']}
+Tue,16-Jul-2013~22:32 BEST: loader
+Tue,16-Jul-2013~22:32 Successfully imported Modules.clock
+Tue,16-Jul-2013~22:32 Successfully imported Modules.discover
+Tue,16-Jul-2013~22:32 Successfully imported Modules.finder
+Tue,16-Jul-2013~22:32 Successfully imported Modules.media
+Tue,16-Jul-2013~22:32 Successfully imported Modules.weather
+Tue,16-Jul-2013~22:32 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~22:32 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('called', 'PP'), ('tangled', '??')]
+Tue,16-Jul-2013~22:32 KIND: IMP
+Tue,16-Jul-2013~22:32 ACTIONS: {'wikipedia': 1, 'finder': 2}
+Tue,16-Jul-2013~22:32 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~22:32 BEST: finder
+Tue,16-Jul-2013~22:32 PREPS: [('called', 4)]
+Tue,16-Jul-2013~22:32 KEYWORDS: [('tangled', 5)]
+Tue,16-Jul-2013~22:32 PARAMETERS: tangled kind:movie 
+Tue,16-Jul-2013~22:32 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "tangled kind:movie "
+Tue,16-Jul-2013~22:32 RESULTS FIRST 5: ['/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v', '/Users/aaronstockdill/Movies/Tangled.m4v']
+Tue,16-Jul-2013~22:32 DECISION: None
+Tue,16-Jul-2013~22:32 IT: None
+Tue,16-Jul-2013~22:32 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('email', 'NO'), ('from', 'PP'), ('cosc', '??'), ('from', 'PP'), ('last', '??'), ('week', '??')]
+Tue,16-Jul-2013~22:32 KIND: IMP
+Tue,16-Jul-2013~22:32 ACTIONS: {'wikipedia': 1, 'finder': 2}
+Tue,16-Jul-2013~22:32 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~22:32 BEST: finder
+Tue,16-Jul-2013~22:32 PREPS: [('from', 4), ('from', 4)]
+Tue,16-Jul-2013~22:32 KEYWORDS: [('cosc', 5), ('last week', 7)]
+Tue,16-Jul-2013~22:32 PARAMETERS: date:cosc date:cosc kind:email 
+Tue,16-Jul-2013~22:32 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "date:cosc date:cosc kind:email "
+Tue,16-Jul-2013~22:32 RESULTS FIRST 5: []
+Tue,16-Jul-2013~22:33 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('email', 'NO'), ('about', 'PP'), ('cosc', '??'), ('from', 'PP'), ('last', '??'), ('week', '??')]
+Tue,16-Jul-2013~22:33 KIND: IMP
+Tue,16-Jul-2013~22:33 ACTIONS: {'wikipedia': 2, 'finder': 2}
+Tue,16-Jul-2013~22:33 WEIGHTS: {2: ['wikipedia', 'finder']}
+Tue,16-Jul-2013~22:33 BEST: wikipedia
+Tue,16-Jul-2013~22:33 KEYWORDS: [('email', 3), ('cosc', 5), ('last week', 7)]
+Tue,16-Jul-2013~22:33 URL ATTEMPT: http://en.wikipedia.org/wiki/email
+Tue,16-Jul-2013~22:34 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,16-Jul-2013~22:34 KIND: IMP
+Tue,16-Jul-2013~22:34 ACTIONS: {'loader': 1}
+Tue,16-Jul-2013~22:34 WEIGHTS: {1: ['loader']}
+Tue,16-Jul-2013~22:34 BEST: loader
+Tue,16-Jul-2013~22:34 Successfully imported Modules.clock
+Tue,16-Jul-2013~22:34 Successfully imported Modules.discover
+Tue,16-Jul-2013~22:34 Successfully imported Modules.finder
+Tue,16-Jul-2013~22:34 Successfully imported Modules.media
+Tue,16-Jul-2013~22:34 Successfully imported Modules.weather
+Tue,16-Jul-2013~22:34 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~22:34 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('word', 'NO'), ('document', 'NO'), ('from', 'PP'), ('last', '??'), ('week', '??')]
+Tue,16-Jul-2013~22:34 KIND: IMP
+Tue,16-Jul-2013~22:34 ACTIONS: {'wikipedia': 1, 'finder': 3}
+Tue,16-Jul-2013~22:34 WEIGHTS: {1: ['wikipedia'], 3: ['finder']}
+Tue,16-Jul-2013~22:34 BEST: finder
+Tue,16-Jul-2013~22:34 PREPS: [('from', 5)]
+Tue,16-Jul-2013~22:34 KEYWORDS: [('last week', 6)]
+Tue,16-Jul-2013~22:34 PARAMETERS: date:last week kind:word 
+Tue,16-Jul-2013~22:34 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "date:last week kind:word "
+Tue,16-Jul-2013~22:34 RESULTS FIRST 5: []
+Tue,16-Jul-2013~22:49 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,16-Jul-2013~22:49 KIND: IMP
+Tue,16-Jul-2013~22:49 ACTIONS: {'loader': 1}
+Tue,16-Jul-2013~22:49 WEIGHTS: {1: ['loader']}
+Tue,16-Jul-2013~22:49 BEST: loader
+Tue,16-Jul-2013~22:49 Successfully imported Modules.clock
+Tue,16-Jul-2013~22:49 Successfully imported Modules.discover
+Tue,16-Jul-2013~22:49 Successfully imported Modules.finder
+Tue,16-Jul-2013~22:49 Successfully imported Modules.media
+Tue,16-Jul-2013~22:49 Successfully imported Modules.weather
+Tue,16-Jul-2013~22:49 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~22:49 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??'), ('from', 'PP'), ('last', '??'), ('week', '??')]
+Tue,16-Jul-2013~22:49 KIND: IMP
+Tue,16-Jul-2013~22:49 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~22:49 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~22:49 BEST: finder
+Tue,16-Jul-2013~22:49 PREPS: [('from', 5)]
+Tue,16-Jul-2013~22:49 KEYWORDS: [('tangled', 4), ('last week', 6)]
+Tue,16-Jul-2013~22:49 PARAMETERS: kMDItemFSContentChangeDate == $time.this_week(-1) kind:movie 
+Tue,16-Jul-2013~22:49 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "kMDItemFSContentChangeDate == $time.this_week(-1) kind:movie "
+Tue,16-Jul-2013~22:50 RESULTS FIRST 5: []
+Tue,16-Jul-2013~22:51 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??'), ('from', 'PP'), ('last', '??'), ('week', '??')]
+Tue,16-Jul-2013~22:51 KIND: IMP
+Tue,16-Jul-2013~22:51 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~22:51 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~22:51 BEST: finder
+Tue,16-Jul-2013~22:51 PREPS: [('from', 5)]
+Tue,16-Jul-2013~22:51 KEYWORDS: [('tangled', 4), ('last week', 6)]
+Tue,16-Jul-2013~22:51 PARAMETERS: kMDItemFSContentChangeDate == $time.this_week(-1) kind:movie 
+Tue,16-Jul-2013~22:51 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "kMDItemFSContentChangeDate == $time.this_week(-1) kind:movie "
+Tue,16-Jul-2013~22:51 RESULTS FIRST 5: []
+Tue,16-Jul-2013~22:52 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('tangled', '??')]
+Tue,16-Jul-2013~22:52 KIND: IMP
+Tue,16-Jul-2013~22:52 ACTIONS: {'finder': 1, 'wikipedia': 1}
+Tue,16-Jul-2013~22:52 WEIGHTS: {1: ['finder', 'wikipedia']}
+Tue,16-Jul-2013~22:52 BEST: finder
+Tue,16-Jul-2013~22:52 PREPS: None
+Tue,16-Jul-2013~22:52 KEYWORDS: [('tangled', 2)]
+Tue,16-Jul-2013~22:52 PARAMETERS: 
+Tue,16-Jul-2013~22:52 COMMAND: mdfind -onlyin /Users/aaronstockdill/ ""
+Tue,16-Jul-2013~22:52 RESULTS FIRST 5: ["Failed to create query for ''."]
+Tue,16-Jul-2013~22:52 DECISION: None
+Tue,16-Jul-2013~22:52 IT: None
+Tue,16-Jul-2013~22:52 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??')]
+Tue,16-Jul-2013~22:52 KIND: IMP
+Tue,16-Jul-2013~22:52 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~22:52 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~22:52 BEST: finder
+Tue,16-Jul-2013~22:52 PREPS: None
+Tue,16-Jul-2013~22:52 KEYWORDS: [('tangled', 4)]
+Tue,16-Jul-2013~22:52 PARAMETERS: kind:movie 
+Tue,16-Jul-2013~22:52 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "kind:movie "
+Tue,16-Jul-2013~22:52 RESULTS FIRST 5: ['/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Movies/Miro Video Converter/The End of Time Part One.s04e17.webmsd.mp4.mp4', "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Downton Abbey/Episode 6.s02e06.m4v", "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Downton Abbey/Downton Abbey Christmas Special.m4v", "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Downton Abbey/Episode 1.s02e01.m4v", "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Downton Abbey/Episode 8.s02e08.m4v", "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Downton Abbey/Episode 3.s02e03.m4v", "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Downton Abbey/Episode 4.s02e04.m4v", "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Downton Abbey/Episode 2.s02e02.m4v", "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Downton Abbey/Episode 5.s02e05.m4v"]
+Tue,16-Jul-2013~22:54 DECISION: None
+Tue,16-Jul-2013~22:54 IT: None
+Tue,16-Jul-2013~22:54 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,16-Jul-2013~22:54 KIND: IMP
+Tue,16-Jul-2013~22:54 ACTIONS: {'loader': 1}
+Tue,16-Jul-2013~22:54 WEIGHTS: {1: ['loader']}
+Tue,16-Jul-2013~22:54 BEST: loader
+Tue,16-Jul-2013~22:54 Successfully imported Modules.clock
+Tue,16-Jul-2013~22:54 Successfully imported Modules.discover
+Tue,16-Jul-2013~22:54 Successfully imported Modules.finder
+Tue,16-Jul-2013~22:54 Successfully imported Modules.media
+Tue,16-Jul-2013~22:54 Successfully imported Modules.weather
+Tue,16-Jul-2013~22:54 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~22:54 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,16-Jul-2013~22:54 KIND: INT
+Tue,16-Jul-2013~22:54 ACTIONS: {'clock': 1}
+Tue,16-Jul-2013~22:54 WEIGHTS: {1: ['clock']}
+Tue,16-Jul-2013~22:54 BEST: clock
+Tue,16-Jul-2013~22:54 KEYWORDS: ['time']
+Tue,16-Jul-2013~22:54 SENTENCE: [('fidn', '??'), ('the', 'AR'), ('movie', 'NS'), ('tangled', '??')]
+Tue,16-Jul-2013~22:54 KIND: DEC
+Tue,16-Jul-2013~22:54 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??')]
+Tue,16-Jul-2013~22:54 KIND: IMP
+Tue,16-Jul-2013~22:54 ACTIONS: {'wikipedia': 1, 'finder': 2}
+Tue,16-Jul-2013~22:54 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~22:54 BEST: finder
+Tue,16-Jul-2013~22:54 PREPS: None
+Tue,16-Jul-2013~22:54 KEYWORDS: [('tangled', 4)]
+Tue,16-Jul-2013~22:54 PARAMETERS: kind:movie 
+Tue,16-Jul-2013~22:54 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "kind:movie "
+Tue,16-Jul-2013~22:54 RESULTS FIRST 5: ['/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Movies/Miro Video Converter/The End of Time Part One.s04e17.webmsd.mp4.mp4', "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Downton Abbey/Episode 6.s02e06.m4v", "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Downton Abbey/Downton Abbey Christmas Special.m4v", "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Downton Abbey/Episode 1.s02e01.m4v", "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Downton Abbey/Episode 8.s02e08.m4v", "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Downton Abbey/Episode 3.s02e03.m4v", "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Downton Abbey/Episode 4.s02e04.m4v", "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Downton Abbey/Episode 2.s02e02.m4v", "/Users/aaronstockdill/Desktop/Desktop Crap/Sophia's Videos/Downton Abbey/Episode 5.s02e05.m4v"]
+Tue,16-Jul-2013~22:56 DECISION: None
+Tue,16-Jul-2013~22:56 IT: None
+Tue,16-Jul-2013~23:00 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,16-Jul-2013~23:00 KIND: IMP
+Tue,16-Jul-2013~23:00 ACTIONS: {'loader': 1}
+Tue,16-Jul-2013~23:00 WEIGHTS: {1: ['loader']}
+Tue,16-Jul-2013~23:00 BEST: loader
+Tue,16-Jul-2013~23:00 Successfully imported Modules.clock
+Tue,16-Jul-2013~23:00 Successfully imported Modules.discover
+Tue,16-Jul-2013~23:00 Successfully imported Modules.finder
+Tue,16-Jul-2013~23:00 Successfully imported Modules.media
+Tue,16-Jul-2013~23:00 Successfully imported Modules.weather
+Tue,16-Jul-2013~23:00 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~23:00 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??')]
+Tue,16-Jul-2013~23:00 KIND: IMP
+Tue,16-Jul-2013~23:00 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~23:00 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~23:00 BEST: finder
+Tue,16-Jul-2013~23:00 PREPS: None
+Tue,16-Jul-2013~23:00 KEYWORDS: [('tangled', 4)]
+Tue,16-Jul-2013~23:00 Successfully imported Modules.clock
+Tue,16-Jul-2013~23:00 Successfully imported Modules.discover
+Tue,16-Jul-2013~23:00 Successfully imported Modules.finder
+Tue,16-Jul-2013~23:00 Successfully imported Modules.media
+Tue,16-Jul-2013~23:00 Successfully imported Modules.weather
+Tue,16-Jul-2013~23:00 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~23:00 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('called', 'PP'), ('tangled', '??')]
+Tue,16-Jul-2013~23:00 KIND: IMP
+Tue,16-Jul-2013~23:00 ACTIONS: {'wikipedia': 1, 'finder': 2}
+Tue,16-Jul-2013~23:00 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~23:00 BEST: finder
+Tue,16-Jul-2013~23:00 PREPS: [('called', 4)]
+Tue,16-Jul-2013~23:00 KEYWORDS: [('tangled', 5)]
+Tue,16-Jul-2013~23:00 PARAMETERS: tangled tangled kind:movie 
+Tue,16-Jul-2013~23:00 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "tangled tangled kind:movie "
+Tue,16-Jul-2013~23:00 RESULTS FIRST 5: ['/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v']
+Tue,16-Jul-2013~23:01 DECISION: None
+Tue,16-Jul-2013~23:01 IT: None
+Tue,16-Jul-2013~23:01 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??')]
+Tue,16-Jul-2013~23:01 KIND: IMP
+Tue,16-Jul-2013~23:01 ACTIONS: {'wikipedia': 1, 'finder': 2}
+Tue,16-Jul-2013~23:01 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~23:01 BEST: finder
+Tue,16-Jul-2013~23:01 PREPS: None
+Tue,16-Jul-2013~23:01 KEYWORDS: [('tangled', 4)]
+Tue,16-Jul-2013~23:01 PARAMETERS: tangled kind:movie 
+Tue,16-Jul-2013~23:01 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "tangled kind:movie "
+Tue,16-Jul-2013~23:01 RESULTS FIRST 5: ['/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v']
+Tue,16-Jul-2013~23:01 DECISION: None
+Tue,16-Jul-2013~23:01 IT: None
+Tue,16-Jul-2013~23:01 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,16-Jul-2013~23:01 KIND: IMP
+Tue,16-Jul-2013~23:01 ACTIONS: {'loader': 1}
+Tue,16-Jul-2013~23:01 WEIGHTS: {1: ['loader']}
+Tue,16-Jul-2013~23:01 BEST: loader
+Tue,16-Jul-2013~23:01 Successfully imported Modules.clock
+Tue,16-Jul-2013~23:01 Successfully imported Modules.discover
+Tue,16-Jul-2013~23:01 Successfully imported Modules.finder
+Tue,16-Jul-2013~23:01 Successfully imported Modules.media
+Tue,16-Jul-2013~23:01 Successfully imported Modules.weather
+Tue,16-Jul-2013~23:01 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~23:01 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('called', 'PP'), ('tangled', '??')]
+Tue,16-Jul-2013~23:01 KIND: IMP
+Tue,16-Jul-2013~23:01 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~23:01 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~23:01 BEST: finder
+Tue,16-Jul-2013~23:01 PREPS: [('called', 4)]
+Tue,16-Jul-2013~23:01 KEYWORDS: [('tangled', 5)]
+Tue,16-Jul-2013~23:01 PARAMETERS: tangled kind:movie 
+Tue,16-Jul-2013~23:01 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "tangled kind:movie "
+Tue,16-Jul-2013~23:01 RESULTS FIRST 5: ['/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v']
+Tue,16-Jul-2013~23:02 DECISION: None
+Tue,16-Jul-2013~23:02 IT: None
+Tue,16-Jul-2013~23:02 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??')]
+Tue,16-Jul-2013~23:02 KIND: IMP
+Tue,16-Jul-2013~23:02 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~23:02 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~23:02 BEST: finder
+Tue,16-Jul-2013~23:02 PREPS: None
+Tue,16-Jul-2013~23:02 KEYWORDS: [('tangled', 4)]
+Tue,16-Jul-2013~23:02 PARAMETERS: tangled kind:movie 
+Tue,16-Jul-2013~23:02 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "tangled kind:movie "
+Tue,16-Jul-2013~23:02 RESULTS FIRST 5: ['/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v']
+Tue,16-Jul-2013~23:02 DECISION: None
+Tue,16-Jul-2013~23:02 IT: None
+Tue,16-Jul-2013~23:02 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('spreadsheet', 'NO'), ('uc', '??'), ('timetable', '??')]
+Tue,16-Jul-2013~23:02 KIND: IMP
+Tue,16-Jul-2013~23:02 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~23:02 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~23:02 BEST: finder
+Tue,16-Jul-2013~23:02 PREPS: None
+Tue,16-Jul-2013~23:02 KEYWORDS: [('uc timetable', 4)]
+Tue,16-Jul-2013~23:02 PARAMETERS: uc timetable kind:spreadsheet 
+Tue,16-Jul-2013~23:02 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "uc timetable kind:spreadsheet "
+Tue,16-Jul-2013~23:02 RESULTS FIRST 5: ['/Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx']
+Tue,16-Jul-2013~23:02 ORDINALS: ['first']
+Tue,16-Jul-2013~23:02 CHOICE: 1
+Tue,16-Jul-2013~23:02 DECISION: /Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx
+Tue,16-Jul-2013~23:02 IT: /Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx
+Tue,16-Jul-2013~23:02 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Tue,16-Jul-2013~23:02 KIND: IMP
+Tue,16-Jul-2013~23:02 ACTIONS: {'finder': 1}
+Tue,16-Jul-2013~23:02 WEIGHTS: {1: ['finder']}
+Tue,16-Jul-2013~23:02 BEST: finder
+Tue,16-Jul-2013~23:02 IT: /Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx
+Tue,16-Jul-2013~23:02 PREPS: None
+Tue,16-Jul-2013~23:02 KEYWORDS: [('/Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx', 2)]
+Tue,16-Jul-2013~23:02 PARAMETERS: /Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx
+Tue,16-Jul-2013~23:02 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "/Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx"
+Tue,16-Jul-2013~23:02 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/Programming/GitHub/PAUL/log.txt']
+Tue,16-Jul-2013~23:02 ORDINALS: ['first']
+Tue,16-Jul-2013~23:02 CHOICE: 1
+Tue,16-Jul-2013~23:02 DECISION: /Users/aaronstockdill/Documents/Programming/GitHub/PAUL/log.txt
+Tue,16-Jul-2013~23:02 IT: /Users/aaronstockdill/Documents/Programming/GitHub/PAUL/log.txt
+Tue,16-Jul-2013~23:03 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,16-Jul-2013~23:03 KIND: IMP
+Tue,16-Jul-2013~23:03 ACTIONS: {'loader': 1}
+Tue,16-Jul-2013~23:03 WEIGHTS: {1: ['loader']}
+Tue,16-Jul-2013~23:03 BEST: loader
+Tue,16-Jul-2013~23:03 Successfully imported Modules.clock
+Tue,16-Jul-2013~23:03 Successfully imported Modules.discover
+Tue,16-Jul-2013~23:03 Successfully imported Modules.finder
+Tue,16-Jul-2013~23:03 Successfully imported Modules.media
+Tue,16-Jul-2013~23:03 Successfully imported Modules.weather
+Tue,16-Jul-2013~23:03 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~23:04 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,16-Jul-2013~23:04 KIND: IMP
+Tue,16-Jul-2013~23:04 ACTIONS: {'loader': 1}
+Tue,16-Jul-2013~23:04 WEIGHTS: {1: ['loader']}
+Tue,16-Jul-2013~23:04 BEST: loader
+Tue,16-Jul-2013~23:04 Successfully imported Modules.clock
+Tue,16-Jul-2013~23:04 Successfully imported Modules.discover
+Tue,16-Jul-2013~23:04 Successfully imported Modules.finder
+Tue,16-Jul-2013~23:04 Successfully imported Modules.media
+Tue,16-Jul-2013~23:04 Successfully imported Modules.weather
+Tue,16-Jul-2013~23:04 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~23:04 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('spreadsheet', 'NO'), ('called', 'PP'), ('bank', '??'), ('accounts', '??')]
+Tue,16-Jul-2013~23:04 KIND: IMP
+Tue,16-Jul-2013~23:04 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Tue,16-Jul-2013~23:04 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~23:04 BEST: finder
+Tue,16-Jul-2013~23:04 PREPS: [('called', 4)]
+Tue,16-Jul-2013~23:04 KEYWORDS: [('bank accounts', 5)]
+Tue,16-Jul-2013~23:04 PARAMETERS: bank accounts kind:spreadsheet 
+Tue,16-Jul-2013~23:04 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "bank accounts kind:spreadsheet "
+Tue,16-Jul-2013~23:04 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/Bank Accounts.xlsx']
+Tue,16-Jul-2013~23:04 ORDINALS: ['first']
+Tue,16-Jul-2013~23:04 CHOICE: 1
+Tue,16-Jul-2013~23:04 DECISION: /Users/aaronstockdill/Documents/Bank Accounts.xlsx
+Tue,16-Jul-2013~23:04 IT: /Users/aaronstockdill/Documents/Bank Accounts.xlsx
+Tue,16-Jul-2013~23:04 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Tue,16-Jul-2013~23:04 KIND: IMP
+Tue,16-Jul-2013~23:04 ACTIONS: {'finder': 1}
+Tue,16-Jul-2013~23:04 WEIGHTS: {1: ['finder']}
+Tue,16-Jul-2013~23:04 BEST: finder
+Tue,16-Jul-2013~23:04 IT: /Users/aaronstockdill/Documents/Bank Accounts.xlsx
+Tue,16-Jul-2013~23:05 Successfully imported Modules.clock
+Tue,16-Jul-2013~23:05 Successfully imported Modules.discover
+Tue,16-Jul-2013~23:05 Successfully imported Modules.finder
+Tue,16-Jul-2013~23:05 Successfully imported Modules.media
+Tue,16-Jul-2013~23:05 Successfully imported Modules.weather
+Tue,16-Jul-2013~23:05 Successfully imported Modules.wikipedia
+Tue,16-Jul-2013~23:05 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('called', 'PP'), ('tangled', '??')]
+Tue,16-Jul-2013~23:05 KIND: IMP
+Tue,16-Jul-2013~23:05 ACTIONS: {'wikipedia': 1, 'finder': 2}
+Tue,16-Jul-2013~23:05 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Tue,16-Jul-2013~23:05 BEST: finder
+Tue,16-Jul-2013~23:05 PREPS: [('called', 4)]
+Tue,16-Jul-2013~23:05 KEYWORDS: [('tangled', 5)]
+Tue,16-Jul-2013~23:05 PARAMETERS: tangled kind:movie 
+Tue,16-Jul-2013~23:05 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "tangled kind:movie "
+Tue,16-Jul-2013~23:05 RESULTS FIRST 5: ['/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v']
+Tue,16-Jul-2013~23:05 ORDINALS: ['first']
+Tue,16-Jul-2013~23:05 CHOICE: 1
+Tue,16-Jul-2013~23:05 DECISION: /Users/aaronstockdill/Movies/Tangled.m4v
+Tue,16-Jul-2013~23:05 IT: /Users/aaronstockdill/Movies/Tangled.m4v
+Tue,16-Jul-2013~23:05 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Tue,16-Jul-2013~23:05 KIND: IMP
+Tue,16-Jul-2013~23:05 ACTIONS: {'finder': 1}
+Tue,16-Jul-2013~23:05 WEIGHTS: {1: ['finder']}
+Tue,16-Jul-2013~23:05 BEST: finder
+Tue,16-Jul-2013~23:05 IT: /Users/aaronstockdill/Movies/Tangled.m4v
+Tue,16-Jul-2013~23:05 PREPS: None
+Wed,17-Jul-2013~22:38 Successfully imported Modules.clock
+Wed,17-Jul-2013~22:38 Successfully imported Modules.discover
+Wed,17-Jul-2013~22:38 Successfully imported Modules.finder
+Wed,17-Jul-2013~22:38 Successfully imported Modules.media
+Wed,17-Jul-2013~22:38 Successfully imported Modules.weather
+Wed,17-Jul-2013~22:38 Successfully imported Modules.wikipedia
+Wed,17-Jul-2013~22:38 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('pdf', 'NO'), ('from', 'PP'), ('today', 'NO')]
+Wed,17-Jul-2013~22:38 KIND: IMP
+Wed,17-Jul-2013~22:38 ACTIONS: {'finder': 2, 'wikipedia': 1, 'weather': 1}
+Wed,17-Jul-2013~22:38 WEIGHTS: {1: ['wikipedia', 'weather'], 2: ['finder']}
+Wed,17-Jul-2013~22:38 BEST: finder
+Wed,17-Jul-2013~22:38 PREPS: [('from', 4)]
+Wed,17-Jul-2013~22:38 KEYWORDS: [('today', 5)]
+Wed,17-Jul-2013~22:38 PARAMETERS: kMDItemFSContentChangeDate == $time.today kind:pdf 
+Wed,17-Jul-2013~22:38 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "kMDItemFSContentChangeDate == $time.today kind:pdf "
+Wed,17-Jul-2013~22:38 RESULTS FIRST 5: []
+Wed,17-Jul-2013~22:41 SENTENCE: [('You', 'PS'), ('reload', 'VB')]
+Wed,17-Jul-2013~22:41 KIND: IMP
+Wed,17-Jul-2013~22:41 ACTIONS: {'loader': 1}
+Wed,17-Jul-2013~22:41 WEIGHTS: {1: ['loader']}
+Wed,17-Jul-2013~22:41 BEST: loader
+Wed,17-Jul-2013~22:41 Successfully imported Modules.clock
+Wed,17-Jul-2013~22:41 Successfully imported Modules.discover
+Wed,17-Jul-2013~22:41 Successfully imported Modules.finder
+Wed,17-Jul-2013~22:41 Successfully imported Modules.media
+Wed,17-Jul-2013~22:41 Successfully imported Modules.weather
+Wed,17-Jul-2013~22:41 Successfully imported Modules.wikipedia
+Wed,17-Jul-2013~22:41 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('pdf', 'NO'), ('from', 'PP'), ('today', 'NO')]
+Wed,17-Jul-2013~22:41 KIND: IMP
+Wed,17-Jul-2013~22:41 ACTIONS: {'finder': 2, 'wikipedia': 1, 'weather': 1}
+Wed,17-Jul-2013~22:41 WEIGHTS: {1: ['wikipedia', 'weather'], 2: ['finder']}
+Wed,17-Jul-2013~22:41 BEST: finder
+Wed,17-Jul-2013~22:41 PREPS: [('from', 4)]
+Wed,17-Jul-2013~22:41 KEYWORDS: [('today', 5)]
+Wed,17-Jul-2013~22:41 PARAMETERS: (kMDItemFSContentChangeDate == $time.today) (kind:pdf )
+Wed,17-Jul-2013~22:41 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "(kMDItemFSContentChangeDate == $time.today) (kind:pdf )"
+Wed,17-Jul-2013~22:41 RESULTS FIRST 5: []
+Wed,17-Jul-2013~22:41 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Wed,17-Jul-2013~22:41 KIND: IMP
+Wed,17-Jul-2013~22:41 ACTIONS: {'loader': 1}
+Wed,17-Jul-2013~22:41 WEIGHTS: {1: ['loader']}
+Wed,17-Jul-2013~22:41 BEST: loader
+Wed,17-Jul-2013~22:41 Successfully imported Modules.clock
+Wed,17-Jul-2013~22:41 Successfully imported Modules.discover
+Wed,17-Jul-2013~22:41 Successfully imported Modules.finder
+Wed,17-Jul-2013~22:41 Successfully imported Modules.media
+Wed,17-Jul-2013~22:41 Successfully imported Modules.weather
+Wed,17-Jul-2013~22:41 Successfully imported Modules.wikipedia
+Wed,17-Jul-2013~22:41 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('pdf', 'NO'), ('from', 'PP'), ('today', 'NO')]
+Wed,17-Jul-2013~22:41 KIND: IMP
+Wed,17-Jul-2013~22:41 ACTIONS: {'finder': 2, 'wikipedia': 1, 'weather': 1}
+Wed,17-Jul-2013~22:41 WEIGHTS: {1: ['wikipedia', 'weather'], 2: ['finder']}
+Wed,17-Jul-2013~22:41 BEST: finder
+Wed,17-Jul-2013~22:41 PREPS: [('from', 4)]
+Wed,17-Jul-2013~22:41 KEYWORDS: [('today', 5)]
+Wed,17-Jul-2013~22:41 PARAMETERS: (kMDItemFSContentChangeDate == $time.today) (kind:pdf)
+Wed,17-Jul-2013~22:41 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "(kMDItemFSContentChangeDate == $time.today) (kind:pdf)"
+Wed,17-Jul-2013~22:41 RESULTS FIRST 5: []
+Wed,17-Jul-2013~22:42 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??'), ('from', 'PP'), ('yesterday', '??')]
+Wed,17-Jul-2013~22:42 KIND: IMP
+Wed,17-Jul-2013~22:42 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Wed,17-Jul-2013~22:42 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Wed,17-Jul-2013~22:42 BEST: finder
+Wed,17-Jul-2013~22:42 PREPS: [('from', 5)]
+Wed,17-Jul-2013~22:42 KEYWORDS: [('tangled', 4), ('yesterday', 6)]
+Wed,17-Jul-2013~22:42 PARAMETERS: (tangled) (kMDItemFSContentChangeDate == $time.yesterday) (kind:movie )
+Wed,17-Jul-2013~22:42 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "(tangled) (kMDItemFSContentChangeDate == $time.yesterday) (kind:movie )"
+Wed,17-Jul-2013~22:42 RESULTS FIRST 5: ["Failed to create query for '(tangled) (kMDItemFSContentChangeDate == .yesterday) (kind:movie )'."]
+Wed,17-Jul-2013~22:44 Successfully imported Modules.clock
+Wed,17-Jul-2013~22:44 Successfully imported Modules.discover
+Wed,17-Jul-2013~22:44 Successfully imported Modules.finder
+Wed,17-Jul-2013~22:44 Successfully imported Modules.media
+Wed,17-Jul-2013~22:44 Successfully imported Modules.weather
+Wed,17-Jul-2013~22:44 Successfully imported Modules.wikipedia
+Wed,17-Jul-2013~22:45 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??'), ('from', 'PP'), ('today', 'NO')]
+Wed,17-Jul-2013~22:45 KIND: IMP
+Wed,17-Jul-2013~22:45 ACTIONS: {'finder': 2, 'weather': 1, 'wikipedia': 1}
+Wed,17-Jul-2013~22:45 WEIGHTS: {1: ['weather', 'wikipedia'], 2: ['finder']}
+Wed,17-Jul-2013~22:45 BEST: finder
+Wed,17-Jul-2013~22:45 PREPS: [('from', 5)]
+Wed,17-Jul-2013~22:45 KEYWORDS: [('tangled', 4), ('today', 6)]
+Wed,17-Jul-2013~22:45 PARAMETERS: tangled kMDItemFSContentChangeDate==$time.today kind:movie 
+Wed,17-Jul-2013~22:45 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "tangled kMDItemFSContentChangeDate==$time.today kind:movie "
+Wed,17-Jul-2013~22:45 RESULTS FIRST 5: ["Failed to create query for 'tangled kMDItemFSContentChangeDate==.today kind:movie '."]
+Wed,17-Jul-2013~22:45 DECISION: None
+Wed,17-Jul-2013~22:45 IT: None
+Wed,17-Jul-2013~22:53 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Wed,17-Jul-2013~22:53 KIND: IMP
+Wed,17-Jul-2013~22:53 ACTIONS: {'loader': 1}
+Wed,17-Jul-2013~22:53 WEIGHTS: {1: ['loader']}
+Wed,17-Jul-2013~22:53 BEST: loader
+Wed,17-Jul-2013~22:53 Successfully imported Modules.clock
+Wed,17-Jul-2013~22:53 Successfully imported Modules.discover
+Wed,17-Jul-2013~22:53 Successfully imported Modules.finder
+Wed,17-Jul-2013~22:53 Successfully imported Modules.media
+Wed,17-Jul-2013~22:53 Successfully imported Modules.weather
+Wed,17-Jul-2013~22:53 Successfully imported Modules.wikipedia
+Wed,17-Jul-2013~22:53 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('tangled', '??')]
+Wed,17-Jul-2013~22:53 KIND: IMP
+Wed,17-Jul-2013~22:53 ACTIONS: {'wikipedia': 1, 'finder': 1}
+Wed,17-Jul-2013~22:53 WEIGHTS: {1: ['wikipedia', 'finder']}
+Wed,17-Jul-2013~22:53 BEST: wikipedia
+Wed,17-Jul-2013~22:53 KEYWORDS: [('tangled', 2)]
+Wed,17-Jul-2013~22:53 URL ATTEMPT: http://en.wikipedia.org/wiki/tangled
+Wed,17-Jul-2013~22:53 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??')]
+Wed,17-Jul-2013~22:53 KIND: IMP
+Wed,17-Jul-2013~22:53 ACTIONS: {'wikipedia': 1, 'finder': 2}
+Wed,17-Jul-2013~22:53 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Wed,17-Jul-2013~22:53 BEST: finder
+Wed,17-Jul-2013~22:53 PREPS: None
+Wed,17-Jul-2013~22:53 KEYWORDS: [('tangled', 4)]
+Wed,17-Jul-2013~22:53 Successfully imported Modules.clock
+Wed,17-Jul-2013~22:53 Successfully imported Modules.discover
+Wed,17-Jul-2013~22:53 Successfully imported Modules.finder
+Wed,17-Jul-2013~22:53 Successfully imported Modules.media
+Wed,17-Jul-2013~22:53 Successfully imported Modules.weather
+Wed,17-Jul-2013~22:53 Successfully imported Modules.wikipedia
+Wed,17-Jul-2013~22:53 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??')]
+Wed,17-Jul-2013~22:53 KIND: IMP
+Wed,17-Jul-2013~22:53 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Wed,17-Jul-2013~22:53 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Wed,17-Jul-2013~22:53 BEST: finder
+Wed,17-Jul-2013~22:53 PREPS: None
+Wed,17-Jul-2013~22:53 KEYWORDS: [('tangled', 4)]
+Wed,17-Jul-2013~22:53 PARAMETERS: tangled kind:movie 
+Wed,17-Jul-2013~22:53 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "tangled kind:movie "
+Wed,17-Jul-2013~22:53 RESULTS FIRST 5: ['/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v']
+Wed,17-Jul-2013~22:54 ORDINALS: ['first']
+Wed,17-Jul-2013~22:54 CHOICE: 1
+Wed,17-Jul-2013~22:54 DECISION: /Users/aaronstockdill/Movies/Tangled.m4v
+Wed,17-Jul-2013~22:54 IT: /Users/aaronstockdill/Movies/Tangled.m4v
+Wed,17-Jul-2013~22:54 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Wed,17-Jul-2013~22:54 KIND: IMP
+Wed,17-Jul-2013~22:54 ACTIONS: {'finder': 1}
+Wed,17-Jul-2013~22:54 WEIGHTS: {1: ['finder']}
+Wed,17-Jul-2013~22:54 BEST: finder
+Wed,17-Jul-2013~22:54 IT: /Users/aaronstockdill/Movies/Tangled.m4v
+Wed,17-Jul-2013~22:54 PREPS: None
+Wed,17-Jul-2013~22:54 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Wed,17-Jul-2013~22:54 KIND: INT
+Wed,17-Jul-2013~22:54 ACTIONS: {'weather': 1}
+Wed,17-Jul-2013~22:54 WEIGHTS: {1: ['weather']}
+Wed,17-Jul-2013~22:54 BEST: weather
+Wed,17-Jul-2013~22:54 KEYWORDS: []
+Wed,17-Jul-2013~22:54 TODAY: 2
+Wed,17-Jul-2013~22:54 DAY: 0
+Wed,17-Jul-2013~22:54 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="2"  date="Wed, 17 Jul 2013 9:59 pm NZST" />\n', '<yweather:forecast day="Wed" date="17 Jul 2013" low="7" high="15" text="Mostly Cloudy" code="27" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="6" high="17" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="14" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="7" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="17" text="Mostly Cloudy" code="28" />\n']
+Wed,17-Jul-2013~22:54 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '2', 'date', 'Wed, 17 Jul 2013 9:59 pm NZST']
+Wed,17-Jul-2013~22:54 ITEMS: ['day', 'Wed', 'date', '17 Jul 2013', 'low', '7', 'high', '15', 'text', 'Mostly Cloudy', 'code', '27']
+Wed,17-Jul-2013~22:54 SENTENCE: [('You', 'PS'), ('will', 'VB'), ('it', 'PO'), ('be', 'VB'), ('cold', 'NO'), ('tomorrow', 'NO')]
+Wed,17-Jul-2013~22:54 KIND: IMP
+Wed,17-Jul-2013~22:54 ACTIONS: {'weather': 2}
+Wed,17-Jul-2013~22:54 WEIGHTS: {2: ['weather']}
+Wed,17-Jul-2013~22:54 BEST: weather
+Wed,17-Jul-2013~22:54 KEYWORDS: [('tomorrow', 5)]
+Wed,17-Jul-2013~22:54 TODAY: 2
+Wed,17-Jul-2013~22:54 DAY: 2
+Wed,17-Jul-2013~22:54 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="2"  date="Wed, 17 Jul 2013 9:59 pm NZST" />\n', '<yweather:forecast day="Wed" date="17 Jul 2013" low="7" high="15" text="Mostly Cloudy" code="27" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="6" high="17" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="14" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="7" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="17" text="Mostly Cloudy" code="28" />\n']
+Wed,17-Jul-2013~22:54 ITEMS: ['day', 'Thu', 'date', '18 Jul 2013', 'low', '6', 'high', '17', 'text', 'Mostly Cloudy', 'code', '28']
+Wed,17-Jul-2013~22:56 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('software', '??')]
+Wed,17-Jul-2013~22:56 KIND: IMP
+Wed,17-Jul-2013~22:56 ACTIONS: {'wikipedia': 2}
+Wed,17-Jul-2013~22:56 WEIGHTS: {2: ['wikipedia']}
+Wed,17-Jul-2013~22:56 BEST: wikipedia
+Wed,17-Jul-2013~22:56 KEYWORDS: [('software', 4)]
+Wed,17-Jul-2013~22:56 URL ATTEMPT: http://en.wikipedia.org/wiki/software
+Wed,17-Jul-2013~22:56 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('paul.app', '??')]
+Wed,17-Jul-2013~22:56 KIND: IMP
+Wed,17-Jul-2013~22:56 ACTIONS: {'finder': 1, 'wikipedia': 1}
+Wed,17-Jul-2013~22:56 WEIGHTS: {1: ['finder', 'wikipedia']}
+Wed,17-Jul-2013~22:56 BEST: finder
+Wed,17-Jul-2013~22:56 PREPS: None
+Wed,17-Jul-2013~22:56 KEYWORDS: [('paul.app', 2)]
+Wed,17-Jul-2013~22:56 PARAMETERS: paul.app
+Wed,17-Jul-2013~22:56 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "paul.app"
+Wed,17-Jul-2013~22:56 RESULTS FIRST 5: []
+Wed,17-Jul-2013~22:56 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('app', 'NO'), ('paul', 'XO')]
+Wed,17-Jul-2013~22:56 KIND: IMP
+Wed,17-Jul-2013~22:56 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Wed,17-Jul-2013~22:56 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Wed,17-Jul-2013~22:56 BEST: finder
+Wed,17-Jul-2013~22:56 PREPS: None
+Wed,17-Jul-2013~22:56 KEYWORDS: [('paul', 3)]
+Wed,17-Jul-2013~23:00 Successfully imported Modules.clock
+Wed,17-Jul-2013~23:00 Successfully imported Modules.discover
+Wed,17-Jul-2013~23:00 Successfully imported Modules.finder
+Wed,17-Jul-2013~23:00 Successfully imported Modules.media
+Wed,17-Jul-2013~23:00 Successfully imported Modules.weather
+Wed,17-Jul-2013~23:00 Successfully imported Modules.wikipedia
+Wed,17-Jul-2013~23:00 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Wed,17-Jul-2013~23:00 KIND: INT
+Wed,17-Jul-2013~23:00 ACTIONS: {'clock': 1}
+Wed,17-Jul-2013~23:00 WEIGHTS: {1: ['clock']}
+Wed,17-Jul-2013~23:00 BEST: clock
+Wed,17-Jul-2013~23:00 KEYWORDS: ['day']
+Wed,17-Jul-2013~23:00 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:00 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cold', 'NO')]
+Wed,17-Jul-2013~23:00 KIND: IMP
+Wed,17-Jul-2013~23:00 ACTIONS: {'weather': 1}
+Wed,17-Jul-2013~23:00 WEIGHTS: {1: ['weather']}
+Wed,17-Jul-2013~23:00 BEST: weather
+Wed,17-Jul-2013~23:00 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:00 KEYWORDS: []
+Wed,17-Jul-2013~23:00 TODAY: 2
+Wed,17-Jul-2013~23:00 DAY: 0
+Wed,17-Jul-2013~23:00 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="2"  date="Wed, 17 Jul 2013 9:59 pm NZST" />\n', '<yweather:forecast day="Wed" date="17 Jul 2013" low="7" high="15" text="Mostly Cloudy" code="27" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="6" high="17" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="14" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="7" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="17" text="Mostly Cloudy" code="28" />\n']
+Wed,17-Jul-2013~23:00 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '2', 'date', 'Wed, 17 Jul 2013 9:59 pm NZST']
+Wed,17-Jul-2013~23:00 ITEMS: ['day', 'Wed', 'date', '17 Jul 2013', 'low', '7', 'high', '15', 'text', 'Mostly Cloudy', 'code', '27']
+Wed,17-Jul-2013~23:00 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:00 SENTENCE: [('You', 'PS'), ('play', 'VB'), ('i', 'PS'), ('music', 'VB')]
+Wed,17-Jul-2013~23:00 KIND: IMP
+Wed,17-Jul-2013~23:00 ACTIONS: {'media': 2, 'finder': 1}
+Wed,17-Jul-2013~23:00 WEIGHTS: {1: ['finder'], 2: ['media']}
+Wed,17-Jul-2013~23:00 BEST: media
+Wed,17-Jul-2013~23:00 MEDIA: play
+Wed,17-Jul-2013~23:00 COMMAND: osascript -e "tell application \"iTunes\" to play"
+Wed,17-Jul-2013~23:00 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:01 SENTENCE: [('You', 'PS'), ('stop', 'VB')]
+Wed,17-Jul-2013~23:01 KIND: IMP
+Wed,17-Jul-2013~23:01 ACTIONS: {'media': 1}
+Wed,17-Jul-2013~23:01 WEIGHTS: {1: ['media']}
+Wed,17-Jul-2013~23:01 BEST: media
+Wed,17-Jul-2013~23:01 MEDIA: pause
+Wed,17-Jul-2013~23:01 COMMAND: osascript -e "tell application \"iTunes\" to pause"
+Wed,17-Jul-2013~23:01 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:01 SENTENCE: [('You', 'PS'), ('define', 'VB'), ('earth', '??')]
+Wed,17-Jul-2013~23:01 KIND: IMP
+Wed,17-Jul-2013~23:01 ACTIONS: {'wikipedia': 1}
+Wed,17-Jul-2013~23:01 WEIGHTS: {1: ['wikipedia']}
+Wed,17-Jul-2013~23:01 BEST: wikipedia
+Wed,17-Jul-2013~23:01 KEYWORDS: [('earth', 2)]
+Wed,17-Jul-2013~23:01 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:01 URL ATTEMPT: http://en.wikipedia.org/wiki/earth
+Wed,17-Jul-2013~23:01 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:01 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Wed,17-Jul-2013~23:01 KIND: IMP
+Wed,17-Jul-2013~23:01 ACTIONS: {'finder': 1}
+Wed,17-Jul-2013~23:01 WEIGHTS: {1: ['finder']}
+Wed,17-Jul-2013~23:01 BEST: finder
+Wed,17-Jul-2013~23:01 IT: http://en.wikipedia.org/wiki/earth
+Wed,17-Jul-2013~23:01 PREPS: None
+Wed,17-Jul-2013~23:01 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:06 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('spreadsheet', 'NO'), ('timetable', '??')]
+Wed,17-Jul-2013~23:06 KIND: IMP
+Wed,17-Jul-2013~23:06 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Wed,17-Jul-2013~23:06 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Wed,17-Jul-2013~23:06 BEST: finder
+Wed,17-Jul-2013~23:06 PREPS: None
+Wed,17-Jul-2013~23:06 KEYWORDS: [('timetable', 4)]
+Wed,17-Jul-2013~23:06 PARAMETERS: timetable kind:spreadsheet 
+Wed,17-Jul-2013~23:06 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "timetable kind:spreadsheet "
+Wed,17-Jul-2013~23:06 RESULTS FIRST 5: ['/Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx']
+Wed,17-Jul-2013~23:06 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:06 ORDINALS: ['first']
+Wed,17-Jul-2013~23:06 CHOICE: 1
+Wed,17-Jul-2013~23:06 DECISION: /Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx
+Wed,17-Jul-2013~23:06 IT: /Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx
+Wed,17-Jul-2013~23:06 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:06 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Wed,17-Jul-2013~23:06 KIND: IMP
+Wed,17-Jul-2013~23:06 ACTIONS: {'finder': 1}
+Wed,17-Jul-2013~23:06 WEIGHTS: {1: ['finder']}
+Wed,17-Jul-2013~23:06 BEST: finder
+Wed,17-Jul-2013~23:06 IT: /Users/aaronstockdill/Dropbox/University/2013/UC Timetable.xlsx
+Wed,17-Jul-2013~23:06 PREPS: None
+Wed,17-Jul-2013~23:06 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:10 SENTENCE: [('time', 'NS')]
+Wed,17-Jul-2013~23:10 KIND: DEC
+Wed,17-Jul-2013~23:10 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:10 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Wed,17-Jul-2013~23:10 KIND: INT
+Wed,17-Jul-2013~23:10 ACTIONS: {'clock': 1}
+Wed,17-Jul-2013~23:10 WEIGHTS: {1: ['clock']}
+Wed,17-Jul-2013~23:10 BEST: clock
+Wed,17-Jul-2013~23:10 KEYWORDS: ['time']
+Wed,17-Jul-2013~23:10 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:10 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('i', 'PS')]
+Wed,17-Jul-2013~23:10 KIND: INT
+Wed,17-Jul-2013~23:10 ACTIONS: {'weather': 1}
+Wed,17-Jul-2013~23:10 WEIGHTS: {1: ['weather']}
+Wed,17-Jul-2013~23:10 BEST: weather
+Wed,17-Jul-2013~23:10 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:10 KEYWORDS: []
+Wed,17-Jul-2013~23:10 TODAY: 2
+Wed,17-Jul-2013~23:10 DAY: 0
+Wed,17-Jul-2013~23:11 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="2"  date="Wed, 17 Jul 2013 9:59 pm NZST" />\n', '<yweather:forecast day="Wed" date="17 Jul 2013" low="7" high="15" text="Mostly Cloudy" code="27" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="6" high="17" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="14" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="7" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="17" text="Mostly Cloudy" code="28" />\n']
+Wed,17-Jul-2013~23:11 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '2', 'date', 'Wed, 17 Jul 2013 9:59 pm NZST']
+Wed,17-Jul-2013~23:11 ITEMS: ['day', 'Wed', 'date', '17 Jul 2013', 'low', '7', 'high', '15', 'text', 'Mostly Cloudy', 'code', '27']
+Wed,17-Jul-2013~23:11 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:11 SENTENCE: [('You', 'PS'), ('will', 'VB'), ('it', 'PO'), ('be', 'VB'), ('cold', 'NO'), ('tomorrow', 'NO')]
+Wed,17-Jul-2013~23:11 KIND: IMP
+Wed,17-Jul-2013~23:11 ACTIONS: {'weather': 2}
+Wed,17-Jul-2013~23:11 WEIGHTS: {2: ['weather']}
+Wed,17-Jul-2013~23:11 BEST: weather
+Wed,17-Jul-2013~23:11 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:11 KEYWORDS: [('tomorrow', 5)]
+Wed,17-Jul-2013~23:11 TODAY: 2
+Wed,17-Jul-2013~23:11 DAY: 2
+Wed,17-Jul-2013~23:11 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="2"  date="Wed, 17 Jul 2013 9:59 pm NZST" />\n', '<yweather:forecast day="Wed" date="17 Jul 2013" low="7" high="15" text="Mostly Cloudy" code="27" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="6" high="17" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="14" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="7" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="17" text="Mostly Cloudy" code="28" />\n']
+Wed,17-Jul-2013~23:11 ITEMS: ['day', 'Thu', 'date', '18 Jul 2013', 'low', '6', 'high', '17', 'text', 'Mostly Cloudy', 'code', '28']
+Wed,17-Jul-2013~23:11 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:11 SENTENCE: [('You', 'PS'), ('will', 'VB'), ('it', 'PO'), ('be', 'VB'), ('cold', 'NO'), ('tomorrow', 'NO')]
+Wed,17-Jul-2013~23:11 KIND: IMP
+Wed,17-Jul-2013~23:11 ACTIONS: {'weather': 2}
+Wed,17-Jul-2013~23:11 WEIGHTS: {2: ['weather']}
+Wed,17-Jul-2013~23:11 BEST: weather
+Wed,17-Jul-2013~23:11 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:11 KEYWORDS: [('tomorrow', 5)]
+Wed,17-Jul-2013~23:11 TODAY: 2
+Wed,17-Jul-2013~23:11 DAY: 2
+Wed,17-Jul-2013~23:11 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="2"  date="Wed, 17 Jul 2013 9:59 pm NZST" />\n', '<yweather:forecast day="Wed" date="17 Jul 2013" low="7" high="15" text="Mostly Cloudy" code="27" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="6" high="17" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="14" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="7" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="17" text="Mostly Cloudy" code="28" />\n']
+Wed,17-Jul-2013~23:11 ITEMS: ['day', 'Thu', 'date', '18 Jul 2013', 'low', '6', 'high', '17', 'text', 'Mostly Cloudy', 'code', '28']
+Wed,17-Jul-2013~23:11 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:11 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cloudy', '??')]
+Wed,17-Jul-2013~23:11 KIND: IMP
+Wed,17-Jul-2013~23:11 ACTIONS: {}
+Wed,17-Jul-2013~23:11 WEIGHTS: {}
+Wed,17-Jul-2013~23:11 IT: http://weather.yahoo.com/
+Wed,17-Jul-2013~23:11 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:11 SENTENCE: [('You', 'PS'), ('show', 'VB'), ('finder', '??')]
+Wed,17-Jul-2013~23:11 KIND: IMP
+Wed,17-Jul-2013~23:11 ACTIONS: {}
+Wed,17-Jul-2013~23:11 WEIGHTS: {}
+Wed,17-Jul-2013~23:11 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:11 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('app', 'NO'), ('finder', '??')]
+Wed,17-Jul-2013~23:11 KIND: IMP
+Wed,17-Jul-2013~23:11 ACTIONS: {'finder': 2}
+Wed,17-Jul-2013~23:11 WEIGHTS: {2: ['finder']}
+Wed,17-Jul-2013~23:11 BEST: finder
+Wed,17-Jul-2013~23:11 PREPS: None
+Wed,17-Jul-2013~23:11 KEYWORDS: [('finder', 3)]
+Wed,17-Jul-2013~23:11 FINDING APP
+Wed,17-Jul-2013~23:11 COMMAND: mdfind -onlyin /Applications/ ""
+Wed,17-Jul-2013~23:11 RESULTS FIRST 5: ["Failed to create query for ''."]
+Wed,17-Jul-2013~23:11 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:12 CHOICE: Which of these do you want?
+1. Failed to create query for ''.
+Wed,17-Jul-2013~23:14 Successfully imported Modules.clock
+Wed,17-Jul-2013~23:14 Successfully imported Modules.discover
+Wed,17-Jul-2013~23:14 Successfully imported Modules.finder
+Wed,17-Jul-2013~23:14 Successfully imported Modules.media
+Wed,17-Jul-2013~23:14 Successfully imported Modules.weather
+Wed,17-Jul-2013~23:14 Successfully imported Modules.wikipedia
+Wed,17-Jul-2013~23:14 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Wed,17-Jul-2013~23:14 KIND: INT
+Wed,17-Jul-2013~23:14 ACTIONS: {'weather': 1}
+Wed,17-Jul-2013~23:14 WEIGHTS: {1: ['weather']}
+Wed,17-Jul-2013~23:14 BEST: weather
+Wed,17-Jul-2013~23:14 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:14 KEYWORDS: []
+Wed,17-Jul-2013~23:14 TODAY: 2
+Wed,17-Jul-2013~23:14 DAY: 0
+Wed,17-Jul-2013~23:14 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="2"  date="Wed, 17 Jul 2013 9:59 pm NZST" />\n', '<yweather:forecast day="Wed" date="17 Jul 2013" low="7" high="15" text="Mostly Cloudy" code="27" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="6" high="17" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="14" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="7" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="17" text="Mostly Cloudy" code="28" />\n']
+Wed,17-Jul-2013~23:14 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '2', 'date', 'Wed, 17 Jul 2013 9:59 pm NZST']
+Wed,17-Jul-2013~23:14 ITEMS: ['day', 'Wed', 'date', '17 Jul 2013', 'low', '7', 'high', '15', 'text', 'Mostly Cloudy', 'code', '27']
+Wed,17-Jul-2013~23:14 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:14 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('app', 'NO'), ('finder', '??')]
+Wed,17-Jul-2013~23:14 KIND: IMP
+Wed,17-Jul-2013~23:14 ACTIONS: {'finder': 2}
+Wed,17-Jul-2013~23:14 WEIGHTS: {2: ['finder']}
+Wed,17-Jul-2013~23:14 BEST: finder
+Wed,17-Jul-2013~23:14 PREPS: None
+Wed,17-Jul-2013~23:14 KEYWORDS: [('finder', 3)]
+Wed,17-Jul-2013~23:14 FINDING APP
+Wed,17-Jul-2013~23:14 COMMAND: mdfind -onlyin /Applications/ ""
+Wed,17-Jul-2013~23:14 RESULTS FIRST 5: ["Failed to create query for ''."]
+Wed,17-Jul-2013~23:14 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:16 Successfully imported Modules.clock
+Wed,17-Jul-2013~23:16 Successfully imported Modules.discover
+Wed,17-Jul-2013~23:16 Successfully imported Modules.finder
+Wed,17-Jul-2013~23:16 Successfully imported Modules.media
+Wed,17-Jul-2013~23:16 Successfully imported Modules.weather
+Wed,17-Jul-2013~23:16 Successfully imported Modules.wikipedia
+Wed,17-Jul-2013~23:16 SENTENCE: [('what', 'WH'), ('day', 'NS')]
+Wed,17-Jul-2013~23:16 KIND: INT
+Wed,17-Jul-2013~23:16 ACTIONS: {'clock': 1}
+Wed,17-Jul-2013~23:16 WEIGHTS: {1: ['clock']}
+Wed,17-Jul-2013~23:16 BEST: clock
+Wed,17-Jul-2013~23:16 KEYWORDS: ['day']
+Wed,17-Jul-2013~23:16 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:16 SENTENCE: [('time', 'NS')]
+Wed,17-Jul-2013~23:16 KIND: DEC
+Wed,17-Jul-2013~23:16 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:16 SENTENCE: [('what', 'WH'), ('time', 'NS')]
+Wed,17-Jul-2013~23:16 KIND: INT
+Wed,17-Jul-2013~23:16 ACTIONS: {'clock': 1}
+Wed,17-Jul-2013~23:16 WEIGHTS: {1: ['clock']}
+Wed,17-Jul-2013~23:16 BEST: clock
+Wed,17-Jul-2013~23:16 KEYWORDS: ['time']
+Wed,17-Jul-2013~23:16 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:16 SENTENCE: [('what', 'WH'), ('time', 'NS')]
+Wed,17-Jul-2013~23:16 KIND: INT
+Wed,17-Jul-2013~23:16 ACTIONS: {'clock': 1}
+Wed,17-Jul-2013~23:16 WEIGHTS: {1: ['clock']}
+Wed,17-Jul-2013~23:16 BEST: clock
+Wed,17-Jul-2013~23:16 KEYWORDS: ['time']
+Wed,17-Jul-2013~23:16 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:17 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Wed,17-Jul-2013~23:17 KIND: INT
+Wed,17-Jul-2013~23:17 ACTIONS: {'weather': 1}
+Wed,17-Jul-2013~23:17 WEIGHTS: {1: ['weather']}
+Wed,17-Jul-2013~23:17 BEST: weather
+Wed,17-Jul-2013~23:17 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:17 KEYWORDS: []
+Wed,17-Jul-2013~23:17 TODAY: 2
+Wed,17-Jul-2013~23:17 DAY: 0
+Wed,17-Jul-2013~23:17 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="2"  date="Wed, 17 Jul 2013 9:59 pm NZST" />\n', '<yweather:forecast day="Wed" date="17 Jul 2013" low="7" high="15" text="Mostly Cloudy" code="27" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="6" high="17" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="14" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="7" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="17" text="Mostly Cloudy" code="28" />\n']
+Wed,17-Jul-2013~23:17 ITEMS: ['text', 'Fair', 'code', '33', 'temp', '2', 'date', 'Wed, 17 Jul 2013 9:59 pm NZST']
+Wed,17-Jul-2013~23:17 ITEMS: ['day', 'Wed', 'date', '17 Jul 2013', 'low', '7', 'high', '15', 'text', 'Mostly Cloudy', 'code', '27']
+Wed,17-Jul-2013~23:17 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:17 SENTENCE: [('what', 'WH'), ('time', 'NS')]
+Wed,17-Jul-2013~23:17 KIND: INT
+Wed,17-Jul-2013~23:17 ACTIONS: {'clock': 1}
+Wed,17-Jul-2013~23:17 WEIGHTS: {1: ['clock']}
+Wed,17-Jul-2013~23:17 BEST: clock
+Wed,17-Jul-2013~23:17 KEYWORDS: ['time']
+Wed,17-Jul-2013~23:17 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:18 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cold', 'NO'), ('tomorrow', 'NO')]
+Wed,17-Jul-2013~23:18 KIND: IMP
+Wed,17-Jul-2013~23:18 ACTIONS: {'weather': 2}
+Wed,17-Jul-2013~23:18 WEIGHTS: {2: ['weather']}
+Wed,17-Jul-2013~23:18 BEST: weather
+Wed,17-Jul-2013~23:18 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:18 KEYWORDS: [('tomorrow', 4)]
+Wed,17-Jul-2013~23:18 TODAY: 2
+Wed,17-Jul-2013~23:18 DAY: 2
+Wed,17-Jul-2013~23:18 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="2"  date="Wed, 17 Jul 2013 9:59 pm NZST" />\n', '<yweather:forecast day="Wed" date="17 Jul 2013" low="7" high="15" text="Mostly Cloudy" code="27" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="6" high="17" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="14" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="7" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="17" text="Mostly Cloudy" code="28" />\n']
+Wed,17-Jul-2013~23:18 ITEMS: ['day', 'Thu', 'date', '18 Jul 2013', 'low', '6', 'high', '17', 'text', 'Mostly Cloudy', 'code', '28']
+Wed,17-Jul-2013~23:18 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:18 SENTENCE: [('pi', '??'), ('to', 'PP'), ('7', '??'), ('dp', '??')]
+Wed,17-Jul-2013~23:18 KIND: DEC
+Wed,17-Jul-2013~23:18 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Wed,17-Jul-2013~23:18 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('pi', '??'), ('to', 'PP'), ('30', '??'), ('dp', '??')]
+Wed,17-Jul-2013~23:18 KIND: INT
+Wed,17-Jul-2013~23:18 ACTIONS: {}
+Wed,17-Jul-2013~23:18 WEIGHTS: {}
+Wed,17-Jul-2013~23:18 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~09:18 Successfully imported Modules.clock
+Thu,18-Jul-2013~09:18 Successfully imported Modules.discover
+Thu,18-Jul-2013~09:18 Successfully imported Modules.finder
+Thu,18-Jul-2013~09:18 Successfully imported Modules.media
+Thu,18-Jul-2013~09:18 Successfully imported Modules.weather
+Thu,18-Jul-2013~09:18 Successfully imported Modules.wikipedia
+Thu,18-Jul-2013~09:18 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,18-Jul-2013~09:18 KIND: INT
+Thu,18-Jul-2013~09:18 ACTIONS: {'clock': 1}
+Thu,18-Jul-2013~09:18 WEIGHTS: {1: ['clock']}
+Thu,18-Jul-2013~09:18 BEST: clock
+Thu,18-Jul-2013~09:18 KEYWORDS: ['time']
+Thu,18-Jul-2013~09:18 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~09:18 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('i', 'PS')]
+Thu,18-Jul-2013~09:18 KIND: INT
+Thu,18-Jul-2013~09:18 ACTIONS: {'weather': 1}
+Thu,18-Jul-2013~09:18 WEIGHTS: {1: ['weather']}
+Thu,18-Jul-2013~09:18 BEST: weather
+Thu,18-Jul-2013~09:18 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~09:18 KEYWORDS: []
+Thu,18-Jul-2013~09:18 TODAY: 3
+Thu,18-Jul-2013~09:18 DAY: 0
+Thu,18-Jul-2013~09:18 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="9"  date="Thu, 18 Jul 2013 8:01 am NZST" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="6" high="16" text="Cloudy" code="26" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="15" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="6" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="16" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Mon" date="22 Jul 2013" low="6" high="13" text="Cloudy" code="26" />\n']
+Thu,18-Jul-2013~09:18 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '9', 'date', 'Thu, 18 Jul 2013 8:01 am NZST']
+Thu,18-Jul-2013~09:18 ITEMS: ['day', 'Thu', 'date', '18 Jul 2013', 'low', '6', 'high', '16', 'text', 'Cloudy', 'code', '26']
+Thu,18-Jul-2013~09:18 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~09:26 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,18-Jul-2013~09:26 KIND: INT
+Thu,18-Jul-2013~09:26 ACTIONS: {'clock': 1}
+Thu,18-Jul-2013~09:26 WEIGHTS: {1: ['clock']}
+Thu,18-Jul-2013~09:26 BEST: clock
+Thu,18-Jul-2013~09:26 KEYWORDS: ['time']
+Thu,18-Jul-2013~09:26 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~09:50 Successfully imported Modules.clock
+Thu,18-Jul-2013~09:50 Successfully imported Modules.discover
+Thu,18-Jul-2013~09:50 Successfully imported Modules.finder
+Thu,18-Jul-2013~09:50 Successfully imported Modules.media
+Thu,18-Jul-2013~09:50 Successfully imported Modules.weather
+Thu,18-Jul-2013~09:50 Successfully imported Modules.wikipedia
+Thu,18-Jul-2013~09:51 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('raining', 'NO')]
+Thu,18-Jul-2013~09:51 KIND: IMP
+Thu,18-Jul-2013~09:51 ACTIONS: {'weather': 1}
+Thu,18-Jul-2013~09:51 WEIGHTS: {1: ['weather']}
+Thu,18-Jul-2013~09:51 BEST: weather
+Thu,18-Jul-2013~09:51 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~09:51 KEYWORDS: []
+Thu,18-Jul-2013~09:51 TODAY: 3
+Thu,18-Jul-2013~09:51 DAY: 0
+Thu,18-Jul-2013~09:51 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="9"  date="Thu, 18 Jul 2013 9:00 am NZST" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="6" high="16" text="Cloudy" code="26" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="15" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="6" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="16" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Mon" date="22 Jul 2013" low="6" high="13" text="Cloudy" code="26" />\n']
+Thu,18-Jul-2013~09:51 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '9', 'date', 'Thu, 18 Jul 2013 9:00 am NZST']
+Thu,18-Jul-2013~09:51 ITEMS: ['day', 'Thu', 'date', '18 Jul 2013', 'low', '6', 'high', '16', 'text', 'Cloudy', 'code', '26']
+Thu,18-Jul-2013~09:51 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~11:21 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,18-Jul-2013~11:21 KIND: INT
+Thu,18-Jul-2013~11:21 ACTIONS: {'weather': 1}
+Thu,18-Jul-2013~11:21 WEIGHTS: {1: ['weather']}
+Thu,18-Jul-2013~11:21 BEST: weather
+Thu,18-Jul-2013~11:21 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~11:21 KEYWORDS: []
+Thu,18-Jul-2013~11:21 TODAY: 3
+Thu,18-Jul-2013~11:21 DAY: 0
+Thu,18-Jul-2013~11:21 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="8"  date="Thu, 18 Jul 2013 10:00 am NZST" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="6" high="16" text="Cloudy" code="26" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="15" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="6" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="16" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Mon" date="22 Jul 2013" low="6" high="13" text="Cloudy" code="26" />\n']
+Thu,18-Jul-2013~11:21 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '8', 'date', 'Thu, 18 Jul 2013 10:00 am NZST']
+Thu,18-Jul-2013~11:21 ITEMS: ['day', 'Thu', 'date', '18 Jul 2013', 'low', '6', 'high', '16', 'text', 'Cloudy', 'code', '26']
+Thu,18-Jul-2013~11:21 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~15:31 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('like', 'PP')]
+Thu,18-Jul-2013~15:31 KIND: INT
+Thu,18-Jul-2013~15:31 ACTIONS: {'weather': 1}
+Thu,18-Jul-2013~15:31 WEIGHTS: {1: ['weather']}
+Thu,18-Jul-2013~15:31 BEST: weather
+Thu,18-Jul-2013~15:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~15:31 KEYWORDS: []
+Thu,18-Jul-2013~15:31 TODAY: 3
+Thu,18-Jul-2013~15:31 DAY: 0
+Thu,18-Jul-2013~15:31 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="14"  date="Thu, 18 Jul 2013 2:59 pm NZST" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="5" high="16" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="15" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="6" high="14" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="16" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Mon" date="22 Jul 2013" low="6" high="15" text="Cloudy" code="26" />\n']
+Thu,18-Jul-2013~15:31 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '14', 'date', 'Thu, 18 Jul 2013 2:59 pm NZST']
+Thu,18-Jul-2013~15:31 ITEMS: ['day', 'Thu', 'date', '18 Jul 2013', 'low', '5', 'high', '16', 'text', 'Partly Cloudy', 'code', '29']
+Thu,18-Jul-2013~15:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~15:31 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,18-Jul-2013~15:31 KIND: INT
+Thu,18-Jul-2013~15:31 ACTIONS: {'weather': 1}
+Thu,18-Jul-2013~15:31 WEIGHTS: {1: ['weather']}
+Thu,18-Jul-2013~15:31 BEST: weather
+Thu,18-Jul-2013~15:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~15:31 KEYWORDS: []
+Thu,18-Jul-2013~15:31 TODAY: 3
+Thu,18-Jul-2013~15:31 DAY: 0
+Thu,18-Jul-2013~15:31 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="14"  date="Thu, 18 Jul 2013 2:59 pm NZST" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="5" high="16" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="15" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="6" high="14" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="16" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Mon" date="22 Jul 2013" low="6" high="15" text="Cloudy" code="26" />\n']
+Thu,18-Jul-2013~15:31 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '14', 'date', 'Thu, 18 Jul 2013 2:59 pm NZST']
+Thu,18-Jul-2013~15:31 ITEMS: ['day', 'Thu', 'date', '18 Jul 2013', 'low', '5', 'high', '16', 'text', 'Partly Cloudy', 'code', '29']
+Thu,18-Jul-2013~15:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~15:31 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,18-Jul-2013~15:31 KIND: INT
+Thu,18-Jul-2013~15:31 ACTIONS: {'clock': 1}
+Thu,18-Jul-2013~15:31 WEIGHTS: {1: ['clock']}
+Thu,18-Jul-2013~15:31 BEST: clock
+Thu,18-Jul-2013~15:31 KEYWORDS: ['day']
+Thu,18-Jul-2013~15:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~16:03 SENTENCE: [('hello', '??')]
+Thu,18-Jul-2013~16:03 KIND: DEC
+Thu,18-Jul-2013~16:03 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~16:03 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cold', 'NO')]
+Thu,18-Jul-2013~16:03 KIND: IMP
+Thu,18-Jul-2013~16:03 ACTIONS: {'weather': 1}
+Thu,18-Jul-2013~16:03 WEIGHTS: {1: ['weather']}
+Thu,18-Jul-2013~16:03 BEST: weather
+Thu,18-Jul-2013~16:03 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~16:03 KEYWORDS: []
+Thu,18-Jul-2013~16:03 TODAY: 3
+Thu,18-Jul-2013~16:03 DAY: 0
+Thu,18-Jul-2013~16:03 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="14"  date="Thu, 18 Jul 2013 2:59 pm NZST" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="5" high="16" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="15" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="6" high="14" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="16" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Mon" date="22 Jul 2013" low="6" high="15" text="Cloudy" code="26" />\n']
+Thu,18-Jul-2013~16:03 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '14', 'date', 'Thu, 18 Jul 2013 2:59 pm NZST']
+Thu,18-Jul-2013~16:03 ITEMS: ['day', 'Thu', 'date', '18 Jul 2013', 'low', '5', 'high', '16', 'text', 'Partly Cloudy', 'code', '29']
+Thu,18-Jul-2013~16:03 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~16:43 SENTENCE: [('ask', '??')]
+Thu,18-Jul-2013~16:43 KIND: DEC
+Thu,18-Jul-2013~16:43 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~16:44 SENTENCE: [('hello', '??')]
+Thu,18-Jul-2013~16:44 KIND: DEC
+Thu,18-Jul-2013~16:44 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~16:45 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,18-Jul-2013~16:45 KIND: INT
+Thu,18-Jul-2013~16:45 ACTIONS: {'weather': 1}
+Thu,18-Jul-2013~16:45 WEIGHTS: {1: ['weather']}
+Thu,18-Jul-2013~16:45 BEST: weather
+Thu,18-Jul-2013~16:45 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~16:45 KEYWORDS: []
+Thu,18-Jul-2013~16:45 TODAY: 3
+Thu,18-Jul-2013~16:45 DAY: 0
+Thu,18-Jul-2013~16:45 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="34"  temp="13"  date="Thu, 18 Jul 2013 3:58 pm NZST" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="5" high="16" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="15" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="6" high="14" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="16" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Mon" date="22 Jul 2013" low="6" high="15" text="Cloudy" code="26" />\n']
+Thu,18-Jul-2013~16:45 ITEMS: ['text', 'Fair', 'code', '34', 'temp', '13', 'date', 'Thu, 18 Jul 2013 3:58 pm NZST']
+Thu,18-Jul-2013~16:45 ITEMS: ['day', 'Thu', 'date', '18 Jul 2013', 'low', '5', 'high', '16', 'text', 'Partly Cloudy', 'code', '29']
+Thu,18-Jul-2013~16:45 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~18:47 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('accounts', '??'), ('spreadsheet', 'NO')]
+Thu,18-Jul-2013~18:47 KIND: IMP
+Thu,18-Jul-2013~18:47 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Thu,18-Jul-2013~18:47 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Thu,18-Jul-2013~18:47 BEST: finder
+Thu,18-Jul-2013~18:47 PREPS: None
+Thu,18-Jul-2013~18:47 KEYWORDS: [('accounts', 3)]
+Thu,18-Jul-2013~18:47 PARAMETERS: accounts kind:spreadsheet 
+Thu,18-Jul-2013~18:47 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "accounts kind:spreadsheet "
+Thu,18-Jul-2013~18:47 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/Bank Accounts.xlsx']
+Thu,18-Jul-2013~18:47 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~18:49 DECISION: None
+Thu,18-Jul-2013~18:49 IT: None
+Thu,18-Jul-2013~18:49 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~18:49 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('account', '??'), ('spreadsheet', 'NO')]
+Thu,18-Jul-2013~18:49 KIND: IMP
+Thu,18-Jul-2013~18:49 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Thu,18-Jul-2013~18:49 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Thu,18-Jul-2013~18:49 BEST: finder
+Thu,18-Jul-2013~18:49 PREPS: None
+Thu,18-Jul-2013~18:49 KEYWORDS: [('account', 3)]
+Thu,18-Jul-2013~18:49 PARAMETERS: account kind:spreadsheet 
+Thu,18-Jul-2013~18:49 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "account kind:spreadsheet "
+Thu,18-Jul-2013~18:49 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/Bank Accounts.xlsx']
+Thu,18-Jul-2013~18:49 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~18:51 DECISION: None
+Thu,18-Jul-2013~18:51 IT: None
+Thu,18-Jul-2013~18:51 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~18:51 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('index.php', '??')]
+Thu,18-Jul-2013~18:51 KIND: IMP
+Thu,18-Jul-2013~18:51 ACTIONS: {'finder': 1}
+Thu,18-Jul-2013~18:51 WEIGHTS: {1: ['finder']}
+Thu,18-Jul-2013~18:51 BEST: finder
+Thu,18-Jul-2013~18:51 PREPS: None
+Thu,18-Jul-2013~18:51 KEYWORDS: [('index.php', 2)]
+Thu,18-Jul-2013~18:51 PARAMETERS: index.php
+Thu,18-Jul-2013~18:51 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "index.php"
+Thu,18-Jul-2013~18:51 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/My Site/Intranet Files/aaron/labs/ST_v2/Documents/09/Algebra/index.php', '/Users/aaronstockdill/Documents/My Site/Intranet Files/aaron/labs/ST_v2/Documents/09/Geometry/index.php', '/Users/aaronstockdill/Documents/My Site/Intranet Files/aaron/labs/ST_v2/Documents/09/index.php', '/Users/aaronstockdill/Documents/My Site/Intranet Files/aaron/labs/ST_v2/Documents/09/Measurement/index.php', '/Users/aaronstockdill/Documents/My Site/Intranet Files/aaron/labs/ST_v2/Documents/09/Probability/index.php', '/Users/aaronstockdill/Documents/My Site/Intranet Files/aaron/labs/ST_v2/Documents/09/Proportions/index.php', '/Users/aaronstockdill/Documents/My Site/Intranet Files/aaron/labs/ST_v2/Documents/09/Statistics/index.php', '/Users/aaronstockdill/Documents/My Site/Intranet Files/aaron/labs/ST_v2/Documents/09/Transformations/index.php', '/Users/aaronstockdill/Documents/My Site/Intranet Files/aaron/labs/ST_v2/Documents/10/Angles/index.php', '/Users/aaronstockdill/Documents/My Site/Intranet Files/aaron/labs/ST_v2/Documents/10/Expressions_and_Equations/index.php']
+Thu,18-Jul-2013~18:51 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~21:31 DECISION: None
+Thu,18-Jul-2013~21:31 IT: None
+Thu,18-Jul-2013~21:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~21:32 SENTENCE: [('You', 'PS'), ('will', 'VB'), ('it', 'PO'), ('be', 'VB'), ('hot', 'NO'), ('on', 'PP'), ('friday', 'NO')]
+Thu,18-Jul-2013~21:32 KIND: IMP
+Thu,18-Jul-2013~21:32 ACTIONS: {'weather': 2, 'clock': 1}
+Thu,18-Jul-2013~21:32 WEIGHTS: {1: ['clock'], 2: ['weather']}
+Thu,18-Jul-2013~21:32 BEST: weather
+Thu,18-Jul-2013~21:32 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~21:32 KEYWORDS: [('friday', 6)]
+Thu,18-Jul-2013~21:32 TODAY: 3
+Thu,18-Jul-2013~21:32 DAY: 2
+Thu,18-Jul-2013~21:32 WEATHER_RAW: ['<yweather:condition  text="Fair"  code="33"  temp="8"  date="Thu, 18 Jul 2013 9:01 pm NZST" />\n', '<yweather:forecast day="Thu" date="18 Jul 2013" low="5" high="16" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Fri" date="19 Jul 2013" low="4" high="15" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="20 Jul 2013" low="6" high="14" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Sun" date="21 Jul 2013" low="7" high="16" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Mon" date="22 Jul 2013" low="6" high="15" text="Cloudy" code="26" />\n']
+Thu,18-Jul-2013~21:32 ITEMS: ['day', 'Fri', 'date', '19 Jul 2013', 'low', '4', 'high', '15', 'text', 'Partly Cloudy', 'code', '30']
+Thu,18-Jul-2013~21:32 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Thu,18-Jul-2013~22:23 SENTENCE: [('hello', '??')]
+Thu,18-Jul-2013~22:23 KIND: DEC
+Thu,18-Jul-2013~22:23 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>

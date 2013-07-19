@@ -231,6 +231,8 @@ class Sentence(object):
                 user_info.log("IT: " + str(user_info.info['it']))
                 self.sentence.pop(i)
                 self.sentence.insert(i, (user_info.info["it"], "XO"))
+                return True
+        return False
 
 
 
@@ -294,7 +296,6 @@ def interact(statement, response=None):
         else:
             bringback = Sentence(bringback)
         ordinal = bringback.get_parts("OR")
-        declines = ['none', 'neither', 'no', 'nope']
         negatives = ['no', 'nope']
         positives = ['yes', 'yep', 'yeah']
     
@@ -303,9 +304,9 @@ def interact(statement, response=None):
                 user_info.log("ORDINALS: " + str(ordinal))
                 int_version = vocab.vocabulary[ordinal[0]]['value']
                 return int_version
-            elif bringback.get_parts("??")[0] in declines:
+            else:
                 return None
-        
+                
         elif response == 'y_n':
             if bringback.lower() in negatives:
                 return False

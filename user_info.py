@@ -2,7 +2,7 @@
 user_info.py
 This is the 'global variable' storage, to share between all the 
 different functions. Unfortunately, necessary given the current
-designs.
+designs. It also houses a few functions that do not play nice in other functions.
 Author: Aaron Stockdill
 """
 
@@ -20,7 +20,7 @@ info = {
 ## Flags for the system. 
 #  Verbose is for debug info, 
 #  noisy for paul to talk,
-#  server_mode is for the server to switch
+#  server is for the server to switch, don't touch it
 VERBOSE = True
 NOISY = False
 SERVER = False

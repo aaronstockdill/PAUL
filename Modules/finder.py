@@ -100,7 +100,10 @@ def find(search, params="", look_in=False):
     user_info.log("RESULTS FIRST 5: " + str(filtered_results[:10]))
     
     if len(filtered_results) > 0:
-        decision = choose(filtered_results[:5])
+        if len(filtered_results) > 1:
+            decision = choose(filtered_results[:5])
+        else:
+            decision = filtered_results[0]
         user_info.log("DECISION: " + str(decision))
         user_info.info["it"] = decision
         user_info.log('IT: {}'.format(user_info.info["it"]))
@@ -130,8 +133,15 @@ def reveal(location):
         return message.format(location)
     else:
          return "I couldn't find anything."
-    
-    
+
+
+def has_position(list, position):
+    for item, location in list:
+        if position == location:
+            return item
+    return None
+
+
 def process(sentence):
     ''' Process the sentence '''
     
@@ -148,42 +158,43 @@ def process(sentence):
     
     types = {
         'file': "",
-        'folder': "kind:folder ",
-        'powerpoint': "kind:presentation ",
-        'keynote': "kind:presentation ",
-        'document': "kind:word ",
-        'word': "kind:word ",
-        'spreadsheet': "kind:spreadsheet ",
-        'excel': "kind:spreadsheet ",
-        'picture': "kind:image ",
-        'image': "kind:image ",
-        'movie': "kind:movie ",
-        'film': "kind:movie",
-        'video': "kind:movie ",
-        'audio': "kind:audio ",
-        'music': "kind:music ",
-        'email': "kind:email ",
-        'person': "kind:contact ",
-        'contact': "kind:contact ",
-        'event': "kind:event ",
-        'pdf': "kind:pdf ",
-        'preference': "kind:preferences ",
-        'bookmark': "kind:bookmark ",
-        'favourite': "kind:bookmark ",
-        'font': "kind:font ",
-        'widget': "kind:widget ",
-        "app": "kind:application ", 
-        "application": "kind:application ", 
-        "program": "kind:application ", 
-        "executable": "kind:application ",
+        'folder': "folder ",
+        'powerpoint': "presentation ",
+        'keynote': "presentation ",
+        'document': "word ",
+        'word': "word ",
+        'spreadsheet': "spreadsheet ",
+        'excel': "spreadsheet ",
+        'picture': "image ",
+        'image': "image ",
+        'movie': "movie ",
+        'film': "movie",
+        'video': "movie ",
+        'audio': "audio ",
+        'music': "music ",
+        'email': "email ",
+        'person': "contact ",
+        'contact': "contact ",
+        'event': "event ",
+        'pdf': "pdf",
+        'preference': "preferences ",
+        'bookmark': "bookmark ",
+        'favourite': "bookmark ",
+        'font': "font ",
+        'widget': "widget ",
+        "app": "application ", 
+        "application": "application ", 
+        "program": "application ", 
+        "executable": "application ",
     }
     
-    sentence.replace_it()
+    replaced = sentence.replace_it()
     
-    preps = sentence.get_parts("PP")
+    preps = sentence.get_parts("PP", indexes=True)
     if preps:
-        if preps[0] == "out":
+        if preps[0][0] == "out":
             return sentence.forward("research")
+    user_info.log("PREPS: " + str(preps))
     
     try:
         object = sentence.get_parts("NO")[0]
@@ -191,31 +202,62 @@ def process(sentence):
         object = None
     verb = sentence.get_parts("VB")[0]
     
+    if replaced:
+        return commands[verb](user_info.info['it'])
+    
     ignore = list(types.keys()) + list(commands.keys())
     
     keywords = sentence.keywords(ignore)
     user_info.log("KEYWORDS: " + str(keywords))
     
+    params_list = []
+    
+    filters = {
+        "from": "(kMDItemFSContentChangeDate == {0} | kMDItemLastUsedDate =={0})",
+        "yesterday": "$time.yesterday",
+        "today": "$time.today",
+        "this week": "$time.this_week",
+        "last week": "$time.this_week(-1)",
+        "this month": "$time.this_month",
+        "this year": "$time.this_year",
+        "called": "{}",
+        "named": "{}",
+        "about": "{}",
+    }
+    
+    for word, position in keywords:
+        if preps != None:
+            fltr = has_position(preps, position - 1)
+        else:
+            fltr = None
+        if fltr:
+            params_list.append(filters[fltr].format(
+                                filters.get(word, word)))
+        else:
+            params_list.append(filters.get(word, word))
+            
+    
     if keywords == []:
         return "I don't understand. Sorry."
     
-    if keywords[0][0] in types.keys():
-        get_type = keywords[0][0]
-        keywords = keywords[1:]
+    if object in types.keys():
+        params_list.append("kind:{}".format(types[object]))
     else:
-        get_type = 'file'
+        pass
         
     
     apps = ["app", "application", "program", "executable"]
     
-    
-    search = keywords[0][0]
+    search = ""
     
     if object in apps:
         where = "/Applications"
+        params = ""
+        user_info.log("FINDING APP")
     else:
         where = False
-        params = "{}".format(types[get_type])
+        params = " ".join(params_list)
+        user_info.log("PARAMETERS: " + str(params))
     
     if search.startswith("/Users/"): return commands[verb](search)
     elif search.startswith("http"): return commands["open"](search)

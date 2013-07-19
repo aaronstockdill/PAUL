@@ -1,5 +1,6 @@
 #PAUL
 ##Natural Language Assistant
+[View Website]("http://aaronstockdill.github.io/paul.html")
 
 ###1. What is Paul?
 
