@@ -1,6 +1,6 @@
 #PAUL
 ##Natural Language Assistant
-[View Website]("http://aaronstockdill.github.io/paul.html")
+[View Website](http://aaronstockdill.github.io/paul.html)
 
 ###1. What is Paul?
 
@@ -26,7 +26,7 @@ Brain2 is the most modern brain. Brain was kind of shitty. It was much more stab
 
 Paul is designed to be completely extendable. This is done through what
 
-There is a more detailed guide at the bottom of this README [here]("#building-paul-modules").
+There is a more detailed guide at the bottom of this README [here](#building-paul-modules).
 
 ###5. Coming Soon?
 
