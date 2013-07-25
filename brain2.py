@@ -236,7 +236,7 @@ class Sentence(object):
 
 
 
-def commands(sentence):
+def commands(sentence, recommended=None):
     ''' Process a command, based on nouns and verbs in the sentence '''
     
     actions = {}
@@ -247,6 +247,11 @@ def commands(sentence):
             modules = [mod for mod, _ in user_info.word_associations[word]]
             for module in modules:
                 actions[module] = actions.get(module, 0) + 1
+    
+    if recommended is not None and recommended in user_info.word_associations:
+        modules = [mod for mod, _ in user_info.word_associations[recommended]]
+        for module in modules:
+            actions[module] = actions.get(module, 0) + 5
     
     user_info.log("ACTIONS: " + str(actions))
     
@@ -260,8 +265,7 @@ def commands(sentence):
         user_info.log("BEST: " + str(best))
         return user_info.word_actions[best](sentence)
     else:
-        discover.process(sentence)
-        return "Let me find out for you..."
+        return discover.process(sentence)
 
 
 
@@ -323,12 +327,13 @@ def forward(sentence, keyword):
     ''' If you think you know which module should deal with this instead
         of who brain2 picked, pass it here with a keyword. '''
 
-    if keyword in user_info.nouns_association.keys():
-        return user_info.nouns_association[keyword](sentence)
-    elif keyword in user_info.verbs_association.keys():
-        return user_info.verbs_association[keyword](sentence)
-    else:
-        return discover.process(sentence)
+    # if keyword in user_info.nouns_association.keys():
+    #     return user_info.nouns_association[keyword](sentence)
+    # elif keyword in user_info.verbs_association.keys():
+    #     return user_info.verbs_association[keyword](sentence)
+    # else:
+    #     return discover.process(sentence)
+    return commands(sentence, keyword)
     
 
 

@@ -19,7 +19,7 @@ def main():
     exit = False
 
     while not exit:
-        command = input("> ")
+        command = input("? ")
         if command.lower() == "bye":
             exit = True
         else:

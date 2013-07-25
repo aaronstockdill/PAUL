@@ -18,7 +18,7 @@ def stripIt(s):
     txt = re.sub('&#160;', '', txt)
     return re.sub('\s+', ' ', txt)
 
-def findIt(what):
+def findIt(what, sentence):
     ''' Get wikipedia's opening statement on the topic '''
     opener = urllib.request.build_opener()
     opener.addheaders = [('User-agent', 'Mozilla/5.0')]
@@ -55,7 +55,7 @@ def process(sentence):
     brain2.loading()
     if filtered_keywords == []:
         return "I don't understand. Sorry!"
-    return findIt(filtered_keywords[0][0])
+    return findIt(filtered_keywords[0][0], sentence)
 
 def main():
     ''' The Main function '''
