@@ -11,6 +11,9 @@ NEVER_DOUBLE = ['h', 'w', 'x', 'y', 'n'] # n? Not sure, added to fix a one-off
 WHISTLE_SINGLE = ['s', 'x', 'z', 'o']
 WHISTLE_DOUBLE = ['sh', 'ch']
 
+word_associations = {}
+word_actions = {}
+
 class Word(object):
     """ A Standard word, providing most of the 'set and get' methods """
     
