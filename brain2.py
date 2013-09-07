@@ -1,6 +1,6 @@
 """
-brain.py
-A rewrite of brain.py, this is where the sentence is tagged so it can be
+brain2.py
+A rewrite of brain_old.py, this is where the sentence is tagged so it can be
 used by the modules more easily, and exactly which module is required is
 also decided here. It really is the brain.
 Author: Aaron Stockdill

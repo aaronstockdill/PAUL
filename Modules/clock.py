@@ -78,6 +78,8 @@ def what_keyword(keyword=time):
     
     return "It is {}.".format(answer)
 
+### TODO: "what will the date be next tuesday?"
+
 def main():
     ''' The main function '''
     words = {word: ("clock", "noun") for word in NOUNS}

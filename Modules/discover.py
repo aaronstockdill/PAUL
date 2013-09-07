@@ -1,19 +1,21 @@
 """
 discover.py
-If all else fails, try Wolfram Alpha. 
+If all else fails, try Google's Lucky result. 
 Author: Aaron Stockdill
 """
 
 import os
-import user_info
+#import user_info
+import paul
 from urllib.parse import quote
 
 NOUNS = [
-    "wolfram",
+    "lucky",
 ]
 
 VERBS = [
     "discover",
+    "search",
 ]
 
 
@@ -21,9 +23,13 @@ def process(sentence):
     ''' Process the sentence, and go to wolfram Alpha '''
     sentence.replace_it()
     
-    query = "+".join([word for word in sentence.sentence_string.split(' ')])
-    os.system("open http://www.wolframalpha.com/input/?i=" 
-               + quote(query).replace("%2B", "+"))
+    query = "+".join([word for word in sentence.sentence_string.split(' ')
+                      if word not in VERBS])
+    url = ("http://www.google.com/search?q={}".format(query))
+    #url = ("open http://www.google.com/search?q=" 
+    #      + quote(query).replace("%2B", "+") + "&btnI")
+    paul.log("URL: " + url)
+    os.system("open " + url)
     return "Let me find out for you..."
 
 def main():
@@ -32,9 +38,9 @@ def main():
     words = {word: ("discover", "noun") for word in NOUNS}
     words.update({word: ("discover", "verb") for word in VERBS})
     
-    user_info.associate(words)
-    user_info.word_actions["discover"] = lambda sentence: process(sentence)
+    paul.associate(words)
+    paul.vocab.word_actions["discover"] = lambda sentence: process(sentence)
     
-    user_info.log("Successfully imported " + __name__)
+    paul.log("Successfully imported " + __name__)
 
 main()

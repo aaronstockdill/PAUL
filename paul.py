@@ -5,6 +5,12 @@ Author: Aaron Stockdill
 The plan is for this to become the main API for building PAUL modules, rather than importing rather odd things like "brain2" or "user_info" for no apparent reason. Hopefully this will take care of that! It will also hopefully make development easier on my part by keeping everything in more logical places. 
 """
 
+import random
+import time
+import itertools
+import os
+import operator
+
 import vocab
 import user_info
 
@@ -28,9 +34,9 @@ def update_words():
     for word, values in user_info.word_associations.items():
         for _, pos in values:
             if pos == "verb":
-                vocab.vocabulary.update({word: Verb(word),})
+                vocab.vocabulary.update({word: vocab.Verb(word),})
             elif pos == "noun":
-                vocab.vocabulary.update({word: Noun(word),})
+                vocab.vocabulary.update({word: vocab.Noun(word),})
         
     vocab.create_irregulars()   
     vocab.generate_transforms()
@@ -43,6 +49,113 @@ def associate(words_dict):
     for word, info in words_dict.items():
         old = vocab.word_associations.get(word, [])
         vocab.word_associations[word] = old + [info]
+
+
+
+def interact(statement, response=None):
+    """ Standard function for interacting with the user. Use this function,
+        not anything custom if possible. 'Response' can be 'list', 'y_n', 
+        or None """
+    
+    print(statement)
+    if user_info.NOISY: os.system('say "{}"'.format(statement))
+    if user_info.SERVER != False:
+        log("CONNECTION: " + repr(user_info.SERVER))
+        user_info.SERVER.send(bytes(statement + "{}".format(
+                                        " " * (1024 - len(statement))),
+                                    'utf-8'))
+    if response:
+        if user_info.SERVER == False:
+            bringback = input("> ")
+        else:
+            user_info.SERVER.send(bytes("paul_done", "utf-8"))
+            bringback = user_info.SERVER.recv(1024)
+            bringback = str(bringback, encoding="utf8")
+        numbers = {
+            '1': "first",
+            '2': "second",
+            '3': "third",
+            '4': "fourth",
+            '5': "fifth",
+        }
+        if bringback in numbers.keys():
+            bringback = Sentence(numbers[bringback])
+        else:
+            bringback = Sentence(bringback)
+        ordinal = bringback.get_parts("OR")
+        negatives = ['no', 'nope']
+        positives = ['yes', 'yep', 'yeah']
+    
+        if response == 'list':
+            if ordinal:
+                user_info.log("ORDINALS: " + str(ordinal))
+                int_version = vocab.vocabulary[ordinal[0]]['value']
+                return int_version
+            else:
+                return None
+                
+        elif response == 'y_n':
+            if bringback.lower() in negatives:
+                return False
+            elif bringback.lower() in positives:
+                return True
+            else:
+                return None
+
+    return statement
+
+
+
+def loading():
+    ''' Let the user know that Paul is working. Returns what was said 
+        incase it matters. '''
+    name = random.choice(['', ', {}'.format(user_info.info['name'])])
+    acknowledgements = [
+        "Just a moment{}.".format(name),
+        "Hang on{}...".format(name),
+        "Coming up{}.".format(name),
+        "Let me see{}...".format(name),
+    ]
+    result = random.choice(acknowledgements)
+    interact(result)
+    return result
+
+
+
+def acknowledge():
+    ''' Simply acknowledge the user, without any real thought into
+        the respose. Returns what was said, incase it matters. '''
+
+    name = random.choice(['', ', {}'.format(user_info.info['name'])])
+    acknowledgements = [
+        "Ok{}.".format(name),
+        "Sure{}.".format(name),
+        "Of course{}.".format(name),
+        "Certainly{}.".format(name),
+    ]
+    result = random.choice(acknowledgements)
+    interact(result)
+    return result
+
+
+
+class Word(object):
+    ''' A simple word class that eveything easier to deal with. '''
+    
+    def __init__(self, word, kind, weight=1):
+        ''' Initializer for a word '''
+        self.value = word
+        self.kind = kind
+        self.weight = weight
+    
+    def __iter__(self):
+        return [self.value, self.kind, self.value]
+    
+    def __repr__(self):
+        return "({}, {}, {})".format(self.value, self.kind, self.weight)
+    
+    def __str__(self):
+        return self.value
 
 
 

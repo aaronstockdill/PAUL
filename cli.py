@@ -7,8 +7,9 @@ Author: Aaron Stockdill
 """
 
 #from brain_old import *
+#import brain2
 
-import brain2
+import brain
 from sys import argv
 
 def main():
@@ -24,8 +25,10 @@ def main():
             exit = True
         else:
             #print(process(command))
-            brain2.process(command)
-    brain2.interact("Bye!")
+            #brain2.process(command)
+            brain.process(command)
+    #brain2.interact("Bye!")
+    brain.interact("Bye!")
 
 def cl_api(sentence):
     """ The 'paul' interface """
