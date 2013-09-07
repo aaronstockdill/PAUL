@@ -1,4 +1,4 @@
-#PAUL apha-0.1
+#PAUL alpha-0.1
 ##Natural Language Assistant
 [View Website](http://aaronstockdill.github.io/paul.html)
 
