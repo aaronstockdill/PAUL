@@ -23,7 +23,6 @@ NOUNS = [
 def process(sentence):
     ''' Process the sentence, act as necessary '''
     
-    #brain2.loading()
     paul.loading()
     ignore = [
         "weather",
@@ -38,12 +37,12 @@ def process(sentence):
         "hot",
         "humid",
     ]
+    
     keywords = sentence.keywords(ignore)
     keywords = [word for word in keywords]
-    #user_info.log("KEYWORDS: " + str(keywords))
     paul.log("KEYWORDS: " + str(keywords))
+    
     today = datetime.date.today().weekday()
-    #user_info.log("TODAY: " + str(today))
     paul.log("TODAY: " + str(today))
     
     day_index = 0
@@ -58,7 +57,6 @@ def process(sentence):
     elif keywords[0][0] in weekdays:
         day_index = weekdays.index(keywords[0][0]) - today + 1
     
-    #user_info.log("DAY: " + str(day_index))
     paul.log("DAY: " + str(day_index))
     
     return weather(day_index)
@@ -76,26 +74,24 @@ def weather(day_index=0):
     lines = page.readlines()
     lines = [str(line, encoding='utf8') for line in lines[28:48]
              if str(line, encoding='utf8').startswith("<yweather")]
-    #user_info.log("WEATHER_RAW: " + str(lines))
-    paul.log("WEATHER_RAW: " + str(lines))
+    
+    paul.log("WEATHER_RAW:", str(lines))
     
     paul.user_info.info['it'] = "http://weather.yahoo.com/"
     
     if day_index == 0:
         items = lines[day_index].split("\"")[1:-1]
         items = ['text'] + [item.strip().strip('=') for item in items]
-    
-        #user_info.log("ITEMS: " + str(items))
-        paul.log("ITEMS: " + str(items))
+        
+        paul.log("ITEMS:", str(items))
     
         condition = items[1].lower()
         temp = int(items[5])
         
         items2 = lines[1].split("\"")[1:-1]
         items2 = ['day'] + [item.strip().strip('=') for item in items2]
-    
-        #user_info.log("ITEMS: " + str(items2))
-        paul.log("ITEMS: " + str(items2))
+        
+        paul.log("ITEMS:", str(items2))
     
         condition2 = items2[9].lower()
         temp2 = "{}".format(items2[7])
@@ -109,8 +105,7 @@ def weather(day_index=0):
     else:
         items = lines[day_index].split("\"")[1:-1]
         items = ['day'] + [item.strip().strip('=') for item in items]
-    
-        #user_info.log("ITEMS: " + str(items))
+        
         paul.log("ITEMS: " + str(items))
     
         condition = items[9].lower()
@@ -127,12 +122,9 @@ def main():
     
     words = {word: ("weather", "noun") for word in NOUNS}
     
-    #user_info.associate(words)
-    #user_info.word_actions["weather"] = lambda sentence: process(sentence)
     paul.associate(words)
     paul.vocab.word_actions["weather"] = lambda sentence: process(sentence)
     
-    #user_info.log("Successfully imported " + __name__)
     paul.log("Successfully imported " + __name__)
 
 main()

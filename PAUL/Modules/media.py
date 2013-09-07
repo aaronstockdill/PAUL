@@ -7,19 +7,17 @@ Author: Aaron Stockdill
 
 import os
 
-import user_info
-import brain2
-import vocab
+import paul
 
 def simple_commands(action):
     ''' Execute simple commands '''
     
-    user_info.log("MEDIA: " + action)
+    paul.log("MEDIA: " + action)
     
     command = ('osascript -e "tell application \\"iTunes\\" to '
                '{}"'.format(action))
                
-    user_info.log("COMMAND: " + command)
+    paul.log("COMMAND: " + command)
     
     os.system(command)
     
@@ -66,9 +64,9 @@ def main():
         "back": ("media", "verb"),
     }
     
-    user_info.associate(words)
-    user_info.word_actions["media"] = lambda sentence: process(sentence)
+    paul.associate(words)
+    paul.vocab.word_actions["media"] = lambda sentence: process(sentence)
     
-    user_info.log("Successfully imported " + __name__)
+    paul.log("Successfully imported " + __name__)
 
 main()

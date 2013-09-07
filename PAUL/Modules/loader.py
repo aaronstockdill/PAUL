@@ -6,23 +6,23 @@ Author: Aaron Stockdill
 
 import os
 import sys
-import user_info
+import paul
 
 def process(sentence):
     ''' Load the files, then restart Paul '''
     
-    files = [file[:-3] for file in os.listdir("Modules/") 
+    files = [file[:-3] for file in os.listdir("PAUL/Modules/") 
              if file[-3:] == ".py" 
              and file != "__init__.py"
              and file != "importer.py"]
-    importer = open("Modules/importer.py", 'w')
+    importer = open("PAUL/Modules/importer.py", 'w')
     for file in files:
         importer.write("import Modules.{0} as {0}\n".format(file))
-    importer.write("\nimport vocab\nvocab.add_new()")
+    importer.write("\nimport paul\npaul.update_words()")
     importer.close()
     
-    python = sys.executable
-    os.execl(python, python, * sys.argv)
+    #python = sys.executable
+    os.execl("/bin/bash", os.getcwd(), "./bin/PAUL")
         
 
 def main():
@@ -38,9 +38,9 @@ def main():
         "reboot": ("loader", "verb"),
     }
     
-    user_info.associate(words)
-    user_info.word_actions["loader"] = lambda sentence: process(sentence)
+    paul.associate(words)
+    paul.vocab.word_actions["loader"] = lambda sentence: process(sentence)
     
-    if user_info.VERBOSE: print("Successfully imported", __name__)
+    paul.log("Successfully imported", __name__)
 
 main()

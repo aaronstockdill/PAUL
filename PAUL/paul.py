@@ -15,11 +15,11 @@ import vocab
 import user_info
 
 
-def log(to_log):
+def log(*to_log):
     ''' Log some info to log.txt, and print it on the screen if
         VERBOSE is True '''
     
-    log_string = str(to_log)
+    log_string = ' '.join([str(log) for log in to_log])
     log_file = open("log.txt", 'a')
     time_str = time.strftime("%a,%d-%b-%Y~%H:%M ")
     log_file.write(time_str + log_string + "\n")
@@ -31,7 +31,7 @@ def log(to_log):
 def update_words():
     """ Add all the new nouns and verbs from the modules """
     
-    for word, values in user_info.word_associations.items():
+    for word, values in vocab.word_associations.items():
         for _, pos in values:
             if pos == "verb":
                 vocab.vocabulary.update({word: vocab.Verb(word),})
@@ -397,7 +397,9 @@ class Sentence(object):
         
         for i, word in enumerate(self.sentence):
             if word[0] == 'it':
-                log("IT: " + str(user_info.info['it']))
+                log("IT:", str(user_info.info['it']))
+                if user_info.info['it'] == None:
+                    return False
                 self.sentence.pop(i)
                 self.sentence.insert(i, (user_info.info["it"], "XO"))
                 return True

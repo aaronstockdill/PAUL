@@ -6,5 +6,5 @@ import Modules.media as media
 import Modules.weather as weather
 import Modules.wikipedia as wikipedia
 
-import vocab
-vocab.add_new()
+import paul
+paul.update_words()

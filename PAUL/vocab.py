@@ -7,7 +7,7 @@ Author: Aaron Stockdill
 import user_info
 
 VOWELS = ['a', 'e', 'i', 'o', 'u']
-NEVER_DOUBLE = ['h', 'w', 'x', 'y', 'n'] # n? Not sure, added to fix a one-off
+NEVER_DOUBLE = ['h', 'w', 'x', 'y', 'n'] # n? Not sure, added to fix a one-off, maybe
 WHISTLE_SINGLE = ['s', 'x', 'z', 'o']
 WHISTLE_DOUBLE = ['sh', 'ch']
 
@@ -303,21 +303,6 @@ class Point(object):
     
     def value(self):
         return vocabulary[self.name]
-
-
-
-def add_new():
-    """ Add all the new nouns and verbs from the modules """
-    
-    for word, values in user_info.word_associations.items():
-        for _, pos in values:
-            if pos == "verb":
-                vocabulary.update({word: Verb(word),})
-            elif pos == "noun":
-                vocabulary.update({word: Noun(word),})
-        
-    create_irregulars()   
-    generate_transforms()
 
 
 

@@ -8,8 +8,7 @@ Author: Aaron Stockdill
 
 import os
 
-import user_info
-import brain2
+import paul
 
 NOUNS = [
     'file',
@@ -59,9 +58,9 @@ def choose(list_choices):
     question = "Which of these do you want?\n"
     options = "\n".join([str(index + 1) + ". " + item.split("/").pop() for 
                          index, item in enumerate(list_choices)])
-    choice = brain2.interact(question + options, "list")
+    choice = paul.interact(question + options, "list")
     if choice is not None:
-        user_info.log("CHOICE: " + str(choice))
+        paul.log("CHOICE: " + str(choice))
         return list_choices[choice - 1]
     return None
     
@@ -85,7 +84,7 @@ def find(search, params="", look_in=False):
     #home = "/"
     
     command = 'mdfind -onlyin {}/ "{}{}"'.format(home, params, search)
-    user_info.log("COMMAND: " + command)
+    paul.log("COMMAND: " + command)
     
     results = os.popen(command).readlines()
     filtered_results = []
@@ -97,16 +96,16 @@ def find(search, params="", look_in=False):
                 append = False
         if append:
             filtered_results.append(line)
-    user_info.log("RESULTS FIRST 5: " + str(filtered_results[:10]))
+    paul.log("RESULTS FIRST 5: " + str(filtered_results[:10]))
     
     if len(filtered_results) > 0:
         if len(filtered_results) > 1:
             decision = choose(filtered_results[:5])
         else:
             decision = filtered_results[0]
-        user_info.log("DECISION: " + str(decision))
-        user_info.info["it"] = decision
-        user_info.log('IT: {}'.format(user_info.info["it"]))
+        paul.log("DECISION: " + str(decision))
+        paul.user_info.info["it"] = decision
+        paul.log('IT: {}'.format(paul.user_info.info["it"]))
         return decision
     else:
         return None
@@ -190,25 +189,21 @@ def process(sentence):
     
     replaced = sentence.replace_it()
     
-    preps = sentence.get_parts("PP", indexes=True)
-    if preps:
-        if preps[0][0] == "out":
-            return sentence.forward("research")
-    user_info.log("PREPS: " + str(preps))
+    preps = sentence.get_part("PP", indexes=True)
     
     try:
-        object = sentence.get_parts("NO")[0]
+        object = sentence.get_part("NO")[0]
     except:
         object = None
-    verb = sentence.get_parts("VB")[0]
+    verb = sentence.get_part("VB")[0]
     
     if replaced:
-        return commands[verb](user_info.info['it'])
+        return commands[verb](paul.user_info.info['it'])
     
     ignore = list(types.keys()) + list(commands.keys())
     
     keywords = sentence.keywords(ignore)
-    user_info.log("KEYWORDS: " + str(keywords))
+    paul.log("KEYWORDS: " + str(keywords))
     
     params_list = []
     
@@ -253,11 +248,11 @@ def process(sentence):
     if object in apps:
         where = "/Applications"
         params = ""
-        user_info.log("FINDING APP")
+        paul.log("FINDING APP")
     else:
         where = False
         params = " ".join(params_list)
-        user_info.log("PARAMETERS: " + str(params))
+        paul.log("PARAMETERS: " + str(params))
     
     if search.startswith("/Users/"): return commands[verb](search)
     elif search.startswith("http"): return commands["open"](search)
@@ -271,9 +266,9 @@ def main():
     words = {word: ("finder", "noun") for word in NOUNS}
     words.update({word: ("finder", "verb") for word in VERBS})
     
-    user_info.associate(words)
-    user_info.word_actions["finder"] = lambda sentence: process(sentence)
+    paul.associate(words)
+    paul.vocab.word_actions["finder"] = lambda sentence: process(sentence)
     
-    user_info.log("Successfully imported " + __name__)
+    paul.log("Successfully imported " + __name__)
 
 main()

@@ -7,10 +7,7 @@ Author: Aaron Stockdill
 from tkinter import *
 from tkinter.ttk import *
 
-#from brain_old import *
-
-from brain2 import *
-from Modules.importer import *
+import brain
 
 class Application(Frame):
     
@@ -21,7 +18,7 @@ class Application(Frame):
 
         
     def think(self, command, label):
-        label['text'] = process(command.get())
+        label['text'] = brain.process(command.get())
 
         
     def createWidgets(self):

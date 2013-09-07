@@ -5,8 +5,7 @@ Author: Aaron Stockdill
 '''
 
 import time
-import user_info
-import brain2
+import paul
 
 NOUNS = [
     "time",
@@ -54,7 +53,7 @@ def process(sentence):
         for word in keyword.split():
             new_keys.append(word)
     keywords = new_keys
-    user_info.log("KEYWORDS: " + str(keywords))
+    paul.log("KEYWORDS: " + str(keywords))
     
     time_str = time.strftime("%I:%M%p").lower()
     time_str = time_str[1:] if time_str.startswith("0") else time_str
@@ -86,9 +85,9 @@ def main():
     words.update({word: ("clock", "noun") for word in DAYS})
     words.update({word: ("clock", "noun") for word in MONTHS})
     
-    user_info.associate(words)
-    user_info.word_actions["clock"] = lambda sentence: process(sentence)
+    paul.associate(words)
+    paul.vocab.word_actions["clock"] = lambda sentence: process(sentence)
     
-    user_info.log("Successfully imported " + __name__)
+    paul.log("Successfully imported " + __name__)
 
 main()

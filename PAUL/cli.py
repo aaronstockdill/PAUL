@@ -6,9 +6,6 @@ line parser.
 Author: Aaron Stockdill
 """
 
-#from brain_old import *
-#import brain2
-
 import brain
 from sys import argv
 
@@ -20,20 +17,23 @@ def main():
     exit = False
 
     while not exit:
-        command = input("? ")
-        if command.lower() == "bye":
+        try:
+            command = input("? ")
+            if command.lower() == "bye":
+                exit = True
+            else:
+                brain.process(command)
+        except KeyboardInterrupt:
             exit = True
-        else:
-            #print(process(command))
-            #brain2.process(command)
-            brain.process(command)
-    #brain2.interact("Bye!")
-    brain.interact("Bye!")
-
-def cl_api(sentence):
-    """ The 'paul' interface """
+        except EOFError:
+            exit = True
     
-    brain2.process(sentence)
+    brain.paul.interact("\nBye!")
+
+
 
 if __name__ == "__main__":
-    main()
+    if len(argv) > 1:
+        brain.process(" ".join(argv[1:]))
+    else:
+        main()
