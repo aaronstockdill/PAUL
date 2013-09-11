@@ -2,8 +2,7 @@
 PAUL Server Program. 
 '''
 import socket
-import brain2
-import user_info
+import brain
 
 HOST = ''
 PORT = 32012
@@ -17,8 +16,8 @@ while 1:
     while 1:
         data = conn.recv(1024)
         if not data: break
-        user_info.SERVER = conn
-        brain2.process(str(data, encoding="utf8"))
+        brain.paul.user_info.flags["SERVER"] = conn
+        brain.process(str(data, encoding="utf8"))
         conn.send(bytes("paul_done", "utf-8"))
     print ('Closing: ', addr)
     conn.close()

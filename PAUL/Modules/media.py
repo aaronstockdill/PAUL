@@ -29,10 +29,13 @@ def process(sentence):
     
     sentence.replace_it()
     
-    verb = sentence.get_parts("VB")[0]
+    verb = sentence.get_part("VB")[0]
+    
+    keywords = sentence.keywords()
+    paul.log("MUSIC KEYWORDS:", keywords)
     
     commands = {
-        'play': lambda: simple_commands('play'),
+        'play': lambda x: simple_commands('play ' + key),
         'pause': lambda: simple_commands('pause'),
         'stop': lambda: simple_commands('pause'),
         'next': lambda: simple_commands('next track'),
@@ -42,10 +45,16 @@ def process(sentence):
     }
     
     if verb != 'play':
-        acknowledge = vocab.vocabulary[verb]['past_perf']
+        acknowledge = paul.vocab.vocabulary[verb]['past_perf']
+        go = commands[verb]()
     else:
         acknowledge = 'playing'
-    go = commands[verb]()
+        if keywords != []:
+            key = ("item 1 of (every track of library playlist "
+            + "1 whose name is \\\"{}\\\")".format(keywords[0][0]))
+        else:
+            key = ""
+        go = commands[verb](key)
     
     return "OK" if go else "Sorry, that didn't work."
 

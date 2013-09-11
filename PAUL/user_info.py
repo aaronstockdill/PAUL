@@ -21,6 +21,8 @@ info = {
 #  Verbose is for debug info, 
 #  noisy for paul to talk,
 #  server is for the server to switch, don't touch it
-VERBOSE = True
-NOISY = False
-SERVER = False
+flags = {
+    "VERBOSE": True,
+    "NOISY": False,
+    "SERVER": False,
+}

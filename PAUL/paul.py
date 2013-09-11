@@ -24,7 +24,7 @@ def log(*to_log):
     time_str = time.strftime("%a,%d-%b-%Y~%H:%M ")
     log_file.write(time_str + log_string + "\n")
     log_file.close()
-    if user_info.VERBOSE: print(log_string)
+    if user_info.flags["VERBOSE"]: print(log_string)
 
 
 
@@ -58,18 +58,18 @@ def interact(statement, response=None):
         or None """
     
     print(statement)
-    if user_info.NOISY: os.system('say "{}"'.format(statement))
-    if user_info.SERVER != False:
+    if user_info.flags["NOISY"]: os.system('say "{}"'.format(statement))
+    if user_info.flags["SERVER"] != False:
         log("CONNECTION: " + repr(user_info.SERVER))
-        user_info.SERVER.send(bytes(statement + "{}".format(
+        user_info.flags["SERVER"].send(bytes(statement + "{}".format(
                                         " " * (1024 - len(statement))),
-                                    'utf-8'))
+                                        'utf-8'))
     if response:
-        if user_info.SERVER == False:
+        if user_info.flags["SERVER"] == False:
             bringback = input("> ")
         else:
-            user_info.SERVER.send(bytes("paul_done", "utf-8"))
-            bringback = user_info.SERVER.recv(1024)
+            user_info.flags["SERVER"].send(bytes("paul_done", "utf-8"))
+            bringback = user_info.flags["SERVER"].recv(1024)
             bringback = str(bringback, encoding="utf8")
         numbers = {
             '1': "first",
@@ -82,13 +82,13 @@ def interact(statement, response=None):
             bringback = Sentence(numbers[bringback])
         else:
             bringback = Sentence(bringback)
-        ordinal = bringback.get_parts("OR")
+        ordinal = bringback.get_part("OR")
         negatives = ['no', 'nope']
         positives = ['yes', 'yep', 'yeah']
     
         if response == 'list':
             if ordinal:
-                user_info.log("ORDINALS: " + str(ordinal))
+                log("ORDINALS: " + str(ordinal))
                 int_version = vocab.vocabulary[ordinal[0]]['value']
                 return int_version
             else:
@@ -139,23 +139,54 @@ def acknowledge():
 
 
 
-class Word(object):
-    ''' A simple word class that eveything easier to deal with. '''
+def iterable(object):
+    ''' Determine if the object in question is iterable '''
+    return type(object) in [list, tuple, dict]
+
+
+
+def trim_word(list, word, toplevel=True):
+    ''' Remove the word from a list -- useful if you know the likes 
+        of keywords will return a word you'd rather not get. '''
+    for item in list:
+        if not iterable(item):
+            if item == word:
+                if toplevel:
+                    list.remove(item)
+                else:
+                    return True
+                break
+        else:
+            remove = trim_word(item, word, toplevel=False)
+            if remove:
+                list.remove(item)
+
+
+def has_word(list, word):
+    ''' Find if the desired word is in the list, 
+        e.g. is 'cat' in the list 'keywords' '''
+    for item in list:
+        if not iterable(item):
+            if type(item) == str and word in item.split():
+                return True
+        else:
+            found = has_word(item, word)
+            if found:
+                return True
+    return False
+
+
+
+def join_lists(*lists):
+    ''' Joins the lists, but only if they exist. 
+        If one of the values is none, it isn't added. '''
+        
+    connected = []
+    for l in lists:
+        if l:
+            connected += l
     
-    def __init__(self, word, kind, weight=1):
-        ''' Initializer for a word '''
-        self.value = word
-        self.kind = kind
-        self.weight = weight
-    
-    def __iter__(self):
-        return [self.value, self.kind, self.value]
-    
-    def __repr__(self):
-        return "({}, {}, {})".format(self.value, self.kind, self.weight)
-    
-    def __str__(self):
-        return self.value
+    return connected
 
 
 
@@ -233,24 +264,11 @@ class Sentence(object):
                         other = other + part
             else:
                 other = None
-    
-            all_together = []
-    
-            if objects:
-                all_together += objects
-            if names:
-                all_together += names
-            if keywords:
-                all_together += keywords
-            if other:
-                all_together += other
-    
-            words = [item[0] for item in all_together if item[0] not in ignore]
-            new_items = []
-            for word in words:
-                word_index = [item[1] for item in all_together 
-                              if item[0] == word][0]
-                new_items.append((word, word_index))
+                
+            all_together = join_lists(objects, names, keywords, other)
+            
+            new_items = [(i, j) for i, j in all_together
+                         if i not in ignore]
     
             item_list = []
             iterhelper = lambda i: i[0]-i[1][1]
@@ -259,10 +277,8 @@ class Sentence(object):
                 ind = final_items[0][1]
                 final_items = ' '.join([item[0] for item in final_items])
                 item_list.append((final_items, ind))
-    
-            final_list = item_list
-        
-            self.keyword_list = sorted(final_list, 
+            
+            self.keyword_list = sorted(item_list, 
                                        key=operator.itemgetter(1))
             return self.keyword_list
     

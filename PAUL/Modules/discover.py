@@ -16,6 +16,7 @@ NOUNS = [
 VERBS = [
     "discover",
     "search",
+    "google",
 ]
 
 

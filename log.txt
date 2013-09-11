@@ -6056,3 +6056,2323 @@ Sat,07-Sep-2013~15:51 Successfully imported Modules.loader
 Sat,07-Sep-2013~15:51 Successfully imported Modules.media
 Sat,07-Sep-2013~15:51 Successfully imported Modules.weather
 Sat,07-Sep-2013~15:51 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:04 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:04 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:04 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:04 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:04 Successfully imported Modules.media
+Mon,09-Sep-2013~22:04 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:04 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:04 SENTENCE: [('You', 'PS'), ('reload', 'VB'), ('the', 'AR'), ('module', 'NO')]
+Mon,09-Sep-2013~22:04 KIND: IMP
+Mon,09-Sep-2013~22:04 ACTIONS: {'loader': 2}
+Mon,09-Sep-2013~22:04 WEIGHTS: {2: ['loader']}
+Mon,09-Sep-2013~22:04 BEST: loader
+Mon,09-Sep-2013~22:04 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:04 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:04 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:04 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:04 Successfully imported Modules.media
+Mon,09-Sep-2013~22:04 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:04 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:04 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:05 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('on', 'PP')]
+Mon,09-Sep-2013~22:05 KIND: IMP
+Mon,09-Sep-2013~22:05 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:05 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:05 BEST: settings
+Mon,09-Sep-2013~22:05 SENTENCE: [('You', 'PS'), ('reload', 'VB')]
+Mon,09-Sep-2013~22:05 KIND: IMP
+Mon,09-Sep-2013~22:05 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:05 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:05 BEST: loader
+Mon,09-Sep-2013~22:05 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:05 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:05 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:05 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:05 Successfully imported Modules.media
+Mon,09-Sep-2013~22:05 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:05 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:05 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:05 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('verbosity', 'NO')]
+Mon,09-Sep-2013~22:05 KIND: IMP
+Mon,09-Sep-2013~22:05 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:05 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:05 BEST: settings
+Mon,09-Sep-2013~22:05 KEYWORDS: [('verbosity', 2)]
+Mon,09-Sep-2013~22:06 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('verbosity', 'NO'), ('to', 'PP'), ('on', 'PP')]
+Mon,09-Sep-2013~22:06 KIND: IMP
+Mon,09-Sep-2013~22:06 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:06 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:06 BEST: settings
+Mon,09-Sep-2013~22:06 KEYWORDS: [('verbosity', 2)]
+Mon,09-Sep-2013~22:06 SENTENCE: [('You', 'PS'), ('reload', 'VB')]
+Mon,09-Sep-2013~22:06 KIND: IMP
+Mon,09-Sep-2013~22:06 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:06 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:06 BEST: loader
+Mon,09-Sep-2013~22:06 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:06 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:06 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:06 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:06 Successfully imported Modules.media
+Mon,09-Sep-2013~22:06 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:06 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:06 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:06 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('talking', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:06 KIND: IMP
+Mon,09-Sep-2013~22:06 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:06 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:06 BEST: settings
+Mon,09-Sep-2013~22:06 KEYWORDS: [('talking', 2), ['to', 'off']]
+Mon,09-Sep-2013~22:07 SENTENCE: [('You', 'PS'), ('reload', 'VB')]
+Mon,09-Sep-2013~22:07 KIND: IMP
+Mon,09-Sep-2013~22:07 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:07 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:07 BEST: loader
+Mon,09-Sep-2013~22:07 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:07 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:07 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:07 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:07 Successfully imported Modules.media
+Mon,09-Sep-2013~22:07 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:07 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:07 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:07 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('talking', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:07 KIND: IMP
+Mon,09-Sep-2013~22:07 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:07 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:07 BEST: settings
+Mon,09-Sep-2013~22:07 KEYWORDS: [('talking', 2), [('to', 3), ('off', 4)]]
+Mon,09-Sep-2013~22:07 SENTENCE: [('You', 'PS'), ('reload', 'VB')]
+Mon,09-Sep-2013~22:07 KIND: IMP
+Mon,09-Sep-2013~22:07 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:07 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:07 BEST: loader
+Mon,09-Sep-2013~22:07 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:07 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:07 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:07 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:07 Successfully imported Modules.media
+Mon,09-Sep-2013~22:07 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:07 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:07 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:07 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:07 Successfully imported Modules.media
+Mon,09-Sep-2013~22:07 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:07 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:07 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:07 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,09-Sep-2013~22:07 KIND: INT
+Mon,09-Sep-2013~22:07 ACTIONS: {'clock': 1}
+Mon,09-Sep-2013~22:07 WEIGHTS: {1: ['clock']}
+Mon,09-Sep-2013~22:07 BEST: clock
+Mon,09-Sep-2013~22:07 KEYWORDS: ['time']
+Mon,09-Sep-2013~22:07 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('on', 'PP')]
+Mon,09-Sep-2013~22:07 KIND: IMP
+Mon,09-Sep-2013~22:07 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:07 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:07 BEST: settings
+Mon,09-Sep-2013~22:07 KEYWORDS: [('noisy', 2), ('to', 3), ('on', 4)]
+Mon,09-Sep-2013~22:17 SENTENCE: [('You', 'PS'), ('reload', 'VB')]
+Mon,09-Sep-2013~22:17 KIND: IMP
+Mon,09-Sep-2013~22:17 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:17 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:17 BEST: loader
+Mon,09-Sep-2013~22:17 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:17 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:17 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:17 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:17 Successfully imported Modules.media
+Mon,09-Sep-2013~22:17 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:17 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:17 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:17 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:17 KIND: IMP
+Mon,09-Sep-2013~22:17 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:17 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:17 BEST: settings
+Mon,09-Sep-2013~22:18 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:18 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:18 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:18 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:18 Successfully imported Modules.media
+Mon,09-Sep-2013~22:18 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:18 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:18 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:18 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:18 KIND: IMP
+Mon,09-Sep-2013~22:18 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:18 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:18 BEST: settings
+Mon,09-Sep-2013~22:18 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:18 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:18 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:18 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:18 Successfully imported Modules.media
+Mon,09-Sep-2013~22:18 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:18 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:18 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:19 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:19 KIND: IMP
+Mon,09-Sep-2013~22:19 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:19 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:19 BEST: settings
+Mon,09-Sep-2013~22:19 [('noisy to off', 2), ('to', 3), ('off', 4)] to
+Mon,09-Sep-2013~22:19 ('noisy to off', 2) to
+Mon,09-Sep-2013~22:19 noisy to off to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:19 n to
+Mon,09-Sep-2013~22:20 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:20 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:20 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:20 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:20 Successfully imported Modules.media
+Mon,09-Sep-2013~22:20 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:20 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:20 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:20 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:20 KIND: IMP
+Mon,09-Sep-2013~22:20 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:20 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:20 BEST: settings
+Mon,09-Sep-2013~22:20 [('noisy', 2), ('to', 3), ('off', 4)] to
+Mon,09-Sep-2013~22:20 ('noisy', 2) to
+Mon,09-Sep-2013~22:20 ('to', 3) to
+Mon,09-Sep-2013~22:20 KEYWORDS: [('noisy', 2), ('off', 4)]
+Mon,09-Sep-2013~22:21 SENTENCE: [('You', 'PS'), ('switch', 'VB'), ('the', 'AR'), ('noisy', 'NO'), ('flag', '??'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:21 KIND: IMP
+Mon,09-Sep-2013~22:21 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:21 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:21 BEST: settings
+Mon,09-Sep-2013~22:21 [('noisy flag', 3), ('to', 5), ('off', 6)] to
+Mon,09-Sep-2013~22:21 ('noisy flag', 3) to
+Mon,09-Sep-2013~22:21 ('to', 5) to
+Mon,09-Sep-2013~22:21 KEYWORDS: [('noisy flag', 3), ('off', 6)]
+Mon,09-Sep-2013~22:26 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,09-Sep-2013~22:26 KIND: IMP
+Mon,09-Sep-2013~22:26 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:26 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:26 BEST: loader
+Mon,09-Sep-2013~22:26 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:26 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:26 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:26 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:26 Successfully imported Modules.media
+Mon,09-Sep-2013~22:26 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:26 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:26 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:26 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('on', 'PP')]
+Mon,09-Sep-2013~22:26 KIND: IMP
+Mon,09-Sep-2013~22:26 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:26 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:26 BEST: settings
+Mon,09-Sep-2013~22:26 [('noisy', 2), ('to', 3), ('on', 4)] to
+Mon,09-Sep-2013~22:26 ('noisy', 2) to
+Mon,09-Sep-2013~22:26 ('to', 3) to
+Mon,09-Sep-2013~22:26 KEYWORDS: [('noisy', 2), ('on', 4)]
+Mon,09-Sep-2013~22:26 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:26 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:26 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:26 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:26 Successfully imported Modules.media
+Mon,09-Sep-2013~22:26 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:26 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:26 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:26 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:26 KIND: IMP
+Mon,09-Sep-2013~22:26 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:26 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:26 BEST: settings
+Mon,09-Sep-2013~22:26 [('noisy', 2), ('to', 3), ('off', 4)] to
+Mon,09-Sep-2013~22:26 ('noisy', 2) to
+Mon,09-Sep-2013~22:26 ('to', 3) to
+Mon,09-Sep-2013~22:26 KEYWORDS: [('noisy', 2), ('off', 4)]
+Mon,09-Sep-2013~22:26 [('noisy', 2), ('off', 4)] off
+Mon,09-Sep-2013~22:26 ('noisy', 2) off
+Mon,09-Sep-2013~22:26 [('noisy', 2), ('off', 4)] false
+Mon,09-Sep-2013~22:26 ('noisy', 2) false
+Mon,09-Sep-2013~22:26 [('noisy', 2), ('off', 4)] on
+Mon,09-Sep-2013~22:26 ('noisy', 2) on
+Mon,09-Sep-2013~22:26 [('noisy', 2), ('off', 4)] true
+Mon,09-Sep-2013~22:26 ('noisy', 2) true
+Mon,09-Sep-2013~22:27 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,09-Sep-2013~22:27 KIND: IMP
+Mon,09-Sep-2013~22:27 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:27 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:27 BEST: loader
+Mon,09-Sep-2013~22:27 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:27 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:27 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:27 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:27 Successfully imported Modules.media
+Mon,09-Sep-2013~22:27 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:27 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:27 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:27 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:27 KIND: IMP
+Mon,09-Sep-2013~22:27 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:27 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:27 BEST: settings
+Mon,09-Sep-2013~22:27 [('noisy', 2), ('to', 3), ('off', 4)] to
+Mon,09-Sep-2013~22:27 ('noisy', 2) to
+Mon,09-Sep-2013~22:27 ('to', 3) to
+Mon,09-Sep-2013~22:27 KEYWORDS: [('noisy', 2), ('off', 4)]
+Mon,09-Sep-2013~22:27 [('noisy', 2), ('off', 4)] off
+Mon,09-Sep-2013~22:27 ('noisy', 2) off
+Mon,09-Sep-2013~22:27 [('noisy', 2), ('off', 4)] false
+Mon,09-Sep-2013~22:27 ('noisy', 2) false
+Mon,09-Sep-2013~22:27 [('noisy', 2), ('off', 4)] on
+Mon,09-Sep-2013~22:27 ('noisy', 2) on
+Mon,09-Sep-2013~22:27 [('noisy', 2), ('off', 4)] true
+Mon,09-Sep-2013~22:27 ('noisy', 2) true
+Mon,09-Sep-2013~22:28 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,09-Sep-2013~22:28 KIND: IMP
+Mon,09-Sep-2013~22:28 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:28 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:28 BEST: loader
+Mon,09-Sep-2013~22:28 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:28 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:28 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:28 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:28 Successfully imported Modules.media
+Mon,09-Sep-2013~22:28 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:28 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:28 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:28 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:28 KIND: IMP
+Mon,09-Sep-2013~22:28 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:28 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:28 BEST: settings
+Mon,09-Sep-2013~22:28 [('noisy', 2), ('to', 3), ('off', 4)] to
+Mon,09-Sep-2013~22:28 ('noisy', 2) to
+Mon,09-Sep-2013~22:28 ('to', 3) to
+Mon,09-Sep-2013~22:28 KEYWORDS: [('noisy', 2), ('off', 4)]
+Mon,09-Sep-2013~22:28 [('noisy', 2), ('off', 4)] off
+Mon,09-Sep-2013~22:28 ('noisy', 2) off
+Mon,09-Sep-2013~22:28 [('noisy', 2), ('off', 4)] false
+Mon,09-Sep-2013~22:28 ('noisy', 2) false
+Mon,09-Sep-2013~22:28 [('noisy', 2), ('off', 4)] on
+Mon,09-Sep-2013~22:28 ('noisy', 2) on
+Mon,09-Sep-2013~22:28 [('noisy', 2), ('off', 4)] true
+Mon,09-Sep-2013~22:28 ('noisy', 2) true
+Mon,09-Sep-2013~22:28 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,09-Sep-2013~22:28 KIND: IMP
+Mon,09-Sep-2013~22:28 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:28 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:28 BEST: loader
+Mon,09-Sep-2013~22:28 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:28 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:28 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:28 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:28 Successfully imported Modules.media
+Mon,09-Sep-2013~22:28 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:28 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:28 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:28 SENTENCE: [('You', 'PS'), ('switch', 'VB'), ('verbosity', 'NO'), ('off', 'PP')]
+Mon,09-Sep-2013~22:28 KIND: IMP
+Mon,09-Sep-2013~22:28 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:28 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:28 BEST: settings
+Mon,09-Sep-2013~22:28 [('verbosity', 2), ('off', 3)] to
+Mon,09-Sep-2013~22:28 ('verbosity', 2) to
+Mon,09-Sep-2013~22:28 ('off', 3) to
+Mon,09-Sep-2013~22:28 KEYWORDS: [('verbosity', 2), ('off', 3)]
+Mon,09-Sep-2013~22:28 [('verbosity', 2), ('off', 3)] off
+Mon,09-Sep-2013~22:28 ('verbosity', 2) off
+Mon,09-Sep-2013~22:28 [('verbosity', 2), ('off', 3)] false
+Mon,09-Sep-2013~22:28 ('verbosity', 2) false
+Mon,09-Sep-2013~22:28 [('verbosity', 2), ('off', 3)] on
+Mon,09-Sep-2013~22:28 ('verbosity', 2) on
+Mon,09-Sep-2013~22:28 [('verbosity', 2), ('off', 3)] true
+Mon,09-Sep-2013~22:28 ('verbosity', 2) true
+Mon,09-Sep-2013~22:28 FOUND NEITHER ON NOR OFF
+Mon,09-Sep-2013~22:30 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,09-Sep-2013~22:30 KIND: IMP
+Mon,09-Sep-2013~22:30 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:30 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:30 BEST: loader
+Mon,09-Sep-2013~22:30 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:30 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:30 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:30 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:30 Successfully imported Modules.media
+Mon,09-Sep-2013~22:30 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:30 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:30 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:30 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:30 KIND: IMP
+Mon,09-Sep-2013~22:30 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:30 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:30 BEST: settings
+Mon,09-Sep-2013~22:30 [('noisy', 2), ('to', 3), ('off', 4)] to
+Mon,09-Sep-2013~22:30 ('noisy', 2) to
+Mon,09-Sep-2013~22:30 ('to', 3) to
+Mon,09-Sep-2013~22:30 KEYWORDS: [('noisy', 2), ('off', 4)]
+Mon,09-Sep-2013~22:30 [('noisy', 2), ('off', 4)] off
+Mon,09-Sep-2013~22:30 ('noisy', 2) off
+Mon,09-Sep-2013~22:30 [('noisy', 2), ('off', 4)] false
+Mon,09-Sep-2013~22:30 ('noisy', 2) false
+Mon,09-Sep-2013~22:30 [('noisy', 2), ('off', 4)] on
+Mon,09-Sep-2013~22:30 ('noisy', 2) on
+Mon,09-Sep-2013~22:30 [('noisy', 2), ('off', 4)] true
+Mon,09-Sep-2013~22:30 ('noisy', 2) true
+Mon,09-Sep-2013~22:30 FOUND NEITHER ON NOR OFF
+Mon,09-Sep-2013~22:31 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,09-Sep-2013~22:31 KIND: IMP
+Mon,09-Sep-2013~22:31 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:31 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:31 BEST: loader
+Mon,09-Sep-2013~22:31 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:31 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:31 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:31 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:31 Successfully imported Modules.media
+Mon,09-Sep-2013~22:31 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:31 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:31 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:31 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:31 KIND: IMP
+Mon,09-Sep-2013~22:31 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:31 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:31 BEST: settings
+Mon,09-Sep-2013~22:31 [('noisy', 2), ('to', 3), ('off', 4)] to
+Mon,09-Sep-2013~22:31 ('noisy', 2) to
+Mon,09-Sep-2013~22:31 ('to', 3) to
+Mon,09-Sep-2013~22:31 KEYWORDS: [('noisy', 2), ('off', 4)]
+Mon,09-Sep-2013~22:31 [('noisy', 2), ('off', 4)] off
+Mon,09-Sep-2013~22:31 ('noisy', 2) off
+Mon,09-Sep-2013~22:31 ('off', 4) off
+Mon,09-Sep-2013~22:31 [('noisy', 2), ('off', 4)] false
+Mon,09-Sep-2013~22:31 ('noisy', 2) false
+Mon,09-Sep-2013~22:31 ('off', 4) false
+Mon,09-Sep-2013~22:31 [('noisy', 2), ('off', 4)] on
+Mon,09-Sep-2013~22:31 ('noisy', 2) on
+Mon,09-Sep-2013~22:31 ('off', 4) on
+Mon,09-Sep-2013~22:31 [('noisy', 2), ('off', 4)] true
+Mon,09-Sep-2013~22:31 ('noisy', 2) true
+Mon,09-Sep-2013~22:31 ('off', 4) true
+Mon,09-Sep-2013~22:31 FOUND NEITHER ON NOR OFF
+Mon,09-Sep-2013~22:32 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,09-Sep-2013~22:32 KIND: IMP
+Mon,09-Sep-2013~22:32 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:32 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:32 BEST: loader
+Mon,09-Sep-2013~22:32 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:32 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:32 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:32 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:32 Successfully imported Modules.media
+Mon,09-Sep-2013~22:32 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:32 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:32 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:32 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('verbose', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:32 KIND: IMP
+Mon,09-Sep-2013~22:32 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:32 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:32 BEST: settings
+Mon,09-Sep-2013~22:32 [('verbose', 2), ('to', 3), ('off', 4)] to
+Mon,09-Sep-2013~22:32 ('verbose', 2) to
+Mon,09-Sep-2013~22:32 ('to', 3) to
+Mon,09-Sep-2013~22:32 KEYWORDS: [('verbose', 2), ('off', 4)]
+Mon,09-Sep-2013~22:32 [('verbose', 2), ('off', 4)] off
+Mon,09-Sep-2013~22:32 ('verbose', 2) off
+Mon,09-Sep-2013~22:32 ('off', 4) off
+Mon,09-Sep-2013~22:32 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:32 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:32 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:32 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:32 Successfully imported Modules.media
+Mon,09-Sep-2013~22:32 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:32 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:32 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:32 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:32 KIND: IMP
+Mon,09-Sep-2013~22:32 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:32 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:32 BEST: settings
+Mon,09-Sep-2013~22:32 [('noisy', 2), ('to', 3), ('off', 4)] to
+Mon,09-Sep-2013~22:32 ('noisy', 2) to
+Mon,09-Sep-2013~22:32 ('to', 3) to
+Mon,09-Sep-2013~22:32 KEYWORDS: [('noisy', 2), ('off', 4)]
+Mon,09-Sep-2013~22:32 [('noisy', 2), ('off', 4)] off
+Mon,09-Sep-2013~22:32 ('noisy', 2) off
+Mon,09-Sep-2013~22:32 ('off', 4) off
+Mon,09-Sep-2013~22:32 FOUND: off
+Mon,09-Sep-2013~22:32 [('noisy', 2), ('off', 4)] false
+Mon,09-Sep-2013~22:32 ('noisy', 2) false
+Mon,09-Sep-2013~22:32 ('off', 4) false
+Mon,09-Sep-2013~22:32 [('noisy', 2), ('off', 4)] on
+Mon,09-Sep-2013~22:32 ('noisy', 2) on
+Mon,09-Sep-2013~22:32 ('off', 4) on
+Mon,09-Sep-2013~22:32 [('noisy', 2), ('off', 4)] true
+Mon,09-Sep-2013~22:32 ('noisy', 2) true
+Mon,09-Sep-2013~22:32 ('off', 4) true
+Mon,09-Sep-2013~22:32 FOUND NEITHER ON NOR OFF
+Mon,09-Sep-2013~22:33 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,09-Sep-2013~22:33 KIND: IMP
+Mon,09-Sep-2013~22:33 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:33 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:33 BEST: loader
+Mon,09-Sep-2013~22:33 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:33 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:33 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:33 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:33 Successfully imported Modules.media
+Mon,09-Sep-2013~22:33 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:33 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:33 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:33 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:33 KIND: IMP
+Mon,09-Sep-2013~22:33 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:33 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:33 BEST: settings
+Mon,09-Sep-2013~22:33 [('noisy', 2), ('to', 3), ('off', 4)] to
+Mon,09-Sep-2013~22:33 ('noisy', 2) to
+Mon,09-Sep-2013~22:33 ('to', 3) to
+Mon,09-Sep-2013~22:33 KEYWORDS: [('noisy', 2), ('off', 4)]
+Mon,09-Sep-2013~22:33 [('noisy', 2), ('off', 4)] off
+Mon,09-Sep-2013~22:33 ('noisy', 2) off
+Mon,09-Sep-2013~22:33 ('off', 4) off
+Mon,09-Sep-2013~22:33 FOUND: off
+Mon,09-Sep-2013~22:33 [('noisy', 2), ('off', 4)] false
+Mon,09-Sep-2013~22:33 ('noisy', 2) false
+Mon,09-Sep-2013~22:33 ('off', 4) false
+Mon,09-Sep-2013~22:33 HAS OFF/FALSE: False
+Mon,09-Sep-2013~22:33 [('noisy', 2), ('off', 4)] off
+Mon,09-Sep-2013~22:33 ('noisy', 2) off
+Mon,09-Sep-2013~22:33 ('off', 4) off
+Mon,09-Sep-2013~22:33 FOUND: off
+Mon,09-Sep-2013~22:33 [('noisy', 2), ('off', 4)] false
+Mon,09-Sep-2013~22:33 ('noisy', 2) false
+Mon,09-Sep-2013~22:33 ('off', 4) false
+Mon,09-Sep-2013~22:33 [('noisy', 2), ('off', 4)] on
+Mon,09-Sep-2013~22:33 ('noisy', 2) on
+Mon,09-Sep-2013~22:33 ('off', 4) on
+Mon,09-Sep-2013~22:33 [('noisy', 2), ('off', 4)] true
+Mon,09-Sep-2013~22:33 ('noisy', 2) true
+Mon,09-Sep-2013~22:33 ('off', 4) true
+Mon,09-Sep-2013~22:33 FOUND NEITHER ON NOR OFF
+Mon,09-Sep-2013~22:34 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,09-Sep-2013~22:34 KIND: IMP
+Mon,09-Sep-2013~22:34 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:34 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:34 BEST: loader
+Mon,09-Sep-2013~22:34 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:34 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:34 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:34 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:34 Successfully imported Modules.media
+Mon,09-Sep-2013~22:34 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:34 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:34 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:34 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('on', 'PP')]
+Mon,09-Sep-2013~22:34 KIND: IMP
+Mon,09-Sep-2013~22:34 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:34 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:34 BEST: settings
+Mon,09-Sep-2013~22:34 [('noisy', 2), ('to', 3), ('on', 4)] to
+Mon,09-Sep-2013~22:34 ('noisy', 2) to
+Mon,09-Sep-2013~22:34 ('to', 3) to
+Mon,09-Sep-2013~22:34 KEYWORDS: [('noisy', 2), ('on', 4)]
+Mon,09-Sep-2013~22:34 [('noisy', 2), ('on', 4)] off
+Mon,09-Sep-2013~22:34 ('noisy', 2) off
+Mon,09-Sep-2013~22:34 ('on', 4) off
+Mon,09-Sep-2013~22:34 [('noisy', 2), ('on', 4)] false
+Mon,09-Sep-2013~22:34 ('noisy', 2) false
+Mon,09-Sep-2013~22:34 ('on', 4) false
+Mon,09-Sep-2013~22:34 HAS OFF/FALSE: False
+Mon,09-Sep-2013~22:34 [('noisy', 2), ('on', 4)] off
+Mon,09-Sep-2013~22:34 ('noisy', 2) off
+Mon,09-Sep-2013~22:34 ('on', 4) off
+Mon,09-Sep-2013~22:34 [('noisy', 2), ('on', 4)] false
+Mon,09-Sep-2013~22:34 ('noisy', 2) false
+Mon,09-Sep-2013~22:34 ('on', 4) false
+Mon,09-Sep-2013~22:34 [('noisy', 2), ('on', 4)] on
+Mon,09-Sep-2013~22:34 ('noisy', 2) on
+Mon,09-Sep-2013~22:34 ('on', 4) on
+Mon,09-Sep-2013~22:34 FOUND: on
+Mon,09-Sep-2013~22:34 SET TO: on
+Mon,09-Sep-2013~22:34 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('off', 'PP')]
+Mon,09-Sep-2013~22:34 KIND: IMP
+Mon,09-Sep-2013~22:34 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:34 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:34 BEST: settings
+Mon,09-Sep-2013~22:34 [('noisy', 2), ('off', 3)] to
+Mon,09-Sep-2013~22:34 ('noisy', 2) to
+Mon,09-Sep-2013~22:34 ('off', 3) to
+Mon,09-Sep-2013~22:34 KEYWORDS: [('noisy', 2), ('off', 3)]
+Mon,09-Sep-2013~22:34 [('noisy', 2), ('off', 3)] off
+Mon,09-Sep-2013~22:34 ('noisy', 2) off
+Mon,09-Sep-2013~22:34 ('off', 3) off
+Mon,09-Sep-2013~22:34 FOUND: off
+Mon,09-Sep-2013~22:34 HAS OFF/FALSE: True
+Mon,09-Sep-2013~22:34 [('noisy', 2), ('off', 3)] off
+Mon,09-Sep-2013~22:34 ('noisy', 2) off
+Mon,09-Sep-2013~22:34 ('off', 3) off
+Mon,09-Sep-2013~22:34 FOUND: off
+Mon,09-Sep-2013~22:34 SET TO: off
+Mon,09-Sep-2013~22:37 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,09-Sep-2013~22:37 KIND: IMP
+Mon,09-Sep-2013~22:37 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:37 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:37 BEST: loader
+Mon,09-Sep-2013~22:37 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:37 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:37 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:37 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:37 Successfully imported Modules.media
+Mon,09-Sep-2013~22:37 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:37 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:37 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:37 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:37 KIND: IMP
+Mon,09-Sep-2013~22:37 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:37 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:37 BEST: settings
+Mon,09-Sep-2013~22:37 [('noisy', 2), ('to', 3), ('off', 4)] to
+Mon,09-Sep-2013~22:37 ('noisy', 2) to
+Mon,09-Sep-2013~22:37 ('to', 3) to
+Mon,09-Sep-2013~22:37 KEYWORDS: [('noisy', 2), ('off', 4)]
+Mon,09-Sep-2013~22:37 [('noisy', 2), ('off', 4)] off
+Mon,09-Sep-2013~22:37 ('noisy', 2) off
+Mon,09-Sep-2013~22:38 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:38 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:38 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:38 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:38 Successfully imported Modules.media
+Mon,09-Sep-2013~22:38 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:38 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:38 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:38 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:38 KIND: IMP
+Mon,09-Sep-2013~22:38 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:38 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:38 BEST: settings
+Mon,09-Sep-2013~22:38 [('noisy', 2), ('to', 3), ('off', 4)] to
+Mon,09-Sep-2013~22:38 ('noisy', 2) to
+Mon,09-Sep-2013~22:38 ('to', 3) to
+Mon,09-Sep-2013~22:38 KEYWORDS: [('noisy', 2), ('off', 4)]
+Mon,09-Sep-2013~22:38 [('noisy', 2), ('off', 4)] off
+Mon,09-Sep-2013~22:38 ('noisy', 2) off
+Mon,09-Sep-2013~22:38 ('off', 4) off
+Mon,09-Sep-2013~22:38 FOUND: off
+Mon,09-Sep-2013~22:38 SET TO: off
+Mon,09-Sep-2013~22:42 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,09-Sep-2013~22:42 KIND: IMP
+Mon,09-Sep-2013~22:42 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:42 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:42 BEST: loader
+Mon,09-Sep-2013~22:42 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:42 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:42 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:42 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:42 Successfully imported Modules.media
+Mon,09-Sep-2013~22:42 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:42 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:42 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:42 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:42 Successfully imported Modules.media
+Mon,09-Sep-2013~22:42 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:42 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:42 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:42 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:42 KIND: IMP
+Mon,09-Sep-2013~22:42 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:42 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:42 BEST: settings
+Mon,09-Sep-2013~22:42 [('noisy', 2), ('to', 3), ('off', 4)] to
+Mon,09-Sep-2013~22:42 ('noisy', 2) to
+Mon,09-Sep-2013~22:42 ('to', 3) to
+Mon,09-Sep-2013~22:42 KEYWORDS: [('noisy', 2), ('off', 4)]
+Mon,09-Sep-2013~22:42 [('noisy', 2), ('off', 4)] noisy
+Mon,09-Sep-2013~22:42 ('noisy', 2) noisy
+Mon,09-Sep-2013~22:42 FOUND: noisy
+Mon,09-Sep-2013~22:42 SET TO: noisy
+Mon,09-Sep-2013~22:42 [('noisy', 2), ('off', 4)] off
+Mon,09-Sep-2013~22:42 ('noisy', 2) off
+Mon,09-Sep-2013~22:42 ('off', 4) off
+Mon,09-Sep-2013~22:42 FOUND: off
+Mon,09-Sep-2013~22:42 SET TO: off
+Mon,09-Sep-2013~22:42 SETTING: NOISY = False
+Mon,09-Sep-2013~22:42 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('talking', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:42 KIND: IMP
+Mon,09-Sep-2013~22:42 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:42 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:42 BEST: settings
+Mon,09-Sep-2013~22:42 [('talking', 2), ('to', 3), ('off', 4)] to
+Mon,09-Sep-2013~22:42 ('talking', 2) to
+Mon,09-Sep-2013~22:42 ('to', 3) to
+Mon,09-Sep-2013~22:42 KEYWORDS: [('talking', 2), ('off', 4)]
+Mon,09-Sep-2013~22:42 [('talking', 2), ('off', 4)] noisy
+Mon,09-Sep-2013~22:42 ('talking', 2) noisy
+Mon,09-Sep-2013~22:42 ('off', 4) noisy
+Mon,09-Sep-2013~22:42 [('talking', 2), ('off', 4)] noisiness
+Mon,09-Sep-2013~22:42 ('talking', 2) noisiness
+Mon,09-Sep-2013~22:42 ('off', 4) noisiness
+Mon,09-Sep-2013~22:42 [('talking', 2), ('off', 4)] talk
+Mon,09-Sep-2013~22:42 ('talking', 2) talk
+Mon,09-Sep-2013~22:42 ('off', 4) talk
+Mon,09-Sep-2013~22:42 [('talking', 2), ('off', 4)] talking
+Mon,09-Sep-2013~22:42 ('talking', 2) talking
+Mon,09-Sep-2013~22:42 FOUND: talking
+Mon,09-Sep-2013~22:42 SET TO: noisy
+Mon,09-Sep-2013~22:42 [('talking', 2), ('off', 4)] off
+Mon,09-Sep-2013~22:42 ('talking', 2) off
+Mon,09-Sep-2013~22:42 ('off', 4) off
+Mon,09-Sep-2013~22:42 FOUND: off
+Mon,09-Sep-2013~22:42 SET TO: off
+Mon,09-Sep-2013~22:42 SETTING: NOISY = False
+Mon,09-Sep-2013~22:47 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,09-Sep-2013~22:47 KIND: IMP
+Mon,09-Sep-2013~22:47 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:47 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:47 BEST: loader
+Mon,09-Sep-2013~22:47 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:47 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:47 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:47 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:47 Successfully imported Modules.media
+Mon,09-Sep-2013~22:47 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:47 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:47 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:47 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('verbosity', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:47 KIND: IMP
+Mon,09-Sep-2013~22:47 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:47 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:47 BEST: settings
+Mon,09-Sep-2013~22:47 KEYWORDS: [('verbosity', 2), ('off', 4)]
+Mon,09-Sep-2013~22:47 SET TO: verbosity
+Mon,09-Sep-2013~22:47 SET TO: off
+Mon,09-Sep-2013~22:47 SETTING: VERBOSITY = False
+Mon,09-Sep-2013~22:48 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:48 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:48 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:48 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:48 Successfully imported Modules.media
+Mon,09-Sep-2013~22:48 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:48 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:48 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:49 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('verbosity', 'NO'), ('to', 'PP'), ('false', '??')]
+Mon,09-Sep-2013~22:49 KIND: IMP
+Mon,09-Sep-2013~22:49 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:49 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:49 BEST: settings
+Mon,09-Sep-2013~22:49 KEYWORDS: [('verbosity', 2), ('false', 4)]
+Mon,09-Sep-2013~22:49 SET TO: verbosity
+Mon,09-Sep-2013~22:49 SET TO: off
+Mon,09-Sep-2013~22:49 SETTING: VERBOSITY = False
+Mon,09-Sep-2013~22:50 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,09-Sep-2013~22:50 KIND: IMP
+Mon,09-Sep-2013~22:50 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:50 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:50 BEST: loader
+Mon,09-Sep-2013~22:50 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:50 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:50 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:50 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:50 Successfully imported Modules.media
+Mon,09-Sep-2013~22:50 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:50 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:50 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:50 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:50 Successfully imported Modules.media
+Mon,09-Sep-2013~22:50 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:50 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:50 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:50 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('verbosity', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:50 KIND: IMP
+Mon,09-Sep-2013~22:50 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:50 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:50 BEST: settings
+Mon,09-Sep-2013~22:50 KEYWORDS: [('verbosity', 2), ('off', 4)]
+Mon,09-Sep-2013~22:50 SET TO: verbosity
+Mon,09-Sep-2013~22:50 SET TO: off
+Mon,09-Sep-2013~22:50 SETTING: VERBOSITY = False
+
+Mon,09-Sep-2013~22:51 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:51 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:51 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:51 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:51 Successfully imported Modules.media
+Mon,09-Sep-2013~22:51 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:51 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:51 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:51 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Mon,09-Sep-2013~22:51 KIND: IMP
+Mon,09-Sep-2013~22:51 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:51 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:51 BEST: settings
+Mon,09-Sep-2013~22:51 KEYWORDS: [('noisy', 2), ('off', 4)]
+Mon,09-Sep-2013~22:51 SET TO: noisy
+Mon,09-Sep-2013~22:51 SET TO: off
+Mon,09-Sep-2013~22:51 SETTING: NOISY = False
+
+Mon,09-Sep-2013~22:51 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('verbosity', 'NO'), ('to', 'PP'), ('true', '??')]
+Mon,09-Sep-2013~22:51 KIND: IMP
+Mon,09-Sep-2013~22:51 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:51 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:51 BEST: settings
+Mon,09-Sep-2013~22:51 KEYWORDS: [('verbosity', 2), ('true', 4)]
+Mon,09-Sep-2013~22:51 SET TO: verbosity
+Mon,09-Sep-2013~22:51 SET TO: on
+Mon,09-Sep-2013~22:51 SETTING: VERBOSITY = True
+
+Mon,09-Sep-2013~22:52 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,09-Sep-2013~22:52 KIND: IMP
+Mon,09-Sep-2013~22:52 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:52 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:52 BEST: loader
+Mon,09-Sep-2013~22:52 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:52 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:52 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:52 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:52 Successfully imported Modules.media
+Mon,09-Sep-2013~22:52 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:52 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:52 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:52 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('verbosity', 'NO'), ('off', 'PP')]
+Mon,09-Sep-2013~22:52 KIND: IMP
+Mon,09-Sep-2013~22:52 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:52 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:52 BEST: settings
+Mon,09-Sep-2013~22:52 KEYWORDS: [('verbosity', 2), ('off', 3)]
+Mon,09-Sep-2013~22:52 SET TO: verbosity
+Mon,09-Sep-2013~22:52 SET TO: off
+Mon,09-Sep-2013~22:52 SETTING: VERBOSE = False
+
+Mon,09-Sep-2013~22:52 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,09-Sep-2013~22:52 KIND: INT
+Mon,09-Sep-2013~22:52 ACTIONS: {'clock': 1}
+Mon,09-Sep-2013~22:52 WEIGHTS: {1: ['clock']}
+Mon,09-Sep-2013~22:52 BEST: clock
+Mon,09-Sep-2013~22:52 KEYWORDS: ['time']
+Mon,09-Sep-2013~22:52 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,09-Sep-2013~22:52 KIND: IMP
+Mon,09-Sep-2013~22:52 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:52 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:52 BEST: loader
+Mon,09-Sep-2013~22:52 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:52 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:52 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:52 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:52 Successfully imported Modules.media
+Mon,09-Sep-2013~22:52 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:52 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:52 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:52 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,09-Sep-2013~22:52 KIND: INT
+Mon,09-Sep-2013~22:52 ACTIONS: {'clock': 1}
+Mon,09-Sep-2013~22:52 WEIGHTS: {1: ['clock']}
+Mon,09-Sep-2013~22:52 BEST: clock
+Mon,09-Sep-2013~22:52 KEYWORDS: ['time']
+Mon,09-Sep-2013~22:52 SENTENCE: [('You', 'PS'), ('will', 'VB'), ('it', 'PO'), ('rain', 'NO'), ('tomorrow', 'NO')]
+Mon,09-Sep-2013~22:52 KIND: IMP
+Mon,09-Sep-2013~22:52 ACTIONS: {'weather': 2}
+Mon,09-Sep-2013~22:52 WEIGHTS: {2: ['weather']}
+Mon,09-Sep-2013~22:52 BEST: weather
+Mon,09-Sep-2013~22:52 KEYWORDS: [('tomorrow', 4)]
+Mon,09-Sep-2013~22:52 TODAY: 0
+Mon,09-Sep-2013~22:52 DAY: 2
+Mon,09-Sep-2013~22:52 WEATHER_RAW: ['<yweather:condition  text="Unknown"  code="3200"  temp="5"  date="Mon, 09 Sep 2013 9:59 pm NZST" />\n', '<yweather:forecast day="Mon" date="9 Sep 2013" low="6" high="14" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Tue" date="10 Sep 2013" low="12" high="16" text="Cloudy/Wind" code="24" />\n', '<yweather:forecast day="Wed" date="11 Sep 2013" low="9" high="17" text="Rain/Wind" code="12" />\n', '<yweather:forecast day="Thu" date="12 Sep 2013" low="3" high="14" text="Sunny" code="32" />\n', '<yweather:forecast day="Fri" date="13 Sep 2013" low="4" high="12" text="Sunny" code="32" />\n']
+Mon,09-Sep-2013~22:52 ITEMS: ['day', 'Tue', 'date', '10 Sep 2013', 'low', '12', 'high', '16', 'text', 'Cloudy/Wind', 'code', '24']
+Mon,09-Sep-2013~22:53 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:53 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:53 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:53 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:53 Successfully imported Modules.media
+Mon,09-Sep-2013~22:53 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:53 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:53 Successfully imported Modules.wikipedia
+Mon,09-Sep-2013~22:53 SENTENCE: [('You', 'PS'), ('will', 'VB'), ('it', 'PO'), ('be', 'VB'), ('cold', 'NO'), ('tomorrow', 'NO')]
+Mon,09-Sep-2013~22:53 KIND: IMP
+Mon,09-Sep-2013~22:53 ACTIONS: {'weather': 2}
+Mon,09-Sep-2013~22:53 WEIGHTS: {2: ['weather']}
+Mon,09-Sep-2013~22:53 BEST: weather
+Mon,09-Sep-2013~22:53 KEYWORDS: [('tomorrow', 5)]
+Mon,09-Sep-2013~22:53 TODAY: 0
+Mon,09-Sep-2013~22:53 DAY: 2
+Mon,09-Sep-2013~22:53 WEATHER_RAW: ['<yweather:condition  text="Unknown"  code="3200"  temp="4"  date="Mon, 09 Sep 2013 10:29 pm NZST" />\n', '<yweather:forecast day="Mon" date="9 Sep 2013" low="6" high="14" text="Partly Cloudy" code="29" />\n', '<yweather:forecast day="Tue" date="10 Sep 2013" low="12" high="16" text="Cloudy/Wind" code="24" />\n', '<yweather:forecast day="Wed" date="11 Sep 2013" low="9" high="17" text="Rain/Wind" code="12" />\n', '<yweather:forecast day="Thu" date="12 Sep 2013" low="3" high="14" text="Sunny" code="32" />\n', '<yweather:forecast day="Fri" date="13 Sep 2013" low="4" high="12" text="Sunny" code="32" />\n']
+Mon,09-Sep-2013~22:53 ITEMS: ['day', 'Tue', 'date', '10 Sep 2013', 'low', '12', 'high', '16', 'text', 'Cloudy/Wind', 'code', '24']
+Mon,09-Sep-2013~22:53 SENTENCE: [('You', 'PS'), ('switch', 'VB'), ('on', 'PP'), ('verbosity', 'NO')]
+Mon,09-Sep-2013~22:53 KIND: IMP
+Mon,09-Sep-2013~22:53 ACTIONS: {'settings': 2}
+Mon,09-Sep-2013~22:53 WEIGHTS: {2: ['settings']}
+Mon,09-Sep-2013~22:53 BEST: settings
+Mon,09-Sep-2013~22:53 KEYWORDS: [('verbosity', 3), ('on', 2)]
+Mon,09-Sep-2013~22:53 SET TO: verbosity
+Mon,09-Sep-2013~22:53 SET TO: on
+Mon,09-Sep-2013~22:53 SETTING: VERBOSE = True
+
+Mon,09-Sep-2013~22:53 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,09-Sep-2013~22:53 KIND: IMP
+Mon,09-Sep-2013~22:53 ACTIONS: {'loader': 1}
+Mon,09-Sep-2013~22:53 WEIGHTS: {1: ['loader']}
+Mon,09-Sep-2013~22:53 BEST: loader
+Mon,09-Sep-2013~22:53 Successfully imported Modules.clock
+Mon,09-Sep-2013~22:53 Successfully imported Modules.discover
+Mon,09-Sep-2013~22:53 Successfully imported Modules.finder
+Mon,09-Sep-2013~22:53 Successfully imported Modules.loader
+Mon,09-Sep-2013~22:53 Successfully imported Modules.media
+Mon,09-Sep-2013~22:53 Successfully imported Modules.settings
+Mon,09-Sep-2013~22:53 Successfully imported Modules.weather
+Mon,09-Sep-2013~22:53 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~11:55 Successfully imported Modules.clock
+Wed,11-Sep-2013~11:55 Successfully imported Modules.discover
+Wed,11-Sep-2013~11:55 Successfully imported Modules.finder
+Wed,11-Sep-2013~11:55 Successfully imported Modules.loader
+Wed,11-Sep-2013~11:55 Successfully imported Modules.media
+Wed,11-Sep-2013~11:55 Successfully imported Modules.settings
+Wed,11-Sep-2013~11:55 Successfully imported Modules.weather
+Wed,11-Sep-2013~11:55 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~11:55 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Wed,11-Sep-2013~11:55 KIND: IMP
+Wed,11-Sep-2013~11:55 ACTIONS: {'settings': 2}
+Wed,11-Sep-2013~11:55 WEIGHTS: {2: ['settings']}
+Wed,11-Sep-2013~11:55 BEST: settings
+Wed,11-Sep-2013~11:55 KEYWORDS: [('noisy', 2), ('off', 4)]
+Wed,11-Sep-2013~11:55 SET TO: noisy
+Wed,11-Sep-2013~11:55 SET TO: off
+Wed,11-Sep-2013~11:55 SETTING: NOISY = False
+
+Wed,11-Sep-2013~11:56 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Wed,11-Sep-2013~11:56 KIND: INT
+Wed,11-Sep-2013~11:56 ACTIONS: {'weather': 1}
+Wed,11-Sep-2013~11:56 WEIGHTS: {1: ['weather']}
+Wed,11-Sep-2013~11:56 BEST: weather
+Wed,11-Sep-2013~11:56 KEYWORDS: []
+Wed,11-Sep-2013~11:56 TODAY: 2
+Wed,11-Sep-2013~11:56 DAY: 0
+Wed,11-Sep-2013~11:56 WEATHER_RAW: ['<yweather:condition  text="Light Rain Shower"  code="11"  temp="17"  date="Wed, 11 Sep 2013 11:28 am NZST" />\n', '<yweather:forecast day="Wed" date="11 Sep 2013" low="9" high="18" text="Showers/Wind" code="11" />\n', '<yweather:forecast day="Thu" date="12 Sep 2013" low="3" high="14" text="Sunny/Wind" code="24" />\n', '<yweather:forecast day="Fri" date="13 Sep 2013" low="3" high="13" text="Sunny" code="32" />\n', '<yweather:forecast day="Sat" date="14 Sep 2013" low="3" high="12" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Sun" date="15 Sep 2013" low="1" high="12" text="Partly Cloudy" code="30" />\n']
+Wed,11-Sep-2013~11:56 ITEMS: ['text', 'Light Rain Shower', 'code', '11', 'temp', '17', 'date', 'Wed, 11 Sep 2013 11:28 am NZST']
+Wed,11-Sep-2013~11:56 ITEMS: ['day', 'Wed', 'date', '11 Sep 2013', 'low', '9', 'high', '18', 'text', 'Showers/Wind', 'code', '11']
+Wed,11-Sep-2013~11:56 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('heaps', '??')]
+Wed,11-Sep-2013~11:56 KIND: IMP
+Wed,11-Sep-2013~11:56 ACTIONS: {'wikipedia': 2}
+Wed,11-Sep-2013~11:56 WEIGHTS: {2: ['wikipedia']}
+Wed,11-Sep-2013~11:56 BEST: wikipedia
+Wed,11-Sep-2013~11:56 KEYWORDS: [('heaps', 4)]
+Wed,11-Sep-2013~11:56 URL ATTEMPT: http://en.wikipedia.org/wiki/heaps
+Wed,11-Sep-2013~11:56 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Wed,11-Sep-2013~11:56 KIND: IMP
+Wed,11-Sep-2013~11:56 ACTIONS: {'finder': 1}
+Wed,11-Sep-2013~11:56 WEIGHTS: {1: ['finder']}
+Wed,11-Sep-2013~11:56 BEST: finder
+Wed,11-Sep-2013~11:56 IT: http://en.wikipedia.org/wiki/heaps
+Wed,11-Sep-2013~11:58 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('raining', 'NO')]
+Wed,11-Sep-2013~11:58 KIND: IMP
+Wed,11-Sep-2013~11:58 ACTIONS: {'weather': 1}
+Wed,11-Sep-2013~11:58 WEIGHTS: {1: ['weather']}
+Wed,11-Sep-2013~11:58 BEST: weather
+Wed,11-Sep-2013~11:58 KEYWORDS: []
+Wed,11-Sep-2013~11:58 TODAY: 2
+Wed,11-Sep-2013~11:58 DAY: 0
+Wed,11-Sep-2013~11:58 WEATHER_RAW: ['<yweather:condition  text="Light Rain Shower"  code="11"  temp="17"  date="Wed, 11 Sep 2013 11:28 am NZST" />\n', '<yweather:forecast day="Wed" date="11 Sep 2013" low="9" high="18" text="Showers/Wind" code="11" />\n', '<yweather:forecast day="Thu" date="12 Sep 2013" low="3" high="14" text="Sunny/Wind" code="24" />\n', '<yweather:forecast day="Fri" date="13 Sep 2013" low="3" high="13" text="Sunny" code="32" />\n', '<yweather:forecast day="Sat" date="14 Sep 2013" low="3" high="12" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Sun" date="15 Sep 2013" low="1" high="12" text="Partly Cloudy" code="30" />\n']
+Wed,11-Sep-2013~11:58 ITEMS: ['text', 'Light Rain Shower', 'code', '11', 'temp', '17', 'date', 'Wed, 11 Sep 2013 11:28 am NZST']
+Wed,11-Sep-2013~11:58 ITEMS: ['day', 'Wed', 'date', '11 Sep 2013', 'low', '9', 'high', '18', 'text', 'Showers/Wind', 'code', '11']
+Wed,11-Sep-2013~11:58 SENTENCE: [('turn', '??'), ('verbosity', 'NS'), ('off', 'PP')]
+Wed,11-Sep-2013~11:58 KIND: DEC
+Wed,11-Sep-2013~11:58 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('verbosity', 'NO')]
+Wed,11-Sep-2013~11:58 KIND: IMP
+Wed,11-Sep-2013~11:58 ACTIONS: {'settings': 2}
+Wed,11-Sep-2013~11:58 WEIGHTS: {2: ['settings']}
+Wed,11-Sep-2013~11:58 BEST: settings
+Wed,11-Sep-2013~11:58 Successfully imported Modules.clock
+Wed,11-Sep-2013~11:58 Successfully imported Modules.discover
+Wed,11-Sep-2013~11:58 Successfully imported Modules.finder
+Wed,11-Sep-2013~11:58 Successfully imported Modules.loader
+Wed,11-Sep-2013~11:58 Successfully imported Modules.media
+Wed,11-Sep-2013~11:58 Successfully imported Modules.settings
+Wed,11-Sep-2013~11:58 Successfully imported Modules.weather
+Wed,11-Sep-2013~11:58 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~11:59 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Wed,11-Sep-2013~11:59 KIND: IMP
+Wed,11-Sep-2013~11:59 ACTIONS: {'loader': 1}
+Wed,11-Sep-2013~11:59 WEIGHTS: {1: ['loader']}
+Wed,11-Sep-2013~11:59 BEST: loader
+Wed,11-Sep-2013~11:59 Successfully imported Modules.clock
+Wed,11-Sep-2013~11:59 Successfully imported Modules.discover
+Wed,11-Sep-2013~11:59 Successfully imported Modules.finder
+Wed,11-Sep-2013~11:59 Successfully imported Modules.loader
+Wed,11-Sep-2013~11:59 Successfully imported Modules.media
+Wed,11-Sep-2013~11:59 Successfully imported Modules.settings
+Wed,11-Sep-2013~11:59 Successfully imported Modules.weather
+Wed,11-Sep-2013~11:59 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~11:59 SENTENCE: [('You', 'PS'), ('turn', 'VB'), ('verbosity', 'NO'), ('off', 'PP')]
+Wed,11-Sep-2013~11:59 KIND: IMP
+Wed,11-Sep-2013~11:59 ACTIONS: {'settings': 2}
+Wed,11-Sep-2013~11:59 WEIGHTS: {2: ['settings']}
+Wed,11-Sep-2013~11:59 BEST: settings
+Wed,11-Sep-2013~11:59 KEYWORDS: [('verbosity', 2), ('off', 3)]
+Wed,11-Sep-2013~11:59 SET TO: verbosity
+Wed,11-Sep-2013~11:59 SET TO: off
+Wed,11-Sep-2013~11:59 SETTING: VERBOSE = False
+
+Wed,11-Sep-2013~12:07 SENTENCE: [('You', 'PS'), ('reload', 'VB')]
+Wed,11-Sep-2013~12:07 KIND: IMP
+Wed,11-Sep-2013~12:07 ACTIONS: {'loader': 1}
+Wed,11-Sep-2013~12:07 WEIGHTS: {1: ['loader']}
+Wed,11-Sep-2013~12:07 BEST: loader
+Wed,11-Sep-2013~12:07 Successfully imported Modules.clock
+Wed,11-Sep-2013~12:07 Successfully imported Modules.discover
+Wed,11-Sep-2013~12:07 Successfully imported Modules.finder
+Wed,11-Sep-2013~12:07 Successfully imported Modules.loader
+Wed,11-Sep-2013~12:07 Successfully imported Modules.media
+Wed,11-Sep-2013~12:07 Successfully imported Modules.settings
+Wed,11-Sep-2013~12:07 Successfully imported Modules.weather
+Wed,11-Sep-2013~12:07 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~12:08 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('verbosity', 'NO'), ('on', 'PP')]
+Wed,11-Sep-2013~12:08 KIND: IMP
+Wed,11-Sep-2013~12:08 ACTIONS: {'settings': 2}
+Wed,11-Sep-2013~12:08 WEIGHTS: {2: ['settings']}
+Wed,11-Sep-2013~12:08 BEST: settings
+Wed,11-Sep-2013~12:08 KEYWORDS: [('verbosity', 2), ('on', 3)]
+Wed,11-Sep-2013~12:08 SET TO: verbosity
+Wed,11-Sep-2013~12:08 SET TO: on
+Wed,11-Sep-2013~12:08 SETTING: VERBOSE = True
+
+Wed,11-Sep-2013~12:08 Successfully imported Modules.clock
+Wed,11-Sep-2013~12:08 Successfully imported Modules.discover
+Wed,11-Sep-2013~12:08 Successfully imported Modules.finder
+Wed,11-Sep-2013~12:08 Successfully imported Modules.loader
+Wed,11-Sep-2013~12:08 Successfully imported Modules.media
+Wed,11-Sep-2013~12:08 Successfully imported Modules.settings
+Wed,11-Sep-2013~12:08 Successfully imported Modules.weather
+Wed,11-Sep-2013~12:08 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~12:08 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('verbosity', 'NO'), ('off', 'PP')]
+Wed,11-Sep-2013~12:08 KIND: IMP
+Wed,11-Sep-2013~12:08 ACTIONS: {'settings': 2}
+Wed,11-Sep-2013~12:08 WEIGHTS: {2: ['settings']}
+Wed,11-Sep-2013~12:08 BEST: settings
+Wed,11-Sep-2013~12:08 KEYWORDS: [('verbosity', 2), ('off', 3)]
+Wed,11-Sep-2013~12:08 SET TO: verbosity
+Wed,11-Sep-2013~12:08 SET TO: off
+Wed,11-Sep-2013~12:08 SETTING: VERBOSE = False
+
+Wed,11-Sep-2013~12:09 Successfully imported Modules.clock
+Wed,11-Sep-2013~12:09 Successfully imported Modules.discover
+Wed,11-Sep-2013~12:09 Successfully imported Modules.finder
+Wed,11-Sep-2013~12:09 Successfully imported Modules.loader
+Wed,11-Sep-2013~12:09 Successfully imported Modules.media
+Wed,11-Sep-2013~12:09 Successfully imported Modules.settings
+Wed,11-Sep-2013~12:09 Successfully imported Modules.weather
+Wed,11-Sep-2013~12:09 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~12:09 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('verbose', 'NO'), ('to', 'PP'), ('on', 'PP')]
+Wed,11-Sep-2013~12:09 KIND: IMP
+Wed,11-Sep-2013~12:09 ACTIONS: {'settings': 2}
+Wed,11-Sep-2013~12:09 WEIGHTS: {2: ['settings']}
+Wed,11-Sep-2013~12:09 BEST: settings
+Wed,11-Sep-2013~12:09 KEYWORDS: [('verbose', 2), ('on', 4)]
+Wed,11-Sep-2013~12:09 SET TO: verbosity
+Wed,11-Sep-2013~12:09 SET TO: on
+Wed,11-Sep-2013~12:09 SETTING: VERBOSE = True
+
+Wed,11-Sep-2013~12:09 False
+Wed,11-Sep-2013~12:10 Successfully imported Modules.clock
+Wed,11-Sep-2013~12:10 Successfully imported Modules.discover
+Wed,11-Sep-2013~12:10 Successfully imported Modules.finder
+Wed,11-Sep-2013~12:10 Successfully imported Modules.loader
+Wed,11-Sep-2013~12:10 Successfully imported Modules.media
+Wed,11-Sep-2013~12:10 Successfully imported Modules.settings
+Wed,11-Sep-2013~12:10 Successfully imported Modules.weather
+Wed,11-Sep-2013~12:10 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~12:10 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('verbose', 'NO'), ('to', 'PP'), ('on', 'PP')]
+Wed,11-Sep-2013~12:10 KIND: IMP
+Wed,11-Sep-2013~12:10 ACTIONS: {'settings': 2}
+Wed,11-Sep-2013~12:10 WEIGHTS: {2: ['settings']}
+Wed,11-Sep-2013~12:10 BEST: settings
+Wed,11-Sep-2013~12:10 KEYWORDS: [('verbose', 2), ('on', 4)]
+Wed,11-Sep-2013~12:10 SET TO: verbosity
+Wed,11-Sep-2013~12:10 SET TO: on
+Wed,11-Sep-2013~12:10 SETTING: VERBOSE = True
+
+Wed,11-Sep-2013~12:10 True
+Wed,11-Sep-2013~17:26 Successfully imported Modules.clock
+Wed,11-Sep-2013~17:26 Successfully imported Modules.discover
+Wed,11-Sep-2013~17:26 Successfully imported Modules.finder
+Wed,11-Sep-2013~17:26 Successfully imported Modules.loader
+Wed,11-Sep-2013~17:26 Successfully imported Modules.media
+Wed,11-Sep-2013~17:28 Successfully imported Modules.clock
+Wed,11-Sep-2013~17:28 Successfully imported Modules.discover
+Wed,11-Sep-2013~17:28 Successfully imported Modules.finder
+Wed,11-Sep-2013~17:28 Successfully imported Modules.loader
+Wed,11-Sep-2013~17:28 Successfully imported Modules.media
+Wed,11-Sep-2013~17:33 Successfully imported Modules.clock
+Wed,11-Sep-2013~17:33 Successfully imported Modules.discover
+Wed,11-Sep-2013~17:33 Successfully imported Modules.finder
+Wed,11-Sep-2013~17:33 Successfully imported Modules.loader
+Wed,11-Sep-2013~17:33 Successfully imported Modules.media
+Wed,11-Sep-2013~17:34 Successfully imported Modules.clock
+Wed,11-Sep-2013~17:34 Successfully imported Modules.discover
+Wed,11-Sep-2013~17:34 Successfully imported Modules.finder
+Wed,11-Sep-2013~17:34 Successfully imported Modules.loader
+Wed,11-Sep-2013~17:34 Successfully imported Modules.media
+Wed,11-Sep-2013~17:36 Successfully imported Modules.clock
+Wed,11-Sep-2013~17:36 Successfully imported Modules.discover
+Wed,11-Sep-2013~17:36 Successfully imported Modules.finder
+Wed,11-Sep-2013~17:36 Successfully imported Modules.loader
+Wed,11-Sep-2013~17:36 Successfully imported Modules.media
+Wed,11-Sep-2013~17:36 Successfully imported Modules.settings
+Wed,11-Sep-2013~17:36 Successfully imported Modules.weather
+Wed,11-Sep-2013~17:36 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~17:36 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('false', '??')]
+Wed,11-Sep-2013~17:36 KIND: IMP
+Wed,11-Sep-2013~17:36 ACTIONS: {'settings': 2}
+Wed,11-Sep-2013~17:36 WEIGHTS: {2: ['settings']}
+Wed,11-Sep-2013~17:36 BEST: settings
+Wed,11-Sep-2013~17:36 KEYWORDS: [('noisy', 2), ('false', 4)]
+Wed,11-Sep-2013~17:36 SET TO: noisy
+Wed,11-Sep-2013~17:36 SET TO: off
+Wed,11-Sep-2013~17:36 SETTING: NOISY = False
+
+Wed,11-Sep-2013~17:37 Successfully imported Modules.clock
+Wed,11-Sep-2013~17:37 Successfully imported Modules.discover
+Wed,11-Sep-2013~17:37 Successfully imported Modules.finder
+Wed,11-Sep-2013~17:37 Successfully imported Modules.loader
+Wed,11-Sep-2013~17:37 Successfully imported Modules.media
+Wed,11-Sep-2013~17:37 Successfully imported Modules.settings
+Wed,11-Sep-2013~17:37 Successfully imported Modules.weather
+Wed,11-Sep-2013~17:37 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~17:37 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('false', '??')]
+Wed,11-Sep-2013~17:37 KIND: IMP
+Wed,11-Sep-2013~17:37 ACTIONS: {'settings': 2}
+Wed,11-Sep-2013~17:37 WEIGHTS: {2: ['settings']}
+Wed,11-Sep-2013~17:37 BEST: settings
+Wed,11-Sep-2013~17:37 KEYWORDS: [('noisy', 2), ('false', 4)]
+Wed,11-Sep-2013~17:37 SET TO: noisy
+Wed,11-Sep-2013~17:37 SET TO: off
+Wed,11-Sep-2013~17:37 SETTING: NOISY = False
+
+Wed,11-Sep-2013~17:39 SENTENCE: [('You', 'PS'), ('reload', 'VB')]
+Wed,11-Sep-2013~17:39 KIND: IMP
+Wed,11-Sep-2013~17:39 ACTIONS: {'loader': 1}
+Wed,11-Sep-2013~17:39 WEIGHTS: {1: ['loader']}
+Wed,11-Sep-2013~17:39 BEST: loader
+Wed,11-Sep-2013~17:39 Successfully imported Modules.clock
+Wed,11-Sep-2013~17:39 Successfully imported Modules.discover
+Wed,11-Sep-2013~17:39 Successfully imported Modules.finder
+Wed,11-Sep-2013~17:39 Successfully imported Modules.loader
+Wed,11-Sep-2013~17:39 Successfully imported Modules.media
+Wed,11-Sep-2013~17:39 Successfully imported Modules.settings
+Wed,11-Sep-2013~17:39 Successfully imported Modules.weather
+Wed,11-Sep-2013~17:39 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~17:39 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('false', '??')]
+Wed,11-Sep-2013~17:39 KIND: IMP
+Wed,11-Sep-2013~17:39 ACTIONS: {'settings': 2}
+Wed,11-Sep-2013~17:39 WEIGHTS: {2: ['settings']}
+Wed,11-Sep-2013~17:39 BEST: settings
+Wed,11-Sep-2013~17:39 KEYWORDS: [('noisy', 2), ('false', 4)]
+Wed,11-Sep-2013~17:39 SET TO: noisy
+Wed,11-Sep-2013~17:39 SET TO: off
+Wed,11-Sep-2013~17:39 SETTING:     "NOISY": False
+
+Wed,11-Sep-2013~17:40 SENTENCE: [('You', 'PS'), ('reload', 'VB')]
+Wed,11-Sep-2013~17:40 KIND: IMP
+Wed,11-Sep-2013~17:40 ACTIONS: {'loader': 1}
+Wed,11-Sep-2013~17:40 WEIGHTS: {1: ['loader']}
+Wed,11-Sep-2013~17:40 BEST: loader
+Wed,11-Sep-2013~17:40 Successfully imported Modules.clock
+Wed,11-Sep-2013~17:40 Successfully imported Modules.discover
+Wed,11-Sep-2013~17:40 Successfully imported Modules.finder
+Wed,11-Sep-2013~17:40 Successfully imported Modules.loader
+Wed,11-Sep-2013~17:40 Successfully imported Modules.media
+Wed,11-Sep-2013~17:40 Successfully imported Modules.settings
+Wed,11-Sep-2013~17:40 Successfully imported Modules.weather
+Wed,11-Sep-2013~17:40 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~17:40 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Wed,11-Sep-2013~17:40 KIND: IMP
+Wed,11-Sep-2013~17:40 ACTIONS: {'settings': 2}
+Wed,11-Sep-2013~17:40 WEIGHTS: {2: ['settings']}
+Wed,11-Sep-2013~17:40 BEST: settings
+Wed,11-Sep-2013~17:40 KEYWORDS: [('noisy', 2), ('off', 4)]
+Wed,11-Sep-2013~17:40 SETTING:     "NOISY": False
+
+Wed,11-Sep-2013~17:40     NOISY
+Wed,11-Sep-2013~17:40 SENTENCE: [('You', 'PS'), ('reload', 'VB')]
+Wed,11-Sep-2013~17:40 KIND: IMP
+Wed,11-Sep-2013~17:40 ACTIONS: {'loader': 1}
+Wed,11-Sep-2013~17:40 WEIGHTS: {1: ['loader']}
+Wed,11-Sep-2013~17:40 BEST: loader
+Wed,11-Sep-2013~17:40 Successfully imported Modules.clock
+Wed,11-Sep-2013~17:40 Successfully imported Modules.discover
+Wed,11-Sep-2013~17:40 Successfully imported Modules.finder
+Wed,11-Sep-2013~17:40 Successfully imported Modules.loader
+Wed,11-Sep-2013~17:40 Successfully imported Modules.media
+Wed,11-Sep-2013~17:40 Successfully imported Modules.settings
+Wed,11-Sep-2013~17:40 Successfully imported Modules.weather
+Wed,11-Sep-2013~17:40 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~17:40 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('noisy', 'NO'), ('to', 'PP'), ('off', 'PP')]
+Wed,11-Sep-2013~17:40 KIND: IMP
+Wed,11-Sep-2013~17:40 ACTIONS: {'settings': 2}
+Wed,11-Sep-2013~17:40 WEIGHTS: {2: ['settings']}
+Wed,11-Sep-2013~17:40 BEST: settings
+Wed,11-Sep-2013~17:40 KEYWORDS: [('noisy', 2), ('off', 4)]
+Wed,11-Sep-2013~17:40 SETTING:     "NOISY": False
+
+Wed,11-Sep-2013~17:40     NOISY
+Wed,11-Sep-2013~17:41 Successfully imported Modules.clock
+Wed,11-Sep-2013~17:41 Successfully imported Modules.discover
+Wed,11-Sep-2013~17:41 Successfully imported Modules.finder
+Wed,11-Sep-2013~17:41 Successfully imported Modules.loader
+Wed,11-Sep-2013~17:41 Successfully imported Modules.media
+Wed,11-Sep-2013~17:41 Successfully imported Modules.settings
+Wed,11-Sep-2013~17:41 Successfully imported Modules.weather
+Wed,11-Sep-2013~17:41 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~17:41 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('verbose', 'NO'), ('off', 'PP')]
+Wed,11-Sep-2013~17:41 KIND: IMP
+Wed,11-Sep-2013~17:41 ACTIONS: {'settings': 2}
+Wed,11-Sep-2013~17:41 WEIGHTS: {2: ['settings']}
+Wed,11-Sep-2013~17:41 BEST: settings
+Wed,11-Sep-2013~17:41 KEYWORDS: [('verbose', 2), ('off', 3)]
+Wed,11-Sep-2013~17:41 SETTING:     "VERBOSE": False,
+
+Wed,11-Sep-2013~17:41     VERBOSE
+Wed,11-Sep-2013~17:42 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Wed,11-Sep-2013~17:42 KIND: IMP
+Wed,11-Sep-2013~17:42 ACTIONS: {'loader': 1}
+Wed,11-Sep-2013~17:42 WEIGHTS: {1: ['loader']}
+Wed,11-Sep-2013~17:42 BEST: loader
+Wed,11-Sep-2013~17:42 Successfully imported Modules.clock
+Wed,11-Sep-2013~17:42 Successfully imported Modules.discover
+Wed,11-Sep-2013~17:42 Successfully imported Modules.finder
+Wed,11-Sep-2013~17:42 Successfully imported Modules.loader
+Wed,11-Sep-2013~17:42 Successfully imported Modules.media
+Wed,11-Sep-2013~17:42 Successfully imported Modules.settings
+Wed,11-Sep-2013~17:42 Successfully imported Modules.weather
+Wed,11-Sep-2013~17:42 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~17:42 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB')]
+Wed,11-Sep-2013~17:42 KIND: INT
+Wed,11-Sep-2013~17:42 ACTIONS: {'clock': 1}
+Wed,11-Sep-2013~17:42 WEIGHTS: {1: ['clock']}
+Wed,11-Sep-2013~17:42 BEST: clock
+Wed,11-Sep-2013~17:42 KEYWORDS: ['time']
+Wed,11-Sep-2013~19:35 SENTENCE: [('You', 'PS'), ('turn', 'VB'), ('on', 'PP'), ('verbosity', 'NO')]
+Wed,11-Sep-2013~19:35 KIND: IMP
+Wed,11-Sep-2013~19:35 ACTIONS: {'settings': 2}
+Wed,11-Sep-2013~19:35 WEIGHTS: {2: ['settings']}
+Wed,11-Sep-2013~19:35 BEST: settings
+Wed,11-Sep-2013~19:35 KEYWORDS: [('verbosity', 3), ('on', 2)]
+Wed,11-Sep-2013~19:35 SETTING:     "VERBOSE": True,
+
+Wed,11-Sep-2013~19:35     VERBOSE
+Wed,11-Sep-2013~22:38 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Wed,11-Sep-2013~22:38 KIND: INT
+Wed,11-Sep-2013~22:38 ACTIONS: {'clock': 1}
+Wed,11-Sep-2013~22:38 WEIGHTS: {1: ['clock']}
+Wed,11-Sep-2013~22:38 BEST: clock
+Wed,11-Sep-2013~22:38 KEYWORDS: ['time']
+Wed,11-Sep-2013~22:38 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Wed,11-Sep-2013~22:38 KIND: INT
+Wed,11-Sep-2013~22:38 ACTIONS: {'weather': 1}
+Wed,11-Sep-2013~22:38 WEIGHTS: {1: ['weather']}
+Wed,11-Sep-2013~22:38 BEST: weather
+Wed,11-Sep-2013~22:38 KEYWORDS: []
+Wed,11-Sep-2013~22:38 TODAY: 2
+Wed,11-Sep-2013~22:38 DAY: 0
+Wed,11-Sep-2013~22:38 WEATHER_RAW: ['<yweather:condition  text="Unknown"  code="3200"  temp="13"  date="Wed, 11 Sep 2013 9:59 pm NZST" />\n', '<yweather:forecast day="Wed" date="11 Sep 2013" low="9" high="18" text="Showers/Wind Early" code="45" />\n', '<yweather:forecast day="Thu" date="12 Sep 2013" low="3" high="14" text="Sunny/Wind" code="24" />\n', '<yweather:forecast day="Fri" date="13 Sep 2013" low="3" high="14" text="Sunny" code="32" />\n', '<yweather:forecast day="Sat" date="14 Sep 2013" low="3" high="12" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Sun" date="15 Sep 2013" low="1" high="12" text="Partly Cloudy" code="30" />\n']
+Wed,11-Sep-2013~22:38 ITEMS: ['text', 'Unknown', 'code', '3200', 'temp', '13', 'date', 'Wed, 11 Sep 2013 9:59 pm NZST']
+Wed,11-Sep-2013~22:38 ITEMS: ['day', 'Wed', 'date', '11 Sep 2013', 'low', '9', 'high', '18', 'text', 'Showers/Wind Early', 'code', '45']
+Wed,11-Sep-2013~22:44 SENTENCE: [('You', 'PS'), ('switch', 'VB'), ('verbosity', 'NO'), ('off', 'PP')]
+Wed,11-Sep-2013~22:44 KIND: IMP
+Wed,11-Sep-2013~22:44 ACTIONS: {'settings': 2}
+Wed,11-Sep-2013~22:44 WEIGHTS: {2: ['settings']}
+Wed,11-Sep-2013~22:44 BEST: settings
+Wed,11-Sep-2013~22:44 KEYWORDS: [('verbosity', 2), ('off', 3)]
+Wed,11-Sep-2013~22:44 SETTING:     "VERBOSE": False,
+
+Wed,11-Sep-2013~22:44     VERBOSE
+Wed,11-Sep-2013~22:44 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Wed,11-Sep-2013~22:44 KIND: IMP
+Wed,11-Sep-2013~22:44 ACTIONS: {'loader': 1}
+Wed,11-Sep-2013~22:44 WEIGHTS: {1: ['loader']}
+Wed,11-Sep-2013~22:44 BEST: loader
+Wed,11-Sep-2013~22:44 Successfully imported Modules.clock
+Wed,11-Sep-2013~22:44 Successfully imported Modules.discover
+Wed,11-Sep-2013~22:44 Successfully imported Modules.finder
+Wed,11-Sep-2013~22:44 Successfully imported Modules.loader
+Wed,11-Sep-2013~22:44 Successfully imported Modules.media
+Wed,11-Sep-2013~22:44 Successfully imported Modules.settings
+Wed,11-Sep-2013~22:44 Successfully imported Modules.weather
+Wed,11-Sep-2013~22:44 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~22:48 SENTENCE: [('You', 'PS'), ('turn', 'VB'), ('on', 'PP'), ('verbosity', 'NO')]
+Wed,11-Sep-2013~22:48 KIND: IMP
+Wed,11-Sep-2013~22:48 ACTIONS: {'settings': 2}
+Wed,11-Sep-2013~22:48 WEIGHTS: {2: ['settings']}
+Wed,11-Sep-2013~22:48 BEST: settings
+Wed,11-Sep-2013~22:48 KEYWORDS: [('verbosity', 3), ('on', 2)]
+Wed,11-Sep-2013~22:48 SETTING:     "VERBOSE": True,
+
+Wed,11-Sep-2013~22:48     VERBOSE
+Wed,11-Sep-2013~22:48 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Wed,11-Sep-2013~22:48 KIND: IMP
+Wed,11-Sep-2013~22:48 ACTIONS: {'loader': 1}
+Wed,11-Sep-2013~22:48 WEIGHTS: {1: ['loader']}
+Wed,11-Sep-2013~22:48 BEST: loader
+Wed,11-Sep-2013~22:48 Successfully imported Modules.clock
+Wed,11-Sep-2013~22:48 Successfully imported Modules.discover
+Wed,11-Sep-2013~22:48 Successfully imported Modules.finder
+Wed,11-Sep-2013~22:48 Successfully imported Modules.loader
+Wed,11-Sep-2013~22:48 Successfully imported Modules.media
+Wed,11-Sep-2013~22:48 Successfully imported Modules.settings
+Wed,11-Sep-2013~22:48 Successfully imported Modules.weather
+Wed,11-Sep-2013~22:48 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~22:48 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Wed,11-Sep-2013~22:48 KIND: INT
+Wed,11-Sep-2013~22:48 ACTIONS: {'clock': 1}
+Wed,11-Sep-2013~22:48 WEIGHTS: {1: ['clock']}
+Wed,11-Sep-2013~22:48 BEST: clock
+Wed,11-Sep-2013~22:48 [('time', 1)] [('time', 1)]
+Wed,11-Sep-2013~22:48 KEYWORDS: ['time']
+Wed,11-Sep-2013~22:49 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('goed', 'PP'), ('to', 'PP'), ('do', '??'), ('tomorrow', 'NO')]
+Wed,11-Sep-2013~22:49 KIND: INT
+Wed,11-Sep-2013~22:49 ACTIONS: {'weather': 2}
+Wed,11-Sep-2013~22:49 WEIGHTS: {2: ['weather']}
+Wed,11-Sep-2013~22:49 BEST: weather
+Wed,11-Sep-2013~22:49 [('tomorrow', 7), ('do', 6)] [('tomorrow', 7), ('do', 6)]
+Wed,11-Sep-2013~22:49 KEYWORDS: [('do', 6), ('tomorrow', 7)]
+Wed,11-Sep-2013~22:49 TODAY: 2
+Wed,11-Sep-2013~22:49 DAY: 0
+Wed,11-Sep-2013~22:49 WEATHER_RAW: ['<yweather:condition  text="Unknown"  code="3200"  temp="13"  date="Wed, 11 Sep 2013 9:59 pm NZST" />\n', '<yweather:forecast day="Wed" date="11 Sep 2013" low="9" high="18" text="Showers/Wind Early" code="45" />\n', '<yweather:forecast day="Thu" date="12 Sep 2013" low="3" high="14" text="Sunny/Wind" code="24" />\n', '<yweather:forecast day="Fri" date="13 Sep 2013" low="3" high="14" text="Sunny" code="32" />\n', '<yweather:forecast day="Sat" date="14 Sep 2013" low="3" high="12" text="Mostly Sunny" code="34" />\n', '<yweather:forecast day="Sun" date="15 Sep 2013" low="1" high="12" text="Partly Cloudy" code="30" />\n']
+Wed,11-Sep-2013~22:49 ITEMS: ['text', 'Unknown', 'code', '3200', 'temp', '13', 'date', 'Wed, 11 Sep 2013 9:59 pm NZST']
+Wed,11-Sep-2013~22:49 ITEMS: ['day', 'Wed', 'date', '11 Sep 2013', 'low', '9', 'high', '18', 'text', 'Showers/Wind Early', 'code', '45']
+Wed,11-Sep-2013~22:49 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('me', 'PO'), ('the', 'AR'), ('film', 'NO'), ('called', 'PP'), ('tangled', '??')]
+Wed,11-Sep-2013~22:49 KIND: IMP
+Wed,11-Sep-2013~22:49 ACTIONS: {'wikipedia': 1, 'finder': 2}
+Wed,11-Sep-2013~22:49 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Wed,11-Sep-2013~22:49 BEST: finder
+Wed,11-Sep-2013~22:49 [('tangled', 6)] [('tangled', 6)]
+Wed,11-Sep-2013~22:49 KEYWORDS: [('tangled', 6)]
+Wed,11-Sep-2013~22:49 PARAMETERS: tangled kind:movie
+Wed,11-Sep-2013~22:49 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "tangled kind:movie"
+Wed,11-Sep-2013~22:49 RESULTS FIRST 5: ['/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v']
+Wed,11-Sep-2013~22:50 Successfully imported Modules.clock
+Wed,11-Sep-2013~22:50 Successfully imported Modules.discover
+Wed,11-Sep-2013~22:50 Successfully imported Modules.finder
+Wed,11-Sep-2013~22:50 Successfully imported Modules.loader
+Wed,11-Sep-2013~22:50 Successfully imported Modules.media
+Wed,11-Sep-2013~22:50 Successfully imported Modules.settings
+Wed,11-Sep-2013~22:50 Successfully imported Modules.weather
+Wed,11-Sep-2013~22:50 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~22:50 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??')]
+Wed,11-Sep-2013~22:50 KIND: IMP
+Wed,11-Sep-2013~22:50 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Wed,11-Sep-2013~22:50 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Wed,11-Sep-2013~22:50 BEST: finder
+Wed,11-Sep-2013~22:50 [('tangled', 4)] [('tangled', 4)]
+Wed,11-Sep-2013~22:50 KEYWORDS: [('tangled', 4)]
+Wed,11-Sep-2013~22:50 PARAMETERS: tangled kind:movie 
+Wed,11-Sep-2013~22:50 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "tangled kind:movie "
+Wed,11-Sep-2013~22:50 RESULTS FIRST 5: ['/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v']
+Wed,11-Sep-2013~22:50 Successfully imported Modules.clock
+Wed,11-Sep-2013~22:50 Successfully imported Modules.discover
+Wed,11-Sep-2013~22:50 Successfully imported Modules.finder
+Wed,11-Sep-2013~22:50 Successfully imported Modules.loader
+Wed,11-Sep-2013~22:50 Successfully imported Modules.media
+Wed,11-Sep-2013~22:50 Successfully imported Modules.settings
+Wed,11-Sep-2013~22:50 Successfully imported Modules.weather
+Wed,11-Sep-2013~22:50 Successfully imported Modules.wikipedia
+Wed,11-Sep-2013~22:50 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??')]
+Wed,11-Sep-2013~22:50 KIND: IMP
+Wed,11-Sep-2013~22:50 ACTIONS: {'finder': 2, 'wikipedia': 1}
+Wed,11-Sep-2013~22:50 WEIGHTS: {1: ['wikipedia'], 2: ['finder']}
+Wed,11-Sep-2013~22:50 BEST: finder
+Wed,11-Sep-2013~22:50 [('tangled', 4)] [('tangled', 4)]
+Wed,11-Sep-2013~22:50 KEYWORDS: [('tangled', 4)]
+Wed,11-Sep-2013~22:50 PARAMETERS: tangled kind:movie 
+Wed,11-Sep-2013~22:50 COMMAND: mdfind -onlyin /Users/aaronstockdill/ "tangled kind:movie "
+Wed,11-Sep-2013~22:50 RESULTS FIRST 5: ['/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v']
+Wed,11-Sep-2013~22:50 ORDINALS: ['first']
+Wed,11-Sep-2013~22:50 CHOICE: 1
+Wed,11-Sep-2013~22:50 DECISION: /Users/aaronstockdill/Movies/Tangled.m4v
+Wed,11-Sep-2013~22:50 IT: /Users/aaronstockdill/Movies/Tangled.m4v
+Wed,11-Sep-2013~22:50 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Wed,11-Sep-2013~22:50 KIND: IMP
+Wed,11-Sep-2013~22:50 ACTIONS: {'finder': 1}
+Wed,11-Sep-2013~22:50 WEIGHTS: {1: ['finder']}
+Wed,11-Sep-2013~22:50 BEST: finder
+Wed,11-Sep-2013~22:50 IT: /Users/aaronstockdill/Movies/Tangled.m4v
+Wed,11-Sep-2013~22:51 SENTENCE: [('google', '??'), ('it', 'PO')]
+Wed,11-Sep-2013~22:51 KIND: DEC

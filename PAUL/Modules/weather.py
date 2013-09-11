@@ -113,7 +113,7 @@ def weather(day_index=0):
     
         rep = ("It will have a low of "
                "{}°{}, a high of {}°{}, and will be {}.".format(
-               items[5], user_info.info['temp'], items[7],
+               items[5], paul.user_info.info['temp'], items[7],
                paul.user_info.info['temp'], items[9].lower()))
         return rep
 
