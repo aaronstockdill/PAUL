@@ -38,7 +38,7 @@ def commands(sentence, recommended=None):
         paul.log("BEST: " + str(best))
         return paul.vocab.word_actions[best](sentence)
     else:
-        return paul.discover.process(sentence)
+        return Modules.discover.process(sentence)
 
 
 

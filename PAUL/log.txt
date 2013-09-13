@@ -1,0 +1,29 @@
+Fri,13-Sep-2013~12:13 Successfully imported Modules.clock
+Fri,13-Sep-2013~12:13 Successfully imported Modules.discover
+Fri,13-Sep-2013~12:13 Successfully imported Modules.finder
+Fri,13-Sep-2013~12:13 Successfully imported Modules.loader
+Fri,13-Sep-2013~12:13 Successfully imported Modules.media
+Fri,13-Sep-2013~12:13 Successfully imported Modules.settings
+Fri,13-Sep-2013~12:13 Successfully imported Modules.weather
+Fri,13-Sep-2013~12:13 Successfully imported Modules.wikipedia
+Fri,13-Sep-2013~12:14 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Fri,13-Sep-2013~12:14 KIND: INT
+Fri,13-Sep-2013~12:14 ACTIONS: {'clock': 1}
+Fri,13-Sep-2013~12:14 WEIGHTS: {1: ['clock']}
+Fri,13-Sep-2013~12:14 BEST: clock
+Fri,13-Sep-2013~12:14 KEYWORDS: ['time']
+Fri,13-Sep-2013~12:18 Successfully imported Modules.clock
+Fri,13-Sep-2013~12:18 Successfully imported Modules.discover
+Fri,13-Sep-2013~12:18 Successfully imported Modules.finder
+Fri,13-Sep-2013~12:18 Successfully imported Modules.loader
+Fri,13-Sep-2013~12:18 Successfully imported Modules.media
+Fri,13-Sep-2013~12:18 Successfully imported Modules.settings
+Fri,13-Sep-2013~12:18 Successfully imported Modules.weather
+Fri,13-Sep-2013~12:18 Successfully imported Modules.wikipedia
+Fri,13-Sep-2013~12:18 SENTENCE: [('asdfd', '??')]
+Fri,13-Sep-2013~12:18 KIND: DEC
+Fri,13-Sep-2013~12:18 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('fghjk', '??')]
+Fri,13-Sep-2013~12:18 KIND: INT
+Fri,13-Sep-2013~12:18 ACTIONS: {}
+Fri,13-Sep-2013~12:18 WEIGHTS: {}
+Fri,13-Sep-2013~12:18 URL: http://www.google.com/search?q=what+is+fghjk

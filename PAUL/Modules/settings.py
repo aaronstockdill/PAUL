@@ -28,6 +28,8 @@ def process(sentence):
     elif (paul.has_word(keywords, "verbose") 
       or paul.has_word(keywords, "verbosity")):
         key = "VERBOSE"
+    elif (paul.has_word(keywords, "logging")):
+        key  = "LOGGING"
     else:
         paul.log("FOUND NEITHER FLAG")
         return "I'm not sure what you wanted we to set."
@@ -73,6 +75,7 @@ def main():
         "talk": ("settings", "noun"),
         "talking": ("settings", "noun"),
         "settings": ("settings", "noun"),
+        "logging": ("settings", "noun"),
     }
     
     paul.associate(words)

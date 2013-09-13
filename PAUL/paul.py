@@ -18,12 +18,22 @@ import user_info
 def log(*to_log):
     ''' Log some info to log.txt, and print it on the screen if
         VERBOSE is True '''
-    
-    log_string = ' '.join([str(log) for log in to_log])
-    log_file = open("log.txt", 'a')
-    time_str = time.strftime("%a,%d-%b-%Y~%H:%M ")
-    log_file.write(time_str + log_string + "\n")
-    log_file.close()
+    if user_info.flags["LOGGING"]:
+        log_string = ' '.join([str(log) for log in to_log])
+        log_file = open("./PAUL/log.txt", 'r')
+        lines = log_file.readlines()
+        log_file.close()
+        max_len = user_info.flags["MAX_LOG_SIZE"]
+        time_str = time.strftime("%a,%d-%b-%Y~%H:%M ")
+        lines.append(time_str + log_string + "\n")
+        if len(lines) < max_len:
+            log_file = open("./PAUL/log.txt", 'a')
+            log_file.write(lines[-1])
+            log_file.close()
+        else:
+            log_file = open("./PAUL/log.txt", 'w')
+            log_file.write("".join(lines[1:]))
+            log_file.close()
     if user_info.flags["VERBOSE"]: print(log_string)
 
 
