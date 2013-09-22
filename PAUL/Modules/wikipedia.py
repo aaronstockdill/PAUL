@@ -42,7 +42,10 @@ def findIt(what, sentence):
         paul.user_info.info['it'] = url
         return stripIt(''.join(page[index1])) + "\n\n" + url
     except urllib.error.HTTPError:
-        return brain2.forward(sentence, "wolfram")
+        if sentence.forward("discover"):
+            return "I'll try something else, just a moment..."
+        else:
+            return "I found nothing!"
     except urllib.error.URLError:
         return "I couldn't complete the research for some reason!"
 

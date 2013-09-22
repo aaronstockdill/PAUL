@@ -24,11 +24,22 @@ def process(sentence):
     ''' Process the sentence, and go to wolfram Alpha '''
     sentence.replace_it()
     
-    query = "+".join([word for word in sentence.sentence_string.split(' ')
-                      if word not in VERBS])
-    url = ("http://www.google.com/search?q={}".format(query))
-    #url = ("open http://www.google.com/search?q=" 
-    #      + quote(query).replace("%2B", "+") + "&btnI")
+    engines = {
+        "google": "http://www.google.com/search?q={}",
+        "bing": "http://www.bing.com/search?q={}",
+        "yahoo": "http://search.yahoo.com/search?p={}",
+        "duckduckgo": "https://duckduckgo.com/?q={}",
+        "baidu": "http://www.baidu.com/s?wd={}",
+    }
+    
+    keywords = sentence.keywords()
+    paul.log("KEYWORDS:", keywords)
+    
+    query = "+".join([word for word, _ in keywords
+                      if word not in VERBS+NOUNS])
+    engine = paul.user_info.info["search_engine"].lower()
+    url = (engines[engine].format(query))
+    
     paul.log("URL: " + url)
     os.system("open " + url)
     return "Let me find out for you..."

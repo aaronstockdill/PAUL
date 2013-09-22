@@ -26,4 +26,224 @@ Fri,13-Sep-2013~12:18 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('fghjk', '??')]
 Fri,13-Sep-2013~12:18 KIND: INT
 Fri,13-Sep-2013~12:18 ACTIONS: {}
 Fri,13-Sep-2013~12:18 WEIGHTS: {}
-Fri,13-Sep-2013~12:18 URL: http://www.google.com/search?q=what+is+fghjk
+Fri,13-Sep-2013~12:18 URL: http://www.google.com/search?q=what+is+fghjy
+Sun,15-Sep-2013~15:47 Successfully imported Modules.clock
+Sun,15-Sep-2013~15:47 Successfully imported Modules.discover
+Sun,15-Sep-2013~15:47 Successfully imported Modules.finder
+Sun,15-Sep-2013~15:47 Successfully imported Modules.loader
+Sun,15-Sep-2013~15:47 Successfully imported Modules.media
+Sun,15-Sep-2013~15:47 Successfully imported Modules.settings
+Sun,15-Sep-2013~15:47 Successfully imported Modules.weather
+Sun,15-Sep-2013~15:47 Successfully imported Modules.wikipedia
+Sat,21-Sep-2013~12:02 Successfully imported Modules.clock
+Sat,21-Sep-2013~12:02 Successfully imported Modules.discover
+Sat,21-Sep-2013~12:02 Successfully imported Modules.finder
+Sat,21-Sep-2013~12:02 Successfully imported Modules.loader
+Sat,21-Sep-2013~12:02 Successfully imported Modules.media
+Sat,21-Sep-2013~12:02 Successfully imported Modules.settings
+Sat,21-Sep-2013~12:02 Successfully imported Modules.weather
+Sat,21-Sep-2013~12:02 Successfully imported Modules.wikipedia
+Sat,21-Sep-2013~12:02 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sat,21-Sep-2013~12:02 KIND: INT
+Sat,21-Sep-2013~12:02 ACTIONS: {'clock': 1}
+Sat,21-Sep-2013~12:02 WEIGHTS: {1: ['clock']}
+Sat,21-Sep-2013~12:02 BEST: clock
+Sat,21-Sep-2013~12:02 KEYWORDS: ['time']
+Sat,21-Sep-2013~12:02 SENTENCE: [('You', 'PS'), ('turn', 'VB'), ('of', 'PP'), ('verbosity', 'NO')]
+Sat,21-Sep-2013~12:02 KIND: IMP
+Sat,21-Sep-2013~12:02 ACTIONS: {'settings': 2}
+Sat,21-Sep-2013~12:02 WEIGHTS: {2: ['settings']}
+Sat,21-Sep-2013~12:02 BEST: settings
+Sat,21-Sep-2013~12:02 KEYWORDS: [('verbosity', 3), ('of', 2)]
+Sat,21-Sep-2013~12:02 FOUND NEITHER ON NOR OFF
+Sat,21-Sep-2013~12:02 SENTENCE: [('You', 'PS'), ('turn', 'VB'), ('off', 'PP'), ('verbosity', 'NO')]
+Sat,21-Sep-2013~12:02 KIND: IMP
+Sat,21-Sep-2013~12:02 ACTIONS: {'settings': 2}
+Sat,21-Sep-2013~12:02 WEIGHTS: {2: ['settings']}
+Sat,21-Sep-2013~12:02 BEST: settings
+Sat,21-Sep-2013~12:02 KEYWORDS: [('verbosity', 3), ('off', 2)]
+Sat,21-Sep-2013~12:02 SETTING:     "VERBOSE": False,
+
+Sat,21-Sep-2013~12:02     VERBOSE
+Sat,21-Sep-2013~12:02 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,21-Sep-2013~12:02 KIND: IMP
+Sat,21-Sep-2013~12:02 ACTIONS: {'loader': 1}
+Sat,21-Sep-2013~12:02 WEIGHTS: {1: ['loader']}
+Sat,21-Sep-2013~12:02 BEST: loader
+Sat,21-Sep-2013~12:02 Successfully imported Modules.clock
+Sat,21-Sep-2013~12:02 Successfully imported Modules.discover
+Sat,21-Sep-2013~12:02 Successfully imported Modules.finder
+Sat,21-Sep-2013~12:02 Successfully imported Modules.loader
+Sat,21-Sep-2013~12:02 Successfully imported Modules.media
+Sat,21-Sep-2013~12:02 Successfully imported Modules.settings
+Sat,21-Sep-2013~12:02 Successfully imported Modules.weather
+Sat,21-Sep-2013~12:02 Successfully imported Modules.wikipedia
+Sat,21-Sep-2013~12:02 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sat,21-Sep-2013~12:02 KIND: INT
+Sat,21-Sep-2013~12:02 ACTIONS: {'clock': 1}
+Sat,21-Sep-2013~12:02 WEIGHTS: {1: ['clock']}
+Sat,21-Sep-2013~12:02 BEST: clock
+Sat,21-Sep-2013~12:02 KEYWORDS: ['time']
+Sat,21-Sep-2013~12:02 SENTENCE: [('how', 'WH'), ('be', 'VB'), ('you', 'PO')]
+Sat,21-Sep-2013~12:02 KIND: INT
+Sat,21-Sep-2013~12:02 ACTIONS: {}
+Sat,21-Sep-2013~12:02 WEIGHTS: {}
+Sat,21-Sep-2013~12:02 URL: http://www.google.com/search?q=how+are+you
+Sat,21-Sep-2013~12:05 SENTENCE: [('how', 'WH'), ('be', 'VB'), ('you', 'PO')]
+Sat,21-Sep-2013~12:05 KIND: INT
+Sat,21-Sep-2013~12:05 ACTIONS: {}
+Sat,21-Sep-2013~12:05 WEIGHTS: {}
+Sat,21-Sep-2013~12:05 URL: http://www.google.com/search?q=how+are+you
+Sat,21-Sep-2013~14:17 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cold', 'NO'), ('outside', 'PP')]
+Sat,21-Sep-2013~14:17 KIND: IMP
+Sat,21-Sep-2013~14:17 ACTIONS: {'weather': 1}
+Sat,21-Sep-2013~14:17 WEIGHTS: {1: ['weather']}
+Sat,21-Sep-2013~14:17 BEST: weather
+Sat,21-Sep-2013~14:17 KEYWORDS: []
+Sat,21-Sep-2013~14:17 TODAY: 5
+Sat,21-Sep-2013~14:17 DAY: 0
+Sat,21-Sep-2013~14:17 WEATHER_RAW: ['<yweather:condition  text="Drizzle"  code="9"  temp="14"  date="Sat, 21 Sep 2013 10:58 am NZST" />\n', '<yweather:forecast day="Sat" date="21 Sep 2013" low="9" high="16" text="PM Showers" code="39" />\n', '<yweather:forecast day="Sun" date="22 Sep 2013" low="9" high="18" text="Rain" code="12" />\n', '<yweather:forecast day="Mon" date="23 Sep 2013" low="8" high="18" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Tue" date="24 Sep 2013" low="5" high="14" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Wed" date="25 Sep 2013" low="6" high="13" text="Partly Cloudy" code="30" />\n']
+Sat,21-Sep-2013~14:17 ITEMS: ['text', 'Drizzle', 'code', '9', 'temp', '14', 'date', 'Sat, 21 Sep 2013 10:58 am NZST']
+Sat,21-Sep-2013~14:17 ITEMS: ['day', 'Sat', 'date', '21 Sep 2013', 'low', '9', 'high', '16', 'text', 'PM Showers', 'code', '39']
+Sat,21-Sep-2013~14:21 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('bbc', '??'), ('knowledge', '??')]
+Sat,21-Sep-2013~14:21 KIND: IMP
+Sat,21-Sep-2013~14:21 ACTIONS: {'wikipedia': 2}
+Sat,21-Sep-2013~14:21 WEIGHTS: {2: ['wikipedia']}
+Sat,21-Sep-2013~14:21 BEST: wikipedia
+Sat,21-Sep-2013~14:21 KEYWORDS: [('bbc knowledge', 4)]
+Sat,21-Sep-2013~14:21 URL ATTEMPT: http://en.wikipedia.org/wiki/bbc_knowledge
+Sat,21-Sep-2013~14:30 Successfully imported Modules.clock
+Sat,21-Sep-2013~14:30 Successfully imported Modules.discover
+Sat,21-Sep-2013~14:30 Successfully imported Modules.finder
+Sat,21-Sep-2013~14:30 Successfully imported Modules.loader
+Sat,21-Sep-2013~14:30 Successfully imported Modules.media
+Sat,21-Sep-2013~14:30 Successfully imported Modules.settings
+Sat,21-Sep-2013~14:30 Successfully imported Modules.weather
+Sat,21-Sep-2013~14:30 Successfully imported Modules.wikipedia
+Sat,21-Sep-2013~14:30 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('bbc', '??'), ('knowledge', '??')]
+Sat,21-Sep-2013~14:30 KIND: IMP
+Sat,21-Sep-2013~14:30 ACTIONS: {'wikipedia': 2}
+Sat,21-Sep-2013~14:30 WEIGHTS: {2: ['wikipedia']}
+Sat,21-Sep-2013~14:30 BEST: wikipedia
+Sat,21-Sep-2013~14:30 KEYWORDS: [('bbc knowledge', 4)]
+Sat,21-Sep-2013~14:30 URL ATTEMPT: http://en.wikipedia.org/wiki/bbc_knowledge
+Sat,21-Sep-2013~14:30 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('bbc', '??'), ('knowledge', '??')]
+Sat,21-Sep-2013~14:30 KIND: IMP
+Sat,21-Sep-2013~14:30 ACTIONS: {'wikipedia': 2}
+Sat,21-Sep-2013~14:30 WEIGHTS: {2: ['wikipedia']}
+Sat,21-Sep-2013~14:30 BEST: wikipedia
+Sat,21-Sep-2013~14:30 KEYWORDS: [('bbc knowledge', 4)]
+Sat,21-Sep-2013~14:30 URL ATTEMPT: http://en.wikipedia.org/wiki/bbc_knowledge
+Sat,21-Sep-2013~14:30 URL: http://www.google.com/search?q=tell+me+about+bbc+knowledge
+Sat,21-Sep-2013~14:32 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,21-Sep-2013~14:32 KIND: IMP
+Sat,21-Sep-2013~14:32 ACTIONS: {'loader': 1}
+Sat,21-Sep-2013~14:32 WEIGHTS: {1: ['loader']}
+Sat,21-Sep-2013~14:32 BEST: loader
+Sat,21-Sep-2013~14:32 Successfully imported Modules.clock
+Sat,21-Sep-2013~14:32 Successfully imported Modules.discover
+Sat,21-Sep-2013~14:32 Successfully imported Modules.finder
+Sat,21-Sep-2013~14:32 Successfully imported Modules.loader
+Sat,21-Sep-2013~14:32 Successfully imported Modules.media
+Sat,21-Sep-2013~14:32 Successfully imported Modules.settings
+Sat,21-Sep-2013~14:32 Successfully imported Modules.weather
+Sat,21-Sep-2013~14:32 Successfully imported Modules.wikipedia
+Sat,21-Sep-2013~14:32 SENTENCE: [('You', 'PS'), ('google', 'VB'), ('potatos', '??')]
+Sat,21-Sep-2013~14:32 KIND: IMP
+Sat,21-Sep-2013~14:32 ACTIONS: {'discover': 1}
+Sat,21-Sep-2013~14:32 WEIGHTS: {1: ['discover']}
+Sat,21-Sep-2013~14:32 BEST: discover
+Sat,21-Sep-2013~14:32 KEYWORDS: [('potatos', 2)]
+Sat,21-Sep-2013~14:32 URL: http://www.google.com/search?q=potatos
+Sat,21-Sep-2013~14:33 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('bbc', '??'), ('knowledge', '??')]
+Sat,21-Sep-2013~14:33 KIND: IMP
+Sat,21-Sep-2013~14:33 ACTIONS: {'wikipedia': 2}
+Sat,21-Sep-2013~14:33 WEIGHTS: {2: ['wikipedia']}
+Sat,21-Sep-2013~14:33 BEST: wikipedia
+Sat,21-Sep-2013~14:33 KEYWORDS: [('bbc knowledge', 4)]
+Sat,21-Sep-2013~14:33 URL ATTEMPT: http://en.wikipedia.org/wiki/bbc_knowledge
+Sat,21-Sep-2013~14:33 KEYWORDS: Short-circuit successful.
+Sat,21-Sep-2013~14:33 KEYWORDS: [('bbc knowledge', 4)]
+Sat,21-Sep-2013~14:33 URL: http://www.google.com/search?q=tell+me+about+bbc+knowledge
+Sat,21-Sep-2013~14:34 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,21-Sep-2013~14:34 KIND: IMP
+Sat,21-Sep-2013~14:34 ACTIONS: {'loader': 1}
+Sat,21-Sep-2013~14:34 WEIGHTS: {1: ['loader']}
+Sat,21-Sep-2013~14:34 BEST: loader
+Sat,21-Sep-2013~14:34 Successfully imported Modules.clock
+Sat,21-Sep-2013~14:34 Successfully imported Modules.discover
+Sat,21-Sep-2013~14:34 Successfully imported Modules.finder
+Sat,21-Sep-2013~14:34 Successfully imported Modules.loader
+Sat,21-Sep-2013~14:34 Successfully imported Modules.media
+Sat,21-Sep-2013~14:34 Successfully imported Modules.settings
+Sat,21-Sep-2013~14:34 Successfully imported Modules.weather
+Sat,21-Sep-2013~14:34 Successfully imported Modules.wikipedia
+Sat,21-Sep-2013~14:54 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,21-Sep-2013~14:54 KIND: IMP
+Sat,21-Sep-2013~14:54 ACTIONS: {'loader': 1}
+Sat,21-Sep-2013~14:54 WEIGHTS: {1: ['loader']}
+Sat,21-Sep-2013~14:54 BEST: loader
+Sat,21-Sep-2013~14:54 Successfully imported Modules.clock
+Sat,21-Sep-2013~14:54 Successfully imported Modules.discover
+Sat,21-Sep-2013~14:54 Successfully imported Modules.finder
+Sat,21-Sep-2013~14:54 Successfully imported Modules.loader
+Sat,21-Sep-2013~14:54 Successfully imported Modules.media
+Sat,21-Sep-2013~14:54 Successfully imported Modules.settings
+Sat,21-Sep-2013~14:54 Successfully imported Modules.weather
+Sat,21-Sep-2013~14:54 Successfully imported Modules.wikipedia
+Sat,21-Sep-2013~14:55 SENTENCE: [('You', 'PS'), ('search', 'VB'), ('for', 'PP'), ('antelopes', '??')]
+Sat,21-Sep-2013~14:55 KIND: IMP
+Sat,21-Sep-2013~14:55 ACTIONS: {'discover': 1, 'wikipedia': 1}
+Sat,21-Sep-2013~14:55 WEIGHTS: {1: ['discover', 'wikipedia']}
+Sat,21-Sep-2013~14:55 BEST: discover
+Sat,21-Sep-2013~14:55 KEYWORDS: [('antelopes', 3)]
+Sat,21-Sep-2013~14:55 Successfully imported Modules.clock
+Sat,21-Sep-2013~14:55 Successfully imported Modules.discover
+Sat,21-Sep-2013~14:55 Successfully imported Modules.finder
+Sat,21-Sep-2013~14:55 Successfully imported Modules.loader
+Sat,21-Sep-2013~14:55 Successfully imported Modules.media
+Sat,21-Sep-2013~14:55 Successfully imported Modules.settings
+Sat,21-Sep-2013~14:55 Successfully imported Modules.weather
+Sat,21-Sep-2013~14:55 Successfully imported Modules.wikipedia
+Sat,21-Sep-2013~14:55 SENTENCE: [('You', 'PS'), ('search', 'VB'), ('for', 'PP'), ('antelope', '??')]
+Sat,21-Sep-2013~14:55 KIND: IMP
+Sat,21-Sep-2013~14:55 ACTIONS: {'discover': 1, 'wikipedia': 1}
+Sat,21-Sep-2013~14:55 WEIGHTS: {1: ['discover', 'wikipedia']}
+Sat,21-Sep-2013~14:55 BEST: discover
+Sat,21-Sep-2013~14:55 KEYWORDS: [('antelope', 3)]
+Sat,21-Sep-2013~14:55 URL: https://duckduckgo.com/?q=antelope
+Sat,21-Sep-2013~18:15 SENTENCE: [('You', 'PS'), ('turn', 'VB'), ('on', 'PP'), ('verbosity', 'NO')]
+Sat,21-Sep-2013~18:15 KIND: IMP
+Sat,21-Sep-2013~18:15 ACTIONS: {'settings': 2}
+Sat,21-Sep-2013~18:15 WEIGHTS: {2: ['settings']}
+Sat,21-Sep-2013~18:15 BEST: settings
+Sat,21-Sep-2013~18:15 KEYWORDS: [('verbosity', 3), ('on', 2)]
+Sat,21-Sep-2013~18:15 SETTING:     "VERBOSE": True,
+
+Sat,21-Sep-2013~18:15     VERBOSE
+Sat,21-Sep-2013~18:25 Successfully imported Modules.clock
+Sat,21-Sep-2013~18:25 Successfully imported Modules.discover
+Sat,21-Sep-2013~18:25 Successfully imported Modules.finder
+Sat,21-Sep-2013~18:25 Successfully imported Modules.loader
+Sat,21-Sep-2013~18:25 Successfully imported Modules.media
+Sat,21-Sep-2013~18:25 Successfully imported Modules.settings
+Sat,21-Sep-2013~18:25 Successfully imported Modules.weather
+Sat,21-Sep-2013~18:25 Successfully imported Modules.wikipedia
+Sat,21-Sep-2013~18:35 Successfully imported Modules.clock
+Sat,21-Sep-2013~18:35 Successfully imported Modules.discover
+Sat,21-Sep-2013~18:35 Successfully imported Modules.finder
+Sat,21-Sep-2013~18:35 Successfully imported Modules.loader
+Sat,21-Sep-2013~18:35 Successfully imported Modules.media
+Sat,21-Sep-2013~18:35 Successfully imported Modules.settings
+Sat,21-Sep-2013~18:35 Successfully imported Modules.weather
+Sat,21-Sep-2013~18:35 Successfully imported Modules.wikipedia
+Sun,22-Sep-2013~13:03 Successfully imported Modules.clock
+Sun,22-Sep-2013~13:03 Successfully imported Modules.discover
+Sun,22-Sep-2013~13:03 Successfully imported Modules.finder
+Sun,22-Sep-2013~13:03 Successfully imported Modules.loader
+Sun,22-Sep-2013~13:03 Successfully imported Modules.media
+Sun,22-Sep-2013~13:03 Successfully imported Modules.settings
+Sun,22-Sep-2013~13:03 Successfully imported Modules.weather
+Sun,22-Sep-2013~13:03 Successfully imported Modules.wikipedia
+Sun,22-Sep-2013~13:03 SENTENCE: [('hello', '??')]
+Sun,22-Sep-2013~13:03 KIND: DEC

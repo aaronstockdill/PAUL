@@ -2,7 +2,10 @@
 paul.py
 Author: Aaron Stockdill
 
-The plan is for this to become the main API for building PAUL modules, rather than importing rather odd things like "brain2" or "user_info" for no apparent reason. Hopefully this will take care of that! It will also hopefully make development easier on my part by keeping everything in more logical places. 
+The plan is for this to become the main API for building PAUL modules, rather
+than importing rather odd things like "brain2" or "user_info" for no apparent
+reason. Hopefully this will take care of that! It will also hopefully make
+development easier on my part by keeping everything in more logical places.
 """
 
 import random
@@ -34,28 +37,29 @@ def log(*to_log):
             log_file = open("./PAUL/log.txt", 'w')
             log_file.write("".join(lines[1:]))
             log_file.close()
-    if user_info.flags["VERBOSE"]: print(log_string)
+    if user_info.flags["VERBOSE"]:
+        print(log_string)
 
 
 
 def update_words():
     """ Add all the new nouns and verbs from the modules """
-    
+
     for word, values in vocab.word_associations.items():
         for _, pos in values:
             if pos == "verb":
                 vocab.vocabulary.update({word: vocab.Verb(word),})
             elif pos == "noun":
                 vocab.vocabulary.update({word: vocab.Noun(word),})
-        
-    vocab.create_irregulars()   
+
+    vocab.create_irregulars()
     vocab.generate_transforms()
 
 
 
 def associate(words_dict):
     ''' Add this words_dict to the associations list '''
-    
+
     for word, info in words_dict.items():
         old = vocab.word_associations.get(word, [])
         vocab.word_associations[word] = old + [info]
@@ -64,18 +68,19 @@ def associate(words_dict):
 
 def interact(statement, response=None):
     """ Standard function for interacting with the user. Use this function,
-        not anything custom if possible. 'Response' can be 'list', 'y_n', 
+        not anything custom if possible. 'Response' can be 'list', 'y_n', 'arb'
         or None """
-    
+
     print(statement)
-    if user_info.flags["NOISY"]: os.system('say "{}"'.format(statement))
-    if user_info.flags["SERVER"] != False:
-        log("CONNECTION: " + repr(user_info.SERVER))
+    if user_info.flags["NOISY"]:
+        os.system('say "{}"'.format(statement))
+    if user_info.flags["SERVER"] != None:
+        log("CONNECTION: " + repr(user_info.flags['SERVER']))
         user_info.flags["SERVER"].send(bytes(statement + "{}".format(
                                         " " * (1024 - len(statement))),
                                         'utf-8'))
     if response:
-        if user_info.flags["SERVER"] == False:
+        if user_info.flags["SERVER"] == None:
             bringback = input("> ")
         else:
             user_info.flags["SERVER"].send(bytes("paul_done", "utf-8"))
@@ -95,7 +100,7 @@ def interact(statement, response=None):
         ordinal = bringback.get_part("OR")
         negatives = ['no', 'nope']
         positives = ['yes', 'yep', 'yeah']
-    
+
         if response == 'list':
             if ordinal:
                 log("ORDINALS: " + str(ordinal))
@@ -103,7 +108,7 @@ def interact(statement, response=None):
                 return int_version
             else:
                 return None
-                
+
         elif response == 'y_n':
             if bringback.lower() in negatives:
                 return False
@@ -112,12 +117,15 @@ def interact(statement, response=None):
             else:
                 return None
 
+        elif response == 'arb':
+            return bringback.lower()
+
     return statement
 
 
 
 def loading():
-    ''' Let the user know that Paul is working. Returns what was said 
+    ''' Let the user know that Paul is working. Returns what was said
         incase it matters. '''
     name = random.choice(['', ', {}'.format(user_info.info['name'])])
     acknowledgements = [
@@ -149,33 +157,33 @@ def acknowledge():
 
 
 
-def iterable(object):
-    ''' Determine if the object in question is iterable '''
-    return type(object) in [list, tuple, dict]
+def iterable(item):
+    ''' Determine if the item in question is iterable '''
+    return type(item) in [list, tuple, dict]
 
 
 
-def trim_word(list, word, toplevel=True):
-    ''' Remove the word from a list -- useful if you know the likes 
+def trim_word(wordlist, word, toplevel=True):
+    ''' Remove the word from a list -- useful if you know the likes
         of keywords will return a word you'd rather not get. '''
-    for item in list:
+    for item in wordlist:
         if not iterable(item):
             if item == word:
                 if toplevel:
-                    list.remove(item)
+                    wordlist.remove(item)
                 else:
                     return True
                 break
         else:
             remove = trim_word(item, word, toplevel=False)
             if remove:
-                list.remove(item)
+                wordlist.remove(item)
 
 
-def has_word(list, word):
-    ''' Find if the desired word is in the list, 
+def has_word(word_list, word):
+    ''' Find if the desired word is in the list,
         e.g. is 'cat' in the list 'keywords' '''
-    for item in list:
+    for item in word_list:
         if not iterable(item):
             if type(item) == str and word in item.split():
                 return True
@@ -188,14 +196,14 @@ def has_word(list, word):
 
 
 def join_lists(*lists):
-    ''' Joins the lists, but only if they exist. 
+    ''' Joins the lists, but only if they exist.
         If one of the values is none, it isn't added. '''
-        
+
     connected = []
-    for l in lists:
-        if l:
-            connected += l
-    
+    for item in lists:
+        if item:
+            connected += item
+
     return connected
 
 
@@ -203,61 +211,64 @@ def join_lists(*lists):
 class Sentence(object):
     ''' This is the sentence object to contain all the methods needed
         when working with them '''
-        
+
     def __init__(self, init_string):
         ''' Creates the sentence that is used for all the code, as well
             as some other variables.
-            
+
             >>> s = Sentence("This is a doctest.")
-            
+
             >>> s = Sentence(42)
             Traceback (most recent call last):
                 ...
             TypeError: init_string must be a string
         '''
-        
-        
+
+
         if type(init_string) != str:
             raise TypeError("init_string must be a string")
-        
+
         words = [self.clean(word) for word
                  in init_string.lower().split(' ')]
         self.sentence_string = " ".join(words)
         self.sentence = self.tag_sentence(words)
         self.kind = self.classify()
         self.keyword_list = None
-    
-    
+
+
     def __repr__(self):
-        ''' Reveal how the sentence is thought of in Python 
-            
+        ''' Reveal how the sentence is thought of in Python
+
             >>> Sentence("This is a doctest.")
             [('this', 'PS'), ('be', 'VB'), ('the', 'AR'), ('doctest', '??')]
         '''
         return str(self.sentence)
-    
-    
+
+
     def __str__(self):
         ''' A 'pretty' representation of the sentence.
-            
+
             >>> print(Sentence("This is a doctest."))
             this is a doctest
         '''
         return self.sentence_string
-    
-    
+
+
     def __iter__(self):
         return iter(self.sentence)
-        
 
-    def keywords(self, ignore=[], include=[]):
+
+    def keywords(self, ignore=None, include=None):
         ''' Join things not split by prepositions and stuff, as they probably
-            "belong" together. Ideal for getting keywords. If keywords have 
-            been found before, use them rather than trying to find them 
+            "belong" together. Ideal for getting keywords. If keywords have
+            been found before, use them rather than trying to find them
             again. This means if the function is called again and again but
-            is not stored in a variable, the performance hit is negligible. 
+            is not stored in a variable, the performance hit is negligible.
         '''
-        
+
+        if ignore is None:
+            ignore = []
+
         if self.keyword_list is not None:
             log("KEYWORDS: Short-circuit successful.")
             return self.keyword_list
@@ -265,8 +276,8 @@ class Sentence(object):
             objects = self.get_part("NO", indexes=True)
             names = self.get_part("XO", indexes=True)
             keywords = self.get_part("??", indexes=True)
-            
-            if include != []:
+
+            if include is not None:
                 other = []
                 for key in include:
                     part = self.get_part(key, indexes=True)
@@ -274,38 +285,25 @@ class Sentence(object):
                         other = other + part
             else:
                 other = None
-                
-            all_together = join_lists(objects, names, keywords, other)
-            
-            new_items = [(i, j) for i, j in all_together
-                         if i not in ignore]
-    
+
+            new_items = [(i, j) for i, j in join_lists(objects,
+                                                       names,
+                                                       keywords,
+                                                       other)
+                        if i not in ignore]
+
             item_list = []
             iterhelper = lambda i: i[0]-i[1][1]
-            for k, g in itertools.groupby(enumerate(new_items), iterhelper):
-                final_items = (list(map(operator.itemgetter(1), g)))
+            for _, item in itertools.groupby(enumerate(new_items), iterhelper):
+                final_items = (list(map(operator.itemgetter(1), item)))
                 ind = final_items[0][1]
                 final_items = ' '.join([item[0] for item in final_items])
                 item_list.append((final_items, ind))
-            
-            self.keyword_list = sorted(item_list, 
+
+            self.keyword_list = sorted(item_list,
                                        key=operator.itemgetter(1))
             return self.keyword_list
-    
-    
-    def group_together(self):
-        log("WARNING: use of 'group_together' is deprecated."
-            " Use 'keywords' instead.")
-        return self.keywords()
 
-
-    def log_unknown(self, word, options):
-        ''' Log the unknown words that we come across,
-            and what we think it is '''
-    
-        file = open("Unknown_words.csv", "a")
-        file.write("'{}': {}\n".format(word, options))
-        file.close
 
 
     def get_part(self, part, indexes=False, prepositions=False):
@@ -313,7 +311,7 @@ class Sentence(object):
             Set indexes if you want the index of the word in the sentence,
             and prepositions if prepositions can be included in the sentence
         '''
-        
+
         if part == "NO" or part == "XO":
             if prepositions:
                 part = [part, "PO"]
@@ -326,11 +324,11 @@ class Sentence(object):
                 part = [part]
         else:
             part = [part]
-    
+
         if not indexes:
             parts = [word[0] for word in self.sentence if word[1] in part]
         else:
-            parts = [(word[0], self.sentence.index(word)) 
+            parts = [(word[0], self.sentence.index(word))
                      for word in self.sentence if word[1] in part]
         if len(parts) > 0:
             return parts
@@ -342,7 +340,7 @@ class Sentence(object):
 
     def clean(self, word):
         ''' Clean the text, removing unwanted characters '''
-    
+
         for to_remove in list(" ,.?'\";:\\!$&<>@#%^*}{[]+-=_"):
             word = word.strip(to_remove)
         return word
@@ -351,7 +349,7 @@ class Sentence(object):
     def tag_word(self, word):
         """ Tag the word's part of speech, returning the word's base and tag
             in a tuple """
-    
+
         if word not in vocab.vocabulary:
             return (word, "??")
         else:
@@ -362,8 +360,8 @@ class Sentence(object):
         ''' Determines what the concept of the sentence is.
             Can be declarative (DEC), Interrogative (INT),
             or Imperative (IMP)'''
-        
-        if (self.sentence[0][1] == "VB" or 
+
+        if (self.sentence[0][1] == "VB" or
             self.sentence[0][0] == user_info.info["computer"]):
             kind = "IMP"
             self.sentence.insert(0, ("You", "PS"))
@@ -377,7 +375,7 @@ class Sentence(object):
     def tag_sentence(self, words):
         ''' Tag all the words in a sentence, applying various rules as
             necessary to fix up oddities '''
-    
+
         sentence = []
         verb_index = 999999
         object_index = 999999
@@ -390,9 +388,9 @@ class Sentence(object):
             else:
                 base, part = self.tag_word(word)
             if part == "WH" and word[-2:] == "'s":
-                    sentence.append((base, part))
-                    sentence.append(("be", "VB"))
-                    verb_index = i
+                sentence.append((base, part))
+                sentence.append(("be", "VB"))
+                verb_index = i
             elif word in ["it", "that"]:
                 sentence.append(("it", "PO"))
             elif part in ["N", "P", "X"]:
@@ -415,12 +413,12 @@ class Sentence(object):
                 sentence.append(("be", "VB"))
                 add_are = False
         return sentence
-        
-        
-        
+
+
+
     def replace_it(self):
         ''' Replace 'it' or 'that' with the current global concept '''
-        
+
         for i, word in enumerate(self.sentence):
             if word[0] == 'it':
                 log("IT:", str(user_info.info['it']))
@@ -430,6 +428,18 @@ class Sentence(object):
                 self.sentence.insert(i, (user_info.info["it"], "XO"))
                 return True
         return False
+
+
+
+    def forward(self, module):
+        ''' Forward sentence to the module specified.
+            Returns True of successful, else False. '''
+
+        if module in vocab.word_actions.keys():
+            vocab.word_actions[module](self)
+            return True
+        else:
+            return False
 
 
 

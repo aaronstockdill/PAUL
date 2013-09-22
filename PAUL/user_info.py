@@ -15,6 +15,7 @@ info = {
     "computer": "paul", # Name of the computer system.
     "it": None, # Whatever 'it' could be, changes automatically, DON'T touch.
     "temp": "C", # Use F for Fahrenheit, C for Celcius.
+    "search_engine": "Google", # Google, Bing, Yahoo, DuckDuckGo or Baidu.
 }
 
 ## Flags for the system. 
@@ -25,7 +26,7 @@ info = {
 flags = {
     "VERBOSE": True,
     "NOISY": False,
-    "SERVER": False,
+    "SERVER": None,
     "MAX_LOG_SIZE": 2000,
     "LOGGING": True,
 }
