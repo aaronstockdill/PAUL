@@ -247,3 +247,512 @@ Sun,22-Sep-2013~13:03 Successfully imported Modules.weather
 Sun,22-Sep-2013~13:03 Successfully imported Modules.wikipedia
 Sun,22-Sep-2013~13:03 SENTENCE: [('hello', '??')]
 Sun,22-Sep-2013~13:03 KIND: DEC
+Sun,22-Sep-2013~16:26 Successfully imported Modules.clock
+Sun,22-Sep-2013~16:26 Successfully imported Modules.discover
+Sun,22-Sep-2013~16:26 Successfully imported Modules.finder
+Sun,22-Sep-2013~16:26 Successfully imported Modules.loader
+Sun,22-Sep-2013~16:26 Successfully imported Modules.media
+Sun,22-Sep-2013~16:26 Successfully imported Modules.settings
+Sun,22-Sep-2013~16:26 Successfully imported Modules.weather
+Sun,22-Sep-2013~16:26 Successfully imported Modules.wikipedia
+Sun,22-Sep-2013~16:26 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sun,22-Sep-2013~16:26 KIND: INT
+Sun,22-Sep-2013~16:26 ACTIONS: {'clock': 1}
+Sun,22-Sep-2013~16:26 WEIGHTS: {1: ['clock']}
+Sun,22-Sep-2013~16:26 BEST: clock
+Sun,22-Sep-2013~16:26 KEYWORDS: ['time']
+Sun,22-Sep-2013~16:27 SENTENCE: [('You', 'PS'), ('skip', 'VB'), ('this', 'PO'), ('song', '??')]
+Sun,22-Sep-2013~16:27 KIND: IMP
+Sun,22-Sep-2013~16:27 ACTIONS: {'media': 1}
+Sun,22-Sep-2013~16:27 WEIGHTS: {1: ['media']}
+Sun,22-Sep-2013~16:27 BEST: media
+Sun,22-Sep-2013~16:27 MUSIC KEYWORDS: [('song', 3)]
+Sun,22-Sep-2013~16:27 MEDIA: next track
+Sun,22-Sep-2013~16:27 COMMAND: osascript -e "tell application \"iTunes\" to next track"
+Sun,22-Sep-2013~16:27 SENTENCE: [('ew', '??'), ('skip', 'VB'), ('this', 'PO'), ('too', '??')]
+Sun,22-Sep-2013~16:27 KIND: DEC
+Sun,22-Sep-2013~16:27 SENTENCE: [('You', 'PS'), ('skip', 'VB'), ('this', 'PO'), ('one', '??'), ('too', '??')]
+Sun,22-Sep-2013~16:27 KIND: IMP
+Sun,22-Sep-2013~16:27 ACTIONS: {'media': 1}
+Sun,22-Sep-2013~16:27 WEIGHTS: {1: ['media']}
+Sun,22-Sep-2013~16:27 BEST: media
+Sun,22-Sep-2013~16:27 MUSIC KEYWORDS: [('one too', 3)]
+Sun,22-Sep-2013~16:27 MEDIA: next track
+Sun,22-Sep-2013~16:27 COMMAND: osascript -e "tell application \"iTunes\" to next track"
+Sun,22-Sep-2013~16:27 SENTENCE: [('You', 'PS'), ('skip', 'VB')]
+Sun,22-Sep-2013~16:27 KIND: IMP
+Sun,22-Sep-2013~16:27 ACTIONS: {'media': 1}
+Sun,22-Sep-2013~16:27 WEIGHTS: {1: ['media']}
+Sun,22-Sep-2013~16:27 BEST: media
+Sun,22-Sep-2013~16:27 MUSIC KEYWORDS: []
+Sun,22-Sep-2013~16:27 MEDIA: next track
+Sun,22-Sep-2013~16:27 COMMAND: osascript -e "tell application \"iTunes\" to next track"
+Sun,22-Sep-2013~16:27 SENTENCE: [('perfect', '??')]
+Sun,22-Sep-2013~16:27 KIND: DEC
+Sun,22-Sep-2013~16:29 SENTENCE: [('You', 'PS'), ('search', 'VB'), ('for', 'PP'), ('the', 'AR'), ('americas', '??'), ('cup', '??')]
+Sun,22-Sep-2013~16:29 KIND: IMP
+Sun,22-Sep-2013~16:29 ACTIONS: {'wikipedia': 1, 'discover': 1}
+Sun,22-Sep-2013~16:29 WEIGHTS: {1: ['wikipedia', 'discover']}
+Sun,22-Sep-2013~16:29 BEST: wikipedia
+Sun,22-Sep-2013~16:29 KEYWORDS: [('americas cup', 4)]
+Sun,22-Sep-2013~16:29 URL ATTEMPT: http://en.wikipedia.org/wiki/americas_cup
+Sun,22-Sep-2013~16:29 KEYWORDS: Short-circuit successful.
+Sun,22-Sep-2013~16:29 KEYWORDS: [('americas cup', 4)]
+Sun,22-Sep-2013~16:29 URL: http://www.google.com/search?q=americas cup
+Sun,22-Sep-2013~16:31 SENTENCE: [('You', 'PS'), ('reload', 'VB')]
+Sun,22-Sep-2013~16:31 KIND: IMP
+Sun,22-Sep-2013~16:31 ACTIONS: {'loader': 1}
+Sun,22-Sep-2013~16:31 WEIGHTS: {1: ['loader']}
+Sun,22-Sep-2013~16:31 BEST: loader
+Sun,22-Sep-2013~16:31 Successfully imported Modules.clock
+Sun,22-Sep-2013~16:31 Successfully imported Modules.discover
+Sun,22-Sep-2013~16:31 Successfully imported Modules.finder
+Sun,22-Sep-2013~16:31 Successfully imported Modules.loader
+Sun,22-Sep-2013~16:31 Successfully imported Modules.media
+Sun,22-Sep-2013~16:31 Successfully imported Modules.settings
+Sun,22-Sep-2013~16:31 Successfully imported Modules.weather
+Sun,22-Sep-2013~16:31 Successfully imported Modules.wikipedia
+Sun,22-Sep-2013~16:31 SENTENCE: [('You', 'PS'), ('search', 'VB'), ('for', 'PP'), ('the', 'AR'), ('americas', '??'), ('cup', '??')]
+Sun,22-Sep-2013~16:31 KIND: IMP
+Sun,22-Sep-2013~16:31 ACTIONS: {'wikipedia': 1, 'discover': 1}
+Sun,22-Sep-2013~16:31 WEIGHTS: {1: ['wikipedia', 'discover']}
+Sun,22-Sep-2013~16:31 BEST: wikipedia
+Sun,22-Sep-2013~16:31 KEYWORDS: [('americas cup', 4)]
+Sun,22-Sep-2013~16:31 URL ATTEMPT: http://en.wikipedia.org/wiki/americas_cup
+Sun,22-Sep-2013~16:31 KEYWORDS: Short-circuit successful.
+Sun,22-Sep-2013~16:31 KEYWORDS: [('americas cup', 4)]
+Sun,22-Sep-2013~16:31 URL: http://www.google.com/search?q=americas+cup
+Sun,22-Sep-2013~16:32 SENTENCE: [('You', 'PS'), ('search', 'VB'), ('for', 'PP'), ('potato', '??')]
+Sun,22-Sep-2013~16:32 KIND: IMP
+Sun,22-Sep-2013~16:32 ACTIONS: {'wikipedia': 1, 'discover': 1}
+Sun,22-Sep-2013~16:32 WEIGHTS: {1: ['wikipedia', 'discover']}
+Sun,22-Sep-2013~16:32 BEST: wikipedia
+Sun,22-Sep-2013~16:32 KEYWORDS: [('potato', 3)]
+Sun,22-Sep-2013~16:32 URL ATTEMPT: http://en.wikipedia.org/wiki/potato
+Sun,22-Sep-2013~16:32 SENTENCE: [('You', 'PS'), ('search', 'VB'), ('for', 'PP'), ('asegsdhg', '??')]
+Sun,22-Sep-2013~16:32 KIND: IMP
+Sun,22-Sep-2013~16:32 ACTIONS: {'wikipedia': 1, 'discover': 1}
+Sun,22-Sep-2013~16:32 WEIGHTS: {1: ['wikipedia', 'discover']}
+Sun,22-Sep-2013~16:32 BEST: wikipedia
+Sun,22-Sep-2013~16:32 KEYWORDS: [('asegsdhg', 3)]
+Sun,22-Sep-2013~16:32 URL ATTEMPT: http://en.wikipedia.org/wiki/asegsdhg
+Sun,22-Sep-2013~16:32 KEYWORDS: Short-circuit successful.
+Sun,22-Sep-2013~16:32 KEYWORDS: [('asegsdhg', 3)]
+Sun,22-Sep-2013~16:32 URL: http://www.google.com/search?q=asegsdhg
+Tue,24-Sep-2013~20:30 Successfully imported Modules.clock
+Tue,24-Sep-2013~20:30 Successfully imported Modules.discover
+Tue,24-Sep-2013~20:30 Successfully imported Modules.finder
+Tue,24-Sep-2013~20:30 Successfully imported Modules.loader
+Tue,24-Sep-2013~20:30 Successfully imported Modules.media
+Tue,24-Sep-2013~20:30 Successfully imported Modules.settings
+Tue,24-Sep-2013~20:30 Successfully imported Modules.weather
+Tue,24-Sep-2013~20:30 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~20:30 SENTENCE: [('hi', '??')]
+Tue,24-Sep-2013~20:30 KIND: DEC
+Tue,24-Sep-2013~20:39 SENTENCE: [('You', 'PS'), ('load', 'VB'), ('new', '??'), ('module', 'NO')]
+Tue,24-Sep-2013~20:39 KIND: IMP
+Tue,24-Sep-2013~20:39 ACTIONS: {'loader': 2}
+Tue,24-Sep-2013~20:39 WEIGHTS: {2: ['loader']}
+Tue,24-Sep-2013~20:39 BEST: loader
+Tue,24-Sep-2013~20:39 Successfully imported Modules.clock
+Tue,24-Sep-2013~20:39 Successfully imported Modules.discover
+Tue,24-Sep-2013~20:39 Successfully imported Modules.finder
+Tue,24-Sep-2013~20:39 Successfully imported Modules.loader
+Tue,24-Sep-2013~20:39 Successfully imported Modules.media
+Tue,24-Sep-2013~20:39 Successfully imported Modules.personality
+Tue,24-Sep-2013~20:39 Successfully imported Modules.settings
+Tue,24-Sep-2013~20:39 Successfully imported Modules.weather
+Tue,24-Sep-2013~20:39 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~20:39 SENTENCE: [('hi', '??')]
+Tue,24-Sep-2013~20:39 KIND: DEC
+Tue,24-Sep-2013~20:44 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~20:44 KIND: IMP
+Tue,24-Sep-2013~20:44 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~20:44 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~20:44 BEST: loader
+Tue,24-Sep-2013~20:44 Successfully imported Modules.clock
+Tue,24-Sep-2013~20:44 Successfully imported Modules.discover
+Tue,24-Sep-2013~20:44 Successfully imported Modules.finder
+Tue,24-Sep-2013~20:44 Successfully imported Modules.loader
+Tue,24-Sep-2013~20:44 Successfully imported Modules.media
+Tue,24-Sep-2013~20:44 Successfully imported Modules.personality
+Tue,24-Sep-2013~20:44 Successfully imported Modules.settings
+Tue,24-Sep-2013~20:44 Successfully imported Modules.weather
+Tue,24-Sep-2013~20:44 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~20:44 SENTENCE: [('hi', '??')]
+Tue,24-Sep-2013~20:44 KIND: DEC
+Tue,24-Sep-2013~20:44 Successfully imported Modules.clock
+Tue,24-Sep-2013~20:44 Successfully imported Modules.discover
+Tue,24-Sep-2013~20:44 Successfully imported Modules.finder
+Tue,24-Sep-2013~20:44 Successfully imported Modules.loader
+Tue,24-Sep-2013~20:44 Successfully imported Modules.media
+Tue,24-Sep-2013~20:44 Successfully imported Modules.personality
+Tue,24-Sep-2013~20:44 Successfully imported Modules.settings
+Tue,24-Sep-2013~20:44 Successfully imported Modules.weather
+Tue,24-Sep-2013~20:44 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~20:44 SENTENCE: [('hi', '??')]
+Tue,24-Sep-2013~20:44 KIND: DEC
+Tue,24-Sep-2013~20:44 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~20:44 KIND: IMP
+Tue,24-Sep-2013~20:44 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~20:44 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~20:44 BEST: loader
+Tue,24-Sep-2013~20:44 Successfully imported Modules.clock
+Tue,24-Sep-2013~20:44 Successfully imported Modules.discover
+Tue,24-Sep-2013~20:44 Successfully imported Modules.finder
+Tue,24-Sep-2013~20:44 Successfully imported Modules.loader
+Tue,24-Sep-2013~20:44 Successfully imported Modules.media
+Tue,24-Sep-2013~20:44 Successfully imported Modules.personality
+Tue,24-Sep-2013~20:44 Successfully imported Modules.settings
+Tue,24-Sep-2013~20:44 Successfully imported Modules.weather
+Tue,24-Sep-2013~20:44 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~20:44 SENTENCE: [('hi', '??')]
+Tue,24-Sep-2013~20:44 KIND: DEC
+Tue,24-Sep-2013~20:45 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~20:45 KIND: IMP
+Tue,24-Sep-2013~20:45 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~20:45 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~20:45 BEST: loader
+Tue,24-Sep-2013~20:45 Successfully imported Modules.clock
+Tue,24-Sep-2013~20:45 Successfully imported Modules.discover
+Tue,24-Sep-2013~20:45 Successfully imported Modules.finder
+Tue,24-Sep-2013~20:45 Successfully imported Modules.loader
+Tue,24-Sep-2013~20:45 Successfully imported Modules.media
+Tue,24-Sep-2013~20:45 Successfully imported Modules.personality
+Tue,24-Sep-2013~20:45 Successfully imported Modules.settings
+Tue,24-Sep-2013~20:45 Successfully imported Modules.weather
+Tue,24-Sep-2013~20:45 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~20:45 SENTENCE: [('foreward', '??')]
+Tue,24-Sep-2013~20:45 KIND: DEC
+Tue,24-Sep-2013~20:45 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~20:45 KIND: DEC
+Tue,24-Sep-2013~20:45 SENTENCE: [('hello', 'NS')]
+Tue,24-Sep-2013~20:45 KIND: DEC
+Tue,24-Sep-2013~20:46 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~20:46 KIND: IMP
+Tue,24-Sep-2013~20:46 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~20:46 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~20:46 BEST: loader
+Tue,24-Sep-2013~20:46 Successfully imported Modules.clock
+Tue,24-Sep-2013~20:46 Successfully imported Modules.discover
+Tue,24-Sep-2013~20:46 Successfully imported Modules.finder
+Tue,24-Sep-2013~20:46 Successfully imported Modules.loader
+Tue,24-Sep-2013~20:46 Successfully imported Modules.media
+Tue,24-Sep-2013~20:46 Successfully imported Modules.personality
+Tue,24-Sep-2013~20:46 Successfully imported Modules.settings
+Tue,24-Sep-2013~20:46 Successfully imported Modules.weather
+Tue,24-Sep-2013~20:46 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~20:46 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~20:46 KIND: DEC
+Tue,24-Sep-2013~20:46 SENTENCE: [('hello', 'NS')]
+Tue,24-Sep-2013~20:46 KIND: DEC
+Tue,24-Sep-2013~20:46 SENTENCE: [('howdy', '??')]
+Tue,24-Sep-2013~20:46 KIND: DEC
+Tue,24-Sep-2013~20:47 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~20:47 KIND: DEC
+Tue,24-Sep-2013~20:47 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~20:47 KIND: IMP
+Tue,24-Sep-2013~20:47 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~20:47 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~20:47 BEST: loader
+Tue,24-Sep-2013~20:47 Successfully imported Modules.clock
+Tue,24-Sep-2013~20:47 Successfully imported Modules.discover
+Tue,24-Sep-2013~20:47 Successfully imported Modules.finder
+Tue,24-Sep-2013~20:47 Successfully imported Modules.loader
+Tue,24-Sep-2013~20:47 Successfully imported Modules.media
+Tue,24-Sep-2013~20:47 Successfully imported Modules.personality
+Tue,24-Sep-2013~20:47 Successfully imported Modules.settings
+Tue,24-Sep-2013~20:47 Successfully imported Modules.weather
+Tue,24-Sep-2013~20:47 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~20:47 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~20:47 KIND: DEC
+Tue,24-Sep-2013~20:48 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~20:48 KIND: IMP
+Tue,24-Sep-2013~20:48 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~20:48 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~20:48 BEST: loader
+Tue,24-Sep-2013~20:48 Successfully imported Modules.clock
+Tue,24-Sep-2013~20:48 Successfully imported Modules.discover
+Tue,24-Sep-2013~20:48 Successfully imported Modules.finder
+Tue,24-Sep-2013~20:48 Successfully imported Modules.loader
+Tue,24-Sep-2013~20:48 Successfully imported Modules.media
+Tue,24-Sep-2013~20:48 Successfully imported Modules.personality
+Tue,24-Sep-2013~20:48 Successfully imported Modules.settings
+Tue,24-Sep-2013~20:48 Successfully imported Modules.weather
+Tue,24-Sep-2013~20:48 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~20:48 SENTENCE: [('hello', 'NS')]
+Tue,24-Sep-2013~20:48 KIND: DEC
+Tue,24-Sep-2013~20:48 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~20:48 KIND: IMP
+Tue,24-Sep-2013~20:48 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~20:48 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~20:48 BEST: loader
+Tue,24-Sep-2013~20:48 Successfully imported Modules.clock
+Tue,24-Sep-2013~20:48 Successfully imported Modules.discover
+Tue,24-Sep-2013~20:48 Successfully imported Modules.finder
+Tue,24-Sep-2013~20:48 Successfully imported Modules.loader
+Tue,24-Sep-2013~20:48 Successfully imported Modules.media
+Tue,24-Sep-2013~20:48 Successfully imported Modules.personality
+Tue,24-Sep-2013~20:48 Successfully imported Modules.settings
+Tue,24-Sep-2013~20:48 Successfully imported Modules.weather
+Tue,24-Sep-2013~20:48 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~20:48 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~20:48 KIND: DEC
+Tue,24-Sep-2013~20:50 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~20:50 KIND: IMP
+Tue,24-Sep-2013~20:50 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~20:50 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~20:50 BEST: loader
+Tue,24-Sep-2013~20:50 Successfully imported Modules.clock
+Tue,24-Sep-2013~20:50 Successfully imported Modules.discover
+Tue,24-Sep-2013~20:50 Successfully imported Modules.finder
+Tue,24-Sep-2013~20:50 Successfully imported Modules.loader
+Tue,24-Sep-2013~20:50 Successfully imported Modules.media
+Tue,24-Sep-2013~20:50 Successfully imported Modules.personality
+Tue,24-Sep-2013~20:50 Successfully imported Modules.settings
+Tue,24-Sep-2013~20:50 Successfully imported Modules.weather
+Tue,24-Sep-2013~20:50 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~20:50 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,24-Sep-2013~20:50 KIND: INT
+Tue,24-Sep-2013~20:50 ACTIONS: {'clock': 1}
+Tue,24-Sep-2013~20:50 WEIGHTS: {1: ['clock']}
+Tue,24-Sep-2013~20:50 BEST: clock
+Tue,24-Sep-2013~20:50 KEYWORDS: ['time']
+Tue,24-Sep-2013~20:59 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~20:59 KIND: IMP
+Tue,24-Sep-2013~20:59 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~20:59 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~20:59 BEST: loader
+Tue,24-Sep-2013~20:59 Successfully imported Modules.clock
+Tue,24-Sep-2013~20:59 Successfully imported Modules.discover
+Tue,24-Sep-2013~20:59 Successfully imported Modules.finder
+Tue,24-Sep-2013~20:59 Successfully imported Modules.loader
+Tue,24-Sep-2013~20:59 Successfully imported Modules.media
+Tue,24-Sep-2013~20:59 Successfully imported Modules.personality
+Tue,24-Sep-2013~20:59 Successfully imported Modules.settings
+Tue,24-Sep-2013~20:59 Successfully imported Modules.weather
+Tue,24-Sep-2013~20:59 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~20:59 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~20:59 KIND: DEC
+Tue,24-Sep-2013~21:00 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~21:00 KIND: IMP
+Tue,24-Sep-2013~21:00 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~21:00 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~21:00 BEST: loader
+Tue,24-Sep-2013~21:00 Successfully imported Modules.clock
+Tue,24-Sep-2013~21:00 Successfully imported Modules.discover
+Tue,24-Sep-2013~21:00 Successfully imported Modules.finder
+Tue,24-Sep-2013~21:00 Successfully imported Modules.loader
+Tue,24-Sep-2013~21:00 Successfully imported Modules.media
+Tue,24-Sep-2013~21:00 Successfully imported Modules.personality
+Tue,24-Sep-2013~21:00 Successfully imported Modules.settings
+Tue,24-Sep-2013~21:00 Successfully imported Modules.weather
+Tue,24-Sep-2013~21:00 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~21:00 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:00 KIND: DEC
+Tue,24-Sep-2013~21:02 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~21:02 KIND: IMP
+Tue,24-Sep-2013~21:02 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~21:02 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~21:02 BEST: loader
+Tue,24-Sep-2013~21:02 Successfully imported Modules.clock
+Tue,24-Sep-2013~21:02 Successfully imported Modules.discover
+Tue,24-Sep-2013~21:02 Successfully imported Modules.finder
+Tue,24-Sep-2013~21:02 Successfully imported Modules.loader
+Tue,24-Sep-2013~21:02 Successfully imported Modules.media
+Tue,24-Sep-2013~21:02 Successfully imported Modules.personality
+Tue,24-Sep-2013~21:02 Successfully imported Modules.settings
+Tue,24-Sep-2013~21:02 Successfully imported Modules.weather
+Tue,24-Sep-2013~21:02 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~21:02 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:02 KIND: DEC
+Tue,24-Sep-2013~21:02 PERSONALITY: False
+Tue,24-Sep-2013~21:02 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~21:02 KIND: IMP
+Tue,24-Sep-2013~21:02 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~21:02 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~21:02 BEST: loader
+Tue,24-Sep-2013~21:02 Successfully imported Modules.clock
+Tue,24-Sep-2013~21:02 Successfully imported Modules.discover
+Tue,24-Sep-2013~21:02 Successfully imported Modules.finder
+Tue,24-Sep-2013~21:02 Successfully imported Modules.loader
+Tue,24-Sep-2013~21:02 Successfully imported Modules.media
+Tue,24-Sep-2013~21:02 Successfully imported Modules.personality
+Tue,24-Sep-2013~21:02 Successfully imported Modules.settings
+Tue,24-Sep-2013~21:02 Successfully imported Modules.weather
+Tue,24-Sep-2013~21:02 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~21:02 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:02 KIND: DEC
+Tue,24-Sep-2013~21:02 [] ['hi', 'hello', 'greetings', 'salutations', 'morning', 'evening', 'howdy', 'wassup', 'sup', 'yo']
+Tue,24-Sep-2013~21:02 PERSONALITY: False
+Tue,24-Sep-2013~21:03 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~21:03 KIND: IMP
+Tue,24-Sep-2013~21:03 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~21:03 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~21:03 BEST: loader
+Tue,24-Sep-2013~21:03 Successfully imported Modules.clock
+Tue,24-Sep-2013~21:03 Successfully imported Modules.discover
+Tue,24-Sep-2013~21:03 Successfully imported Modules.finder
+Tue,24-Sep-2013~21:03 Successfully imported Modules.loader
+Tue,24-Sep-2013~21:03 Successfully imported Modules.media
+Tue,24-Sep-2013~21:03 Successfully imported Modules.personality
+Tue,24-Sep-2013~21:03 Successfully imported Modules.settings
+Tue,24-Sep-2013~21:03 Successfully imported Modules.weather
+Tue,24-Sep-2013~21:03 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~21:03 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:03 KIND: DEC
+Tue,24-Sep-2013~21:03 [('hi', 0)] ['hi', 'hello', 'greetings', 'salutations', 'morning', 'evening', 'howdy', 'wassup', 'sup', 'yo']
+Tue,24-Sep-2013~21:03 PERSONALITY: True
+Tue,24-Sep-2013~21:03 Successfully imported Modules.clock
+Tue,24-Sep-2013~21:03 Successfully imported Modules.discover
+Tue,24-Sep-2013~21:03 Successfully imported Modules.finder
+Tue,24-Sep-2013~21:03 Successfully imported Modules.loader
+Tue,24-Sep-2013~21:03 Successfully imported Modules.media
+Tue,24-Sep-2013~21:03 Successfully imported Modules.personality
+Tue,24-Sep-2013~21:03 Successfully imported Modules.settings
+Tue,24-Sep-2013~21:03 Successfully imported Modules.weather
+Tue,24-Sep-2013~21:03 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~21:03 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:03 KIND: DEC
+Tue,24-Sep-2013~21:03 [('hi', 0)] ['hi', 'hello', 'greetings', 'salutations', 'morning', 'evening', 'howdy', 'wassup', 'sup', 'yo']
+Tue,24-Sep-2013~21:03 PERSONALITY: True
+Tue,24-Sep-2013~21:04 Successfully imported Modules.clock
+Tue,24-Sep-2013~21:04 Successfully imported Modules.discover
+Tue,24-Sep-2013~21:04 Successfully imported Modules.finder
+Tue,24-Sep-2013~21:04 Successfully imported Modules.loader
+Tue,24-Sep-2013~21:04 Successfully imported Modules.media
+Tue,24-Sep-2013~21:04 Successfully imported Modules.personality
+Tue,24-Sep-2013~21:04 Successfully imported Modules.settings
+Tue,24-Sep-2013~21:04 Successfully imported Modules.weather
+Tue,24-Sep-2013~21:04 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~21:04 SENTENCE: [('hello', 'NS')]
+Tue,24-Sep-2013~21:04 KIND: DEC
+Tue,24-Sep-2013~21:04 [('hello', 0)] ['hi', 'hello', 'greetings', 'salutations', 'morning', 'evening', 'howdy', 'wassup', 'sup', 'yo']
+Tue,24-Sep-2013~21:04 PERSONALITY: True
+Tue,24-Sep-2013~21:04 SENTENCE: [('sup', 'NS')]
+Tue,24-Sep-2013~21:04 KIND: DEC
+Tue,24-Sep-2013~21:04 [('sup', 0)] ['hi', 'hello', 'greetings', 'salutations', 'morning', 'evening', 'howdy', 'wassup', 'sup', 'yo']
+Tue,24-Sep-2013~21:04 PERSONALITY: True
+Tue,24-Sep-2013~21:05 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~21:05 KIND: IMP
+Tue,24-Sep-2013~21:05 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~21:05 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~21:05 BEST: loader
+Tue,24-Sep-2013~21:05 Successfully imported Modules.clock
+Tue,24-Sep-2013~21:05 Successfully imported Modules.discover
+Tue,24-Sep-2013~21:05 Successfully imported Modules.finder
+Tue,24-Sep-2013~21:05 Successfully imported Modules.loader
+Tue,24-Sep-2013~21:05 Successfully imported Modules.media
+Tue,24-Sep-2013~21:05 Successfully imported Modules.personality
+Tue,24-Sep-2013~21:05 Successfully imported Modules.settings
+Tue,24-Sep-2013~21:05 Successfully imported Modules.weather
+Tue,24-Sep-2013~21:05 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~21:05 SENTENCE: [('sup', 'NS')]
+Tue,24-Sep-2013~21:05 KIND: DEC
+Tue,24-Sep-2013~21:13 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~21:13 KIND: IMP
+Tue,24-Sep-2013~21:13 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~21:13 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~21:13 BEST: loader
+Tue,24-Sep-2013~21:13 Successfully imported Modules.clock
+Tue,24-Sep-2013~21:13 Successfully imported Modules.discover
+Tue,24-Sep-2013~21:13 Successfully imported Modules.finder
+Tue,24-Sep-2013~21:13 Successfully imported Modules.loader
+Tue,24-Sep-2013~21:13 Successfully imported Modules.media
+Tue,24-Sep-2013~21:13 Successfully imported Modules.personality
+Tue,24-Sep-2013~21:13 Successfully imported Modules.settings
+Tue,24-Sep-2013~21:13 Successfully imported Modules.weather
+Tue,24-Sep-2013~21:13 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~21:13 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:13 KIND: DEC
+Tue,24-Sep-2013~21:13 Successfully imported Modules.clock
+Tue,24-Sep-2013~21:13 Successfully imported Modules.discover
+Tue,24-Sep-2013~21:13 Successfully imported Modules.finder
+Tue,24-Sep-2013~21:13 Successfully imported Modules.loader
+Tue,24-Sep-2013~21:13 Successfully imported Modules.media
+Tue,24-Sep-2013~21:13 Successfully imported Modules.personality
+Tue,24-Sep-2013~21:13 Successfully imported Modules.settings
+Tue,24-Sep-2013~21:13 Successfully imported Modules.weather
+Tue,24-Sep-2013~21:13 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~21:13 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:13 KIND: DEC
+Tue,24-Sep-2013~21:13 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:13 KIND: DEC
+Tue,24-Sep-2013~21:13 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:13 KIND: DEC
+Tue,24-Sep-2013~21:13 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:13 KIND: DEC
+Tue,24-Sep-2013~21:13 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~21:13 KIND: IMP
+Tue,24-Sep-2013~21:13 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~21:13 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~21:13 BEST: loader
+Tue,24-Sep-2013~21:13 Successfully imported Modules.clock
+Tue,24-Sep-2013~21:13 Successfully imported Modules.discover
+Tue,24-Sep-2013~21:13 Successfully imported Modules.finder
+Tue,24-Sep-2013~21:13 Successfully imported Modules.loader
+Tue,24-Sep-2013~21:13 Successfully imported Modules.media
+Tue,24-Sep-2013~21:13 Successfully imported Modules.personality
+Tue,24-Sep-2013~21:13 Successfully imported Modules.settings
+Tue,24-Sep-2013~21:13 Successfully imported Modules.weather
+Tue,24-Sep-2013~21:13 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~21:13 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:13 KIND: DEC
+Tue,24-Sep-2013~21:13 SENTENCE: [('hello', 'NS')]
+Tue,24-Sep-2013~21:13 KIND: DEC
+Tue,24-Sep-2013~21:13 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:13 KIND: DEC
+Tue,24-Sep-2013~21:13 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:13 KIND: DEC
+Tue,24-Sep-2013~21:13 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:13 KIND: DEC
+Tue,24-Sep-2013~21:14 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:14 KIND: DEC
+Tue,24-Sep-2013~21:14 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:14 KIND: DEC
+Tue,24-Sep-2013~21:14 SENTENCE: [('ih', '??')]
+Tue,24-Sep-2013~21:14 KIND: DEC
+Tue,24-Sep-2013~21:14 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:14 KIND: DEC
+Tue,24-Sep-2013~21:14 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:14 KIND: DEC
+Tue,24-Sep-2013~21:14 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:14 KIND: DEC
+Tue,24-Sep-2013~21:14 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:14 KIND: DEC
+Tue,24-Sep-2013~21:14 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:14 KIND: DEC
+Tue,24-Sep-2013~21:14 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:14 KIND: DEC
+Tue,24-Sep-2013~21:15 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Tue,24-Sep-2013~21:15 KIND: IMP
+Tue,24-Sep-2013~21:15 ACTIONS: {'loader': 1}
+Tue,24-Sep-2013~21:15 WEIGHTS: {1: ['loader']}
+Tue,24-Sep-2013~21:15 BEST: loader
+Tue,24-Sep-2013~21:15 Successfully imported Modules.clock
+Tue,24-Sep-2013~21:15 Successfully imported Modules.discover
+Tue,24-Sep-2013~21:15 Successfully imported Modules.finder
+Tue,24-Sep-2013~21:15 Successfully imported Modules.loader
+Tue,24-Sep-2013~21:15 Successfully imported Modules.media
+Tue,24-Sep-2013~21:15 Successfully imported Modules.personality
+Tue,24-Sep-2013~21:15 Successfully imported Modules.settings
+Tue,24-Sep-2013~21:15 Successfully imported Modules.weather
+Tue,24-Sep-2013~21:15 Successfully imported Modules.wikipedia
+Tue,24-Sep-2013~21:15 SENTENCE: [('hi', 'NS')]
+Tue,24-Sep-2013~21:15 KIND: DEC
+Tue,24-Sep-2013~21:16 SENTENCE: [('ello', '??')]
+Tue,24-Sep-2013~21:16 KIND: DEC
+Tue,24-Sep-2013~23:09 SENTENCE: [('you', 'PS'), ('up', 'PP'), ('still', '??')]
+Tue,24-Sep-2013~23:09 KIND: DEC
+Tue,24-Sep-2013~23:09 SENTENCE: [('you', 'PS'), ('still', '??'), ('up', 'PP')]
+Tue,24-Sep-2013~23:09 KIND: DEC
+Tue,24-Sep-2013~23:09 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('you', 'PO'), ('still', '??'), ('up', 'PP')]
+Tue,24-Sep-2013~23:09 KIND: IMP
+Tue,24-Sep-2013~23:09 ACTIONS: {}
+Tue,24-Sep-2013~23:09 WEIGHTS: {}
+Tue,24-Sep-2013~23:09 KEYWORDS: [('still', 3)]
+Tue,24-Sep-2013~23:09 URL: http://www.google.com/search?q=still
+Wed,25-Sep-2013~07:51 SENTENCE: [('good', '??'), ('morning', 'NS')]
+Wed,25-Sep-2013~07:51 KIND: DEC
+Wed,25-Sep-2013~07:52 SENTENCE: [('good', '??'), ('morning', 'NS')]
+Wed,25-Sep-2013~07:52 KIND: DEC

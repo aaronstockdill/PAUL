@@ -1,6 +1,6 @@
 """
 discover.py
-If all else fails, try Google's Lucky result. 
+If all else fails, try Google. 
 Author: Aaron Stockdill
 """
 
@@ -17,11 +17,12 @@ VERBS = [
     "discover",
     "search",
     "google",
+    paul.user_info.info['search_engine'],
 ]
 
 
 def process(sentence):
-    ''' Process the sentence, and go to wolfram Alpha '''
+    ''' Process the sentence, and go to Google '''
     sentence.replace_it()
     
     engines = {
@@ -35,7 +36,7 @@ def process(sentence):
     keywords = sentence.keywords()
     paul.log("KEYWORDS:", keywords)
     
-    query = "+".join([word for word, _ in keywords
+    query = "+".join([word.replace(" ", "+") for word, _ in keywords
                       if word not in VERBS+NOUNS])
     engine = paul.user_info.info["search_engine"].lower()
     url = (engines[engine].format(query))

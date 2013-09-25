@@ -33,8 +33,9 @@ Not so much a roadmap as a wishlist:
 * Reminders, events, etc. This would be GREAT, but probably rather tricky.
 * Deeper music controls. Basic play and pause stuff is nice, but song requests, shuffle, all that sort of thing, could be so much better!
 * Brightness and volume (general system) controls. It'd be nice, hopefully not to difficult.
-* Conversational interaction. If you say something that isn't an instruction, PAUL gives back a generic acknowledgement. Something more relevant would be good. At this time, the plan is an ineraction module.
+* Conversational interaction. If you say something that isn't an instruction, PAUL gives back a generic acknowledgement. Something more relevant would be good. At this time, the plan is a personality module.
 * A weighted word association system. Not all words give the same information about which module it should be. For example, the weather module knows the days of the week, but so does the clock. Both score 1 point on "Is it Friday?", so which module gets used run is essentially random, and it can be tricky for the module to tell if it really is what was wanted, there are no clear hints that this is the wrong module from the words alone. If the words were weighted, it would be better. For example, using the day of the week in a sentence isn't actually that likely to be about the weather, it would have a low weighting for that module, but it is important to anything about a clock, so it would have a high weighting for that module. So it would be more like 0.7: clock.py and 0.3: weather -- clearly clock wins.
+* Social Networking, and using Facebook user seach as a type of 'who is' system: "https://www.facebook.com/search/results.php?q={}&type=users" should work well. Full on "PA Social Presence" will be much trickier.
 
 ##Building PAUL Modules
 

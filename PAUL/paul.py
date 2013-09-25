@@ -195,6 +195,15 @@ def has_word(word_list, word):
 
 
 
+def has_one_of(list_to_search, confirm_list):
+    ''' Given a list of words, is one of the items in confirm_list in it? '''
+    for word in confirm_list:
+        if has_word(list_to_search, word):
+            return True
+    return False
+
+
+
 def join_lists(*lists):
     ''' Joins the lists, but only if they exist.
         If one of the values is none, it isn't added. '''
@@ -436,8 +445,7 @@ class Sentence(object):
             Returns True of successful, else False. '''
 
         if module in vocab.word_actions.keys():
-            vocab.word_actions[module](self)
-            return True
+            return vocab.word_actions[module](self)
         else:
             return False
 
