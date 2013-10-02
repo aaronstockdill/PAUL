@@ -28,12 +28,10 @@ def main():
         except EOFError:
             exit = True
     
-    brain.paul.interact("\nBye!")
+    brain.paul.interact("Bye!")
 
 
-
-if __name__ == "__main__":
-    if len(argv) > 1:
-        brain.process(" ".join(argv[1:]))
-    else:
-        main()
+if len(argv) > 1:
+    brain.process(" ".join(argv[1:]))
+else:
+    main()

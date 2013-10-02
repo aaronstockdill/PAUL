@@ -9,13 +9,19 @@ Author: Aaron Stockdill
 import time
 
 ## Global info that all systems should use. 
+#  woeid is your WOEID (Yahoo weather location id).
+#  name is what the computer will call you.
+#  computer is what the Paul believes his/her name is.
+#  it is whatever 'it' could be, changes automatically, DON'T touch.
+#  temp: Use F for Fahrenheit, C for Celcius.
+#  search_engine can be Google, Bing, Yahoo, DuckDuckGo or Baidu.
 info = {
-    "woeid": "2348327", # Your WOEID (Yahoo weather location id)
-    "name": "Aaron", # Your Name
-    "computer": "paul", # Name of the computer system.
-    "it": None, # Whatever 'it' could be, changes automatically, DON'T touch.
-    "temp": "C", # Use F for Fahrenheit, C for Celcius.
-    "search_engine": "Google", # Google, Bing, Yahoo, DuckDuckGo or Baidu.
+    "woeid": "2348327",
+    "name": "Aaron",
+    "computer": "Paul",
+    "it": None,
+    "temp": "C",
+    "search_engine": "Google",
 }
 
 ## Flags for the system. 

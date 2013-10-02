@@ -19,13 +19,14 @@ class Application(Frame):
         
     def think(self, command, label):
         label['text'] = brain.process(command.get())
+        command.delete(0, len(command.get()))
 
         
     def createWidgets(self):
         self.enterText = Entry(self)
         self.enterText.grid()
         self.enterText.bind("<Return>", lambda e: self.think(self.enterText, self.talkLabel))
-        self.talkLabel = Label (self, text="Hi, I'm Paul")
+        self.talkLabel = Label (self, text="Hi!")
         self.goButton = Button (self, text='Go', command=lambda: self.think(self.enterText, self.talkLabel))
         self.goButton.grid()        
         self.talkLabel.grid()

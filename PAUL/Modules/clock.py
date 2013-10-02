@@ -61,7 +61,7 @@ def process(sentence):
     return what_keyword(keywords[0])
 
 
-def what_keyword(keyword=time):
+def what_keyword(keyword="time"):
     ''' Return what __ it is, e.g. time, day, etc. '''
     if keyword == "time":
         time_str = time.strftime("%I:%M%p").lower()

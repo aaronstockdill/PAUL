@@ -13,11 +13,13 @@ print("\nListening on port {}. Press ctrl-C to exit.".format(PORT))
 while 1:
     conn, addr = s.accept()
     print ('Connected: ', addr)
-    while 1:
+    done = False
+    while not done:
         data = conn.recv(1024)
-        if not data: break
+        if not data:
+            done = True
         brain.paul.user_info.flags["SERVER"] = conn
         brain.process(str(data, encoding="utf8"))
-        conn.send(bytes("paul_done", "utf-8"))
+        #conn.send(bytes("paul_done", "utf-8"))
     print ('Closing: ', addr)
     conn.close()

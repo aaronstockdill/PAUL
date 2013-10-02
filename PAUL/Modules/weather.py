@@ -96,7 +96,7 @@ def weather(day_index=0):
         condition2 = items2[9].lower()
         temp2 = "{}".format(items2[7])
         
-        return "It's {0}°{1}, and {2}. It will get to {3}°{1}, {4}.".format(
+        return "It's {0}°{1}, and {2}. The high today is {3}°{1}, {4}.".format(
         temp, paul.user_info.info['temp'], condition, temp2, condition2)
     
     elif day_index < 0:

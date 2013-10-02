@@ -70,7 +70,8 @@ def interact(statement, response=None):
     """ Standard function for interacting with the user. Use this function,
         not anything custom if possible. 'Response' can be 'list', 'y_n', 'arb'
         or None """
-
+    
+    log("INTERACTION:", statement)
     print(statement)
     if user_info.flags["NOISY"]:
         os.system('say "{}"'.format(statement))
@@ -448,6 +449,10 @@ class Sentence(object):
             return vocab.word_actions[module](self)
         else:
             return False
+    
+    
+    def has_word(self, word):
+        return has_word(self.sentence, word)
 
 
 

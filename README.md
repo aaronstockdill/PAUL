@@ -8,15 +8,22 @@ Paul is a simple attempt at a system that can do something useful given a senten
 
 ###2. Technologies in Paul
 
-As PAUL is written in Python3 and Applescript, it is Mac OS X only. It uses mdfind, the command line version of spotlight, to find files. Using OS X's dictation it is possible to talk to Paul, too!
+As Paul is written in Python3 and Applescript, it is Mac OS X only. It uses mdfind, the command line version of spotlight, to find files. Using OS X's dictation it is possible to talk to Paul, too!
 
 ###3. Paul's Structure
 
-PAUL is run in the following way:
+Paul is run from inside his directory in the following way:
 
     $ ./bin/PAUL [query]
 
-If no query is provided, you enter 'discussion mode' where you can continually interact with Paul, and he keeps track of the conversation. For example, in discussion mode, if you just asked Paul to find some file for you, you would then just say "open that", or something of the sort, and he would. If you are not 
+If no query is provided, you enter 'discussion mode' where you can continually interact with Paul, and he keeps track of the conversation. For example, in discussion mode, if you just asked Paul to find some file for you, you would then just say "open that", or something of the sort, and he would. If you are not in discussion mode, Paul has no recollection of previous statements.
+
+Paul also has two other programs that are useful:
+
+    $ ./bin/server
+    $ ./bin/client host [query]
+
+'client' is only useful once 'server' is running. 'host' can be either an address and port in the format "address:port", or "default", which is the same as putting "localhost:32012". Usually default is what is desired. If you need to customize this, it is straightforward enough inside the scripts. Once the server is running, 'client' acts pretty much the same as 'PAUL'. This functionality has not been extensively tested, and should not yet be relied upon.
  
 Modules are stored in PAUL/Modules/, and extend Paul's functionality. These are built using the paul API via `import paul`.
 
@@ -39,7 +46,7 @@ Not so much a roadmap as a wishlist:
 
 ##Building PAUL Modules
 
-PAUL is designed to be extended. When creating a module, most of it is up to use. You will be using whatever technologies you like as long as they are available on a standard Mac OS X system, as well as Python 3 itself, which PAUL is written in.
+Paul is designed to be extended. When creating a module, most of it is up to you. You will be using whatever technologies you like as long as they are available on a standard Mac OS X system, as well as Python 3 itself, which Paul is written in.
 
 ###Basic Setup
 
@@ -87,7 +94,7 @@ As you can see, the word is reduced to its most basic form (the sentence is from
 * WH for question words.
 * ?? for unknown words.
 
-Given all this information it is up to you to use it. Some functions are provided in brain2 for your use. For easily accessing the parts of the sentence:
+Given all this information it is up to you to use it. Some functions are provided in `paul` for your use. For easily accessing the parts of the sentence:
 
     list_of_part = sentence.get_part(tag, [indexes=False, prepositions=False])
 

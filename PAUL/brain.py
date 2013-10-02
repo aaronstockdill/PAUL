@@ -47,6 +47,6 @@ def process(line):
 
     if sentence.kind == "IMP" or sentence.kind == "INT":
         reply = commands(sentence)
-        return paul.interact(reply)
     else:
-        return paul.acknowledge()
+        reply = paul.acknowledge()
+    return paul.interact(reply)

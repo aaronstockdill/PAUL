@@ -12,11 +12,14 @@ def process(sentence):
     ''' Process the sentence '''
     
     keywords = sentence.keywords()
-    keywords += sentence.get_part("PP", True)
+    pp = sentence.get_part("PP", True)
+    if pp:
+        sentence += pp
     paul.trim_word(keywords, "to")
     paul.log("KEYWORDS:", keywords)
     key = ""
     val = ""
+    confirm = "Done!"
     
     settings_file = "PAUL/user_info.py"
     
@@ -30,6 +33,8 @@ def process(sentence):
         key = "VERBOSE"
     elif (paul.has_word(keywords, "logging")):
         key  = "LOGGING"
+    elif paul.has_word(keywords, "name"):
+        key = "name"
     else:
         paul.log("FOUND NEITHER FLAG")
         return "I'm not sure what you wanted we to set."
@@ -39,23 +44,35 @@ def process(sentence):
     elif paul.has_word(keywords, "on") or paul.has_word(keywords, "true"):
         val = "True"
     else:
-        paul.log("FOUND NEITHER ON NOR OFF")
-        return "I'm not sure if you wanted '{}' on or off.".format(key)
+        if key == "name":
+            if sentence.has_word("i"):
+                val = paul.join_lists(sentence.get_part("??"), 
+                                      sentence.get_part("XO"))
+                val = '"{}"'.format(val[0].capitalize())
+                confirm = ("Ok, I'll call you " + 
+                           "{} from now on.".format(val[1:-1]))
+            elif sentence.has_word("you"):
+                key = "computer"
+                val = paul.join_lists(sentence.get_part("??"), 
+                                      sentence.get_part("XO"))
+                val = '"{}"'.format(val[0].capitalize())
+                confirm = "Ok, I'll be called {}.".format(val[1:-1])
+        else:
+            paul.log("FOUND NEITHER ON NOR OFF")
+            return "I'm not sure if you wanted '{}' on or off.".format(key)
     
     
-    sub = "    \"{}\": {},\n".format(key.upper(), val)
+    sub = "    \"{}\": {},\n".format(key, val)
     paul.log("SETTING:", sub)
-    
-    #paul.log(eval("paul.user_info." + key))
     
     lines = open(settings_file).readlines()
     backup = lines[:]
-    paul.log("    " + key.upper())
+    paul.log("    " + key)
     for i, line in enumerate(lines):
-        if line.startswith("    \"" + key.upper() + "\""):
+        if line.startswith("    \"" + key + "\""):
             lines[i] = sub
             open(settings_file, "w").write("".join(lines))
-            return "Done!"
+            return confirm
     
     open(settings_file, "w").write("".join(lines))
     
@@ -76,6 +93,7 @@ def main():
         "talking": ("settings", "noun"),
         "settings": ("settings", "noun"),
         "logging": ("settings", "noun"),
+        "name": ("settings", "noun"),
     }
     
     paul.associate(words)

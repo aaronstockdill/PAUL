@@ -756,3 +756,1060 @@ Wed,25-Sep-2013~07:51 SENTENCE: [('good', '??'), ('morning', 'NS')]
 Wed,25-Sep-2013~07:51 KIND: DEC
 Wed,25-Sep-2013~07:52 SENTENCE: [('good', '??'), ('morning', 'NS')]
 Wed,25-Sep-2013~07:52 KIND: DEC
+Thu,26-Sep-2013~19:58 Successfully imported Modules.clock
+Thu,26-Sep-2013~19:58 Successfully imported Modules.discover
+Thu,26-Sep-2013~19:58 Successfully imported Modules.finder
+Thu,26-Sep-2013~19:58 Successfully imported Modules.loader
+Thu,26-Sep-2013~19:58 Successfully imported Modules.media
+Thu,26-Sep-2013~19:58 Successfully imported Modules.personality
+Thu,26-Sep-2013~19:58 Successfully imported Modules.settings
+Thu,26-Sep-2013~19:58 Successfully imported Modules.weather
+Thu,26-Sep-2013~19:58 Successfully imported Modules.wikipedia
+Thu,26-Sep-2013~19:58 SENTENCE: [('how', 'WH'), ('old', '??'), ('be', 'VB'), ('tom', '??'), ('cruise', '??')]
+Thu,26-Sep-2013~19:58 KIND: INT
+Thu,26-Sep-2013~19:58 ACTIONS: {}
+Thu,26-Sep-2013~19:58 WEIGHTS: {}
+Thu,26-Sep-2013~19:58 KEYWORDS: [('old', 1), ('tom cruise', 3)]
+Thu,26-Sep-2013~19:58 URL: http://www.google.com/search?q=old+tom+cruise
+Thu,26-Sep-2013~19:59 SENTENCE: [('hi', 'NS')]
+Thu,26-Sep-2013~19:59 KIND: DEC
+Thu,26-Sep-2013~19:59 SENTENCE: [('hi', 'NS')]
+Thu,26-Sep-2013~19:59 KIND: DEC
+Thu,26-Sep-2013~19:59 SENTENCE: [('hi', 'NS')]
+Thu,26-Sep-2013~19:59 KIND: DEC
+Thu,26-Sep-2013~19:59 SENTENCE: [('hi', 'NS')]
+Thu,26-Sep-2013~19:59 KIND: DEC
+Thu,26-Sep-2013~19:59 SENTENCE: [('hi', 'NS')]
+Thu,26-Sep-2013~19:59 KIND: DEC
+Fri,27-Sep-2013~12:41 Successfully imported Modules.clock
+Fri,27-Sep-2013~12:41 Successfully imported Modules.discover
+Fri,27-Sep-2013~12:41 Successfully imported Modules.finder
+Fri,27-Sep-2013~12:41 Successfully imported Modules.loader
+Fri,27-Sep-2013~12:41 Successfully imported Modules.media
+Fri,27-Sep-2013~12:41 Successfully imported Modules.personality
+Fri,27-Sep-2013~12:41 Successfully imported Modules.settings
+Fri,27-Sep-2013~12:41 Successfully imported Modules.weather
+Fri,27-Sep-2013~12:41 Successfully imported Modules.wikipedia
+Fri,27-Sep-2013~12:41 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Fri,27-Sep-2013~12:41 KIND: INT
+Fri,27-Sep-2013~12:41 ACTIONS: {'weather': 1}
+Fri,27-Sep-2013~12:41 WEIGHTS: {1: ['weather']}
+Fri,27-Sep-2013~12:41 BEST: weather
+Fri,27-Sep-2013~12:41 KEYWORDS: []
+Fri,27-Sep-2013~12:41 TODAY: 4
+Fri,27-Sep-2013~12:41 DAY: 0
+Fri,27-Sep-2013~12:41 WEATHER_RAW: ['<yweather:condition  text="Unknown"  code="3200"  temp="13"  date="Fri, 27 Sep 2013 12:02 pm NZST" />\n', '<yweather:forecast day="Fri" date="27 Sep 2013" low="9" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Sat" date="28 Sep 2013" low="7" high="16" text="PM Showers" code="39" />\n', '<yweather:forecast day="Sun" date="29 Sep 2013" low="6" high="12" text="Showers" code="11" />\n', '<yweather:forecast day="Mon" date="30 Sep 2013" low="4" high="13" text="AM Showers" code="39" />\n', '<yweather:forecast day="Tue" date="1 Oct 2013" low="11" high="18" text="Mostly Cloudy" code="28" />\n']
+Fri,27-Sep-2013~12:41 ITEMS: ['text', 'Unknown', 'code', '3200', 'temp', '13', 'date', 'Fri, 27 Sep 2013 12:02 pm NZST']
+Fri,27-Sep-2013~12:41 ITEMS: ['day', 'Fri', 'date', '27 Sep 2013', 'low', '9', 'high', '16', 'text', 'Partly Cloudy', 'code', '30']
+Sat,28-Sep-2013~16:35 Successfully imported Modules.clock
+Sat,28-Sep-2013~16:35 Successfully imported Modules.discover
+Sat,28-Sep-2013~16:35 Successfully imported Modules.finder
+Sat,28-Sep-2013~16:35 Successfully imported Modules.loader
+Sat,28-Sep-2013~16:35 Successfully imported Modules.media
+Sat,28-Sep-2013~16:35 Successfully imported Modules.personality
+Sat,28-Sep-2013~16:35 Successfully imported Modules.settings
+Sat,28-Sep-2013~16:35 Successfully imported Modules.weather
+Sat,28-Sep-2013~16:35 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~16:35 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sat,28-Sep-2013~16:35 KIND: INT
+Sat,28-Sep-2013~16:35 ACTIONS: {'clock': 1}
+Sat,28-Sep-2013~16:35 WEIGHTS: {1: ['clock']}
+Sat,28-Sep-2013~16:35 BEST: clock
+Sat,28-Sep-2013~16:35 KEYWORDS: ['time']
+Sat,28-Sep-2013~16:35 SENTENCE: [('hi', 'NS')]
+Sat,28-Sep-2013~16:35 KIND: DEC
+Sat,28-Sep-2013~16:35 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cold', 'NO'), ('outside', 'PP')]
+Sat,28-Sep-2013~16:35 KIND: IMP
+Sat,28-Sep-2013~16:35 ACTIONS: {'weather': 1}
+Sat,28-Sep-2013~16:35 WEIGHTS: {1: ['weather']}
+Sat,28-Sep-2013~16:35 BEST: weather
+Sat,28-Sep-2013~16:35 KEYWORDS: []
+Sat,28-Sep-2013~16:35 TODAY: 5
+Sat,28-Sep-2013~16:35 DAY: 0
+Sat,28-Sep-2013~16:35 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="30"  temp="13"  date="Sat, 28 Sep 2013 3:58 pm NZST" />\n', '<yweather:forecast day="Sat" date="28 Sep 2013" low="6" high="16" text="Showers" code="11" />\n', '<yweather:forecast day="Sun" date="29 Sep 2013" low="6" high="13" text="AM Showers" code="39" />\n', '<yweather:forecast day="Mon" date="30 Sep 2013" low="4" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Tue" date="1 Oct 2013" low="8" high="18" text="Cloudy" code="26" />\n', '<yweather:forecast day="Wed" date="2 Oct 2013" low="11" high="17" text="Cloudy" code="26" />\n']
+Sat,28-Sep-2013~16:35 ITEMS: ['text', 'Partly Cloudy', 'code', '30', 'temp', '13', 'date', 'Sat, 28 Sep 2013 3:58 pm NZST']
+Sat,28-Sep-2013~16:35 ITEMS: ['day', 'Sat', 'date', '28 Sep 2013', 'low', '6', 'high', '16', 'text', 'Showers', 'code', '11']
+Sat,28-Sep-2013~16:44 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,28-Sep-2013~16:44 KIND: IMP
+Sat,28-Sep-2013~16:44 ACTIONS: {'loader': 1}
+Sat,28-Sep-2013~16:44 WEIGHTS: {1: ['loader']}
+Sat,28-Sep-2013~16:44 BEST: loader
+Sat,28-Sep-2013~16:44 Successfully imported Modules.clock
+Sat,28-Sep-2013~16:44 Successfully imported Modules.discover
+Sat,28-Sep-2013~16:44 Successfully imported Modules.finder
+Sat,28-Sep-2013~16:44 Successfully imported Modules.loader
+Sat,28-Sep-2013~16:44 Successfully imported Modules.media
+Sat,28-Sep-2013~16:44 Successfully imported Modules.personality
+Sat,28-Sep-2013~16:44 Successfully imported Modules.settings
+Sat,28-Sep-2013~16:44 Successfully imported Modules.weather
+Sat,28-Sep-2013~16:44 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~16:44 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('raining', 'NO')]
+Sat,28-Sep-2013~16:44 KIND: IMP
+Sat,28-Sep-2013~16:44 ACTIONS: {'weather': 1}
+Sat,28-Sep-2013~16:44 WEIGHTS: {1: ['weather']}
+Sat,28-Sep-2013~16:44 BEST: weather
+Sat,28-Sep-2013~16:44 KEYWORDS: []
+Sat,28-Sep-2013~16:44 TODAY: 5
+Sat,28-Sep-2013~16:44 DAY: 0
+Sat,28-Sep-2013~16:44 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="30"  temp="13"  date="Sat, 28 Sep 2013 3:58 pm NZST" />\n', '<yweather:forecast day="Sat" date="28 Sep 2013" low="6" high="16" text="Showers" code="11" />\n', '<yweather:forecast day="Sun" date="29 Sep 2013" low="6" high="13" text="AM Showers" code="39" />\n', '<yweather:forecast day="Mon" date="30 Sep 2013" low="4" high="16" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Tue" date="1 Oct 2013" low="8" high="18" text="Cloudy" code="26" />\n', '<yweather:forecast day="Wed" date="2 Oct 2013" low="11" high="17" text="Cloudy" code="26" />\n']
+Sat,28-Sep-2013~16:44 ITEMS: ['text', 'Partly Cloudy', 'code', '30', 'temp', '13', 'date', 'Sat, 28 Sep 2013 3:58 pm NZST']
+Sat,28-Sep-2013~16:44 ITEMS: ['day', 'Sat', 'date', '28 Sep 2013', 'low', '6', 'high', '16', 'text', 'Showers', 'code', '11']
+Sat,28-Sep-2013~16:44 It's 13°C, and partly cloudy. The high is 16°C, showers.
+Sat,28-Sep-2013~18:05 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,28-Sep-2013~18:05 KIND: IMP
+Sat,28-Sep-2013~18:05 ACTIONS: {'loader': 1}
+Sat,28-Sep-2013~18:05 WEIGHTS: {1: ['loader']}
+Sat,28-Sep-2013~18:05 BEST: loader
+Sat,28-Sep-2013~18:05 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:05 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:05 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:05 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:05 Successfully imported Modules.media
+Sat,28-Sep-2013~18:05 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:05 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:05 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:05 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:07 SENTENCE: [('hi', 'NS')]
+Sat,28-Sep-2013~18:07 KIND: DEC
+Sat,28-Sep-2013~18:07 Hello.
+Sat,28-Sep-2013~18:07 Hello.
+Sat,28-Sep-2013~18:08 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,28-Sep-2013~18:08 KIND: IMP
+Sat,28-Sep-2013~18:08 ACTIONS: {'loader': 1}
+Sat,28-Sep-2013~18:08 WEIGHTS: {1: ['loader']}
+Sat,28-Sep-2013~18:08 BEST: loader
+Sat,28-Sep-2013~18:08 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:08 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:08 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:08 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:08 Successfully imported Modules.media
+Sat,28-Sep-2013~18:08 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:08 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:08 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:08 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:08 SENTENCE: [('hi', 'NS')]
+Sat,28-Sep-2013~18:08 KIND: DEC
+Sat,28-Sep-2013~18:08 PROCESSED: Good Evening, Aaron.
+Sat,28-Sep-2013~18:08 INTERACTION: Good Evening, Aaron.
+Sat,28-Sep-2013~18:08 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,28-Sep-2013~18:08 KIND: IMP
+Sat,28-Sep-2013~18:08 ACTIONS: {'loader': 1}
+Sat,28-Sep-2013~18:08 WEIGHTS: {1: ['loader']}
+Sat,28-Sep-2013~18:08 BEST: loader
+Sat,28-Sep-2013~18:08 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:08 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:08 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:08 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:08 Successfully imported Modules.media
+Sat,28-Sep-2013~18:08 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:08 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:08 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:08 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:08 SENTENCE: [('hello', 'NS')]
+Sat,28-Sep-2013~18:08 KIND: DEC
+Sat,28-Sep-2013~18:08 INTERACTION: Hi, Aaron.
+Sat,28-Sep-2013~18:11 SENTENCE: [('i', 'PS'), ('name', 'VB'), ('be', 'VB'), ('aaron', '??')]
+Sat,28-Sep-2013~18:11 KIND: DEC
+Sat,28-Sep-2013~18:11 INTERACTION: I'm still learning!
+Sat,28-Sep-2013~18:11 SENTENCE: [('you', 'PS'), ('name', 'VB'), ('be', 'VB'), ('pual', '??')]
+Sat,28-Sep-2013~18:11 KIND: DEC
+Sat,28-Sep-2013~18:11 INTERACTION: I'm still learning!
+Sat,28-Sep-2013~18:16 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,28-Sep-2013~18:16 KIND: IMP
+Sat,28-Sep-2013~18:16 ACTIONS: {'loader': 1}
+Sat,28-Sep-2013~18:16 WEIGHTS: {1: ['loader']}
+Sat,28-Sep-2013~18:16 BEST: loader
+Sat,28-Sep-2013~18:16 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:16 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:16 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:16 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:16 Successfully imported Modules.media
+Sat,28-Sep-2013~18:16 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:16 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:16 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:16 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:16 SENTENCE: [('you', 'PS'), ('name', 'NS'), ('be', 'VB'), ('andrew', '??')]
+Sat,28-Sep-2013~18:16 KIND: DEC
+Sat,28-Sep-2013~18:16 INTERACTION: I'm still learning!
+Sat,28-Sep-2013~18:17 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,28-Sep-2013~18:17 KIND: IMP
+Sat,28-Sep-2013~18:17 ACTIONS: {'loader': 1}
+Sat,28-Sep-2013~18:17 WEIGHTS: {1: ['loader']}
+Sat,28-Sep-2013~18:17 BEST: loader
+Sat,28-Sep-2013~18:17 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:17 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:17 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:17 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:17 Successfully imported Modules.media
+Sat,28-Sep-2013~18:17 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:17 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:17 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:17 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:17 SENTENCE: [('i', 'PS'), ('name', 'NS'), ('be', 'VB'), ('peter', '??')]
+Sat,28-Sep-2013~18:17 KIND: DEC
+Sat,28-Sep-2013~18:17 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:18 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:18 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:18 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:18 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:18 Successfully imported Modules.media
+Sat,28-Sep-2013~18:18 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:18 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:18 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:18 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:19 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,28-Sep-2013~18:19 KIND: IMP
+Sat,28-Sep-2013~18:19 ACTIONS: {'loader': 1}
+Sat,28-Sep-2013~18:19 WEIGHTS: {1: ['loader']}
+Sat,28-Sep-2013~18:19 BEST: loader
+Sat,28-Sep-2013~18:19 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:19 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:19 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:19 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:19 Successfully imported Modules.media
+Sat,28-Sep-2013~18:19 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:19 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:19 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:19 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:19 SENTENCE: [('i', 'PS'), ('name', 'NS'), ('be', 'VB'), ('peter', '??')]
+Sat,28-Sep-2013~18:19 KIND: DEC
+Sat,28-Sep-2013~18:19 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:19 KEYWORDS: [('name', 1), ('peter', 3)]
+Sat,28-Sep-2013~18:19 SETTING:     "NAME": Peter,
+
+Sat,28-Sep-2013~18:19     NAME
+Sat,28-Sep-2013~18:19 INTERACTION: I'm still learning!
+Sat,28-Sep-2013~18:20 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,28-Sep-2013~18:20 KIND: IMP
+Sat,28-Sep-2013~18:20 ACTIONS: {'loader': 1}
+Sat,28-Sep-2013~18:20 WEIGHTS: {1: ['loader']}
+Sat,28-Sep-2013~18:20 BEST: loader
+Sat,28-Sep-2013~18:21 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:21 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:21 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:21 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:21 Successfully imported Modules.media
+Sat,28-Sep-2013~18:21 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:21 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:21 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:21 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:21 SENTENCE: [('hello', 'NS')]
+Sat,28-Sep-2013~18:21 KIND: DEC
+Sat,28-Sep-2013~18:21 INTERACTION: Hello.
+Sat,28-Sep-2013~18:21 SENTENCE: [('hi', 'NS')]
+Sat,28-Sep-2013~18:21 KIND: DEC
+Sat,28-Sep-2013~18:21 INTERACTION: Hello.
+Sat,28-Sep-2013~18:21 SENTENCE: [('hi', 'NS')]
+Sat,28-Sep-2013~18:21 KIND: DEC
+Sat,28-Sep-2013~18:21 INTERACTION: Hi.
+Sat,28-Sep-2013~18:21 SENTENCE: [('hi', 'NS')]
+Sat,28-Sep-2013~18:21 KIND: DEC
+Sat,28-Sep-2013~18:21 INTERACTION: Hi, Peter.
+Sat,28-Sep-2013~18:21 SENTENCE: [('i', 'PS'), ('name', 'NS'), ('be', 'VB'), ('aaron', '??')]
+Sat,28-Sep-2013~18:21 KIND: DEC
+Sat,28-Sep-2013~18:21 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:21 KEYWORDS: [('name', 1), ('aaron', 3)]
+Sat,28-Sep-2013~18:21 SETTING:     "NAME": "Aaron",
+
+Sat,28-Sep-2013~18:21     name
+Sat,28-Sep-2013~18:21 INTERACTION: I'm still learning!
+Sat,28-Sep-2013~18:22 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,28-Sep-2013~18:22 KIND: IMP
+Sat,28-Sep-2013~18:22 ACTIONS: {'loader': 1}
+Sat,28-Sep-2013~18:22 WEIGHTS: {1: ['loader']}
+Sat,28-Sep-2013~18:22 BEST: loader
+Sat,28-Sep-2013~18:22 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:22 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:22 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:22 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:22 Successfully imported Modules.media
+Sat,28-Sep-2013~18:22 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:22 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:22 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:22 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:22 SENTENCE: [('i', 'PS'), ('name', 'NS'), ('be', 'VB'), ('aaron', '??')]
+Sat,28-Sep-2013~18:22 KIND: DEC
+Sat,28-Sep-2013~18:22 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:22 KEYWORDS: [('name', 1), ('aaron', 3)]
+Sat,28-Sep-2013~18:22 SETTING:     "name": "Aaron",
+
+Sat,28-Sep-2013~18:22     name
+Sat,28-Sep-2013~18:22 INTERACTION: Done!
+Sat,28-Sep-2013~18:22 SENTENCE: [('i', 'PS'), ('name', 'NS'), ('be', 'VB'), ('peter', '??')]
+Sat,28-Sep-2013~18:22 KIND: DEC
+Sat,28-Sep-2013~18:22 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:22 KEYWORDS: [('name', 1), ('peter', 3)]
+Sat,28-Sep-2013~18:22 SETTING:     "name": "Peter",
+
+Sat,28-Sep-2013~18:22     name
+Sat,28-Sep-2013~18:22 INTERACTION: Done!
+Sat,28-Sep-2013~18:23 SENTENCE: [('you', 'PS'), ('name', 'NS'), ('be', 'VB'), ('jarvis', '??')]
+Sat,28-Sep-2013~18:23 KIND: DEC
+Sat,28-Sep-2013~18:23 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:23 KEYWORDS: [('name', 1), ('jarvis', 3)]
+Sat,28-Sep-2013~18:23 SETTING:     "name": "Jarvis",
+
+Sat,28-Sep-2013~18:23     name
+Sat,28-Sep-2013~18:23 INTERACTION: Done!
+Sat,28-Sep-2013~18:23 SENTENCE: [('i', 'PS'), ('name', 'NS'), ('be', 'VB'), ('aaron', '??')]
+Sat,28-Sep-2013~18:23 KIND: DEC
+Sat,28-Sep-2013~18:23 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:23 KEYWORDS: [('name', 1), ('aaron', 3)]
+Sat,28-Sep-2013~18:23 SETTING:     "name": "Aaron",
+
+Sat,28-Sep-2013~18:23     name
+Sat,28-Sep-2013~18:23 INTERACTION: Done!
+Sat,28-Sep-2013~18:23 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,28-Sep-2013~18:23 KIND: IMP
+Sat,28-Sep-2013~18:23 ACTIONS: {'loader': 1}
+Sat,28-Sep-2013~18:23 WEIGHTS: {1: ['loader']}
+Sat,28-Sep-2013~18:23 BEST: loader
+Sat,28-Sep-2013~18:23 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:23 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:23 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:23 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:23 Successfully imported Modules.media
+Sat,28-Sep-2013~18:23 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:23 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:23 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:23 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:23 SENTENCE: [('you', 'PS'), ('name', 'NS'), ('be', 'VB'), ('jarvis', '??')]
+Sat,28-Sep-2013~18:23 KIND: DEC
+Sat,28-Sep-2013~18:23 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:23 KEYWORDS: [('name', 1), ('jarvis', 3)]
+Sat,28-Sep-2013~18:23 SETTING:     "computer": "Jarvis",
+
+Sat,28-Sep-2013~18:23     computer
+Sat,28-Sep-2013~18:23 INTERACTION: Done!
+Sat,28-Sep-2013~18:26 SENTENCE: [('you', 'PS'), ('name', 'NS'), ('be', 'VB'), ('paul', 'XO')]
+Sat,28-Sep-2013~18:26 KIND: DEC
+Sat,28-Sep-2013~18:26 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:26 KEYWORDS: [('name', 1), ('paul', 3)]
+Sat,28-Sep-2013~18:28 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:28 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:28 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:28 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:28 Successfully imported Modules.media
+Sat,28-Sep-2013~18:28 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:28 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:28 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:28 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:28 SENTENCE: [('you', 'PS'), ('name', 'NS'), ('be', 'VB'), ('paul', '??')]
+Sat,28-Sep-2013~18:28 KIND: DEC
+Sat,28-Sep-2013~18:28 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:28 KEYWORDS: [('name', 1), ('paul', 3)]
+Sat,28-Sep-2013~18:29 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:29 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:29 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:29 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:29 Successfully imported Modules.media
+Sat,28-Sep-2013~18:29 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:29 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:29 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:29 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:29 SENTENCE: [('you', 'PS'), ('name', 'NS'), ('be', 'VB'), ('aaron', '??')]
+Sat,28-Sep-2013~18:29 KIND: DEC
+Sat,28-Sep-2013~18:29 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:29 KEYWORDS: [('name', 1), ('aaron', 3)]
+Sat,28-Sep-2013~18:30 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:30 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:30 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:30 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:30 Successfully imported Modules.media
+Sat,28-Sep-2013~18:30 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:30 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:30 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:30 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:30 SENTENCE: [('you', 'PS'), ('name', 'NS'), ('be', 'VB'), ('paul', '??')]
+Sat,28-Sep-2013~18:30 KIND: DEC
+Sat,28-Sep-2013~18:30 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:30 KEYWORDS: [('name', 1), ('paul', 3)]
+Sat,28-Sep-2013~18:30 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:30 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:30 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:30 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:30 Successfully imported Modules.media
+Sat,28-Sep-2013~18:30 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:30 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:30 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:30 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:31 SENTENCE: [('you', 'PS'), ('name', 'NS'), ('be', 'VB'), ('paul', '??')]
+Sat,28-Sep-2013~18:31 KIND: DEC
+Sat,28-Sep-2013~18:31 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:31 KEYWORDS: [('name', 1), ('paul', 3)]
+Sat,28-Sep-2013~18:31 SETTING:     "computer": "Paul",
+
+Sat,28-Sep-2013~18:31     computer
+Sat,28-Sep-2013~18:31 INTERACTION: Done!
+Sat,28-Sep-2013~18:31 SENTENCE: [('i', 'PS'), ('name', 'NS'), ('be', 'VB'), ('sdfghjk', '??')]
+Sat,28-Sep-2013~18:31 KIND: DEC
+Sat,28-Sep-2013~18:31 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:31 KEYWORDS: [('name', 1), ('sdfghjk', 3)]
+Sat,28-Sep-2013~18:31 SETTING:     "name": "Sdfghjk",
+
+Sat,28-Sep-2013~18:31     name
+Sat,28-Sep-2013~18:31 INTERACTION: Done!
+Sat,28-Sep-2013~18:31 SENTENCE: [('i', 'PS'), ('name', 'NS'), ('be', 'VB'), ('aaron', '??')]
+Sat,28-Sep-2013~18:31 KIND: DEC
+Sat,28-Sep-2013~18:31 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:31 KEYWORDS: [('name', 1), ('aaron', 3)]
+Sat,28-Sep-2013~18:31 SETTING:     "name": "Aaron",
+
+Sat,28-Sep-2013~18:31     name
+Sat,28-Sep-2013~18:31 INTERACTION: Done!
+Sat,28-Sep-2013~18:33 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,28-Sep-2013~18:33 KIND: IMP
+Sat,28-Sep-2013~18:33 ACTIONS: {'loader': 1}
+Sat,28-Sep-2013~18:33 WEIGHTS: {1: ['loader']}
+Sat,28-Sep-2013~18:33 BEST: loader
+Sat,28-Sep-2013~18:33 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:33 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:33 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:33 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:33 Successfully imported Modules.media
+Sat,28-Sep-2013~18:33 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:33 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:33 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:33 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:33 SENTENCE: [('you', 'PS'), ('name', 'NS'), ('be', 'VB'), ('paul', '??')]
+Sat,28-Sep-2013~18:33 KIND: DEC
+Sat,28-Sep-2013~18:33 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:33 KEYWORDS: [('name', 1), ('paul', 3)]
+Sat,28-Sep-2013~18:33 SETTING:     "computer": "Paul",
+
+Sat,28-Sep-2013~18:33     computer
+Sat,28-Sep-2013~18:33 INTERACTION: Ok, I'll be called "Paul".
+Sat,28-Sep-2013~18:34 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,28-Sep-2013~18:34 KIND: IMP
+Sat,28-Sep-2013~18:34 ACTIONS: {'loader': 1}
+Sat,28-Sep-2013~18:34 WEIGHTS: {1: ['loader']}
+Sat,28-Sep-2013~18:34 BEST: loader
+Sat,28-Sep-2013~18:34 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:34 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:34 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:34 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:34 Successfully imported Modules.media
+Sat,28-Sep-2013~18:34 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:34 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:34 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:34 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:34 SENTENCE: [('i', 'PS'), ('name', 'NS'), ('be', 'VB'), ('aaron', '??')]
+Sat,28-Sep-2013~18:34 KIND: DEC
+Sat,28-Sep-2013~18:34 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~18:34 KEYWORDS: [('name', 1), ('aaron', 3)]
+Sat,28-Sep-2013~18:34 SETTING:     "name": "Aaron",
+
+Sat,28-Sep-2013~18:34     name
+Sat,28-Sep-2013~18:34 INTERACTION: Got it, I'll call you Aaron.
+Sat,28-Sep-2013~18:36 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('integration', '??')]
+Sat,28-Sep-2013~18:36 KIND: IMP
+Sat,28-Sep-2013~18:36 ACTIONS: {'wikipedia': 2}
+Sat,28-Sep-2013~18:36 WEIGHTS: {2: ['wikipedia']}
+Sat,28-Sep-2013~18:36 BEST: wikipedia
+Sat,28-Sep-2013~18:36 KEYWORDS: [('integration', 4)]
+Sat,28-Sep-2013~18:36 INTERACTION: Coming up, Aaron.
+Sat,28-Sep-2013~18:36 URL ATTEMPT: http://en.wikipedia.org/wiki/integration
+Sat,28-Sep-2013~18:36 INTERACTION: I couldn't complete the research for some reason!
+Sat,28-Sep-2013~18:36 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Sat,28-Sep-2013~18:36 KIND: IMP
+Sat,28-Sep-2013~18:36 ACTIONS: {'loader': 1}
+Sat,28-Sep-2013~18:36 WEIGHTS: {1: ['loader']}
+Sat,28-Sep-2013~18:36 BEST: loader
+Sat,28-Sep-2013~18:36 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:36 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:36 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:36 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:36 Successfully imported Modules.media
+Sat,28-Sep-2013~18:36 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:36 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:36 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:36 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:36 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('integration', '??')]
+Sat,28-Sep-2013~18:36 KIND: IMP
+Sat,28-Sep-2013~18:36 ACTIONS: {'wikipedia': 2}
+Sat,28-Sep-2013~18:36 WEIGHTS: {2: ['wikipedia']}
+Sat,28-Sep-2013~18:36 BEST: wikipedia
+Sat,28-Sep-2013~18:36 KEYWORDS: [('integration', 4)]
+Sat,28-Sep-2013~18:36 INTERACTION: Coming up.
+Sat,28-Sep-2013~18:36 URL ATTEMPT: http://en.wikipedia.org/wiki/integration
+Sat,28-Sep-2013~18:36 INTERACTION: I couldn't complete the research for some reason. Are you connected to the internet?
+Sat,28-Sep-2013~18:54 Successfully imported Modules.clock
+Sat,28-Sep-2013~18:54 Successfully imported Modules.discover
+Sat,28-Sep-2013~18:54 Successfully imported Modules.finder
+Sat,28-Sep-2013~18:54 Successfully imported Modules.loader
+Sat,28-Sep-2013~18:54 Successfully imported Modules.media
+Sat,28-Sep-2013~18:54 Successfully imported Modules.personality
+Sat,28-Sep-2013~18:54 Successfully imported Modules.settings
+Sat,28-Sep-2013~18:54 Successfully imported Modules.weather
+Sat,28-Sep-2013~18:54 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~18:58 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sat,28-Sep-2013~18:58 KIND: INT
+Sat,28-Sep-2013~18:58 ACTIONS: {'clock': 1}
+Sat,28-Sep-2013~18:58 WEIGHTS: {1: ['clock']}
+Sat,28-Sep-2013~18:58 BEST: clock
+Sat,28-Sep-2013~18:58 KEYWORDS: ['time']
+Sat,28-Sep-2013~18:58 INTERACTION: It is 6:58pm.
+Sat,28-Sep-2013~18:58 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sat,28-Sep-2013~18:59 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sat,28-Sep-2013~18:59 KIND: INT
+Sat,28-Sep-2013~18:59 ACTIONS: {'clock': 1}
+Sat,28-Sep-2013~18:59 WEIGHTS: {1: ['clock']}
+Sat,28-Sep-2013~18:59 BEST: clock
+Sat,28-Sep-2013~18:59 KEYWORDS: ['time']
+Sat,28-Sep-2013~18:59 INTERACTION: It is 6:59pm.
+Sat,28-Sep-2013~18:59 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sat,28-Sep-2013~18:59 INTERACTION: 
+Bye!
+Sat,28-Sep-2013~19:01 SENTENCE: [('what', 'WH'), ('date', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sat,28-Sep-2013~19:01 KIND: INT
+Sat,28-Sep-2013~19:01 ACTIONS: {'clock': 1}
+Sat,28-Sep-2013~19:01 WEIGHTS: {1: ['clock']}
+Sat,28-Sep-2013~19:01 BEST: clock
+Sat,28-Sep-2013~19:01 KEYWORDS: ['date']
+Sat,28-Sep-2013~19:01 INTERACTION: It is Saturday, 28 September 2013.
+Sat,28-Sep-2013~19:01 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sat,28-Sep-2013~19:01 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('date', 'NO')]
+Sat,28-Sep-2013~19:01 KIND: INT
+Sat,28-Sep-2013~19:01 ACTIONS: {'clock': 1}
+Sat,28-Sep-2013~19:01 WEIGHTS: {1: ['clock']}
+Sat,28-Sep-2013~19:01 BEST: clock
+Sat,28-Sep-2013~19:01 KEYWORDS: ['date']
+Sat,28-Sep-2013~19:01 INTERACTION: It is Saturday, 28 September 2013.
+Sat,28-Sep-2013~19:01 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sat,28-Sep-2013~19:03 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('raining', 'NO')]
+Sat,28-Sep-2013~19:03 KIND: IMP
+Sat,28-Sep-2013~19:03 ACTIONS: {'weather': 1}
+Sat,28-Sep-2013~19:03 WEIGHTS: {1: ['weather']}
+Sat,28-Sep-2013~19:03 BEST: weather
+Sat,28-Sep-2013~19:03 INTERACTION: Hang on, Aaron...
+Sat,28-Sep-2013~19:03 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sat,28-Sep-2013~19:03 KEYWORDS: []
+Sat,28-Sep-2013~19:03 TODAY: 5
+Sat,28-Sep-2013~19:03 DAY: 0
+Sat,28-Sep-2013~19:03 INTERACTION: I couldn't retrieve the weather.
+Sat,28-Sep-2013~19:03 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sat,28-Sep-2013~19:39 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sat,28-Sep-2013~19:39 KIND: INT
+Sat,28-Sep-2013~19:39 ACTIONS: {'clock': 1}
+Sat,28-Sep-2013~19:39 WEIGHTS: {1: ['clock']}
+Sat,28-Sep-2013~19:39 BEST: clock
+Sat,28-Sep-2013~19:39 KEYWORDS: ['time']
+Sat,28-Sep-2013~19:39 INTERACTION: It is 7:39pm.
+Sat,28-Sep-2013~19:39 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sat,28-Sep-2013~19:40 Successfully imported Modules.clock
+Sat,28-Sep-2013~19:40 Successfully imported Modules.discover
+Sat,28-Sep-2013~19:40 Successfully imported Modules.finder
+Sat,28-Sep-2013~19:40 Successfully imported Modules.loader
+Sat,28-Sep-2013~19:40 Successfully imported Modules.media
+Sat,28-Sep-2013~19:40 Successfully imported Modules.personality
+Sat,28-Sep-2013~19:40 Successfully imported Modules.settings
+Sat,28-Sep-2013~19:40 Successfully imported Modules.weather
+Sat,28-Sep-2013~19:40 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~19:40 INTERACTION: Bye!
+Sat,28-Sep-2013~19:42 SENTENCE: [('hello', 'NS')]
+Sat,28-Sep-2013~19:42 KIND: DEC
+Sat,28-Sep-2013~19:42 INTERACTION: Good Evening, Aaron.
+Sat,28-Sep-2013~19:42 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sat,28-Sep-2013~19:44 Successfully imported Modules.clock
+Sat,28-Sep-2013~19:44 Successfully imported Modules.discover
+Sat,28-Sep-2013~19:44 Successfully imported Modules.finder
+Sat,28-Sep-2013~19:44 Successfully imported Modules.loader
+Sat,28-Sep-2013~19:44 Successfully imported Modules.media
+Sat,28-Sep-2013~19:44 Successfully imported Modules.personality
+Sat,28-Sep-2013~19:44 Successfully imported Modules.settings
+Sat,28-Sep-2013~19:44 Successfully imported Modules.weather
+Sat,28-Sep-2013~19:44 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~19:44 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sat,28-Sep-2013~19:44 KIND: INT
+Sat,28-Sep-2013~19:44 ACTIONS: {'clock': 1}
+Sat,28-Sep-2013~19:44 WEIGHTS: {1: ['clock']}
+Sat,28-Sep-2013~19:44 BEST: clock
+Sat,28-Sep-2013~19:44 KEYWORDS: ['time']
+Sat,28-Sep-2013~19:44 INTERACTION: It is 7:44pm.
+Sat,28-Sep-2013~19:44 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cold', 'NO'), ('outside', 'PP')]
+Sat,28-Sep-2013~19:44 KIND: IMP
+Sat,28-Sep-2013~19:44 ACTIONS: {'weather': 1}
+Sat,28-Sep-2013~19:44 WEIGHTS: {1: ['weather']}
+Sat,28-Sep-2013~19:44 BEST: weather
+Sat,28-Sep-2013~19:44 INTERACTION: Let me see, Aaron...
+Sat,28-Sep-2013~19:44 KEYWORDS: []
+Sat,28-Sep-2013~19:44 TODAY: 5
+Sat,28-Sep-2013~19:44 DAY: 0
+Sat,28-Sep-2013~19:44 INTERACTION: I couldn't retrieve the weather.
+Sat,28-Sep-2013~19:45 Successfully imported Modules.clock
+Sat,28-Sep-2013~19:45 Successfully imported Modules.discover
+Sat,28-Sep-2013~19:45 Successfully imported Modules.finder
+Sat,28-Sep-2013~19:45 Successfully imported Modules.loader
+Sat,28-Sep-2013~19:45 Successfully imported Modules.media
+Sat,28-Sep-2013~19:45 Successfully imported Modules.personality
+Sat,28-Sep-2013~19:45 Successfully imported Modules.settings
+Sat,28-Sep-2013~19:45 Successfully imported Modules.weather
+Sat,28-Sep-2013~19:45 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~19:45 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sat,28-Sep-2013~19:45 KIND: INT
+Sat,28-Sep-2013~19:45 ACTIONS: {'clock': 1}
+Sat,28-Sep-2013~19:45 WEIGHTS: {1: ['clock']}
+Sat,28-Sep-2013~19:45 BEST: clock
+Sat,28-Sep-2013~19:45 KEYWORDS: ['time']
+Sat,28-Sep-2013~19:45 INTERACTION: It is 7:45pm.
+Sat,28-Sep-2013~19:46 Successfully imported Modules.clock
+Sat,28-Sep-2013~19:46 Successfully imported Modules.discover
+Sat,28-Sep-2013~19:46 Successfully imported Modules.finder
+Sat,28-Sep-2013~19:46 Successfully imported Modules.loader
+Sat,28-Sep-2013~19:46 Successfully imported Modules.media
+Sat,28-Sep-2013~19:46 Successfully imported Modules.personality
+Sat,28-Sep-2013~19:46 Successfully imported Modules.settings
+Sat,28-Sep-2013~19:46 Successfully imported Modules.weather
+Sat,28-Sep-2013~19:46 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~19:47 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sat,28-Sep-2013~19:47 KIND: INT
+Sat,28-Sep-2013~19:47 ACTIONS: {'clock': 1}
+Sat,28-Sep-2013~19:47 WEIGHTS: {1: ['clock']}
+Sat,28-Sep-2013~19:47 BEST: clock
+Sat,28-Sep-2013~19:47 KEYWORDS: ['time']
+Sat,28-Sep-2013~19:47 INTERACTION: It is 7:47pm.
+Sat,28-Sep-2013~19:47 Successfully imported Modules.clock
+Sat,28-Sep-2013~19:47 Successfully imported Modules.discover
+Sat,28-Sep-2013~19:47 Successfully imported Modules.finder
+Sat,28-Sep-2013~19:47 Successfully imported Modules.loader
+Sat,28-Sep-2013~19:47 Successfully imported Modules.media
+Sat,28-Sep-2013~19:47 Successfully imported Modules.personality
+Sat,28-Sep-2013~19:47 Successfully imported Modules.settings
+Sat,28-Sep-2013~19:47 Successfully imported Modules.weather
+Sat,28-Sep-2013~19:47 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~19:47 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sat,28-Sep-2013~19:47 KIND: INT
+Sat,28-Sep-2013~19:47 ACTIONS: {'clock': 1}
+Sat,28-Sep-2013~19:47 WEIGHTS: {1: ['clock']}
+Sat,28-Sep-2013~19:47 BEST: clock
+Sat,28-Sep-2013~19:47 KEYWORDS: ['time']
+Sat,28-Sep-2013~19:47 INTERACTION: It is 7:47pm.
+Sat,28-Sep-2013~19:47 Successfully imported Modules.clock
+Sat,28-Sep-2013~19:47 Successfully imported Modules.discover
+Sat,28-Sep-2013~19:47 Successfully imported Modules.finder
+Sat,28-Sep-2013~19:47 Successfully imported Modules.loader
+Sat,28-Sep-2013~19:47 Successfully imported Modules.media
+Sat,28-Sep-2013~19:47 Successfully imported Modules.personality
+Sat,28-Sep-2013~19:47 Successfully imported Modules.settings
+Sat,28-Sep-2013~19:47 Successfully imported Modules.weather
+Sat,28-Sep-2013~19:47 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~19:47 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sat,28-Sep-2013~19:47 KIND: INT
+Sat,28-Sep-2013~19:47 ACTIONS: {'clock': 1}
+Sat,28-Sep-2013~19:47 WEIGHTS: {1: ['clock']}
+Sat,28-Sep-2013~19:47 BEST: clock
+Sat,28-Sep-2013~19:47 KEYWORDS: ['time']
+Sat,28-Sep-2013~19:47 INTERACTION: It is 7:47pm.
+Sat,28-Sep-2013~19:47 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('raining', 'NO')]
+Sat,28-Sep-2013~19:47 KIND: IMP
+Sat,28-Sep-2013~19:47 ACTIONS: {'weather': 1}
+Sat,28-Sep-2013~19:47 WEIGHTS: {1: ['weather']}
+Sat,28-Sep-2013~19:47 BEST: weather
+Sat,28-Sep-2013~19:47 INTERACTION: Let me see...
+Sat,28-Sep-2013~19:47 KEYWORDS: []
+Sat,28-Sep-2013~19:47 TODAY: 5
+Sat,28-Sep-2013~19:47 DAY: 0
+Sat,28-Sep-2013~19:47 INTERACTION: I couldn't retrieve the weather.
+Sat,28-Sep-2013~19:47 SENTENCE: [('i', 'PS'), ('name', 'NS'), ('be', 'VB'), ('aaron', '??')]
+Sat,28-Sep-2013~19:47 KIND: DEC
+Sat,28-Sep-2013~19:47 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~19:47 KEYWORDS: [('name', 1), ('aaron', 3)]
+Sat,28-Sep-2013~19:47 SETTING:     "name": "Aaron",
+
+Sat,28-Sep-2013~19:47     name
+Sat,28-Sep-2013~19:47 INTERACTION: Got it, I'll call you Aaron.
+Sat,28-Sep-2013~19:48 Successfully imported Modules.clock
+Sat,28-Sep-2013~19:48 Successfully imported Modules.discover
+Sat,28-Sep-2013~19:48 Successfully imported Modules.finder
+Sat,28-Sep-2013~19:48 Successfully imported Modules.loader
+Sat,28-Sep-2013~19:48 Successfully imported Modules.media
+Sat,28-Sep-2013~19:48 Successfully imported Modules.personality
+Sat,28-Sep-2013~19:48 Successfully imported Modules.settings
+Sat,28-Sep-2013~19:48 Successfully imported Modules.weather
+Sat,28-Sep-2013~19:48 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~19:49 SENTENCE: [('i', 'PS'), ('name', 'NS'), ('be', 'VB'), ('aaron', '??')]
+Sat,28-Sep-2013~19:49 KIND: DEC
+Sat,28-Sep-2013~19:49 KEYWORDS: Short-circuit successful.
+Sat,28-Sep-2013~19:49 KEYWORDS: [('name', 1), ('aaron', 3)]
+Sat,28-Sep-2013~19:49 SETTING:     "name": "Aaron",
+
+Sat,28-Sep-2013~19:49     name
+Sat,28-Sep-2013~19:49 INTERACTION: Ok, I'll call you Aaron from now on.
+Sat,28-Sep-2013~19:51 SENTENCE: [('hello', 'NS')]
+Sat,28-Sep-2013~19:51 KIND: DEC
+Sat,28-Sep-2013~19:51 INTERACTION: Hello, Aaron.
+Sat,28-Sep-2013~19:51 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sat,28-Sep-2013~19:51 SENTENCE: [('hello', 'NS')]
+Sat,28-Sep-2013~19:51 KIND: DEC
+Sat,28-Sep-2013~19:51 INTERACTION: Good Evening.
+Sat,28-Sep-2013~19:51 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sat,28-Sep-2013~19:52 SENTENCE: [('hello', 'NS')]
+Sat,28-Sep-2013~19:52 KIND: DEC
+Sat,28-Sep-2013~19:52 INTERACTION: Hi.
+Sat,28-Sep-2013~19:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sat,28-Sep-2013~19:52 SENTENCE: [('hello', 'NS')]
+Sat,28-Sep-2013~19:52 KIND: DEC
+Sat,28-Sep-2013~19:52 INTERACTION: Hello, Aaron.
+Sat,28-Sep-2013~19:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sat,28-Sep-2013~19:52 SENTENCE: [('hello', 'NS')]
+Sat,28-Sep-2013~19:52 KIND: DEC
+Sat,28-Sep-2013~19:52 INTERACTION: Hi.
+Sat,28-Sep-2013~19:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sat,28-Sep-2013~19:52 SENTENCE: [('hello', 'NS')]
+Sat,28-Sep-2013~19:52 KIND: DEC
+Sat,28-Sep-2013~19:52 INTERACTION: Good Evening.
+Sat,28-Sep-2013~19:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sat,28-Sep-2013~19:52 SENTENCE: [('hello', 'NS')]
+Sat,28-Sep-2013~19:52 KIND: DEC
+Sat,28-Sep-2013~19:52 INTERACTION: Hi.
+Sat,28-Sep-2013~19:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sat,28-Sep-2013~19:52 SENTENCE: [('hello', 'NS')]
+Sat,28-Sep-2013~19:52 KIND: DEC
+Sat,28-Sep-2013~19:52 INTERACTION: Good Evening.
+Sat,28-Sep-2013~19:52 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sat,28-Sep-2013~23:31 Successfully imported Modules.clock
+Sat,28-Sep-2013~23:31 Successfully imported Modules.discover
+Sat,28-Sep-2013~23:31 Successfully imported Modules.finder
+Sat,28-Sep-2013~23:31 Successfully imported Modules.loader
+Sat,28-Sep-2013~23:31 Successfully imported Modules.media
+Sat,28-Sep-2013~23:31 Successfully imported Modules.personality
+Sat,28-Sep-2013~23:31 Successfully imported Modules.settings
+Sat,28-Sep-2013~23:31 Successfully imported Modules.weather
+Sat,28-Sep-2013~23:31 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~23:37 INTERACTION: Bye!
+Sat,28-Sep-2013~23:41 Successfully imported Modules.clock
+Sat,28-Sep-2013~23:41 Successfully imported Modules.discover
+Sat,28-Sep-2013~23:41 Successfully imported Modules.finder
+Sat,28-Sep-2013~23:41 Successfully imported Modules.loader
+Sat,28-Sep-2013~23:41 Successfully imported Modules.media
+Sat,28-Sep-2013~23:41 Successfully imported Modules.personality
+Sat,28-Sep-2013~23:41 Successfully imported Modules.settings
+Sat,28-Sep-2013~23:41 Successfully imported Modules.weather
+Sat,28-Sep-2013~23:41 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~23:42 SENTENCE: [('hello', 'NS')]
+Sat,28-Sep-2013~23:42 KIND: DEC
+Sat,28-Sep-2013~23:42 INTERACTION: Hi.
+Sat,28-Sep-2013~23:42 INTERACTION: 
+Bye!
+Sat,28-Sep-2013~23:53 Successfully imported Modules.clock
+Sat,28-Sep-2013~23:53 Successfully imported Modules.discover
+Sat,28-Sep-2013~23:53 Successfully imported Modules.finder
+Sat,28-Sep-2013~23:53 Successfully imported Modules.loader
+Sat,28-Sep-2013~23:53 Successfully imported Modules.media
+Sat,28-Sep-2013~23:53 Successfully imported Modules.personality
+Sat,28-Sep-2013~23:53 Successfully imported Modules.settings
+Sat,28-Sep-2013~23:53 Successfully imported Modules.weather
+Sat,28-Sep-2013~23:53 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~23:53 SENTENCE: [('hello', 'NS')]
+Sat,28-Sep-2013~23:53 KIND: DEC
+Sat,28-Sep-2013~23:53 INTERACTION: Hello, Aaron.
+Sat,28-Sep-2013~23:53 SENTENCE: [('good', '??'), ('morning', 'NS')]
+Sat,28-Sep-2013~23:53 KIND: DEC
+Sat,28-Sep-2013~23:53 INTERACTION: Hi, Aaron.
+Sat,28-Sep-2013~23:53 INTERACTION: 
+Bye!
+Sat,28-Sep-2013~23:53 Successfully imported Modules.clock
+Sat,28-Sep-2013~23:53 Successfully imported Modules.discover
+Sat,28-Sep-2013~23:53 Successfully imported Modules.finder
+Sat,28-Sep-2013~23:53 Successfully imported Modules.loader
+Sat,28-Sep-2013~23:53 Successfully imported Modules.media
+Sat,28-Sep-2013~23:53 Successfully imported Modules.personality
+Sat,28-Sep-2013~23:53 Successfully imported Modules.settings
+Sat,28-Sep-2013~23:53 Successfully imported Modules.weather
+Sat,28-Sep-2013~23:53 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~23:53 SENTENCE: [('hello', 'NS')]
+Sat,28-Sep-2013~23:53 KIND: DEC
+Sat,28-Sep-2013~23:53 INTERACTION: Hello.
+Sat,28-Sep-2013~23:57 Successfully imported Modules.clock
+Sat,28-Sep-2013~23:57 Successfully imported Modules.discover
+Sat,28-Sep-2013~23:57 Successfully imported Modules.finder
+Sat,28-Sep-2013~23:57 Successfully imported Modules.loader
+Sat,28-Sep-2013~23:57 Successfully imported Modules.media
+Sat,28-Sep-2013~23:57 Successfully imported Modules.personality
+Sat,28-Sep-2013~23:57 Successfully imported Modules.settings
+Sat,28-Sep-2013~23:57 Successfully imported Modules.weather
+Sat,28-Sep-2013~23:57 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~23:57 SENTENCE: [('hello', 'NS')]
+Sat,28-Sep-2013~23:57 KIND: DEC
+Sat,28-Sep-2013~23:57 INTERACTION: Hi, Aaron.
+Sat,28-Sep-2013~23:57 Successfully imported Modules.clock
+Sat,28-Sep-2013~23:57 Successfully imported Modules.discover
+Sat,28-Sep-2013~23:57 Successfully imported Modules.finder
+Sat,28-Sep-2013~23:57 Successfully imported Modules.loader
+Sat,28-Sep-2013~23:57 Successfully imported Modules.media
+Sat,28-Sep-2013~23:57 Successfully imported Modules.personality
+Sat,28-Sep-2013~23:57 Successfully imported Modules.settings
+Sat,28-Sep-2013~23:57 Successfully imported Modules.weather
+Sat,28-Sep-2013~23:57 Successfully imported Modules.wikipedia
+Sat,28-Sep-2013~23:57 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sat,28-Sep-2013~23:57 KIND: INT
+Sat,28-Sep-2013~23:57 ACTIONS: {'clock': 1}
+Sat,28-Sep-2013~23:57 WEIGHTS: {1: ['clock']}
+Sat,28-Sep-2013~23:57 BEST: clock
+Sat,28-Sep-2013~23:57 KEYWORDS: ['time']
+Sat,28-Sep-2013~23:57 INTERACTION: It is 11:57pm.
+Sat,28-Sep-2013~23:57 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('day', 'NO'), ('today', 'NO')]
+Sat,28-Sep-2013~23:57 KIND: INT
+Sat,28-Sep-2013~23:57 ACTIONS: {'clock': 1, 'weather': 1}
+Sat,28-Sep-2013~23:57 WEIGHTS: {1: ['clock', 'weather']}
+Sat,28-Sep-2013~23:57 BEST: clock
+Sat,28-Sep-2013~23:57 KEYWORDS: ['day', 'today']
+Sat,28-Sep-2013~23:57 INTERACTION: It is Saturday.
+Sat,28-Sep-2013~23:58 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('date', 'NO'), ('tomorrow', 'NO')]
+Sat,28-Sep-2013~23:58 KIND: INT
+Sat,28-Sep-2013~23:58 ACTIONS: {'clock': 1, 'weather': 1}
+Sat,28-Sep-2013~23:58 WEIGHTS: {1: ['clock', 'weather']}
+Sat,28-Sep-2013~23:58 BEST: clock
+Sat,28-Sep-2013~23:58 KEYWORDS: ['date', 'tomorrow']
+Sat,28-Sep-2013~23:58 INTERACTION: It is Saturday, 28 September 2013.
+Sun,29-Sep-2013~00:02 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('be', 'VB'), ('raining', 'NO')]
+Sun,29-Sep-2013~00:02 KIND: IMP
+Sun,29-Sep-2013~00:02 ACTIONS: {'weather': 1}
+Sun,29-Sep-2013~00:02 WEIGHTS: {1: ['weather']}
+Sun,29-Sep-2013~00:02 BEST: weather
+Sun,29-Sep-2013~00:02 INTERACTION: Hang on...
+Sun,29-Sep-2013~00:02 KEYWORDS: []
+Sun,29-Sep-2013~00:02 TODAY: 6
+Sun,29-Sep-2013~00:02 DAY: 0
+Sun,29-Sep-2013~00:02 WEATHER_RAW: ['<yweather:condition  text="Light Rain Shower"  code="11"  temp="9"  date="Sat, 28 Sep 2013 11:31 pm NZST" />\n', '<yweather:forecast day="Sat" date="28 Sep 2013" low="7" high="16" text="Showers" code="11" />\n', '<yweather:forecast day="Sun" date="29 Sep 2013" low="6" high="13" text="AM Showers" code="39" />\n', '<yweather:forecast day="Mon" date="30 Sep 2013" low="4" high="14" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Tue" date="1 Oct 2013" low="8" high="18" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Wed" date="2 Oct 2013" low="10" high="17" text="Cloudy" code="26" />\n']
+Sun,29-Sep-2013~00:02 ITEMS: ['text', 'Light Rain Shower', 'code', '11', 'temp', '9', 'date', 'Sat, 28 Sep 2013 11:31 pm NZST']
+Sun,29-Sep-2013~00:02 ITEMS: ['day', 'Sat', 'date', '28 Sep 2013', 'low', '7', 'high', '16', 'text', 'Showers', 'code', '11']
+Sun,29-Sep-2013~00:02 INTERACTION: It's 9°C, and light rain shower. The high is 16°C, showers.
+Sun,29-Sep-2013~19:13 INTERACTION: 
+Bye!
+Sun,29-Sep-2013~19:13 Successfully imported Modules.clock
+Sun,29-Sep-2013~19:13 Successfully imported Modules.discover
+Sun,29-Sep-2013~19:13 Successfully imported Modules.finder
+Sun,29-Sep-2013~19:13 Successfully imported Modules.loader
+Sun,29-Sep-2013~19:13 Successfully imported Modules.media
+Sun,29-Sep-2013~19:13 Successfully imported Modules.personality
+Sun,29-Sep-2013~19:13 Successfully imported Modules.settings
+Sun,29-Sep-2013~19:13 Successfully imported Modules.weather
+Sun,29-Sep-2013~19:13 Successfully imported Modules.wikipedia
+Sun,29-Sep-2013~19:15 Successfully imported Modules.clock
+Sun,29-Sep-2013~19:15 Successfully imported Modules.discover
+Sun,29-Sep-2013~19:15 Successfully imported Modules.finder
+Sun,29-Sep-2013~19:15 Successfully imported Modules.loader
+Sun,29-Sep-2013~19:15 Successfully imported Modules.media
+Sun,29-Sep-2013~19:15 Successfully imported Modules.personality
+Sun,29-Sep-2013~19:15 Successfully imported Modules.settings
+Sun,29-Sep-2013~19:15 Successfully imported Modules.weather
+Sun,29-Sep-2013~19:15 Successfully imported Modules.wikipedia
+Sun,29-Sep-2013~19:15 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sun,29-Sep-2013~19:15 KIND: INT
+Sun,29-Sep-2013~19:15 ACTIONS: {'clock': 1}
+Sun,29-Sep-2013~19:15 WEIGHTS: {1: ['clock']}
+Sun,29-Sep-2013~19:15 BEST: clock
+Sun,29-Sep-2013~19:15 KEYWORDS: ['time']
+Sun,29-Sep-2013~19:15 INTERACTION: It is 7:15pm.
+Sun,29-Sep-2013~19:15 INTERACTION: 
+Bye!
+Sun,29-Sep-2013~19:15 Successfully imported Modules.clock
+Sun,29-Sep-2013~19:15 Successfully imported Modules.discover
+Sun,29-Sep-2013~19:15 Successfully imported Modules.finder
+Sun,29-Sep-2013~19:15 Successfully imported Modules.loader
+Sun,29-Sep-2013~19:15 Successfully imported Modules.media
+Sun,29-Sep-2013~19:15 Successfully imported Modules.personality
+Sun,29-Sep-2013~19:15 Successfully imported Modules.settings
+Sun,29-Sep-2013~19:15 Successfully imported Modules.weather
+Sun,29-Sep-2013~19:15 Successfully imported Modules.wikipedia
+Sun,29-Sep-2013~19:15 INTERACTION: Bye!
+Sun,29-Sep-2013~19:15 Successfully imported Modules.clock
+Sun,29-Sep-2013~19:15 Successfully imported Modules.discover
+Sun,29-Sep-2013~19:15 Successfully imported Modules.finder
+Sun,29-Sep-2013~19:15 Successfully imported Modules.loader
+Sun,29-Sep-2013~19:15 Successfully imported Modules.media
+Sun,29-Sep-2013~19:15 Successfully imported Modules.personality
+Sun,29-Sep-2013~19:15 Successfully imported Modules.settings
+Sun,29-Sep-2013~19:15 Successfully imported Modules.weather
+Sun,29-Sep-2013~19:15 Successfully imported Modules.wikipedia
+Sun,29-Sep-2013~19:15 INTERACTION: Bye!
+Sun,29-Sep-2013~19:26 Successfully imported Modules.clock
+Sun,29-Sep-2013~19:26 Successfully imported Modules.discover
+Sun,29-Sep-2013~19:26 Successfully imported Modules.finder
+Sun,29-Sep-2013~19:26 Successfully imported Modules.loader
+Sun,29-Sep-2013~19:26 Successfully imported Modules.media
+Sun,29-Sep-2013~19:26 Successfully imported Modules.personality
+Sun,29-Sep-2013~19:26 Successfully imported Modules.settings
+Sun,29-Sep-2013~19:26 Successfully imported Modules.weather
+Sun,29-Sep-2013~19:26 Successfully imported Modules.wikipedia
+Sun,29-Sep-2013~19:28 SENTENCE: [('hello', 'NS')]
+Sun,29-Sep-2013~19:28 KIND: DEC
+Sun,29-Sep-2013~19:28 INTERACTION: Hi.
+Sun,29-Sep-2013~19:28 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sun,29-Sep-2013~19:28 SENTENCE: [('', '??')]
+Sun,29-Sep-2013~19:28 KIND: DEC
+Sun,29-Sep-2013~19:28 INTERACTION: I'm still learning!
+Sun,29-Sep-2013~19:28 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sun,29-Sep-2013~19:28 SENTENCE: [('hello', 'NS')]
+Sun,29-Sep-2013~19:28 KIND: DEC
+Sun,29-Sep-2013~19:28 INTERACTION: Good Evening, Aaron.
+Sun,29-Sep-2013~19:28 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sun,29-Sep-2013~19:28 SENTENCE: [('', '??')]
+Sun,29-Sep-2013~19:28 KIND: DEC
+Sun,29-Sep-2013~19:28 INTERACTION: I'm still learning!
+Sun,29-Sep-2013~19:28 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sun,29-Sep-2013~19:34 Successfully imported Modules.clock
+Sun,29-Sep-2013~19:34 Successfully imported Modules.discover
+Sun,29-Sep-2013~19:34 Successfully imported Modules.finder
+Sun,29-Sep-2013~19:34 Successfully imported Modules.loader
+Sun,29-Sep-2013~19:34 Successfully imported Modules.media
+Sun,29-Sep-2013~19:34 Successfully imported Modules.personality
+Sun,29-Sep-2013~19:34 Successfully imported Modules.settings
+Sun,29-Sep-2013~19:34 Successfully imported Modules.weather
+Sun,29-Sep-2013~19:34 Successfully imported Modules.wikipedia
+Sun,29-Sep-2013~19:34 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Sun,29-Sep-2013~19:34 KIND: INT
+Sun,29-Sep-2013~19:34 ACTIONS: {'clock': 1}
+Sun,29-Sep-2013~19:34 WEIGHTS: {1: ['clock']}
+Sun,29-Sep-2013~19:34 BEST: clock
+Sun,29-Sep-2013~19:34 KEYWORDS: ['time']
+Sun,29-Sep-2013~19:34 INTERACTION: It is 7:34pm.
+Sun,29-Sep-2013~19:34 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sun,29-Sep-2013~19:34 SENTENCE: [('hello', 'NS')]
+Sun,29-Sep-2013~19:34 KIND: DEC
+Sun,29-Sep-2013~19:34 INTERACTION: Hi, Aaron.
+Sun,29-Sep-2013~19:34 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sun,29-Sep-2013~19:36 SENTENCE: [('hi', 'NS')]
+Sun,29-Sep-2013~19:36 KIND: DEC
+Sun,29-Sep-2013~19:36 INTERACTION: Hi.
+Sun,29-Sep-2013~19:36 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sun,29-Sep-2013~19:36 SENTENCE: [('hello', 'NS')]
+Sun,29-Sep-2013~19:36 KIND: DEC
+Sun,29-Sep-2013~19:36 INTERACTION: Good Evening.
+Sun,29-Sep-2013~19:36 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sun,29-Sep-2013~19:36 SENTENCE: [('hi', 'NS')]
+Sun,29-Sep-2013~19:36 KIND: DEC
+Sun,29-Sep-2013~19:36 INTERACTION: Good Evening.
+Sun,29-Sep-2013~19:36 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Sun,29-Sep-2013~19:37 Successfully imported Modules.clock
+Sun,29-Sep-2013~19:37 Successfully imported Modules.discover
+Sun,29-Sep-2013~19:37 Successfully imported Modules.finder
+Sun,29-Sep-2013~19:37 Successfully imported Modules.loader
+Sun,29-Sep-2013~19:37 Successfully imported Modules.media
+Sun,29-Sep-2013~19:37 Successfully imported Modules.personality
+Sun,29-Sep-2013~19:37 Successfully imported Modules.settings
+Sun,29-Sep-2013~19:37 Successfully imported Modules.weather
+Sun,29-Sep-2013~19:37 Successfully imported Modules.wikipedia
+Sun,29-Sep-2013~19:37 Successfully imported Modules.clock
+Sun,29-Sep-2013~19:37 Successfully imported Modules.discover
+Sun,29-Sep-2013~19:37 Successfully imported Modules.finder
+Sun,29-Sep-2013~19:37 Successfully imported Modules.loader
+Sun,29-Sep-2013~19:37 Successfully imported Modules.media
+Sun,29-Sep-2013~19:37 Successfully imported Modules.personality
+Sun,29-Sep-2013~19:37 Successfully imported Modules.settings
+Sun,29-Sep-2013~19:37 Successfully imported Modules.weather
+Sun,29-Sep-2013~19:37 Successfully imported Modules.wikipedia
+Mon,30-Sep-2013~14:00 Successfully imported Modules.clock
+Mon,30-Sep-2013~14:00 Successfully imported Modules.discover
+Mon,30-Sep-2013~14:00 Successfully imported Modules.finder
+Mon,30-Sep-2013~14:00 Successfully imported Modules.loader
+Mon,30-Sep-2013~14:00 Successfully imported Modules.media
+Mon,30-Sep-2013~14:00 Successfully imported Modules.personality
+Mon,30-Sep-2013~14:00 Successfully imported Modules.settings
+Mon,30-Sep-2013~14:00 Successfully imported Modules.weather
+Mon,30-Sep-2013~14:00 Successfully imported Modules.wikipedia
+Mon,30-Sep-2013~14:00 SENTENCE: [('hello', 'NS')]
+Mon,30-Sep-2013~14:00 KIND: DEC
+Mon,30-Sep-2013~14:00 INTERACTION: Good Morning.
+Mon,30-Sep-2013~14:00 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Mon,30-Sep-2013~14:00 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,30-Sep-2013~14:00 KIND: INT
+Mon,30-Sep-2013~14:00 ACTIONS: {'weather': 1}
+Mon,30-Sep-2013~14:00 WEIGHTS: {1: ['weather']}
+Mon,30-Sep-2013~14:00 BEST: weather
+Mon,30-Sep-2013~14:00 INTERACTION: Just a moment, Aaron.
+Mon,30-Sep-2013~14:00 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Mon,30-Sep-2013~14:00 KEYWORDS: []
+Mon,30-Sep-2013~14:00 TODAY: 0
+Mon,30-Sep-2013~14:00 DAY: 0
+Mon,30-Sep-2013~14:00 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="30"  temp="13"  date="Mon, 30 Sep 2013 1:29 pm NZST" />\n', '<yweather:forecast day="Mon" date="30 Sep 2013" low="4" high="14" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Tue" date="1 Oct 2013" low="8" high="19" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Wed" date="2 Oct 2013" low="8" high="18" text="Cloudy" code="26" />\n', '<yweather:forecast day="Thu" date="3 Oct 2013" low="9" high="16" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Fri" date="4 Oct 2013" low="8" high="17" text="Cloudy" code="26" />\n']
+Mon,30-Sep-2013~14:00 ITEMS: ['text', 'Partly Cloudy', 'code', '30', 'temp', '13', 'date', 'Mon, 30 Sep 2013 1:29 pm NZST']
+Mon,30-Sep-2013~14:00 ITEMS: ['day', 'Mon', 'date', '30 Sep 2013', 'low', '4', 'high', '14', 'text', 'Partly Cloudy', 'code', '30']
+Mon,30-Sep-2013~14:00 INTERACTION: It's 13°C, and partly cloudy. The high today is 14°C, partly cloudy.
+Mon,30-Sep-2013~14:00 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Mon,30-Sep-2013~14:00 SENTENCE: [('ok', '??')]
+Mon,30-Sep-2013~14:00 KIND: DEC
+Mon,30-Sep-2013~14:00 INTERACTION: I'm still learning!
+Mon,30-Sep-2013~14:00 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Mon,30-Sep-2013~14:00 SENTENCE: [('dammit', '??')]
+Mon,30-Sep-2013~14:00 KIND: DEC
+Mon,30-Sep-2013~14:00 INTERACTION: I'm still learning!
+Mon,30-Sep-2013~14:00 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Mon,30-Sep-2013~14:00 SENTENCE: [('now', '??'), ("i'm", '??'), ('the', 'AR'), ('sentence', '??'), ('behind', 'PP')]
+Mon,30-Sep-2013~14:00 KIND: DEC
+Mon,30-Sep-2013~14:00 INTERACTION: I'm still learning!
+Mon,30-Sep-2013~14:00 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Mon,30-Sep-2013~14:00 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('sunny', 'NO')]
+Mon,30-Sep-2013~14:00 KIND: IMP
+Mon,30-Sep-2013~14:00 ACTIONS: {'weather': 1}
+Mon,30-Sep-2013~14:00 WEIGHTS: {1: ['weather']}
+Mon,30-Sep-2013~14:00 BEST: weather
+Mon,30-Sep-2013~14:00 INTERACTION: Hang on, Aaron...
+Mon,30-Sep-2013~14:00 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Mon,30-Sep-2013~14:00 KEYWORDS: []
+Mon,30-Sep-2013~14:00 TODAY: 0
+Mon,30-Sep-2013~14:00 DAY: 0
+Mon,30-Sep-2013~14:01 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="30"  temp="13"  date="Mon, 30 Sep 2013 1:29 pm NZST" />\n', '<yweather:forecast day="Mon" date="30 Sep 2013" low="4" high="14" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Tue" date="1 Oct 2013" low="8" high="19" text="Partly Cloudy" code="30" />\n', '<yweather:forecast day="Wed" date="2 Oct 2013" low="8" high="18" text="Cloudy" code="26" />\n', '<yweather:forecast day="Thu" date="3 Oct 2013" low="9" high="16" text="Mostly Cloudy" code="28" />\n', '<yweather:forecast day="Fri" date="4 Oct 2013" low="8" high="17" text="Cloudy" code="26" />\n']
+Mon,30-Sep-2013~14:01 ITEMS: ['text', 'Partly Cloudy', 'code', '30', 'temp', '13', 'date', 'Mon, 30 Sep 2013 1:29 pm NZST']
+Mon,30-Sep-2013~14:01 ITEMS: ['day', 'Mon', 'date', '30 Sep 2013', 'low', '4', 'high', '14', 'text', 'Partly Cloudy', 'code', '30']
+Mon,30-Sep-2013~14:01 INTERACTION: It's 13°C, and partly cloudy. The high today is 14°C, partly cloudy.
+Mon,30-Sep-2013~14:01 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Mon,30-Sep-2013~14:01 SENTENCE: [('now', '??'), ("i'm", '??'), ('2', '??'), ('behind', 'PP')]
+Mon,30-Sep-2013~14:01 KIND: DEC
+Mon,30-Sep-2013~14:01 INTERACTION: I'm still learning!
+Mon,30-Sep-2013~14:01 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Mon,30-Sep-2013~14:01 SENTENCE: [('', '??')]
+Mon,30-Sep-2013~14:01 KIND: DEC
+Mon,30-Sep-2013~14:01 INTERACTION: I'm still learning!
+Mon,30-Sep-2013~14:01 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
+Mon,30-Sep-2013~19:52 Successfully imported Modules.clock
+Mon,30-Sep-2013~19:52 Successfully imported Modules.discover
+Mon,30-Sep-2013~19:52 Successfully imported Modules.finder
+Mon,30-Sep-2013~19:52 Successfully imported Modules.loader
+Mon,30-Sep-2013~19:52 Successfully imported Modules.media
+Mon,30-Sep-2013~19:52 Successfully imported Modules.personality
+Mon,30-Sep-2013~19:52 Successfully imported Modules.settings
+Mon,30-Sep-2013~19:52 Successfully imported Modules.weather
+Mon,30-Sep-2013~19:52 Successfully imported Modules.wikipedia
+Mon,30-Sep-2013~19:52 SENTENCE: [('hi', 'NS')]
+Mon,30-Sep-2013~19:52 KIND: DEC
+Mon,30-Sep-2013~19:52 INTERACTION: Ok.
+Mon,30-Sep-2013~19:52 INTERACTION: Ok.
+Mon,30-Sep-2013~19:52 SENTENCE: [('hello', 'NS')]
+Mon,30-Sep-2013~19:52 KIND: DEC
+Mon,30-Sep-2013~19:52 INTERACTION: Ok.
+Mon,30-Sep-2013~19:52 INTERACTION: Ok.
+Mon,30-Sep-2013~19:52 INTERACTION: Bye!
+Wed,02-Oct-2013~19:16 Successfully imported Modules.clock
+Wed,02-Oct-2013~19:16 Successfully imported Modules.discover
+Wed,02-Oct-2013~19:16 Successfully imported Modules.finder
+Wed,02-Oct-2013~19:16 Successfully imported Modules.loader
+Wed,02-Oct-2013~19:16 Successfully imported Modules.media
+Wed,02-Oct-2013~19:16 Successfully imported Modules.personality
+Wed,02-Oct-2013~19:16 Successfully imported Modules.settings
+Wed,02-Oct-2013~19:16 Successfully imported Modules.weather
+Wed,02-Oct-2013~19:16 Successfully imported Modules.wikipedia
+Wed,02-Oct-2013~19:17 SENTENCE: [('hello', 'NS')]
+Wed,02-Oct-2013~19:17 KIND: DEC
+Wed,02-Oct-2013~19:17 INTERACTION: Ok, Aaron.
+Wed,02-Oct-2013~19:17 INTERACTION: Ok, Aaron.
+Wed,02-Oct-2013~19:17 INTERACTION: Bye!
+Wed,02-Oct-2013~19:17 Successfully imported Modules.clock
+Wed,02-Oct-2013~19:17 Successfully imported Modules.discover
+Wed,02-Oct-2013~19:17 Successfully imported Modules.finder
+Wed,02-Oct-2013~19:17 Successfully imported Modules.loader
+Wed,02-Oct-2013~19:17 Successfully imported Modules.media
+Wed,02-Oct-2013~19:17 Successfully imported Modules.personality
+Wed,02-Oct-2013~19:17 Successfully imported Modules.settings
+Wed,02-Oct-2013~19:17 Successfully imported Modules.weather
+Wed,02-Oct-2013~19:17 Successfully imported Modules.wikipedia
+Wed,02-Oct-2013~19:17 Successfully imported Modules.clock
+Wed,02-Oct-2013~19:17 Successfully imported Modules.discover
+Wed,02-Oct-2013~19:17 Successfully imported Modules.finder
+Wed,02-Oct-2013~19:17 Successfully imported Modules.loader
+Wed,02-Oct-2013~19:17 Successfully imported Modules.media
+Wed,02-Oct-2013~19:17 Successfully imported Modules.personality
+Wed,02-Oct-2013~19:17 Successfully imported Modules.settings
+Wed,02-Oct-2013~19:17 Successfully imported Modules.weather
+Wed,02-Oct-2013~19:17 Successfully imported Modules.wikipedia

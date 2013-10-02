@@ -1,7 +1,7 @@
 """
 vocab.py
 This is where the words, their classes, and how to deal with them are all
-stored for paul to deal with. This will grow very very fast.
+stored for Paul to deal with.
 Author: Aaron Stockdill
 """
 import user_info

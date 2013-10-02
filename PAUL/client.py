@@ -3,24 +3,66 @@ PAUL server client.
 '''
 
 import socket
+from sys import argv
 
-HOST = 'localhost'       # The remote host
-PORT = 32012
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect((HOST, PORT))
-exiting = False
-while not exiting:
-    in_data = input("> ")
-    if in_data.lower() == "bye":
-        exiting = True
+DEFAULT_HOST = 'localhost'
+DEFAULT_PORT = 32012
+
+def extract_server_info(server_info):
+    if server_info == "default":
+        host, port = DEFAULT_HOST, DEFAULT_PORT
     else:
-        s.send(bytes(in_data, "utf-8"))
-        done = False
-        while not done:
-            data = s.recv(1024)
-            data = str(data, encoding="utf8").strip()
-            if data == "paul_done":
-                done = True
+        host, port = server_info.split(":")
+    return host, port
+
+def connection(server_info):
+    HOST = server_info[0]       # The remote host
+    PORT = server_info[1]
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect((HOST, PORT))
+    return s
+
+
+def get_return(s):
+    done = False
+    while not done:
+        data = s.recv(1024)
+        data = str(data, encoding="utf8").strip()
+        if data == "paul_done":
+            done = True
+        else:
+            return data
+
+
+
+def server_mode(server_info):
+    s = connection(extract_server_info(server_info))
+    exiting = False
+    while not exiting:
+        try:
+            in_data = input("> ")
+            if in_data.lower() == "bye":
+                exiting = True
             else:
-                print(data)
-s.close()
+                s.send(bytes(in_data, "utf-8"))
+                print(get_return(s))
+        except KeyboardInterrupt:
+            exitting = True
+        except EOFError:
+            exiting = True
+    print("Bye!")
+    s.close()
+
+
+
+def send_single(server_info, string):
+    s = connection(extract_server_info(server_info))
+    s.send(bytes(string, "utf-8"))
+    print(get_return(s))
+    s.close()
+
+if __name__ == "__main__":
+    if len(argv) > 2:
+        send_single(argv[1], " ".join(argv[2:]))
+    else:
+        server_mode(argv[1])

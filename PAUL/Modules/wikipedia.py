@@ -47,7 +47,7 @@ def findIt(what, sentence):
         else:
             return "I found nothing!"
     except urllib.error.URLError:
-        return "I couldn't complete the research for some reason!"
+        return "I couldn't complete the research for some reason. Are you connected to the internet?"
 
 
 
