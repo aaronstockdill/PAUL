@@ -36,17 +36,34 @@ def commands(sentence):
         return Modules.discover.process(sentence)
 
 
+def split_into_parts(line, i=0):
+    splitters = ["and", "then", ","]
+    parts = line.split(splitters[i])
+    if len(splitters) == i + 1:
+        return parts
+    pieces = []
+    for part in parts:
+        pieces += split_into_parts(part, i+1)
+    return pieces
+
+
 
 def process(line):
     ''' Process the given line '''
+    
+    parts = split_into_parts(line)
+    paul.log("PARTS:", parts)
+    
+    for part in [i for i in parts if i != ""]:
 
-    sentence = paul.Sentence(line)
+        sentence = paul.Sentence(part)
 
-    paul.log("SENTENCE: " + repr(sentence))
-    paul.log("KIND: " + sentence.kind)
+        paul.log("SENTENCE: " + repr(sentence))
+        paul.log("KIND: " + sentence.kind)
 
-    if sentence.kind == "IMP" or sentence.kind == "INT":
-        reply = commands(sentence)
-    else:
-        reply = sentence.forward("personality")
-    return paul.interact(reply)
+        if sentence.kind == "IMP" or sentence.kind == "INT":
+            reply = commands(sentence)
+        else:
+            reply = sentence.forward("personality")
+        #return paul.interact(reply)
+        paul.interact(reply)

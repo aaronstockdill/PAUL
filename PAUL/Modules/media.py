@@ -70,6 +70,7 @@ def main():
         "previous": ("media", "verb"), 
         "skip": ("media", "verb"),
         "back": ("media", "verb"),
+        "go": ("media", "verb"),
     }
     
     paul.associate(words)

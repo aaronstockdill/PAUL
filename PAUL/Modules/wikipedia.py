@@ -18,29 +18,39 @@ def stripIt(s):
     return re.sub('\s+', ' ', txt)
 
 
+def scrape_first_paragraph(url):
+    ''' Get the first paragraph of the specified (print-formatted) 
+        wikipedia article '''
+    opener = urllib.request.build_opener()
+    opener.addheaders = [('User-agent', 'PAUL/0.2.1')]
+    #gross_url = ('http://en.wikipedia.org/w/index.php?title='                
+                #+'{}&printable=yes'.format(re.sub(' ', '_', what)))
+    gross_url = url.replace("/wiki/", "/w/index.php?title=")+"&printable=yes"
+    
+    paul.log("URL ATTEMPT: " + gross_url)
+    infile = opener.open(gross_url)
+    page = [str(line, encoding='utf8').strip() for line
+            in infile.readlines()]
+    
+    content_start = page.index([line for line in page
+        if line.startswith("<div id=\"mw-content-text\"")][0])
+    para = ''.join(page[content_start:]).split("<p>")[1].split("</p>")[0]
+   
+    paul.user_info.info['it'] = url
+    para = stripIt(para)
+    if para.endswith("may refer to:"):
+        paul.run_script("open {}".format(url))
+        return "This is a diambiguation page. I'll bring it up now..."
+    return para + "\n\n" + url
+
 
 def findIt(what, sentence):
     ''' Get wikipedia's opening statement on the topic '''
     
-    opener = urllib.request.build_opener()
-    opener.addheaders = [('User-agent', 'Mozilla/5.0')]
     url = ('http://en.wikipedia.org/wiki/{}'.format(re.sub(' ', '_', what)))
     try:
-        paul.log("URL ATTEMPT: " + url)
-        infile = opener.open(url)
-        page = [str(line, encoding='utf8').strip() for line
-                in infile.readlines()]
-        
-        content_start = page.index([line for line in page
-                             if line.startswith("<div id=\"bodyContent\"")][0])
-        if [line for line in page if line.startswith("<table ")][0]:
-            content_start = page.index([line for line in page
-                                 if line.startswith("</table")][0])
-        index1 = page.index([line for line in page[content_start:]
-                             if line.startswith("<p")][0])
-    
-        paul.user_info.info['it'] = url
-        return stripIt(''.join(page[index1])) + "\n\n" + url
+        result = scrape_first_paragraph(url)
+        return result
     except urllib.error.HTTPError:
         if sentence.forward("discover"):
             return "I'll try something else, just a moment..."

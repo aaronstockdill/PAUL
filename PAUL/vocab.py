@@ -378,7 +378,6 @@ vocabulary = {
 
     'be':          Verb("be"),
     'will':        Verb("will"),
-    'go':          Verb("go"),
     'close':       Verb("close"),
     'open':        Verb("open"),
     'play':        Verb("play"),
