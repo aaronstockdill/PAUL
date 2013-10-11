@@ -53,10 +53,8 @@ def process(sentence):
         for word in keyword.split():
             new_keys.append(word)
     keywords = new_keys
+    keywords = paul.filter_unless_listed(keywords, DAYS, MONTHS, NOUNS)
     paul.log("KEYWORDS: " + str(keywords))
-    
-    time_str = time.strftime("%I:%M%p").lower()
-    time_str = time_str[1:] if time_str.startswith("0") else time_str
     
     return what_keyword(keywords[0])
 
@@ -74,6 +72,10 @@ def what_keyword(keyword="time"):
         answer = time.strftime("%Y")
     elif keyword == "date":
         answer = time.strftime("%A, %d %B %Y")
+    else:
+        time_str = time.strftime("%I:%M%p").lower()
+        ans = time_str[1:] if time_str.startswith("0") else time_str
+        answer = time.strftime("%A, {}".format(ans))
     
     return "It is {}.".format(answer)
 

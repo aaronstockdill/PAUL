@@ -66,7 +66,7 @@ def associate(words_dict):
 
 
 
-def interact(statement, response=None):
+def interact(statement, response=None, done_interacting=True):
     """ Standard function for interacting with the user. Use this function,
         not anything custom if possible. 'Response' can be 'list', 'y_n', 'arb'
         or None """
@@ -77,13 +77,13 @@ def interact(statement, response=None):
         os.system('say "{}"'.format(statement))
     if user_info.flags["SERVER"] != None:
         log("CONNECTION: " + repr(user_info.flags['SERVER']))
-        user_info.flags["SERVER"].send(bytes(statement + "{}".format(
-                                        " " * (1024 - len(statement))),
+        user_info.flags["SERVER"].send(bytes(statement,
                                         'utf-8'))
     if response:
         if user_info.flags["SERVER"] == None:
-            bringback = input("> ")
+            bringback = input(user_info.info["prompt"] + " ")
         else:
+            user_info.flags["SERVER"].send(bytes(" "*1024, "utf-8"))
             user_info.flags["SERVER"].send(bytes("paul_done", "utf-8"))
             bringback = user_info.flags["SERVER"].recv(1024)
             bringback = str(bringback, encoding="utf8")
@@ -218,6 +218,45 @@ def join_lists(*lists):
 
 
 
+def filter_unless_listed(main_list, *rest):
+    ''' Given a main list, filter any words not in the other lists from it '''
+    return_list = []
+    for item in main_list:
+        comparative = join_lists(*rest)
+        if iterable(item):
+            if has_one_of(item, comparative):
+                return_list.append(item)
+        elif item in comparative:
+            return_list.append(item)
+    return return_list
+
+
+
+def run_script(code, language='bash', response=False):
+    ''' Run the script code provided. Defaults to bash, can also be applescript
+        or python3. '''
+    
+    if language == "applescript":
+        code = 'osascript -e "{}"'.format(code.replace("\"", "\\\""))
+    elif language == "python3":
+        code = "python {}".format(code)
+    log("CODE:", code)
+    if not user_info.flags["SERVER"]:
+        return os.popen(code).read()
+    else:
+        interact("Remote code execution is still very experimental")
+        user_info.flags["SERVER"].send(bytes(1024*" ", "utf-8"))
+        user_info.flags["SERVER"].send(bytes("SCRIPT{}SCRIPT".format(code), "utf-8"))
+        user_info.flags["SERVER"].send(bytes(1024*" ", "utf-8"))
+        data = ""
+        if response:
+            come_back = user_info.flags["SERVER"].recv(1024)
+            data = str(come_back, "utf-8")
+        return data
+    
+
+
+
 class Sentence(object):
     ''' This is the sentence object to contain all the methods needed
         when working with them '''
@@ -239,7 +278,7 @@ class Sentence(object):
             raise TypeError("init_string must be a string")
 
         words = [self.clean(word) for word
-                 in init_string.lower().split(' ')]
+                 in init_string.strip().lower().split(' ')]
         self.sentence_string = " ".join(words)
         self.sentence = self.tag_sentence(words)
         self.kind = self.classify()
@@ -444,7 +483,7 @@ class Sentence(object):
     def forward(self, module):
         ''' Forward sentence to the module specified.
             Returns True of successful, else False. '''
-
+        log("FORWADING TO:", module)
         if module in vocab.word_actions.keys():
             return vocab.word_actions[module](self)
         else:

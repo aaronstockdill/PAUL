@@ -27,8 +27,6 @@ NOUNS = [
     'audio',
     'music',
     'email',
-    'person',
-    'contact',
     'event',
     'pdf',
     'preference',
@@ -65,13 +63,13 @@ def choose(list_choices):
     return None
     
 
-def find(search, params="", look_in=False):
+def find(params="", look_in=False):
     ''' Find the item that was searched for with necessary paramenters '''
     
     if look_in:
         home = look_in
     else:
-        home = os.popen('echo $HOME').read().strip('\n')
+        home = paul.run_script('echo $HOME', response=True).strip('\n')
     
     avoiders = [
         "Library",
@@ -83,10 +81,9 @@ def find(search, params="", look_in=False):
     
     #home = "/"
     
-    command = 'mdfind -onlyin {}/ "{}{}"'.format(home, params, search)
-    paul.log("COMMAND: " + command)
+    command = 'mdfind -onlyin {}/ "{}"'.format(home, params)
     
-    results = os.popen(command).readlines()
+    results = paul.run_script(command, response=True).split("\n")[:-1]
     filtered_results = []
     for line in results:
         line = line.strip("\n")
@@ -116,7 +113,7 @@ def get(location):
     
     if location:
         message = "Opening {}"
-        os.system('open "{}"'.format(location))
+        paul.run_script('open "{}"'.format(location))
         return message.format(location)
     else:
          return "I couldn't find anything."
@@ -127,8 +124,9 @@ def reveal(location):
     
     if location:
         message = "I found {}"
-        os.popen('osascript -e "tell application \\"Finder\\" to '
-                 'reveal POSIX file \\"{}\\""'.format(location))
+        paul.run_script('tell application "Finder" to '
+                        'reveal POSIX file "{}"'.format(location), 
+                        language="applescript")
         return message.format(location)
     else:
          return "I couldn't find anything."
@@ -172,8 +170,6 @@ def process(sentence):
         'audio': "audio ",
         'music': "music ",
         'email': "email ",
-        'person': "contact ",
-        'contact': "contact ",
         'event': "event ",
         'pdf': "pdf",
         'preference': "preferences ",
@@ -243,8 +239,6 @@ def process(sentence):
     
     apps = ["app", "application", "program", "executable"]
     
-    search = ""
-    
     if object in apps:
         where = "/Applications"
         params = ""
@@ -254,10 +248,13 @@ def process(sentence):
         params = " ".join(params_list)
         paul.log("PARAMETERS: " + str(params))
     
-    if search.startswith("/Users/"): return commands[verb](search)
-    elif search.startswith("http"): return commands["open"](search)
+    search = params_list[0]
+    paul.log(search)
     
-    else: return commands[verb](find(search, params, where))
+    if search.startswith("http"):
+        return commands["open"](search)
+    else:
+        return commands[verb](find(params, where))
 
 
 def main():

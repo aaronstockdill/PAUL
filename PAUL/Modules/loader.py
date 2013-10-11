@@ -22,7 +22,10 @@ def process(sentence):
     importer.close()
     
     #python = sys.executable
-    os.execl("/bin/bash", os.getcwd(), "./bin/PAUL")
+    if paul.user_info.flags["SERVER"]:
+        return "Restart not supported when in Server Mode."
+    else:
+        os.execl("/bin/bash", os.getcwd(), "./bin/PAUL")
         
 
 def main():

@@ -15,6 +15,7 @@ import time
 #  it is whatever 'it' could be, changes automatically, DON'T touch.
 #  temp: Use F for Fahrenheit, C for Celcius.
 #  search_engine can be Google, Bing, Yahoo, DuckDuckGo or Baidu.
+#  prompt is the little thing in front of what you type in, e.g. "?".
 info = {
     "woeid": "2348327",
     "name": "Aaron",
@@ -22,12 +23,13 @@ info = {
     "it": None,
     "temp": "C",
     "search_engine": "Google",
+    "prompt": "?",
 }
 
 ## Flags for the system. 
 #  Verbose is for debug info, 
 #  noisy for paul to talk,
-#  server is for the server to switch, don't touch it
+#  server is for the server to switch, don't touch it.
 #  max_log_size is the maximum number of lines allowed in the log file.
 flags = {
     "VERBOSE": True,

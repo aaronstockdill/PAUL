@@ -42,8 +42,9 @@ def process(sentence):
     url = (engines[engine].format(query))
     
     paul.log("URL: " + url)
-    os.system("open " + url)
-    return "Let me find out for you..."
+    paul.interact("Let me find out for you...")
+    paul.run_script("open " + url)
+    return "Here, try this."
 
 def main():
     ''' The main function '''

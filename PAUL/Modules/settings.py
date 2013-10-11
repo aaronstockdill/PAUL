@@ -14,7 +14,7 @@ def process(sentence):
     keywords = sentence.keywords()
     pp = sentence.get_part("PP", True)
     if pp:
-        sentence += pp
+        keywords += pp
     paul.trim_word(keywords, "to")
     paul.log("KEYWORDS:", keywords)
     key = ""
@@ -35,6 +35,8 @@ def process(sentence):
         key  = "LOGGING"
     elif paul.has_word(keywords, "name"):
         key = "name"
+    elif paul.has_word(keywords, "prompt"):
+        return "You have to change the prompt in settings manually, I'm afraid."
     else:
         paul.log("FOUND NEITHER FLAG")
         return "I'm not sure what you wanted we to set."

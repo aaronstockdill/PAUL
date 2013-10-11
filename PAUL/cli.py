@@ -18,7 +18,7 @@ def main():
 
     while not exit:
         try:
-            command = input("? ")
+            command = input(brain.paul.user_info.info["prompt"] + " ")
             if command.lower() == "bye":
                 exit = True
             else:

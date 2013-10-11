@@ -1,4 +1,4 @@
-#PAUL alpha-0.1
+#PAUL alpha-0.2
 ##Natural Language Assistant
 [View Website](http://aaronstockdill.github.io/paul.html)
 
@@ -40,7 +40,6 @@ Not so much a roadmap as a wishlist:
 * Reminders, events, etc. This would be GREAT, but probably rather tricky.
 * Deeper music controls. Basic play and pause stuff is nice, but song requests, shuffle, all that sort of thing, could be so much better!
 * Brightness and volume (general system) controls. It'd be nice, hopefully not to difficult.
-* Conversational interaction. If you say something that isn't an instruction, PAUL gives back a generic acknowledgement. Something more relevant would be good. At this time, the plan is a personality module.
 * A weighted word association system. Not all words give the same information about which module it should be. For example, the weather module knows the days of the week, but so does the clock. Both score 1 point on "Is it Friday?", so which module gets used run is essentially random, and it can be tricky for the module to tell if it really is what was wanted, there are no clear hints that this is the wrong module from the words alone. If the words were weighted, it would be better. For example, using the day of the week in a sentence isn't actually that likely to be about the weather, it would have a low weighting for that module, but it is important to anything about a clock, so it would have a high weighting for that module. So it would be more like 0.7: clock.py and 0.3: weather -- clearly clock wins.
 * Social Networking, and using Facebook user seach as a type of 'who is' system: "https://www.facebook.com/search/results.php?q={}&type=users" should work well. Full on "PA Social Presence" will be much trickier.
 
@@ -59,6 +58,7 @@ The first thing is to do the basic setup:
     
     def process(sentence):
         # The stuff you want to do
+        return answer # Return what you want to say to the user
     
     def main():
         words = {word: ("*module_name*", "noun") for word in NOUNS}
@@ -113,6 +113,12 @@ If you need to provide a way to say you are working but there is no immediate re
 If your module has the potential to handle an 'it', such as a previously found url, file, or something else, use this method at the top of processing:
 
     sentence.replace_it()
+
+If your module needs to run a script, use this:
+
+    paul.run_script(code, [language, response])
+
+The `code` parameter is rather self explanitory. The `language` paramenter is optional, and defaults to bash. Other values include python3 and applescript. Response is True or False, depending on whether you want the result - this is more for server functionality, where it is strictly necessary, than local mode, where it is more of a nicety. The result returned is what the code returned. If you are expecting multiple lines, split it by newline characters: `\n`
 
 To log anything, use the `paul.log(to_log)` function, passing a what you want logged in the string. If the VERBOSE flag is set in user\_info, it will be shown on the screen. It is always logged to log.txt. You can pass as many items as you want, they will be converted to a string and logged, separated by a space.
 

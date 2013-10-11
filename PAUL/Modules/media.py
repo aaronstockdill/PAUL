@@ -14,12 +14,11 @@ def simple_commands(action):
     
     paul.log("MEDIA: " + action)
     
-    command = ('osascript -e "tell application \\"iTunes\\" to '
-               '{}"'.format(action))
+    command = ('tell application "iTunes" to {}'.format(action))
                
     paul.log("COMMAND: " + command)
     
-    os.system(command)
+    paul.run_script(command, language="applescript")
     
     return 1
     
@@ -50,8 +49,8 @@ def process(sentence):
     else:
         acknowledge = 'playing'
         if keywords != []:
-            key = ("item 1 of (every track of library playlist "
-            + "1 whose name is \\\"{}\\\")".format(keywords[0][0]))
+            key = ('item 1 of (every track of library playlist '
+            + '1 whose name is "{}")'.format(keywords[0][0]))
         else:
             key = ""
         go = commands[verb](key)
