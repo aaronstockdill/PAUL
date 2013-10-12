@@ -28,7 +28,9 @@ def process(sentence):
     
     sentence.replace_it()
     
-    verb = sentence.get_part("VB")[0]
+    verbs = sentence.get_part("VB")
+    paul.trim_word(verbs, "go")
+    paul.log(verbs)
     
     keywords = sentence.keywords()
     paul.log("MUSIC KEYWORDS:", keywords)
@@ -40,12 +42,13 @@ def process(sentence):
         'next': lambda: simple_commands('next track'),
         'previous': lambda: simple_commands('previous track'),
         'skip': lambda: simple_commands('next track'),
+        'forward': lambda: simple_commands('next track'),
         'back': lambda: simple_commands('previous track')
     }
     
-    if verb != 'play':
-        acknowledge = paul.vocab.vocabulary[verb]['past_perf']
-        go = commands[verb]()
+    if 'play' not in verbs:
+        acknowledge = paul.vocab.vocabulary[verbs[0]]['past_perf']
+        go = commands[verbs[0]]()
     else:
         acknowledge = 'playing'
         if keywords != []:
@@ -53,7 +56,7 @@ def process(sentence):
             + '1 whose name is "{}")'.format(keywords[0][0]))
         else:
             key = ""
-        go = commands[verb](key)
+        go = commands[verbs[0]](key)
     
     return "OK" if go else "Sorry, that didn't work."
 
@@ -70,6 +73,7 @@ def main():
         "previous": ("media", "verb"), 
         "skip": ("media", "verb"),
         "back": ("media", "verb"),
+        "forward": ("media", "verb"),
         "go": ("media", "verb"),
     }
     

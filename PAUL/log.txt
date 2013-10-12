@@ -1,328 +1,3 @@
-Fri,11-Oct-2013~18:15 INTERACTION: The potato is a starchy, tuberous crop from the perennial Solanum tuberosum of the Nightshade family. The word may refer to the plant itself as well as the edible tuber. In the region of the Andes, there are some other closely related cultivated potato species. Potatoes were introduced outside the Andes region four centuries ago, and have become an integral part of much of the world's cuisine. It is the world's fourth-largest food crop, following rice, wheat and maize. Long-term storage of potatoes requires specialised care in cold warehouses.
-
-http://en.wikipedia.org/wiki/potatoes
-Fri,11-Oct-2013~18:15 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~18:15 SENTENCE: [('yo', 'NS')]
-Fri,11-Oct-2013~18:15 KIND: DEC
-Fri,11-Oct-2013~18:15 FORWADING TO: personality
-Fri,11-Oct-2013~18:15 INTERACTION: Hi.
-Fri,11-Oct-2013~18:15 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~18:16 SENTENCE: [('', '??')]
-Fri,11-Oct-2013~18:16 KIND: DEC
-Fri,11-Oct-2013~18:16 FORWADING TO: personality
-Fri,11-Oct-2013~18:16 INTERACTION: I'm still learning!
-Fri,11-Oct-2013~18:16 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~18:17 Successfully imported Modules.clock
-Fri,11-Oct-2013~18:17 Successfully imported Modules.discover
-Fri,11-Oct-2013~18:17 Successfully imported Modules.finder
-Fri,11-Oct-2013~18:17 Successfully imported Modules.loader
-Fri,11-Oct-2013~18:17 Successfully imported Modules.media
-Fri,11-Oct-2013~18:17 Successfully imported Modules.personality
-Fri,11-Oct-2013~18:17 Successfully imported Modules.settings
-Fri,11-Oct-2013~18:17 Successfully imported Modules.weather
-Fri,11-Oct-2013~18:17 Successfully imported Modules.wikipedia
-Fri,11-Oct-2013~18:17 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Fri,11-Oct-2013~18:17 KIND: INT
-Fri,11-Oct-2013~18:17 ACTIONS: {'clock': 1}
-Fri,11-Oct-2013~18:17 WEIGHTS: {1: ['clock']}
-Fri,11-Oct-2013~18:17 BEST: clock
-Fri,11-Oct-2013~18:17 KEYWORDS: ['time']
-Fri,11-Oct-2013~18:17 INTERACTION: It is 6:17pm.
-Fri,11-Oct-2013~18:17 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~18:17 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('raining', 'NO')]
-Fri,11-Oct-2013~18:17 KIND: IMP
-Fri,11-Oct-2013~18:17 ACTIONS: {'weather': 1}
-Fri,11-Oct-2013~18:17 WEIGHTS: {1: ['weather']}
-Fri,11-Oct-2013~18:17 BEST: weather
-Fri,11-Oct-2013~18:17 INTERACTION: Coming up, Aaron.
-Fri,11-Oct-2013~18:17 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~18:17 KEYWORDS: []
-Fri,11-Oct-2013~18:17 TODAY: 4
-Fri,11-Oct-2013~18:17 DAY: 0
-Fri,11-Oct-2013~18:17 WEATHER_RAW: ['<yweather:condition  text="Partly Cloudy"  code="30"  temp="11"  date="Fri, 11 Oct 2013 5:30 pm NZST" />\n', '<yweather:forecast day="Fri" date="11 Oct 2013" low="4" high="12" text="Showers" code="11" />\n', '<yweather:forecast day="Sat" date="12 Oct 2013" low="4" high="15" text="PM Showers" code="39" />\n', '<yweather:forecast day="Sun" date="13 Oct 2013" low="11" high="19" text="Sunny" code="32" />\n', '<yweather:forecast day="Mon" date="14 Oct 2013" low="6" high="17" text="Few Showers/Wind" code="11" />\n', '<yweather:forecast day="Tue" date="15 Oct 2013" low="6" high="12" text="Mostly Cloudy" code="28" />\n']
-Fri,11-Oct-2013~18:17 ITEMS: ['text', 'Partly Cloudy', 'code', '30', 'temp', '11', 'date', 'Fri, 11 Oct 2013 5:30 pm NZST']
-Fri,11-Oct-2013~18:17 ITEMS: ['day', 'Fri', 'date', '11 Oct 2013', 'low', '4', 'high', '12', 'text', 'Showers', 'code', '11']
-Fri,11-Oct-2013~18:17 INTERACTION: It's 11°C, and partly cloudy. The high today is 12°C, showers.
-Fri,11-Oct-2013~18:17 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~18:18 SENTENCE: [('who', 'WH'), ('be', 'VB'), ('the', 'AR'), ('tallest', '??'), ('man', '??'), ('in', 'PP'), ('the', 'AR'), ('world', '??')]
-Fri,11-Oct-2013~18:18 KIND: INT
-Fri,11-Oct-2013~18:18 ACTIONS: {}
-Fri,11-Oct-2013~18:18 WEIGHTS: {}
-Fri,11-Oct-2013~18:18 KEYWORDS: [('tallest man', 3), ('world', 7)]
-Fri,11-Oct-2013~18:18 URL: http://www.google.com/search?q=tallest+man+world
-Fri,11-Oct-2013~18:18 CODE: open http://www.google.com/search?q=tallest+man+world
-Fri,11-Oct-2013~18:18 INTERACTION: Remote code execution is still very experimental
-Fri,11-Oct-2013~18:18 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~18:18 INTERACTION: Let me find out for you...
-Fri,11-Oct-2013~18:18 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~18:18 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('despicable', '??'), ('me', 'PO')]
-Fri,11-Oct-2013~18:18 KIND: IMP
-Fri,11-Oct-2013~18:18 ACTIONS: {'wikipedia': 2}
-Fri,11-Oct-2013~18:18 WEIGHTS: {2: ['wikipedia']}
-Fri,11-Oct-2013~18:18 BEST: wikipedia
-Fri,11-Oct-2013~18:18 KEYWORDS: [('despicable', 4)]
-Fri,11-Oct-2013~18:18 INTERACTION: Let me see, Aaron...
-Fri,11-Oct-2013~18:18 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~18:18 URL ATTEMPT: http://en.wikipedia.org/wiki/despicable
-Fri,11-Oct-2013~18:18 INTERACTION: Despise means to regard with contempt or scorn. It may also refer to:
-
-http://en.wikipedia.org/wiki/despicable
-Fri,11-Oct-2013~18:18 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~18:18 SENTENCE: [('', '??')]
-Fri,11-Oct-2013~18:18 KIND: DEC
-Fri,11-Oct-2013~18:18 FORWADING TO: personality
-Fri,11-Oct-2013~18:18 INTERACTION: I'm still learning!
-Fri,11-Oct-2013~18:18 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~18:24 Successfully imported Modules.clock
-Fri,11-Oct-2013~18:24 Successfully imported Modules.discover
-Fri,11-Oct-2013~18:24 Successfully imported Modules.finder
-Fri,11-Oct-2013~18:24 Successfully imported Modules.loader
-Fri,11-Oct-2013~18:24 Successfully imported Modules.media
-Fri,11-Oct-2013~18:24 Successfully imported Modules.personality
-Fri,11-Oct-2013~18:24 Successfully imported Modules.settings
-Fri,11-Oct-2013~18:24 Successfully imported Modules.weather
-Fri,11-Oct-2013~18:24 Successfully imported Modules.wikipedia
-Fri,11-Oct-2013~18:24 SENTENCE: [('who', 'WH'), ('be', 'VB'), ('the', 'AR'), ('tallest', '??'), ('man', '??')]
-Fri,11-Oct-2013~18:24 KIND: INT
-Fri,11-Oct-2013~18:24 ACTIONS: {}
-Fri,11-Oct-2013~18:24 WEIGHTS: {}
-Fri,11-Oct-2013~18:24 KEYWORDS: [('tallest man', 3)]
-Fri,11-Oct-2013~18:24 URL: http://www.google.com/search?q=tallest+man
-Fri,11-Oct-2013~18:24 INTERACTION: Let me find out for you...
-Fri,11-Oct-2013~18:24 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~18:24 SENTENCE: [('', '??')]
-Fri,11-Oct-2013~18:24 KIND: DEC
-Fri,11-Oct-2013~18:24 FORWADING TO: personality
-Fri,11-Oct-2013~18:24 INTERACTION: I'm still learning!
-Fri,11-Oct-2013~18:24 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:26 SENTENCE: [('which', '??'), ('be', 'VB'), ('the', 'AR'), ('tallest', '??'), ('mountain', '??')]
-Fri,11-Oct-2013~19:26 KIND: DEC
-Fri,11-Oct-2013~19:26 FORWADING TO: personality
-Fri,11-Oct-2013~19:26 INTERACTION: I'm still learning!
-Fri,11-Oct-2013~19:26 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:27 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('tallest', '??'), ('mountain', '??')]
-Fri,11-Oct-2013~19:27 KIND: INT
-Fri,11-Oct-2013~19:27 ACTIONS: {}
-Fri,11-Oct-2013~19:27 WEIGHTS: {}
-Fri,11-Oct-2013~19:27 KEYWORDS: [('tallest mountain', 3)]
-Fri,11-Oct-2013~19:27 URL: http://www.google.com/search?q=tallest+mountain
-Fri,11-Oct-2013~19:27 INTERACTION: Let me find out for you...
-Fri,11-Oct-2013~19:27 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:27 SENTENCE: [('la', '??')]
-Fri,11-Oct-2013~19:27 KIND: DEC
-Fri,11-Oct-2013~19:27 FORWADING TO: personality
-Fri,11-Oct-2013~19:27 INTERACTION: I'm still learning!
-Fri,11-Oct-2013~19:27 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:27 SENTENCE: [('', '??')]
-Fri,11-Oct-2013~19:27 KIND: DEC
-Fri,11-Oct-2013~19:27 FORWADING TO: personality
-Fri,11-Oct-2013~19:27 INTERACTION: I'm still learning!
-Fri,11-Oct-2013~19:27 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:27 Successfully imported Modules.clock
-Fri,11-Oct-2013~19:27 Successfully imported Modules.discover
-Fri,11-Oct-2013~19:27 Successfully imported Modules.finder
-Fri,11-Oct-2013~19:27 Successfully imported Modules.loader
-Fri,11-Oct-2013~19:27 Successfully imported Modules.media
-Fri,11-Oct-2013~19:27 Successfully imported Modules.personality
-Fri,11-Oct-2013~19:27 Successfully imported Modules.settings
-Fri,11-Oct-2013~19:27 Successfully imported Modules.weather
-Fri,11-Oct-2013~19:27 Successfully imported Modules.wikipedia
-Fri,11-Oct-2013~19:27 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Fri,11-Oct-2013~19:27 KIND: INT
-Fri,11-Oct-2013~19:27 ACTIONS: {'clock': 1}
-Fri,11-Oct-2013~19:27 WEIGHTS: {1: ['clock']}
-Fri,11-Oct-2013~19:27 BEST: clock
-Fri,11-Oct-2013~19:27 KEYWORDS: ['time']
-Fri,11-Oct-2013~19:27 INTERACTION: It is 7:27pm.
-Fri,11-Oct-2013~19:27 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:27 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('tallest', '??'), ('mountain', '??')]
-Fri,11-Oct-2013~19:27 KIND: INT
-Fri,11-Oct-2013~19:27 ACTIONS: {}
-Fri,11-Oct-2013~19:27 WEIGHTS: {}
-Fri,11-Oct-2013~19:27 KEYWORDS: [('tallest mountain', 3)]
-Fri,11-Oct-2013~19:27 URL: http://www.google.com/search?q=tallest+mountain
-Fri,11-Oct-2013~19:27 INTERACTION: Let me find out for you...
-Fri,11-Oct-2013~19:27 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:28 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO')]
-Fri,11-Oct-2013~19:28 KIND: IMP
-Fri,11-Oct-2013~19:28 ACTIONS: {'wikipedia': 1}
-Fri,11-Oct-2013~19:28 WEIGHTS: {1: ['wikipedia']}
-Fri,11-Oct-2013~19:28 BEST: wikipedia
-Fri,11-Oct-2013~19:28 KEYWORDS: []
-Fri,11-Oct-2013~19:28 INTERACTION: Coming up.
-Fri,11-Oct-2013~19:28 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:28 INTERACTION: I don't understand. Sorry!
-Fri,11-Oct-2013~19:28 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:29 SENTENCE: [('hi', 'NS')]
-Fri,11-Oct-2013~19:29 KIND: DEC
-Fri,11-Oct-2013~19:29 FORWADING TO: personality
-Fri,11-Oct-2013~19:29 INTERACTION: Hello.
-Fri,11-Oct-2013~19:29 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:29 SENTENCE: [('yo', 'NS')]
-Fri,11-Oct-2013~19:29 KIND: DEC
-Fri,11-Oct-2013~19:29 FORWADING TO: personality
-Fri,11-Oct-2013~19:29 INTERACTION: Good Evening, Aaron.
-Fri,11-Oct-2013~19:29 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:29 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('tallest', '??'), ('mountina', '??')]
-Fri,11-Oct-2013~19:29 KIND: INT
-Fri,11-Oct-2013~19:29 ACTIONS: {}
-Fri,11-Oct-2013~19:29 WEIGHTS: {}
-Fri,11-Oct-2013~19:29 KEYWORDS: [('tallest mountina', 3)]
-Fri,11-Oct-2013~19:29 URL: http://www.google.com/search?q=tallest+mountina
-Fri,11-Oct-2013~19:29 INTERACTION: Let me find out for you...
-Fri,11-Oct-2013~19:29 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:30 SENTENCE: [('', '??')]
-Fri,11-Oct-2013~19:30 KIND: DEC
-Fri,11-Oct-2013~19:30 FORWADING TO: personality
-Fri,11-Oct-2013~19:30 INTERACTION: I'm still learning!
-Fri,11-Oct-2013~19:30 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:30 Successfully imported Modules.clock
-Fri,11-Oct-2013~19:30 Successfully imported Modules.discover
-Fri,11-Oct-2013~19:30 Successfully imported Modules.finder
-Fri,11-Oct-2013~19:30 Successfully imported Modules.loader
-Fri,11-Oct-2013~19:30 Successfully imported Modules.media
-Fri,11-Oct-2013~19:30 Successfully imported Modules.personality
-Fri,11-Oct-2013~19:30 Successfully imported Modules.settings
-Fri,11-Oct-2013~19:30 Successfully imported Modules.weather
-Fri,11-Oct-2013~19:30 Successfully imported Modules.wikipedia
-Fri,11-Oct-2013~19:30 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('tallest', '??'), ('mountian', '??')]
-Fri,11-Oct-2013~19:30 KIND: INT
-Fri,11-Oct-2013~19:30 ACTIONS: {}
-Fri,11-Oct-2013~19:30 WEIGHTS: {}
-Fri,11-Oct-2013~19:30 KEYWORDS: [('tallest mountian', 3)]
-Fri,11-Oct-2013~19:30 URL: http://www.google.com/search?q=tallest+mountian
-Fri,11-Oct-2013~19:30 Successfully imported Modules.clock
-Fri,11-Oct-2013~19:30 Successfully imported Modules.discover
-Fri,11-Oct-2013~19:30 Successfully imported Modules.finder
-Fri,11-Oct-2013~19:30 Successfully imported Modules.loader
-Fri,11-Oct-2013~19:30 Successfully imported Modules.media
-Fri,11-Oct-2013~19:30 Successfully imported Modules.personality
-Fri,11-Oct-2013~19:30 Successfully imported Modules.settings
-Fri,11-Oct-2013~19:30 Successfully imported Modules.weather
-Fri,11-Oct-2013~19:30 Successfully imported Modules.wikipedia
-Fri,11-Oct-2013~19:30 Successfully imported Modules.clock
-Fri,11-Oct-2013~19:30 Successfully imported Modules.discover
-Fri,11-Oct-2013~19:30 Successfully imported Modules.finder
-Fri,11-Oct-2013~19:30 Successfully imported Modules.loader
-Fri,11-Oct-2013~19:30 Successfully imported Modules.media
-Fri,11-Oct-2013~19:30 Successfully imported Modules.personality
-Fri,11-Oct-2013~19:30 Successfully imported Modules.settings
-Fri,11-Oct-2013~19:30 Successfully imported Modules.weather
-Fri,11-Oct-2013~19:30 Successfully imported Modules.wikipedia
-Fri,11-Oct-2013~19:31 Successfully imported Modules.clock
-Fri,11-Oct-2013~19:31 Successfully imported Modules.discover
-Fri,11-Oct-2013~19:31 Successfully imported Modules.finder
-Fri,11-Oct-2013~19:31 Successfully imported Modules.loader
-Fri,11-Oct-2013~19:31 Successfully imported Modules.media
-Fri,11-Oct-2013~19:31 Successfully imported Modules.personality
-Fri,11-Oct-2013~19:31 Successfully imported Modules.settings
-Fri,11-Oct-2013~19:31 Successfully imported Modules.weather
-Fri,11-Oct-2013~19:31 Successfully imported Modules.wikipedia
-Fri,11-Oct-2013~19:31 Successfully imported Modules.clock
-Fri,11-Oct-2013~19:31 Successfully imported Modules.discover
-Fri,11-Oct-2013~19:31 Successfully imported Modules.finder
-Fri,11-Oct-2013~19:31 Successfully imported Modules.loader
-Fri,11-Oct-2013~19:31 Successfully imported Modules.media
-Fri,11-Oct-2013~19:31 Successfully imported Modules.personality
-Fri,11-Oct-2013~19:31 Successfully imported Modules.settings
-Fri,11-Oct-2013~19:31 Successfully imported Modules.weather
-Fri,11-Oct-2013~19:31 Successfully imported Modules.wikipedia
-Fri,11-Oct-2013~19:31 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('tallest', '??'), ('mountian', '??')]
-Fri,11-Oct-2013~19:31 KIND: INT
-Fri,11-Oct-2013~19:31 ACTIONS: {}
-Fri,11-Oct-2013~19:31 WEIGHTS: {}
-Fri,11-Oct-2013~19:31 KEYWORDS: [('tallest mountian', 3)]
-Fri,11-Oct-2013~19:31 URL: http://www.google.com/search?q=tallest+mountian
-Fri,11-Oct-2013~19:31 INTERACTION: Let me find out for you...
-Fri,11-Oct-2013~19:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:31 CODE: open http://www.google.com/search?q=tallest+mountian
-Fri,11-Oct-2013~19:31 INTERACTION: Remote code execution is still very experimental
-Fri,11-Oct-2013~19:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:31 INTERACTION: Here, try this.
-Fri,11-Oct-2013~19:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:31 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cold', 'NO')]
-Fri,11-Oct-2013~19:31 KIND: IMP
-Fri,11-Oct-2013~19:31 ACTIONS: {'weather': 1}
-Fri,11-Oct-2013~19:31 WEIGHTS: {1: ['weather']}
-Fri,11-Oct-2013~19:31 BEST: weather
-Fri,11-Oct-2013~19:31 INTERACTION: Just a moment, Aaron.
-Fri,11-Oct-2013~19:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:31 KEYWORDS: []
-Fri,11-Oct-2013~19:31 TODAY: 4
-Fri,11-Oct-2013~19:31 DAY: 0
-Fri,11-Oct-2013~19:31 WEATHER_RAW: ['<yweather:condition  text="Cloudy"  code="26"  temp="10"  date="Fri, 11 Oct 2013 7:00 pm NZST" />\n', '<yweather:forecast day="Fri" date="11 Oct 2013" low="4" high="12" text="Showers" code="11" />\n', '<yweather:forecast day="Sat" date="12 Oct 2013" low="4" high="15" text="PM Showers" code="39" />\n', '<yweather:forecast day="Sun" date="13 Oct 2013" low="11" high="19" text="Sunny" code="32" />\n', '<yweather:forecast day="Mon" date="14 Oct 2013" low="6" high="17" text="Few Showers/Wind" code="11" />\n', '<yweather:forecast day="Tue" date="15 Oct 2013" low="6" high="12" text="Mostly Cloudy" code="28" />\n']
-Fri,11-Oct-2013~19:31 ITEMS: ['text', 'Cloudy', 'code', '26', 'temp', '10', 'date', 'Fri, 11 Oct 2013 7:00 pm NZST']
-Fri,11-Oct-2013~19:31 ITEMS: ['day', 'Fri', 'date', '11 Oct 2013', 'low', '4', 'high', '12', 'text', 'Showers', 'code', '11']
-Fri,11-Oct-2013~19:31 INTERACTION: It's 10°C, and cloudy. The high today is 12°C, showers.
-Fri,11-Oct-2013~19:31 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:32 SENTENCE: [('', '??')]
-Fri,11-Oct-2013~19:32 KIND: DEC
-Fri,11-Oct-2013~19:32 FORWADING TO: personality
-Fri,11-Oct-2013~19:32 INTERACTION: I'm still learning!
-Fri,11-Oct-2013~19:32 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:32 Successfully imported Modules.clock
-Fri,11-Oct-2013~19:32 Successfully imported Modules.discover
-Fri,11-Oct-2013~19:32 Successfully imported Modules.finder
-Fri,11-Oct-2013~19:32 Successfully imported Modules.loader
-Fri,11-Oct-2013~19:32 Successfully imported Modules.media
-Fri,11-Oct-2013~19:32 Successfully imported Modules.personality
-Fri,11-Oct-2013~19:32 Successfully imported Modules.settings
-Fri,11-Oct-2013~19:32 Successfully imported Modules.weather
-Fri,11-Oct-2013~19:32 Successfully imported Modules.wikipedia
-Fri,11-Oct-2013~19:32 SENTENCE: [('hi', 'NS')]
-Fri,11-Oct-2013~19:32 KIND: DEC
-Fri,11-Oct-2013~19:32 FORWADING TO: personality
-Fri,11-Oct-2013~19:32 INTERACTION: Good Evening, Aaron.
-Fri,11-Oct-2013~19:32 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:32 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Fri,11-Oct-2013~19:32 KIND: INT
-Fri,11-Oct-2013~19:32 ACTIONS: {'clock': 1}
-Fri,11-Oct-2013~19:32 WEIGHTS: {1: ['clock']}
-Fri,11-Oct-2013~19:32 BEST: clock
-Fri,11-Oct-2013~19:32 KEYWORDS: ['time']
-Fri,11-Oct-2013~19:32 INTERACTION: It is 7:32pm.
-Fri,11-Oct-2013~19:32 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:32 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cold', 'NO'), ('outside', 'PP')]
-Fri,11-Oct-2013~19:32 KIND: IMP
-Fri,11-Oct-2013~19:32 ACTIONS: {'weather': 1}
-Fri,11-Oct-2013~19:32 WEIGHTS: {1: ['weather']}
-Fri,11-Oct-2013~19:32 BEST: weather
-Fri,11-Oct-2013~19:32 INTERACTION: Let me see, Aaron...
-Fri,11-Oct-2013~19:32 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:32 KEYWORDS: []
-Fri,11-Oct-2013~19:32 TODAY: 4
-Fri,11-Oct-2013~19:32 DAY: 0
-Fri,11-Oct-2013~19:32 WEATHER_RAW: ['<yweather:condition  text="Cloudy"  code="26"  temp="10"  date="Fri, 11 Oct 2013 7:00 pm NZST" />\n', '<yweather:forecast day="Fri" date="11 Oct 2013" low="4" high="12" text="Showers" code="11" />\n', '<yweather:forecast day="Sat" date="12 Oct 2013" low="4" high="15" text="PM Showers" code="39" />\n', '<yweather:forecast day="Sun" date="13 Oct 2013" low="11" high="19" text="Sunny" code="32" />\n', '<yweather:forecast day="Mon" date="14 Oct 2013" low="6" high="17" text="Few Showers/Wind" code="11" />\n', '<yweather:forecast day="Tue" date="15 Oct 2013" low="6" high="12" text="Mostly Cloudy" code="28" />\n']
-Fri,11-Oct-2013~19:32 ITEMS: ['text', 'Cloudy', 'code', '26', 'temp', '10', 'date', 'Fri, 11 Oct 2013 7:00 pm NZST']
-Fri,11-Oct-2013~19:32 ITEMS: ['day', 'Fri', 'date', '11 Oct 2013', 'low', '4', 'high', '12', 'text', 'Showers', 'code', '11']
-Fri,11-Oct-2013~19:32 INTERACTION: It's 10°C, and cloudy. The high today is 12°C, showers.
-Fri,11-Oct-2013~19:32 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:32 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('tallest', '??'), ('mountain', '??')]
-Fri,11-Oct-2013~19:32 KIND: INT
-Fri,11-Oct-2013~19:32 ACTIONS: {}
-Fri,11-Oct-2013~19:32 WEIGHTS: {}
-Fri,11-Oct-2013~19:32 KEYWORDS: [('tallest mountain', 3)]
-Fri,11-Oct-2013~19:32 URL: http://www.google.com/search?q=tallest+mountain
-Fri,11-Oct-2013~19:32 INTERACTION: Let me find out for you...
-Fri,11-Oct-2013~19:32 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:32 CODE: open http://www.google.com/search?q=tallest+mountain
-Fri,11-Oct-2013~19:32 INTERACTION: Remote code execution is still very experimental
-Fri,11-Oct-2013~19:32 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:32 INTERACTION: Here, try this.
-Fri,11-Oct-2013~19:32 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:33 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('django', '??'), ('unchained', '??')]
-Fri,11-Oct-2013~19:33 KIND: IMP
-Fri,11-Oct-2013~19:33 ACTIONS: {'finder': 2}
-Fri,11-Oct-2013~19:33 WEIGHTS: {2: ['finder']}
-Fri,11-Oct-2013~19:33 BEST: finder
-Fri,11-Oct-2013~19:33 KEYWORDS: [('django unchained', 4)]
-Fri,11-Oct-2013~19:33 PARAMETERS: django unchained kind:movie 
-Fri,11-Oct-2013~19:33 django unchained
-Fri,11-Oct-2013~19:33 CODE: echo $HOME
-Fri,11-Oct-2013~19:33 INTERACTION: Remote code execution is still very experimental
-Fri,11-Oct-2013~19:33 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
-Fri,11-Oct-2013~19:33 CODE: mdfind -onlyin /Users/aaronstockdill/ "django unchained kind:movie "
-Fri,11-Oct-2013~19:33 INTERACTION: Remote code execution is still very experimental
 Fri,11-Oct-2013~19:33 CONNECTION: <socket.socket object, fd=4, family=2, type=1, proto=0>
 Fri,11-Oct-2013~19:33 RESULTS FIRST 5: ['/Users/aaronstockdill/Movies/Django Unchained.m4v', '']
 Fri,11-Oct-2013~19:33 INTERACTION: Which of these do you want?
@@ -2115,3 +1790,332 @@ Sat,12-Oct-2013~12:09 Successfully imported Modules.personality
 Sat,12-Oct-2013~12:09 Successfully imported Modules.settings
 Sat,12-Oct-2013~12:09 Successfully imported Modules.weather
 Sat,12-Oct-2013~12:09 Successfully imported Modules.wikipedia
+Sat,12-Oct-2013~12:17 PARTS: ['open the python folder']
+Sat,12-Oct-2013~12:17 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('the', 'AR'), ('python', '??'), ('folder', 'NO')]
+Sat,12-Oct-2013~12:17 KIND: IMP
+Sat,12-Oct-2013~12:17 ACTIONS: {'finder': 2}
+Sat,12-Oct-2013~12:17 WEIGHTS: {2: ['finder']}
+Sat,12-Oct-2013~12:17 BEST: finder
+Sat,12-Oct-2013~12:17 KEYWORDS: [('python', 3)]
+Sat,12-Oct-2013~12:17 PARAMETERS: python kind:folder 
+Sat,12-Oct-2013~12:17 python
+Sat,12-Oct-2013~12:17 CODE: echo $HOME
+Sat,12-Oct-2013~12:17 CODE: mdfind -onlyin /Users/aaronstockdill/ "python kind:folder "
+Sat,12-Oct-2013~12:17 RESULTS FIRST 5: ['/Users/aaronstockdill/Documents/Programming/Python', '/Users/aaronstockdill/Dropbox/University/2013/COSC121/Python Code', '/Users/aaronstockdill/Documents/Programming/Python/Python3 Stuff', '/Users/aaronstockdill/Documents/Programming/C/Ported Python']
+Sat,12-Oct-2013~12:17 INTERACTION: Which of these do you want?
+1. Python
+2. Python Code
+3. Python3 Stuff
+4. Ported Python
+Sat,12-Oct-2013~12:17 ORDINALS: ['first']
+Sat,12-Oct-2013~12:17 CHOICE: 1
+Sat,12-Oct-2013~12:17 DECISION: /Users/aaronstockdill/Documents/Programming/Python
+Sat,12-Oct-2013~12:17 IT: /Users/aaronstockdill/Documents/Programming/Python
+Sat,12-Oct-2013~12:17 CODE: open "/Users/aaronstockdill/Documents/Programming/Python"
+Sat,12-Oct-2013~12:17 INTERACTION: Opening /Users/aaronstockdill/Documents/Programming/Python
+Sat,12-Oct-2013~12:18 PARTS: ['go bcak']
+Sat,12-Oct-2013~12:18 SENTENCE: [('You', 'PS'), ('go', 'VB'), ('bcak', '??')]
+Sat,12-Oct-2013~12:18 KIND: IMP
+Sat,12-Oct-2013~12:18 ACTIONS: {'media': 1}
+Sat,12-Oct-2013~12:18 WEIGHTS: {1: ['media']}
+Sat,12-Oct-2013~12:18 BEST: media
+Sat,12-Oct-2013~12:18 MUSIC KEYWORDS: [('bcak', 2)]
+Sat,12-Oct-2013~12:19 Successfully imported Modules.clock
+Sat,12-Oct-2013~12:19 Successfully imported Modules.discover
+Sat,12-Oct-2013~12:19 Successfully imported Modules.finder
+Sat,12-Oct-2013~12:19 Successfully imported Modules.loader
+Sat,12-Oct-2013~12:19 Successfully imported Modules.media
+Sat,12-Oct-2013~12:19 Successfully imported Modules.personality
+Sat,12-Oct-2013~12:19 Successfully imported Modules.settings
+Sat,12-Oct-2013~12:19 Successfully imported Modules.weather
+Sat,12-Oct-2013~12:19 Successfully imported Modules.wikipedia
+Sat,12-Oct-2013~12:19 PARTS: ['go back']
+Sat,12-Oct-2013~12:19 SENTENCE: [('You', 'PS'), ('go', 'VB'), ('back', 'VB')]
+Sat,12-Oct-2013~12:19 KIND: IMP
+Sat,12-Oct-2013~12:19 ACTIONS: {'media': 2}
+Sat,12-Oct-2013~12:19 WEIGHTS: {2: ['media']}
+Sat,12-Oct-2013~12:19 BEST: media
+Sat,12-Oct-2013~12:19 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:21 Successfully imported Modules.clock
+Sat,12-Oct-2013~12:21 Successfully imported Modules.discover
+Sat,12-Oct-2013~12:21 Successfully imported Modules.finder
+Sat,12-Oct-2013~12:21 Successfully imported Modules.loader
+Sat,12-Oct-2013~12:21 Successfully imported Modules.media
+Sat,12-Oct-2013~12:21 Successfully imported Modules.personality
+Sat,12-Oct-2013~12:21 Successfully imported Modules.settings
+Sat,12-Oct-2013~12:21 Successfully imported Modules.weather
+Sat,12-Oct-2013~12:21 Successfully imported Modules.wikipedia
+Sat,12-Oct-2013~12:21 PARTS: ['go back']
+Sat,12-Oct-2013~12:21 SENTENCE: [('You', 'PS'), ('go', 'VB'), ('back', 'VB')]
+Sat,12-Oct-2013~12:21 KIND: IMP
+Sat,12-Oct-2013~12:21 ACTIONS: {'media': 2}
+Sat,12-Oct-2013~12:21 WEIGHTS: {2: ['media']}
+Sat,12-Oct-2013~12:21 BEST: media
+Sat,12-Oct-2013~12:21 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:21 Successfully imported Modules.clock
+Sat,12-Oct-2013~12:21 Successfully imported Modules.discover
+Sat,12-Oct-2013~12:21 Successfully imported Modules.finder
+Sat,12-Oct-2013~12:21 Successfully imported Modules.loader
+Sat,12-Oct-2013~12:21 Successfully imported Modules.media
+Sat,12-Oct-2013~12:21 Successfully imported Modules.personality
+Sat,12-Oct-2013~12:21 Successfully imported Modules.settings
+Sat,12-Oct-2013~12:21 Successfully imported Modules.weather
+Sat,12-Oct-2013~12:21 Successfully imported Modules.wikipedia
+Sat,12-Oct-2013~12:21 PARTS: ['go back']
+Sat,12-Oct-2013~12:21 SENTENCE: [('You', 'PS'), ('go', 'VB'), ('back', 'VB')]
+Sat,12-Oct-2013~12:21 KIND: IMP
+Sat,12-Oct-2013~12:21 ACTIONS: {'media': 2}
+Sat,12-Oct-2013~12:21 WEIGHTS: {2: ['media']}
+Sat,12-Oct-2013~12:21 BEST: media
+Sat,12-Oct-2013~12:21 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:22 Successfully imported Modules.clock
+Sat,12-Oct-2013~12:22 Successfully imported Modules.discover
+Sat,12-Oct-2013~12:22 Successfully imported Modules.finder
+Sat,12-Oct-2013~12:22 Successfully imported Modules.loader
+Sat,12-Oct-2013~12:22 Successfully imported Modules.media
+Sat,12-Oct-2013~12:22 Successfully imported Modules.personality
+Sat,12-Oct-2013~12:22 Successfully imported Modules.settings
+Sat,12-Oct-2013~12:22 Successfully imported Modules.weather
+Sat,12-Oct-2013~12:22 Successfully imported Modules.wikipedia
+Sat,12-Oct-2013~12:22 PARTS: ['go back']
+Sat,12-Oct-2013~12:22 SENTENCE: [('You', 'PS'), ('go', 'VB'), ('back', 'VB')]
+Sat,12-Oct-2013~12:22 KIND: IMP
+Sat,12-Oct-2013~12:22 ACTIONS: {'media': 2}
+Sat,12-Oct-2013~12:22 WEIGHTS: {2: ['media']}
+Sat,12-Oct-2013~12:22 BEST: media
+Sat,12-Oct-2013~12:22 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:24 Successfully imported Modules.clock
+Sat,12-Oct-2013~12:24 Successfully imported Modules.discover
+Sat,12-Oct-2013~12:24 Successfully imported Modules.finder
+Sat,12-Oct-2013~12:24 Successfully imported Modules.loader
+Sat,12-Oct-2013~12:24 Successfully imported Modules.media
+Sat,12-Oct-2013~12:24 Successfully imported Modules.personality
+Sat,12-Oct-2013~12:24 Successfully imported Modules.settings
+Sat,12-Oct-2013~12:24 Successfully imported Modules.weather
+Sat,12-Oct-2013~12:24 Successfully imported Modules.wikipedia
+Sat,12-Oct-2013~12:24 PARTS: ['go back']
+Sat,12-Oct-2013~12:24 SENTENCE: [('You', 'PS'), ('go', 'VB'), ('back', 'VB')]
+Sat,12-Oct-2013~12:24 KIND: IMP
+Sat,12-Oct-2013~12:24 ACTIONS: {'media': 2}
+Sat,12-Oct-2013~12:24 WEIGHTS: {2: ['media']}
+Sat,12-Oct-2013~12:24 BEST: media
+Sat,12-Oct-2013~12:24 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:25 Successfully imported Modules.clock
+Sat,12-Oct-2013~12:25 Successfully imported Modules.discover
+Sat,12-Oct-2013~12:25 Successfully imported Modules.finder
+Sat,12-Oct-2013~12:25 Successfully imported Modules.loader
+Sat,12-Oct-2013~12:25 Successfully imported Modules.media
+Sat,12-Oct-2013~12:25 Successfully imported Modules.personality
+Sat,12-Oct-2013~12:25 Successfully imported Modules.settings
+Sat,12-Oct-2013~12:25 Successfully imported Modules.weather
+Sat,12-Oct-2013~12:25 Successfully imported Modules.wikipedia
+Sat,12-Oct-2013~12:25 PARTS: ['go back']
+Sat,12-Oct-2013~12:25 SENTENCE: [('You', 'PS'), ('go', 'VB'), ('back', 'VB')]
+Sat,12-Oct-2013~12:25 KIND: IMP
+Sat,12-Oct-2013~12:25 ACTIONS: {'media': 2}
+Sat,12-Oct-2013~12:25 WEIGHTS: {2: ['media']}
+Sat,12-Oct-2013~12:25 BEST: media
+Sat,12-Oct-2013~12:26 Successfully imported Modules.clock
+Sat,12-Oct-2013~12:26 Successfully imported Modules.discover
+Sat,12-Oct-2013~12:26 Successfully imported Modules.finder
+Sat,12-Oct-2013~12:26 Successfully imported Modules.loader
+Sat,12-Oct-2013~12:26 Successfully imported Modules.media
+Sat,12-Oct-2013~12:26 Successfully imported Modules.personality
+Sat,12-Oct-2013~12:26 Successfully imported Modules.settings
+Sat,12-Oct-2013~12:26 Successfully imported Modules.weather
+Sat,12-Oct-2013~12:26 Successfully imported Modules.wikipedia
+Sat,12-Oct-2013~12:26 PARTS: ['go back']
+Sat,12-Oct-2013~12:26 SENTENCE: [('You', 'PS'), ('go', 'VB'), ('back', 'VB')]
+Sat,12-Oct-2013~12:26 KIND: IMP
+Sat,12-Oct-2013~12:26 ACTIONS: {'media': 2}
+Sat,12-Oct-2013~12:26 WEIGHTS: {2: ['media']}
+Sat,12-Oct-2013~12:26 BEST: media
+Sat,12-Oct-2013~12:26 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:26 Successfully imported Modules.clock
+Sat,12-Oct-2013~12:26 Successfully imported Modules.discover
+Sat,12-Oct-2013~12:26 Successfully imported Modules.finder
+Sat,12-Oct-2013~12:26 Successfully imported Modules.loader
+Sat,12-Oct-2013~12:26 Successfully imported Modules.media
+Sat,12-Oct-2013~12:26 Successfully imported Modules.personality
+Sat,12-Oct-2013~12:26 Successfully imported Modules.settings
+Sat,12-Oct-2013~12:26 Successfully imported Modules.weather
+Sat,12-Oct-2013~12:26 Successfully imported Modules.wikipedia
+Sat,12-Oct-2013~12:26 PARTS: ['go back']
+Sat,12-Oct-2013~12:26 SENTENCE: [('You', 'PS'), ('go', 'VB'), ('back', 'VB')]
+Sat,12-Oct-2013~12:26 KIND: IMP
+Sat,12-Oct-2013~12:26 ACTIONS: {'media': 2}
+Sat,12-Oct-2013~12:26 WEIGHTS: {2: ['media']}
+Sat,12-Oct-2013~12:26 BEST: media
+Sat,12-Oct-2013~12:26 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:26 Successfully imported Modules.clock
+Sat,12-Oct-2013~12:26 Successfully imported Modules.discover
+Sat,12-Oct-2013~12:26 Successfully imported Modules.finder
+Sat,12-Oct-2013~12:26 Successfully imported Modules.loader
+Sat,12-Oct-2013~12:26 Successfully imported Modules.media
+Sat,12-Oct-2013~12:26 Successfully imported Modules.personality
+Sat,12-Oct-2013~12:26 Successfully imported Modules.settings
+Sat,12-Oct-2013~12:26 Successfully imported Modules.weather
+Sat,12-Oct-2013~12:26 Successfully imported Modules.wikipedia
+Sat,12-Oct-2013~12:26 PARTS: ['go back']
+Sat,12-Oct-2013~12:26 SENTENCE: [('You', 'PS'), ('go', 'VB'), ('back', 'VB')]
+Sat,12-Oct-2013~12:26 KIND: IMP
+Sat,12-Oct-2013~12:26 ACTIONS: {'media': 2}
+Sat,12-Oct-2013~12:26 WEIGHTS: {2: ['media']}
+Sat,12-Oct-2013~12:26 BEST: media
+Sat,12-Oct-2013~12:26 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:27 Successfully imported Modules.clock
+Sat,12-Oct-2013~12:27 Successfully imported Modules.discover
+Sat,12-Oct-2013~12:27 Successfully imported Modules.finder
+Sat,12-Oct-2013~12:27 Successfully imported Modules.loader
+Sat,12-Oct-2013~12:27 Successfully imported Modules.media
+Sat,12-Oct-2013~12:27 Successfully imported Modules.personality
+Sat,12-Oct-2013~12:27 Successfully imported Modules.settings
+Sat,12-Oct-2013~12:27 Successfully imported Modules.weather
+Sat,12-Oct-2013~12:27 Successfully imported Modules.wikipedia
+Sat,12-Oct-2013~12:27 PARTS: ['go back']
+Sat,12-Oct-2013~12:27 SENTENCE: [('You', 'PS'), ('go', 'VB'), ('back', 'VB')]
+Sat,12-Oct-2013~12:27 KIND: IMP
+Sat,12-Oct-2013~12:27 ACTIONS: {'media': 2}
+Sat,12-Oct-2013~12:27 WEIGHTS: {2: ['media']}
+Sat,12-Oct-2013~12:27 BEST: media
+Sat,12-Oct-2013~12:27 ['back']
+Sat,12-Oct-2013~12:27 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:27 MEDIA: previous track
+Sat,12-Oct-2013~12:27 COMMAND: tell application "iTunes" to previous track
+Sat,12-Oct-2013~12:27 CODE: osascript -e "tell application \"iTunes\" to previous track"
+Sat,12-Oct-2013~12:27 INTERACTION: OK
+Sat,12-Oct-2013~12:27 PARTS: ['go forward']
+Sat,12-Oct-2013~12:27 SENTENCE: [('You', 'PS'), ('go', 'VB'), ('forward', '??')]
+Sat,12-Oct-2013~12:27 KIND: IMP
+Sat,12-Oct-2013~12:27 ACTIONS: {'media': 1}
+Sat,12-Oct-2013~12:27 WEIGHTS: {1: ['media']}
+Sat,12-Oct-2013~12:27 BEST: media
+Sat,12-Oct-2013~12:27 []
+Sat,12-Oct-2013~12:27 MUSIC KEYWORDS: [('forward', 2)]
+Sat,12-Oct-2013~12:27 Successfully imported Modules.clock
+Sat,12-Oct-2013~12:27 Successfully imported Modules.discover
+Sat,12-Oct-2013~12:27 Successfully imported Modules.finder
+Sat,12-Oct-2013~12:27 Successfully imported Modules.loader
+Sat,12-Oct-2013~12:27 Successfully imported Modules.media
+Sat,12-Oct-2013~12:27 Successfully imported Modules.personality
+Sat,12-Oct-2013~12:27 Successfully imported Modules.settings
+Sat,12-Oct-2013~12:27 Successfully imported Modules.weather
+Sat,12-Oct-2013~12:27 Successfully imported Modules.wikipedia
+Sat,12-Oct-2013~12:27 PARTS: ['go forward']
+Sat,12-Oct-2013~12:27 SENTENCE: [('You', 'PS'), ('go', 'VB'), ('forward', 'VB')]
+Sat,12-Oct-2013~12:27 KIND: IMP
+Sat,12-Oct-2013~12:27 ACTIONS: {'media': 2}
+Sat,12-Oct-2013~12:27 WEIGHTS: {2: ['media']}
+Sat,12-Oct-2013~12:27 BEST: media
+Sat,12-Oct-2013~12:27 ['forward']
+Sat,12-Oct-2013~12:27 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:28 Successfully imported Modules.clock
+Sat,12-Oct-2013~12:28 Successfully imported Modules.discover
+Sat,12-Oct-2013~12:28 Successfully imported Modules.finder
+Sat,12-Oct-2013~12:28 Successfully imported Modules.loader
+Sat,12-Oct-2013~12:28 Successfully imported Modules.media
+Sat,12-Oct-2013~12:28 Successfully imported Modules.personality
+Sat,12-Oct-2013~12:28 Successfully imported Modules.settings
+Sat,12-Oct-2013~12:28 Successfully imported Modules.weather
+Sat,12-Oct-2013~12:28 Successfully imported Modules.wikipedia
+Sat,12-Oct-2013~12:28 PARTS: ['go forward']
+Sat,12-Oct-2013~12:28 SENTENCE: [('You', 'PS'), ('go', 'VB'), ('forward', 'VB')]
+Sat,12-Oct-2013~12:28 KIND: IMP
+Sat,12-Oct-2013~12:28 ACTIONS: {'media': 2}
+Sat,12-Oct-2013~12:28 WEIGHTS: {2: ['media']}
+Sat,12-Oct-2013~12:28 BEST: media
+Sat,12-Oct-2013~12:28 ['forward']
+Sat,12-Oct-2013~12:28 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:28 MEDIA: next track
+Sat,12-Oct-2013~12:28 COMMAND: tell application "iTunes" to next track
+Sat,12-Oct-2013~12:28 CODE: osascript -e "tell application \"iTunes\" to next track"
+Sat,12-Oct-2013~12:28 INTERACTION: OK
+Sat,12-Oct-2013~12:28 PARTS: ['play']
+Sat,12-Oct-2013~12:28 SENTENCE: [('You', 'PS'), ('play', 'VB')]
+Sat,12-Oct-2013~12:28 KIND: IMP
+Sat,12-Oct-2013~12:28 ACTIONS: {'media': 1}
+Sat,12-Oct-2013~12:28 WEIGHTS: {1: ['media']}
+Sat,12-Oct-2013~12:28 BEST: media
+Sat,12-Oct-2013~12:28 ['play']
+Sat,12-Oct-2013~12:28 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:28 Successfully imported Modules.clock
+Sat,12-Oct-2013~12:28 Successfully imported Modules.discover
+Sat,12-Oct-2013~12:28 Successfully imported Modules.finder
+Sat,12-Oct-2013~12:28 Successfully imported Modules.loader
+Sat,12-Oct-2013~12:28 Successfully imported Modules.media
+Sat,12-Oct-2013~12:28 Successfully imported Modules.personality
+Sat,12-Oct-2013~12:28 Successfully imported Modules.settings
+Sat,12-Oct-2013~12:28 Successfully imported Modules.weather
+Sat,12-Oct-2013~12:28 Successfully imported Modules.wikipedia
+Sat,12-Oct-2013~12:28 PARTS: ['play']
+Sat,12-Oct-2013~12:28 SENTENCE: [('You', 'PS'), ('play', 'VB')]
+Sat,12-Oct-2013~12:28 KIND: IMP
+Sat,12-Oct-2013~12:28 ACTIONS: {'media': 1}
+Sat,12-Oct-2013~12:28 WEIGHTS: {1: ['media']}
+Sat,12-Oct-2013~12:28 BEST: media
+Sat,12-Oct-2013~12:28 ['play']
+Sat,12-Oct-2013~12:28 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:28 MEDIA: play 
+Sat,12-Oct-2013~12:28 COMMAND: tell application "iTunes" to play 
+Sat,12-Oct-2013~12:28 CODE: osascript -e "tell application \"iTunes\" to play "
+Sat,12-Oct-2013~12:28 INTERACTION: OK
+Sat,12-Oct-2013~12:28 PARTS: ['pause']
+Sat,12-Oct-2013~12:28 SENTENCE: [('You', 'PS'), ('pause', 'VB')]
+Sat,12-Oct-2013~12:28 KIND: IMP
+Sat,12-Oct-2013~12:28 ACTIONS: {'media': 1}
+Sat,12-Oct-2013~12:28 WEIGHTS: {1: ['media']}
+Sat,12-Oct-2013~12:28 BEST: media
+Sat,12-Oct-2013~12:28 ['pause']
+Sat,12-Oct-2013~12:28 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:28 MEDIA: pause
+Sat,12-Oct-2013~12:28 COMMAND: tell application "iTunes" to pause
+Sat,12-Oct-2013~12:28 CODE: osascript -e "tell application \"iTunes\" to pause"
+Sat,12-Oct-2013~12:28 INTERACTION: OK
+Sat,12-Oct-2013~12:28 PARTS: ['skip']
+Sat,12-Oct-2013~12:28 SENTENCE: [('You', 'PS'), ('skip', 'VB')]
+Sat,12-Oct-2013~12:28 KIND: IMP
+Sat,12-Oct-2013~12:28 ACTIONS: {'media': 1}
+Sat,12-Oct-2013~12:28 WEIGHTS: {1: ['media']}
+Sat,12-Oct-2013~12:28 BEST: media
+Sat,12-Oct-2013~12:28 ['skip']
+Sat,12-Oct-2013~12:28 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:28 MEDIA: next track
+Sat,12-Oct-2013~12:28 COMMAND: tell application "iTunes" to next track
+Sat,12-Oct-2013~12:28 CODE: osascript -e "tell application \"iTunes\" to next track"
+Sat,12-Oct-2013~12:28 INTERACTION: OK
+Sat,12-Oct-2013~12:28 PARTS: ['back']
+Sat,12-Oct-2013~12:28 SENTENCE: [('You', 'PS'), ('back', 'VB')]
+Sat,12-Oct-2013~12:28 KIND: IMP
+Sat,12-Oct-2013~12:28 ACTIONS: {'media': 1}
+Sat,12-Oct-2013~12:28 WEIGHTS: {1: ['media']}
+Sat,12-Oct-2013~12:28 BEST: media
+Sat,12-Oct-2013~12:28 ['back']
+Sat,12-Oct-2013~12:28 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:28 MEDIA: previous track
+Sat,12-Oct-2013~12:28 COMMAND: tell application "iTunes" to previous track
+Sat,12-Oct-2013~12:28 CODE: osascript -e "tell application \"iTunes\" to previous track"
+Sat,12-Oct-2013~12:28 INTERACTION: OK
+Sat,12-Oct-2013~12:28 PARTS: ['play']
+Sat,12-Oct-2013~12:28 SENTENCE: [('You', 'PS'), ('play', 'VB')]
+Sat,12-Oct-2013~12:28 KIND: IMP
+Sat,12-Oct-2013~12:28 ACTIONS: {'media': 1}
+Sat,12-Oct-2013~12:28 WEIGHTS: {1: ['media']}
+Sat,12-Oct-2013~12:28 BEST: media
+Sat,12-Oct-2013~12:28 ['play']
+Sat,12-Oct-2013~12:28 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:28 MEDIA: play 
+Sat,12-Oct-2013~12:28 COMMAND: tell application "iTunes" to play 
+Sat,12-Oct-2013~12:28 CODE: osascript -e "tell application \"iTunes\" to play "
+Sat,12-Oct-2013~12:28 INTERACTION: OK
+Sat,12-Oct-2013~12:28 PARTS: ['pause']
+Sat,12-Oct-2013~12:28 SENTENCE: [('You', 'PS'), ('pause', 'VB')]
+Sat,12-Oct-2013~12:28 KIND: IMP
+Sat,12-Oct-2013~12:28 ACTIONS: {'media': 1}
+Sat,12-Oct-2013~12:28 WEIGHTS: {1: ['media']}
+Sat,12-Oct-2013~12:28 BEST: media
+Sat,12-Oct-2013~12:28 ['pause']
+Sat,12-Oct-2013~12:28 MUSIC KEYWORDS: []
+Sat,12-Oct-2013~12:28 MEDIA: pause
+Sat,12-Oct-2013~12:28 COMMAND: tell application "iTunes" to pause
+Sat,12-Oct-2013~12:28 CODE: osascript -e "tell application \"iTunes\" to pause"
+Sat,12-Oct-2013~12:28 INTERACTION: OK
