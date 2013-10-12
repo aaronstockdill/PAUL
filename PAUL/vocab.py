@@ -418,6 +418,7 @@ vocabulary = {
     'when':        Question("when", open_ended=True),
     'what':        Question("what", open_ended=True),
     'where':       Question("where", open_ended=True),
+    'was':         Question("was", open_ended=False),
 
     'about':       Preposition("about"),
     'above':       Preposition("above"),

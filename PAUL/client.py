@@ -10,6 +10,11 @@ DEFAULT_HOST = 'localhost'
 DEFAULT_PORT = 32012
 PROMPT = "?"
 
+def end_line(s):
+    s.send(bytes(" "*1024, "utf-8"))
+    s.send(bytes("client_done", "utf-8"))
+    s.send(bytes(" "*2024, "utf-8"))
+
 def extract_server_info(server_info):
     if server_info == "default":
         host, port = DEFAULT_HOST, DEFAULT_PORT
@@ -35,9 +40,10 @@ def show_return(s):
         elif data == "":
             pass
         elif data.startswith("SCRIPT"):
-            print("SCRIPT:", data.strip("SCRIPT"))
-            result = os.popen(data.strip("SCRIPT"))
-            s.send(bytes(result.read(), "utf-8"))
+            result = os.popen(data.strip("SCRIPT")).read().strip()
+            s.send(bytes(" "*1024, "utf-8"))
+            s.send(bytes(result, "utf-8"))
+            end_line(s)
         else:
             print(data)
 
@@ -45,6 +51,7 @@ def show_return(s):
 
 def server_mode(server_info):
     s = connection(extract_server_info(server_info))
+    leave = lambda: s.send(bytes(" " * 1024 + "disconnect", "utf-8"))
     exiting = False
     while not exiting:
         try:
@@ -53,11 +60,13 @@ def server_mode(server_info):
                 exiting = True
             else:
                 s.send(bytes(in_data.strip(), "utf-8"))
+                end_line(s)
                 show_return(s)
         except KeyboardInterrupt:
             exiting = True
         except EOFError:
             exiting = True
+    leave()
     print("Bye!")
     s.close()
 
@@ -66,7 +75,9 @@ def server_mode(server_info):
 def send_single(server_info, string):
     s = connection(extract_server_info(server_info))
     s.send(bytes(string, "utf-8"))
+    end_line(s)
     show_return(s)
+    s.send(bytes(" " * 1024 + "disconnect", "utf-8"))
     s.close()
 
 if __name__ == "__main__":

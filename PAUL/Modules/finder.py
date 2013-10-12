@@ -81,9 +81,9 @@ def find(params="", look_in=False):
     
     #home = "/"
     
-    command = 'mdfind -onlyin {}/ "{}"'.format(home, params)
+    command = 'mdfind -onlyin {}/ "{}"'.format(home.strip("\n"), params)
     
-    results = paul.run_script(command, response=True).split("\n")[:-1]
+    results = paul.run_script(command, response=True).split("\n")
     filtered_results = []
     for line in results:
         line = line.strip("\n")

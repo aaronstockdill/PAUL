@@ -70,7 +70,7 @@ def weather(day_index=0):
                "forecastrss?u=" + paul.user_info.info['temp'].lower() + "&w="
                + paul.user_info.info['woeid'])
     except urllib.error.URLError:
-        return "I couldn't retrieve the weather."
+        return "I couldn't retrieve the weather. Are you connected to the internet?"
     lines = page.readlines()
     lines = [str(line, encoding='utf8') for line in lines[28:48]
              if str(line, encoding='utf8').startswith("<yweather")]

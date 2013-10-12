@@ -66,27 +66,49 @@ def associate(words_dict):
 
 
 
-def interact(statement, response=None, done_interacting=True):
+def get_client_data():
+    ''' Get some response from the client. '''
+    done = False
+    result = ""
+    user_info.flags["SERVER"].send(bytes(" "*1024, "utf-8"))
+    while not done:
+        come_back = user_info.flags["SERVER"].recv(1024)
+        info = str(come_back, "utf-8").strip()
+        log("RECIEVING:", info)
+        if info == "client_done":
+            log("DONE RECIEVING")
+            done = True
+        else:
+            result += info
+    log("RESULT:", result)
+    return result
+
+
+
+def interact(statement, response=None):
     """ Standard function for interacting with the user. Use this function,
         not anything custom if possible. 'Response' can be 'list', 'y_n', 'arb'
         or None """
+    
+    s = user_info.flags["SERVER"]
+    def send(phrase):
+        s.send(bytes(" "*1024, "utf-8"))
+        s.send(bytes(phrase, 'utf-8'))
+        s.send(bytes(" "*1024, "utf-8"))
     
     log("INTERACTION:", statement)
     print(statement)
     if user_info.flags["NOISY"]:
         os.system('say "{}"'.format(statement))
-    if user_info.flags["SERVER"] != None:
-        log("CONNECTION: " + repr(user_info.flags['SERVER']))
-        user_info.flags["SERVER"].send(bytes(statement,
-                                        'utf-8'))
+    if s:
+        log("CONNECTION: " + repr(s))
+        send(statement)
     if response:
-        if user_info.flags["SERVER"] == None:
+        if not user_info.flags["SERVER"]:
             bringback = input(user_info.info["prompt"] + " ")
         else:
-            user_info.flags["SERVER"].send(bytes(" "*1024, "utf-8"))
-            user_info.flags["SERVER"].send(bytes("paul_done", "utf-8"))
-            bringback = user_info.flags["SERVER"].recv(1024)
-            bringback = str(bringback, encoding="utf8")
+            send("paul_done")
+            bringback = get_client_data()
         numbers = {
             '1': "first",
             '2': "second",
@@ -153,7 +175,7 @@ def acknowledge():
         "Certainly{}.".format(name),
     ]
     result = random.choice(acknowledgements)
-    interact(result)
+    interact(result, done_interacting = False)
     return result
 
 
@@ -217,7 +239,6 @@ def join_lists(*lists):
     return connected
 
 
-
 def filter_unless_listed(main_list, *rest):
     ''' Given a main list, filter any words not in the other lists from it '''
     return_list = []
@@ -244,14 +265,10 @@ def run_script(code, language='bash', response=False):
     if not user_info.flags["SERVER"]:
         return os.popen(code).read()
     else:
-        interact("Remote code execution is still very experimental")
         user_info.flags["SERVER"].send(bytes(1024*" ", "utf-8"))
         user_info.flags["SERVER"].send(bytes("SCRIPT{}SCRIPT".format(code), "utf-8"))
         user_info.flags["SERVER"].send(bytes(1024*" ", "utf-8"))
-        data = ""
-        if response:
-            come_back = user_info.flags["SERVER"].recv(1024)
-            data = str(come_back, "utf-8")
+        data = get_client_data()
         return data
     
 
@@ -470,11 +487,11 @@ class Sentence(object):
 
         for i, word in enumerate(self.sentence):
             if word[0] == 'it':
-                log("IT:", str(user_info.info['it']))
-                if user_info.info['it'] == None:
+                log("IT:", str(paul.user_info.info['it']))
+                if paul.user_info.info['it'] == None:
                     return False
                 self.sentence.pop(i)
-                self.sentence.insert(i, (user_info.info["it"], "XO"))
+                self.sentence.insert(i, (paul.user_info.info["it"], "XO"))
                 return True
         return False
 
@@ -492,7 +509,6 @@ class Sentence(object):
     
     def has_word(self, word):
         return has_word(self.sentence, word)
-
 
 
 update_words()
