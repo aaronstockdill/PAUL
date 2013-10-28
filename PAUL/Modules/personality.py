@@ -27,14 +27,24 @@ GREETINGS = [
     "ello",
 ]
 
+THANKS = [
+    "thanks",
+    "thank-you",
+    "thank",
+    "gratitude",
+    "thx",
+]
+
 
 def one_of(list):
-    name = random.choice(['', ', {}'.format(paul.user_info.info['name'])])
+    
+    name = random.choice(['', 
+            ', {}'.format(paul.user_info.info['name']),
+            ', {}'.format(paul.user_info.info['title'])])
     return random.choice(list).format(name)
 
 
 def greet():
-    name = random.choice(['', ', {}'.format(paul.user_info.info['name'])])
     responses = ["Hi{}.", 
                  "Hello{}."]
     d = datetime.datetime.now()
@@ -48,6 +58,18 @@ def greet():
 
 
 
+def thank():
+    responses = [
+        "You're most welcome{}.",
+        "No worries{}.",
+        "You're welcome{}.",
+        "Of course{}.",
+        "It was nothing{}.",
+    ]
+    return one_of(responses)
+
+
+
 def process(sentence):
     ''' Process the input sentence '''
     
@@ -57,6 +79,8 @@ def process(sentence):
     
     if paul.has_one_of(keywords, GREETINGS):
         takeback = greet()
+    elif paul.has_one_of(keywords, THANKS):
+        takeback = thank()
     elif paul.has_one_of(keywords, ["name", "called", "named"]):
         return sentence.forward("settings")
     return takeback
@@ -64,7 +88,7 @@ def process(sentence):
 def main():
     ''' The main function '''
     
-    NOUNS = KEYWORDS + GREETINGS
+    NOUNS = KEYWORDS + GREETINGS + THANKS
     
     words = {word: ("personality", "noun") for word in NOUNS}
     #words.update({word: ("personality", "verb") for word in VERBS})

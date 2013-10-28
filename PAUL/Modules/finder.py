@@ -53,7 +53,7 @@ VERBS = [
 def choose(list_choices):
     ''' Choose the item from what we found '''
     
-    question = "Which of these do you want?\n"
+    question = "Which of these do you want? \n"
     options = "\n".join([str(index + 1) + ". " + item.split("/").pop() for 
                          index, item in enumerate(list_choices)])
     choice = paul.interact(question + options, "list")
@@ -83,7 +83,7 @@ def find(params="", look_in=False):
     
     command = 'mdfind -onlyin {}/ "{}"'.format(home.strip("\n"), params)
     
-    results = paul.run_script(command, response=True).split("\n")
+    results = paul.run_script(command, response=True).split("\n")[:-1]
     filtered_results = []
     for line in results:
         line = line.strip("\n")
@@ -101,8 +101,8 @@ def find(params="", look_in=False):
         else:
             decision = filtered_results[0]
         paul.log("DECISION: " + str(decision))
-        paul.user_info.info["it"] = decision
-        paul.log('IT: {}'.format(paul.user_info.info["it"]))
+        it = paul.set_it(decision)
+        paul.log('IT: {}'.format(it))
         return decision
     else:
         return None
@@ -112,7 +112,7 @@ def get(location):
     ''' Open the location '''
     
     if location:
-        message = "Opening {}"
+        message = "Opening it."
         paul.run_script('open "{}"'.format(location))
         return message.format(location)
     else:
@@ -123,7 +123,7 @@ def reveal(location):
     ''' Show the location in the Finder '''
     
     if location:
-        message = "I found {}"
+        message = "I found something..."
         paul.run_script('tell application "Finder" to '
                         'reveal POSIX file "{}"'.format(location), 
                         language="applescript")

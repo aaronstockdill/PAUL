@@ -60,7 +60,7 @@ def process(sentence):
 
 
 def what_keyword(keyword="time"):
-    ''' Return what __ it is, e.g. time, day, etc. '''
+    ''' Return what <keyword> it is, e.g. time, day, etc. '''
     if keyword == "time":
         time_str = time.strftime("%I:%M%p").lower()
         answer = time_str[1:] if time_str.startswith("0") else time_str
@@ -76,7 +76,7 @@ def what_keyword(keyword="time"):
         time_str = time.strftime("%I:%M%p").lower()
         ans = time_str[1:] if time_str.startswith("0") else time_str
         answer = time.strftime("%A, {}".format(ans))
-    
+    paul.set_it(answer)
     return "It is {}.".format(answer)
 
 ### TODO: "what will the date be next tuesday?"

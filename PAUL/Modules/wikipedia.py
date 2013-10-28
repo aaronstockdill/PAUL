@@ -22,9 +22,8 @@ def scrape_first_paragraph(url):
     ''' Get the first paragraph of the specified (print-formatted) 
         wikipedia article '''
     opener = urllib.request.build_opener()
-    opener.addheaders = [('User-agent', 'PAUL/0.2.1')]
-    #gross_url = ('http://en.wikipedia.org/w/index.php?title='                
-                #+'{}&printable=yes'.format(re.sub(' ', '_', what)))
+    opener.addheaders = [('User-agent',
+                          'PAUL/{}'.format(paul.user_info.info["version"]))]
     gross_url = url.replace("/wiki/", "/w/index.php?title=")+"&printable=yes"
     
     paul.log("URL ATTEMPT: " + gross_url)
@@ -36,7 +35,7 @@ def scrape_first_paragraph(url):
         if line.startswith("<div id=\"mw-content-text\"")][0])
     para = ''.join(page[content_start:]).split("<p>")[1].split("</p>")[0]
    
-    paul.user_info.info['it'] = url
+    paul.set_it(url)
     para = stripIt(para)
     if para.endswith("may refer to:"):
         paul.run_script("open {}".format(url))

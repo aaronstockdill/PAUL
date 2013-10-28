@@ -373,7 +373,7 @@ def create_irregulars():
 
 
 vocabulary = {
-    user_info.info['computer']:        Name(user_info.info['computer']),
+    'paul':        Name('paul'),
     user_info.info['name']:        Name(user_info.info['name']),
 
     'be':          Verb("be"),

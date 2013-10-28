@@ -77,7 +77,7 @@ def weather(day_index=0):
     
     paul.log("WEATHER_RAW:", str(lines))
     
-    paul.user_info.info['it'] = "http://weather.yahoo.com/"
+    paul.set_it("http://weather.yahoo.com/")
     
     if day_index == 0:
         items = lines[day_index].split("\"")[1:-1]
@@ -85,7 +85,8 @@ def weather(day_index=0):
         
         paul.log("ITEMS:", str(items))
     
-        condition = items[1].lower()
+        condition = (", and {}".format(items[1].lower()) 
+                     if items[1].lower() != "unknown" else "")
         temp = int(items[5])
         
         items2 = lines[1].split("\"")[1:-1]
@@ -96,7 +97,7 @@ def weather(day_index=0):
         condition2 = items2[9].lower()
         temp2 = "{}".format(items2[7])
         
-        return "It's {0}°{1}, and {2}. The high today is {3}°{1}, {4}.".format(
+        return "It's {0}°{1}{2}. The high today is {3}°{1}, {4}.".format(
         temp, paul.user_info.info['temp'], condition, temp2, condition2)
     
     elif day_index < 0:

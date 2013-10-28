@@ -11,11 +11,12 @@ import paul
 def process(sentence):
     ''' Process the sentence '''
     
-    keywords = sentence.keywords()
+    keywords = sentence.keywords(include=["VB"])
     pp = sentence.get_part("PP", True)
     if pp:
         keywords += pp
     paul.trim_word(keywords, "to")
+    
     paul.log("KEYWORDS:", keywords)
     key = ""
     val = ""
@@ -35,16 +36,28 @@ def process(sentence):
         key  = "LOGGING"
     elif paul.has_word(keywords, "name"):
         key = "name"
+    elif paul.has_word(keywords, "title"):
+        key = "title"
     elif paul.has_word(keywords, "prompt"):
         return "You have to change the prompt in settings manually, I'm afraid."
     else:
-        paul.log("FOUND NEITHER FLAG")
-        return "I'm not sure what you wanted we to set."
+        paul.log("FOUND NO FLAG")
+        return "I'm not sure what you wanted me to set."
     
-    if paul.has_word(keywords, "off") or paul.has_word(keywords, "false"):
+    if (paul.has_word(keywords, "off") 
+    or paul.has_word(keywords, "false")
+    or paul.has_word(keywords, "stop")):
         val = "False"
-    elif paul.has_word(keywords, "on") or paul.has_word(keywords, "true"):
+    elif (paul.has_word(keywords, "on") 
+    or paul.has_word(keywords, "true")
+    or paul.has_word(keywords, "start")
+    or paul.has_word(keywords, "begin")):
         val = "True"
+    elif key == "title":
+        if paul.has_word(keywords, "sir"):
+            val = "sir"
+        elif paul.has_word(keywords, "ma'am"):
+            val = "ma'am"
     else:
         if key == "name":
             if sentence.has_word("i"):
@@ -53,15 +66,9 @@ def process(sentence):
                 val = '"{}"'.format(val[0].capitalize())
                 confirm = ("Ok, I'll call you " + 
                            "{} from now on.".format(val[1:-1]))
-            elif sentence.has_word("you"):
-                key = "computer"
-                val = paul.join_lists(sentence.get_part("??"), 
-                                      sentence.get_part("XO"))
-                val = '"{}"'.format(val[0].capitalize())
-                confirm = "Ok, I'll be called {}.".format(val[1:-1])
         else:
-            paul.log("FOUND NEITHER ON NOR OFF")
-            return "I'm not sure if you wanted '{}' on or off.".format(key)
+            paul.log("FOUND NO PARAMETER")
+            return "I'm not sure how you wanted '{}' set.".format(key)
     
     
     sub = "    \"{}\": {},\n".format(key, val)
@@ -87,6 +94,11 @@ def main():
         "set": ("settings", "verb"),
         "switch": ("settings", "verb"),
         "turn": ("settings", "verb"),
+        "enable": ("settings", "verb"),
+        "disable": ("settings", "verb"),
+        "begin": ("settings", "verb"),
+        "start": ("settings", "verb"),
+        "stop": ("settings", "verb"),
         "verbose": ("settings", "noun"),
         "verbosity": ("settings", "noun"),
         "noisy": ("settings", "noun"),

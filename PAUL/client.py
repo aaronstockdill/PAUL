@@ -10,6 +10,23 @@ DEFAULT_HOST = 'localhost'
 DEFAULT_PORT = 32012
 PROMPT = "?"
 
+def show_splash():
+    import os
+    os.system("clear")
+    rows, columns = [int(i) for i in os.popen('stty size', 'r').read().split()]
+    title = "P.A.U.L Client"
+    byline = "Python Actions Using Language, Client Mode"
+    author = "By Aaron Stockdill"
+    w = (columns - len(title))//2
+    x = (columns - len(byline))//2
+    y = (columns - len(author))//2
+    print("\n"
+        + " " * w, title + "\n"
+        + " " * (w - 1), "=" * (len(title) + 2) + "\n"
+        + "\n"
+        + " " * x, byline + "\n"
+        + " " * y, author + "\n\n")
+
 def end_line(s):
     s.send(bytes(" "*1024, "utf-8"))
     s.send(bytes("client_done", "utf-8"))
@@ -50,6 +67,7 @@ def show_return(s):
 
 
 def server_mode(server_info):
+    show_splash()
     s = connection(extract_server_info(server_info))
     leave = lambda: s.send(bytes(" " * 1024 + "disconnect", "utf-8"))
     exiting = False

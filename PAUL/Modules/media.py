@@ -48,7 +48,10 @@ def process(sentence):
     
     if 'play' not in verbs:
         acknowledge = paul.vocab.vocabulary[verbs[0]]['past_perf']
-        go = commands[verbs[0]]()
+        try:
+            go = commands[verbs[0]](key)
+        except KeyError:
+            return sentence.forward("discover")
     else:
         acknowledge = 'playing'
         if keywords != []:
@@ -56,7 +59,10 @@ def process(sentence):
             + '1 whose name is "{}")'.format(keywords[0][0]))
         else:
             key = ""
-        go = commands[verbs[0]](key)
+        try:
+            go = commands[verbs[0]](key)
+        except KeyError:
+            return sentence.forward("discover")
     
     return "OK" if go else "Sorry, that didn't work."
 

@@ -21,7 +21,6 @@ def process(sentence):
     importer.write("\nimport paul\npaul.update_words()")
     importer.close()
     
-    #python = sys.executable
     if paul.user_info.flags["SERVER"]:
         return "Restart not supported when in Server Mode."
     else:

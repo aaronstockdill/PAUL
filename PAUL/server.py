@@ -9,6 +9,24 @@ import brain
 HOST = ''
 PORT = 32012
 
+def show_splash():
+    import os
+    os.system("clear")
+    rows, columns = [int(i) for i in os.popen('stty size', 'r').read().split()]
+    title = "P.A.U.L Server"
+    byline = "Python Actions Using Language, Server v{}".format(
+              brain.paul.user_info.info['version'])
+    author = "By Aaron Stockdill"
+    w = (columns - len(title))//2
+    x = (columns - len(byline))//2
+    y = (columns - len(author))//2
+    print("\n"
+        + " " * w, title + "\n"
+        + " " * (w - 1), "=" * (len(title) + 2) + "\n"
+        + "\n"
+        + " " * x, byline + "\n"
+        + " " * y, author + "\n\n")
+
 class Client(threading.Thread):
     
     def __init__(self, socket):
@@ -56,7 +74,8 @@ class Client(threading.Thread):
     
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((HOST, PORT))
-s.listen(5)
+s.listen(1)
+show_splash()
 print("\nListening on port {}. Press ctrl-C to exit.".format(PORT))
 connected = []
 while 1:

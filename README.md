@@ -10,11 +10,17 @@ Paul is a simple attempt at a system that can do something useful given a senten
 
 As Paul is written in Python3 and Applescript, it is Mac OS X only. It uses mdfind, the command line version of spotlight, to find files. Using OS X's dictation it is possible to talk to Paul, too!
 
-###3. Paul's Structure
+###3. Installing Paul
+
+The `install` script has not been tested. Run this at your own peril. No responsibility will be taken for loss of Paul, data, or a working operating system.
+
+Paul has the functionality in place for a 'first run setup' interface, but it has not yet been created. As such, you have to learn they way around yourself at the moment.
+
+###4. Paul's Structure
 
 Paul is run from inside his directory in the following way:
 
-    $ ./bin/PAUL [query]
+    $ ./bin/paul [query]
 
 If no query is provided, you enter 'discussion mode' where you can continually interact with Paul, and he keeps track of the conversation. For example, in discussion mode, if you just asked Paul to find some file for you, you would then just say "open that", or something of the sort, and he would. If you are not in discussion mode, Paul has no recollection of previous statements.
 
@@ -23,17 +29,17 @@ Paul also has two other programs that are useful:
     $ ./bin/server
     $ ./bin/client host [query]
 
-'client' is only useful once 'server' is running. 'host' can be either an address and port in the format "address:port", or "default", which is the same as putting "localhost:32012". Usually default is what is desired. If you need to customize this, it is straightforward enough inside the scripts. Once the server is running, 'client' acts pretty much the same as 'PAUL'. This functionality has not been extensively tested, and should not yet be relied upon.
+'client' is only useful once 'server' is running. 'host' can be either an address and port in the format "address:port", or "default", which is the same as putting "localhost:32012". Usually default is what is desired. If you need to customize this, it is straightforward enough inside the scripts. Once the server is running, 'client' acts pretty much the same as 'paul'. This functionality has not been extensively tested, and should not yet be relied upon.
  
 Modules are stored in PAUL/Modules/, and extend Paul's functionality. These are built using the paul API via `import paul`.
 
-###4. Extending Paul
+###5. Extending Paul
 
 Paul is designed to be completely extendable. This is done through modules.
 
 There is a more detailed guide at the bottom of this README [here](#building-paul-modules).
 
-###5. Coming Soon?
+###6. Coming Soon?
 
 Not so much a roadmap as a wishlist:
 

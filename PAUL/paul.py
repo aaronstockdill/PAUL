@@ -12,6 +12,7 @@ import random
 import time
 import itertools
 import os
+import subprocess
 import operator
 
 import vocab
@@ -85,6 +86,15 @@ def get_client_data():
 
 
 
+def simple_speech_filter(statement):
+    ''' Replace a couple of common "error spots" such as °C to 
+        degrees celcius '''
+    statement = statement.replace("°C", " degrees celcius")
+    return statement
+    
+    
+
+
 def interact(statement, response=None):
     """ Standard function for interacting with the user. Use this function,
         not anything custom if possible. 'Response' can be 'list', 'y_n', 'arb'
@@ -99,7 +109,8 @@ def interact(statement, response=None):
     log("INTERACTION:", statement)
     print(statement)
     if user_info.flags["NOISY"]:
-        os.system('say "{}"'.format(statement))
+        speech = simple_speech_filter(statement)
+        subprocess.Popen('say "{}"'.format(speech), shell=True)
     if s:
         log("CONNECTION: " + repr(s))
         send(statement)
@@ -270,7 +281,14 @@ def run_script(code, language='bash', response=False):
         user_info.flags["SERVER"].send(bytes(1024*" ", "utf-8"))
         data = get_client_data()
         return data
-    
+
+
+
+def set_it(value):
+    ''' Sets the global value of "it" to the given value. Return the 
+        new value, explicitly from it, incase verification is needed. '''
+    user_info.info["it"] = value
+    return user_info.info["it"]
 
 
 
@@ -326,49 +344,44 @@ class Sentence(object):
 
     def keywords(self, ignore=None, include=None):
         ''' Join things not split by prepositions and stuff, as they probably
-            "belong" together. Ideal for getting keywords. If keywords have
-            been found before, use them rather than trying to find them
-            again. This means if the function is called again and again but
-            is not stored in a variable, the performance hit is negligible.
+            "belong" together. Ignore certain words by putting them in the
+            ignore list. Include a certain type of word by listing the types
+            in include. By default, keywords gets ?? (unknowns), NO (objects) and XO (names).
         '''
 
         if ignore is None:
             ignore = []
 
-        if self.keyword_list is not None:
-            log("KEYWORDS: Short-circuit successful.")
-            return self.keyword_list
+        objects = self.get_part("NO", indexes=True)
+        names = self.get_part("XO", indexes=True)
+        keywords = self.get_part("??", indexes=True)
+
+        if include is not None:
+            other = []
+            for key in include:
+                part = self.get_part(key, indexes=True)
+                if part:
+                    other = other + part
         else:
-            objects = self.get_part("NO", indexes=True)
-            names = self.get_part("XO", indexes=True)
-            keywords = self.get_part("??", indexes=True)
+            other = None
 
-            if include is not None:
-                other = []
-                for key in include:
-                    part = self.get_part(key, indexes=True)
-                    if part:
-                        other = other + part
-            else:
-                other = None
+        new_items = [(i, j) for i, j in join_lists(objects,
+                                                   names,
+                                                   keywords,
+                                                   other)
+                    if i not in ignore]
 
-            new_items = [(i, j) for i, j in join_lists(objects,
-                                                       names,
-                                                       keywords,
-                                                       other)
-                        if i not in ignore]
+        item_list = []
+        iterhelper = lambda i: i[0]-i[1][1]
+        for _, item in itertools.groupby(enumerate(new_items), iterhelper):
+            final_items = (list(map(operator.itemgetter(1), item)))
+            ind = final_items[0][1]
+            final_items = ' '.join([item[0] for item in final_items])
+            item_list.append((final_items, ind))
 
-            item_list = []
-            iterhelper = lambda i: i[0]-i[1][1]
-            for _, item in itertools.groupby(enumerate(new_items), iterhelper):
-                final_items = (list(map(operator.itemgetter(1), item)))
-                ind = final_items[0][1]
-                final_items = ' '.join([item[0] for item in final_items])
-                item_list.append((final_items, ind))
-
-            self.keyword_list = sorted(item_list,
-                                       key=operator.itemgetter(1))
-            return self.keyword_list
+        self.keyword_list = sorted(item_list,
+                                   key=operator.itemgetter(1))
+        return self.keyword_list
 
 
 
@@ -428,7 +441,7 @@ class Sentence(object):
             or Imperative (IMP)'''
 
         if (self.sentence[0][1] == "VB" or
-            self.sentence[0][0] == user_info.info["computer"]):
+            self.sentence[0][0] == "paul"):
             kind = "IMP"
             self.sentence.insert(0, ("You", "PS"))
         elif self.sentence[0][1] == "WH":
@@ -487,11 +500,11 @@ class Sentence(object):
 
         for i, word in enumerate(self.sentence):
             if word[0] == 'it':
-                log("IT:", str(paul.user_info.info['it']))
-                if paul.user_info.info['it'] == None:
+                log("IT:", str(user_info.info['it']))
+                if user_info.info['it'] == None:
                     return False
                 self.sentence.pop(i)
-                self.sentence.insert(i, (paul.user_info.info["it"], "XO"))
+                self.sentence.insert(i, (user_info.info["it"], "XO"))
                 return True
         return False
 

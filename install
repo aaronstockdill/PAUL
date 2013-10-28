@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "WARNING: This script is as-yet untested. Use at your own peril. No responsibility will be taken for a broken Paul install, or a broken operating system."
+echo ""
+echo "You have been warned..."
+echo ""
+
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root" 
+   exit 1
+fi
+
+echo "Installing PAUL..."
+echo "Commencing copy of required files..."
+cp -ar . /opt/PAUL
+echo "Done."
+echo "Setting up command line prompt..."
+PATH=$PATH:/opt/PAUL/bin
+export PATH
+echo "Done."
+echo "Paul is now installed. To run Paul, use 'paul [query]'."
