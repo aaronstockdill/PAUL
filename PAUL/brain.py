@@ -67,5 +67,4 @@ def process(line):
                 reply = commands(sentence)
             else:
                 reply = sentence.forward("personality")
-            #return paul.interact(reply)
-            paul.interact(reply)
+            return paul.interact(reply)

@@ -13,7 +13,7 @@ class Application(Frame):
     
     def __init__(self, master=None):
         Frame.__init__(self, master)
-        self.grid()
+        self.pack()
         self.createWidgets()
 
         
@@ -24,16 +24,18 @@ class Application(Frame):
         
     def createWidgets(self):
         self.enterText = Entry(self)
-        self.enterText.grid()
+        self.enterText.pack()
         self.enterText.bind("<Return>", lambda e: self.think(self.enterText, self.talkLabel))
         self.talkLabel = Label (self, text="Hi!")
         self.goButton = Button (self, text='Go', command=lambda: self.think(self.enterText, self.talkLabel))
-        self.goButton.grid()        
-        self.talkLabel.grid()
+        self.endButton = Button (self, text='Bye!', command=lambda: self.master.destroy())
+        self.goButton.pack() 
+        self.endButton.pack()       
+        self.talkLabel.pack()
 
         
         
-paul = Application()
+paul = Application(Tk())
 paul.master.title("PAUL")
 paul.mainloop()
 

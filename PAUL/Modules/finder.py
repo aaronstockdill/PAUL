@@ -198,7 +198,7 @@ def process(sentence):
     
     ignore = list(types.keys()) + list(commands.keys())
     
-    keywords = sentence.keywords(ignore)
+    keywords = sentence.keywords()
     paul.log("KEYWORDS: " + str(keywords))
     
     params_list = []
@@ -241,7 +241,7 @@ def process(sentence):
     
     if object in apps:
         where = "/Applications"
-        params = ""
+        params = keywords[0][0] + " kind:application"
         paul.log("FINDING APP")
     else:
         where = False

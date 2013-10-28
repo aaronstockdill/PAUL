@@ -49,7 +49,7 @@ def process(sentence):
     if 'play' not in verbs:
         acknowledge = paul.vocab.vocabulary[verbs[0]]['past_perf']
         try:
-            go = commands[verbs[0]](key)
+            go = commands[verbs[0]]()
         except KeyError:
             return sentence.forward("discover")
     else:
