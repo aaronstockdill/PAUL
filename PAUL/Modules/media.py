@@ -62,6 +62,14 @@ def process(sentence):
         try:
             go = commands[verbs[0]](key)
         except KeyError:
+            if sentence.has_word("what"):
+                script = ('tell application "iTunes"\n'
+                + '    set myTrack to (name of current track)\n'
+                + '    set myArtist to (artist of current track)\n'
+                + 'end tell\n\n'
+                + 'return "It\'s \'" & myTrack & "\', by " & myArtist & "."')
+                return paul.run_script(script,
+                                       language="applescript")[:-1]
             return sentence.forward("discover")
     
     return "OK" if go else "Sorry, that didn't work."

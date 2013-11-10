@@ -36,7 +36,6 @@ def main():
           "Enter 'bye' without the quotes to exit.")
 
     exit = False
-
     while not exit:
         try:
             command = input(brain.paul.user_info.info["prompt"] + " ")

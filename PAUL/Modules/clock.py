@@ -16,6 +16,7 @@ NOUNS = [
     "date",
     "month",
     "year",
+    'today',
 ]
 
 DAYS =[

@@ -354,6 +354,7 @@ class Sentence(object):
 
         objects = self.get_part("NO", indexes=True)
         names = self.get_part("XO", indexes=True)
+        ordinals = self.get_part("OR", indexes=True)
         keywords = self.get_part("??", indexes=True)
 
         if include is not None:
@@ -367,6 +368,7 @@ class Sentence(object):
 
         new_items = [(i, j) for i, j in join_lists(objects,
                                                    names,
+                                                   ordinals,
                                                    keywords,
                                                    other)
                     if i not in ignore]

@@ -19,7 +19,7 @@ def commands(sentence):
         if word in paul.vocab.word_associations:
             modules = [mod for mod, _ in paul.vocab.word_associations[word]]
             for module in modules:
-                actions[module] = actions.get(module, 0) + 1
+                actions[module] = actions.get(module, 0) + 1/(len(modules))
 
     paul.log("ACTIONS: " + str(actions))
 
