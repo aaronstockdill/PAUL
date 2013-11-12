@@ -16,7 +16,6 @@ NOUNS = [
 VERBS = [
     "discover",
     "search",
-    "google",
     paul.user_info.info['search_engine'],
 ]
 

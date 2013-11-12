@@ -61,15 +61,21 @@ def choose(list_choices):
         paul.log("CHOICE: " + str(choice))
         return list_choices[choice - 1]
     return None
+
+
+def has_one_of_substrings(string, substrings):
+    ''' Determines if a string has any of the substrings listed '''
+    for substr in substrings:
+        if substr in string:
+            return True
+    return False
     
 
 def find(params="", look_in=False):
     ''' Find the item that was searched for with necessary paramenters '''
     
-    if look_in:
-        home = look_in
-    else:
-        home = paul.run_script('echo $HOME', response=True).strip('\n')
+    home = (look_in if look_in 
+            else paul.run_script('echo $HOME', response=True).strip('\n'))
     
     avoiders = [
         "Library",
@@ -79,21 +85,12 @@ def find(params="", look_in=False):
         ".properties",
     ]
     
-    #home = "/"
-    
     command = 'mdfind -onlyin {}/ "{}"'.format(home.strip("\n"), params)
     
     results = paul.run_script(command, response=True).split("\n")[:-1]
-    filtered_results = []
-    for line in results:
-        line = line.strip("\n")
-        append = True
-        for avoid in avoiders:
-            if avoid in line:
-                append = False
-        if append:
-            filtered_results.append(line)
-    paul.log("RESULTS FIRST 5: " + str(filtered_results[:10]))
+    filtered_results = sorted([line.strip() for line in results 
+                    if not has_one_of_substrings(line.strip(), avoiders)], key=len)
+    paul.log("RESULTS FIRST 5: ", filtered_results[:10])
     
     if len(filtered_results) > 0:
         if len(filtered_results) > 1:
@@ -106,6 +103,38 @@ def find(params="", look_in=False):
         return decision
     else:
         return None
+
+
+
+def generate_filters(keywords, prepositions):
+    ''' Generate the list of parameters to be used in the search '''
+    
+    params_list = []
+    filters = {
+        "from": "(kMDItemFSContentChangeDate == {0} | kMDItemLastUsedDate =={0})",
+        "yesterday": "$time.yesterday",
+        "today": "$time.today",
+        "this week": "$time.this_week",
+        "last week": "$time.this_week(-1)",
+        "this month": "$time.this_month",
+        "this year": "$time.this_year",
+        "called": "{}",
+        "named": "{}",
+        "about": "{}",
+    }
+    
+    for word, position in keywords:
+        if prepositions != None:
+            fltr = has_position(prepositions, position - 1)
+        else:
+            fltr = None
+        if fltr:
+            params_list.append(filters[fltr].format(
+                                filters.get(word, word)))
+        else:
+            params_list.append(filters.get(word, word))
+    
+    return params_list
 
 
 def get(location):
@@ -132,6 +161,20 @@ def reveal(location):
          return "I couldn't find anything."
 
 
+def show_all(query):
+    ''' Open the finder with a search done '''
+    script = ('tell application "Finder" to activate\n'
+    + 'tell application "System Events"\n'
+    + '\tkeystroke "n" using {command down}\n'
+    + '\tkeystroke "f" using {command down}\n'
+    + '\tkey code 48 using {control down, shift down}\n'
+    + '\tkeystroke "w" using {command down}\n'
+    + '\tkeystroke "' + query + '"\n'
+    + '\tkey code 36\nend tell')
+    paul.run_script(script, language='applescript')
+    return "Here, try these..."
+
+
 def has_position(list, position):
     for item, location in list:
         if position == location:
@@ -154,7 +197,6 @@ def process(sentence):
     }
     
     types = {
-        'file': "",
         'folder': "folder ",
         'powerpoint': "presentation ",
         'keynote': "presentation ",
@@ -183,8 +225,9 @@ def process(sentence):
         "executable": "application ",
     }
     
-    replaced = sentence.replace_it()
+    apps = ["app", "application", "program", "executable"]
     
+    replaced = sentence.replace_it()
     preps = sentence.get_part("PP", indexes=True)
     
     try:
@@ -198,46 +241,14 @@ def process(sentence):
     
     ignore = list(types.keys()) + list(commands.keys())
     
-    keywords = sentence.keywords()
+    keywords = sentence.keywords(ignore=["file"])
     paul.log("KEYWORDS: " + str(keywords))
-    
-    params_list = []
-    
-    filters = {
-        "from": "(kMDItemFSContentChangeDate == {0} | kMDItemLastUsedDate =={0})",
-        "yesterday": "$time.yesterday",
-        "today": "$time.today",
-        "this week": "$time.this_week",
-        "last week": "$time.this_week(-1)",
-        "this month": "$time.this_month",
-        "this year": "$time.this_year",
-        "called": "{}",
-        "named": "{}",
-        "about": "{}",
-    }
-    
-    for word, position in keywords:
-        if preps != None:
-            fltr = has_position(preps, position - 1)
-        else:
-            fltr = None
-        if fltr:
-            params_list.append(filters[fltr].format(
-                                filters.get(word, word)))
-        else:
-            params_list.append(filters.get(word, word))
-            
-    
     if keywords == []:
         return "I don't understand. Sorry."
     
+    filters = generate_filters(keywords, preps)
     if object in types.keys():
-        params_list.append("kind:{}".format(types[object]))
-    else:
-        pass
-        
-    
-    apps = ["app", "application", "program", "executable"]
+        filters.append("kind:{}".format(types[object]))
     
     if object in apps:
         where = "/Applications"
@@ -245,14 +256,16 @@ def process(sentence):
         paul.log("FINDING APP")
     else:
         where = False
-        params = " ".join(params_list)
+        params = " ".join(filters)
         paul.log("PARAMETERS: " + str(params))
     
-    search = params_list[0]
+    search = filters[0]
     paul.log(search)
     
     if search.startswith("http"):
         return commands["open"](search)
+    elif paul.has_word(keywords, "all"):
+        return show_all(params)
     else:
         return commands[verb](find(params, where))
 

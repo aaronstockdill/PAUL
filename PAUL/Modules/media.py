@@ -12,15 +12,11 @@ import paul
 def simple_commands(action):
     ''' Execute simple commands '''
     
-    paul.log("MEDIA: " + action)
-    
     command = ('tell application "iTunes" to {}'.format(action))
-               
+    paul.log("MEDIA: " + action)
     paul.log("COMMAND: " + command)
-    
     paul.run_script(command, language="applescript")
-    
-    return 1
+    return True
     
 
 def process(sentence):

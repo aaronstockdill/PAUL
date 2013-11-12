@@ -62,17 +62,24 @@ def process(sentence):
 
 def what_keyword(keyword="time"):
     ''' Return what <keyword> it is, e.g. time, day, etc. '''
-    if keyword == "time":
-        time_str = time.strftime("%I:%M%p").lower()
-        answer = time_str[1:] if time_str.startswith("0") else time_str
-    elif keyword == "day" or keyword in DAYS:
-        answer = time.strftime("%A")
-    elif keyword == "month" or keyword in MONTHS:
-        answer = time.strftime("%B")
-    elif keyword == "year":
-        answer = time.strftime("%Y")
-    elif keyword == "date":
-        answer = time.strftime("%A, %d %B %Y")
+    keyword_map = {
+        "time": "%I:%M%p",
+        "day": "%A",
+        "month": "%B",
+        "year": "%Y",
+        "date": "%A, %d %B %Y",
+    }
+    
+    if keyword in DAYS:
+        keyword = "day"
+    elif keyword in MONTHS:
+        keyword = "month"
+    
+    if keyword in keyword_map.keys():
+        answer = time.strftime(keyword_map[keyword])
+        if keyword == "time":
+            answer = answer[1:] if answer.startswith("0") else answer
+            answer = answer.lower()
     else:
         time_str = time.strftime("%I:%M%p").lower()
         ans = time_str[1:] if time_str.startswith("0") else time_str
@@ -84,9 +91,7 @@ def what_keyword(keyword="time"):
 
 def main():
     ''' The main function '''
-    words = {word: ("clock", "noun") for word in NOUNS}
-    words.update({word: ("clock", "noun") for word in DAYS})
-    words.update({word: ("clock", "noun") for word in MONTHS})
+    words = {word: ("clock", "noun") for word in NOUNS+DAYS+MONTHS}
     
     paul.associate(words)
     paul.vocab.word_actions["clock"] = lambda sentence: process(sentence)

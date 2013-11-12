@@ -63,8 +63,5 @@ def process(line):
             paul.log("SENTENCE: " + repr(sentence))
             paul.log("KIND: " + sentence.kind)
 
-            if sentence.kind == "IMP" or sentence.kind == "INT":
-                reply = commands(sentence)
-            else:
-                reply = sentence.forward("personality")
+            reply = commands(sentence)
             return paul.interact(reply)

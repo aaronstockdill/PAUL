@@ -25,6 +25,8 @@ GREETINGS = [
     "sup",
     "yo",
     "ello",
+    "gidday",
+    "g'day",
 ]
 
 THANKS = [
@@ -81,7 +83,7 @@ def process(sentence):
         takeback = greet()
     elif paul.has_one_of(keywords, THANKS):
         takeback = thank()
-    elif paul.has_one_of(keywords, ["name", "called", "named"]):
+    elif paul.has_one_of(keywords, ["name", "call", "called", "named"]):
         return sentence.forward("settings")
     return takeback
 
@@ -91,7 +93,6 @@ def main():
     NOUNS = KEYWORDS + GREETINGS + THANKS
     
     words = {word: ("personality", "noun") for word in NOUNS}
-    #words.update({word: ("personality", "verb") for word in VERBS})
     
     paul.associate(words)
     paul.vocab.word_actions["personality"] = lambda sentence: process(sentence)

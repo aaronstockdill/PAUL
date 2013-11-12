@@ -264,6 +264,20 @@ def filter_unless_listed(main_list, *rest):
 
 
 
+def filter_out(main_list, *rest):
+    ''' Filter any item from the main list that is found in the rest '''
+    return_list = []
+    for item in main_list:
+        comparative = join_lists(*rest)
+        if iterable(item):
+            if not has_one_of(item, comparative):
+                return_list.append(item)
+        elif item not in comparative:
+            return_list.append(item)
+    return return_list
+
+
+
 def run_script(code, language='bash', response=False):
     ''' Run the script code provided. Defaults to bash, can also be applescript
         or python3. '''
@@ -289,6 +303,17 @@ def set_it(value):
         new value, explicitly from it, incase verification is needed. '''
     user_info.info["it"] = value
     return user_info.info["it"]
+
+
+
+def send_notification(title, message):
+    ''' Send the user a notification using the system notifications
+        with a title and message '''
+    notification = ('display' + 
+    ' notification "{}" with title "PAUL" subtitle "{}"'.format(
+        message, title
+    ))
+    run_script(notification, language='applescript')
 
 
 
@@ -474,6 +499,8 @@ class Sentence(object):
                 verb_index = i
             elif word in ["it", "that"]:
                 sentence.append(("it", "PO"))
+            elif word == "i'm":
+                sentence += [("i", "NS"), ("be", "VB")]
             elif part in ["N", "P", "X"]:
                 if i < verb_index:
                     part = part + "S"
