@@ -120,11 +120,15 @@ If your module has the potential to handle an 'it', such as a previously found u
 
     sentence.replace_it()
 
+If you need to set 'it', use the companion function:
+
+    paul.set_it(value)
+
 If your module needs to run a script, use this:
 
     paul.run_script(code, [language, response])
 
-The `code` parameter is rather self explanitory. The `language` paramenter is optional, and defaults to bash. Other values include python3 and applescript. Response is True or False, depending on whether you want the result - this is more for server functionality, where it is strictly necessary, than local mode, where it is more of a nicety. The result returned is what the code returned. If you are expecting multiple lines, split it by newline characters: `\n`
+The `code` parameter is rather self explanitory. The `language` paramenter is optional, and defaults to bash. Other values include python3, ruby and applescript. Response is True or False, depending on whether you want the result - this is more for server functionality, where it is strictly necessary, than local mode, where it is more of a nicety. The result returned is what the code returned. If you are expecting multiple lines, split it by newline characters: `\n`
 
 To log anything, use the `paul.log(to_log)` function, passing a what you want logged in the string. If the VERBOSE flag is set in user\_info, it will be shown on the screen. It is always logged to log.txt. You can pass as many items as you want, they will be converted to a string and logged, separated by a space.
 

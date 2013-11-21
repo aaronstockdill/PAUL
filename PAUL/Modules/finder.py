@@ -57,7 +57,7 @@ def choose(list_choices):
     options = "\n".join([str(index + 1) + ". " + item.split("/").pop() for 
                          index, item in enumerate(list_choices)])
     choice = paul.interact(question + options, "list")
-    if choice is not None:
+    if choice is not None and choice <= 5 and choice > 0:
         paul.log("CHOICE: " + str(choice))
         return list_choices[choice - 1]
     return None
@@ -237,7 +237,7 @@ def process(sentence):
     verb = sentence.get_part("VB")[0]
     
     if replaced:
-        return commands[verb](paul.user_info.info['it'])
+        return commands[verb](replaced)
     
     ignore = list(types.keys()) + list(commands.keys())
     

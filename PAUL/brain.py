@@ -37,7 +37,9 @@ def commands(sentence):
 
 
 def split_into_parts(line, i=0):
-    ''' Break the sentence into the compontent parts. '''
+    ''' Break the sentence into the compontent parts, treating each as a new
+        command. Allows command chaining. '''
+    
     splitters = ["and", "then", ","]
     parts = line.split(splitters[i])
     if len(splitters) == i + 1:
@@ -50,7 +52,7 @@ def split_into_parts(line, i=0):
 
 
 def process(line):
-    ''' Process the given line '''
+    ''' Process the given line. '''
     
     parts = split_into_parts(line)
     parts = [i.strip() for i in parts if i.strip() != ""]

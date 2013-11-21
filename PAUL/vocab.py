@@ -297,16 +297,14 @@ class Name(Word):
         }
 
 
-class Ordinal(Word):
-    ''' Ordinals '''
+class Number(Word):
+    ''' Number '''
 
     def __init__(self, base):
         super().__init__(base)
-        ordinals = ['first', 'second', 'third', 'fourth', 'fifth']
         self.items = {
             'base': self.base,
-            'tag': "OR",
-            'value': ordinals.index(self.base) + 1
+            'tag': "NU",
         }
 
 
@@ -370,6 +368,11 @@ def create_irregulars():
     vocabulary['her']['possessive'] = 'hers'
 
     vocabulary['find']['past_perf'] = 'found'
+
+def create_ordinals():
+    ords = ['two', 'six', 'four', 'three', 'zero', 'seven', 'nine', 'five', 'one', 'eight', 'seventy', 'sixty', 'twenty', 'ten', 'forty', 'thirty', 'eighty', 'ninety', 'fifty', 'ninth', 'second', 'eighth', 'first', 'third', 'sixth', 'seventh', 'zeroth', 'fourth', 'fifth', 'nineteen', 'twelve', 'seventeen', 'sixteen', 'eleven', 'eighteen', 'fifteen', 'fourteen', 'thirteen', 'twelfth', 'trillion', 'thousand', 'million', 'hundred', 'billion', 'seventieth', 'sixtieth', 'twentieth', 'fortieth', 'thirtieth', 'eightieth', 'ninetieth', 'fiftieth', 'trillionth', 'thousandth', 'millionth', 'hundredth', 'billionth', 'tenth', 'nineteenth', 'seventeenth', 'sixteenth', 'eleventh', 'eighteenth', 'fifteenth', 'fourteenth', 'thirteenth']
+    for o in ords:
+        vocabulary[o] = Number(o)
 
 
 vocabulary = {
@@ -471,10 +474,4 @@ vocabulary = {
     'with':        Preposition("with"),
     'within':      Preposition("within"),
     'without':     Preposition("without"),
-
-    'first':       Ordinal("first"),
-    'second':      Ordinal("second"),
-    'third':       Ordinal("third"),
-    'fourth':      Ordinal("fourth"),
-    'fifth':       Ordinal("fifth"),
 }

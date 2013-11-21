@@ -1,5 +1,6 @@
 #!/bin/bash
 
+clear
 echo "WARNING: This script is as-yet untested. Use at your own peril. No responsibility will be taken for a broken Paul install, or a broken operating system."
 echo ""
 echo "You have been warned..."
@@ -11,11 +12,32 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 echo "Installing PAUL..."
-echo "Commencing copy of required files..."
-cp -ar . /opt/PAUL
-echo "Done."
-echo "Setting up command line prompt..."
-PATH=$PATH:/opt/PAUL/bin
-export PATH
-echo "Done."
-echo "Paul is now installed. To run Paul, use 'paul [query]'."
+echo "Downloading copy of required files..."
+if curl -o paul.zip "https://codeload.github.com/aaronstockdill/PAUL/zip/master" ; then
+    echo "Done."
+    echo "Extracting Files..."
+    if unzip paul.zip ; then
+        echo "Done."
+        echo "Moving the files into position..."
+        if cp -R ./PAUL-master/ /opt/PAUL ; then
+            echo "Done."
+            echo "Setting up command line prompt..."
+            PATH=$PATH:/opt/PAUL/bin
+            if export PATH ; then
+                echo "Done."
+                echo "Attempting to clean up..."
+                rm -rf ./PAUL-master
+                rm ./paul.zip
+                echo "Paul is now installed. To run Paul, use 'paul [query]'."
+            else
+                echo "Failed to set up PATH variable!"
+            fi
+        else
+            echo "Failed to copy Paul to '/opt/PAUL'!"
+        fi
+    else
+        echo "Failed to extract archive!"
+    fi
+else
+    echo "Failed to download Paul!"
+fi
