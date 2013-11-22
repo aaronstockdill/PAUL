@@ -569,8 +569,6 @@ class Sentence(object):
         ''' Determines what the concept of the sentence is.
             Can be declarative (DEC), Interrogative (INT),
             or Imperative (IMP). Largly obsolete. '''
-        
-        print(self.sentence_string, self.sentence)
 
         if (self.sentence[0][1] == "VB" or
             self.sentence[0][0] == "paul"):

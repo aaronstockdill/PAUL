@@ -23,7 +23,7 @@ info = {
     "temp": "C",
     "search_engine": "Google",
     "prompt": "?",
-    "version": "0.2.6",
+    "version": "0.2.6a",
 }
 
 ## Flags for the system. 

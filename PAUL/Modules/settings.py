@@ -38,7 +38,7 @@ def get_val(keywords, key, sentence):
     ''' Determine the value to set. '''
     val = ''
     flag = True
-    confirm = "done"
+    confirm = "Done"
     
     if paul.has_one_of(keywords, ["off", "false", "stop"]):
         val = "False"
