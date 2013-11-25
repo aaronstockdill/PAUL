@@ -16,7 +16,7 @@ def show_splash():
     rows, columns = [int(i) for i in os.popen('stty size', 'r').read().split()]
     title =  "P.A.U.L"
     byline = "Python Actions Using Language, v{}".format(
-              brain.paul.user_info.info['version'])
+              brain.paul.user_info.flags['VERSION'])
     author = "By Aaron Stockdill"
     w = (columns - len(title))//2
     x = (columns - len(byline))//2

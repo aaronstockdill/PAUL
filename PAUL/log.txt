@@ -1,2000 +1,500 @@
-Tue,12-Nov-2013~15:24 ACTIONS: {'settings': 2.0}
-Tue,12-Nov-2013~15:24 WEIGHTS: {2.0: ['settings']}
-Tue,12-Nov-2013~15:24 BEST: settings
-Tue,12-Nov-2013~15:24 KEYWORDS: [('start', 1), ('talking', 2)]
-Tue,12-Nov-2013~15:24 SETTING:     "NOISY": True,
+Mon,25-Nov-2013~16:06 BEST: wikipedia
+Mon,25-Nov-2013~16:06 KEYWORDS: [('occams razor', 4)]
+Mon,25-Nov-2013~16:06 INTERACTION: Let me see...
+Mon,25-Nov-2013~16:06 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=occams_razor&printable=yes
+Mon,25-Nov-2013~16:06 INTERACTION: Occam's razor (also written as Ockham's razor from William of Ockham (c. 1287 – 1347), and in Latin lex parsimoniae) is a principle of parsimony, economy, or succinctness used in logic and problem-solving. It states that among competing hypotheses, the hypothesis with the fewest assumptions should be selected.
 
-Tue,12-Nov-2013~15:24     NOISY
-Tue,12-Nov-2013~15:24 INTERACTION: done
-Tue,12-Nov-2013~15:24 PARTS: ['restart']
-Tue,12-Nov-2013~15:24 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~15:24 KIND: IMP
-Tue,12-Nov-2013~15:24 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~15:24 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~15:24 BEST: loader
-Tue,12-Nov-2013~15:24 Successfully imported Modules.clock
-Tue,12-Nov-2013~15:24 Successfully imported Modules.discover
-Tue,12-Nov-2013~15:24 Successfully imported Modules.finder
-Tue,12-Nov-2013~15:24 Successfully imported Modules.loader
-Tue,12-Nov-2013~15:24 Successfully imported Modules.media
-Tue,12-Nov-2013~15:24 Successfully imported Modules.personality
-Tue,12-Nov-2013~15:24 Successfully imported Modules.settings
-Tue,12-Nov-2013~15:24 Successfully imported Modules.weather
-Tue,12-Nov-2013~15:24 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~15:24 PARTS: ['hi']
-Tue,12-Nov-2013~15:24 SENTENCE: [('hi', 'NS')]
-Tue,12-Nov-2013~15:24 KIND: DEC
-Tue,12-Nov-2013~15:24 FORWADING TO: personality
-Tue,12-Nov-2013~15:24 INTERACTION: Hi.
-Tue,12-Nov-2013~15:24 PARTS: ['My name is aaron']
-Tue,12-Nov-2013~15:24 SENTENCE: [('i', 'PS'), ('name', 'NS'), ('be', 'VB'), ('aaron', '??')]
-Tue,12-Nov-2013~15:24 KIND: DEC
-Tue,12-Nov-2013~15:24 FORWADING TO: personality
-Tue,12-Nov-2013~15:24 FORWADING TO: settings
-Tue,12-Nov-2013~15:24 KEYWORDS: [('name', 1), ('be', 2), ('aaron', 3)]
-Tue,12-Nov-2013~15:24 VAL[0] aaron
-Tue,12-Nov-2013~15:24 SETTING:     "name": "Aaron",
+http://en.wikipedia.org/wiki/occams_razor
+Mon,25-Nov-2013~17:08 PARTS: ["What's the weather like today?"]
+Mon,25-Nov-2013~17:08 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('like', 'PP'), ('today', 'NO')]
+Mon,25-Nov-2013~17:08 KIND: INT
+Mon,25-Nov-2013~17:08 WEIGHTS: {0.5: ['clock'], 1.5: ['weather']}
+Mon,25-Nov-2013~17:08 BEST: weather
+Mon,25-Nov-2013~17:08 INTERACTION: Coming up.
+Mon,25-Nov-2013~17:08 KEYWORDS: [('weather', 3), ('today', 5)]
+Mon,25-Nov-2013~17:08 TODAY: 0
+Mon,25-Nov-2013~17:08 DAY: 0
+Mon,25-Nov-2013~17:08 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 25 Nov 2013 4:28 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="12"   direction="210"   speed="3.22" />\n', b'<yweather:atmosphere humidity="100"  visibility="2.9"  pressure="982.05"  rising="0" />\n', b'<yweather:astronomy sunrise="5:48 am"   sunset="8:44 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 4:28 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 25 Nov 2013 4:28 pm NZDT</pubDate>\n', b'<yweather:condition  text="Heavy Drizzle"  code="9"  temp="12"  date="Mon, 25 Nov 2013 4:28 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/9.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Heavy Drizzle, 12 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Rain. High: 17 Low: 11<br />\n', b'Tue - Rain. High: 14 Low: 11<br />\n', b'Wed - Showers. High: 16 Low: 12<br />\n', b'Thu - Showers. High: 16 Low: 12<br />\n', b'Fri - Cloudy. High: 19 Low: 12<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="25 Nov 2013" low="11" high="17" text="Rain" code="12" />\n', b'<yweather:forecast day="Tue" date="26 Nov 2013" low="11" high="14" text="Rain" code="12" />\n', b'<yweather:forecast day="Wed" date="27 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Thu" date="28 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Fri" date="29 Nov 2013" low="12" high="19" text="Cloudy" code="26" />\n', b'<guid isPermaLink="false">NZXX0006_2013_11_29_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fe461.global.media.gq1.yahoo.com Mon Nov 25 04:03:11 PST 2013 -->\n']
+Mon,25-Nov-2013~17:08 CONDITIONS: {'code': '9', 'date': 'Mon, 25 Nov 2013 4:28 pm NZDT', 'text': 'Heavy Drizzle', 'temp': '12'}
+Mon,25-Nov-2013~17:08 CONDITIONS2: {'high': '17', 'low': '11', 'code': '12', 'date': '25 Nov 2013', 'text': 'Rain'}
+Mon,25-Nov-2013~17:08 INTERACTION: It's 12°C, and heavy drizzle. The high today is 17°C, rain.
+Mon,25-Nov-2013~17:11 PARTS: ["what's the weather tomorrow"]
+Mon,25-Nov-2013~17:11 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('tomorrow', 'NO')]
+Mon,25-Nov-2013~17:11 KIND: INT
+Mon,25-Nov-2013~17:11 WEIGHTS: {2.0: ['weather']}
+Mon,25-Nov-2013~17:11 BEST: weather
+Mon,25-Nov-2013~17:11 INTERACTION: Coming up, Aaron.
+Mon,25-Nov-2013~17:11 KEYWORDS: [('weather tomorrow', 3)]
+Mon,25-Nov-2013~17:11 TODAY: 0
+Mon,25-Nov-2013~17:11 DAY: 2
+Mon,25-Nov-2013~17:11 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 25 Nov 2013 4:28 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="12"   direction="210"   speed="3.22" />\n', b'<yweather:atmosphere humidity="100"  visibility="2.9"  pressure="982.05"  rising="0" />\n', b'<yweather:astronomy sunrise="5:48 am"   sunset="8:44 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 4:28 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 25 Nov 2013 4:28 pm NZDT</pubDate>\n', b'<yweather:condition  text="Heavy Drizzle"  code="9"  temp="12"  date="Mon, 25 Nov 2013 4:28 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/9.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Heavy Drizzle, 12 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Rain. High: 17 Low: 11<br />\n', b'Tue - Rain. High: 14 Low: 11<br />\n', b'Wed - Showers. High: 16 Low: 12<br />\n', b'Thu - Showers. High: 16 Low: 12<br />\n', b'Fri - Cloudy. High: 19 Low: 12<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="25 Nov 2013" low="11" high="17" text="Rain" code="12" />\n', b'<yweather:forecast day="Tue" date="26 Nov 2013" low="11" high="14" text="Rain" code="12" />\n', b'<yweather:forecast day="Wed" date="27 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Thu" date="28 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Fri" date="29 Nov 2013" low="12" high="19" text="Cloudy" code="26" />\n', b'<guid isPermaLink="false">NZXX0006_2013_11_29_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan474.sports.gq1.yahoo.com Mon Nov 25 04:09:23 PST 2013 -->\n']
+Mon,25-Nov-2013~17:11 CONDITIONS: {'high': '14', 'low': '11', 'code': '12', 'date': '26 Nov 2013', 'text': 'Rain'}
+Mon,25-Nov-2013~17:11 INTERACTION: It will have a low of 11°C, a high of 14°C, and will be rain.
+Mon,25-Nov-2013~17:12 PARTS: ['restart']
+Mon,25-Nov-2013~17:12 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,25-Nov-2013~17:12 KIND: IMP
+Mon,25-Nov-2013~17:12 WEIGHTS: {1.0: ['loader']}
+Mon,25-Nov-2013~17:12 BEST: loader
+Mon,25-Nov-2013~17:12 Successfully imported Modules.clock
+Mon,25-Nov-2013~17:12 Successfully imported Modules.controls
+Mon,25-Nov-2013~17:12 Successfully imported Modules.discover
+Mon,25-Nov-2013~17:12 Successfully imported Modules.finder
+Mon,25-Nov-2013~17:12 Successfully imported Modules.loader
+Mon,25-Nov-2013~17:12 Successfully imported Modules.media
+Mon,25-Nov-2013~17:12 Successfully imported Modules.personality
+Mon,25-Nov-2013~17:12 Successfully imported Modules.settings
+Mon,25-Nov-2013~17:12 Successfully imported Modules.weather
+Mon,25-Nov-2013~17:12 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~17:12 PARTS: ['will it rain tomorrow']
+Mon,25-Nov-2013~17:12 SENTENCE: [('You', 'PS'), ('will', 'VB'), ('it', 'PO'), ('rain', 'NO'), ('tomorrow', 'NO')]
+Mon,25-Nov-2013~17:12 KIND: IMP
+Mon,25-Nov-2013~17:12 WEIGHTS: {2.0: ['weather']}
+Mon,25-Nov-2013~17:12 BEST: weather
+Mon,25-Nov-2013~17:12 INTERACTION: Hang on, Aaron...
+Mon,25-Nov-2013~17:12 KEYWORDS: [['rain', 'tomorrow']]
+Mon,25-Nov-2013~17:12 TODAY: 0
+Mon,25-Nov-2013~17:12 DAY: 2
+Mon,25-Nov-2013~17:13 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 25 Nov 2013 4:28 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="12"   direction="210"   speed="3.22" />\n', b'<yweather:atmosphere humidity="100"  visibility="2.9"  pressure="982.05"  rising="0" />\n', b'<yweather:astronomy sunrise="5:48 am"   sunset="8:44 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 4:28 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 25 Nov 2013 4:28 pm NZDT</pubDate>\n', b'<yweather:condition  text="Heavy Drizzle"  code="9"  temp="12"  date="Mon, 25 Nov 2013 4:28 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/9.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Heavy Drizzle, 12 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Rain. High: 17 Low: 11<br />\n', b'Tue - Rain. High: 14 Low: 11<br />\n', b'Wed - Showers. High: 16 Low: 12<br />\n', b'Thu - Showers. High: 16 Low: 12<br />\n', b'Fri - Cloudy. High: 19 Low: 12<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="25 Nov 2013" low="11" high="17" text="Rain" code="12" />\n', b'<yweather:forecast day="Tue" date="26 Nov 2013" low="11" high="14" text="Rain" code="12" />\n', b'<yweather:forecast day="Wed" date="27 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Thu" date="28 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Fri" date="29 Nov 2013" low="12" high="19" text="Cloudy" code="26" />\n', b'<guid isPermaLink="false">NZXX0006_2013_11_29_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan452.sports.gq1.yahoo.com Mon Nov 25 04:12:22 PST 2013 -->\n']
+Mon,25-Nov-2013~17:13 CONDITIONS: {'code': '12', 'high': '14', 'low': '11', 'text': 'Rain', 'date': '26 Nov 2013'}
+Mon,25-Nov-2013~17:13 INTERACTION: It will have a low of 11°C, a high of 14°C, and will be rain.
+Mon,25-Nov-2013~17:13 PARTS: ["what's the weather tomorrow"]
+Mon,25-Nov-2013~17:13 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('tomorrow', 'NO')]
+Mon,25-Nov-2013~17:13 KIND: INT
+Mon,25-Nov-2013~17:13 WEIGHTS: {2.0: ['weather']}
+Mon,25-Nov-2013~17:13 BEST: weather
+Mon,25-Nov-2013~17:13 INTERACTION: Let me see, Aaron...
+Mon,25-Nov-2013~17:13 KEYWORDS: [['weather', 'tomorrow']]
+Mon,25-Nov-2013~17:13 TODAY: 0
+Mon,25-Nov-2013~17:13 DAY: 2
+Mon,25-Nov-2013~17:13 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 25 Nov 2013 4:28 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="12"   direction="210"   speed="3.22" />\n', b'<yweather:atmosphere humidity="100"  visibility="2.9"  pressure="982.05"  rising="0" />\n', b'<yweather:astronomy sunrise="5:48 am"   sunset="8:44 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 4:28 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 25 Nov 2013 4:28 pm NZDT</pubDate>\n', b'<yweather:condition  text="Heavy Drizzle"  code="9"  temp="12"  date="Mon, 25 Nov 2013 4:28 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/9.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Heavy Drizzle, 12 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Rain. High: 17 Low: 11<br />\n', b'Tue - Rain. High: 14 Low: 11<br />\n', b'Wed - Showers. High: 16 Low: 12<br />\n', b'Thu - Showers. High: 16 Low: 12<br />\n', b'Fri - Cloudy. High: 19 Low: 12<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="25 Nov 2013" low="11" high="17" text="Rain" code="12" />\n', b'<yweather:forecast day="Tue" date="26 Nov 2013" low="11" high="14" text="Rain" code="12" />\n', b'<yweather:forecast day="Wed" date="27 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Thu" date="28 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Fri" date="29 Nov 2013" low="12" high="19" text="Cloudy" code="26" />\n', b'<guid isPermaLink="false">NZXX0006_2013_11_29_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan452.sports.gq1.yahoo.com Mon Nov 25 04:12:22 PST 2013 -->\n']
+Mon,25-Nov-2013~17:13 CONDITIONS: {'code': '12', 'high': '14', 'low': '11', 'text': 'Rain', 'date': '26 Nov 2013'}
+Mon,25-Nov-2013~17:13 INTERACTION: It will have a low of 11°C, a high of 14°C, and will be rain.
+Mon,25-Nov-2013~17:14 PARTS: ['restart']
+Mon,25-Nov-2013~17:14 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,25-Nov-2013~17:14 KIND: IMP
+Mon,25-Nov-2013~17:14 WEIGHTS: {1.0: ['loader']}
+Mon,25-Nov-2013~17:14 BEST: loader
+Mon,25-Nov-2013~17:14 Successfully imported Modules.clock
+Mon,25-Nov-2013~17:14 Successfully imported Modules.controls
+Mon,25-Nov-2013~17:14 Successfully imported Modules.discover
+Mon,25-Nov-2013~17:14 Successfully imported Modules.finder
+Mon,25-Nov-2013~17:14 Successfully imported Modules.loader
+Mon,25-Nov-2013~17:14 Successfully imported Modules.media
+Mon,25-Nov-2013~17:14 Successfully imported Modules.personality
+Mon,25-Nov-2013~17:14 Successfully imported Modules.settings
+Mon,25-Nov-2013~17:14 Successfully imported Modules.weather
+Mon,25-Nov-2013~17:14 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~17:14 PARTS: ['what time is it']
+Mon,25-Nov-2013~17:14 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,25-Nov-2013~17:14 KIND: INT
+Mon,25-Nov-2013~17:14 WEIGHTS: {1.0: ['clock']}
+Mon,25-Nov-2013~17:14 BEST: clock
+Mon,25-Nov-2013~17:14 KEYWORDS: ['time']
+Mon,25-Nov-2013~17:14 INTERACTION: It is 5:14pm.
+Mon,25-Nov-2013~22:04 Successfully imported Modules.clock
+Mon,25-Nov-2013~22:04 Successfully imported Modules.controls
+Mon,25-Nov-2013~22:04 Successfully imported Modules.discover
+Mon,25-Nov-2013~22:04 Successfully imported Modules.finder
+Mon,25-Nov-2013~22:04 Successfully imported Modules.loader
+Mon,25-Nov-2013~22:04 Successfully imported Modules.media
+Mon,25-Nov-2013~22:04 Successfully imported Modules.personality
+Mon,25-Nov-2013~22:04 Successfully imported Modules.settings
+Mon,25-Nov-2013~22:04 Successfully imported Modules.weather
+Mon,25-Nov-2013~22:04 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~22:04 PARTS: ['what time is it']
+Mon,25-Nov-2013~22:04 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,25-Nov-2013~22:04 KIND: INT
+Mon,25-Nov-2013~22:04 WEIGHTS: {1.0: ['clock']}
+Mon,25-Nov-2013~22:04 BEST: clock
+Mon,25-Nov-2013~22:04 KEYWORDS: ['time']
+Mon,25-Nov-2013~22:04 INTERACTION: It is 10:04pm.
+Mon,25-Nov-2013~22:04 CONNECTION: <function set_text at 0x1020de680>
+Mon,25-Nov-2013~22:04 PARTS: ['tell me about steam']
+Mon,25-Nov-2013~22:04 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('steam', '??')]
+Mon,25-Nov-2013~22:04 KIND: IMP
+Mon,25-Nov-2013~22:04 WEIGHTS: {2.0: ['wikipedia']}
+Mon,25-Nov-2013~22:04 BEST: wikipedia
+Mon,25-Nov-2013~22:04 KEYWORDS: [('steam', 4)]
+Mon,25-Nov-2013~22:04 INTERACTION: Let me see, Aaron...
+Mon,25-Nov-2013~22:04 CONNECTION: <function set_text at 0x1020de680>
+Mon,25-Nov-2013~22:04 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=steam&printable=yes
+Mon,25-Nov-2013~22:04 INTERACTION: Steam is the technical term for water vapor, the gaseous phase of water, which is formed when water boils. Technically speaking, in terms of the chemistry and physics, steam is invisible and cannot be seen; however, in common language it is often used to refer to the visible mist of water droplets formed as this water vapor condenses in the presence of (cooler) air. At lower pressures, such as in the upper atmosphere or at the top of high mountains water boils at a lower temperature than the nominal 100 °C (212°F) at standard temperature and pressure. If heated further it becomes superheated steam.
 
-Tue,12-Nov-2013~15:24     name
-Tue,12-Nov-2013~15:24 INTERACTION: Ok, I'll call you Aaron from now on.
-Tue,12-Nov-2013~15:24 PARTS: ["my title is Ma'am"]
-Tue,12-Nov-2013~15:24 SENTENCE: [('i', 'PS'), ('title', 'NS'), ('be', 'VB'), ("ma'am", '??')]
-Tue,12-Nov-2013~15:24 KIND: DEC
-Tue,12-Nov-2013~15:24 FORWADING TO: personality
-Tue,12-Nov-2013~15:24 INTERACTION: I'm still learning!
-Tue,12-Nov-2013~15:24 PARTS: ["set my title to be ma'am"]
-Tue,12-Nov-2013~15:24 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('i', 'PS'), ('title', 'NO'), ('to', 'PP'), ('had', 'PP'), ("ma'am", '??')]
-Tue,12-Nov-2013~15:24 KIND: IMP
-Tue,12-Nov-2013~15:24 ACTIONS: {'settings': 2.0}
-Tue,12-Nov-2013~15:24 WEIGHTS: {2.0: ['settings']}
-Tue,12-Nov-2013~15:24 BEST: settings
-Tue,12-Nov-2013~15:24 KEYWORDS: [('set', 1), ('title', 3), ("ma'am", 6), ('had', 5)]
-Tue,12-Nov-2013~15:24 SETTING:     "title": "ma'am",
+http://en.wikipedia.org/wiki/steam
+Mon,25-Nov-2013~22:04 CONNECTION: <function set_text at 0x1020de680>
+Mon,25-Nov-2013~22:05 PARTS: ['hi']
+Mon,25-Nov-2013~22:05 SENTENCE: [('hi', 'NS')]
+Mon,25-Nov-2013~22:05 KIND: DEC
+Mon,25-Nov-2013~22:05 WEIGHTS: {1.0: ['personality']}
+Mon,25-Nov-2013~22:05 BEST: personality
+Mon,25-Nov-2013~22:05 INTERACTION: Good Evening, sir.
+Mon,25-Nov-2013~22:05 CONNECTION: <function set_text at 0x1020de680>
+Mon,25-Nov-2013~22:07 PARTS: ['bye']
+Mon,25-Nov-2013~22:07 SENTENCE: [('bye', '??')]
+Mon,25-Nov-2013~22:07 KIND: DEC
+Mon,25-Nov-2013~22:07 WEIGHTS: {}
+Mon,25-Nov-2013~22:07 KEYWORDS: [('bye', 0)]
+Mon,25-Nov-2013~22:07 URL: http://www.google.com/search?q=bye
+Mon,25-Nov-2013~22:07 INTERACTION: Just a moment, Aaron.
+Mon,25-Nov-2013~22:07 CONNECTION: <function set_text at 0x1020de680>
+Mon,25-Nov-2013~22:07 CODE: open http://www.google.com/search?q=bye
+Mon,25-Nov-2013~22:07 INTERACTION: Here, try this.
+Mon,25-Nov-2013~22:07 CONNECTION: <function set_text at 0x1020de680>
+Mon,25-Nov-2013~22:08 Successfully imported Modules.clock
+Mon,25-Nov-2013~22:08 Successfully imported Modules.controls
+Mon,25-Nov-2013~22:08 Successfully imported Modules.discover
+Mon,25-Nov-2013~22:08 Successfully imported Modules.finder
+Mon,25-Nov-2013~22:08 Successfully imported Modules.loader
+Mon,25-Nov-2013~22:08 Successfully imported Modules.media
+Mon,25-Nov-2013~22:08 Successfully imported Modules.personality
+Mon,25-Nov-2013~22:08 Successfully imported Modules.settings
+Mon,25-Nov-2013~22:08 Successfully imported Modules.weather
+Mon,25-Nov-2013~22:08 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~22:23 PARTS: ['who are you']
+Mon,25-Nov-2013~22:23 SENTENCE: [('who', 'WH'), ('be', 'VB'), ('you', 'PO')]
+Mon,25-Nov-2013~22:23 KIND: INT
+Mon,25-Nov-2013~22:23 WEIGHTS: {}
+Mon,25-Nov-2013~22:23 KEYWORDS: []
+Mon,25-Nov-2013~22:23 URL: http://www.google.com/search?q=
+Mon,25-Nov-2013~22:23 INTERACTION: Let me see...
+Mon,25-Nov-2013~22:23 CODE: open http://www.google.com/search?q=
+Mon,25-Nov-2013~22:23 INTERACTION: Here, try this.
+Mon,25-Nov-2013~22:29 PARTS: ['restart']
+Mon,25-Nov-2013~22:29 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,25-Nov-2013~22:29 KIND: IMP
+Mon,25-Nov-2013~22:29 WEIGHTS: {1.0: ['loader']}
+Mon,25-Nov-2013~22:29 BEST: loader
+Mon,25-Nov-2013~22:29 Successfully imported Modules.clock
+Mon,25-Nov-2013~22:29 Successfully imported Modules.controls
+Mon,25-Nov-2013~22:29 Successfully imported Modules.discover
+Mon,25-Nov-2013~22:29 Successfully imported Modules.finder
+Mon,25-Nov-2013~22:29 Successfully imported Modules.loader
+Mon,25-Nov-2013~22:29 Successfully imported Modules.media
+Mon,25-Nov-2013~22:29 Successfully imported Modules.personality
+Mon,25-Nov-2013~22:29 Successfully imported Modules.settings
+Mon,25-Nov-2013~22:29 Successfully imported Modules.weather
+Mon,25-Nov-2013~22:29 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~22:29 PARTS: ['tell me about yourself']
+Mon,25-Nov-2013~22:29 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('yourself', 'NO')]
+Mon,25-Nov-2013~22:29 KIND: IMP
+Mon,25-Nov-2013~22:29 WEIGHTS: {1.0: ['personality'], 2.0: ['wikipedia']}
+Mon,25-Nov-2013~22:29 BEST: wikipedia
+Mon,25-Nov-2013~22:29 KEYWORDS: [('yourself', 4)]
+Mon,25-Nov-2013~22:29 INTERACTION: Hang on...
+Mon,25-Nov-2013~22:29 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=yourself&printable=yes
+Mon,25-Nov-2013~22:29 INTERACTION: A reflexive pronoun is a pronoun that is preceded by the noun, adjective, adverb or pronoun to which it refers (its antecedent) within the same clause. In generative grammar, a reflexive pronoun is an anaphor that must be bound by its antecedent (see binding). In a general sense, it is a noun phrase that obligatorily gets its meaning from another noun phrase in the sentence. Different languages will have different binding domains for reflexive pronouns, according to their structure.
 
-Tue,12-Nov-2013~15:24     title
-Tue,12-Nov-2013~15:24 INTERACTION: done
-Tue,12-Nov-2013~15:25 PARTS: ['my search engine is baidu']
-Tue,12-Nov-2013~15:25 SENTENCE: [('i', 'PS'), ('search', 'VB'), ('engine', '??'), ('be', 'VB'), ('baidu', '??')]
-Tue,12-Nov-2013~15:25 KIND: DEC
-Tue,12-Nov-2013~15:25 FORWADING TO: personality
-Tue,12-Nov-2013~15:25 INTERACTION: I'm still learning!
-Tue,12-Nov-2013~15:25 PARTS: ['set my seach engine to baidy']
-Tue,12-Nov-2013~15:25 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('i', 'PS'), ('seach', '??'), ('engine', '??'), ('to', 'PP'), ('baidy', '??')]
-Tue,12-Nov-2013~15:25 KIND: IMP
-Tue,12-Nov-2013~15:25 ACTIONS: {'settings': 1.0}
-Tue,12-Nov-2013~15:25 WEIGHTS: {1.0: ['settings']}
-Tue,12-Nov-2013~15:25 BEST: settings
-Tue,12-Nov-2013~15:25 KEYWORDS: [('set', 1), ('seach engine', 3), ('baidy', 6)]
-Tue,12-Nov-2013~15:25 INTERACTION: Sorry, I couldn't work out which seach engine you want to use.
-Tue,12-Nov-2013~15:26 PARTS: ['restart']
-Tue,12-Nov-2013~15:26 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~15:26 KIND: IMP
-Tue,12-Nov-2013~15:26 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~15:26 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~15:26 BEST: loader
-Tue,12-Nov-2013~15:26 Successfully imported Modules.clock
-Tue,12-Nov-2013~15:26 Successfully imported Modules.discover
-Tue,12-Nov-2013~15:26 Successfully imported Modules.finder
-Tue,12-Nov-2013~15:26 Successfully imported Modules.loader
-Tue,12-Nov-2013~15:26 Successfully imported Modules.media
-Tue,12-Nov-2013~15:26 Successfully imported Modules.personality
-Tue,12-Nov-2013~15:26 Successfully imported Modules.settings
-Tue,12-Nov-2013~15:26 Successfully imported Modules.weather
-Tue,12-Nov-2013~15:26 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~15:26 PARTS: ['set my search engine to baidy']
-Tue,12-Nov-2013~15:26 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('i', 'PS'), ('search', 'VB'), ('engine', '??'), ('to', 'PP'), ('baidy', '??')]
-Tue,12-Nov-2013~15:26 KIND: IMP
-Tue,12-Nov-2013~15:26 ACTIONS: {'wikipedia': 0.5, 'discover': 0.5, 'settings': 1.0}
-Tue,12-Nov-2013~15:26 WEIGHTS: {0.5: ['wikipedia', 'discover'], 1.0: ['settings']}
-Tue,12-Nov-2013~15:26 BEST: settings
-Tue,12-Nov-2013~15:26 KEYWORDS: [('set', 1), ('search', 3), ('engine', 4), ('baidy', 6)]
-Tue,12-Nov-2013~15:26 INTERACTION: Sorry, I couldn't work out which search engine you want to use.
-Please choose from Google, Bing, Yahoo, DuckDuckGo and Baidu next time.
-Tue,12-Nov-2013~15:26 PARTS: ['set my search engine to baidu']
-Tue,12-Nov-2013~15:26 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('i', 'PS'), ('search', 'VB'), ('engine', '??'), ('to', 'PP'), ('baidu', '??')]
-Tue,12-Nov-2013~15:26 KIND: IMP
-Tue,12-Nov-2013~15:26 ACTIONS: {'wikipedia': 0.5, 'discover': 0.5, 'settings': 1.0}
-Tue,12-Nov-2013~15:26 WEIGHTS: {0.5: ['wikipedia', 'discover'], 1.0: ['settings']}
-Tue,12-Nov-2013~15:26 BEST: settings
-Tue,12-Nov-2013~15:26 KEYWORDS: [('set', 1), ('search', 3), ('engine', 4), ('baidu', 6)]
-Tue,12-Nov-2013~15:26 SETTING:     "search_engine": "Baidu",
+http://en.wikipedia.org/wiki/yourself
+Mon,25-Nov-2013~22:30 PARTS: ['tell me about yourself']
+Mon,25-Nov-2013~22:30 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('yourself', 'NO')]
+Mon,25-Nov-2013~22:30 KIND: IMP
+Mon,25-Nov-2013~22:30 WEIGHTS: {1.0: ['personality'], 2.0: ['wikipedia']}
+Mon,25-Nov-2013~22:30 BEST: wikipedia
+Mon,25-Nov-2013~22:30 KEYWORDS: [('yourself', 4)]
+Mon,25-Nov-2013~22:30 INTERACTION: Let me see, Aaron...
+Mon,25-Nov-2013~22:30 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=yourself&printable=yes
+Mon,25-Nov-2013~22:30 INTERACTION: A reflexive pronoun is a pronoun that is preceded by the noun, adjective, adverb or pronoun to which it refers (its antecedent) within the same clause. In generative grammar, a reflexive pronoun is an anaphor that must be bound by its antecedent (see binding). In a general sense, it is a noun phrase that obligatorily gets its meaning from another noun phrase in the sentence. Different languages will have different binding domains for reflexive pronouns, according to their structure.
 
-Tue,12-Nov-2013~15:26     search_engine
-Tue,12-Nov-2013~15:26 INTERACTION: done
-Tue,12-Nov-2013~15:27 PARTS: ['turn off logging']
-Tue,12-Nov-2013~15:27 SENTENCE: [('You', 'PS'), ('turn', 'VB'), ('off', 'PP'), ('logging', 'NO')]
-Tue,12-Nov-2013~15:27 KIND: IMP
-Tue,12-Nov-2013~15:27 ACTIONS: {'settings': 2.0}
-Tue,12-Nov-2013~15:27 WEIGHTS: {2.0: ['settings']}
-Tue,12-Nov-2013~15:27 BEST: settings
-Tue,12-Nov-2013~15:27 KEYWORDS: [('turn', 1), ('logging', 3), ('off', 2)]
-Tue,12-Nov-2013~15:27 SETTING:     "LOGGING": False,
+http://en.wikipedia.org/wiki/yourself
+Mon,25-Nov-2013~22:31 PARTS: ['restart']
+Mon,25-Nov-2013~22:31 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,25-Nov-2013~22:31 KIND: IMP
+Mon,25-Nov-2013~22:31 WEIGHTS: {1.0: ['loader']}
+Mon,25-Nov-2013~22:31 BEST: loader
+Mon,25-Nov-2013~22:31 Successfully imported Modules.clock
+Mon,25-Nov-2013~22:31 Successfully imported Modules.controls
+Mon,25-Nov-2013~22:31 Successfully imported Modules.discover
+Mon,25-Nov-2013~22:31 Successfully imported Modules.finder
+Mon,25-Nov-2013~22:31 Successfully imported Modules.loader
+Mon,25-Nov-2013~22:31 Successfully imported Modules.media
+Mon,25-Nov-2013~22:31 Successfully imported Modules.personality
+Mon,25-Nov-2013~22:31 Successfully imported Modules.settings
+Mon,25-Nov-2013~22:31 Successfully imported Modules.weather
+Mon,25-Nov-2013~22:31 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~23:10 INTERACTION: Bye!
+Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
+Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
+Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
+Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
+Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
+Mon,25-Nov-2013~23:11 Successfully imported Modules.media
+Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
+Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
+Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
+Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~23:11 PARTS: ['turn off verbosity']
+Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('turn', 'VB'), ('off', 'PP'), ('verbosity', 'NO')]
+Mon,25-Nov-2013~23:11 KIND: IMP
+Mon,25-Nov-2013~23:11 WEIGHTS: {0.5: ['controls'], 1.5: ['settings']}
+Mon,25-Nov-2013~23:11 BEST: settings
+Mon,25-Nov-2013~23:11 KEYWORDS: [('turn', 1), ('verbosity', 3), ('off', 2)]
+Mon,25-Nov-2013~23:11 SETTING:     "VERBOSE": False,
 
-Tue,12-Nov-2013~15:27     LOGGING
-Tue,12-Nov-2013~15:27 INTERACTION: done
-Tue,12-Nov-2013~15:27 PARTS: ['turn on logging']
-Tue,12-Nov-2013~15:27 SENTENCE: [('You', 'PS'), ('turn', 'VB'), ('on', 'PP'), ('logging', 'NO')]
-Tue,12-Nov-2013~15:27 KIND: IMP
-Tue,12-Nov-2013~15:27 ACTIONS: {'settings': 2.0}
-Tue,12-Nov-2013~15:27 WEIGHTS: {2.0: ['settings']}
-Tue,12-Nov-2013~15:27 BEST: settings
-Tue,12-Nov-2013~15:27 KEYWORDS: [('turn', 1), ('logging', 3), ('on', 2)]
-Tue,12-Nov-2013~15:27 SETTING:     "LOGGING": True,
+Mon,25-Nov-2013~23:11     VERBOSE
+Mon,25-Nov-2013~23:11 INTERACTION: Done
+Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
+Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
+Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
+Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
+Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
+Mon,25-Nov-2013~23:11 Successfully imported Modules.media
+Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
+Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
+Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
+Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~23:11 PARTS: ['hello']
+Mon,25-Nov-2013~23:11 SENTENCE: [('hello', 'NS')]
+Mon,25-Nov-2013~23:11 KIND: DEC
+Mon,25-Nov-2013~23:11 WEIGHTS: {1.0: ['personality']}
+Mon,25-Nov-2013~23:11 BEST: personality
+Mon,25-Nov-2013~23:11 INTERACTION: Hello, sir.
+Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
+Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
+Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
+Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
+Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
+Mon,25-Nov-2013~23:11 Successfully imported Modules.media
+Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
+Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
+Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
+Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~23:11 PARTS: ['what time is it?']
+Mon,25-Nov-2013~23:11 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,25-Nov-2013~23:11 KIND: INT
+Mon,25-Nov-2013~23:11 WEIGHTS: {1.0: ['clock']}
+Mon,25-Nov-2013~23:11 BEST: clock
+Mon,25-Nov-2013~23:11 KEYWORDS: ['time']
+Mon,25-Nov-2013~23:11 INTERACTION: It is 11:11pm.
+Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
+Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
+Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
+Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
+Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
+Mon,25-Nov-2013~23:11 Successfully imported Modules.media
+Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
+Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
+Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
+Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~23:11 PARTS: ['google Futurama']
+Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('google', 'VB'), ('futurama', '??')]
+Mon,25-Nov-2013~23:11 KIND: IMP
+Mon,25-Nov-2013~23:11 WEIGHTS: {1.0: ['discover']}
+Mon,25-Nov-2013~23:11 BEST: discover
+Mon,25-Nov-2013~23:11 KEYWORDS: [('futurama', 2)]
+Mon,25-Nov-2013~23:11 URL: http://www.google.com/search?q=futurama
+Mon,25-Nov-2013~23:11 INTERACTION: Coming up.
+Mon,25-Nov-2013~23:11 CODE: open http://www.google.com/search?q=futurama
+Mon,25-Nov-2013~23:11 INTERACTION: Here, try this.
+Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
+Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
+Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
+Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
+Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
+Mon,25-Nov-2013~23:11 Successfully imported Modules.media
+Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
+Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
+Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
+Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~23:11 PARTS: ['Find the movie called django unchained,', 'open it']
+Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('called', 'PP'), ('django', '??'), ('unchained', '??')]
+Mon,25-Nov-2013~23:11 KIND: IMP
+Mon,25-Nov-2013~23:11 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
+Mon,25-Nov-2013~23:11 BEST: finder
+Mon,25-Nov-2013~23:11 KEYWORDS: [('movie', 3), ('django unchained', 5)]
+Mon,25-Nov-2013~23:11 PARAMETERS: movie django unchained kind:movie 
+Mon,25-Nov-2013~23:11 movie
+Mon,25-Nov-2013~23:11 CODE: echo $HOME
+Mon,25-Nov-2013~23:11 CODE: mdfind -onlyin /Users/aaronstockdill/ "movie django unchained kind:movie "
+Mon,25-Nov-2013~23:11 RESULTS FIRST 5:  ['/Users/aaronstockdill/Movies/Django Unchained.m4v']
+Mon,25-Nov-2013~23:11 DECISION: /Users/aaronstockdill/Movies/Django Unchained.m4v
+Mon,25-Nov-2013~23:11 IT: /Users/aaronstockdill/Movies/Django Unchained.m4v
+Mon,25-Nov-2013~23:11 CODE: osascript -e "tell application \"Finder\" to reveal POSIX file \"/Users/aaronstockdill/Movies/Django Unchained.m4v\""
+Mon,25-Nov-2013~23:11 INTERACTION: I found something...
+Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Mon,25-Nov-2013~23:11 KIND: IMP
+Mon,25-Nov-2013~23:11 WEIGHTS: {1.0: ['finder']}
+Mon,25-Nov-2013~23:11 BEST: finder
+Mon,25-Nov-2013~23:11 IT: /Users/aaronstockdill/Movies/Django Unchained.m4v
+Mon,25-Nov-2013~23:11 CODE: open "/Users/aaronstockdill/Movies/Django Unchained.m4v"
+Mon,25-Nov-2013~23:11 INTERACTION: Opening it.
+Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
+Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
+Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
+Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
+Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
+Mon,25-Nov-2013~23:11 Successfully imported Modules.media
+Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
+Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
+Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
+Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~23:11 PARTS: ['play Viva La Vida']
+Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('play', 'VB'), ('viva', '??'), ('la', '??'), ('vida', '??')]
+Mon,25-Nov-2013~23:11 KIND: IMP
+Mon,25-Nov-2013~23:11 WEIGHTS: {1.0: ['media']}
+Mon,25-Nov-2013~23:11 BEST: media
+Mon,25-Nov-2013~23:11 ['play']
+Mon,25-Nov-2013~23:11 MUSIC KEYWORDS: [('viva la vida', 2)]
+Mon,25-Nov-2013~23:11 MEDIA: play item 1 of (every track of library playlist 1 whose name is "viva la vida")
+Mon,25-Nov-2013~23:11 COMMAND: tell application "iTunes" to play item 1 of (every track of library playlist 1 whose name is "viva la vida")
+Mon,25-Nov-2013~23:11 CODE: osascript -e "tell application \"iTunes\" to play item 1 of (every track of library playlist 1 whose name is \"viva la vida\")"
+Mon,25-Nov-2013~23:11 INTERACTION: OK
+Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
+Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
+Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
+Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
+Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
+Mon,25-Nov-2013~23:11 Successfully imported Modules.media
+Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
+Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
+Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
+Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~23:11 PARTS: ['pause']
+Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('pause', 'VB')]
+Mon,25-Nov-2013~23:11 KIND: IMP
+Mon,25-Nov-2013~23:11 WEIGHTS: {1.0: ['media']}
+Mon,25-Nov-2013~23:11 BEST: media
+Mon,25-Nov-2013~23:11 ['pause']
+Mon,25-Nov-2013~23:11 MUSIC KEYWORDS: []
+Mon,25-Nov-2013~23:11 MEDIA: pause
+Mon,25-Nov-2013~23:11 COMMAND: tell application "iTunes" to pause
+Mon,25-Nov-2013~23:11 CODE: osascript -e "tell application \"iTunes\" to pause"
+Mon,25-Nov-2013~23:11 INTERACTION: OK
+Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
+Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
+Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
+Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
+Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
+Mon,25-Nov-2013~23:11 Successfully imported Modules.media
+Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
+Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
+Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
+Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~23:11 PARTS: ['Is it going to rain tomorrow?']
+Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('go', 'VB'), ('to', 'PP'), ('rain', 'NO'), ('tomorrow', 'NO')]
+Mon,25-Nov-2013~23:11 KIND: IMP
+Mon,25-Nov-2013~23:11 WEIGHTS: {1.0: ['media'], 2.0: ['weather']}
+Mon,25-Nov-2013~23:11 BEST: weather
+Mon,25-Nov-2013~23:11 INTERACTION: Let me see...
+Mon,25-Nov-2013~23:11 KEYWORDS: [('rain tomorrow', 5)]
+Mon,25-Nov-2013~23:11 TODAY: 0
+Mon,25-Nov-2013~23:11 DAY: 2
+Mon,25-Nov-2013~23:11 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 25 Nov 2013 10:31 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="7"   direction="220"   speed="12.87" />\n', b'<yweather:atmosphere humidity="100"  visibility="5"  pressure="982.05"  rising="0" />\n', b'<yweather:astronomy sunrise="5:48 am"   sunset="8:44 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 10:31 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 25 Nov 2013 10:31 pm NZDT</pubDate>\n', b'<yweather:condition  text="Drizzle"  code="9"  temp="9"  date="Mon, 25 Nov 2013 10:31 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/9.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Drizzle, 9 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Rain. High: 17 Low: 11<br />\n', b'Tue - Showers. High: 14 Low: 11<br />\n', b'Wed - Showers. High: 16 Low: 12<br />\n', b'Thu - Rain. High: 16 Low: 12<br />\n', b'Fri - Cloudy. High: 19 Low: 12<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="25 Nov 2013" low="11" high="17" text="Rain" code="12" />\n', b'<yweather:forecast day="Tue" date="26 Nov 2013" low="11" high="14" text="Showers" code="11" />\n', b'<yweather:forecast day="Wed" date="27 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Thu" date="28 Nov 2013" low="12" high="16" text="Rain" code="12" />\n', b'<yweather:forecast day="Fri" date="29 Nov 2013" low="12" high="19" text="Cloudy" code="26" />\n', b'<guid isPermaLink="false">NZXX0006_2013_11_29_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan455.sports.gq1.yahoo.com Mon Nov 25 10:07:35 PST 2013 -->\n']
+Mon,25-Nov-2013~23:11 CONDITIONS: {'text': 'Showers', 'date': '26 Nov 2013', 'code': '11', 'high': '14', 'low': '11'}
+Mon,25-Nov-2013~23:11 INTERACTION: It will have a low of 11°C, a high of 14°C, and will be showers.
+Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
+Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
+Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
+Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
+Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
+Mon,25-Nov-2013~23:11 Successfully imported Modules.media
+Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
+Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
+Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
+Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~23:11 PARTS: ['set my name to Steve']
+Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('i', 'PS'), ('name', 'NO'), ('to', 'PP'), ('steve', '??')]
+Mon,25-Nov-2013~23:11 KIND: IMP
+Mon,25-Nov-2013~23:11 WEIGHTS: {0.5: ['controls'], 1.5: ['settings']}
+Mon,25-Nov-2013~23:11 BEST: settings
+Mon,25-Nov-2013~23:11 KEYWORDS: [('set', 1), ('name', 3), ('steve', 5)]
+Mon,25-Nov-2013~23:11 VAL[0] steve
+Mon,25-Nov-2013~23:11 SETTING:     "name": "Steve",
 
-Tue,12-Nov-2013~15:27     LOGGING
-Tue,12-Nov-2013~15:27 INTERACTION: done
-Tue,12-Nov-2013~15:27 PARTS: ['set the prompt to $']
-Tue,12-Nov-2013~15:27 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('the', 'AR'), ('prompt', '??'), ('to', 'PP'), ('', '??')]
-Tue,12-Nov-2013~15:27 KIND: IMP
-Tue,12-Nov-2013~15:27 ACTIONS: {'settings': 1.0}
-Tue,12-Nov-2013~15:27 WEIGHTS: {1.0: ['settings']}
-Tue,12-Nov-2013~15:27 BEST: settings
-Tue,12-Nov-2013~15:27 KEYWORDS: [('set', 1), ('prompt', 3), ('', 5)]
-Tue,12-Nov-2013~15:27 INTERACTION: You have to change the prompt in settings manually, I'm afraid.
-Tue,12-Nov-2013~15:27 PARTS: ['restart']
-Tue,12-Nov-2013~15:27 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~15:27 KIND: IMP
-Tue,12-Nov-2013~15:27 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~15:27 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~15:27 BEST: loader
-Tue,12-Nov-2013~15:27 Successfully imported Modules.clock
-Tue,12-Nov-2013~15:27 Successfully imported Modules.discover
-Tue,12-Nov-2013~15:27 Successfully imported Modules.finder
-Tue,12-Nov-2013~15:27 Successfully imported Modules.loader
-Tue,12-Nov-2013~15:27 Successfully imported Modules.media
-Tue,12-Nov-2013~15:27 Successfully imported Modules.personality
-Tue,12-Nov-2013~15:27 Successfully imported Modules.settings
-Tue,12-Nov-2013~15:27 Successfully imported Modules.weather
-Tue,12-Nov-2013~15:27 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~15:27 PARTS: ['what time is it']
-Tue,12-Nov-2013~15:27 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Tue,12-Nov-2013~15:27 KIND: INT
-Tue,12-Nov-2013~15:27 ACTIONS: {'clock': 1.0}
-Tue,12-Nov-2013~15:27 WEIGHTS: {1.0: ['clock']}
-Tue,12-Nov-2013~15:27 BEST: clock
-Tue,12-Nov-2013~15:27 KEYWORDS: ['time']
-Tue,12-Nov-2013~15:27 INTERACTION: It is 3:27PM.
-Tue,12-Nov-2013~15:28 PARTS: ['restart']
-Tue,12-Nov-2013~15:28 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~15:28 KIND: IMP
-Tue,12-Nov-2013~15:28 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~15:28 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~15:28 BEST: loader
-Tue,12-Nov-2013~15:28 Successfully imported Modules.clock
-Tue,12-Nov-2013~15:28 Successfully imported Modules.discover
-Tue,12-Nov-2013~15:28 Successfully imported Modules.finder
-Tue,12-Nov-2013~15:28 Successfully imported Modules.loader
-Tue,12-Nov-2013~15:28 Successfully imported Modules.media
-Tue,12-Nov-2013~15:28 Successfully imported Modules.personality
-Tue,12-Nov-2013~15:28 Successfully imported Modules.settings
-Tue,12-Nov-2013~15:28 Successfully imported Modules.weather
-Tue,12-Nov-2013~15:28 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~15:28 PARTS: ["what's the time"]
-Tue,12-Nov-2013~15:28 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('time', 'NO')]
-Tue,12-Nov-2013~15:28 KIND: INT
-Tue,12-Nov-2013~15:28 ACTIONS: {'clock': 1.0}
-Tue,12-Nov-2013~15:28 WEIGHTS: {1.0: ['clock']}
-Tue,12-Nov-2013~15:28 BEST: clock
-Tue,12-Nov-2013~15:28 KEYWORDS: ['time']
-Tue,12-Nov-2013~15:28 INTERACTION: It is 3:28pm.
-Tue,12-Nov-2013~16:07 PARTS: ['skip this song']
-Tue,12-Nov-2013~16:07 SENTENCE: [('You', 'PS'), ('skip', 'VB'), ('this', 'PO'), ('song', '??')]
-Tue,12-Nov-2013~16:07 KIND: IMP
-Tue,12-Nov-2013~16:07 ACTIONS: {'media': 1.0}
-Tue,12-Nov-2013~16:07 WEIGHTS: {1.0: ['media']}
-Tue,12-Nov-2013~16:07 BEST: media
-Tue,12-Nov-2013~16:07 ['skip']
-Tue,12-Nov-2013~16:07 MUSIC KEYWORDS: [('song', 3)]
-Tue,12-Nov-2013~16:07 MEDIA: next track
-Tue,12-Nov-2013~16:07 COMMAND: tell application "iTunes" to next track
-Tue,12-Nov-2013~16:07 CODE: osascript -e "tell application \"iTunes\" to next track"
-Tue,12-Nov-2013~16:07 INTERACTION: OK
-Tue,12-Nov-2013~16:07 PARTS: ['turn off talking']
-Tue,12-Nov-2013~16:07 SENTENCE: [('You', 'PS'), ('turn', 'VB'), ('off', 'PP'), ('talking', 'NO')]
-Tue,12-Nov-2013~16:07 KIND: IMP
-Tue,12-Nov-2013~16:07 ACTIONS: {'settings': 2.0}
-Tue,12-Nov-2013~16:07 WEIGHTS: {2.0: ['settings']}
-Tue,12-Nov-2013~16:07 BEST: settings
-Tue,12-Nov-2013~16:07 KEYWORDS: [('turn', 1), ('talking', 3), ('off', 2)]
-Tue,12-Nov-2013~16:07 SETTING:     "NOISY": False,
+Mon,25-Nov-2013~23:11     name
+Mon,25-Nov-2013~23:11 INTERACTION: Ok, I'll call you Steve from now on.
+Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
+Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
+Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
+Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
+Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
+Mon,25-Nov-2013~23:11 Successfully imported Modules.media
+Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
+Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
+Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
+Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~23:11 PARTS: ['set my name to Aaron']
+Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('i', 'PS'), ('name', 'NO'), ('to', 'PP'), ('aaron', '??')]
+Mon,25-Nov-2013~23:11 KIND: IMP
+Mon,25-Nov-2013~23:11 WEIGHTS: {0.5: ['controls'], 1.5: ['settings']}
+Mon,25-Nov-2013~23:11 BEST: settings
+Mon,25-Nov-2013~23:11 KEYWORDS: [('set', 1), ('name', 3), ('aaron', 5)]
+Mon,25-Nov-2013~23:11 VAL[0] aaron
+Mon,25-Nov-2013~23:11 SETTING:     "name": "Aaron",
 
-Tue,12-Nov-2013~16:07     NOISY
-Tue,12-Nov-2013~16:07 INTERACTION: done
-Tue,12-Nov-2013~16:07 PARTS: ['restart']
-Tue,12-Nov-2013~16:07 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~16:07 KIND: IMP
-Tue,12-Nov-2013~16:07 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~16:07 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~16:07 BEST: loader
-Tue,12-Nov-2013~16:07 Successfully imported Modules.clock
-Tue,12-Nov-2013~16:07 Successfully imported Modules.discover
-Tue,12-Nov-2013~16:07 Successfully imported Modules.finder
-Tue,12-Nov-2013~16:07 Successfully imported Modules.loader
-Tue,12-Nov-2013~16:07 Successfully imported Modules.media
-Tue,12-Nov-2013~16:07 Successfully imported Modules.personality
-Tue,12-Nov-2013~16:07 Successfully imported Modules.settings
-Tue,12-Nov-2013~16:07 Successfully imported Modules.weather
-Tue,12-Nov-2013~16:07 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~16:07 PARTS: ['next song']
-Tue,12-Nov-2013~16:07 SENTENCE: [('You', 'PS'), ('next', 'VB'), ('song', '??')]
-Tue,12-Nov-2013~16:07 KIND: IMP
-Tue,12-Nov-2013~16:07 ACTIONS: {'media': 1.0}
-Tue,12-Nov-2013~16:07 WEIGHTS: {1.0: ['media']}
-Tue,12-Nov-2013~16:07 BEST: media
-Tue,12-Nov-2013~16:07 ['next']
-Tue,12-Nov-2013~16:07 MUSIC KEYWORDS: [('song', 2)]
-Tue,12-Nov-2013~16:07 MEDIA: next track
-Tue,12-Nov-2013~16:07 COMMAND: tell application "iTunes" to next track
-Tue,12-Nov-2013~16:07 CODE: osascript -e "tell application \"iTunes\" to next track"
-Tue,12-Nov-2013~16:07 INTERACTION: OK
-Tue,12-Nov-2013~16:08 PARTS: ['call me steve']
-Tue,12-Nov-2013~16:08 SENTENCE: [('You', 'PS'), ('call', 'VB'), ('me', 'PO'), ('steve', '??')]
-Tue,12-Nov-2013~16:08 KIND: IMP
-Tue,12-Nov-2013~16:08 ACTIONS: {'settings': 1.0}
-Tue,12-Nov-2013~16:08 WEIGHTS: {1.0: ['settings']}
-Tue,12-Nov-2013~16:08 BEST: settings
-Tue,12-Nov-2013~16:08 KEYWORDS: [('call', 1), ('steve', 3)]
-Tue,12-Nov-2013~16:08 FOUND NO FLAG
-Tue,12-Nov-2013~16:08 INTERACTION: I'm not sure what you wanted me to set.
-Tue,12-Nov-2013~16:09 PARTS: ["I'm called Steve"]
-Tue,12-Nov-2013~16:09 SENTENCE: [("i'm", '??'), ('call', 'VB'), ('steve', '??')]
-Tue,12-Nov-2013~16:09 KIND: DEC
-Tue,12-Nov-2013~16:09 FORWADING TO: personality
-Tue,12-Nov-2013~16:09 INTERACTION: I'm still learning!
-Tue,12-Nov-2013~16:09 PARTS: ["I'm called steve"]
-Tue,12-Nov-2013~16:09 SENTENCE: [("i'm", '??'), ('call', 'VB'), ('steve', '??')]
-Tue,12-Nov-2013~16:09 KIND: DEC
-Tue,12-Nov-2013~16:09 FORWADING TO: personality
-Tue,12-Nov-2013~16:09 INTERACTION: I'm still learning!
-Tue,12-Nov-2013~16:10 PARTS: ['restart']
-Tue,12-Nov-2013~16:10 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~16:10 KIND: IMP
-Tue,12-Nov-2013~16:10 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~16:10 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~16:10 BEST: loader
-Tue,12-Nov-2013~16:10 Successfully imported Modules.clock
-Tue,12-Nov-2013~16:10 Successfully imported Modules.discover
-Tue,12-Nov-2013~16:10 Successfully imported Modules.finder
-Tue,12-Nov-2013~16:10 Successfully imported Modules.loader
-Tue,12-Nov-2013~16:10 Successfully imported Modules.media
-Tue,12-Nov-2013~16:10 Successfully imported Modules.personality
-Tue,12-Nov-2013~16:10 Successfully imported Modules.settings
-Tue,12-Nov-2013~16:10 Successfully imported Modules.weather
-Tue,12-Nov-2013~16:10 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~16:10 PARTS: ["I'm called steve"]
-Tue,12-Nov-2013~16:10 SENTENCE: [("i'm", '??'), ('call', 'VB'), ('steve', '??')]
-Tue,12-Nov-2013~16:10 KIND: DEC
-Tue,12-Nov-2013~16:10 FORWADING TO: personality
-Tue,12-Nov-2013~16:10 FORWADING TO: settings
-Tue,12-Nov-2013~16:10 KEYWORDS: [("i'm", 0), ('call', 1), ('steve', 2)]
-Tue,12-Nov-2013~16:10 SETTING:     "name": ,
+Mon,25-Nov-2013~23:11     name
+Mon,25-Nov-2013~23:11 INTERACTION: Ok, I'll call you Aaron from now on.
+Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
+Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
+Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
+Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
+Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
+Mon,25-Nov-2013~23:11 Successfully imported Modules.media
+Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
+Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
+Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
+Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~23:11 PARTS: ['thanks!']
+Mon,25-Nov-2013~23:11 SENTENCE: [('thank', 'NS')]
+Mon,25-Nov-2013~23:11 KIND: DEC
+Mon,25-Nov-2013~23:11 WEIGHTS: {1.0: ['personality']}
+Mon,25-Nov-2013~23:11 BEST: personality
+Mon,25-Nov-2013~23:11 INTERACTION: No worries.
+Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
+Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
+Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
+Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
+Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
+Mon,25-Nov-2013~23:11 Successfully imported Modules.media
+Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
+Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
+Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
+Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~23:11 PARTS: ['tell me about Athena']
+Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('athena', '??')]
+Mon,25-Nov-2013~23:11 KIND: IMP
+Mon,25-Nov-2013~23:11 WEIGHTS: {2.0: ['wikipedia']}
+Mon,25-Nov-2013~23:11 BEST: wikipedia
+Mon,25-Nov-2013~23:11 KEYWORDS: [('athena', 4)]
+Mon,25-Nov-2013~23:11 INTERACTION: Let me see, Steve...
+Mon,25-Nov-2013~23:11 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=athena&printable=yes
+Mon,25-Nov-2013~23:11 INTERACTION: In Greek religion and mythology, Athena or Athene (/əˈθiːnə/ or /əˈθiːniː/; Attic: Ἀθηνᾶ, Athēnā or Ἀθηναία, Athēnaia; Epic: Ἀθηναίη, Athēnaiē; Ionic: Ἀθήνη, Athēnē; Doric: Ἀθάνα, Athānā), also referred to as Pallas Athena/Athene (/ˈpæləs/; Παλλὰς Ἀθηνᾶ; Παλλὰς Ἀθήνη), is the goddess of wisdom, courage, inspiration, civilization, law and justice, just warfare, mathematics, strength, strategy, the arts, crafts, and skill. Minerva is the Roman goddess identified with Athena.
 
-Tue,12-Nov-2013~16:10     name
-Tue,12-Nov-2013~16:10 INTERACTION: done
-Tue,12-Nov-2013~16:12 PARTS: ['restart']
-Tue,12-Nov-2013~16:12 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~16:12 KIND: IMP
-Tue,12-Nov-2013~16:12 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~16:12 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~16:12 BEST: loader
-Tue,12-Nov-2013~16:12 Successfully imported Modules.clock
-Tue,12-Nov-2013~16:12 Successfully imported Modules.discover
-Tue,12-Nov-2013~16:12 Successfully imported Modules.finder
-Tue,12-Nov-2013~16:12 Successfully imported Modules.loader
-Tue,12-Nov-2013~16:12 Successfully imported Modules.media
-Tue,12-Nov-2013~16:12 Successfully imported Modules.personality
-Tue,12-Nov-2013~16:12 Successfully imported Modules.settings
-Tue,12-Nov-2013~16:12 Successfully imported Modules.weather
-Tue,12-Nov-2013~16:12 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~16:12 PARTS: ["I'm called Steve"]
-Tue,12-Nov-2013~16:12 SENTENCE: [('i', 'NS'), ('be', 'VB'), ('call', 'VB'), ('steve', '??')]
-Tue,12-Nov-2013~16:12 KIND: DEC
-Tue,12-Nov-2013~16:12 FORWADING TO: personality
-Tue,12-Nov-2013~16:12 FORWADING TO: settings
-Tue,12-Nov-2013~16:12 KEYWORDS: [('i', 0), ('be call', 1), ('steve', 3)]
-Tue,12-Nov-2013~16:12 VAL[0] steve
-Tue,12-Nov-2013~16:12 SETTING:     "name": "Steve",
+http://en.wikipedia.org/wiki/athena
+Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
+Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
+Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
+Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
+Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
+Mon,25-Nov-2013~23:11 Successfully imported Modules.media
+Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
+Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
+Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
+Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~23:11 PARTS: ['turn on verbosity']
+Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('turn', 'VB'), ('on', 'PP'), ('verbosity', 'NO')]
+Mon,25-Nov-2013~23:11 KIND: IMP
+Mon,25-Nov-2013~23:11 WEIGHTS: {0.5: ['controls'], 1.5: ['settings']}
+Mon,25-Nov-2013~23:11 BEST: settings
+Mon,25-Nov-2013~23:11 KEYWORDS: [('turn', 1), ('verbosity', 3), ('on', 2)]
+Mon,25-Nov-2013~23:11 SETTING:     "VERBOSE": True,
 
-Tue,12-Nov-2013~16:12     name
-Tue,12-Nov-2013~16:12 INTERACTION: Ok, I'll call you Steve from now on.
-Tue,12-Nov-2013~16:12 PARTS: ["I'm Aaron"]
-Tue,12-Nov-2013~16:12 SENTENCE: [('i', 'NS'), ('be', 'VB'), ('aaron', '??')]
-Tue,12-Nov-2013~16:12 KIND: DEC
-Tue,12-Nov-2013~16:12 FORWADING TO: personality
-Tue,12-Nov-2013~16:12 INTERACTION: I'm still learning!
-Tue,12-Nov-2013~16:12 PARTS: ["I'm called Aaron"]
-Tue,12-Nov-2013~16:12 SENTENCE: [('i', 'NS'), ('be', 'VB'), ('call', 'VB'), ('aaron', '??')]
-Tue,12-Nov-2013~16:12 KIND: DEC
-Tue,12-Nov-2013~16:12 FORWADING TO: personality
-Tue,12-Nov-2013~16:12 FORWADING TO: settings
-Tue,12-Nov-2013~16:12 KEYWORDS: [('i', 0), ('be call', 1), ('aaron', 3)]
-Tue,12-Nov-2013~16:12 VAL[0] aaron
-Tue,12-Nov-2013~16:12 SETTING:     "name": "Aaron",
-
-Tue,12-Nov-2013~16:12     name
-Tue,12-Nov-2013~16:12 INTERACTION: Ok, I'll call you Aaron from now on.
-Tue,12-Nov-2013~16:13 PARTS: ['what is playing']
-Tue,12-Nov-2013~16:13 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('play', 'VB')]
-Tue,12-Nov-2013~16:13 KIND: INT
-Tue,12-Nov-2013~16:13 ACTIONS: {'media': 1.0}
-Tue,12-Nov-2013~16:13 WEIGHTS: {1.0: ['media']}
-Tue,12-Nov-2013~16:13 BEST: media
-Tue,12-Nov-2013~16:13 ['be', 'play']
-Tue,12-Nov-2013~16:13 MUSIC KEYWORDS: []
-Tue,12-Nov-2013~16:13 CODE: osascript -e "tell application \"iTunes\"
-    set myTrack to (name of current track)
-    set myArtist to (artist of current track)
-end tell
-
-return \"It's '\" & myTrack & \"', by \" & myArtist & \".\""
-Tue,12-Nov-2013~16:13 INTERACTION: It's 'The City (Live)', by Ed Sheeran.
-Tue,12-Nov-2013~16:13 PARTS: ['skip']
-Tue,12-Nov-2013~16:13 SENTENCE: [('You', 'PS'), ('skip', 'VB')]
-Tue,12-Nov-2013~16:13 KIND: IMP
-Tue,12-Nov-2013~16:13 ACTIONS: {'media': 1.0}
-Tue,12-Nov-2013~16:13 WEIGHTS: {1.0: ['media']}
-Tue,12-Nov-2013~16:13 BEST: media
-Tue,12-Nov-2013~16:13 ['skip']
-Tue,12-Nov-2013~16:13 MUSIC KEYWORDS: []
-Tue,12-Nov-2013~16:13 MEDIA: next track
-Tue,12-Nov-2013~16:13 COMMAND: tell application "iTunes" to next track
-Tue,12-Nov-2013~16:13 CODE: osascript -e "tell application \"iTunes\" to next track"
-Tue,12-Nov-2013~16:13 INTERACTION: OK
-Tue,12-Nov-2013~16:13 PARTS: ['skpi']
-Tue,12-Nov-2013~16:13 SENTENCE: [('skpi', '??')]
-Tue,12-Nov-2013~16:13 KIND: DEC
-Tue,12-Nov-2013~16:13 FORWADING TO: personality
-Tue,12-Nov-2013~16:13 INTERACTION: I'm still learning!
-Tue,12-Nov-2013~16:13 PARTS: ['skip']
-Tue,12-Nov-2013~16:13 SENTENCE: [('You', 'PS'), ('skip', 'VB')]
-Tue,12-Nov-2013~16:13 KIND: IMP
-Tue,12-Nov-2013~16:13 ACTIONS: {'media': 1.0}
-Tue,12-Nov-2013~16:13 WEIGHTS: {1.0: ['media']}
-Tue,12-Nov-2013~16:13 BEST: media
-Tue,12-Nov-2013~16:13 ['skip']
-Tue,12-Nov-2013~16:13 MUSIC KEYWORDS: []
-Tue,12-Nov-2013~16:13 MEDIA: next track
-Tue,12-Nov-2013~16:13 COMMAND: tell application "iTunes" to next track
-Tue,12-Nov-2013~16:13 CODE: osascript -e "tell application \"iTunes\" to next track"
-Tue,12-Nov-2013~16:13 INTERACTION: OK
-Tue,12-Nov-2013~16:13 PARTS: ["what's plaing"]
-Tue,12-Nov-2013~16:13 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('plaing', '??')]
-Tue,12-Nov-2013~16:13 KIND: INT
-Tue,12-Nov-2013~16:13 ACTIONS: {}
-Tue,12-Nov-2013~16:13 WEIGHTS: {}
-Tue,12-Nov-2013~16:13 KEYWORDS: [('plaing', 2)]
-Tue,12-Nov-2013~16:13 URL: http://www.baidu.com/s?wd=plaing
-Tue,12-Nov-2013~16:13 INTERACTION: Let me find out for you...
-Tue,12-Nov-2013~16:13 CODE: open http://www.baidu.com/s?wd=plaing
-Tue,12-Nov-2013~16:13 INTERACTION: Here, try this.
-Tue,12-Nov-2013~16:13 PARTS: ["what's playing"]
-Tue,12-Nov-2013~16:13 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('play', 'VB')]
-Tue,12-Nov-2013~16:13 KIND: INT
-Tue,12-Nov-2013~16:13 ACTIONS: {'media': 1.0}
-Tue,12-Nov-2013~16:13 WEIGHTS: {1.0: ['media']}
-Tue,12-Nov-2013~16:13 BEST: media
-Tue,12-Nov-2013~16:13 ['be', 'play']
-Tue,12-Nov-2013~16:13 MUSIC KEYWORDS: []
-Tue,12-Nov-2013~16:13 CODE: osascript -e "tell application \"iTunes\"
-    set myTrack to (name of current track)
-    set myArtist to (artist of current track)
-end tell
-
-return \"It's '\" & myTrack & \"', by \" & myArtist & \".\""
-Tue,12-Nov-2013~16:13 INTERACTION: It's 'Slowly Over Me', by Avalanche City.
-Tue,12-Nov-2013~16:17 PARTS: ['open maps']
-Tue,12-Nov-2013~16:17 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('maps', '??')]
-Tue,12-Nov-2013~16:17 KIND: IMP
-Tue,12-Nov-2013~16:17 ACTIONS: {'finder': 1.0}
-Tue,12-Nov-2013~16:17 WEIGHTS: {1.0: ['finder']}
-Tue,12-Nov-2013~16:17 BEST: finder
-Tue,12-Nov-2013~16:17 KEYWORDS: [('maps', 2)]
-Tue,12-Nov-2013~16:17 PARAMETERS: maps
-Tue,12-Nov-2013~16:17 maps
-Tue,12-Nov-2013~16:17 CODE: echo $HOME
-Tue,12-Nov-2013~16:17 CODE: mdfind -onlyin /Users/aaronstockdill/ "maps"
-Tue,12-Nov-2013~16:17 RESULTS FIRST 5: ['/Users/aaronstockdill/Music/iTunes/iTunes Media/Mobile Applications/Google Maps 2.3.4.ipa', '/Users/aaronstockdill/Documents/Programming/C/LCTHW/valgrind-3.8.0/docs/index.pdf', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Books/onlisp.pdf', '/Users/aaronstockdill/Dropbox/University/2013/MATH120/18. What is a graph?.pdf', '/Users/aaronstockdill/Downloads/part-2/texts/emma.txt', '/Users/aaronstockdill/Dropbox/University/2013/MATH120/Assignment 8/assignment 8.tex', '/Users/aaronstockdill/Dropbox/University/2013/MATH120/Assignment 8/assignment 8.pdf', '/Users/aaronstockdill/Dropbox/University/2013/COSC122/part-2/texts/emma.txt', '/Users/aaronstockdill/Dropbox/University/2013/MATH120/12. Functions.pdf', '/Users/aaronstockdill/Dropbox/University/2013/COSC122/part-1/texts/emma.txt']
-Tue,12-Nov-2013~16:17 INTERACTION: Which of these do you want? 
-1. Google Maps 2.3.4.ipa
-2. index.pdf
-3. onlisp.pdf
-4. 18. What is a graph?.pdf
-5. emma.txt
-Tue,12-Nov-2013~16:17 DECISION: None
-Tue,12-Nov-2013~16:17 IT: None
-Tue,12-Nov-2013~16:17 INTERACTION: I couldn't find anything.
-Tue,12-Nov-2013~16:28 PARTS: ['skip']
-Tue,12-Nov-2013~16:28 SENTENCE: [('You', 'PS'), ('skip', 'VB')]
-Tue,12-Nov-2013~16:28 KIND: IMP
-Tue,12-Nov-2013~16:28 ACTIONS: {'media': 1.0}
-Tue,12-Nov-2013~16:28 WEIGHTS: {1.0: ['media']}
-Tue,12-Nov-2013~16:28 BEST: media
-Tue,12-Nov-2013~16:28 ['skip']
-Tue,12-Nov-2013~16:28 MUSIC KEYWORDS: []
-Tue,12-Nov-2013~16:28 MEDIA: next track
-Tue,12-Nov-2013~16:28 COMMAND: tell application "iTunes" to next track
-Tue,12-Nov-2013~16:28 CODE: osascript -e "tell application \"iTunes\" to next track"
-Tue,12-Nov-2013~16:28 INTERACTION: OK
-Tue,12-Nov-2013~16:28 PARTS: ["what's playing"]
-Tue,12-Nov-2013~16:28 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('play', 'VB')]
-Tue,12-Nov-2013~16:28 KIND: INT
-Tue,12-Nov-2013~16:28 ACTIONS: {'media': 1.0}
-Tue,12-Nov-2013~16:28 WEIGHTS: {1.0: ['media']}
-Tue,12-Nov-2013~16:28 BEST: media
-Tue,12-Nov-2013~16:28 ['be', 'play']
-Tue,12-Nov-2013~16:28 MUSIC KEYWORDS: []
-Tue,12-Nov-2013~16:28 CODE: osascript -e "tell application \"iTunes\"
-    set myTrack to (name of current track)
-    set myArtist to (artist of current track)
-end tell
-
-return \"It's '\" & myTrack & \"', by \" & myArtist & \".\""
-Tue,12-Nov-2013~16:28 INTERACTION: It's 'Dragon Blood Tree', by Jan Morgenstern.
-Tue,12-Nov-2013~16:41 PARTS: ['restart']
-Tue,12-Nov-2013~16:41 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~16:41 KIND: IMP
-Tue,12-Nov-2013~16:41 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~16:41 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~16:41 BEST: loader
-Tue,12-Nov-2013~16:41 Successfully imported Modules.clock
-Tue,12-Nov-2013~16:41 Successfully imported Modules.discover
-Tue,12-Nov-2013~16:41 Successfully imported Modules.finder
-Tue,12-Nov-2013~16:41 Successfully imported Modules.loader
-Tue,12-Nov-2013~16:41 Successfully imported Modules.media
-Tue,12-Nov-2013~16:41 Successfully imported Modules.personality
-Tue,12-Nov-2013~16:41 Successfully imported Modules.settings
-Tue,12-Nov-2013~16:41 Successfully imported Modules.weather
-Tue,12-Nov-2013~16:41 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~16:46 PARTS: ['restart']
-Tue,12-Nov-2013~16:46 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~16:46 KIND: IMP
-Tue,12-Nov-2013~16:46 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~16:46 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~16:46 BEST: loader
-Tue,12-Nov-2013~16:46 Successfully imported Modules.clock
-Tue,12-Nov-2013~16:46 Successfully imported Modules.discover
-Tue,12-Nov-2013~16:46 Successfully imported Modules.finder
-Tue,12-Nov-2013~16:46 Successfully imported Modules.loader
-Tue,12-Nov-2013~16:46 Successfully imported Modules.media
-Tue,12-Nov-2013~16:46 Successfully imported Modules.personality
-Tue,12-Nov-2013~16:46 Successfully imported Modules.settings
-Tue,12-Nov-2013~16:46 Successfully imported Modules.weather
-Tue,12-Nov-2013~16:46 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~16:46 PARTS: ['find the movie tangled']
-Tue,12-Nov-2013~16:46 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??')]
-Tue,12-Nov-2013~16:46 KIND: IMP
-Tue,12-Nov-2013~16:46 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Tue,12-Nov-2013~16:46 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Tue,12-Nov-2013~16:46 BEST: finder
-Tue,12-Nov-2013~16:46 KEYWORDS: [('movie tangled', 3)]
-Tue,12-Nov-2013~16:46 PARAMETERS: movie tangled kind:movie 
-Tue,12-Nov-2013~16:46 movie tangled
-Tue,12-Nov-2013~16:46 CODE: echo $HOME
-Tue,12-Nov-2013~16:46 CODE: mdfind -onlyin /Users/aaronstockdill/ "movie tangled kind:movie "
-Tue,12-Nov-2013~16:46 RESULTS FIRST 5: ['/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v', '/Users/aaronstockdill/Movies/Tangled.m4v']
-Tue,12-Nov-2013~16:46 INTERACTION: Which of these do you want? 
-1. Tangled.m4v
-2. Tangled.m4v
-Tue,12-Nov-2013~16:46 ORDINALS: ['first']
-Tue,12-Nov-2013~16:46 CHOICE: 1
-Tue,12-Nov-2013~16:46 DECISION: /Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v
-Tue,12-Nov-2013~16:46 IT: /Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v
-Tue,12-Nov-2013~16:46 CODE: osascript -e "tell application \"Finder\" to reveal POSIX file \"/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v\""
-Tue,12-Nov-2013~16:46 INTERACTION: I found something...
-Tue,12-Nov-2013~16:47 PARTS: ['pause']
-Tue,12-Nov-2013~16:47 SENTENCE: [('You', 'PS'), ('pause', 'VB')]
-Tue,12-Nov-2013~16:47 KIND: IMP
-Tue,12-Nov-2013~16:47 ACTIONS: {'media': 1.0}
-Tue,12-Nov-2013~16:47 WEIGHTS: {1.0: ['media']}
-Tue,12-Nov-2013~16:47 BEST: media
-Tue,12-Nov-2013~16:47 ['pause']
-Tue,12-Nov-2013~16:47 MUSIC KEYWORDS: []
-Tue,12-Nov-2013~16:47 MEDIA: pause
-Tue,12-Nov-2013~16:47 COMMAND: tell application "iTunes" to pause
-Tue,12-Nov-2013~16:47 CODE: osascript -e "tell application \"iTunes\" to pause"
-Tue,12-Nov-2013~16:47 INTERACTION: OK
-Tue,12-Nov-2013~19:41 PARTS: ['restart']
-Tue,12-Nov-2013~19:41 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~19:41 KIND: IMP
-Tue,12-Nov-2013~19:41 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~19:41 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~19:41 BEST: loader
-Tue,12-Nov-2013~19:41 Successfully imported Modules.clock
-Tue,12-Nov-2013~19:41 Successfully imported Modules.discover
-Tue,12-Nov-2013~19:41 Successfully imported Modules.finder
-Tue,12-Nov-2013~19:41 Successfully imported Modules.loader
-Tue,12-Nov-2013~19:41 Successfully imported Modules.media
-Tue,12-Nov-2013~19:41 Successfully imported Modules.personality
-Tue,12-Nov-2013~19:41 Successfully imported Modules.settings
-Tue,12-Nov-2013~19:41 Successfully imported Modules.weather
-Tue,12-Nov-2013~19:41 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~19:41 PARTS: ['find tangled']
-Tue,12-Nov-2013~19:41 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('tangled', '??')]
-Tue,12-Nov-2013~19:41 KIND: IMP
-Tue,12-Nov-2013~19:41 ACTIONS: {'wikipedia': 0.5, 'finder': 0.5}
-Tue,12-Nov-2013~19:41 WEIGHTS: {0.5: ['wikipedia', 'finder']}
-Tue,12-Nov-2013~19:41 BEST: wikipedia
-Tue,12-Nov-2013~19:41 KEYWORDS: [('tangled', 2)]
-Tue,12-Nov-2013~19:41 INTERACTION: Just a moment, Aaron.
-Tue,12-Nov-2013~19:41 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=tangled&printable=yes
-Tue,12-Nov-2013~19:41 INTERACTION: Tangled is a 2010 American computer animated musical fantasy-comedy film produced by Walt Disney Animation Studios and released by Walt Disney Pictures. It is the 50th animated feature in the Walt Disney Animated Classics series. It is loosely based on the German fairy tale "Rapunzel" in the collection of folk tales published by the Brothers Grimm. The film features the voices of Mandy Moore, Zachary Levi, and Donna Murphy. The film tells the story of a lost princess with long magical hair who yearns to leave her secluded tower. Against her mother's wishes, she accepts the aid of a handsome intruder to take her out into the world which she has never seen.
-
-http://en.wikipedia.org/wiki/tangled
-Tue,12-Nov-2013~19:41 PARTS: ['find the movie tangled']
-Tue,12-Nov-2013~19:41 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??')]
-Tue,12-Nov-2013~19:41 KIND: IMP
-Tue,12-Nov-2013~19:41 ACTIONS: {'wikipedia': 0.5, 'finder': 1.5}
-Tue,12-Nov-2013~19:41 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Tue,12-Nov-2013~19:41 BEST: finder
-Tue,12-Nov-2013~19:41 KEYWORDS: [('movie tangled', 3)]
-Tue,12-Nov-2013~19:41 PARAMETERS: movie tangled kind:movie 
-Tue,12-Nov-2013~19:41 movie tangled
-Tue,12-Nov-2013~19:43 Successfully imported Modules.clock
-Tue,12-Nov-2013~19:43 Successfully imported Modules.discover
-Tue,12-Nov-2013~19:43 Successfully imported Modules.finder
-Tue,12-Nov-2013~19:43 Successfully imported Modules.loader
-Tue,12-Nov-2013~19:43 Successfully imported Modules.media
-Tue,12-Nov-2013~19:43 Successfully imported Modules.personality
-Tue,12-Nov-2013~19:43 Successfully imported Modules.settings
-Tue,12-Nov-2013~19:43 Successfully imported Modules.weather
-Tue,12-Nov-2013~19:43 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~19:43 PARTS: ['find the movie tangled']
-Tue,12-Nov-2013~19:43 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??')]
-Tue,12-Nov-2013~19:43 KIND: IMP
-Tue,12-Nov-2013~19:43 ACTIONS: {'wikipedia': 0.5, 'finder': 1.5}
-Tue,12-Nov-2013~19:43 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Tue,12-Nov-2013~19:43 BEST: finder
-Tue,12-Nov-2013~19:43 KEYWORDS: [('movie tangled', 3)]
-Tue,12-Nov-2013~19:43 PARAMETERS: movie tangled kind:movie 
-Tue,12-Nov-2013~19:43 movie tangled
-Tue,12-Nov-2013~19:43 CODE: osascript -e "tell application \"Finder\" to activate
-tell application \"System Events\"
-	keystroke \"n\" using \{command down\}
-	keystroke \"f\" using \{command down\}
-	key code 48 using {control down, shift down}
-	keystroke \"w\" using \{command down\}
-	keystroke \"{}\"
-	key code 36
-end tell"
-Tue,12-Nov-2013~19:43 CODE: echo $HOME
-Tue,12-Nov-2013~19:43 CODE: mdfind -onlyin /Users/aaronstockdill/ "movie tangled kind:movie "
-Tue,12-Nov-2013~19:44 Successfully imported Modules.clock
-Tue,12-Nov-2013~19:44 Successfully imported Modules.discover
-Tue,12-Nov-2013~19:44 Successfully imported Modules.finder
-Tue,12-Nov-2013~19:44 Successfully imported Modules.loader
-Tue,12-Nov-2013~19:44 Successfully imported Modules.media
-Tue,12-Nov-2013~19:44 Successfully imported Modules.personality
-Tue,12-Nov-2013~19:44 Successfully imported Modules.settings
-Tue,12-Nov-2013~19:44 Successfully imported Modules.weather
-Tue,12-Nov-2013~19:44 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~19:44 PARTS: ['find the file tangled']
-Tue,12-Nov-2013~19:44 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('file', 'NO'), ('tangled', '??')]
-Tue,12-Nov-2013~19:44 KIND: IMP
-Tue,12-Nov-2013~19:44 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Tue,12-Nov-2013~19:44 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Tue,12-Nov-2013~19:44 BEST: finder
-Tue,12-Nov-2013~19:44 KEYWORDS: [('file tangled', 3)]
-Tue,12-Nov-2013~19:44 PARAMETERS: file tangled
-Tue,12-Nov-2013~19:44 file tangled
-Tue,12-Nov-2013~19:44 CODE: osascript -e "tell application \"Finder\" to activate
-tell application \"System Events\"
-	keystroke \"n\" using {command down}
-	keystroke \"f\" using {command down}
-	key code 48 using {control down, shift down}
-	keystroke \"w\" using {command down}
-	keystroke \"{search}\"
-	key code 36
-end tell"
-Tue,12-Nov-2013~19:44 CODE: echo $HOME
-Tue,12-Nov-2013~19:44 CODE: mdfind -onlyin /Users/aaronstockdill/ "file tangled"
-Tue,12-Nov-2013~19:45 Successfully imported Modules.clock
-Tue,12-Nov-2013~19:45 Successfully imported Modules.discover
-Tue,12-Nov-2013~19:45 Successfully imported Modules.finder
-Tue,12-Nov-2013~19:45 Successfully imported Modules.loader
-Tue,12-Nov-2013~19:45 Successfully imported Modules.media
-Tue,12-Nov-2013~19:45 Successfully imported Modules.personality
-Tue,12-Nov-2013~19:45 Successfully imported Modules.settings
-Tue,12-Nov-2013~19:45 Successfully imported Modules.weather
-Tue,12-Nov-2013~19:45 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~19:45 PARTS: ['find the file called tangled']
-Tue,12-Nov-2013~19:45 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('file', 'NO'), ('called', 'PP'), ('tangled', '??')]
-Tue,12-Nov-2013~19:45 KIND: IMP
-Tue,12-Nov-2013~19:45 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Tue,12-Nov-2013~19:45 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Tue,12-Nov-2013~19:45 BEST: finder
-Tue,12-Nov-2013~19:45 KEYWORDS: [('file', 3), ('tangled', 5)]
-Tue,12-Nov-2013~19:45 PARAMETERS: file tangled
-Tue,12-Nov-2013~19:45 file
-Tue,12-Nov-2013~19:45 CODE: osascript -e "tell application \"Finder\" to activate
-tell application \"System Events\"
-	keystroke \"n\" using {command down}
-	keystroke \"f\" using {command down}
-	key code 48 using {control down, shift down}
-	keystroke \"w\" using {command down}
-	keystroke \"file\"
-	key code 36
-end tell"
-Tue,12-Nov-2013~19:45 CODE: echo $HOME
-Tue,12-Nov-2013~19:45 CODE: mdfind -onlyin /Users/aaronstockdill/ "file tangled"
-Tue,12-Nov-2013~19:46 Successfully imported Modules.clock
-Tue,12-Nov-2013~19:46 Successfully imported Modules.discover
-Tue,12-Nov-2013~19:46 Successfully imported Modules.finder
-Tue,12-Nov-2013~19:46 Successfully imported Modules.loader
-Tue,12-Nov-2013~19:46 Successfully imported Modules.media
-Tue,12-Nov-2013~19:46 Successfully imported Modules.personality
-Tue,12-Nov-2013~19:46 Successfully imported Modules.settings
-Tue,12-Nov-2013~19:46 Successfully imported Modules.weather
-Tue,12-Nov-2013~19:46 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~19:46 PARTS: ['find the file tangled']
-Tue,12-Nov-2013~19:46 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('file', 'NO'), ('tangled', '??')]
-Tue,12-Nov-2013~19:46 KIND: IMP
-Tue,12-Nov-2013~19:46 ACTIONS: {'wikipedia': 0.5, 'finder': 1.5}
-Tue,12-Nov-2013~19:46 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Tue,12-Nov-2013~19:46 BEST: finder
-Tue,12-Nov-2013~19:46 KEYWORDS: [('tangled', 4)]
-Tue,12-Nov-2013~19:46 PARAMETERS: tangled
-Tue,12-Nov-2013~19:46 tangled
-Tue,12-Nov-2013~19:46 CODE: osascript -e "tell application \"Finder\" to activate
-tell application \"System Events\"
-	keystroke \"n\" using {command down}
-	keystroke \"f\" using {command down}
-	key code 48 using {control down, shift down}
-	keystroke \"w\" using {command down}
-	keystroke \"tangled\"
-	key code 36
-end tell"
-Tue,12-Nov-2013~19:46 CODE: echo $HOME
-Tue,12-Nov-2013~19:46 CODE: mdfind -onlyin /Users/aaronstockdill/ "tangled"
-Tue,12-Nov-2013~19:47 Successfully imported Modules.clock
-Tue,12-Nov-2013~19:47 Successfully imported Modules.discover
-Tue,12-Nov-2013~19:47 Successfully imported Modules.finder
-Tue,12-Nov-2013~19:47 Successfully imported Modules.loader
-Tue,12-Nov-2013~19:47 Successfully imported Modules.media
-Tue,12-Nov-2013~19:47 Successfully imported Modules.personality
-Tue,12-Nov-2013~19:47 Successfully imported Modules.settings
-Tue,12-Nov-2013~19:47 Successfully imported Modules.weather
-Tue,12-Nov-2013~19:47 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~19:47 PARTS: ['find the file windows 7']
-Tue,12-Nov-2013~19:47 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('file', 'NO'), ('windows', '??'), ('7', '??')]
-Tue,12-Nov-2013~19:47 KIND: IMP
-Tue,12-Nov-2013~19:47 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Tue,12-Nov-2013~19:47 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Tue,12-Nov-2013~19:47 BEST: finder
-Tue,12-Nov-2013~19:47 KEYWORDS: [('windows 7', 4)]
-Tue,12-Nov-2013~19:47 PARAMETERS: windows 7
-Tue,12-Nov-2013~19:47 windows 7
-Tue,12-Nov-2013~19:47 CODE: osascript -e "tell application \"Finder\" to activate
-tell application \"System Events\"
-	keystroke \"n\" using {command down}
-	keystroke \"f\" using {command down}
-	key code 48 using {control down, shift down}
-	keystroke \"w\" using {command down}
-	keystroke \"windows 7\"
-	key code 36
-end tell"
-Tue,12-Nov-2013~19:47 CODE: echo $HOME
-Tue,12-Nov-2013~19:47 CODE: mdfind -onlyin /Users/aaronstockdill/ "windows 7"
-Tue,12-Nov-2013~19:47 RESULTS FIRST 5:  ['/Users/aaronstockdill/Downloads/part-2/texts/sns.txt', '/Users/aaronstockdill/Downloads/part-2/texts/pnp.txt', '/Users/aaronstockdill/Documents/Other/w7Advanced.docx', '/Users/aaronstockdill/Downloads/part-2/texts/emma.txt', '/Users/aaronstockdill/Downloads/part-2/texts/unknown2.txt', '/Users/aaronstockdill/Documents/Other/Tips for Windows 7.docx', '/Users/aaronstockdill/Pictures/Photoshop/LastSupperGuests.psd', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Books/onlisp.pdf', '/Users/aaronstockdill/Dropbox/School/Year 12/English/48hours.rtf', '/Users/aaronstockdill/Dropbox/School/Year 13/DMP301/phpBB3/feed.php']
-Tue,12-Nov-2013~19:47 INTERACTION: Which of these do you want? 
-1. sns.txt
-2. pnp.txt
-3. w7Advanced.docx
-4. emma.txt
-5. unknown2.txt
-Tue,12-Nov-2013~19:47 ORDINALS: ['third']
-Tue,12-Nov-2013~19:47 CHOICE: 3
-Tue,12-Nov-2013~19:47 DECISION: /Users/aaronstockdill/Documents/Other/w7Advanced.docx
-Tue,12-Nov-2013~19:47 IT: /Users/aaronstockdill/Documents/Other/w7Advanced.docx
-Tue,12-Nov-2013~19:47 CODE: osascript -e "tell application \"Finder\" to reveal POSIX file \"/Users/aaronstockdill/Documents/Other/w7Advanced.docx\""
-Tue,12-Nov-2013~19:47 INTERACTION: I found something...
-Tue,12-Nov-2013~19:48 PARTS: ['restart']
-Tue,12-Nov-2013~19:48 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~19:48 KIND: IMP
-Tue,12-Nov-2013~19:48 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~19:48 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~19:48 BEST: loader
-Tue,12-Nov-2013~19:48 Successfully imported Modules.clock
-Tue,12-Nov-2013~19:48 Successfully imported Modules.discover
-Tue,12-Nov-2013~19:48 Successfully imported Modules.finder
-Tue,12-Nov-2013~19:48 Successfully imported Modules.loader
-Tue,12-Nov-2013~19:48 Successfully imported Modules.media
-Tue,12-Nov-2013~19:48 Successfully imported Modules.personality
-Tue,12-Nov-2013~19:48 Successfully imported Modules.settings
-Tue,12-Nov-2013~19:48 Successfully imported Modules.weather
-Tue,12-Nov-2013~19:48 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~19:48 PARTS: ['find all images']
-Tue,12-Nov-2013~19:48 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('all', '??'), ('image', 'NO')]
-Tue,12-Nov-2013~19:48 KIND: IMP
-Tue,12-Nov-2013~19:48 ACTIONS: {'wikipedia': 0.5, 'finder': 1.5}
-Tue,12-Nov-2013~19:48 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Tue,12-Nov-2013~19:48 BEST: finder
-Tue,12-Nov-2013~19:48 KEYWORDS: [('all', 2), ('image', 3)]
-Tue,12-Nov-2013~19:48 PARAMETERS: all image kind:image 
-Tue,12-Nov-2013~19:48 all
-Tue,12-Nov-2013~19:48 CODE: osascript -e "tell application \"Finder\" to activate
-tell application \"System Events\"
-	keystroke \"n\" using {command down}
-	keystroke \"f\" using {command down}
-	key code 48 using {control down, shift down}
-	keystroke \"w\" using {command down}
-	keystroke \"all image kind:image \"
-	key code 36
-end tell"
-Tue,12-Nov-2013~19:48 CODE: echo $HOME
-Tue,12-Nov-2013~19:48 CODE: mdfind -onlyin /Users/aaronstockdill/ "all image kind:image "
-Tue,12-Nov-2013~19:48 RESULTS FIRST 5:  ['/Users/aaronstockdill/Dropbox/School/Year 12/st-maths/RandomString/images/MenubarAll.png']
-Tue,12-Nov-2013~19:48 DECISION: /Users/aaronstockdill/Dropbox/School/Year 12/st-maths/RandomString/images/MenubarAll.png
-Tue,12-Nov-2013~19:48 IT: /Users/aaronstockdill/Dropbox/School/Year 12/st-maths/RandomString/images/MenubarAll.png
-Tue,12-Nov-2013~19:48 CODE: osascript -e "tell application \"Finder\" to reveal POSIX file \"/Users/aaronstockdill/Dropbox/School/Year 12/st-maths/RandomString/images/MenubarAll.png\""
-Tue,12-Nov-2013~19:48 INTERACTION: I found something...
-Tue,12-Nov-2013~19:50 PARTS: ['restart']
-Tue,12-Nov-2013~19:50 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~19:50 KIND: IMP
-Tue,12-Nov-2013~19:50 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~19:50 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~19:50 BEST: loader
-Tue,12-Nov-2013~19:50 Successfully imported Modules.clock
-Tue,12-Nov-2013~19:50 Successfully imported Modules.discover
-Tue,12-Nov-2013~19:50 Successfully imported Modules.finder
-Tue,12-Nov-2013~19:50 Successfully imported Modules.loader
-Tue,12-Nov-2013~19:50 Successfully imported Modules.media
-Tue,12-Nov-2013~19:50 Successfully imported Modules.personality
-Tue,12-Nov-2013~19:50 Successfully imported Modules.settings
-Tue,12-Nov-2013~19:50 Successfully imported Modules.weather
-Tue,12-Nov-2013~19:50 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~19:51 PARTS: ['show all word']
-Tue,12-Nov-2013~19:51 SENTENCE: [('You', 'PS'), ('show', 'VB'), ('all', '??'), ('word', 'NO')]
-Tue,12-Nov-2013~19:51 KIND: IMP
-Tue,12-Nov-2013~19:51 ACTIONS: {'finder': 1.0}
-Tue,12-Nov-2013~19:51 WEIGHTS: {1.0: ['finder']}
-Tue,12-Nov-2013~19:51 BEST: finder
-Tue,12-Nov-2013~19:51 KEYWORDS: [('all', 2), ('word', 3)]
-Tue,12-Nov-2013~19:51 PARAMETERS: all word kind:word 
-Tue,12-Nov-2013~19:51 all
-Tue,12-Nov-2013~19:51 CODE: osascript -e "tell application \"Finder\" to activate
-tell application \"System Events\"
-	keystroke \"n\" using {command down}
-	keystroke \"f\" using {command down}
-	key code 48 using {control down, shift down}
-	keystroke \"w\" using {command down}
-	keystroke \"all word kind:word \"
-	key code 36
-end tell"
-Tue,12-Nov-2013~19:51 CODE: osascript -e "tell application \"Finder\" to activate
-tell application \"System Events\"
-	keystroke \"n\" using {command down}
-	keystroke \"f\" using {command down}
-	key code 48 using {control down, shift down}
-	keystroke \"w\" using {command down}
-	keystroke \"all word kind:word \"
-	key code 36
-end tell"
-Tue,12-Nov-2013~19:51 INTERACTION: None
-Tue,12-Nov-2013~19:51 PARTS: ['restart']
-Tue,12-Nov-2013~19:51 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~19:51 KIND: IMP
-Tue,12-Nov-2013~19:51 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~19:51 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~19:51 BEST: loader
-Tue,12-Nov-2013~19:51 Successfully imported Modules.clock
-Tue,12-Nov-2013~19:51 Successfully imported Modules.discover
-Tue,12-Nov-2013~19:51 Successfully imported Modules.finder
-Tue,12-Nov-2013~19:51 Successfully imported Modules.loader
-Tue,12-Nov-2013~19:51 Successfully imported Modules.media
-Tue,12-Nov-2013~19:51 Successfully imported Modules.personality
-Tue,12-Nov-2013~19:51 Successfully imported Modules.settings
-Tue,12-Nov-2013~19:51 Successfully imported Modules.weather
-Tue,12-Nov-2013~19:51 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~19:52 PARTS: ['show all images']
-Tue,12-Nov-2013~19:52 SENTENCE: [('You', 'PS'), ('show', 'VB'), ('all', '??'), ('image', 'NO')]
-Tue,12-Nov-2013~19:52 KIND: IMP
-Tue,12-Nov-2013~19:52 ACTIONS: {'finder': 1.0}
-Tue,12-Nov-2013~19:52 WEIGHTS: {1.0: ['finder']}
-Tue,12-Nov-2013~19:52 BEST: finder
-Tue,12-Nov-2013~19:52 KEYWORDS: [('all', 2), ('image', 3)]
-Tue,12-Nov-2013~19:52 PARAMETERS: all image kind:image 
-Tue,12-Nov-2013~19:52 all
-Tue,12-Nov-2013~19:52 CODE: osascript -e "tell application \"Finder\" to activate
-tell application \"System Events\"
-	keystroke \"n\" using {command down}
-	keystroke \"f\" using {command down}
-	key code 48 using {control down, shift down}
-	keystroke \"w\" using {command down}
-	keystroke \"all image kind:image \"
-	key code 36
-end tell"
-Tue,12-Nov-2013~19:52 INTERACTION: Here, try these...
-Tue,12-Nov-2013~19:53 PARTS: ['restart']
-Tue,12-Nov-2013~19:53 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~19:53 KIND: IMP
-Tue,12-Nov-2013~19:53 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~19:53 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~19:53 BEST: loader
-Tue,12-Nov-2013~19:53 Successfully imported Modules.clock
-Tue,12-Nov-2013~19:53 Successfully imported Modules.discover
-Tue,12-Nov-2013~19:53 Successfully imported Modules.finder
-Tue,12-Nov-2013~19:53 Successfully imported Modules.loader
-Tue,12-Nov-2013~19:53 Successfully imported Modules.media
-Tue,12-Nov-2013~19:53 Successfully imported Modules.personality
-Tue,12-Nov-2013~19:53 Successfully imported Modules.settings
-Tue,12-Nov-2013~19:53 Successfully imported Modules.weather
-Tue,12-Nov-2013~19:53 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~19:54 PARTS: ["what's the time"]
-Tue,12-Nov-2013~19:54 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('time', 'NO')]
-Tue,12-Nov-2013~19:54 KIND: INT
-Tue,12-Nov-2013~19:54 ACTIONS: {'clock': 1.0}
-Tue,12-Nov-2013~19:54 WEIGHTS: {1.0: ['clock']}
-Tue,12-Nov-2013~19:54 BEST: clock
-Tue,12-Nov-2013~19:54 KEYWORDS: ['time']
-Tue,12-Nov-2013~19:54 INTERACTION: It is 7:54pm.
-Tue,12-Nov-2013~19:54 PARTS: ['create a new folder']
-Tue,12-Nov-2013~19:54 SENTENCE: [('create', '??'), ('the', 'AR'), ('new', '??'), ('folder', 'NS')]
-Tue,12-Nov-2013~19:54 KIND: DEC
-Tue,12-Nov-2013~19:54 FORWADING TO: personality
-Tue,12-Nov-2013~19:54 INTERACTION: I'm still learning!
-Tue,12-Nov-2013~20:15 PARTS: ['restart']
-Tue,12-Nov-2013~20:15 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~20:15 KIND: IMP
-Tue,12-Nov-2013~20:15 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~20:15 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~20:15 BEST: loader
-Tue,12-Nov-2013~20:15 Successfully imported Modules.clock
-Tue,12-Nov-2013~20:15 Successfully imported Modules.discover
-Tue,12-Nov-2013~20:15 Successfully imported Modules.finder
-Tue,12-Nov-2013~20:15 Successfully imported Modules.loader
-Tue,12-Nov-2013~20:15 Successfully imported Modules.media
-Tue,12-Nov-2013~20:15 Successfully imported Modules.personality
-Tue,12-Nov-2013~20:15 Successfully imported Modules.settings
-Tue,12-Nov-2013~20:15 Successfully imported Modules.weather
-Tue,12-Nov-2013~20:15 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~20:15 PARTS: ['how cold is it']
-Tue,12-Nov-2013~20:15 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Tue,12-Nov-2013~20:15 KIND: INT
-Tue,12-Nov-2013~20:15 ACTIONS: {'weather': 1.0}
-Tue,12-Nov-2013~20:15 WEIGHTS: {1.0: ['weather']}
-Tue,12-Nov-2013~20:15 BEST: weather
-Tue,12-Nov-2013~20:15 INTERACTION: Let me see, Aaron...
-Tue,12-Nov-2013~20:15 KEYWORDS: []
-Tue,12-Nov-2013~20:15 TODAY: 1
-Tue,12-Nov-2013~20:15 DAY: 0
-Tue,12-Nov-2013~20:15 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Tue, 12 Nov 2013 7:29 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="12"   direction="60"   speed="16.09" />\n', b'<yweather:atmosphere humidity="72"  visibility="9.99"  pressure="1015.92"  rising="0" />\n', b'<yweather:astronomy sunrise="5:59 am"   sunset="8:29 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 7:29 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Tue, 12 Nov 2013 7:29 pm NZDT</pubDate>\n', b'<yweather:condition  text="Cloudy"  code="26"  temp="12"  date="Tue, 12 Nov 2013 7:29 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/26.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Cloudy, 12 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Tue - Partly Cloudy. High: 16 Low: 6<br />\n', b'Wed - Partly Cloudy. High: 17 Low: 7<br />\n', b'Thu - Partly Cloudy. High: 17 Low: 9<br />\n', b'Fri - Partly Cloudy. High: 19 Low: 11<br />\n', b'Sat - Mostly Cloudy. High: 21 Low: 12<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Tue" date="12 Nov 2013" low="6" high="16" text="Partly Cloudy" code="29" />\n', b'<yweather:forecast day="Wed" date="13 Nov 2013" low="7" high="17" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Thu" date="14 Nov 2013" low="9" high="17" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Fri" date="15 Nov 2013" low="11" high="19" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Sat" date="16 Nov 2013" low="12" high="21" text="Mostly Cloudy" code="28" />\n', b'<guid isPermaLink="false">NZXX0006_2013_11_16_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan485.sports.gq1.yahoo.com Tue Nov 12 07:13:57 PST 2013 -->\n']
-Tue,12-Nov-2013~20:15 CONDITIONS: {'temp': '12', 'code': '26', 'date': 'Tue, 12 Nov 2013 7:29 pm NZDT', 'text': 'Cloudy'}
-Tue,12-Nov-2013~20:15 CONDITIONS2: {'code': '29', 'high': '16', 'low': '6', 'date': '12 Nov 2013', 'text': 'Partly Cloudy'}
-Tue,12-Nov-2013~20:15 CODE: osascript -e "display notification \"Temperature:12
-Condition:Cloudy\" with title \"PAUL\" subtitle \"Weather\""
-Tue,12-Nov-2013~20:15 INTERACTION: It's 12°C, and cloudy. The high today is 16°C, partly cloudy.
-Tue,12-Nov-2013~20:16 PARTS: ['restart']
-Tue,12-Nov-2013~20:16 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~20:16 KIND: IMP
-Tue,12-Nov-2013~20:16 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~20:16 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~20:16 BEST: loader
-Tue,12-Nov-2013~20:16 Successfully imported Modules.clock
-Tue,12-Nov-2013~20:16 Successfully imported Modules.discover
-Tue,12-Nov-2013~20:16 Successfully imported Modules.finder
-Tue,12-Nov-2013~20:16 Successfully imported Modules.loader
-Tue,12-Nov-2013~20:16 Successfully imported Modules.media
-Tue,12-Nov-2013~20:16 Successfully imported Modules.personality
-Tue,12-Nov-2013~20:16 Successfully imported Modules.settings
-Tue,12-Nov-2013~20:16 Successfully imported Modules.weather
-Tue,12-Nov-2013~20:16 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~20:16 PARTS: ["what's the weather"]
-Tue,12-Nov-2013~20:16 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO')]
-Tue,12-Nov-2013~20:16 KIND: INT
-Tue,12-Nov-2013~20:16 ACTIONS: {'weather': 1.0}
-Tue,12-Nov-2013~20:16 WEIGHTS: {1.0: ['weather']}
-Tue,12-Nov-2013~20:16 BEST: weather
-Tue,12-Nov-2013~20:16 INTERACTION: Coming up, Aaron.
-Tue,12-Nov-2013~20:16 KEYWORDS: [('weather', 3)]
-Tue,12-Nov-2013~20:16 TODAY: 1
-Tue,12-Nov-2013~20:16 DAY: 0
-Tue,12-Nov-2013~20:16 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Tue, 12 Nov 2013 7:29 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="12"   direction="60"   speed="16.09" />\n', b'<yweather:atmosphere humidity="72"  visibility="9.99"  pressure="1015.92"  rising="0" />\n', b'<yweather:astronomy sunrise="5:59 am"   sunset="8:29 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 7:29 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Tue, 12 Nov 2013 7:29 pm NZDT</pubDate>\n', b'<yweather:condition  text="Cloudy"  code="26"  temp="12"  date="Tue, 12 Nov 2013 7:29 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/26.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Cloudy, 12 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Tue - Partly Cloudy. High: 16 Low: 6<br />\n', b'Wed - Partly Cloudy. High: 17 Low: 7<br />\n', b'Thu - Partly Cloudy. High: 17 Low: 9<br />\n', b'Fri - Partly Cloudy. High: 19 Low: 11<br />\n', b'Sat - Mostly Cloudy. High: 21 Low: 12<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Tue" date="12 Nov 2013" low="6" high="16" text="Partly Cloudy" code="29" />\n', b'<yweather:forecast day="Wed" date="13 Nov 2013" low="7" high="17" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Thu" date="14 Nov 2013" low="9" high="17" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Fri" date="15 Nov 2013" low="11" high="19" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Sat" date="16 Nov 2013" low="12" high="21" text="Mostly Cloudy" code="28" />\n', b'<guid isPermaLink="false">NZXX0006_2013_11_16_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan485.sports.gq1.yahoo.com Tue Nov 12 07:13:57 PST 2013 -->\n']
-Tue,12-Nov-2013~20:16 CONDITIONS: {'temp': '12', 'text': 'Cloudy', 'date': 'Tue, 12 Nov 2013 7:29 pm NZDT', 'code': '26'}
-Tue,12-Nov-2013~20:16 CONDITIONS2: {'text': 'Partly Cloudy', 'date': '12 Nov 2013', 'code': '29', 'low': '6', 'high': '16'}
-Tue,12-Nov-2013~20:16 CODE: osascript -e "display notification \"Temperature: 12   Condition: Cloudy\" with title \"PAUL\" subtitle \"Weather\""
-Tue,12-Nov-2013~20:16 INTERACTION: It's 12°C, and cloudy. The high today is 16°C, partly cloudy.
-Tue,12-Nov-2013~20:26 PARTS: ['my title is sir']
-Tue,12-Nov-2013~20:26 SENTENCE: [('i', 'PS'), ('title', 'NS'), ('be', 'VB'), ('sir', '??')]
-Tue,12-Nov-2013~20:26 KIND: DEC
-Tue,12-Nov-2013~20:26 FORWADING TO: personality
-Tue,12-Nov-2013~20:26 INTERACTION: I'm still learning!
-Tue,12-Nov-2013~20:26 PARTS: ['set my title sir']
-Tue,12-Nov-2013~20:26 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('i', 'PS'), ('title', 'NO'), ('sir', '??')]
-Tue,12-Nov-2013~20:26 KIND: IMP
-Tue,12-Nov-2013~20:26 ACTIONS: {'settings': 2.0}
-Tue,12-Nov-2013~20:26 WEIGHTS: {2.0: ['settings']}
-Tue,12-Nov-2013~20:26 BEST: settings
-Tue,12-Nov-2013~20:26 KEYWORDS: [('set', 1), ('title sir', 3)]
-Tue,12-Nov-2013~20:26 SETTING:     "title": "sir",
-
-Tue,12-Nov-2013~20:26     title
-Tue,12-Nov-2013~20:26 INTERACTION: done
-Tue,12-Nov-2013~20:27 PARTS: ['my search engine is google']
-Tue,12-Nov-2013~20:27 SENTENCE: [('i', 'PS'), ('search', 'VB'), ('engine', '??'), ('be', 'VB'), ('google', '??')]
-Tue,12-Nov-2013~20:27 KIND: DEC
-Tue,12-Nov-2013~20:27 FORWADING TO: personality
-Tue,12-Nov-2013~20:27 INTERACTION: I'm still learning!
-Tue,12-Nov-2013~20:27 PARTS: ['set my search engine to google']
-Tue,12-Nov-2013~20:27 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('i', 'PS'), ('search', 'VB'), ('engine', '??'), ('to', 'PP'), ('google', '??')]
-Tue,12-Nov-2013~20:27 KIND: IMP
-Tue,12-Nov-2013~20:27 ACTIONS: {'settings': 1.0, 'discover': 0.5, 'wikipedia': 0.5}
-Tue,12-Nov-2013~20:27 WEIGHTS: {0.5: ['discover', 'wikipedia'], 1.0: ['settings']}
-Tue,12-Nov-2013~20:27 BEST: settings
-Tue,12-Nov-2013~20:27 KEYWORDS: [('set', 1), ('search', 3), ('engine', 4), ('google', 6)]
-Tue,12-Nov-2013~20:27 SETTING:     "search_engine": "Google",
-
-Tue,12-Nov-2013~20:27     search_engine
-Tue,12-Nov-2013~20:27 INTERACTION: done
-Tue,12-Nov-2013~20:27 PARTS: ['restart']
-Tue,12-Nov-2013~20:27 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~20:27 KIND: IMP
-Tue,12-Nov-2013~20:27 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~20:27 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~20:27 BEST: loader
-Tue,12-Nov-2013~20:27 Successfully imported Modules.clock
-Tue,12-Nov-2013~20:27 Successfully imported Modules.discover
-Tue,12-Nov-2013~20:27 Successfully imported Modules.finder
-Tue,12-Nov-2013~20:27 Successfully imported Modules.loader
-Tue,12-Nov-2013~20:27 Successfully imported Modules.media
-Tue,12-Nov-2013~20:27 Successfully imported Modules.personality
-Tue,12-Nov-2013~20:27 Successfully imported Modules.settings
-Tue,12-Nov-2013~20:27 Successfully imported Modules.weather
-Tue,12-Nov-2013~20:27 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~20:38 INTERACTION: Bye!
-Tue,12-Nov-2013~20:38 Successfully imported Modules.clock
-Tue,12-Nov-2013~20:38 Successfully imported Modules.discover
-Tue,12-Nov-2013~20:38 Successfully imported Modules.finder
-Tue,12-Nov-2013~20:38 Successfully imported Modules.loader
-Tue,12-Nov-2013~20:38 Successfully imported Modules.media
-Tue,12-Nov-2013~20:38 Successfully imported Modules.personality
-Tue,12-Nov-2013~20:38 Successfully imported Modules.settings
-Tue,12-Nov-2013~20:38 Successfully imported Modules.weather
-Tue,12-Nov-2013~20:38 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~20:58 PARTS: ['restart']
-Tue,12-Nov-2013~20:58 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~20:58 KIND: IMP
-Tue,12-Nov-2013~20:58 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~20:58 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~20:58 BEST: loader
-Tue,12-Nov-2013~20:58 Successfully imported Modules.clock
-Tue,12-Nov-2013~20:58 Successfully imported Modules.discover
-Tue,12-Nov-2013~20:58 Successfully imported Modules.finder
-Tue,12-Nov-2013~20:58 Successfully imported Modules.loader
-Tue,12-Nov-2013~20:58 Successfully imported Modules.media
-Tue,12-Nov-2013~20:58 Successfully imported Modules.personality
-Tue,12-Nov-2013~20:58 Successfully imported Modules.settings
-Tue,12-Nov-2013~20:59 Successfully imported Modules.weather
-Tue,12-Nov-2013~20:59 Successfully imported Modules.wikipedia
-Tue,12-Nov-2013~20:59 PARTS: ['restart']
-Tue,12-Nov-2013~20:59 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Tue,12-Nov-2013~20:59 KIND: IMP
-Tue,12-Nov-2013~20:59 ACTIONS: {'loader': 1.0}
-Tue,12-Nov-2013~20:59 WEIGHTS: {1.0: ['loader']}
-Tue,12-Nov-2013~20:59 BEST: loader
-Tue,12-Nov-2013~20:59 Successfully imported Modules.clock
-Tue,12-Nov-2013~20:59 Successfully imported Modules.discover
-Tue,12-Nov-2013~20:59 Successfully imported Modules.finder
-Tue,12-Nov-2013~20:59 Successfully imported Modules.loader
-Tue,12-Nov-2013~20:59 Successfully imported Modules.media
-Tue,12-Nov-2013~20:59 Successfully imported Modules.personality
-Tue,12-Nov-2013~20:59 Successfully imported Modules.settings
-Tue,12-Nov-2013~20:59 Successfully imported Modules.weather
-Tue,12-Nov-2013~20:59 Successfully imported Modules.wikipedia
-Wed,13-Nov-2013~08:37 PARTS: ["what's the time"]
-Wed,13-Nov-2013~08:37 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('time', 'NO')]
-Wed,13-Nov-2013~08:37 KIND: INT
-Wed,13-Nov-2013~08:37 ACTIONS: {'clock': 1.0}
-Wed,13-Nov-2013~08:37 WEIGHTS: {1.0: ['clock']}
-Wed,13-Nov-2013~08:37 BEST: clock
-Wed,13-Nov-2013~08:37 KEYWORDS: ['time']
-Wed,13-Nov-2013~08:37 INTERACTION: It is 8:37am.
-Thu,14-Nov-2013~19:33 PARTS: ['what is sin 90°']
-Thu,14-Nov-2013~19:33 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('sin', '??'), ('90°', '??')]
-Thu,14-Nov-2013~19:33 KIND: INT
-Thu,14-Nov-2013~19:33 ACTIONS: {}
-Thu,14-Nov-2013~19:33 WEIGHTS: {}
-Thu,14-Nov-2013~19:33 KEYWORDS: [('sin 90°', 2)]
-Thu,14-Nov-2013~19:33 URL: http://www.google.com/search?q=sin+90°
-Thu,14-Nov-2013~19:33 INTERACTION: Let me find out for you...
-Thu,14-Nov-2013~19:33 CODE: open http://www.google.com/search?q=sin+90°
-Thu,14-Nov-2013~19:33 INTERACTION: Here, try this.
-Thu,14-Nov-2013~19:33 PARTS: ['how cold is it']
-Thu,14-Nov-2013~19:33 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Thu,14-Nov-2013~19:33 KIND: INT
-Thu,14-Nov-2013~19:33 ACTIONS: {'weather': 1.0}
-Thu,14-Nov-2013~19:33 WEIGHTS: {1.0: ['weather']}
-Thu,14-Nov-2013~19:33 BEST: weather
-Thu,14-Nov-2013~19:33 INTERACTION: Just a moment.
-Thu,14-Nov-2013~19:33 KEYWORDS: []
-Thu,14-Nov-2013~19:33 TODAY: 3
-Thu,14-Nov-2013~19:33 DAY: 0
-Thu,14-Nov-2013~19:33 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Thu, 14 Nov 2013 7:00 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="14"   direction="80"   speed="25.75" />\n', b'<yweather:atmosphere humidity="67"  visibility="9.99"  pressure="1015.92"  rising="2" />\n', b'<yweather:astronomy sunrise="5:54 am"   sunset="8:29 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 7:00 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Thu, 14 Nov 2013 7:00 pm NZDT</pubDate>\n', b'<yweather:condition  text="Partly Cloudy"  code="30"  temp="14"  date="Thu, 14 Nov 2013 7:00 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/30.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Partly Cloudy, 14 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Thu - Partly Cloudy. High: 18 Low: 9<br />\n', b'Fri - Partly Cloudy. High: 21 Low: 12<br />\n', b'Sat - Partly Cloudy. High: 24 Low: 12<br />\n', b'Sun - Mostly Cloudy. High: 18 Low: 11<br />\n', b'Mon - Partly Cloudy. High: 18 Low: 12<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Thu" date="14 Nov 2013" low="9" high="18" text="Partly Cloudy" code="29" />\n', b'<yweather:forecast day="Fri" date="15 Nov 2013" low="12" high="21" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Sat" date="16 Nov 2013" low="12" high="24" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Sun" date="17 Nov 2013" low="11" high="18" text="Mostly Cloudy" code="28" />\n', b'<yweather:forecast day="Mon" date="18 Nov 2013" low="12" high="18" text="Partly Cloudy" code="30" />\n', b'<guid isPermaLink="false">NZXX0006_2013_11_18_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan453.sports.gq1.yahoo.com Thu Nov 14 06:28:52 PST 2013 -->\n']
-Thu,14-Nov-2013~19:33 CONDITIONS: {'code': '30', 'temp': '14', 'text': 'Partly Cloudy', 'date': 'Thu, 14 Nov 2013 7:00 pm NZDT'}
-Thu,14-Nov-2013~19:33 CONDITIONS2: {'code': '29', 'high': '18', 'low': '9', 'text': 'Partly Cloudy', 'date': '14 Nov 2013'}
-Thu,14-Nov-2013~19:33 INTERACTION: It's 14°C, and partly cloudy. The high today is 18°C, partly cloudy.
-Thu,14-Nov-2013~19:33 PARTS: ['is it raining']
-Thu,14-Nov-2013~19:33 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('raining', 'NO')]
-Thu,14-Nov-2013~19:33 KIND: IMP
-Thu,14-Nov-2013~19:33 ACTIONS: {'weather': 1.0}
-Thu,14-Nov-2013~19:33 WEIGHTS: {1.0: ['weather']}
-Thu,14-Nov-2013~19:33 BEST: weather
-Thu,14-Nov-2013~19:33 INTERACTION: Hang on, Aaron...
-Thu,14-Nov-2013~19:33 KEYWORDS: [('raining', 3)]
-Thu,14-Nov-2013~19:33 TODAY: 3
-Thu,14-Nov-2013~19:33 DAY: 0
-Thu,14-Nov-2013~19:33 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Thu, 14 Nov 2013 7:00 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="14"   direction="80"   speed="25.75" />\n', b'<yweather:atmosphere humidity="67"  visibility="9.99"  pressure="1015.92"  rising="2" />\n', b'<yweather:astronomy sunrise="5:54 am"   sunset="8:29 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 7:00 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Thu, 14 Nov 2013 7:00 pm NZDT</pubDate>\n', b'<yweather:condition  text="Partly Cloudy"  code="30"  temp="14"  date="Thu, 14 Nov 2013 7:00 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/30.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Partly Cloudy, 14 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Thu - Partly Cloudy. High: 18 Low: 9<br />\n', b'Fri - Partly Cloudy. High: 21 Low: 12<br />\n', b'Sat - Partly Cloudy. High: 24 Low: 12<br />\n', b'Sun - Mostly Cloudy. High: 18 Low: 11<br />\n', b'Mon - Partly Cloudy. High: 18 Low: 12<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Thu" date="14 Nov 2013" low="9" high="18" text="Partly Cloudy" code="29" />\n', b'<yweather:forecast day="Fri" date="15 Nov 2013" low="12" high="21" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Sat" date="16 Nov 2013" low="12" high="24" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Sun" date="17 Nov 2013" low="11" high="18" text="Mostly Cloudy" code="28" />\n', b'<yweather:forecast day="Mon" date="18 Nov 2013" low="12" high="18" text="Partly Cloudy" code="30" />\n', b'<guid isPermaLink="false">NZXX0006_2013_11_18_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan495.sports.gq1.yahoo.com Thu Nov 14 06:28:16 PST 2013 -->\n']
-Thu,14-Nov-2013~19:33 CONDITIONS: {'code': '30', 'temp': '14', 'text': 'Partly Cloudy', 'date': 'Thu, 14 Nov 2013 7:00 pm NZDT'}
-Thu,14-Nov-2013~19:33 CONDITIONS2: {'code': '29', 'high': '18', 'low': '9', 'text': 'Partly Cloudy', 'date': '14 Nov 2013'}
-Thu,14-Nov-2013~19:33 INTERACTION: It's 14°C, and partly cloudy. The high today is 18°C, partly cloudy.
-Thu,14-Nov-2013~19:33 PARTS: ['shut up']
-Thu,14-Nov-2013~19:33 SENTENCE: [('You', 'PS'), ('shut', 'VB'), ('up', 'PP')]
-Thu,14-Nov-2013~19:33 KIND: IMP
-Thu,14-Nov-2013~19:33 ACTIONS: {}
-Thu,14-Nov-2013~19:33 WEIGHTS: {}
-Thu,14-Nov-2013~19:33 KEYWORDS: []
-Thu,14-Nov-2013~19:33 URL: http://www.google.com/search?q=
-Thu,14-Nov-2013~19:33 INTERACTION: Let me find out for you...
-Thu,14-Nov-2013~19:33 CODE: open http://www.google.com/search?q=
-Thu,14-Nov-2013~19:33 INTERACTION: Here, try this.
-Fri,15-Nov-2013~15:31 PARTS: ['what time is it']
-Fri,15-Nov-2013~15:31 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Fri,15-Nov-2013~15:31 KIND: INT
-Fri,15-Nov-2013~15:31 ACTIONS: {'clock': 1.0}
-Fri,15-Nov-2013~15:31 WEIGHTS: {1.0: ['clock']}
-Fri,15-Nov-2013~15:31 BEST: clock
-Fri,15-Nov-2013~15:31 KEYWORDS: ['time']
-Fri,15-Nov-2013~15:31 INTERACTION: It is 3:31pm.
-Fri,15-Nov-2013~15:31 PARTS: ['how hot is it']
-Fri,15-Nov-2013~15:31 SENTENCE: [('how', 'WH'), ('hot', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Fri,15-Nov-2013~15:31 KIND: INT
-Fri,15-Nov-2013~15:31 ACTIONS: {'weather': 1.0}
-Fri,15-Nov-2013~15:31 WEIGHTS: {1.0: ['weather']}
-Fri,15-Nov-2013~15:31 BEST: weather
-Fri,15-Nov-2013~15:31 INTERACTION: Hang on...
-Fri,15-Nov-2013~15:31 KEYWORDS: []
-Fri,15-Nov-2013~15:31 TODAY: 4
-Fri,15-Nov-2013~15:31 DAY: 0
-Fri,15-Nov-2013~15:31 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Fri, 15 Nov 2013 2:58 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="15"   direction="70"   speed="32.19" />\n', b'<yweather:atmosphere humidity="77"  visibility="9.99"  pressure="982.05"  rising="0" />\n', b'<yweather:astronomy sunrise="5:57 am"   sunset="8:31 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 2:58 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Fri, 15 Nov 2013 2:58 pm NZDT</pubDate>\n', b'<yweather:condition  text="Mostly Cloudy"  code="28"  temp="15"  date="Fri, 15 Nov 2013 2:58 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/28.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Mostly Cloudy, 15 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Fri - Partly Cloudy. High: 21 Low: 12<br />\n', b'Sat - Partly Cloudy. High: 24 Low: 12<br />\n', b'Sun - Partly Cloudy. High: 17 Low: 11<br />\n', b'Mon - Partly Cloudy. High: 18 Low: 11<br />\n', b'Tue - Partly Cloudy. High: 19 Low: 11<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Fri" date="15 Nov 2013" low="12" high="21" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Sat" date="16 Nov 2013" low="12" high="24" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Sun" date="17 Nov 2013" low="11" high="17" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Mon" date="18 Nov 2013" low="11" high="18" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Tue" date="19 Nov 2013" low="11" high="19" text="Partly Cloudy" code="30" />\n', b'<guid isPermaLink="false">NZXX0006_2013_11_19_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan511.sports.gq1.yahoo.com Fri Nov 15 02:28:13 PST 2013 -->\n']
-Fri,15-Nov-2013~15:31 CONDITIONS: {'code': '28', 'temp': '15', 'text': 'Mostly Cloudy', 'date': 'Fri, 15 Nov 2013 2:58 pm NZDT'}
-Fri,15-Nov-2013~15:31 CONDITIONS2: {'code': '30', 'high': '21', 'low': '12', 'text': 'Partly Cloudy', 'date': '15 Nov 2013'}
-Fri,15-Nov-2013~15:31 INTERACTION: It's 15°C, and mostly cloudy. The high today is 21°C, partly cloudy.
-Fri,15-Nov-2013~15:31 PARTS: ['tell me about CSS Off']
-Fri,15-Nov-2013~15:31 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('css', '??'), ('off', 'PP')]
-Fri,15-Nov-2013~15:31 KIND: IMP
-Fri,15-Nov-2013~15:31 ACTIONS: {'wikipedia': 2.0}
-Fri,15-Nov-2013~15:31 WEIGHTS: {2.0: ['wikipedia']}
-Fri,15-Nov-2013~15:31 BEST: wikipedia
-Fri,15-Nov-2013~15:31 KEYWORDS: [('css', 4)]
-Fri,15-Nov-2013~15:31 INTERACTION: Coming up, Aaron.
-Fri,15-Nov-2013~15:31 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=css&printable=yes
-Fri,15-Nov-2013~15:31 INTERACTION: Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation semantics (the look and formatting) of a document written in a markup language. Its most common application is to style web pages written in HTML and XHTML, but the language can also be applied to any kind of XML document, including plain XML, SVG and XUL.
-
-http://en.wikipedia.org/wiki/css
-Fri,15-Nov-2013~15:31 PARTS: ['google css off']
-Fri,15-Nov-2013~15:31 SENTENCE: [('google', '??'), ('css', '??'), ('off', 'PP')]
-Fri,15-Nov-2013~15:31 KIND: DEC
-Fri,15-Nov-2013~15:31 ACTIONS: {}
-Fri,15-Nov-2013~15:31 WEIGHTS: {}
-Fri,15-Nov-2013~15:31 KEYWORDS: [('google css', 0)]
-Fri,15-Nov-2013~15:31 URL: http://www.google.com/search?q=google+css
-Fri,15-Nov-2013~15:31 INTERACTION: Let me find out for you...
-Fri,15-Nov-2013~15:31 CODE: open http://www.google.com/search?q=google+css
-Fri,15-Nov-2013~15:31 INTERACTION: Here, try this.
-Tue,19-Nov-2013~23:17 PARTS: ['hi']
-Tue,19-Nov-2013~23:17 SENTENCE: [('hi', 'NS')]
-Tue,19-Nov-2013~23:17 KIND: DEC
-Tue,19-Nov-2013~23:17 ACTIONS: {'personality': 1.0}
-Tue,19-Nov-2013~23:17 WEIGHTS: {1.0: ['personality']}
-Tue,19-Nov-2013~23:17 BEST: personality
-Tue,19-Nov-2013~23:17 INTERACTION: Hi.
-Tue,19-Nov-2013~23:18 PARTS: ['what time it is']
-Tue,19-Nov-2013~23:18 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('it', 'PO'), ('be', 'VB')]
-Tue,19-Nov-2013~23:18 KIND: INT
-Tue,19-Nov-2013~23:18 ACTIONS: {'clock': 1.0}
-Tue,19-Nov-2013~23:18 WEIGHTS: {1.0: ['clock']}
-Tue,19-Nov-2013~23:18 BEST: clock
-Tue,19-Nov-2013~23:18 KEYWORDS: ['time']
-Tue,19-Nov-2013~23:18 INTERACTION: It is 11:18pm.
-Tue,19-Nov-2013~23:18 PARTS: ['will it rain tomorrow']
-Tue,19-Nov-2013~23:18 SENTENCE: [('You', 'PS'), ('will', 'VB'), ('it', 'PO'), ('rain', 'NO'), ('tomorrow', 'NO')]
-Tue,19-Nov-2013~23:18 KIND: IMP
-Tue,19-Nov-2013~23:18 ACTIONS: {'weather': 2.0}
-Tue,19-Nov-2013~23:18 WEIGHTS: {2.0: ['weather']}
-Tue,19-Nov-2013~23:18 BEST: weather
-Tue,19-Nov-2013~23:18 INTERACTION: Let me see, Aaron...
-Tue,19-Nov-2013~23:18 KEYWORDS: [('rain tomorrow', 3)]
-Tue,19-Nov-2013~23:18 TODAY: 1
-Tue,19-Nov-2013~23:18 DAY: 2
-Tue,19-Nov-2013~23:18 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Tue, 19 Nov 2013 10:31 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="14"   direction="70"   speed="33.8" />\n', b'<yweather:atmosphere humidity="88"  visibility="9.99"  pressure="1015.92"  rising="2" />\n', b'<yweather:astronomy sunrise="5:52 am"   sunset="8:36 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 10:31 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Tue, 19 Nov 2013 10:31 pm NZDT</pubDate>\n', b'<yweather:condition  text="Partly Cloudy"  code="29"  temp="14"  date="Tue, 19 Nov 2013 10:31 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/29.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Partly Cloudy, 14 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Tue - Partly Cloudy. High: 19 Low: 12<br />\n', b'Wed - Sunny. High: 22 Low: 13<br />\n', b'Thu - Mostly Sunny. High: 22 Low: 12<br />\n', b'Fri - AM Showers. High: 15 Low: 11<br />\n', b'Sat - Partly Cloudy. High: 18 Low: 12<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Tue" date="19 Nov 2013" low="12" high="19" text="Partly Cloudy" code="29" />\n', b'<yweather:forecast day="Wed" date="20 Nov 2013" low="13" high="22" text="Sunny" code="32" />\n', b'<yweather:forecast day="Thu" date="21 Nov 2013" low="12" high="22" text="Mostly Sunny" code="34" />\n', b'<yweather:forecast day="Fri" date="22 Nov 2013" low="11" high="15" text="AM Showers" code="39" />\n', b'<yweather:forecast day="Sat" date="23 Nov 2013" low="12" high="18" text="Partly Cloudy" code="30" />\n', b'<guid isPermaLink="false">NZXX0006_2013_11_23_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan501.sports.gq1.yahoo.com Tue Nov 19 10:16:37 PST 2013 -->\n']
-Tue,19-Nov-2013~23:18 CONDITIONS: {'code': '32', 'high': '22', 'low': '13', 'text': 'Sunny', 'date': '20 Nov 2013'}
-Tue,19-Nov-2013~23:18 INTERACTION: It will have a low of 13°C, a high of 22°C, and will be sunny.
-Tue,19-Nov-2013~23:18 PARTS: ['awesome']
-Tue,19-Nov-2013~23:18 SENTENCE: [('awesome', '??')]
-Tue,19-Nov-2013~23:18 KIND: DEC
-Tue,19-Nov-2013~23:18 ACTIONS: {}
-Tue,19-Nov-2013~23:18 WEIGHTS: {}
-Tue,19-Nov-2013~23:18 KEYWORDS: [('awesome', 0)]
-Tue,19-Nov-2013~23:18 URL: http://www.google.com/search?q=awesome
-Tue,19-Nov-2013~23:18 INTERACTION: Let me find out for you...
-Tue,19-Nov-2013~23:18 CODE: open http://www.google.com/search?q=awesome
-Tue,19-Nov-2013~23:18 INTERACTION: Here, try this.
-Wed,20-Nov-2013~10:33 PARTS: ["what's the time"]
-Wed,20-Nov-2013~10:33 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('time', 'NO')]
-Wed,20-Nov-2013~10:33 KIND: INT
-Wed,20-Nov-2013~10:33 ACTIONS: {'clock': 1.0}
-Wed,20-Nov-2013~10:33 WEIGHTS: {1.0: ['clock']}
-Wed,20-Nov-2013~10:33 BEST: clock
-Wed,20-Nov-2013~10:33 KEYWORDS: ['time']
-Wed,20-Nov-2013~10:33 INTERACTION: It is 10:33am.
-Wed,20-Nov-2013~19:39 INTERACTION: Bye!
-Wed,20-Nov-2013~19:39 Successfully imported Modules.clock
-Wed,20-Nov-2013~19:39 Successfully imported Modules.discover
-Wed,20-Nov-2013~19:39 Successfully imported Modules.finder
-Wed,20-Nov-2013~19:39 Successfully imported Modules.loader
-Wed,20-Nov-2013~19:39 Successfully imported Modules.media
-Wed,20-Nov-2013~19:39 Successfully imported Modules.personality
-Wed,20-Nov-2013~19:39 Successfully imported Modules.settings
-Wed,20-Nov-2013~19:39 Successfully imported Modules.weather
-Wed,20-Nov-2013~19:39 Successfully imported Modules.wikipedia
-Wed,20-Nov-2013~19:39 PARTS: ['hi']
-Wed,20-Nov-2013~19:39 SENTENCE: [('hi', 'NS')]
-Wed,20-Nov-2013~19:39 KIND: DEC
-Wed,20-Nov-2013~19:39 ACTIONS: {'personality': 1.0}
-Wed,20-Nov-2013~19:39 WEIGHTS: {1.0: ['personality']}
-Wed,20-Nov-2013~19:39 BEST: personality
-Wed,20-Nov-2013~19:39 INTERACTION: Hi, sir.
-Wed,20-Nov-2013~19:39 PARTS: ['what time is it']
-Wed,20-Nov-2013~19:39 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Wed,20-Nov-2013~19:39 KIND: INT
-Wed,20-Nov-2013~19:39 ACTIONS: {'clock': 1.0}
-Wed,20-Nov-2013~19:39 WEIGHTS: {1.0: ['clock']}
-Wed,20-Nov-2013~19:39 BEST: clock
-Wed,20-Nov-2013~19:39 KEYWORDS: ['time']
-Wed,20-Nov-2013~19:39 INTERACTION: It is 7:39pm.
-Wed,20-Nov-2013~19:39 PARTS: ['find the movie called tangled']
-Wed,20-Nov-2013~19:39 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('called', 'PP'), ('tangled', '??')]
-Wed,20-Nov-2013~19:39 KIND: IMP
-Wed,20-Nov-2013~19:39 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Wed,20-Nov-2013~19:39 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Wed,20-Nov-2013~19:39 BEST: finder
-Wed,20-Nov-2013~19:39 KEYWORDS: [('movie', 3), ('tangled', 5)]
-Wed,20-Nov-2013~19:39 PARAMETERS: movie tangled kind:movie 
-Wed,20-Nov-2013~19:39 movie
-Wed,20-Nov-2013~19:39 CODE: echo $HOME
-Wed,20-Nov-2013~19:39 CODE: mdfind -onlyin /Users/aaronstockdill/ "movie tangled kind:movie "
-Wed,20-Nov-2013~19:39 RESULTS FIRST 5:  ['/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v']
-Wed,20-Nov-2013~19:39 INTERACTION: Which of these do you want? 
-1. Tangled.m4v
-2. Tangled.m4v
-Wed,20-Nov-2013~19:39 ORDINALS: ['second']
-Wed,20-Nov-2013~19:39 CHOICE: 2
-Wed,20-Nov-2013~19:39 DECISION: /Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v
-Wed,20-Nov-2013~19:39 IT: /Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v
-Wed,20-Nov-2013~19:39 CODE: osascript -e "tell application \"Finder\" to reveal POSIX file \"/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v\""
-Wed,20-Nov-2013~19:39 INTERACTION: I found something...
-Wed,20-Nov-2013~19:39 PARTS: ['thank']
-Wed,20-Nov-2013~19:39 SENTENCE: [('thank', 'NS')]
-Wed,20-Nov-2013~19:39 KIND: DEC
-Wed,20-Nov-2013~19:39 ACTIONS: {'personality': 1.0}
-Wed,20-Nov-2013~19:39 WEIGHTS: {1.0: ['personality']}
-Wed,20-Nov-2013~19:39 BEST: personality
-Wed,20-Nov-2013~19:39 INTERACTION: Of course.
-Thu,21-Nov-2013~14:26 PARTS: ['restart']
-Thu,21-Nov-2013~14:26 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Thu,21-Nov-2013~14:26 KIND: IMP
-Thu,21-Nov-2013~14:26 ACTIONS: {'loader': 1.0}
-Thu,21-Nov-2013~14:26 WEIGHTS: {1.0: ['loader']}
-Thu,21-Nov-2013~14:26 BEST: loader
-Thu,21-Nov-2013~14:26 Successfully imported Modules.clock
-Thu,21-Nov-2013~14:26 Successfully imported Modules.discover
-Thu,21-Nov-2013~14:26 Successfully imported Modules.finder
-Thu,21-Nov-2013~14:26 Successfully imported Modules.loader
-Thu,21-Nov-2013~14:26 Successfully imported Modules.media
-Thu,21-Nov-2013~14:26 Successfully imported Modules.personality
-Thu,21-Nov-2013~14:26 Successfully imported Modules.settings
-Thu,21-Nov-2013~14:26 Successfully imported Modules.weather
-Thu,21-Nov-2013~14:26 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~14:26 PARTS: ['what time is it']
-Thu,21-Nov-2013~14:26 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Thu,21-Nov-2013~14:26 KIND: INT
-Thu,21-Nov-2013~14:26 ACTIONS: {'clock': 1.0}
-Thu,21-Nov-2013~14:26 WEIGHTS: {1.0: ['clock']}
-Thu,21-Nov-2013~14:26 BEST: clock
-Thu,21-Nov-2013~14:26 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:26 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:26 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:26 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:26 KEYWORDS: ['time']
-Thu,21-Nov-2013~14:26 INTERACTION: It is 2:26pm.
-Thu,21-Nov-2013~14:26 PARTS: ['what is the dat']
-Thu,21-Nov-2013~14:26 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('dat', '??')]
-Thu,21-Nov-2013~14:26 KIND: INT
-Thu,21-Nov-2013~14:26 ACTIONS: {}
-Thu,21-Nov-2013~14:26 WEIGHTS: {}
-Thu,21-Nov-2013~14:26 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:26 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:26 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:26 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:26 KEYWORDS: [('dat', 3)]
-Thu,21-Nov-2013~14:26 URL: http://www.google.com/search?q=dat
-Thu,21-Nov-2013~14:26 INTERACTION: Let me find out for you...
-Thu,21-Nov-2013~14:26 CODE: open http://www.google.com/search?q=dat
-Thu,21-Nov-2013~14:26 INTERACTION: Here, try this.
-Thu,21-Nov-2013~14:26 PARTS: ['what is the date']
-Thu,21-Nov-2013~14:26 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('date', 'NO')]
-Thu,21-Nov-2013~14:26 KIND: INT
-Thu,21-Nov-2013~14:26 ACTIONS: {'clock': 1.0}
-Thu,21-Nov-2013~14:26 WEIGHTS: {1.0: ['clock']}
-Thu,21-Nov-2013~14:26 BEST: clock
-Thu,21-Nov-2013~14:26 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:26 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:26 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:26 KEYWORDS: ['date']
-Thu,21-Nov-2013~14:26 INTERACTION: It is Thursday, 21 November 2013.
-Thu,21-Nov-2013~14:26 PARTS: ['what day is it']
-Thu,21-Nov-2013~14:26 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Thu,21-Nov-2013~14:26 KIND: INT
-Thu,21-Nov-2013~14:26 ACTIONS: {'clock': 1.0}
-Thu,21-Nov-2013~14:26 WEIGHTS: {1.0: ['clock']}
-Thu,21-Nov-2013~14:26 BEST: clock
-Thu,21-Nov-2013~14:26 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:26 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:26 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:26 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:26 KEYWORDS: ['day']
-Thu,21-Nov-2013~14:26 INTERACTION: It is Thursday.
-Thu,21-Nov-2013~14:27 PARTS: ['is it a friday']
-Thu,21-Nov-2013~14:27 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('the', 'AR'), ('friday', 'NO')]
-Thu,21-Nov-2013~14:27 KIND: IMP
-Thu,21-Nov-2013~14:27 ACTIONS: {'clock': 0.5, 'weather': 0.5}
-Thu,21-Nov-2013~14:27 WEIGHTS: {0.5: ['clock', 'weather']}
-Thu,21-Nov-2013~14:27 BEST: clock
-Thu,21-Nov-2013~14:27 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:27 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:27 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:27 KEYWORDS: ['friday']
-Thu,21-Nov-2013~14:27 INTERACTION: It is Thursday.
-Thu,21-Nov-2013~14:50 PARTS: ['restart']
-Thu,21-Nov-2013~14:50 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Thu,21-Nov-2013~14:50 KIND: IMP
-Thu,21-Nov-2013~14:50 ACTIONS: {'loader': 1.0}
-Thu,21-Nov-2013~14:50 WEIGHTS: {1.0: ['loader']}
-Thu,21-Nov-2013~14:50 BEST: loader
-Thu,21-Nov-2013~14:50 Successfully imported Modules.clock
-Thu,21-Nov-2013~14:50 Successfully imported Modules.discover
-Thu,21-Nov-2013~14:50 Successfully imported Modules.finder
-Thu,21-Nov-2013~14:50 Successfully imported Modules.loader
-Thu,21-Nov-2013~14:50 Successfully imported Modules.media
-Thu,21-Nov-2013~14:50 Successfully imported Modules.personality
-Thu,21-Nov-2013~14:50 Successfully imported Modules.settings
-Thu,21-Nov-2013~14:50 Successfully imported Modules.weather
-Thu,21-Nov-2013~14:50 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~14:50 PARTS: ['what time is it']
-Thu,21-Nov-2013~14:50 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Thu,21-Nov-2013~14:50 KIND: INT
-Thu,21-Nov-2013~14:50 ACTIONS: {'clock': 1.0}
-Thu,21-Nov-2013~14:50 WEIGHTS: {1.0: ['clock']}
-Thu,21-Nov-2013~14:50 BEST: clock
-Thu,21-Nov-2013~14:50 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:50 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:50 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:50 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:50 KEYWORDS: ['time']
-Thu,21-Nov-2013~14:50 INTERACTION: It is 2:50pm.
-Thu,21-Nov-2013~14:50 PARTS: ['find the movie tangled']
-Thu,21-Nov-2013~14:50 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??')]
-Thu,21-Nov-2013~14:50 KIND: IMP
-Thu,21-Nov-2013~14:50 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Thu,21-Nov-2013~14:50 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Thu,21-Nov-2013~14:50 BEST: finder
-Thu,21-Nov-2013~14:50 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:50 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:50 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:50 KEYWORDS: [('movie tangled', 3)]
-Thu,21-Nov-2013~14:50 PARAMETERS: movie tangled kind:movie 
-Thu,21-Nov-2013~14:50 movie tangled
-Thu,21-Nov-2013~14:50 CODE: echo $HOME
-Thu,21-Nov-2013~14:50 CODE: mdfind -onlyin /Users/aaronstockdill/ "movie tangled kind:movie "
-Thu,21-Nov-2013~14:50 RESULTS FIRST 5:  ['/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v']
-Thu,21-Nov-2013~14:50 INTERACTION: Which of these do you want? 
-1. Tangled.m4v
-2. Tangled.m4v
-Thu,21-Nov-2013~14:50 ORDINALS: ['first']
-Thu,21-Nov-2013~14:50 CHOICE: 1
-Thu,21-Nov-2013~14:50 DECISION: /Users/aaronstockdill/Movies/Tangled.m4v
-Thu,21-Nov-2013~14:50 IT: /Users/aaronstockdill/Movies/Tangled.m4v
-Thu,21-Nov-2013~14:50 CODE: osascript -e "tell application \"Finder\" to reveal POSIX file \"/Users/aaronstockdill/Movies/Tangled.m4v\""
-Thu,21-Nov-2013~14:50 INTERACTION: I found something...
-Thu,21-Nov-2013~14:50 PARTS: ['Open it']
-Thu,21-Nov-2013~14:50 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
-Thu,21-Nov-2013~14:50 KIND: IMP
-Thu,21-Nov-2013~14:50 ACTIONS: {'finder': 1.0}
-Thu,21-Nov-2013~14:50 WEIGHTS: {1.0: ['finder']}
-Thu,21-Nov-2013~14:50 BEST: finder
-Thu,21-Nov-2013~14:50 IT: /Users/aaronstockdill/Movies/Tangled.m4v
-Thu,21-Nov-2013~14:52 Successfully imported Modules.clock
-Thu,21-Nov-2013~14:52 Successfully imported Modules.discover
-Thu,21-Nov-2013~14:52 Successfully imported Modules.finder
-Thu,21-Nov-2013~14:52 Successfully imported Modules.loader
-Thu,21-Nov-2013~14:52 Successfully imported Modules.media
-Thu,21-Nov-2013~14:52 Successfully imported Modules.personality
-Thu,21-Nov-2013~14:52 Successfully imported Modules.settings
-Thu,21-Nov-2013~14:52 Successfully imported Modules.weather
-Thu,21-Nov-2013~14:52 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~14:53 PARTS: ['find the movie tangled']
-Thu,21-Nov-2013~14:53 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??')]
-Thu,21-Nov-2013~14:53 KIND: IMP
-Thu,21-Nov-2013~14:53 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Thu,21-Nov-2013~14:53 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Thu,21-Nov-2013~14:53 BEST: finder
-Thu,21-Nov-2013~14:53 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:53 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:53 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:53 KEYWORDS: [('movie tangled', 3)]
-Thu,21-Nov-2013~14:53 PARAMETERS: movie tangled kind:movie 
-Thu,21-Nov-2013~14:53 movie tangled
-Thu,21-Nov-2013~14:53 CODE: echo $HOME
-Thu,21-Nov-2013~14:53 CODE: mdfind -onlyin /Users/aaronstockdill/ "movie tangled kind:movie "
-Thu,21-Nov-2013~14:53 RESULTS FIRST 5:  ['/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v']
-Thu,21-Nov-2013~14:53 INTERACTION: Which of these do you want? 
-1. Tangled.m4v
-2. Tangled.m4v
-Thu,21-Nov-2013~14:53 ORDINALS: ['first']
-Thu,21-Nov-2013~14:53 CHOICE: 1
-Thu,21-Nov-2013~14:53 DECISION: /Users/aaronstockdill/Movies/Tangled.m4v
-Thu,21-Nov-2013~14:53 IT: /Users/aaronstockdill/Movies/Tangled.m4v
-Thu,21-Nov-2013~14:53 CODE: osascript -e "tell application \"Finder\" to reveal POSIX file \"/Users/aaronstockdill/Movies/Tangled.m4v\""
-Thu,21-Nov-2013~14:53 INTERACTION: I found something...
-Thu,21-Nov-2013~14:53 PARTS: ['open it']
-Thu,21-Nov-2013~14:53 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
-Thu,21-Nov-2013~14:53 KIND: IMP
-Thu,21-Nov-2013~14:53 ACTIONS: {'finder': 1.0}
-Thu,21-Nov-2013~14:53 WEIGHTS: {1.0: ['finder']}
-Thu,21-Nov-2013~14:53 BEST: finder
-Thu,21-Nov-2013~14:53 IT: /Users/aaronstockdill/Movies/Tangled.m4v
-Thu,21-Nov-2013~14:53 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:53 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:53 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:53 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:53 KEYWORDS: [('/Users/aaronstockdill/Movies/Tangled.m4v', 2)]
-Thu,21-Nov-2013~14:54 Successfully imported Modules.clock
-Thu,21-Nov-2013~14:54 Successfully imported Modules.discover
-Thu,21-Nov-2013~14:54 Successfully imported Modules.finder
-Thu,21-Nov-2013~14:54 Successfully imported Modules.loader
-Thu,21-Nov-2013~14:54 Successfully imported Modules.media
-Thu,21-Nov-2013~14:54 Successfully imported Modules.personality
-Thu,21-Nov-2013~14:54 Successfully imported Modules.settings
-Thu,21-Nov-2013~14:54 Successfully imported Modules.weather
-Thu,21-Nov-2013~14:54 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~14:54 PARTS: ['find the movie django unchained']
-Thu,21-Nov-2013~14:54 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('django', '??'), ('unchained', '??')]
-Thu,21-Nov-2013~14:54 KIND: IMP
-Thu,21-Nov-2013~14:54 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Thu,21-Nov-2013~14:54 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Thu,21-Nov-2013~14:54 BEST: finder
-Thu,21-Nov-2013~14:54 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:54 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:54 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:54 KEYWORDS: [('movie django unchained', 3)]
-Thu,21-Nov-2013~14:54 PARAMETERS: movie django unchained kind:movie 
-Thu,21-Nov-2013~14:54 movie django unchained
-Thu,21-Nov-2013~14:54 CODE: echo $HOME
-Thu,21-Nov-2013~14:54 CODE: mdfind -onlyin /Users/aaronstockdill/ "movie django unchained kind:movie "
-Thu,21-Nov-2013~14:54 RESULTS FIRST 5:  ['/Users/aaronstockdill/Movies/Django Unchained.m4v']
-Thu,21-Nov-2013~14:54 DECISION: /Users/aaronstockdill/Movies/Django Unchained.m4v
-Thu,21-Nov-2013~14:54 IT: /Users/aaronstockdill/Movies/Django Unchained.m4v
-Thu,21-Nov-2013~14:54 CODE: osascript -e "tell application \"Finder\" to reveal POSIX file \"/Users/aaronstockdill/Movies/Django Unchained.m4v\""
-Thu,21-Nov-2013~14:54 INTERACTION: I found something...
-Thu,21-Nov-2013~14:54 PARTS: ['open it']
-Thu,21-Nov-2013~14:54 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
-Thu,21-Nov-2013~14:54 KIND: IMP
-Thu,21-Nov-2013~14:54 ACTIONS: {'finder': 1.0}
-Thu,21-Nov-2013~14:54 WEIGHTS: {1.0: ['finder']}
-Thu,21-Nov-2013~14:54 BEST: finder
-Thu,21-Nov-2013~14:54 IT: /Users/aaronstockdill/Movies/Django Unchained.m4v
-Thu,21-Nov-2013~14:54 CODE: open "/Users/aaronstockdill/Movies/Django Unchained.m4v"
-Thu,21-Nov-2013~14:54 INTERACTION: Opening it.
-Thu,21-Nov-2013~14:54 PARTS: ['thanks']
-Thu,21-Nov-2013~14:54 SENTENCE: [('thank', 'NS')]
-Thu,21-Nov-2013~14:54 KIND: DEC
-Thu,21-Nov-2013~14:54 ACTIONS: {'personality': 1.0}
-Thu,21-Nov-2013~14:54 WEIGHTS: {1.0: ['personality']}
-Thu,21-Nov-2013~14:54 BEST: personality
-Thu,21-Nov-2013~14:54 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:54 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:54 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:54 NOT JOINED IN join_lists: None
-Thu,21-Nov-2013~14:54 INTERACTION: No worries.
-Thu,21-Nov-2013~14:55 PARTS: ['restart']
-Thu,21-Nov-2013~14:55 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Thu,21-Nov-2013~14:55 KIND: IMP
-Thu,21-Nov-2013~14:55 ACTIONS: {'loader': 1.0}
-Thu,21-Nov-2013~14:55 WEIGHTS: {1.0: ['loader']}
-Thu,21-Nov-2013~14:55 BEST: loader
-Thu,21-Nov-2013~14:55 Successfully imported Modules.clock
-Thu,21-Nov-2013~14:55 Successfully imported Modules.discover
-Thu,21-Nov-2013~14:55 Successfully imported Modules.finder
-Thu,21-Nov-2013~14:55 Successfully imported Modules.loader
-Thu,21-Nov-2013~14:55 Successfully imported Modules.media
-Thu,21-Nov-2013~14:55 Successfully imported Modules.personality
-Thu,21-Nov-2013~14:55 Successfully imported Modules.settings
-Thu,21-Nov-2013~14:55 Successfully imported Modules.weather
-Thu,21-Nov-2013~14:55 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~14:55 PARTS: ['what time is it']
-Thu,21-Nov-2013~14:55 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Thu,21-Nov-2013~14:55 KIND: INT
-Thu,21-Nov-2013~14:55 ACTIONS: {'clock': 1.0}
-Thu,21-Nov-2013~14:55 WEIGHTS: {1.0: ['clock']}
-Thu,21-Nov-2013~14:55 BEST: clock
-Thu,21-Nov-2013~14:55 KEYWORDS: ['time']
-Thu,21-Nov-2013~14:55 INTERACTION: It is 2:55pm.
-Thu,21-Nov-2013~14:57 PARTS: ['restart']
-Thu,21-Nov-2013~14:57 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Thu,21-Nov-2013~14:57 KIND: IMP
-Thu,21-Nov-2013~14:57 ACTIONS: {'loader': 1.0}
-Thu,21-Nov-2013~14:57 WEIGHTS: {1.0: ['loader']}
-Thu,21-Nov-2013~14:57 BEST: loader
-Thu,21-Nov-2013~14:57 Successfully imported Modules.clock
-Thu,21-Nov-2013~14:57 Successfully imported Modules.discover
-Thu,21-Nov-2013~14:57 Successfully imported Modules.finder
-Thu,21-Nov-2013~14:57 Successfully imported Modules.loader
-Thu,21-Nov-2013~14:57 Successfully imported Modules.media
-Thu,21-Nov-2013~14:57 Successfully imported Modules.personality
-Thu,21-Nov-2013~14:57 Successfully imported Modules.settings
-Thu,21-Nov-2013~14:57 Successfully imported Modules.weather
-Thu,21-Nov-2013~14:57 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~14:57 PARTS: ['what time is it']
-Thu,21-Nov-2013~14:57 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Thu,21-Nov-2013~14:57 KIND: INT
-Thu,21-Nov-2013~14:57 ACTIONS: {'clock': 1.0}
-Thu,21-Nov-2013~14:57 WEIGHTS: {1.0: ['clock']}
-Thu,21-Nov-2013~14:57 BEST: clock
-Thu,21-Nov-2013~14:57 [('time', 1)]
-Thu,21-Nov-2013~14:57 KEYWORDS: ['time']
-Thu,21-Nov-2013~14:57 INTERACTION: It is 2:57pm.
-Thu,21-Nov-2013~14:57 PARTS: ['restart']
-Thu,21-Nov-2013~14:57 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Thu,21-Nov-2013~14:57 KIND: IMP
-Thu,21-Nov-2013~14:57 ACTIONS: {'loader': 1.0}
-Thu,21-Nov-2013~14:57 WEIGHTS: {1.0: ['loader']}
-Thu,21-Nov-2013~14:57 BEST: loader
-Thu,21-Nov-2013~14:57 Successfully imported Modules.clock
-Thu,21-Nov-2013~14:57 Successfully imported Modules.discover
-Thu,21-Nov-2013~14:57 Successfully imported Modules.finder
-Thu,21-Nov-2013~14:57 Successfully imported Modules.loader
-Thu,21-Nov-2013~14:57 Successfully imported Modules.media
-Thu,21-Nov-2013~14:57 Successfully imported Modules.personality
-Thu,21-Nov-2013~14:57 Successfully imported Modules.settings
-Thu,21-Nov-2013~14:57 Successfully imported Modules.weather
-Thu,21-Nov-2013~14:57 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~14:57 PARTS: ['what time is it']
-Thu,21-Nov-2013~14:57 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Thu,21-Nov-2013~14:57 KIND: INT
-Thu,21-Nov-2013~14:57 ACTIONS: {'clock': 1.0}
-Thu,21-Nov-2013~14:57 WEIGHTS: {1.0: ['clock']}
-Thu,21-Nov-2013~14:57 BEST: clock
-Thu,21-Nov-2013~14:57 [('time', 1)]
-Thu,21-Nov-2013~14:57 KEYWORDS: ['time']
-Thu,21-Nov-2013~14:57 INTERACTION: It is 2:57pm.
-Thu,21-Nov-2013~14:58 PARTS: ['find the movie django unchained']
-Thu,21-Nov-2013~14:58 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('django', '??'), ('unchained', '??')]
-Thu,21-Nov-2013~14:58 KIND: IMP
-Thu,21-Nov-2013~14:58 ACTIONS: {'wikipedia': 0.5, 'finder': 1.5}
-Thu,21-Nov-2013~14:58 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Thu,21-Nov-2013~14:58 BEST: finder
-Thu,21-Nov-2013~14:58 [('movie django unchained', 3)]
-Thu,21-Nov-2013~14:58 KEYWORDS: [('movie django unchained', 3)]
-Thu,21-Nov-2013~14:58 PARAMETERS: movie django unchained kind:movie 
-Thu,21-Nov-2013~14:58 movie django unchained
-Thu,21-Nov-2013~14:58 CODE: echo $HOME
-Thu,21-Nov-2013~14:58 CODE: mdfind -onlyin /Users/aaronstockdill/ "movie django unchained kind:movie "
-Thu,21-Nov-2013~14:58 RESULTS FIRST 5:  ['/Users/aaronstockdill/Movies/Django Unchained.m4v']
-Thu,21-Nov-2013~14:58 DECISION: /Users/aaronstockdill/Movies/Django Unchained.m4v
-Thu,21-Nov-2013~14:58 IT: /Users/aaronstockdill/Movies/Django Unchained.m4v
-Thu,21-Nov-2013~14:58 CODE: osascript -e "tell application \"Finder\" to reveal POSIX file \"/Users/aaronstockdill/Movies/Django Unchained.m4v\""
-Thu,21-Nov-2013~14:58 INTERACTION: I found something...
-Thu,21-Nov-2013~20:16 PARTS: ['restart']
-Thu,21-Nov-2013~20:16 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Thu,21-Nov-2013~20:16 KIND: IMP
-Thu,21-Nov-2013~20:16 ACTIONS: {'loader': 1.0}
-Thu,21-Nov-2013~20:16 WEIGHTS: {1.0: ['loader']}
-Thu,21-Nov-2013~20:16 BEST: loader
-Thu,21-Nov-2013~20:16 Successfully imported Modules.clock
-Thu,21-Nov-2013~20:16 Successfully imported Modules.discover
-Thu,21-Nov-2013~20:16 Successfully imported Modules.finder
-Thu,21-Nov-2013~20:16 Successfully imported Modules.loader
-Thu,21-Nov-2013~20:16 Successfully imported Modules.media
-Thu,21-Nov-2013~20:16 Successfully imported Modules.personality
-Thu,21-Nov-2013~20:16 Successfully imported Modules.settings
-Thu,21-Nov-2013~20:16 Successfully imported Modules.weather
-Thu,21-Nov-2013~20:16 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~20:17 PARTS: ["what's the date today"]
-Thu,21-Nov-2013~20:17 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('date', 'NO'), ('today', 'NO')]
-Thu,21-Nov-2013~20:17 KIND: INT
-Thu,21-Nov-2013~20:17 ACTIONS: {'weather': 0.5, 'clock': 1.5}
-Thu,21-Nov-2013~20:17 WEIGHTS: {0.5: ['weather'], 1.5: ['clock']}
-Thu,21-Nov-2013~20:17 BEST: clock
-Thu,21-Nov-2013~20:17 KEYWORDS: ['date', 'today']
-Thu,21-Nov-2013~20:17 INTERACTION: It is Thursday, 21 November 2013.
-Thu,21-Nov-2013~20:17 PARTS: ['h']
-Thu,21-Nov-2013~20:17 SENTENCE: [('h', '??')]
-Thu,21-Nov-2013~20:17 KIND: DEC
-Thu,21-Nov-2013~20:17 ACTIONS: {}
-Thu,21-Nov-2013~20:17 WEIGHTS: {}
-Thu,21-Nov-2013~20:17 KEYWORDS: [('h', 0)]
-Thu,21-Nov-2013~20:17 URL: http://www.google.com/search?q=h
-Thu,21-Nov-2013~20:17 INTERACTION: Let me find out for you...
-Thu,21-Nov-2013~20:17 CODE: open http://www.google.com/search?q=h
-Thu,21-Nov-2013~20:17 INTERACTION: Here, try this.
-Thu,21-Nov-2013~20:17 PARTS: ['hi']
-Thu,21-Nov-2013~20:17 SENTENCE: [('hi', 'NS')]
-Thu,21-Nov-2013~20:17 KIND: DEC
-Thu,21-Nov-2013~20:17 ACTIONS: {'personality': 1.0}
-Thu,21-Nov-2013~20:17 WEIGHTS: {1.0: ['personality']}
-Thu,21-Nov-2013~20:17 BEST: personality
-Thu,21-Nov-2013~20:17 INTERACTION: Hello, sir.
-Thu,21-Nov-2013~20:17 PARTS: ['yo']
-Thu,21-Nov-2013~20:17 SENTENCE: [('yo', 'NS')]
-Thu,21-Nov-2013~20:17 KIND: DEC
-Thu,21-Nov-2013~20:17 ACTIONS: {'personality': 1.0}
-Thu,21-Nov-2013~20:17 WEIGHTS: {1.0: ['personality']}
-Thu,21-Nov-2013~20:17 BEST: personality
-Thu,21-Nov-2013~20:17 INTERACTION: Hello.
-Thu,21-Nov-2013~20:17 PARTS: ['hey paul']
-Thu,21-Nov-2013~20:17 SENTENCE: [('hey', '??'), ('paul', 'XS')]
-Thu,21-Nov-2013~20:17 KIND: DEC
-Thu,21-Nov-2013~20:17 ACTIONS: {}
-Thu,21-Nov-2013~20:17 WEIGHTS: {}
-Thu,21-Nov-2013~20:17 KEYWORDS: [('hey', 0)]
-Thu,21-Nov-2013~20:17 URL: http://www.google.com/search?q=hey
-Thu,21-Nov-2013~20:17 INTERACTION: Let me find out for you...
-Thu,21-Nov-2013~20:17 CODE: open http://www.google.com/search?q=hey
-Thu,21-Nov-2013~20:17 INTERACTION: Here, try this.
-Thu,21-Nov-2013~22:19 PARTS: ['restart']
-Thu,21-Nov-2013~22:19 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Thu,21-Nov-2013~22:19 KIND: IMP
-Thu,21-Nov-2013~22:19 ACTIONS: {'loader': 1.0}
-Thu,21-Nov-2013~22:19 WEIGHTS: {1.0: ['loader']}
-Thu,21-Nov-2013~22:19 BEST: loader
-Thu,21-Nov-2013~22:19 Successfully imported Modules.clock
-Thu,21-Nov-2013~22:19 Successfully imported Modules.discover
-Thu,21-Nov-2013~22:19 Successfully imported Modules.finder
-Thu,21-Nov-2013~22:19 Successfully imported Modules.loader
-Thu,21-Nov-2013~22:19 Successfully imported Modules.media
-Thu,21-Nov-2013~22:19 Successfully imported Modules.personality
-Thu,21-Nov-2013~22:19 Successfully imported Modules.settings
-Thu,21-Nov-2013~22:19 Successfully imported Modules.weather
-Thu,21-Nov-2013~22:19 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~22:19 PARTS: ['find the movie tangled']
-Thu,21-Nov-2013~22:19 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('tangled', '??')]
-Thu,21-Nov-2013~22:19 KIND: IMP
-Thu,21-Nov-2013~22:19 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Thu,21-Nov-2013~22:19 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Thu,21-Nov-2013~22:19 BEST: finder
-Thu,21-Nov-2013~22:19 KEYWORDS: [('movie tangled', 3)]
-Thu,21-Nov-2013~22:19 PARAMETERS: movie tangled kind:movie 
-Thu,21-Nov-2013~22:19 movie tangled
-Thu,21-Nov-2013~22:19 CODE: echo $HOME
-Thu,21-Nov-2013~22:19 CODE: mdfind -onlyin /Users/aaronstockdill/ "movie tangled kind:movie "
-Thu,21-Nov-2013~22:19 RESULTS FIRST 5:  ['/Users/aaronstockdill/Movies/Tangled.m4v', '/Users/aaronstockdill/Music/iTunes/iTunes Media/Movies/Tangled/Tangled.m4v']
-Thu,21-Nov-2013~22:19 INTERACTION: Which of these do you want? 
-1. Tangled.m4v
-2. Tangled.m4v
-Thu,21-Nov-2013~22:19 ORDINALS: ['first']
-Thu,21-Nov-2013~22:19 CHOICE: 1
-Thu,21-Nov-2013~22:19 DECISION: /Users/aaronstockdill/Movies/Tangled.m4v
-Thu,21-Nov-2013~22:19 IT: /Users/aaronstockdill/Movies/Tangled.m4v
-Thu,21-Nov-2013~22:19 CODE: osascript -e "tell application \"Finder\" to reveal POSIX file \"/Users/aaronstockdill/Movies/Tangled.m4v\""
-Thu,21-Nov-2013~22:19 INTERACTION: I found something...
-Thu,21-Nov-2013~22:19 PARTS: ['find the movie django unchained']
-Thu,21-Nov-2013~22:19 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('django', '??'), ('unchained', '??')]
-Thu,21-Nov-2013~22:19 KIND: IMP
-Thu,21-Nov-2013~22:19 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Thu,21-Nov-2013~22:19 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Thu,21-Nov-2013~22:19 BEST: finder
-Thu,21-Nov-2013~22:19 KEYWORDS: [('movie django unchained', 3)]
-Thu,21-Nov-2013~22:19 PARAMETERS: movie django unchained kind:movie 
-Thu,21-Nov-2013~22:19 movie django unchained
-Thu,21-Nov-2013~22:19 CODE: echo $HOME
-Thu,21-Nov-2013~22:19 CODE: mdfind -onlyin /Users/aaronstockdill/ "movie django unchained kind:movie "
-Thu,21-Nov-2013~22:19 RESULTS FIRST 5:  ['/Users/aaronstockdill/Movies/Django Unchained.m4v']
-Thu,21-Nov-2013~22:19 DECISION: /Users/aaronstockdill/Movies/Django Unchained.m4v
-Thu,21-Nov-2013~22:19 IT: /Users/aaronstockdill/Movies/Django Unchained.m4v
-Thu,21-Nov-2013~22:19 CODE: osascript -e "tell application \"Finder\" to reveal POSIX file \"/Users/aaronstockdill/Movies/Django Unchained.m4v\""
-Thu,21-Nov-2013~22:19 INTERACTION: I found something...
-Thu,21-Nov-2013~22:19 PARTS: ['find the file test']
-Thu,21-Nov-2013~22:19 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('file', 'NO'), ('test', '??')]
-Thu,21-Nov-2013~22:19 KIND: IMP
-Thu,21-Nov-2013~22:19 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Thu,21-Nov-2013~22:19 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Thu,21-Nov-2013~22:19 BEST: finder
-Thu,21-Nov-2013~22:19 KEYWORDS: [('test', 4)]
-Thu,21-Nov-2013~22:19 PARAMETERS: test
-Thu,21-Nov-2013~22:19 test
-Thu,21-Nov-2013~22:19 CODE: echo $HOME
-Thu,21-Nov-2013~22:19 CODE: mdfind -onlyin /Users/aaronstockdill/ "test"
-Thu,21-Nov-2013~22:19 RESULTS FIRST 5:  ['/Users/aaronstockdill/Desktop/test.gnu', '/Users/aaronstockdill/Desktop/test.eps', '/Users/aaronstockdill/Dropbox/Public/t.pdf', '/Users/aaronstockdill/Downloads/InfoExam.pdf', '/Users/aaronstockdill/Downloads/part-2-v6.zip', '/Users/aaronstockdill/Downloads/part-2/texts/mp.txt', '/Users/aaronstockdill/Downloads/part-2/texts/sns.txt', '/Users/aaronstockdill/Downloads/part-2/texts/pnp.txt', '/Users/aaronstockdill/Downloads/MATH103-12S2_Exam.pdf', '/Users/aaronstockdill/Downloads/part-2/texts/emma.txt']
-Thu,21-Nov-2013~22:19 INTERACTION: Which of these do you want? 
-1. test.gnu
-2. test.eps
-3. t.pdf
-4. InfoExam.pdf
-5. part-2-v6.zip
-Thu,21-Nov-2013~22:20 DECISION: None
-Thu,21-Nov-2013~22:20 IT: None
-Thu,21-Nov-2013~22:20 INTERACTION: I couldn't find anything.
-Thu,21-Nov-2013~22:35 PARTS: ['restart']
-Thu,21-Nov-2013~22:35 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Thu,21-Nov-2013~22:35 KIND: IMP
-Thu,21-Nov-2013~22:35 ACTIONS: {'loader': 1.0}
-Thu,21-Nov-2013~22:35 WEIGHTS: {1.0: ['loader']}
-Thu,21-Nov-2013~22:35 BEST: loader
-Thu,21-Nov-2013~22:35 Successfully imported Modules.clock
-Thu,21-Nov-2013~22:35 Successfully imported Modules.discover
-Thu,21-Nov-2013~22:35 Successfully imported Modules.finder
-Thu,21-Nov-2013~22:35 Successfully imported Modules.loader
-Thu,21-Nov-2013~22:35 Successfully imported Modules.media
-Thu,21-Nov-2013~22:35 Successfully imported Modules.personality
-Thu,21-Nov-2013~22:35 Successfully imported Modules.settings
-Thu,21-Nov-2013~22:35 Successfully imported Modules.weather
-Thu,21-Nov-2013~22:35 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~22:35 PARTS: ['find the file test']
-Thu,21-Nov-2013~22:35 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('file', 'NO'), ('test', '??')]
-Thu,21-Nov-2013~22:35 KIND: IMP
-Thu,21-Nov-2013~22:35 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Thu,21-Nov-2013~22:35 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Thu,21-Nov-2013~22:35 BEST: finder
-Thu,21-Nov-2013~22:35 KEYWORDS: [('test', 4)]
-Thu,21-Nov-2013~22:35 PARAMETERS: test
-Thu,21-Nov-2013~22:35 test
-Thu,21-Nov-2013~22:35 CODE: echo $HOME
-Thu,21-Nov-2013~22:35 CODE: mdfind -onlyin /Users/aaronstockdill/ "test"
-Thu,21-Nov-2013~22:35 RESULTS FIRST 5:  ['/Users/aaronstockdill/Desktop/test.gnu', '/Users/aaronstockdill/Desktop/test.eps', '/Users/aaronstockdill/Dropbox/Public/t.pdf', '/Users/aaronstockdill/Downloads/InfoExam.pdf', '/Users/aaronstockdill/Downloads/part-2-v6.zip', '/Users/aaronstockdill/Downloads/part-2/texts/mp.txt', '/Users/aaronstockdill/Downloads/part-2/texts/sns.txt', '/Users/aaronstockdill/Downloads/part-2/texts/pnp.txt', '/Users/aaronstockdill/Downloads/MATH103-12S2_Exam.pdf', '/Users/aaronstockdill/Downloads/part-2/texts/emma.txt']
-Thu,21-Nov-2013~22:35 INTERACTION: Which of these do you want? 
-1. test.gnu
-2. test.eps
-3. t.pdf
-4. InfoExam.pdf
-5. part-2-v6.zip
-Thu,21-Nov-2013~22:35 DECISION: None
-Thu,21-Nov-2013~22:35 IT: None
-Thu,21-Nov-2013~22:35 INTERACTION: I couldn't find anything.
-Thu,21-Nov-2013~22:35 PARTS: ['seventh']
-Thu,21-Nov-2013~22:35 SENTENCE: [('seventh', '??')]
-Thu,21-Nov-2013~22:35 KIND: DEC
-Thu,21-Nov-2013~22:35 ACTIONS: {}
-Thu,21-Nov-2013~22:35 WEIGHTS: {}
-Thu,21-Nov-2013~22:35 KEYWORDS: [('seventh', 0)]
-Thu,21-Nov-2013~22:35 URL: http://www.google.com/search?q=seventh
-Thu,21-Nov-2013~22:35 INTERACTION: Let me find out for you...
-Thu,21-Nov-2013~22:35 CODE: open http://www.google.com/search?q=seventh
-Thu,21-Nov-2013~22:35 INTERACTION: Here, try this.
-Thu,21-Nov-2013~22:38 PARTS: ['restart']
-Thu,21-Nov-2013~22:38 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Thu,21-Nov-2013~22:38 KIND: IMP
-Thu,21-Nov-2013~22:38 ACTIONS: {'loader': 1.0}
-Thu,21-Nov-2013~22:38 WEIGHTS: {1.0: ['loader']}
-Thu,21-Nov-2013~22:38 BEST: loader
-Thu,21-Nov-2013~22:38 Successfully imported Modules.clock
-Thu,21-Nov-2013~22:38 Successfully imported Modules.discover
-Thu,21-Nov-2013~22:38 Successfully imported Modules.finder
-Thu,21-Nov-2013~22:38 Successfully imported Modules.loader
-Thu,21-Nov-2013~22:38 Successfully imported Modules.media
-Thu,21-Nov-2013~22:38 Successfully imported Modules.personality
-Thu,21-Nov-2013~22:38 Successfully imported Modules.settings
-Thu,21-Nov-2013~22:38 Successfully imported Modules.weather
-Thu,21-Nov-2013~22:38 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~22:38 PARTS: ['twenty second']
-Thu,21-Nov-2013~22:38 SENTENCE: [('twenty', '??'), ('second', '??')]
-Thu,21-Nov-2013~22:38 KIND: DEC
-Thu,21-Nov-2013~22:38 ACTIONS: {}
-Thu,21-Nov-2013~22:38 WEIGHTS: {}
-Thu,21-Nov-2013~22:38 KEYWORDS: [('twenty second', 0)]
-Thu,21-Nov-2013~22:38 URL: http://www.google.com/search?q=twenty+second
-Thu,21-Nov-2013~22:38 INTERACTION: Let me find out for you...
-Thu,21-Nov-2013~22:38 CODE: open http://www.google.com/search?q=twenty+second
-Thu,21-Nov-2013~22:38 INTERACTION: Here, try this.
-Thu,21-Nov-2013~22:39 PARTS: ['restart']
-Thu,21-Nov-2013~22:39 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Thu,21-Nov-2013~22:39 KIND: IMP
-Thu,21-Nov-2013~22:39 ACTIONS: {'loader': 1.0}
-Thu,21-Nov-2013~22:39 WEIGHTS: {1.0: ['loader']}
-Thu,21-Nov-2013~22:39 BEST: loader
-Thu,21-Nov-2013~22:39 Successfully imported Modules.clock
-Thu,21-Nov-2013~22:39 Successfully imported Modules.discover
-Thu,21-Nov-2013~22:39 Successfully imported Modules.finder
-Thu,21-Nov-2013~22:39 Successfully imported Modules.loader
-Thu,21-Nov-2013~22:39 Successfully imported Modules.media
-Thu,21-Nov-2013~22:39 Successfully imported Modules.personality
-Thu,21-Nov-2013~22:39 Successfully imported Modules.settings
-Thu,21-Nov-2013~22:39 Successfully imported Modules.weather
-Thu,21-Nov-2013~22:39 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~22:39 PARTS: ['twenty second']
-Thu,21-Nov-2013~22:39 SENTENCE: [('twenty', 'OR'), ('second', 'OR')]
-Thu,21-Nov-2013~22:39 KIND: DEC
-Thu,21-Nov-2013~22:39 ACTIONS: {}
-Thu,21-Nov-2013~22:39 WEIGHTS: {}
-Thu,21-Nov-2013~22:39 KEYWORDS: [('twenty second', 0)]
-Thu,21-Nov-2013~22:39 URL: http://www.google.com/search?q=twenty+second
-Thu,21-Nov-2013~22:39 INTERACTION: Let me find out for you...
-Thu,21-Nov-2013~22:39 CODE: open http://www.google.com/search?q=twenty+second
-Thu,21-Nov-2013~22:39 INTERACTION: Here, try this.
-Thu,21-Nov-2013~22:48 PARTS: ['restart']
-Thu,21-Nov-2013~22:48 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Thu,21-Nov-2013~22:48 KIND: IMP
-Thu,21-Nov-2013~22:48 ACTIONS: {'loader': 1.0}
-Thu,21-Nov-2013~22:48 WEIGHTS: {1.0: ['loader']}
-Thu,21-Nov-2013~22:48 BEST: loader
-Thu,21-Nov-2013~22:48 Successfully imported Modules.clock
-Thu,21-Nov-2013~22:48 Successfully imported Modules.discover
-Thu,21-Nov-2013~22:48 Successfully imported Modules.finder
-Thu,21-Nov-2013~22:48 Successfully imported Modules.loader
-Thu,21-Nov-2013~22:48 Successfully imported Modules.media
-Thu,21-Nov-2013~22:48 Successfully imported Modules.personality
-Thu,21-Nov-2013~22:48 Successfully imported Modules.settings
-Thu,21-Nov-2013~22:48 Successfully imported Modules.weather
-Thu,21-Nov-2013~22:48 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~22:48 PARTS: ['find the file test']
-Thu,21-Nov-2013~22:50 Successfully imported Modules.clock
-Thu,21-Nov-2013~22:50 Successfully imported Modules.discover
-Thu,21-Nov-2013~22:50 Successfully imported Modules.finder
-Thu,21-Nov-2013~22:50 Successfully imported Modules.loader
-Thu,21-Nov-2013~22:50 Successfully imported Modules.media
-Thu,21-Nov-2013~22:50 Successfully imported Modules.personality
-Thu,21-Nov-2013~22:50 Successfully imported Modules.settings
-Thu,21-Nov-2013~22:50 Successfully imported Modules.weather
-Thu,21-Nov-2013~22:50 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~22:50 PARTS: ['find the file test']
-Thu,21-Nov-2013~22:52 Successfully imported Modules.clock
-Thu,21-Nov-2013~22:52 Successfully imported Modules.discover
-Thu,21-Nov-2013~22:52 Successfully imported Modules.finder
-Thu,21-Nov-2013~22:52 Successfully imported Modules.loader
-Thu,21-Nov-2013~22:52 Successfully imported Modules.media
-Thu,21-Nov-2013~22:52 Successfully imported Modules.personality
-Thu,21-Nov-2013~22:52 Successfully imported Modules.settings
-Thu,21-Nov-2013~22:52 Successfully imported Modules.weather
-Thu,21-Nov-2013~22:52 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~22:52 PARTS: ['find the file called test']
-Thu,21-Nov-2013~22:52 Successfully imported Modules.clock
-Thu,21-Nov-2013~22:52 Successfully imported Modules.discover
-Thu,21-Nov-2013~22:52 Successfully imported Modules.finder
-Thu,21-Nov-2013~22:52 Successfully imported Modules.loader
-Thu,21-Nov-2013~22:52 Successfully imported Modules.media
-Thu,21-Nov-2013~22:52 Successfully imported Modules.personality
-Thu,21-Nov-2013~22:52 Successfully imported Modules.settings
-Thu,21-Nov-2013~22:52 Successfully imported Modules.weather
-Thu,21-Nov-2013~22:52 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~22:52 PARTS: ['find the file test']
-Thu,21-Nov-2013~22:52 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('file', 'NO'), ('test', '??')]
-Thu,21-Nov-2013~22:52 KIND: IMP
-Thu,21-Nov-2013~22:52 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Thu,21-Nov-2013~22:52 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Thu,21-Nov-2013~22:52 BEST: finder
-Thu,21-Nov-2013~22:52 KEYWORDS: [('test', 4)]
-Thu,21-Nov-2013~22:52 PARAMETERS: test
-Thu,21-Nov-2013~22:52 test
-Thu,21-Nov-2013~22:52 CODE: echo $HOME
-Thu,21-Nov-2013~22:52 CODE: mdfind -onlyin /Users/aaronstockdill/ "test"
-Thu,21-Nov-2013~22:52 RESULTS FIRST 5:  ['/Users/aaronstockdill/Desktop/test.gnu', '/Users/aaronstockdill/Desktop/test.eps', '/Users/aaronstockdill/Dropbox/Public/t.pdf', '/Users/aaronstockdill/Downloads/InfoExam.pdf', '/Users/aaronstockdill/Downloads/part-2-v6.zip', '/Users/aaronstockdill/Downloads/part-2/texts/mp.txt', '/Users/aaronstockdill/Downloads/part-2/texts/sns.txt', '/Users/aaronstockdill/Downloads/part-2/texts/pnp.txt', '/Users/aaronstockdill/Downloads/MATH103-12S2_Exam.pdf', '/Users/aaronstockdill/Downloads/part-2/texts/emma.txt']
-Thu,21-Nov-2013~22:52 INTERACTION: Which of these do you want? 
-1. test.gnu
-2. test.eps
-3. t.pdf
-4. InfoExam.pdf
-5. part-2-v6.zip
-Thu,21-Nov-2013~22:54 Successfully imported Modules.clock
-Thu,21-Nov-2013~22:54 Successfully imported Modules.discover
-Thu,21-Nov-2013~22:54 Successfully imported Modules.finder
-Thu,21-Nov-2013~22:54 Successfully imported Modules.loader
-Thu,21-Nov-2013~22:54 Successfully imported Modules.media
-Thu,21-Nov-2013~22:54 Successfully imported Modules.personality
-Thu,21-Nov-2013~22:54 Successfully imported Modules.settings
-Thu,21-Nov-2013~22:54 Successfully imported Modules.weather
-Thu,21-Nov-2013~22:54 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~22:54 PARTS: ['find the file test']
-Thu,21-Nov-2013~22:54 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('file', 'NO'), ('test', '??')]
-Thu,21-Nov-2013~22:54 KIND: IMP
-Thu,21-Nov-2013~22:54 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Thu,21-Nov-2013~22:54 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Thu,21-Nov-2013~22:54 BEST: finder
-Thu,21-Nov-2013~22:54 KEYWORDS: [('test', 4)]
-Thu,21-Nov-2013~22:54 PARAMETERS: test
-Thu,21-Nov-2013~22:54 test
-Thu,21-Nov-2013~22:54 CODE: echo $HOME
-Thu,21-Nov-2013~22:54 CODE: mdfind -onlyin /Users/aaronstockdill/ "test"
-Thu,21-Nov-2013~22:54 RESULTS FIRST 5:  ['/Users/aaronstockdill/Desktop/test.gnu', '/Users/aaronstockdill/Desktop/test.eps', '/Users/aaronstockdill/Dropbox/Public/t.pdf', '/Users/aaronstockdill/Downloads/InfoExam.pdf', '/Users/aaronstockdill/Downloads/part-2-v6.zip', '/Users/aaronstockdill/Downloads/part-2/texts/mp.txt', '/Users/aaronstockdill/Downloads/part-2/texts/sns.txt', '/Users/aaronstockdill/Downloads/part-2/texts/pnp.txt', '/Users/aaronstockdill/Downloads/MATH103-12S2_Exam.pdf', '/Users/aaronstockdill/Downloads/part-2/texts/emma.txt']
-Thu,21-Nov-2013~22:54 INTERACTION: Which of these do you want? 
-1. test.gnu
-2. test.eps
-3. t.pdf
-4. InfoExam.pdf
-5. part-2-v6.zip
-Thu,21-Nov-2013~22:56 Successfully imported Modules.clock
-Thu,21-Nov-2013~22:56 Successfully imported Modules.discover
-Thu,21-Nov-2013~22:56 Successfully imported Modules.finder
-Thu,21-Nov-2013~22:56 Successfully imported Modules.loader
-Thu,21-Nov-2013~22:56 Successfully imported Modules.media
-Thu,21-Nov-2013~22:56 Successfully imported Modules.personality
-Thu,21-Nov-2013~22:56 Successfully imported Modules.settings
-Thu,21-Nov-2013~22:56 Successfully imported Modules.weather
-Thu,21-Nov-2013~22:56 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~22:56 PARTS: ['find the file test']
-Thu,21-Nov-2013~22:56 Successfully imported Modules.clock
-Thu,21-Nov-2013~22:56 Successfully imported Modules.discover
-Thu,21-Nov-2013~22:56 Successfully imported Modules.finder
-Thu,21-Nov-2013~22:56 Successfully imported Modules.loader
-Thu,21-Nov-2013~22:56 Successfully imported Modules.media
-Thu,21-Nov-2013~22:56 Successfully imported Modules.personality
-Thu,21-Nov-2013~22:56 Successfully imported Modules.settings
-Thu,21-Nov-2013~22:56 Successfully imported Modules.weather
-Thu,21-Nov-2013~22:56 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~22:56 PARTS: ['find the file test']
-Thu,21-Nov-2013~22:56 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('file', 'NO'), ('test', '??')]
-Thu,21-Nov-2013~22:56 KIND: IMP
-Thu,21-Nov-2013~22:56 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Thu,21-Nov-2013~22:56 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Thu,21-Nov-2013~22:56 BEST: finder
-Thu,21-Nov-2013~22:56 KEYWORDS: [('test', 4)]
-Thu,21-Nov-2013~22:56 PARAMETERS: test
-Thu,21-Nov-2013~22:56 test
-Thu,21-Nov-2013~22:56 CODE: echo $HOME
-Thu,21-Nov-2013~22:56 CODE: mdfind -onlyin /Users/aaronstockdill/ "test"
-Thu,21-Nov-2013~22:56 RESULTS FIRST 5:  ['/Users/aaronstockdill/Desktop/test.gnu', '/Users/aaronstockdill/Desktop/test.eps', '/Users/aaronstockdill/Dropbox/Public/t.pdf', '/Users/aaronstockdill/Downloads/InfoExam.pdf', '/Users/aaronstockdill/Downloads/part-2-v6.zip', '/Users/aaronstockdill/Downloads/part-2/texts/mp.txt', '/Users/aaronstockdill/Downloads/part-2/texts/sns.txt', '/Users/aaronstockdill/Downloads/part-2/texts/pnp.txt', '/Users/aaronstockdill/Downloads/MATH103-12S2_Exam.pdf', '/Users/aaronstockdill/Downloads/part-2/texts/emma.txt']
-Thu,21-Nov-2013~22:56 INTERACTION: Which of these do you want? 
-1. test.gnu
-2. test.eps
-3. t.pdf
-4. InfoExam.pdf
-5. part-2-v6.zip
-Thu,21-Nov-2013~23:01 Successfully imported Modules.clock
-Thu,21-Nov-2013~23:01 Successfully imported Modules.discover
-Thu,21-Nov-2013~23:01 Successfully imported Modules.finder
-Thu,21-Nov-2013~23:01 Successfully imported Modules.loader
-Thu,21-Nov-2013~23:01 Successfully imported Modules.media
-Thu,21-Nov-2013~23:01 Successfully imported Modules.personality
-Thu,21-Nov-2013~23:01 Successfully imported Modules.settings
-Thu,21-Nov-2013~23:01 Successfully imported Modules.weather
-Thu,21-Nov-2013~23:01 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~23:01 PARTS: ['find the file test']
-Thu,21-Nov-2013~23:01 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('file', 'NO'), ('test', '??')]
-Thu,21-Nov-2013~23:01 KIND: IMP
-Thu,21-Nov-2013~23:01 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Thu,21-Nov-2013~23:01 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Thu,21-Nov-2013~23:01 BEST: finder
-Thu,21-Nov-2013~23:01 KEYWORDS: [('test', 4)]
-Thu,21-Nov-2013~23:01 PARAMETERS: test
-Thu,21-Nov-2013~23:01 test
-Thu,21-Nov-2013~23:01 CODE: echo $HOME
-Thu,21-Nov-2013~23:01 CODE: mdfind -onlyin /Users/aaronstockdill/ "test"
-Thu,21-Nov-2013~23:01 RESULTS FIRST 5:  ['/Users/aaronstockdill/Desktop/test.gnu', '/Users/aaronstockdill/Desktop/test.eps', '/Users/aaronstockdill/Dropbox/Public/t.pdf', '/Users/aaronstockdill/Downloads/InfoExam.pdf', '/Users/aaronstockdill/Downloads/part-2-v6.zip', '/Users/aaronstockdill/Downloads/part-2/texts/mp.txt', '/Users/aaronstockdill/Downloads/part-2/texts/sns.txt', '/Users/aaronstockdill/Downloads/part-2/texts/pnp.txt', '/Users/aaronstockdill/Downloads/MATH103-12S2_Exam.pdf', '/Users/aaronstockdill/Downloads/part-2/texts/emma.txt']
-Thu,21-Nov-2013~23:01 INTERACTION: Which of these do you want? 
-1. test.gnu
-2. test.eps
-3. t.pdf
-4. InfoExam.pdf
-5. part-2-v6.zip
-Thu,21-Nov-2013~23:01 ORDINALS: 7
-Thu,21-Nov-2013~23:01 CHOICE: 7
-Thu,21-Nov-2013~23:05 Successfully imported Modules.clock
-Thu,21-Nov-2013~23:05 Successfully imported Modules.discover
-Thu,21-Nov-2013~23:05 Successfully imported Modules.finder
-Thu,21-Nov-2013~23:05 Successfully imported Modules.loader
-Thu,21-Nov-2013~23:05 Successfully imported Modules.media
-Thu,21-Nov-2013~23:05 Successfully imported Modules.personality
-Thu,21-Nov-2013~23:05 Successfully imported Modules.settings
-Thu,21-Nov-2013~23:05 Successfully imported Modules.weather
-Thu,21-Nov-2013~23:05 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~23:05 PARTS: ['find the file test']
-Thu,21-Nov-2013~23:05 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('file', 'NO'), ('test', '??')]
-Thu,21-Nov-2013~23:05 KIND: IMP
-Thu,21-Nov-2013~23:05 ACTIONS: {'finder': 1.5, 'wikipedia': 0.5}
-Thu,21-Nov-2013~23:05 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Thu,21-Nov-2013~23:05 BEST: finder
-Thu,21-Nov-2013~23:05 KEYWORDS: [('test', 4)]
-Thu,21-Nov-2013~23:05 PARAMETERS: test
-Thu,21-Nov-2013~23:05 test
-Thu,21-Nov-2013~23:05 CODE: echo $HOME
-Thu,21-Nov-2013~23:05 CODE: mdfind -onlyin /Users/aaronstockdill/ "test"
-Thu,21-Nov-2013~23:05 RESULTS FIRST 5:  ['/Users/aaronstockdill/Desktop/test.gnu', '/Users/aaronstockdill/Desktop/test.eps', '/Users/aaronstockdill/Dropbox/Public/t.pdf', '/Users/aaronstockdill/Downloads/InfoExam.pdf', '/Users/aaronstockdill/Downloads/part-2-v6.zip', '/Users/aaronstockdill/Downloads/part-2/texts/mp.txt', '/Users/aaronstockdill/Downloads/part-2/texts/sns.txt', '/Users/aaronstockdill/Downloads/part-2/texts/pnp.txt', '/Users/aaronstockdill/Downloads/MATH103-12S2_Exam.pdf', '/Users/aaronstockdill/Downloads/part-2/texts/emma.txt']
-Thu,21-Nov-2013~23:05 INTERACTION: Which of these do you want? 
-1. test.gnu
-2. test.eps
-3. t.pdf
-4. InfoExam.pdf
-5. part-2-v6.zip
-Thu,21-Nov-2013~23:05 INT PARSE IGNORING the
-Thu,21-Nov-2013~23:05 ORDINAL:  8 the seventh one
-Thu,21-Nov-2013~23:05 DECISION: None
-Thu,21-Nov-2013~23:05 IT: None
-Thu,21-Nov-2013~23:05 INTERACTION: I couldn't find anything.
-Thu,21-Nov-2013~23:08 PARTS: ['restart']
-Thu,21-Nov-2013~23:08 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Thu,21-Nov-2013~23:08 KIND: IMP
-Thu,21-Nov-2013~23:08 ACTIONS: {'loader': 1.0}
-Thu,21-Nov-2013~23:08 WEIGHTS: {1.0: ['loader']}
-Thu,21-Nov-2013~23:08 BEST: loader
-Thu,21-Nov-2013~23:08 Successfully imported Modules.clock
-Thu,21-Nov-2013~23:08 Successfully imported Modules.discover
-Thu,21-Nov-2013~23:08 Successfully imported Modules.finder
-Thu,21-Nov-2013~23:08 Successfully imported Modules.loader
-Thu,21-Nov-2013~23:08 Successfully imported Modules.media
-Thu,21-Nov-2013~23:08 Successfully imported Modules.personality
-Thu,21-Nov-2013~23:08 Successfully imported Modules.settings
-Thu,21-Nov-2013~23:08 Successfully imported Modules.weather
-Thu,21-Nov-2013~23:08 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~23:08 PARTS: ['find the file test']
-Thu,21-Nov-2013~23:08 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('file', 'NO'), ('test', '??')]
-Thu,21-Nov-2013~23:08 KIND: IMP
-Thu,21-Nov-2013~23:08 ACTIONS: {'wikipedia': 0.5, 'finder': 1.5}
-Thu,21-Nov-2013~23:08 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Thu,21-Nov-2013~23:08 BEST: finder
-Thu,21-Nov-2013~23:08 KEYWORDS: [('test', 4)]
-Thu,21-Nov-2013~23:08 PARAMETERS: test
-Thu,21-Nov-2013~23:08 test
-Thu,21-Nov-2013~23:08 CODE: echo $HOME
-Thu,21-Nov-2013~23:08 CODE: mdfind -onlyin /Users/aaronstockdill/ "test"
-Thu,21-Nov-2013~23:08 RESULTS FIRST 5:  ['/Users/aaronstockdill/Desktop/test.gnu', '/Users/aaronstockdill/Desktop/test.eps', '/Users/aaronstockdill/Dropbox/Public/t.pdf', '/Users/aaronstockdill/Downloads/InfoExam.pdf', '/Users/aaronstockdill/Downloads/part-2-v6.zip', '/Users/aaronstockdill/Downloads/part-2/texts/mp.txt', '/Users/aaronstockdill/Downloads/part-2/texts/sns.txt', '/Users/aaronstockdill/Downloads/part-2/texts/pnp.txt', '/Users/aaronstockdill/Downloads/MATH103-12S2_Exam.pdf', '/Users/aaronstockdill/Downloads/part-2/texts/emma.txt']
-Thu,21-Nov-2013~23:08 INTERACTION: Which of these do you want? 
-1. test.gnu
-2. test.eps
-3. t.pdf
-4. InfoExam.pdf
-5. part-2-v6.zip
-Thu,21-Nov-2013~23:08 INT PARSE IGNORING the
-Thu,21-Nov-2013~23:08 ORDINAL:  7 the seventh one
-Thu,21-Nov-2013~23:08 DECISION: None
-Thu,21-Nov-2013~23:08 IT: None
-Thu,21-Nov-2013~23:08 INTERACTION: I couldn't find anything.
-Thu,21-Nov-2013~23:08 PARTS: ['restart']
-Thu,21-Nov-2013~23:08 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Thu,21-Nov-2013~23:08 KIND: IMP
-Thu,21-Nov-2013~23:08 ACTIONS: {'loader': 1.0}
-Thu,21-Nov-2013~23:08 WEIGHTS: {1.0: ['loader']}
-Thu,21-Nov-2013~23:08 BEST: loader
-Thu,21-Nov-2013~23:08 Successfully imported Modules.clock
-Thu,21-Nov-2013~23:08 Successfully imported Modules.discover
-Thu,21-Nov-2013~23:08 Successfully imported Modules.finder
-Thu,21-Nov-2013~23:08 Successfully imported Modules.loader
-Thu,21-Nov-2013~23:08 Successfully imported Modules.media
-Thu,21-Nov-2013~23:08 Successfully imported Modules.personality
-Thu,21-Nov-2013~23:08 Successfully imported Modules.settings
-Thu,21-Nov-2013~23:08 Successfully imported Modules.weather
-Thu,21-Nov-2013~23:08 Successfully imported Modules.wikipedia
-Thu,21-Nov-2013~23:09 PARTS: ['find the file test']
-Thu,21-Nov-2013~23:09 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('file', 'NO'), ('test', '??')]
-Thu,21-Nov-2013~23:09 KIND: IMP
-Thu,21-Nov-2013~23:09 ACTIONS: {'wikipedia': 0.5, 'finder': 1.5}
-Thu,21-Nov-2013~23:09 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Thu,21-Nov-2013~23:09 BEST: finder
-Thu,21-Nov-2013~23:09 KEYWORDS: [('test', 4)]
-Thu,21-Nov-2013~23:09 PARAMETERS: test
-Thu,21-Nov-2013~23:09 test
-Thu,21-Nov-2013~23:09 CODE: echo $HOME
-Thu,21-Nov-2013~23:09 CODE: mdfind -onlyin /Users/aaronstockdill/ "test"
-Thu,21-Nov-2013~23:09 RESULTS FIRST 5:  ['/Users/aaronstockdill/Desktop/test.gnu', '/Users/aaronstockdill/Desktop/test.eps', '/Users/aaronstockdill/Dropbox/Public/t.pdf', '/Users/aaronstockdill/Downloads/InfoExam.pdf', '/Users/aaronstockdill/Downloads/part-2-v6.zip', '/Users/aaronstockdill/Downloads/part-2/texts/mp.txt', '/Users/aaronstockdill/Downloads/part-2/texts/sns.txt', '/Users/aaronstockdill/Downloads/part-2/texts/pnp.txt', '/Users/aaronstockdill/Downloads/MATH103-12S2_Exam.pdf', '/Users/aaronstockdill/Downloads/part-2/texts/emma.txt']
-Thu,21-Nov-2013~23:09 INTERACTION: Which of these do you want? 
-1. test.gnu
-2. test.eps
-3. t.pdf
-4. InfoExam.pdf
-5. part-2-v6.zip
-Thu,21-Nov-2013~23:09 INT PARSE IGNORING the
-Thu,21-Nov-2013~23:09 ORDINAL:  407 the four hundred and seventh file
-Thu,21-Nov-2013~23:09 DECISION: None
-Thu,21-Nov-2013~23:09 IT: None
-Thu,21-Nov-2013~23:09 INTERACTION: I couldn't find anything.
-Fri,22-Nov-2013~09:34 PARTS: ['restart']
-Fri,22-Nov-2013~09:34 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Fri,22-Nov-2013~09:34 KIND: IMP
-Fri,22-Nov-2013~09:34 ACTIONS: {'loader': 1.0}
-Fri,22-Nov-2013~09:34 WEIGHTS: {1.0: ['loader']}
-Fri,22-Nov-2013~09:34 BEST: loader
-Fri,22-Nov-2013~09:34 Successfully imported Modules.clock
-Fri,22-Nov-2013~09:34 Successfully imported Modules.discover
-Fri,22-Nov-2013~09:34 Successfully imported Modules.finder
-Fri,22-Nov-2013~09:34 Successfully imported Modules.loader
-Fri,22-Nov-2013~09:34 Successfully imported Modules.media
-Fri,22-Nov-2013~09:34 Successfully imported Modules.personality
-Fri,22-Nov-2013~09:34 Successfully imported Modules.settings
-Fri,22-Nov-2013~09:34 Successfully imported Modules.weather
-Fri,22-Nov-2013~09:34 Successfully imported Modules.wikipedia
+Mon,25-Nov-2013~23:11     VERBOSE
+Mon,25-Nov-2013~23:11 INTERACTION: Done
+Tue,26-Nov-2013~10:56 Successfully imported Modules.clock
+Tue,26-Nov-2013~10:56 Successfully imported Modules.controls
+Tue,26-Nov-2013~10:56 Successfully imported Modules.discover
+Tue,26-Nov-2013~10:56 Successfully imported Modules.finder
+Tue,26-Nov-2013~10:56 Successfully imported Modules.loader
+Tue,26-Nov-2013~10:56 Successfully imported Modules.media
+Tue,26-Nov-2013~10:56 Successfully imported Modules.personality
+Tue,26-Nov-2013~10:56 Successfully imported Modules.settings
+Tue,26-Nov-2013~10:56 Successfully imported Modules.weather
+Tue,26-Nov-2013~10:56 Successfully imported Modules.wikipedia
+Tue,26-Nov-2013~10:56 PARTS: ['lock']
+Tue,26-Nov-2013~10:56 SENTENCE: [('You', 'PS'), ('lock', 'VB')]
+Tue,26-Nov-2013~10:56 KIND: IMP
+Tue,26-Nov-2013~10:56 WEIGHTS: {1.0: ['controls']}
+Tue,26-Nov-2013~10:56 BEST: controls
+Tue,26-Nov-2013~10:56 KEYWORDS: [('lock', 1)]
+Tue,26-Nov-2013~10:56 CODE: osascript -e "tell application \"Finder\" to sleep"
+Tue,26-Nov-2013~10:56 INTERACTION: Done!

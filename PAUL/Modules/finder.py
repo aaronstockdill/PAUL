@@ -277,8 +277,6 @@ def main():
     words.update({word: ("finder", "verb") for word in VERBS})
     
     paul.associate(words)
-    paul.vocab.word_actions["finder"] = lambda sentence: process(sentence)
-    
-    paul.log("Successfully imported " + __name__)
+    paul.register("finder", process)
 
 main()

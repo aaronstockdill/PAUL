@@ -16,7 +16,7 @@ NOUNS = [
 VERBS = [
     "discover",
     "search",
-    paul.user_info.info['search_engine'],
+    paul.user_info.info['search_engine'].lower(),
 ]
 
 
@@ -31,17 +31,17 @@ def process(sentence):
         "duckduckgo": "https://duckduckgo.com/?q={}",
         "baidu": "http://www.baidu.com/s?wd={}",
     }
+    engine = paul.user_info.info["search_engine"].lower()
     
-    keywords = sentence.keywords()
+    keywords = sentence.keywords(ignore=[engine])
     paul.log("KEYWORDS:", keywords)
     
     query = "+".join([word.replace(" ", "+") for word, _ in keywords
                       if word not in VERBS+NOUNS])
-    engine = paul.user_info.info["search_engine"].lower()
     url = (engines[engine].format(query))
     
     paul.log("URL: " + url)
-    paul.interact("Let me find out for you...")
+    paul.loading()
     paul.run_script("open " + url)
     return "Here, try this."
 
@@ -52,8 +52,6 @@ def main():
     words.update({word: ("discover", "verb") for word in VERBS})
     
     paul.associate(words)
-    paul.vocab.word_actions["discover"] = lambda sentence: process(sentence)
-    
-    paul.log("Successfully imported " + __name__)
+    paul.register("discover", process)
 
 main()

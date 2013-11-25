@@ -39,7 +39,6 @@ def process(sentence):
     ]
     
     keywords = sentence.keywords()
-    keywords = [word for word in keywords]
     paul.log("KEYWORDS: " + str(keywords))
     
     today = datetime.date.today().weekday()
@@ -130,8 +129,6 @@ def main():
     words = {word: ("weather", "noun") for word in NOUNS}
     
     paul.associate(words)
-    paul.vocab.word_actions["weather"] = lambda sentence: process(sentence)
-    
-    paul.log("Successfully imported " + __name__)
+    paul.register("weather", process)
 
 main()

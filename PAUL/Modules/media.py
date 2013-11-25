@@ -32,7 +32,7 @@ def process(sentence):
     paul.log("MUSIC KEYWORDS:", keywords)
     
     commands = {
-        'play': lambda x: simple_commands('play ' + key),
+        'play': lambda key: simple_commands('play ' + key),
         'pause': lambda: simple_commands('pause'),
         'stop': lambda: simple_commands('pause'),
         'next': lambda: simple_commands('next track'),
@@ -88,8 +88,6 @@ def main():
     }
     
     paul.associate(words)
-    paul.vocab.word_actions["media"] = lambda sentence: process(sentence)
-    
-    paul.log("Successfully imported " + __name__)
+    paul.register("media", process)
 
 main()

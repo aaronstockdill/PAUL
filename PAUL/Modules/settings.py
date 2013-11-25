@@ -1,6 +1,13 @@
 """
 settings.py
 Change some of Paul's settings straight from Paul himself.
+Can change:
+    Talking
+    Verbosity
+    Logging
+    User Name
+    User Title
+    Search Engine
 Author: Aaron Stockdill
 """
 
@@ -82,6 +89,19 @@ def get_val(keywords, key, sentence):
 
 
 
+def runtime_change(key, val):
+    ''' Make the changes for the current Session as much as possible. '''
+    values = {
+        "True": True,
+        "False": False
+    }
+    if key in ["VERBOSE", "NOISY"]:
+        paul.user_info.flags[key] = values.get(val, val)
+    else:
+        paul.user_info.flags[key] = val
+
+
+
 def make_change(key, val, confirm):
     ''' Write the changes to the user_info file. '''
     settings_file = "PAUL/user_info.py"
@@ -95,6 +115,7 @@ def make_change(key, val, confirm):
         if line.startswith("    \"" + key + "\""):
             lines[i] = sub
             open(settings_file, "w").write("".join(lines))
+            runtime_change(key, val)
             return confirm
     
     open(settings_file, "w").write("".join(backup))
@@ -106,7 +127,7 @@ def process(sentence):
     ''' Process the sentence '''
     
     keywords = sentence.keywords(include=["VB", "NS"])
-    pp = sentence.get_part("PP", True)
+    pp = sentence.get_part("PP", indexes=True)
     if pp:
         keywords += pp
     paul.trim_word(keywords, "to")
@@ -156,8 +177,6 @@ def main():
     }
     
     paul.associate(words)
-    paul.vocab.word_actions["settings"] = lambda sentence: process(sentence)
-    
-    paul.log("Successfully imported " + __name__)
+    paul.register("settings", process)
 
 main()

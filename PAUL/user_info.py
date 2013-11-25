@@ -6,10 +6,10 @@ designs.
 Author: Aaron Stockdill
 """
 
-import time
-
-## Global info that all systems should use. 
+## Global info that all systems should use. YOU CAN CHANGE THESE CAREFULLY
 #  woeid is your WOEID (Yahoo weather location id).
+#     Go to weather.yahoo.com to find your city, then
+#     copy the last number in the url to woeid here.
 #  name is what the computer will call you.
 #  title is whether you can be addressed as sir or ma'am
 #  temp: Use F for Fahrenheit, C for Celcius.
@@ -23,22 +23,26 @@ info = {
     "temp": "C",
     "search_engine": "Google",
     "prompt": "?",
-    "version": "0.2.6a",
 }
 
-## Flags for the system. 
+## Flags for the system. DO NOT TOUCH ANY OF THESE
 #  Verbose is for debug info, 
 #  noisy for paul to talk,
-#  server is for the server to switch, don't touch it.
 #  max_log_size is the maximum number of lines allowed in the log file.
 #  first_run will let Paul know if he needs to do setup. Not yet implemented.
-#  it is whatever 'it' could be, changes automatically, DON'T TOUCH.
+#  it is whatever 'it' could be, changes automatically.
+#  send is the function that is used to send data to the user.
+#  get is the function that is used to get data from the user.
+#  exec is the function that is used to send executable scripts to the user.
 flags = {
+    "VERSION": "0.3.0",
     "VERBOSE": True,
     "NOISY": False,
-    "SERVER": None,
-    "MAX_LOG_SIZE": 2000,
+    "MAX_LOG_SIZE": 500,
     "LOGGING": True,
     "FIRST_RUN": False,
     "IT": None,
+    "SEND": None,
+    "GET": None,
+    "EXEC": None,
 }

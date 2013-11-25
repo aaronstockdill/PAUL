@@ -22,7 +22,7 @@ import user_info
 def log(*to_log):
     ''' Log some info to log.txt if LOGGING, and print it on the screen if
         VERBOSE is True. Any argument that can be converted to a string
-        through str() is valid. Returns True if LOGGIN is on, False
+        through str() is valid. Returns True if LOGGING is on, False
         otherwise. '''
     return_value = False
     log_string = ' '.join([str(log) for log in to_log])
@@ -76,37 +76,31 @@ def associate(words_dict):
 
 
 
-def get_client_data():
-    ''' Get some response from the client. This should never be explicitly
-        called, and is only for use by the interact function. No arguments,
-        returns a string with the user's input. '''
-    done = False
-    result = ""
-    user_info.flags["SERVER"].send(bytes(" "*1024, "utf-8"))
-    while not done:
-        come_back = user_info.flags["SERVER"].recv(1024)
-        info = str(come_back, "utf-8").strip()
-        log("RECIEVING:", info)
-        if info == "client_done":
-            log("DONE RECIEVING")
-            done = True
-        else:
-            result += info
-    log("RESULT:", result)
-    return result
+def register(module, function):
+    ''' Register your module into Paul, providing your module name and the
+        function you will use to process the sentences you are passed. '''
+    try:
+        vocab.word_actions[module] = function
+        log("Successfully imported Modules." + module)
+        return True
+    except:
+        log("An error has occured in registering", module)
+        return False
 
 
 
 def simple_speech_filter(statement):
     ''' Replace a couple of common "error spots" such as °C to degrees
-        celcius. Takes in a string, returns a string with replacements. '''
-    statement = statement.replace("°C", " degrees celcius")
-    return statement
-    
+        celcius. Takes in a string, returns a string with replacements.
+        You should never need to call this. '''
+    replacements = [("°C", " degrees celcius")]
+    for find, rep in replacements:
+        statement = statement.replace(find, rep)
+    return statement    
     
 
 
-def interact(statement, response=None):
+def interact(statement, response=None, end=True):
     """ Standard function for interacting with the user. Use this function,
         not anything custom if possible. 'Response' can be 'list', 'y_n',
         'arb' or None. Statement is whatever you want to ask the user, as
@@ -115,26 +109,25 @@ def interact(statement, response=None):
         is returned. If 'arb', the raw string is returned. if 'y_n', True if
         an affirmative, False if negative, None otherwise. """
     
-    s = user_info.flags["SERVER"]
-    def send(phrase):
-        s.send(bytes(" "*1024, "utf-8"))
-        s.send(bytes(phrase, 'utf-8'))
-        s.send(bytes(" "*1024, "utf-8"))
+    send = user_info.flags["SEND"]
+    get = user_info.flags["GET"]
     
     log("INTERACTION:", statement)
     print(statement)
     if user_info.flags["NOISY"]:
         speech = simple_speech_filter(statement)
         subprocess.Popen('say "{}"'.format(speech), shell=True)
-    if s:
-        log("CONNECTION: " + repr(s))
-        send(statement)
+    if send:
+        log("CONNECTION: " + repr(send))
+        try:
+            send(statement, end=end)
+        except TypeError:
+            send(statement)
     if response:
-        if not user_info.flags["SERVER"]:
+        if not send:
             bringback = input(user_info.info["prompt"] + " ")
         else:
-            send("paul_done")
-            bringback = get_client_data()
+            bringback = get()
         negatives = ['no', 'nope']
         positives = ['yes', 'yep', 'yeah']
 
@@ -156,7 +149,7 @@ def interact(statement, response=None):
 
         elif response == 'arb':
             return bringback
-
+    
     return statement
 
 
@@ -172,14 +165,17 @@ def loading():
         "Let me see{}...".format(name),
     ]
     result = random.choice(acknowledgements)
-    interact(result)
+    interact(result, end=False)
     return result
 
 
 
-def acknowledge():
+def acknowledge(end=False):
     ''' Simply acknowledge the user, without any real thought into the
-        respose. Returns what was said, incase it matters. No arguments '''
+        respose. Returns what was said, incase it matters. Optional end
+        argument, defaults to False, setting whether you are done interating
+        with the user. With default end=False, is it assumed you will then 
+        provide the user with more information. '''
 
     name = random.choice(['', ', {}'.format(user_info.info['name'])])
     acknowledgements = [
@@ -189,7 +185,7 @@ def acknowledge():
         "Certainly{}.".format(name),
     ]
     result = random.choice(acknowledgements)
-    interact(result, done_interacting = False)
+    interact(result, end=end)
     return result
 
 
@@ -197,7 +193,7 @@ def acknowledge():
 def iterable(item):
     ''' Determine if the item in question is iterable. Argument is an object.
         Returns true if is is, false otherwise. '''
-    return type(item) in [list, tuple, dict]
+    return type(item) in [list, tuple, dict, Sentence]
 
 
 
@@ -312,13 +308,14 @@ def run_script(code, language='bash', response=False):
     elif language == "perl":
         code = 'perl -e "{}"'.format(code.repace("\"", "\\\""))
     log("CODE:", code)
-    if not user_info.flags["SERVER"]:
-        return os.popen(code).read()
+    if not user_info.flags["EXEC"]:
+        if response == False:
+            os.popen(code)
+            return None
+        else:
+            return os.popen(code).read()
     else:
-        user_info.flags["SERVER"].send(bytes(1024*" ", "utf-8"))
-        user_info.flags["SERVER"].send(bytes("SCRIPT{}SCRIPT".format(code), "utf-8"))
-        user_info.flags["SERVER"].send(bytes(1024*" ", "utf-8"))
-        data = get_client_data()
+        data = user_info.flags["EXEC"](code, response)
         return data
 
 
@@ -328,6 +325,18 @@ def set_it(value):
         new value, explicitly from "it", in case verification is needed. '''
     user_info.flags["IT"] = value
     return user_info.flags["IT"]
+
+
+
+def get_it():
+    ''' To get "it". No arguments, returns the "it" value. '''
+    return user_info.flags["IT"]
+
+
+
+def get_version():
+    ''' Returns the current version of Paul as a string '''
+    return user_info.flags["VERSION"]
 
 
 
@@ -344,7 +353,8 @@ def send_notification(title, message):
 
 def parse_number(string):
     ''' Attempt to parse a number into it's value. Takes a string, 
-        returns an integer. '''
+        returns an integer. If it finds a valid integer, e.g. "42", it
+        just returns that, 42. '''
     
     numbers = string.lower().split()
 
@@ -412,7 +422,12 @@ def parse_number(string):
             number *= multipliers[word[:-2]]
             return number
         else:
-            log("INT PARSE IGNORING", word)
+            try:
+                x = int(word)
+                log("FOUND INT: ", x)
+                return x
+            except ValueError:
+                log("INT PARSE IGNORING", word)
 
     return number
 
@@ -444,7 +459,6 @@ class Sentence(object):
         self.sentence_string = " ".join(words)
         self.sentence = self.tag_sentence(words)
         self.kind = self.classify()
-        self.keyword_list = None
 
 
     def __repr__(self):
@@ -483,7 +497,7 @@ class Sentence(object):
 
         objects = self.get_part("NO", indexes=True)
         names = self.get_part("XO", indexes=True)
-        ordinals = self.get_part("OR", indexes=True)
+        numbers = self.get_part("NU", indexes=True)
         keywords = self.get_part("??", indexes=True)
 
         if include is not None:
@@ -497,7 +511,7 @@ class Sentence(object):
 
         new_items = [(i, j) for i, j in join_lists(objects,
                                                    names,
-                                                   ordinals,
+                                                   numbers,
                                                    keywords,
                                                    other)
                                         if i not in ignore]
@@ -510,24 +524,26 @@ class Sentence(object):
             final_items = ' '.join([item[0] for item in final_items])
             item_list.append((final_items, ind))
 
-        self.keyword_list = sorted(item_list, key=lambda i: i[1])
-        return self.keyword_list
+        keyword_list = sorted(item_list, key=lambda i: i[1])
+        return keyword_list
 
 
 
-    def get_part(self, part, indexes=False, prepositions=False):
+    def get_part(self, part, indexes=False, pronouns=False):
         ''' Return the objects in a sentence of type 'part', or None.
             Set indexes if you want the index of the word in the sentence,
-            and prepositions if prepositions can be included in the sentence.
+            and pronouns if pronouns can be included in the sentence. If
+            nothing is found without pronouns, it tries again with pronouns
+            anyway. If there is still nothing, it returns None.
         '''
 
         if part == "NO" or part == "XO":
-            if prepositions:
+            if pronouns:
                 part = [part, "PO"]
             else:
                 part = [part]
         elif part == "NS" or part == "XS":
-            if prepositions:
+            if pronouns:
                 part = [part, "PS"]
             else:
                 part = [part]
@@ -541,8 +557,8 @@ class Sentence(object):
                      for word in self.sentence if word[1] in part]
         if len(parts) > 0:
             return parts
-        elif not prepositions:
-            return self.get_part(part, prepositions=True)
+        elif not pronouns:
+            return self.get_part(part, pronouns=True)
         else:
             return None
 
@@ -633,19 +649,20 @@ class Sentence(object):
 
         for i, word in enumerate(self.sentence):
             if word[0] == 'it':
-                log("IT:", str(user_info.flags['IT']))
-                if user_info.flags['IT'] == None:
+                it = get_it()
+                log("IT:", str(it))
+                if it == None:
                     return False
                 self.sentence.pop(i)
-                self.sentence.insert(i, (user_info.flags["IT"], "XO"))
-                return user_info.flags["IT"]
+                self.sentence.insert(i, (it, "XO"))
+                return it
         return False
 
 
 
     def forward(self, module):
         ''' Forward sentence to the module specified.
-            Returns True of successful, else False. '''
+            Returns the new result of successful, else False. '''
         
         log("FORWADING TO:", module)
         if module in vocab.word_actions.keys():
@@ -658,5 +675,11 @@ class Sentence(object):
         ''' The sentence object's version of paul.has_word, where the assumed
             list of words is the sentence. '''
         return has_word(self.sentence, word)
+    
+    
+    def has_one_of(self, confirm_list):
+        ''' The sentence object's version of paul.has_one_of, where the
+            assumed list of words is the sentence. '''
+        return has_word(self.sentence, confirm_list)
 
 update_words()

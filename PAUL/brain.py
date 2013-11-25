@@ -9,6 +9,31 @@ Author: Aaron Stockdill
 import paul
 import Modules
 
+def transform_idioms(sentence):
+    ''' Take simple idioms, and transform them into a more literal sentence
+        for Paul to parse. Takes in a string, returns a string. '''
+    idioms = {
+        "how are you" : "what are you feeling",
+        "how do you do" : "hello",
+    }
+    for idiom in idioms.keys():
+        if idiom in sentence:
+            return idioms[idiom]
+    return sentence
+
+
+
+def set_IO(output_fun, input_fun, exec_fun=None):
+    ''' Provide a way to set up interactions with Paul when not using the
+        command line. Requires an input function and an output function.
+        Optionally needs an execute function, if execution is not to be on
+        the same computer as Paul (e.g. networked clients). '''
+    paul.user_info.flags["SEND"] = output_fun
+    paul.user_info.flags["GET"] = input_fun
+    paul.user_info.flags["EXEC"] = exec_fun
+    
+
+
 def commands(sentence):
     ''' Process a command, based on nouns and verbs in the sentence '''
 
@@ -20,8 +45,6 @@ def commands(sentence):
             modules = [mod for mod, _ in paul.vocab.word_associations[word]]
             for module in modules:
                 actions[module] = actions.get(module, 0) + 1/(len(modules))
-
-    paul.log("ACTIONS: " + str(actions))
 
     for key, value in actions.items():
         weights[value] = weights.get(value, []) + [key]
@@ -40,7 +63,7 @@ def split_into_parts(line, i=0):
     ''' Break the sentence into the compontent parts, treating each as a new
         command. Allows command chaining. '''
     
-    splitters = ["and", "then", ","]
+    splitters = [" and ", " then ", ", "]
     parts = line.split(splitters[i])
     if len(splitters) == i + 1:
         return parts
@@ -55,7 +78,7 @@ def process(line):
     ''' Process the given line. '''
     
     parts = split_into_parts(line)
-    parts = [i.strip() for i in parts if i.strip() != ""]
+    parts = [transform_idioms(i.strip()) for i in parts if i.strip() != ""]
     paul.log("PARTS:", parts)
     
     for part in parts:
@@ -66,4 +89,5 @@ def process(line):
             paul.log("KIND: " + sentence.kind)
 
             reply = commands(sentence)
-            return paul.interact(reply)
+            if reply != "" and reply != None:
+                paul.interact(reply)

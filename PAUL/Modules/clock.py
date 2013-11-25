@@ -94,8 +94,6 @@ def main():
     words = {word: ("clock", "noun") for word in NOUNS+DAYS+MONTHS}
     
     paul.associate(words)
-    paul.vocab.word_actions["clock"] = lambda sentence: process(sentence)
-    
-    paul.log("Successfully imported " + __name__)
+    paul.register("clock", process)
 
 main()

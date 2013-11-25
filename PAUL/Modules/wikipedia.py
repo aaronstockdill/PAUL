@@ -23,7 +23,7 @@ def scrape_first_paragraph(url):
         wikipedia article '''
     opener = urllib.request.build_opener()
     opener.addheaders = [('User-agent',
-                          'PAUL/{}'.format(paul.user_info.info["version"]))]
+                          'PAUL/{}'.format(paul.get_version()))]
     gross_url = url.replace("/wiki/", "/w/index.php?title=")+"&printable=yes"
     
     paul.log("URL ATTEMPT: " + gross_url)
@@ -92,8 +92,6 @@ def main():
     }
 
     paul.associate(words)
-    paul.vocab.word_actions["wikipedia"] = lambda sentence: process(sentence)
-
-    paul.log("Successfully imported " + __name__)
+    paul.register("wikipedia", process)
 
 main()

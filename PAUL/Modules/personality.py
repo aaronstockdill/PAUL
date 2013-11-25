@@ -37,13 +37,30 @@ THANKS = [
     "thx",
 ]
 
+FEELING = [
+    "feel",
+    "feeling",
+]
+
 
 def one_of(list):
-    
+    ''' Return a random item in the list formatted with a name, possibly. '''
     name = random.choice(['', 
             ', {}'.format(paul.user_info.info['name']),
             ', {}'.format(paul.user_info.info['title'])])
     return random.choice(list).format(name)
+    
+
+
+def about_me():
+    ''' Tell the user about Paul '''
+    responses = [
+        "I am but a humble assistant{}, doing what I can to serve.",
+        "I am simply the finest Digital Assistant that ever was{}.",
+        "Well, I'm a bit of 0, a bit of 1, and a bit more{}.",
+    ]
+    return one_of(responses)
+
 
 
 def greet():
@@ -53,7 +70,7 @@ def greet():
     if d.hour in range(0, 12):
         responses += ["Good Morning{}."]
     elif d.hour in range(12, 18):
-        responses += ["Good Morning{}."]
+        responses += ["Good Afternoon{}."]
     elif d.hour in range(18, 23):
         responses += ["Good Evening{}."]
     return one_of(responses)
@@ -71,6 +88,21 @@ def thank():
     return one_of(responses)
 
 
+def feeling():
+    responses = [
+        "Fine{}!",
+        "Fine{}!",
+        "Great{}!",
+        "Good{}!",
+        "Wonderful{}!",
+        "Fantastic{}!",
+    ]
+    pt2 = []
+    for response in responses:
+        pt2.append(response.format(" thanks{}"))
+    return one_of(responses+pt2)
+
+
 
 def process(sentence):
     ''' Process the input sentence '''
@@ -83,6 +115,8 @@ def process(sentence):
         takeback = greet()
     elif paul.has_one_of(keywords, THANKS):
         takeback = thank()
+    elif paul.has_one_of(keywords, FEELING):
+        takeback = feeling()
     elif paul.has_one_of(keywords, ["name", "call", "called", "named"]):
         return sentence.forward("settings")
     return takeback
@@ -90,13 +124,11 @@ def process(sentence):
 def main():
     ''' The main function '''
     
-    NOUNS = KEYWORDS + GREETINGS + THANKS
+    NOUNS = KEYWORDS + GREETINGS + THANKS + FEELING
     
     words = {word: ("personality", "noun") for word in NOUNS}
     
     paul.associate(words)
-    paul.vocab.word_actions["personality"] = lambda sentence: process(sentence)
-    
-    paul.log("Successfully imported " + __name__)
+    paul.register("personality", process)
 
 main()

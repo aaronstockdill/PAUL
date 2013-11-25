@@ -21,8 +21,8 @@ def process(sentence):
     importer.write("\nimport paul\npaul.update_words()")
     importer.close()
     
-    if paul.user_info.flags["SERVER"]:
-        return "Restart not supported when in Server Mode."
+    if paul.user_info.flags["SEND"]:
+        return "Restart not supported in this mode."
     else:
         os.execl("/bin/bash", os.getcwd(), "./bin/PAUL")
         
@@ -41,8 +41,6 @@ def main():
     }
     
     paul.associate(words)
-    paul.vocab.word_actions["loader"] = lambda sentence: process(sentence)
-    
-    paul.log("Successfully imported", __name__)
+    paul.register("loader", process)
 
 main()

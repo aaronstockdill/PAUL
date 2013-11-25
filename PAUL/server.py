@@ -14,18 +14,21 @@ def show_splash():
     os.system("clear")
     rows, columns = [int(i) for i in os.popen('stty size', 'r').read().split()]
     title = "P.A.U.L Server"
-    byline = "Python Actions Using Language, Server v{}".format(
-              brain.paul.user_info.info['version'])
+    byline = "Python Actions Using Language, Server Mode"
+    byline2 = "Based on P.A.U.L. v{}".format(
+              brain.paul.user_info.flags['VERSION'])
     author = "By Aaron Stockdill"
     w = (columns - len(title))//2
     x = (columns - len(byline))//2
-    y = (columns - len(author))//2
+    y = (columns - len(byline2))//2
+    z = (columns - len(author))//2
     print("\n"
         + " " * w, title + "\n"
         + " " * (w - 1), "=" * (len(title) + 2) + "\n"
         + "\n"
         + " " * x, byline + "\n"
-        + " " * y, author + "\n\n")
+        + " " * y, byline2 + "\n"
+        + " " * z, author + "\n\n")
 
 class Client(threading.Thread):
     
@@ -34,12 +37,46 @@ class Client(threading.Thread):
         super().__init__()
         self.conn, self.addr = socket
     
+    def send(self, phrase, end=True):
+        s = self.conn
+        s.send(bytes(" "*1024, "utf-8"))
+        s.send(bytes(phrase, 'utf-8'))
+        s.send(bytes(" "*1024, "utf-8"))
+        if end:
+            s.send(bytes("paul_done" + 1024*" ", "utf-8"))
+    
+    def recv(self):
+        s = self.conn
+        done = False
+        result = ""
+        s.send(bytes(" "*1024, "utf-8"))
+        while not done:
+            come_back = s.recv(1024)
+            info = str(come_back, "utf-8").strip()
+            brain.paul.log("RECIEVING:", info)
+            if info == "client_done":
+                brain.paul.log("DONE RECIEVING")
+                done = True
+            else:
+                result += info
+        brain.paul.log("RESULT:", result)
+        return result
+    
+    def execute(self, code, response=None):
+        s = self.conn
+        s.send(bytes(1024*" ", "utf-8"))
+        s.send(bytes("SCRIPT{}SCRIPT".format(code), "utf-8"))
+        s.send(bytes(1024*" ", "utf-8"))
+        if response:
+            data = self.recv()
+            return data
+    
     def run(self):
         ''' Run the thread. '''
         print ('Connected: ', self.addr)
-        end_line = lambda: self.conn.send(bytes("paul_done" + 1024*" ",
-                                                "utf-8"))
+        
         connected = True
+        brain.set_IO(self.send, self.recv, self.execute)
         while connected:
             done = False
             data = ""
@@ -55,11 +92,8 @@ class Client(threading.Thread):
             if data == -11235:
                 connected = False
             else:
-                brain.paul.user_info.flags["SERVER"] = self.conn
-                brain.process(data)
                 try:
-                    self.conn.send(bytes(" "*1024, "utf-8"))
-                    end_line()
+                    brain.process(data)
                 except BrokenPipeError:
                     connected = False
                     break

@@ -1,4 +1,5 @@
 import Modules.clock as clock
+import Modules.controls as controls
 import Modules.discover as discover
 import Modules.finder as finder
 import Modules.loader as loader
