@@ -38,8 +38,8 @@
   * [tag\_sentence](#tag_sentence)
   * [replace\_it](#replace_it)
   * [forward](#forward)
-  * [has\_word](#has_word-2)
-  * [has\_one\_of](#has_one_of-2)
+  * [has\_word](#has_word-1)
+  * [has\_one\_of](#has_one_of-1)
 
 * * *
 
