@@ -12,10 +12,15 @@ import paul
 def simple_commands(action):
     ''' Execute simple commands '''
     
-    command = ('tell application "iTunes" to {}'.format(action))
+    command = ('tell application "iTunes"\ntry\n'
+               + '{}\non error errMsg number errorNumber'.format(action)
+               + '\nreturn "error"\nend try\nend tell')
     paul.log("MEDIA: " + action)
     paul.log("COMMAND: " + command)
-    paul.run_script(command, language="applescript")
+    result = paul.run_script(command, language="applescript", response=True)
+    paul.log("RESULT", result)
+    if paul.has_word(result.split(), "error"):
+        return "I couldn't find your song."
     return True
     
 
@@ -43,13 +48,11 @@ def process(sentence):
     }
     
     if 'play' not in verbs:
-        acknowledge = paul.vocab.vocabulary[verbs[0]]['past_perf']
         try:
             go = commands[verbs[0]]()
         except KeyError:
             return sentence.forward("discover")
     else:
-        acknowledge = 'playing'
         if keywords != []:
             key = ('item 1 of (every track of library playlist '
             + '1 whose name is "{}")'.format(keywords[0][0]))
@@ -65,10 +68,10 @@ def process(sentence):
                 + 'end tell\n\n'
                 + 'return "It\'s \'" & myTrack & "\', by " & myArtist & "."')
                 return paul.run_script(script,
-                                       language="applescript")[:-1]
+                                       language="applescript",
+                                       response=True)[:-1]
             return sentence.forward("discover")
-    
-    return "OK" if go else "Sorry, that didn't work."
+    return "Ok." if go is True else go
 
 def main():
     ''' The main function '''

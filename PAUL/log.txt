@@ -1,500 +1,500 @@
-Mon,25-Nov-2013~16:06 BEST: wikipedia
-Mon,25-Nov-2013~16:06 KEYWORDS: [('occams razor', 4)]
-Mon,25-Nov-2013~16:06 INTERACTION: Let me see...
-Mon,25-Nov-2013~16:06 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=occams_razor&printable=yes
-Mon,25-Nov-2013~16:06 INTERACTION: Occam's razor (also written as Ockham's razor from William of Ockham (c. 1287 – 1347), and in Latin lex parsimoniae) is a principle of parsimony, economy, or succinctness used in logic and problem-solving. It states that among competing hypotheses, the hypothesis with the fewest assumptions should be selected.
+return "error"
+end try
+end tell
+Tue,26-Nov-2013~16:09 CODE: osascript -e "tell application \"iTunes\"
+try
+play item 1 of (every track of library playlist 1 whose name is \"rock\")
+on error errMsg number errorNumber
+return \"error\"
+end try
+end tell"
+Tue,26-Nov-2013~16:09 RESULT error
 
-http://en.wikipedia.org/wiki/occams_razor
-Mon,25-Nov-2013~17:08 PARTS: ["What's the weather like today?"]
-Mon,25-Nov-2013~17:08 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('like', 'PP'), ('today', 'NO')]
-Mon,25-Nov-2013~17:08 KIND: INT
-Mon,25-Nov-2013~17:08 WEIGHTS: {0.5: ['clock'], 1.5: ['weather']}
-Mon,25-Nov-2013~17:08 BEST: weather
-Mon,25-Nov-2013~17:08 INTERACTION: Coming up.
-Mon,25-Nov-2013~17:08 KEYWORDS: [('weather', 3), ('today', 5)]
-Mon,25-Nov-2013~17:08 TODAY: 0
-Mon,25-Nov-2013~17:08 DAY: 0
-Mon,25-Nov-2013~17:08 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 25 Nov 2013 4:28 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="12"   direction="210"   speed="3.22" />\n', b'<yweather:atmosphere humidity="100"  visibility="2.9"  pressure="982.05"  rising="0" />\n', b'<yweather:astronomy sunrise="5:48 am"   sunset="8:44 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 4:28 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 25 Nov 2013 4:28 pm NZDT</pubDate>\n', b'<yweather:condition  text="Heavy Drizzle"  code="9"  temp="12"  date="Mon, 25 Nov 2013 4:28 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/9.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Heavy Drizzle, 12 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Rain. High: 17 Low: 11<br />\n', b'Tue - Rain. High: 14 Low: 11<br />\n', b'Wed - Showers. High: 16 Low: 12<br />\n', b'Thu - Showers. High: 16 Low: 12<br />\n', b'Fri - Cloudy. High: 19 Low: 12<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="25 Nov 2013" low="11" high="17" text="Rain" code="12" />\n', b'<yweather:forecast day="Tue" date="26 Nov 2013" low="11" high="14" text="Rain" code="12" />\n', b'<yweather:forecast day="Wed" date="27 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Thu" date="28 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Fri" date="29 Nov 2013" low="12" high="19" text="Cloudy" code="26" />\n', b'<guid isPermaLink="false">NZXX0006_2013_11_29_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fe461.global.media.gq1.yahoo.com Mon Nov 25 04:03:11 PST 2013 -->\n']
-Mon,25-Nov-2013~17:08 CONDITIONS: {'code': '9', 'date': 'Mon, 25 Nov 2013 4:28 pm NZDT', 'text': 'Heavy Drizzle', 'temp': '12'}
-Mon,25-Nov-2013~17:08 CONDITIONS2: {'high': '17', 'low': '11', 'code': '12', 'date': '25 Nov 2013', 'text': 'Rain'}
-Mon,25-Nov-2013~17:08 INTERACTION: It's 12°C, and heavy drizzle. The high today is 17°C, rain.
-Mon,25-Nov-2013~17:11 PARTS: ["what's the weather tomorrow"]
-Mon,25-Nov-2013~17:11 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('tomorrow', 'NO')]
-Mon,25-Nov-2013~17:11 KIND: INT
-Mon,25-Nov-2013~17:11 WEIGHTS: {2.0: ['weather']}
-Mon,25-Nov-2013~17:11 BEST: weather
-Mon,25-Nov-2013~17:11 INTERACTION: Coming up, Aaron.
-Mon,25-Nov-2013~17:11 KEYWORDS: [('weather tomorrow', 3)]
-Mon,25-Nov-2013~17:11 TODAY: 0
-Mon,25-Nov-2013~17:11 DAY: 2
-Mon,25-Nov-2013~17:11 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 25 Nov 2013 4:28 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="12"   direction="210"   speed="3.22" />\n', b'<yweather:atmosphere humidity="100"  visibility="2.9"  pressure="982.05"  rising="0" />\n', b'<yweather:astronomy sunrise="5:48 am"   sunset="8:44 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 4:28 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 25 Nov 2013 4:28 pm NZDT</pubDate>\n', b'<yweather:condition  text="Heavy Drizzle"  code="9"  temp="12"  date="Mon, 25 Nov 2013 4:28 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/9.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Heavy Drizzle, 12 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Rain. High: 17 Low: 11<br />\n', b'Tue - Rain. High: 14 Low: 11<br />\n', b'Wed - Showers. High: 16 Low: 12<br />\n', b'Thu - Showers. High: 16 Low: 12<br />\n', b'Fri - Cloudy. High: 19 Low: 12<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="25 Nov 2013" low="11" high="17" text="Rain" code="12" />\n', b'<yweather:forecast day="Tue" date="26 Nov 2013" low="11" high="14" text="Rain" code="12" />\n', b'<yweather:forecast day="Wed" date="27 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Thu" date="28 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Fri" date="29 Nov 2013" low="12" high="19" text="Cloudy" code="26" />\n', b'<guid isPermaLink="false">NZXX0006_2013_11_29_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan474.sports.gq1.yahoo.com Mon Nov 25 04:09:23 PST 2013 -->\n']
-Mon,25-Nov-2013~17:11 CONDITIONS: {'high': '14', 'low': '11', 'code': '12', 'date': '26 Nov 2013', 'text': 'Rain'}
-Mon,25-Nov-2013~17:11 INTERACTION: It will have a low of 11°C, a high of 14°C, and will be rain.
-Mon,25-Nov-2013~17:12 PARTS: ['restart']
-Mon,25-Nov-2013~17:12 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Mon,25-Nov-2013~17:12 KIND: IMP
-Mon,25-Nov-2013~17:12 WEIGHTS: {1.0: ['loader']}
-Mon,25-Nov-2013~17:12 BEST: loader
-Mon,25-Nov-2013~17:12 Successfully imported Modules.clock
-Mon,25-Nov-2013~17:12 Successfully imported Modules.controls
-Mon,25-Nov-2013~17:12 Successfully imported Modules.discover
-Mon,25-Nov-2013~17:12 Successfully imported Modules.finder
-Mon,25-Nov-2013~17:12 Successfully imported Modules.loader
-Mon,25-Nov-2013~17:12 Successfully imported Modules.media
-Mon,25-Nov-2013~17:12 Successfully imported Modules.personality
-Mon,25-Nov-2013~17:12 Successfully imported Modules.settings
-Mon,25-Nov-2013~17:12 Successfully imported Modules.weather
-Mon,25-Nov-2013~17:12 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~17:12 PARTS: ['will it rain tomorrow']
-Mon,25-Nov-2013~17:12 SENTENCE: [('You', 'PS'), ('will', 'VB'), ('it', 'PO'), ('rain', 'NO'), ('tomorrow', 'NO')]
-Mon,25-Nov-2013~17:12 KIND: IMP
-Mon,25-Nov-2013~17:12 WEIGHTS: {2.0: ['weather']}
-Mon,25-Nov-2013~17:12 BEST: weather
-Mon,25-Nov-2013~17:12 INTERACTION: Hang on, Aaron...
-Mon,25-Nov-2013~17:12 KEYWORDS: [['rain', 'tomorrow']]
-Mon,25-Nov-2013~17:12 TODAY: 0
-Mon,25-Nov-2013~17:12 DAY: 2
-Mon,25-Nov-2013~17:13 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 25 Nov 2013 4:28 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="12"   direction="210"   speed="3.22" />\n', b'<yweather:atmosphere humidity="100"  visibility="2.9"  pressure="982.05"  rising="0" />\n', b'<yweather:astronomy sunrise="5:48 am"   sunset="8:44 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 4:28 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 25 Nov 2013 4:28 pm NZDT</pubDate>\n', b'<yweather:condition  text="Heavy Drizzle"  code="9"  temp="12"  date="Mon, 25 Nov 2013 4:28 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/9.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Heavy Drizzle, 12 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Rain. High: 17 Low: 11<br />\n', b'Tue - Rain. High: 14 Low: 11<br />\n', b'Wed - Showers. High: 16 Low: 12<br />\n', b'Thu - Showers. High: 16 Low: 12<br />\n', b'Fri - Cloudy. High: 19 Low: 12<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="25 Nov 2013" low="11" high="17" text="Rain" code="12" />\n', b'<yweather:forecast day="Tue" date="26 Nov 2013" low="11" high="14" text="Rain" code="12" />\n', b'<yweather:forecast day="Wed" date="27 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Thu" date="28 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Fri" date="29 Nov 2013" low="12" high="19" text="Cloudy" code="26" />\n', b'<guid isPermaLink="false">NZXX0006_2013_11_29_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan452.sports.gq1.yahoo.com Mon Nov 25 04:12:22 PST 2013 -->\n']
-Mon,25-Nov-2013~17:13 CONDITIONS: {'code': '12', 'high': '14', 'low': '11', 'text': 'Rain', 'date': '26 Nov 2013'}
-Mon,25-Nov-2013~17:13 INTERACTION: It will have a low of 11°C, a high of 14°C, and will be rain.
-Mon,25-Nov-2013~17:13 PARTS: ["what's the weather tomorrow"]
-Mon,25-Nov-2013~17:13 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('tomorrow', 'NO')]
-Mon,25-Nov-2013~17:13 KIND: INT
-Mon,25-Nov-2013~17:13 WEIGHTS: {2.0: ['weather']}
-Mon,25-Nov-2013~17:13 BEST: weather
-Mon,25-Nov-2013~17:13 INTERACTION: Let me see, Aaron...
-Mon,25-Nov-2013~17:13 KEYWORDS: [['weather', 'tomorrow']]
-Mon,25-Nov-2013~17:13 TODAY: 0
-Mon,25-Nov-2013~17:13 DAY: 2
-Mon,25-Nov-2013~17:13 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 25 Nov 2013 4:28 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="12"   direction="210"   speed="3.22" />\n', b'<yweather:atmosphere humidity="100"  visibility="2.9"  pressure="982.05"  rising="0" />\n', b'<yweather:astronomy sunrise="5:48 am"   sunset="8:44 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 4:28 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 25 Nov 2013 4:28 pm NZDT</pubDate>\n', b'<yweather:condition  text="Heavy Drizzle"  code="9"  temp="12"  date="Mon, 25 Nov 2013 4:28 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/9.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Heavy Drizzle, 12 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Rain. High: 17 Low: 11<br />\n', b'Tue - Rain. High: 14 Low: 11<br />\n', b'Wed - Showers. High: 16 Low: 12<br />\n', b'Thu - Showers. High: 16 Low: 12<br />\n', b'Fri - Cloudy. High: 19 Low: 12<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="25 Nov 2013" low="11" high="17" text="Rain" code="12" />\n', b'<yweather:forecast day="Tue" date="26 Nov 2013" low="11" high="14" text="Rain" code="12" />\n', b'<yweather:forecast day="Wed" date="27 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Thu" date="28 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Fri" date="29 Nov 2013" low="12" high="19" text="Cloudy" code="26" />\n', b'<guid isPermaLink="false">NZXX0006_2013_11_29_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan452.sports.gq1.yahoo.com Mon Nov 25 04:12:22 PST 2013 -->\n']
-Mon,25-Nov-2013~17:13 CONDITIONS: {'code': '12', 'high': '14', 'low': '11', 'text': 'Rain', 'date': '26 Nov 2013'}
-Mon,25-Nov-2013~17:13 INTERACTION: It will have a low of 11°C, a high of 14°C, and will be rain.
-Mon,25-Nov-2013~17:14 PARTS: ['restart']
-Mon,25-Nov-2013~17:14 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Mon,25-Nov-2013~17:14 KIND: IMP
-Mon,25-Nov-2013~17:14 WEIGHTS: {1.0: ['loader']}
-Mon,25-Nov-2013~17:14 BEST: loader
-Mon,25-Nov-2013~17:14 Successfully imported Modules.clock
-Mon,25-Nov-2013~17:14 Successfully imported Modules.controls
-Mon,25-Nov-2013~17:14 Successfully imported Modules.discover
-Mon,25-Nov-2013~17:14 Successfully imported Modules.finder
-Mon,25-Nov-2013~17:14 Successfully imported Modules.loader
-Mon,25-Nov-2013~17:14 Successfully imported Modules.media
-Mon,25-Nov-2013~17:14 Successfully imported Modules.personality
-Mon,25-Nov-2013~17:14 Successfully imported Modules.settings
-Mon,25-Nov-2013~17:14 Successfully imported Modules.weather
-Mon,25-Nov-2013~17:14 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~17:14 PARTS: ['what time is it']
-Mon,25-Nov-2013~17:14 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Mon,25-Nov-2013~17:14 KIND: INT
-Mon,25-Nov-2013~17:14 WEIGHTS: {1.0: ['clock']}
-Mon,25-Nov-2013~17:14 BEST: clock
-Mon,25-Nov-2013~17:14 KEYWORDS: ['time']
-Mon,25-Nov-2013~17:14 INTERACTION: It is 5:14pm.
-Mon,25-Nov-2013~22:04 Successfully imported Modules.clock
-Mon,25-Nov-2013~22:04 Successfully imported Modules.controls
-Mon,25-Nov-2013~22:04 Successfully imported Modules.discover
-Mon,25-Nov-2013~22:04 Successfully imported Modules.finder
-Mon,25-Nov-2013~22:04 Successfully imported Modules.loader
-Mon,25-Nov-2013~22:04 Successfully imported Modules.media
-Mon,25-Nov-2013~22:04 Successfully imported Modules.personality
-Mon,25-Nov-2013~22:04 Successfully imported Modules.settings
-Mon,25-Nov-2013~22:04 Successfully imported Modules.weather
-Mon,25-Nov-2013~22:04 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~22:04 PARTS: ['what time is it']
-Mon,25-Nov-2013~22:04 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Mon,25-Nov-2013~22:04 KIND: INT
-Mon,25-Nov-2013~22:04 WEIGHTS: {1.0: ['clock']}
-Mon,25-Nov-2013~22:04 BEST: clock
-Mon,25-Nov-2013~22:04 KEYWORDS: ['time']
-Mon,25-Nov-2013~22:04 INTERACTION: It is 10:04pm.
-Mon,25-Nov-2013~22:04 CONNECTION: <function set_text at 0x1020de680>
-Mon,25-Nov-2013~22:04 PARTS: ['tell me about steam']
-Mon,25-Nov-2013~22:04 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('steam', '??')]
-Mon,25-Nov-2013~22:04 KIND: IMP
-Mon,25-Nov-2013~22:04 WEIGHTS: {2.0: ['wikipedia']}
-Mon,25-Nov-2013~22:04 BEST: wikipedia
-Mon,25-Nov-2013~22:04 KEYWORDS: [('steam', 4)]
-Mon,25-Nov-2013~22:04 INTERACTION: Let me see, Aaron...
-Mon,25-Nov-2013~22:04 CONNECTION: <function set_text at 0x1020de680>
-Mon,25-Nov-2013~22:04 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=steam&printable=yes
-Mon,25-Nov-2013~22:04 INTERACTION: Steam is the technical term for water vapor, the gaseous phase of water, which is formed when water boils. Technically speaking, in terms of the chemistry and physics, steam is invisible and cannot be seen; however, in common language it is often used to refer to the visible mist of water droplets formed as this water vapor condenses in the presence of (cooler) air. At lower pressures, such as in the upper atmosphere or at the top of high mountains water boils at a lower temperature than the nominal 100 °C (212°F) at standard temperature and pressure. If heated further it becomes superheated steam.
+Tue,26-Nov-2013~16:09 INTERACTION: I couldn't find your song.
+Tue,26-Nov-2013~16:09 PARTS: ['play invincible']
+Tue,26-Nov-2013~16:09 SENTENCE: [('You', 'PS'), ('play', 'VB'), ('invincible', '??')]
+Tue,26-Nov-2013~16:09 KIND: IMP
+Tue,26-Nov-2013~16:09 WEIGHTS: {1.0: ['media']}
+Tue,26-Nov-2013~16:09 BEST: media
+Tue,26-Nov-2013~16:09 ['play']
+Tue,26-Nov-2013~16:09 MUSIC KEYWORDS: [('invincible', 2)]
+Tue,26-Nov-2013~16:09 MEDIA: play item 1 of (every track of library playlist 1 whose name is "invincible")
+Tue,26-Nov-2013~16:09 COMMAND: tell application "iTunes"
+try
+play item 1 of (every track of library playlist 1 whose name is "invincible")
+on error errMsg number errorNumber
+return "error"
+end try
+end tell
+Tue,26-Nov-2013~16:09 CODE: osascript -e "tell application \"iTunes\"
+try
+play item 1 of (every track of library playlist 1 whose name is \"invincible\")
+on error errMsg number errorNumber
+return \"error\"
+end try
+end tell"
+Tue,26-Nov-2013~16:09 RESULT 
+Tue,26-Nov-2013~16:09 INTERACTION: Ok.
+Tue,26-Nov-2013~16:09 PARTS: ['pause']
+Tue,26-Nov-2013~16:09 SENTENCE: [('You', 'PS'), ('pause', 'VB')]
+Tue,26-Nov-2013~16:09 KIND: IMP
+Tue,26-Nov-2013~16:09 WEIGHTS: {1.0: ['media']}
+Tue,26-Nov-2013~16:09 BEST: media
+Tue,26-Nov-2013~16:09 ['pause']
+Tue,26-Nov-2013~16:09 MUSIC KEYWORDS: []
+Tue,26-Nov-2013~16:09 MEDIA: pause
+Tue,26-Nov-2013~16:09 COMMAND: tell application "iTunes"
+try
+pause
+on error errMsg number errorNumber
+return "error"
+end try
+end tell
+Tue,26-Nov-2013~16:09 CODE: osascript -e "tell application \"iTunes\"
+try
+pause
+on error errMsg number errorNumber
+return \"error\"
+end try
+end tell"
+Tue,26-Nov-2013~16:09 RESULT 
+Tue,26-Nov-2013~16:09 INTERACTION: Ok.
+Tue,26-Nov-2013~16:11 PARTS: ['play']
+Tue,26-Nov-2013~16:11 SENTENCE: [('You', 'PS'), ('play', 'VB')]
+Tue,26-Nov-2013~16:11 KIND: IMP
+Tue,26-Nov-2013~16:11 WEIGHTS: {1.0: ['media']}
+Tue,26-Nov-2013~16:11 BEST: media
+Tue,26-Nov-2013~16:11 ['play']
+Tue,26-Nov-2013~16:11 MUSIC KEYWORDS: []
+Tue,26-Nov-2013~16:11 MEDIA: play 
+Tue,26-Nov-2013~16:11 COMMAND: tell application "iTunes"
+try
+play 
+on error errMsg number errorNumber
+return "error"
+end try
+end tell
+Tue,26-Nov-2013~16:11 CODE: osascript -e "tell application \"iTunes\"
+try
+play 
+on error errMsg number errorNumber
+return \"error\"
+end try
+end tell"
+Tue,26-Nov-2013~16:11 RESULT 
+Tue,26-Nov-2013~16:11 INTERACTION: Ok.
+Tue,26-Nov-2013~16:17 PARTS: ['pause']
+Tue,26-Nov-2013~16:17 SENTENCE: [('You', 'PS'), ('pause', 'VB')]
+Tue,26-Nov-2013~16:17 KIND: IMP
+Tue,26-Nov-2013~16:17 WEIGHTS: {1.0: ['media']}
+Tue,26-Nov-2013~16:17 BEST: media
+Tue,26-Nov-2013~16:17 ['pause']
+Tue,26-Nov-2013~16:17 MUSIC KEYWORDS: []
+Tue,26-Nov-2013~16:17 MEDIA: pause
+Tue,26-Nov-2013~16:17 COMMAND: tell application "iTunes"
+try
+pause
+on error errMsg number errorNumber
+return "error"
+end try
+end tell
+Tue,26-Nov-2013~16:17 CODE: osascript -e "tell application \"iTunes\"
+try
+pause
+on error errMsg number errorNumber
+return \"error\"
+end try
+end tell"
+Tue,26-Nov-2013~16:17 RESULT 
+Tue,26-Nov-2013~16:17 INTERACTION: Ok.
+Tue,26-Nov-2013~19:45 PARTS: ["what's playing"]
+Tue,26-Nov-2013~19:45 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('play', 'VB')]
+Tue,26-Nov-2013~19:45 KIND: INT
+Tue,26-Nov-2013~19:45 WEIGHTS: {1.0: ['media']}
+Tue,26-Nov-2013~19:45 BEST: media
+Tue,26-Nov-2013~19:45 ['be', 'play']
+Tue,26-Nov-2013~19:45 MUSIC KEYWORDS: []
+Tue,26-Nov-2013~19:45 CODE: osascript -e "tell application \"iTunes\"
+    set myTrack to (name of current track)
+    set myArtist to (artist of current track)
+end tell
 
-http://en.wikipedia.org/wiki/steam
-Mon,25-Nov-2013~22:04 CONNECTION: <function set_text at 0x1020de680>
-Mon,25-Nov-2013~22:05 PARTS: ['hi']
-Mon,25-Nov-2013~22:05 SENTENCE: [('hi', 'NS')]
-Mon,25-Nov-2013~22:05 KIND: DEC
-Mon,25-Nov-2013~22:05 WEIGHTS: {1.0: ['personality']}
-Mon,25-Nov-2013~22:05 BEST: personality
-Mon,25-Nov-2013~22:05 INTERACTION: Good Evening, sir.
-Mon,25-Nov-2013~22:05 CONNECTION: <function set_text at 0x1020de680>
-Mon,25-Nov-2013~22:07 PARTS: ['bye']
-Mon,25-Nov-2013~22:07 SENTENCE: [('bye', '??')]
-Mon,25-Nov-2013~22:07 KIND: DEC
-Mon,25-Nov-2013~22:07 WEIGHTS: {}
-Mon,25-Nov-2013~22:07 KEYWORDS: [('bye', 0)]
-Mon,25-Nov-2013~22:07 URL: http://www.google.com/search?q=bye
-Mon,25-Nov-2013~22:07 INTERACTION: Just a moment, Aaron.
-Mon,25-Nov-2013~22:07 CONNECTION: <function set_text at 0x1020de680>
-Mon,25-Nov-2013~22:07 CODE: open http://www.google.com/search?q=bye
-Mon,25-Nov-2013~22:07 INTERACTION: Here, try this.
-Mon,25-Nov-2013~22:07 CONNECTION: <function set_text at 0x1020de680>
-Mon,25-Nov-2013~22:08 Successfully imported Modules.clock
-Mon,25-Nov-2013~22:08 Successfully imported Modules.controls
-Mon,25-Nov-2013~22:08 Successfully imported Modules.discover
-Mon,25-Nov-2013~22:08 Successfully imported Modules.finder
-Mon,25-Nov-2013~22:08 Successfully imported Modules.loader
-Mon,25-Nov-2013~22:08 Successfully imported Modules.media
-Mon,25-Nov-2013~22:08 Successfully imported Modules.personality
-Mon,25-Nov-2013~22:08 Successfully imported Modules.settings
-Mon,25-Nov-2013~22:08 Successfully imported Modules.weather
-Mon,25-Nov-2013~22:08 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~22:23 PARTS: ['who are you']
-Mon,25-Nov-2013~22:23 SENTENCE: [('who', 'WH'), ('be', 'VB'), ('you', 'PO')]
-Mon,25-Nov-2013~22:23 KIND: INT
-Mon,25-Nov-2013~22:23 WEIGHTS: {}
-Mon,25-Nov-2013~22:23 KEYWORDS: []
-Mon,25-Nov-2013~22:23 URL: http://www.google.com/search?q=
-Mon,25-Nov-2013~22:23 INTERACTION: Let me see...
-Mon,25-Nov-2013~22:23 CODE: open http://www.google.com/search?q=
-Mon,25-Nov-2013~22:23 INTERACTION: Here, try this.
-Mon,25-Nov-2013~22:29 PARTS: ['restart']
-Mon,25-Nov-2013~22:29 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Mon,25-Nov-2013~22:29 KIND: IMP
-Mon,25-Nov-2013~22:29 WEIGHTS: {1.0: ['loader']}
-Mon,25-Nov-2013~22:29 BEST: loader
-Mon,25-Nov-2013~22:29 Successfully imported Modules.clock
-Mon,25-Nov-2013~22:29 Successfully imported Modules.controls
-Mon,25-Nov-2013~22:29 Successfully imported Modules.discover
-Mon,25-Nov-2013~22:29 Successfully imported Modules.finder
-Mon,25-Nov-2013~22:29 Successfully imported Modules.loader
-Mon,25-Nov-2013~22:29 Successfully imported Modules.media
-Mon,25-Nov-2013~22:29 Successfully imported Modules.personality
-Mon,25-Nov-2013~22:29 Successfully imported Modules.settings
-Mon,25-Nov-2013~22:29 Successfully imported Modules.weather
-Mon,25-Nov-2013~22:29 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~22:29 PARTS: ['tell me about yourself']
-Mon,25-Nov-2013~22:29 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('yourself', 'NO')]
-Mon,25-Nov-2013~22:29 KIND: IMP
-Mon,25-Nov-2013~22:29 WEIGHTS: {1.0: ['personality'], 2.0: ['wikipedia']}
-Mon,25-Nov-2013~22:29 BEST: wikipedia
-Mon,25-Nov-2013~22:29 KEYWORDS: [('yourself', 4)]
-Mon,25-Nov-2013~22:29 INTERACTION: Hang on...
-Mon,25-Nov-2013~22:29 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=yourself&printable=yes
-Mon,25-Nov-2013~22:29 INTERACTION: A reflexive pronoun is a pronoun that is preceded by the noun, adjective, adverb or pronoun to which it refers (its antecedent) within the same clause. In generative grammar, a reflexive pronoun is an anaphor that must be bound by its antecedent (see binding). In a general sense, it is a noun phrase that obligatorily gets its meaning from another noun phrase in the sentence. Different languages will have different binding domains for reflexive pronouns, according to their structure.
+return \"It's '\" & myTrack & \"', by \" & myArtist & \".\""
+Tue,26-Nov-2013~19:45 INTERACTION: It's 'Ooh La', by The Kooks.
+Tue,26-Nov-2013~19:45 PARTS: ['skpi']
+Tue,26-Nov-2013~19:45 SENTENCE: [('skpi', '??')]
+Tue,26-Nov-2013~19:45 KIND: DEC
+Tue,26-Nov-2013~19:45 WEIGHTS: {}
+Tue,26-Nov-2013~19:45 KEYWORDS: [('skpi', 0)]
+Tue,26-Nov-2013~19:45 URL: http://www.google.com/search?q=skpi
+Tue,26-Nov-2013~19:45 INTERACTION: Let me see...
+Tue,26-Nov-2013~19:45 CODE: open http://www.google.com/search?q=skpi
+Tue,26-Nov-2013~19:45 INTERACTION: Here, try this.
+Wed,04-Dec-2013~19:59 PARTS: ["what's playig"]
+Wed,04-Dec-2013~19:59 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('playig', '??')]
+Wed,04-Dec-2013~19:59 KIND: INT
+Wed,04-Dec-2013~19:59 WEIGHTS: {}
+Wed,04-Dec-2013~19:59 KEYWORDS: [('playig', 2)]
+Wed,04-Dec-2013~19:59 URL: http://www.google.com/search?q=playig
+Wed,04-Dec-2013~19:59 INTERACTION: Just a moment.
+Wed,04-Dec-2013~19:59 CODE: open http://www.google.com/search?q=playig
+Wed,04-Dec-2013~19:59 INTERACTION: Here, try this.
+Wed,04-Dec-2013~19:59 PARTS: ["what's playing"]
+Wed,04-Dec-2013~19:59 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('play', 'VB')]
+Wed,04-Dec-2013~19:59 KIND: INT
+Wed,04-Dec-2013~19:59 WEIGHTS: {1.0: ['media']}
+Wed,04-Dec-2013~19:59 BEST: media
+Wed,04-Dec-2013~19:59 ['be', 'play']
+Wed,04-Dec-2013~19:59 MUSIC KEYWORDS: []
+Wed,04-Dec-2013~19:59 CODE: osascript -e "tell application \"iTunes\"
+    set myTrack to (name of current track)
+    set myArtist to (artist of current track)
+end tell
+
+return \"It's '\" & myTrack & \"', by \" & myArtist & \".\""
+Wed,04-Dec-2013~19:59 INTERACTION: It's 'Learn To Fly', by Foo Fighters.
+Wed,04-Dec-2013~19:59 PARTS: ['skip']
+Wed,04-Dec-2013~19:59 SENTENCE: [('You', 'PS'), ('skip', 'VB')]
+Wed,04-Dec-2013~19:59 KIND: IMP
+Wed,04-Dec-2013~19:59 WEIGHTS: {1.0: ['media']}
+Wed,04-Dec-2013~19:59 BEST: media
+Wed,04-Dec-2013~19:59 ['skip']
+Wed,04-Dec-2013~19:59 MUSIC KEYWORDS: []
+Wed,04-Dec-2013~19:59 MEDIA: next track
+Wed,04-Dec-2013~19:59 COMMAND: tell application "iTunes"
+try
+next track
+on error errMsg number errorNumber
+return "error"
+end try
+end tell
+Wed,04-Dec-2013~19:59 CODE: osascript -e "tell application \"iTunes\"
+try
+next track
+on error errMsg number errorNumber
+return \"error\"
+end try
+end tell"
+Wed,04-Dec-2013~19:59 RESULT 
+Wed,04-Dec-2013~19:59 INTERACTION: Ok.
+Wed,04-Dec-2013~19:59 PARTS: ["what's playing now"]
+Wed,04-Dec-2013~19:59 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('play', 'VB'), ('now', '??')]
+Wed,04-Dec-2013~19:59 KIND: INT
+Wed,04-Dec-2013~19:59 WEIGHTS: {1.0: ['media']}
+Wed,04-Dec-2013~19:59 BEST: media
+Wed,04-Dec-2013~19:59 ['be', 'play']
+Wed,04-Dec-2013~19:59 MUSIC KEYWORDS: [('now', 3)]
+Wed,04-Dec-2013~19:59 CODE: osascript -e "tell application \"iTunes\"
+    set myTrack to (name of current track)
+    set myArtist to (artist of current track)
+end tell
+
+return \"It's '\" & myTrack & \"', by \" & myArtist & \".\""
+Wed,04-Dec-2013~19:59 INTERACTION: It's 'The Road Im On', by 3 Doors Down.
+Wed,04-Dec-2013~19:59 PARTS: ['skip']
+Wed,04-Dec-2013~19:59 SENTENCE: [('You', 'PS'), ('skip', 'VB')]
+Wed,04-Dec-2013~19:59 KIND: IMP
+Wed,04-Dec-2013~19:59 WEIGHTS: {1.0: ['media']}
+Wed,04-Dec-2013~19:59 BEST: media
+Wed,04-Dec-2013~19:59 ['skip']
+Wed,04-Dec-2013~19:59 MUSIC KEYWORDS: []
+Wed,04-Dec-2013~19:59 MEDIA: next track
+Wed,04-Dec-2013~19:59 COMMAND: tell application "iTunes"
+try
+next track
+on error errMsg number errorNumber
+return "error"
+end try
+end tell
+Wed,04-Dec-2013~19:59 CODE: osascript -e "tell application \"iTunes\"
+try
+next track
+on error errMsg number errorNumber
+return \"error\"
+end try
+end tell"
+Wed,04-Dec-2013~19:59 RESULT 
+Wed,04-Dec-2013~19:59 INTERACTION: Ok.
+Wed,04-Dec-2013~19:59 PARTS: ["what's playing"]
+Wed,04-Dec-2013~19:59 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('play', 'VB')]
+Wed,04-Dec-2013~19:59 KIND: INT
+Wed,04-Dec-2013~19:59 WEIGHTS: {1.0: ['media']}
+Wed,04-Dec-2013~19:59 BEST: media
+Wed,04-Dec-2013~19:59 ['be', 'play']
+Wed,04-Dec-2013~19:59 MUSIC KEYWORDS: []
+Wed,04-Dec-2013~19:59 CODE: osascript -e "tell application \"iTunes\"
+    set myTrack to (name of current track)
+    set myArtist to (artist of current track)
+end tell
+
+return \"It's '\" & myTrack & \"', by \" & myArtist & \".\""
+Wed,04-Dec-2013~19:59 INTERACTION: It's 'Viva La Vida', by Coldplay.
+Wed,04-Dec-2013~19:59 PARTS: ['play']
+Wed,04-Dec-2013~19:59 SENTENCE: [('You', 'PS'), ('play', 'VB')]
+Wed,04-Dec-2013~19:59 KIND: IMP
+Wed,04-Dec-2013~19:59 WEIGHTS: {1.0: ['media']}
+Wed,04-Dec-2013~19:59 BEST: media
+Wed,04-Dec-2013~19:59 ['play']
+Wed,04-Dec-2013~19:59 MUSIC KEYWORDS: []
+Wed,04-Dec-2013~19:59 MEDIA: play 
+Wed,04-Dec-2013~19:59 COMMAND: tell application "iTunes"
+try
+play 
+on error errMsg number errorNumber
+return "error"
+end try
+end tell
+Wed,04-Dec-2013~19:59 CODE: osascript -e "tell application \"iTunes\"
+try
+play 
+on error errMsg number errorNumber
+return \"error\"
+end try
+end tell"
+Wed,04-Dec-2013~19:59 RESULT 
+Wed,04-Dec-2013~19:59 INTERACTION: Ok.
+Thu,05-Dec-2013~15:29 Successfully imported Modules.clock
+Thu,05-Dec-2013~15:29 Successfully imported Modules.controls
+Thu,05-Dec-2013~15:29 Successfully imported Modules.discover
+Thu,05-Dec-2013~15:29 Successfully imported Modules.finder
+Thu,05-Dec-2013~15:29 Successfully imported Modules.loader
+Thu,05-Dec-2013~15:29 Successfully imported Modules.media
+Thu,05-Dec-2013~15:29 Successfully imported Modules.personality
+Thu,05-Dec-2013~15:29 Successfully imported Modules.settings
+Thu,05-Dec-2013~15:29 Successfully imported Modules.weather
+Thu,05-Dec-2013~15:29 Successfully imported Modules.wikipedia
+Thu,05-Dec-2013~15:29 PARTS: ['what time is it']
+Thu,05-Dec-2013~15:29 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,05-Dec-2013~15:29 KIND: INT
+Thu,05-Dec-2013~15:29 WEIGHTS: {1.0: ['clock']}
+Thu,05-Dec-2013~15:29 BEST: clock
+Thu,05-Dec-2013~15:29 KEYWORDS: ['time']
+Thu,05-Dec-2013~15:29 INTERACTION: It is 3:29pm.
+Thu,05-Dec-2013~15:29 PARTS: ['who are you']
+Thu,05-Dec-2013~15:29 SENTENCE: [('who', 'WH'), ('be', 'VB'), ('you', 'PO')]
+Thu,05-Dec-2013~15:29 KIND: INT
+Thu,05-Dec-2013~15:29 WEIGHTS: {}
+Thu,05-Dec-2013~15:29 KEYWORDS: []
+Thu,05-Dec-2013~15:29 URL: http://www.google.com/search?q=
+Thu,05-Dec-2013~15:29 INTERACTION: Coming up.
+Thu,05-Dec-2013~15:29 CODE: open http://www.google.com/search?q=
+Thu,05-Dec-2013~15:29 INTERACTION: Here, try this.
+Thu,05-Dec-2013~15:30 PARTS: ['tell me about yourself']
+Thu,05-Dec-2013~15:30 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('yourself', '??')]
+Thu,05-Dec-2013~15:30 KIND: IMP
+Thu,05-Dec-2013~15:30 WEIGHTS: {2.0: ['wikipedia']}
+Thu,05-Dec-2013~15:30 BEST: wikipedia
+Thu,05-Dec-2013~15:30 KEYWORDS: [('yourself', 4)]
+Thu,05-Dec-2013~15:30 INTERACTION: Coming up, Aaron.
+Thu,05-Dec-2013~15:30 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=yourself&printable=yes
+Thu,05-Dec-2013~15:30 INTERACTION: A reflexive pronoun is a pronoun that is preceded by the noun, adjective, adverb or pronoun to which it refers (its antecedent) within the same clause. In generative grammar, a reflexive pronoun is an anaphor that must be bound by its antecedent (see binding). In a general sense, it is a noun phrase that obligatorily gets its meaning from another noun phrase in the sentence. Different languages will have different binding domains for reflexive pronouns, according to their structure.
 
 http://en.wikipedia.org/wiki/yourself
-Mon,25-Nov-2013~22:30 PARTS: ['tell me about yourself']
-Mon,25-Nov-2013~22:30 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('yourself', 'NO')]
-Mon,25-Nov-2013~22:30 KIND: IMP
-Mon,25-Nov-2013~22:30 WEIGHTS: {1.0: ['personality'], 2.0: ['wikipedia']}
-Mon,25-Nov-2013~22:30 BEST: wikipedia
-Mon,25-Nov-2013~22:30 KEYWORDS: [('yourself', 4)]
-Mon,25-Nov-2013~22:30 INTERACTION: Let me see, Aaron...
-Mon,25-Nov-2013~22:30 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=yourself&printable=yes
-Mon,25-Nov-2013~22:30 INTERACTION: A reflexive pronoun is a pronoun that is preceded by the noun, adjective, adverb or pronoun to which it refers (its antecedent) within the same clause. In generative grammar, a reflexive pronoun is an anaphor that must be bound by its antecedent (see binding). In a general sense, it is a noun phrase that obligatorily gets its meaning from another noun phrase in the sentence. Different languages will have different binding domains for reflexive pronouns, according to their structure.
+Thu,05-Dec-2013~15:30 PARTS: ['define algebra']
+Thu,05-Dec-2013~15:30 SENTENCE: [('You', 'PS'), ('define', 'VB'), ('algebra', '??')]
+Thu,05-Dec-2013~15:30 KIND: IMP
+Thu,05-Dec-2013~15:30 WEIGHTS: {1.0: ['wikipedia']}
+Thu,05-Dec-2013~15:30 BEST: wikipedia
+Thu,05-Dec-2013~15:30 KEYWORDS: [('algebra', 2)]
+Thu,05-Dec-2013~15:30 INTERACTION: Let me see, Aaron...
+Thu,05-Dec-2013~15:30 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=algebra&printable=yes
+Thu,05-Dec-2013~15:30 INTERACTION: Algebra is one of the broad parts of mathematics, together with number theory, geometry and analysis.
 
-http://en.wikipedia.org/wiki/yourself
-Mon,25-Nov-2013~22:31 PARTS: ['restart']
-Mon,25-Nov-2013~22:31 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Mon,25-Nov-2013~22:31 KIND: IMP
-Mon,25-Nov-2013~22:31 WEIGHTS: {1.0: ['loader']}
-Mon,25-Nov-2013~22:31 BEST: loader
-Mon,25-Nov-2013~22:31 Successfully imported Modules.clock
-Mon,25-Nov-2013~22:31 Successfully imported Modules.controls
-Mon,25-Nov-2013~22:31 Successfully imported Modules.discover
-Mon,25-Nov-2013~22:31 Successfully imported Modules.finder
-Mon,25-Nov-2013~22:31 Successfully imported Modules.loader
-Mon,25-Nov-2013~22:31 Successfully imported Modules.media
-Mon,25-Nov-2013~22:31 Successfully imported Modules.personality
-Mon,25-Nov-2013~22:31 Successfully imported Modules.settings
-Mon,25-Nov-2013~22:31 Successfully imported Modules.weather
-Mon,25-Nov-2013~22:31 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~23:10 INTERACTION: Bye!
-Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
-Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
-Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
-Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
-Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
-Mon,25-Nov-2013~23:11 Successfully imported Modules.media
-Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
-Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
-Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
-Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~23:11 PARTS: ['turn off verbosity']
-Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('turn', 'VB'), ('off', 'PP'), ('verbosity', 'NO')]
-Mon,25-Nov-2013~23:11 KIND: IMP
-Mon,25-Nov-2013~23:11 WEIGHTS: {0.5: ['controls'], 1.5: ['settings']}
-Mon,25-Nov-2013~23:11 BEST: settings
-Mon,25-Nov-2013~23:11 KEYWORDS: [('turn', 1), ('verbosity', 3), ('off', 2)]
-Mon,25-Nov-2013~23:11 SETTING:     "VERBOSE": False,
-
-Mon,25-Nov-2013~23:11     VERBOSE
-Mon,25-Nov-2013~23:11 INTERACTION: Done
-Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
-Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
-Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
-Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
-Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
-Mon,25-Nov-2013~23:11 Successfully imported Modules.media
-Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
-Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
-Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
-Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~23:11 PARTS: ['hello']
-Mon,25-Nov-2013~23:11 SENTENCE: [('hello', 'NS')]
-Mon,25-Nov-2013~23:11 KIND: DEC
-Mon,25-Nov-2013~23:11 WEIGHTS: {1.0: ['personality']}
-Mon,25-Nov-2013~23:11 BEST: personality
-Mon,25-Nov-2013~23:11 INTERACTION: Hello, sir.
-Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
-Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
-Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
-Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
-Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
-Mon,25-Nov-2013~23:11 Successfully imported Modules.media
-Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
-Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
-Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
-Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~23:11 PARTS: ['what time is it?']
-Mon,25-Nov-2013~23:11 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Mon,25-Nov-2013~23:11 KIND: INT
-Mon,25-Nov-2013~23:11 WEIGHTS: {1.0: ['clock']}
-Mon,25-Nov-2013~23:11 BEST: clock
-Mon,25-Nov-2013~23:11 KEYWORDS: ['time']
-Mon,25-Nov-2013~23:11 INTERACTION: It is 11:11pm.
-Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
-Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
-Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
-Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
-Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
-Mon,25-Nov-2013~23:11 Successfully imported Modules.media
-Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
-Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
-Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
-Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~23:11 PARTS: ['google Futurama']
-Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('google', 'VB'), ('futurama', '??')]
-Mon,25-Nov-2013~23:11 KIND: IMP
-Mon,25-Nov-2013~23:11 WEIGHTS: {1.0: ['discover']}
-Mon,25-Nov-2013~23:11 BEST: discover
-Mon,25-Nov-2013~23:11 KEYWORDS: [('futurama', 2)]
-Mon,25-Nov-2013~23:11 URL: http://www.google.com/search?q=futurama
-Mon,25-Nov-2013~23:11 INTERACTION: Coming up.
-Mon,25-Nov-2013~23:11 CODE: open http://www.google.com/search?q=futurama
-Mon,25-Nov-2013~23:11 INTERACTION: Here, try this.
-Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
-Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
-Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
-Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
-Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
-Mon,25-Nov-2013~23:11 Successfully imported Modules.media
-Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
-Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
-Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
-Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~23:11 PARTS: ['Find the movie called django unchained,', 'open it']
-Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('find', 'VB'), ('the', 'AR'), ('movie', 'NO'), ('called', 'PP'), ('django', '??'), ('unchained', '??')]
-Mon,25-Nov-2013~23:11 KIND: IMP
-Mon,25-Nov-2013~23:11 WEIGHTS: {0.5: ['wikipedia'], 1.5: ['finder']}
-Mon,25-Nov-2013~23:11 BEST: finder
-Mon,25-Nov-2013~23:11 KEYWORDS: [('movie', 3), ('django unchained', 5)]
-Mon,25-Nov-2013~23:11 PARAMETERS: movie django unchained kind:movie 
-Mon,25-Nov-2013~23:11 movie
-Mon,25-Nov-2013~23:11 CODE: echo $HOME
-Mon,25-Nov-2013~23:11 CODE: mdfind -onlyin /Users/aaronstockdill/ "movie django unchained kind:movie "
-Mon,25-Nov-2013~23:11 RESULTS FIRST 5:  ['/Users/aaronstockdill/Movies/Django Unchained.m4v']
-Mon,25-Nov-2013~23:11 DECISION: /Users/aaronstockdill/Movies/Django Unchained.m4v
-Mon,25-Nov-2013~23:11 IT: /Users/aaronstockdill/Movies/Django Unchained.m4v
-Mon,25-Nov-2013~23:11 CODE: osascript -e "tell application \"Finder\" to reveal POSIX file \"/Users/aaronstockdill/Movies/Django Unchained.m4v\""
-Mon,25-Nov-2013~23:11 INTERACTION: I found something...
-Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
-Mon,25-Nov-2013~23:11 KIND: IMP
-Mon,25-Nov-2013~23:11 WEIGHTS: {1.0: ['finder']}
-Mon,25-Nov-2013~23:11 BEST: finder
-Mon,25-Nov-2013~23:11 IT: /Users/aaronstockdill/Movies/Django Unchained.m4v
-Mon,25-Nov-2013~23:11 CODE: open "/Users/aaronstockdill/Movies/Django Unchained.m4v"
-Mon,25-Nov-2013~23:11 INTERACTION: Opening it.
-Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
-Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
-Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
-Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
-Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
-Mon,25-Nov-2013~23:11 Successfully imported Modules.media
-Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
-Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
-Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
-Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~23:11 PARTS: ['play Viva La Vida']
-Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('play', 'VB'), ('viva', '??'), ('la', '??'), ('vida', '??')]
-Mon,25-Nov-2013~23:11 KIND: IMP
-Mon,25-Nov-2013~23:11 WEIGHTS: {1.0: ['media']}
-Mon,25-Nov-2013~23:11 BEST: media
-Mon,25-Nov-2013~23:11 ['play']
-Mon,25-Nov-2013~23:11 MUSIC KEYWORDS: [('viva la vida', 2)]
-Mon,25-Nov-2013~23:11 MEDIA: play item 1 of (every track of library playlist 1 whose name is "viva la vida")
-Mon,25-Nov-2013~23:11 COMMAND: tell application "iTunes" to play item 1 of (every track of library playlist 1 whose name is "viva la vida")
-Mon,25-Nov-2013~23:11 CODE: osascript -e "tell application \"iTunes\" to play item 1 of (every track of library playlist 1 whose name is \"viva la vida\")"
-Mon,25-Nov-2013~23:11 INTERACTION: OK
-Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
-Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
-Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
-Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
-Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
-Mon,25-Nov-2013~23:11 Successfully imported Modules.media
-Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
-Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
-Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
-Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~23:11 PARTS: ['pause']
-Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('pause', 'VB')]
-Mon,25-Nov-2013~23:11 KIND: IMP
-Mon,25-Nov-2013~23:11 WEIGHTS: {1.0: ['media']}
-Mon,25-Nov-2013~23:11 BEST: media
-Mon,25-Nov-2013~23:11 ['pause']
-Mon,25-Nov-2013~23:11 MUSIC KEYWORDS: []
-Mon,25-Nov-2013~23:11 MEDIA: pause
-Mon,25-Nov-2013~23:11 COMMAND: tell application "iTunes" to pause
-Mon,25-Nov-2013~23:11 CODE: osascript -e "tell application \"iTunes\" to pause"
-Mon,25-Nov-2013~23:11 INTERACTION: OK
-Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
-Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
-Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
-Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
-Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
-Mon,25-Nov-2013~23:11 Successfully imported Modules.media
-Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
-Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
-Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
-Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~23:11 PARTS: ['Is it going to rain tomorrow?']
-Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('go', 'VB'), ('to', 'PP'), ('rain', 'NO'), ('tomorrow', 'NO')]
-Mon,25-Nov-2013~23:11 KIND: IMP
-Mon,25-Nov-2013~23:11 WEIGHTS: {1.0: ['media'], 2.0: ['weather']}
-Mon,25-Nov-2013~23:11 BEST: weather
-Mon,25-Nov-2013~23:11 INTERACTION: Let me see...
-Mon,25-Nov-2013~23:11 KEYWORDS: [('rain tomorrow', 5)]
-Mon,25-Nov-2013~23:11 TODAY: 0
-Mon,25-Nov-2013~23:11 DAY: 2
-Mon,25-Nov-2013~23:11 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 25 Nov 2013 10:31 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="7"   direction="220"   speed="12.87" />\n', b'<yweather:atmosphere humidity="100"  visibility="5"  pressure="982.05"  rising="0" />\n', b'<yweather:astronomy sunrise="5:48 am"   sunset="8:44 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 10:31 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 25 Nov 2013 10:31 pm NZDT</pubDate>\n', b'<yweather:condition  text="Drizzle"  code="9"  temp="9"  date="Mon, 25 Nov 2013 10:31 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/9.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Drizzle, 9 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Rain. High: 17 Low: 11<br />\n', b'Tue - Showers. High: 14 Low: 11<br />\n', b'Wed - Showers. High: 16 Low: 12<br />\n', b'Thu - Rain. High: 16 Low: 12<br />\n', b'Fri - Cloudy. High: 19 Low: 12<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="25 Nov 2013" low="11" high="17" text="Rain" code="12" />\n', b'<yweather:forecast day="Tue" date="26 Nov 2013" low="11" high="14" text="Showers" code="11" />\n', b'<yweather:forecast day="Wed" date="27 Nov 2013" low="12" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Thu" date="28 Nov 2013" low="12" high="16" text="Rain" code="12" />\n', b'<yweather:forecast day="Fri" date="29 Nov 2013" low="12" high="19" text="Cloudy" code="26" />\n', b'<guid isPermaLink="false">NZXX0006_2013_11_29_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan455.sports.gq1.yahoo.com Mon Nov 25 10:07:35 PST 2013 -->\n']
-Mon,25-Nov-2013~23:11 CONDITIONS: {'text': 'Showers', 'date': '26 Nov 2013', 'code': '11', 'high': '14', 'low': '11'}
-Mon,25-Nov-2013~23:11 INTERACTION: It will have a low of 11°C, a high of 14°C, and will be showers.
-Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
-Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
-Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
-Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
-Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
-Mon,25-Nov-2013~23:11 Successfully imported Modules.media
-Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
-Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
-Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
-Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~23:11 PARTS: ['set my name to Steve']
-Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('i', 'PS'), ('name', 'NO'), ('to', 'PP'), ('steve', '??')]
-Mon,25-Nov-2013~23:11 KIND: IMP
-Mon,25-Nov-2013~23:11 WEIGHTS: {0.5: ['controls'], 1.5: ['settings']}
-Mon,25-Nov-2013~23:11 BEST: settings
-Mon,25-Nov-2013~23:11 KEYWORDS: [('set', 1), ('name', 3), ('steve', 5)]
-Mon,25-Nov-2013~23:11 VAL[0] steve
-Mon,25-Nov-2013~23:11 SETTING:     "name": "Steve",
-
-Mon,25-Nov-2013~23:11     name
-Mon,25-Nov-2013~23:11 INTERACTION: Ok, I'll call you Steve from now on.
-Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
-Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
-Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
-Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
-Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
-Mon,25-Nov-2013~23:11 Successfully imported Modules.media
-Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
-Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
-Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
-Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~23:11 PARTS: ['set my name to Aaron']
-Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('set', 'VB'), ('i', 'PS'), ('name', 'NO'), ('to', 'PP'), ('aaron', '??')]
-Mon,25-Nov-2013~23:11 KIND: IMP
-Mon,25-Nov-2013~23:11 WEIGHTS: {0.5: ['controls'], 1.5: ['settings']}
-Mon,25-Nov-2013~23:11 BEST: settings
-Mon,25-Nov-2013~23:11 KEYWORDS: [('set', 1), ('name', 3), ('aaron', 5)]
-Mon,25-Nov-2013~23:11 VAL[0] aaron
-Mon,25-Nov-2013~23:11 SETTING:     "name": "Aaron",
-
-Mon,25-Nov-2013~23:11     name
-Mon,25-Nov-2013~23:11 INTERACTION: Ok, I'll call you Aaron from now on.
-Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
-Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
-Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
-Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
-Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
-Mon,25-Nov-2013~23:11 Successfully imported Modules.media
-Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
-Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
-Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
-Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~23:11 PARTS: ['thanks!']
-Mon,25-Nov-2013~23:11 SENTENCE: [('thank', 'NS')]
-Mon,25-Nov-2013~23:11 KIND: DEC
-Mon,25-Nov-2013~23:11 WEIGHTS: {1.0: ['personality']}
-Mon,25-Nov-2013~23:11 BEST: personality
-Mon,25-Nov-2013~23:11 INTERACTION: No worries.
-Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
-Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
-Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
-Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
-Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
-Mon,25-Nov-2013~23:11 Successfully imported Modules.media
-Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
-Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
-Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
-Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~23:11 PARTS: ['tell me about Athena']
-Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('athena', '??')]
-Mon,25-Nov-2013~23:11 KIND: IMP
-Mon,25-Nov-2013~23:11 WEIGHTS: {2.0: ['wikipedia']}
-Mon,25-Nov-2013~23:11 BEST: wikipedia
-Mon,25-Nov-2013~23:11 KEYWORDS: [('athena', 4)]
-Mon,25-Nov-2013~23:11 INTERACTION: Let me see, Steve...
-Mon,25-Nov-2013~23:11 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=athena&printable=yes
-Mon,25-Nov-2013~23:11 INTERACTION: In Greek religion and mythology, Athena or Athene (/əˈθiːnə/ or /əˈθiːniː/; Attic: Ἀθηνᾶ, Athēnā or Ἀθηναία, Athēnaia; Epic: Ἀθηναίη, Athēnaiē; Ionic: Ἀθήνη, Athēnē; Doric: Ἀθάνα, Athānā), also referred to as Pallas Athena/Athene (/ˈpæləs/; Παλλὰς Ἀθηνᾶ; Παλλὰς Ἀθήνη), is the goddess of wisdom, courage, inspiration, civilization, law and justice, just warfare, mathematics, strength, strategy, the arts, crafts, and skill. Minerva is the Roman goddess identified with Athena.
-
-http://en.wikipedia.org/wiki/athena
-Mon,25-Nov-2013~23:11 Successfully imported Modules.clock
-Mon,25-Nov-2013~23:11 Successfully imported Modules.controls
-Mon,25-Nov-2013~23:11 Successfully imported Modules.discover
-Mon,25-Nov-2013~23:11 Successfully imported Modules.finder
-Mon,25-Nov-2013~23:11 Successfully imported Modules.loader
-Mon,25-Nov-2013~23:11 Successfully imported Modules.media
-Mon,25-Nov-2013~23:11 Successfully imported Modules.personality
-Mon,25-Nov-2013~23:11 Successfully imported Modules.settings
-Mon,25-Nov-2013~23:11 Successfully imported Modules.weather
-Mon,25-Nov-2013~23:11 Successfully imported Modules.wikipedia
-Mon,25-Nov-2013~23:11 PARTS: ['turn on verbosity']
-Mon,25-Nov-2013~23:11 SENTENCE: [('You', 'PS'), ('turn', 'VB'), ('on', 'PP'), ('verbosity', 'NO')]
-Mon,25-Nov-2013~23:11 KIND: IMP
-Mon,25-Nov-2013~23:11 WEIGHTS: {0.5: ['controls'], 1.5: ['settings']}
-Mon,25-Nov-2013~23:11 BEST: settings
-Mon,25-Nov-2013~23:11 KEYWORDS: [('turn', 1), ('verbosity', 3), ('on', 2)]
-Mon,25-Nov-2013~23:11 SETTING:     "VERBOSE": True,
-
-Mon,25-Nov-2013~23:11     VERBOSE
-Mon,25-Nov-2013~23:11 INTERACTION: Done
-Tue,26-Nov-2013~10:56 Successfully imported Modules.clock
-Tue,26-Nov-2013~10:56 Successfully imported Modules.controls
-Tue,26-Nov-2013~10:56 Successfully imported Modules.discover
-Tue,26-Nov-2013~10:56 Successfully imported Modules.finder
-Tue,26-Nov-2013~10:56 Successfully imported Modules.loader
-Tue,26-Nov-2013~10:56 Successfully imported Modules.media
-Tue,26-Nov-2013~10:56 Successfully imported Modules.personality
-Tue,26-Nov-2013~10:56 Successfully imported Modules.settings
-Tue,26-Nov-2013~10:56 Successfully imported Modules.weather
-Tue,26-Nov-2013~10:56 Successfully imported Modules.wikipedia
-Tue,26-Nov-2013~10:56 PARTS: ['lock']
-Tue,26-Nov-2013~10:56 SENTENCE: [('You', 'PS'), ('lock', 'VB')]
-Tue,26-Nov-2013~10:56 KIND: IMP
-Tue,26-Nov-2013~10:56 WEIGHTS: {1.0: ['controls']}
-Tue,26-Nov-2013~10:56 BEST: controls
-Tue,26-Nov-2013~10:56 KEYWORDS: [('lock', 1)]
-Tue,26-Nov-2013~10:56 CODE: osascript -e "tell application \"Finder\" to sleep"
-Tue,26-Nov-2013~10:56 INTERACTION: Done!
+http://en.wikipedia.org/wiki/algebra
+Thu,05-Dec-2013~15:30 PARTS: ['open it']
+Thu,05-Dec-2013~15:30 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
+Thu,05-Dec-2013~15:30 KIND: IMP
+Thu,05-Dec-2013~15:30 WEIGHTS: {1.0: ['finder']}
+Thu,05-Dec-2013~15:30 BEST: finder
+Thu,05-Dec-2013~15:30 IT: http://en.wikipedia.org/wiki/algebra
+Thu,05-Dec-2013~15:30 CODE: open "http://en.wikipedia.org/wiki/algebra"
+Thu,05-Dec-2013~15:30 INTERACTION: Opening it.
+Thu,12-Dec-2013~14:34 PARTS: ['restart']
+Thu,12-Dec-2013~14:34 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Thu,12-Dec-2013~14:34 KIND: IMP
+Thu,12-Dec-2013~14:34 WEIGHTS: {1.0: ['loader']}
+Thu,12-Dec-2013~14:34 BEST: loader
+Thu,12-Dec-2013~14:34 Successfully imported Modules.clock
+Thu,12-Dec-2013~14:34 Successfully imported Modules.controls
+Thu,12-Dec-2013~14:34 Successfully imported Modules.discover
+Thu,12-Dec-2013~14:34 Successfully imported Modules.finder
+Thu,12-Dec-2013~14:34 Successfully imported Modules.loader
+Thu,12-Dec-2013~14:34 Successfully imported Modules.media
+Thu,12-Dec-2013~14:34 Successfully imported Modules.personality
+Thu,12-Dec-2013~14:34 Successfully imported Modules.settings
+Thu,12-Dec-2013~14:34 Successfully imported Modules.weather
+Thu,12-Dec-2013~14:34 Successfully imported Modules.wikipedia
+Thu,12-Dec-2013~14:34 PARTS: ['mute']
+Thu,12-Dec-2013~14:34 SENTENCE: [('You', 'PS'), ('mute', 'VB')]
+Thu,12-Dec-2013~14:34 KIND: IMP
+Thu,12-Dec-2013~14:34 WEIGHTS: {1.0: ['controls']}
+Thu,12-Dec-2013~14:34 BEST: controls
+Thu,12-Dec-2013~14:34 KEYWORDS: [('mute', 1)]
+Thu,12-Dec-2013~14:35 PARTS: ['restart']
+Thu,12-Dec-2013~14:35 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Thu,12-Dec-2013~14:35 KIND: IMP
+Thu,12-Dec-2013~14:35 WEIGHTS: {1.0: ['loader']}
+Thu,12-Dec-2013~14:35 BEST: loader
+Thu,12-Dec-2013~14:35 Successfully imported Modules.clock
+Thu,12-Dec-2013~14:35 Successfully imported Modules.controls
+Thu,12-Dec-2013~14:35 Successfully imported Modules.discover
+Thu,12-Dec-2013~14:35 Successfully imported Modules.finder
+Thu,12-Dec-2013~14:35 Successfully imported Modules.loader
+Thu,12-Dec-2013~14:35 Successfully imported Modules.media
+Thu,12-Dec-2013~14:35 Successfully imported Modules.personality
+Thu,12-Dec-2013~14:35 Successfully imported Modules.settings
+Thu,12-Dec-2013~14:35 Successfully imported Modules.weather
+Thu,12-Dec-2013~14:35 Successfully imported Modules.wikipedia
+Thu,12-Dec-2013~14:35 PARTS: ['mute']
+Thu,12-Dec-2013~14:35 SENTENCE: [('You', 'PS'), ('mute', 'VB')]
+Thu,12-Dec-2013~14:35 KIND: IMP
+Thu,12-Dec-2013~14:35 WEIGHTS: {1.0: ['controls']}
+Thu,12-Dec-2013~14:35 BEST: controls
+Thu,12-Dec-2013~14:35 KEYWORDS: [('mute', 1)]
+Thu,12-Dec-2013~14:35 CODE: osascript -e "set volumeSettings to get volume settings
+if output muted of volumeSettings is false then
+    set volume with output muted
+else
+    set volume without output muted
+end if"
+Thu,12-Dec-2013~14:35 INTERACTION: Muted.
+Thu,12-Dec-2013~14:35 PARTS: ['mute']
+Thu,12-Dec-2013~14:35 SENTENCE: [('You', 'PS'), ('mute', 'VB')]
+Thu,12-Dec-2013~14:35 KIND: IMP
+Thu,12-Dec-2013~14:35 WEIGHTS: {1.0: ['controls']}
+Thu,12-Dec-2013~14:35 BEST: controls
+Thu,12-Dec-2013~14:35 KEYWORDS: [('mute', 1)]
+Thu,12-Dec-2013~14:35 CODE: osascript -e "set volumeSettings to get volume settings
+if output muted of volumeSettings is false then
+    set volume with output muted
+else
+    set volume without output muted
+end if"
+Thu,12-Dec-2013~14:35 INTERACTION: Muted.
+Thu,12-Dec-2013~14:36 PARTS: ['restart']
+Thu,12-Dec-2013~14:36 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Thu,12-Dec-2013~14:36 KIND: IMP
+Thu,12-Dec-2013~14:36 WEIGHTS: {1.0: ['loader']}
+Thu,12-Dec-2013~14:36 BEST: loader
+Thu,12-Dec-2013~14:36 Successfully imported Modules.clock
+Thu,12-Dec-2013~14:36 Successfully imported Modules.controls
+Thu,12-Dec-2013~14:36 Successfully imported Modules.discover
+Thu,12-Dec-2013~14:36 Successfully imported Modules.finder
+Thu,12-Dec-2013~14:36 Successfully imported Modules.loader
+Thu,12-Dec-2013~14:36 Successfully imported Modules.media
+Thu,12-Dec-2013~14:36 Successfully imported Modules.personality
+Thu,12-Dec-2013~14:36 Successfully imported Modules.settings
+Thu,12-Dec-2013~14:36 Successfully imported Modules.weather
+Thu,12-Dec-2013~14:36 Successfully imported Modules.wikipedia
+Thu,12-Dec-2013~14:36 PARTS: ['mute']
+Thu,12-Dec-2013~14:36 SENTENCE: [('You', 'PS'), ('mute', 'VB')]
+Thu,12-Dec-2013~14:36 KIND: IMP
+Thu,12-Dec-2013~14:36 WEIGHTS: {1.0: ['controls']}
+Thu,12-Dec-2013~14:36 BEST: controls
+Thu,12-Dec-2013~14:36 KEYWORDS: [('mute', 1)]
+Thu,12-Dec-2013~14:36 CODE: osascript -e "set volumeSettings to get volume settings
+if output muted of volumeSettings is false then
+    set volume with output muted
+else
+    set volume without output muted
+end if"
+Thu,12-Dec-2013~14:36 INTERACTION: Muted.
+Thu,12-Dec-2013~14:36 PARTS: ['mute']
+Thu,12-Dec-2013~14:36 SENTENCE: [('You', 'PS'), ('mute', 'VB')]
+Thu,12-Dec-2013~14:36 KIND: IMP
+Thu,12-Dec-2013~14:36 WEIGHTS: {1.0: ['controls']}
+Thu,12-Dec-2013~14:36 BEST: controls
+Thu,12-Dec-2013~14:36 KEYWORDS: [('mute', 1)]
+Thu,12-Dec-2013~14:36 CODE: osascript -e "set volumeSettings to get volume settings
+if output muted of volumeSettings is false then
+    set volume with output muted
+else
+    set volume without output muted
+end if"
+Thu,12-Dec-2013~14:36 INTERACTION: Muted.
+Thu,12-Dec-2013~14:36 PARTS: ['restart']
+Thu,12-Dec-2013~14:36 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Thu,12-Dec-2013~14:36 KIND: IMP
+Thu,12-Dec-2013~14:36 WEIGHTS: {1.0: ['loader']}
+Thu,12-Dec-2013~14:36 BEST: loader
+Thu,12-Dec-2013~14:36 Successfully imported Modules.clock
+Thu,12-Dec-2013~14:36 Successfully imported Modules.controls
+Thu,12-Dec-2013~14:36 Successfully imported Modules.discover
+Thu,12-Dec-2013~14:36 Successfully imported Modules.finder
+Thu,12-Dec-2013~14:36 Successfully imported Modules.loader
+Thu,12-Dec-2013~14:36 Successfully imported Modules.media
+Thu,12-Dec-2013~14:36 Successfully imported Modules.personality
+Thu,12-Dec-2013~14:36 Successfully imported Modules.settings
+Thu,12-Dec-2013~14:36 Successfully imported Modules.weather
+Thu,12-Dec-2013~14:36 Successfully imported Modules.wikipedia
+Thu,12-Dec-2013~14:37 PARTS: ['who are you']
+Thu,12-Dec-2013~14:37 SENTENCE: [('who', 'WH'), ('be', 'VB'), ('you', 'PO')]
+Thu,12-Dec-2013~14:37 KIND: INT
+Thu,12-Dec-2013~14:37 WEIGHTS: {}
+Thu,12-Dec-2013~14:37 KEYWORDS: []
+Thu,12-Dec-2013~14:37 URL: http://www.google.com/search?q=
+Thu,12-Dec-2013~14:37 INTERACTION: Coming up, Aaron.
+Thu,12-Dec-2013~14:37 CODE: open http://www.google.com/search?q=
+Thu,12-Dec-2013~14:37 INTERACTION: Here, try this.
+Thu,12-Dec-2013~14:41 PARTS: ['what time is it']
+Thu,12-Dec-2013~14:41 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,12-Dec-2013~14:41 KIND: INT
+Thu,12-Dec-2013~14:41 WEIGHTS: {1.0: ['clock']}
+Thu,12-Dec-2013~14:41 BEST: clock
+Thu,12-Dec-2013~14:41 KEYWORDS: ['time']
+Thu,12-Dec-2013~14:41 INTERACTION: It is 2:41pm.
+Thu,12-Dec-2013~14:41 PARTS: ['what day is it']
+Thu,12-Dec-2013~14:41 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Thu,12-Dec-2013~14:41 KIND: INT
+Thu,12-Dec-2013~14:41 WEIGHTS: {1.0: ['clock']}
+Thu,12-Dec-2013~14:41 BEST: clock
+Thu,12-Dec-2013~14:41 KEYWORDS: ['day']
+Thu,12-Dec-2013~14:41 INTERACTION: It is Thursday.
+Thu,12-Dec-2013~14:41 PARTS: ['what day is today']
+Thu,12-Dec-2013~14:41 SENTENCE: [('what', 'WH'), ('day', 'NS'), ('be', 'VB'), ('today', 'NO')]
+Thu,12-Dec-2013~14:41 KIND: INT
+Thu,12-Dec-2013~14:41 WEIGHTS: {0.5: ['weather'], 1.5: ['clock']}
+Thu,12-Dec-2013~14:41 BEST: clock
+Thu,12-Dec-2013~14:41 KEYWORDS: ['day', 'today']
+Thu,12-Dec-2013~14:41 INTERACTION: It is Thursday.
+Thu,12-Dec-2013~15:06 PARTS: ['restart']
+Thu,12-Dec-2013~15:06 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Thu,12-Dec-2013~15:06 KIND: IMP
+Thu,12-Dec-2013~15:06 WEIGHTS: {1.0: ['loader']}
+Thu,12-Dec-2013~15:06 BEST: loader
+Thu,12-Dec-2013~15:06 Successfully imported Modules.clock
+Thu,12-Dec-2013~15:06 Successfully imported Modules.controls
+Thu,12-Dec-2013~15:06 Successfully imported Modules.discover
+Thu,12-Dec-2013~15:06 Successfully imported Modules.finder
+Thu,12-Dec-2013~15:06 Successfully imported Modules.loader
+Thu,12-Dec-2013~15:06 Successfully imported Modules.media
+Thu,12-Dec-2013~15:06 Successfully imported Modules.personality
+Thu,12-Dec-2013~15:06 Successfully imported Modules.settings
+Thu,12-Dec-2013~15:06 Successfully imported Modules.weather
+Thu,12-Dec-2013~15:06 Successfully imported Modules.wikipedia
+Thu,12-Dec-2013~15:06 PARTS: ['mute']
+Thu,12-Dec-2013~15:06 SENTENCE: [('You', 'PS'), ('mute', 'VB')]
+Thu,12-Dec-2013~15:06 KIND: IMP
+Thu,12-Dec-2013~15:06 WEIGHTS: {1.0: ['controls']}
+Thu,12-Dec-2013~15:06 BEST: controls
+Thu,12-Dec-2013~15:06 KEYWORDS: [('mute', 1)]
+Thu,12-Dec-2013~15:06 CODE: osascript -e "set toggle to get volume settings
+if output muted of toggle is false then
+    set volume with output muted
+else
+    set volume without output muted
+end if"
+Thu,12-Dec-2013~15:06 INTERACTION: Toggling mute.
+Thu,12-Dec-2013~15:06 PARTS: ['mute']
+Thu,12-Dec-2013~15:06 SENTENCE: [('You', 'PS'), ('mute', 'VB')]
+Thu,12-Dec-2013~15:06 KIND: IMP
+Thu,12-Dec-2013~15:06 WEIGHTS: {1.0: ['controls']}
+Thu,12-Dec-2013~15:06 BEST: controls
+Thu,12-Dec-2013~15:06 KEYWORDS: [('mute', 1)]
+Thu,12-Dec-2013~15:06 CODE: osascript -e "set toggle to get volume settings
+if output muted of toggle is false then
+    set volume with output muted
+else
+    set volume without output muted
+end if"
+Thu,12-Dec-2013~15:06 INTERACTION: Toggling mute.

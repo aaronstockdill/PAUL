@@ -53,6 +53,15 @@ desktop = lambda: paul.run_script(
                         'tell application "System Events" to key code 103',
                         language='applescript')
 
+mute = lambda: paul.run_script(
+    "set toggle to get volume settings\n"
+    + "if output muted of toggle is false then\n"
+    + "    set volume with output muted\n"
+    + "else\n"
+    + "    set volume without output muted\n"
+    + "end if",
+    language="applescript")
+
 def change_volume(keywords):
     ''' Change the volume up or down, depending on the keywords '''
     
@@ -108,7 +117,10 @@ def process(sentence):
     keywords = sentence.keywords(include=['VB', 'NS'])
     paul.log("KEYWORDS:", keywords)
     
-    if paul.has_word(keywords, "volume"):
+    if paul.has_one_of(keywords, ["mute", "silence", "unmute"]):
+        mute()
+        return "Toggling mute."
+    elif paul.has_word(keywords, "volume"):
         return change_volume(keywords)
     elif paul.has_word(keywords, "brightness"):
         return change_brightness(keywords)
