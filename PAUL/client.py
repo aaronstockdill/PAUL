@@ -26,6 +26,7 @@ def show_splash():
         + "\n"
         + " " * x, byline + "\n"
         + " " * y, author + "\n\n")
+    print("WARNING: This program is marked for removal from Paul. Cease use.")
 
 def end_line(s):
     s.send(bytes(" "*1024, "utf-8"))
@@ -37,7 +38,7 @@ def extract_server_info(server_info):
         host, port = DEFAULT_HOST, DEFAULT_PORT
     else:
         host, port = server_info.split(":")
-    return host, port
+    return host, int(port)
 
 def connection(server_info):
     HOST = server_info[0]       # The remote host

@@ -3,3 +3,4 @@ __pycache__
 *.pyc
 ignore/*
 log.txt
+PAUL/Settings/aaron.py

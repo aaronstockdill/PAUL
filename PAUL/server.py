@@ -3,14 +3,15 @@ PAUL Server Program.
 '''
 import socket
 import threading
-
-import brain
+import random
+import importlib
 
 HOST = ''
 PORT = 32012
 
 def show_splash():
     import os
+    import brain
     os.system("clear")
     rows, columns = [int(i) for i in os.popen('stty size', 'r').read().split()]
     title = "P.A.U.L Server"
@@ -29,6 +30,7 @@ def show_splash():
         + " " * x, byline + "\n"
         + " " * y, byline2 + "\n"
         + " " * z, author + "\n\n")
+    print("WARNING: This program is marked for removal from Paul. Cease use.")
 
 class Client(threading.Thread):
     
@@ -53,13 +55,13 @@ class Client(threading.Thread):
         while not done:
             come_back = s.recv(1024)
             info = str(come_back, "utf-8").strip()
-            brain.paul.log("RECIEVING:", info)
+            #brain.paul.log("RECIEVING:", info)
             if info == "client_done":
-                brain.paul.log("DONE RECIEVING")
+                #brain.paul.log("DONE RECIEVING")
                 done = True
             else:
                 result += info
-        brain.paul.log("RESULT:", result)
+        #brain.paul.log("RESULT:", result)
         return result
     
     def execute(self, code, response=None):
@@ -73,6 +75,10 @@ class Client(threading.Thread):
     
     def run(self):
         ''' Run the thread. '''
+        imprt = {}
+        num = str(int(100*random.random()))
+        imprt["brain"+num] = importlib.import_module("brain")
+        brain = imprt["brain"+num]
         print ('Connected: ', self.addr)
         
         connected = True

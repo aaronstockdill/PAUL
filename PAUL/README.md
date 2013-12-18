@@ -23,6 +23,12 @@
 * [set\_it](#set_it)
 * [get\_it](#get_it)
 * [get\_version](#get_version)
+* [get\_user\_name](#get_user_name)
+* [get\_user\_title](#get_user_title)
+* [get\_woeid](#get_woeid)
+* [get\_temp](#get_temp)
+* [get\_search\_engine](#get_search_engine)
+* [get\_prompt](#get_prompt)
 * [send\_notification](#send_notification)
 * [parse\_number](#parse_number)
 * [Sentence](#sentence)
@@ -167,6 +173,42 @@ Do not call this function. Paul will handle this.
 
 ####get\_version
 `paul.get_version()` returns the string describing what version of Paul is being run. Tends to be more useful for front-ends than modules, but may be necessary, for example the wikipedia module announces itself by this code.
+
+* * *
+
+####get\_user\_name
+
+`paul.get_user_name()` returns a string of the user's name. Simple.
+
+* * *
+
+####get\_user\_title
+
+`paul.get_user_title()` is the same ias get\_user\_name, except is returns the title instead.
+
+* * *
+
+####get\_woeid
+
+`paul.get_woeid()` returns the woeid as a string, which is the Yahoo weather ID for the user's location. This is really only useful for weather modules.
+
+* * *
+
+####get\_temp
+
+`paul.get_temp` is, like, above, only really useful for weather modules. It determines if the user would prefer Celcius or Fahrenheit when getting weather forcasts, as a C or an F as appropriate.
+
+* * *
+
+####get\_search\_engine
+
+`paul.get_search_engine()` returns the search engine of choice for the user as a string. If you even need to send them to the internet without a specific URL, try and use the discover module with appropriate keywords, but this information can be used to do it yourself.
+
+* * *
+
+####get\_prompt
+
+`paul.get_prompt()` is really only useful for new front-ends. It returns the string that the user has selected as their terminal prompt. Can be used in a hacky way to provide user icons for GUIs, not recommended.
 
 * * *
 

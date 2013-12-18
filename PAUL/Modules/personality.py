@@ -41,14 +41,6 @@ FEELING = [
     "feel",
     "feeling",
 ]
-
-
-def one_of(list):
-    ''' Return a random item in the list formatted with a name, possibly. '''
-    name = random.choice(['', 
-            ', {}'.format(paul.user_info.info['name']),
-            ', {}'.format(paul.user_info.info['title'])])
-    return random.choice(list).format(name)
     
 
 
@@ -59,7 +51,7 @@ def about_me():
         "I am simply the finest Digital Assistant that ever was{}.",
         "Well, I'm a bit of 0, a bit of 1, and a bit more{}.",
     ]
-    return one_of(responses)
+    return paul.random_choice(responses)
 
 
 
@@ -73,7 +65,7 @@ def greet():
         responses += ["Good Afternoon{}."]
     elif d.hour in range(18, 23):
         responses += ["Good Evening{}."]
-    return one_of(responses)
+    return paul.random_choice(responses)
 
 
 
@@ -85,7 +77,7 @@ def thank():
         "Of course{}.",
         "It was nothing{}.",
     ]
-    return one_of(responses)
+    return paul.random_choice(responses)
 
 
 def feeling():
@@ -100,7 +92,7 @@ def feeling():
     pt2 = []
     for response in responses:
         pt2.append(response.format(" thanks{}"))
-    return one_of(responses+pt2)
+    return paul.random_choice(responses+pt2)
 
 
 

@@ -88,8 +88,8 @@ def weather(day_index=0):
     
     try:
         page = urllib.request.urlopen("http://weather.yahooapis.com/"
-               "forecastrss?u=" + paul.user_info.info['temp'].lower() + "&w="
-               + paul.user_info.info['woeid'])
+               "forecastrss?u=" + paul.get_temp().lower() + "&w="
+               + paul.get_woeid())
     except urllib.error.URLError:
         return "I couldn't retrieve the weather. Are you connected to the internet?"
     lines = page.readlines()    
@@ -112,14 +112,14 @@ def weather(day_index=0):
         temp2 = "{}".format(conditions2['high'])
         
         return "It's {0}°{1}{2}. The high today is {3}°{1}, {4}.".format(
-        temp, paul.user_info.info['temp'], condition, temp2, condition2)
+        temp, paul.get_temp(), condition, temp2, condition2)
     
     else:
         condition = conditions['text'].lower()
     
         rep = ("It will have a low of "
                "{0}°{1}, a high of {2}°{1}, and will be {3}.".format(
-               conditions['low'], paul.user_info.info['temp'], 
+               conditions['low'], paul.get_temp(), 
                conditions['high'], condition))
         return rep
 

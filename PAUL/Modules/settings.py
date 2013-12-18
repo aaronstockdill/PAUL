@@ -45,7 +45,7 @@ def get_val(keywords, key, sentence):
     ''' Determine the value to set. '''
     val = ''
     flag = True
-    confirm = "Done"
+    confirm = "Done."
     
     if paul.has_one_of(keywords, ["off", "false", "stop"]):
         val = "False"
@@ -70,21 +70,22 @@ def get_val(keywords, key, sentence):
                     + "search engine you want to use.\n"
                     + "Please choose from Google, Bing, Yahoo, "
                     + "DuckDuckGo and Baidu next time.", False)
-    else:
-        if key == "name":
-            if sentence.has_word("i"):
-                val = paul.join_lists(sentence.get_part("??"), 
-                                      sentence.get_part("XO"))
-                paul.log("VAL[0]", val[0])
-                val = '"{}"'.format(val[0].capitalize())
-                confirm = ("Ok, I'll call you " + 
-                           "{} from now on.".format(val[1:-1]))
-            elif sentence.has_word("you"):
-                return ("My name is Paul.", False)
+    elif key == "name":
+        if sentence.has_one_of(["i", "me"]):
+            val = paul.join_lists(sentence.get_part("??"), 
+                                  sentence.get_part("XO"))
+            paul.log("VAL[0]", val[0])
+            val = '"{}"'.format(val[0].capitalize())
+            confirm = ("Ok, I'll call you " + 
+                       "{} from now on.".format(val[1:-1]))
+        elif sentence.has_word("you"):
+            return ("My name is Paul.", False)
         else:
-            paul.log("PARAMETER NOT FOUND")
-            return ("I'm not sure how you" 
-                    + " wanted '{}' set.".format(key), False)
+            return ("Not really sure what you're getting at...", False)
+    else:
+        paul.log("PARAMETER NOT FOUND")
+        return ("I'm not sure how you" 
+                + " wanted '{}' set.".format(key), False)
     return (confirm, flag, val)
 
 
@@ -95,16 +96,20 @@ def runtime_change(key, val):
         "True": True,
         "False": False
     }
-    if key in ["VERBOSE", "NOISY"]:
-        paul.user_info.flags[key] = values.get(val, val)
+    if key in ["VERBOSE", "NOISY", "LOGGING"]:
+        paul.system.flags[key] = values.get(val, val)
     else:
-        paul.user_info.flags[key] = val
+        paul.system.flags["USER"][key] = val
 
 
 
 def make_change(key, val, confirm):
     ''' Write the changes to the user_info file. '''
-    settings_file = "PAUL/user_info.py"
+    if key in ["VERBOSE", "NOISY", "LOGGING"]:
+        file = "system"
+    else:
+        file = paul.system.flags["USER"]["username"]
+    settings_file = "PAUL/Settings/{}.py".format(file)
     sub = "    \"{}\": {},\n".format(key, val)
     paul.log("SETTING:", sub)
     

@@ -23,6 +23,45 @@ def transform_idioms(sentence):
 
 
 
+def load_settings(username):
+    ''' Load the settings for the given user. 
+        Returns a dictionary of settings. '''
+    
+    f = open("PAUL/Settings/{}.py".format(username))
+    lines = f.readlines()
+    f.close()
+    
+    lines = [line.strip("\n").strip() for line in lines 
+             if not (line.startswith("#") 
+                     or line.startswith("info = {")
+                     or line.startswith("}")
+                     or line.strip() == "")]
+    info = {}
+    for line in lines:
+        key, value = line.split(":")
+        key = key.strip().strip("\"")
+        value = value.strip().strip(",").strip("\"")
+        info[key] = value
+    
+    return info
+
+
+
+def login(username):
+    ''' Try and log in under the name given '''
+    if username == "default":
+        paul.system.flags["USER"] = load_settings("default")
+        return True
+    else:
+        if username.lower() in paul.system.users:
+            paul.system.flags["USER"] = load_settings(username.lower())
+            return True
+        else:
+            paul.system.flags["USER"] = load_settings("default")
+            return False
+
+
+
 def set_IO(output_fun, input_fun, exec_fun=None):
     ''' Provide a way to set up interactions with Paul when not using the
         command line. Requires an input function and an output function.

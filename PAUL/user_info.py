@@ -35,7 +35,7 @@ info = {
 #  get is the function that is used to get data from the user.
 #  exec is the function that is used to send executable scripts to the user.
 flags = {
-    "VERSION": "0.3.0a",
+    "VERSION": "0.3.1",
     "VERBOSE": True,
     "NOISY": False,
     "MAX_LOG_SIZE": 500,

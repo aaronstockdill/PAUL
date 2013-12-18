@@ -9,18 +9,18 @@ Author: Aaron Stockdill
 import brain
 from sys import argv
 import os
+import time
 
 def show_splash():
-    import os
     os.system("clear")
-    rows, columns = [int(i) for i in os.popen('stty size', 'r').read().split()]
+    rows, cols = [int(i) for i in os.popen('stty size', 'r').read().split()]
     title =  "P.A.U.L"
     byline = "Python Actions Using Language, v{}".format(
-              brain.paul.user_info.flags['VERSION'])
+              brain.paul.system.flags['VERSION'])
     author = "By Aaron Stockdill"
-    w = (columns - len(title))//2
-    x = (columns - len(byline))//2
-    y = (columns - len(author))//2
+    w = (cols - len(title))//2
+    x = (cols - len(byline))//2
+    y = (cols - len(author))//2
     print("\n"
         + " " * w, title, "\n"
         + " " * (w - 1), "=" * (len(title) + 2) + "\n"
@@ -28,17 +28,39 @@ def show_splash():
         + " " * x, byline + "\n"
         + " " * y, author + "\n\n")
 
-def main():
-    """ The main function, how the system is mostly interacted with """
 
+def login():
+    ''' Attempt to log the user in. '''
+    if brain.paul.system.flags["SKIP_LOGIN"] == False:
+        name = input("Name: ")
+        logged_in = brain.login(name)
+        if logged_in:
+            print("User found.")
+            time.sleep(1)
+        else:
+            print("User not found.")
+            yn = input("Do you wish to log in as a different user? [Y/n] ")
+            if yn.lower().startswith("y"):
+                login()
+            else:
+                print("Using default settings.")
+                time.sleep(1)
+        show_splash()
+    else:
+        brain.login(brain.paul.system.flags["SKIP_LOGIN"])
+    
+
+def main():
+    """ The main function, how the system is mostly interacted with. """
     show_splash()
+    login()
     print("Type below to interact with Paul.",
-          "Enter 'bye' without the quotes to exit.")
+          "\nEnter 'bye' without quotes to exit.")
 
     exit = False
     while not exit:
         try:
-            command = input(brain.paul.user_info.info["prompt"] + " ")
+            command = input(brain.paul.get_prompt() + " ")
             if command.lower() == "bye":
                 exit = True
             else:
@@ -52,6 +74,7 @@ def main():
 
 
 if len(argv) > 1:
+    brain.login("default")
     brain.process(" ".join(argv[1:]))
 else:
     main()

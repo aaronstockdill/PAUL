@@ -17,6 +17,7 @@ import operator
 
 import vocab
 import user_info
+import Settings.system as system
 
 
 def log(*to_log):
@@ -26,11 +27,11 @@ def log(*to_log):
         otherwise. '''
     return_value = False
     log_string = ' '.join([str(log) for log in to_log])
-    if user_info.flags["LOGGING"]:
+    if system.flags["LOGGING"]:
         log_file = open("./PAUL/log.txt", 'r')
         lines = log_file.readlines()
         log_file.close()
-        max_len = user_info.flags["MAX_LOG_SIZE"]
+        max_len = int(system.flags["MAX_LOG_SIZE"])
         time_str = time.strftime("%a,%d-%b-%Y~%H:%M ")
         lines.append(time_str + log_string + "\n")
         if len(lines) < max_len:
@@ -41,7 +42,7 @@ def log(*to_log):
             log_file.write("".join(lines[-max_len:]))
         log_file.close()
         return_value = True
-    if user_info.flags["VERBOSE"]:
+    if system.flags["VERBOSE"]:
         print(log_string)
     return return_value
 
@@ -109,12 +110,12 @@ def interact(statement, response=None, end=True):
         is returned. If 'arb', the raw string is returned. if 'y_n', True if
         an affirmative, False if negative, None otherwise. """
     
-    send = user_info.flags["SEND"]
-    get = user_info.flags["GET"]
+    send = system.flags["SEND"]
+    get = system.flags["GET"]
     
     log("INTERACTION:", statement)
     print(statement)
-    if user_info.flags["NOISY"]:
+    if system.flags["NOISY"]:
         speech = simple_speech_filter(statement)
         subprocess.Popen('say "{}"'.format(speech), shell=True)
     if send:
@@ -125,7 +126,7 @@ def interact(statement, response=None, end=True):
             send(statement)
     if response:
         if not send:
-            bringback = input(user_info.info["prompt"] + " ")
+            bringback = input(system.flags["user"]["prompt"] + " ")
         else:
             bringback = get()
         negatives = ['no', 'nope']
@@ -153,18 +154,26 @@ def interact(statement, response=None, end=True):
     return statement
 
 
+def random_choice(list):
+    ''' Return one of the supplied statements in list, each of which must
+        have room for a name to be inserted into it. '''
+    name = random.choice(['', 
+            ', {}'.format(get_user_name()),
+            ', {}'.format(get_user_title())])
+    return random.choice(list).format(name)
+
+
 
 def loading():
     ''' Let the user know that Paul is working. Returns what was said
         in case it matters. No arguments. '''
-    name = random.choice(['', ', {}'.format(user_info.info['name'])])
     acknowledgements = [
-        "Just a moment{}.".format(name),
-        "Hang on{}...".format(name),
-        "Coming up{}.".format(name),
-        "Let me see{}...".format(name),
+        "Just a moment{}.",
+        "Hang on{}...",
+        "Coming up{}.",
+        "Let me see{}...",
     ]
-    result = random.choice(acknowledgements)
+    result = random_choice(acknowledgements)
     interact(result, end=False)
     return result
 
@@ -177,14 +186,13 @@ def acknowledge(end=False):
         with the user. With default end=False, is it assumed you will then 
         provide the user with more information. '''
 
-    name = random.choice(['', ', {}'.format(user_info.info['name'])])
     acknowledgements = [
-        "Ok{}.".format(name),
-        "Sure{}.".format(name),
-        "Of course{}.".format(name),
-        "Certainly{}.".format(name),
+        "Ok{}.",
+        "Sure{}.",
+        "Of course{}.",
+        "Certainly{}.",
     ]
-    result = random.choice(acknowledgements)
+    result = random_choice(acknowledgements)
     interact(result, end=end)
     return result
 
@@ -308,14 +316,14 @@ def run_script(code, language='bash', response=False):
     elif language == "perl":
         code = 'perl -e "{}"'.format(code.repace("\"", "\\\""))
     log("CODE:", code)
-    if not user_info.flags["EXEC"]:
+    if not system.flags["EXEC"]:
         if response == False:
             os.popen(code)
             return None
         else:
             return os.popen(code).read()
     else:
-        data = user_info.flags["EXEC"](code, response)
+        data = system.flags["EXEC"](code, response)
         return data
 
 
@@ -323,20 +331,56 @@ def run_script(code, language='bash', response=False):
 def set_it(value):
     ''' Sets the global value of "it" to the given value. Return the 
         new value, explicitly from "it", in case verification is needed. '''
-    user_info.flags["IT"] = value
-    return user_info.flags["IT"]
+    system.flags["IT"] = value
+    return system.flags["IT"]
 
 
 
 def get_it():
     ''' To get "it". No arguments, returns the "it" value. '''
-    return user_info.flags["IT"]
+    return system.flags["IT"]
 
 
 
 def get_version():
     ''' Returns the current version of Paul as a string '''
-    return user_info.flags["VERSION"]
+    return system.flags["VERSION"]
+
+
+
+def get_user_name():
+    ''' Returns the name of the current user as a string. '''
+    return system.flags["USER"]["name"]
+
+
+
+def get_user_title():
+    ''' Returns the name of the current user as a string. '''
+    return system.flags["USER"]["name"]
+
+
+
+def get_woeid():
+    ''' Return the woeid of the current user, as a string. '''
+    return system.flags["USER"]["woeid"]
+
+
+
+def get_temp():
+    ''' Return either C or F, denoting the user's temperature preference. '''
+    return system.flags["USER"]["temp"]
+
+
+
+def get_search_engine():
+    ''' Return the name of the user's search engine, as a string. '''
+    return system.flags["USER"]["search_engine"]
+
+
+
+def get_prompt():
+    ''' Return the user's prompt as a string. '''
+    return system.flags["USER"]["prompt"]
 
 
 
@@ -680,6 +724,6 @@ class Sentence(object):
     def has_one_of(self, confirm_list):
         ''' The sentence object's version of paul.has_one_of, where the
             assumed list of words is the sentence. '''
-        return has_word(self.sentence, confirm_list)
+        return has_one_of(self.sentence, confirm_list)
 
 update_words()
