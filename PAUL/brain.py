@@ -15,10 +15,11 @@ def transform_idioms(sentence):
     idioms = {
         "how are you" : "what are you feeling",
         "how do you do" : "hello",
+        "paul": "", # Paul doesn't need to respond to just his name...
     }
     for idiom in idioms.keys():
         if idiom in sentence:
-            return idioms[idiom]
+            return sentence.replace(idiom, idioms[idiom])
     return sentence
 
 

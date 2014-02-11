@@ -55,7 +55,9 @@ def main():
     show_splash()
     login()
     print("Type below to interact with Paul.",
-          "\nEnter 'bye' without quotes to exit.")
+          "\nEnter 'bye' without quotes to exit.",
+          "\n",
+          "\nHello, {}".format(brain.paul.system.flags["USER"]["name"]))
 
     exit = False
     while not exit:

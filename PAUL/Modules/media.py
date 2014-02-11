@@ -47,7 +47,7 @@ def process(sentence):
         'back': lambda: simple_commands('previous track')
     }
     
-    if 'play' not in verbs:
+    if verbs[0] != "play" and verbs[0] in commands.keys():
         try:
             go = commands[verbs[0]]()
         except KeyError:
@@ -67,9 +67,13 @@ def process(sentence):
                 + '    set myArtist to (artist of current track)\n'
                 + 'end tell\n\n'
                 + 'return "It\'s \'" & myTrack & "\', by " & myArtist & "."')
-                return paul.run_script(script,
+                res = paul.run_script(script,
                                        language="applescript",
                                        response=True)[:-1]
+                if paul.has_one_of(res.split(), ["error", "error:"]):
+                    return "I'm not sure."
+                return res
+                
             return sentence.forward("discover")
     return "Ok." if go is True else go
 

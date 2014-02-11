@@ -3,6 +3,9 @@ user_info.py
 This is the 'global variable' storage, to share between all the 
 different functions. Unfortunately, necessary given the current
 designs.
+
+THIS FILE IS MARKED FOR DELETION. PLEASE USE THE NEW paul.system MODULE.
+
 Author: Aaron Stockdill
 """
 
@@ -35,7 +38,7 @@ info = {
 #  get is the function that is used to get data from the user.
 #  exec is the function that is used to send executable scripts to the user.
 flags = {
-    "VERSION": "0.3.1",
+    "VERSION": "0.3.2",
     "VERBOSE": True,
     "NOISY": False,
     "MAX_LOG_SIZE": 500,

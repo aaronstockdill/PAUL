@@ -1,5 +1,8 @@
 '''
 PAUL Server Program. 
+
+THIS FILE IS MARKED FOR DELETION. PLEASE DO NOT USE.
+
 '''
 import socket
 import threading
@@ -30,7 +33,7 @@ def show_splash():
         + " " * x, byline + "\n"
         + " " * y, byline2 + "\n"
         + " " * z, author + "\n\n")
-    print("WARNING: This program is marked for removal from Paul. Cease use.")
+    print("WARNING: This program is marked for removal from Paul in 0.3.3. Cease use.")
 
 class Client(threading.Thread):
     

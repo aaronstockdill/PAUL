@@ -7,9 +7,6 @@ Author: Aaron Stockdill
 import urllib.request
 import datetime
 
-#import user_info
-#import brain2
-
 import paul
 
 NOUNS = [
@@ -67,16 +64,32 @@ def process(sentence):
     return weather(day_index)
 
 
+def replace_text(condition):
+    ''' Set up a more coherant response as to the conditions. Takes a string,
+        returns a string. '''
+    
+    subs = {
+        ' pm ': ' afternoon ',
+        ' am ': ' morning ',
+    }
+    
+    for key, val in subs.items():
+        condition = condition.replace(key, val)
+    return condition
+
+
 def get_conditions(raw_data, day_index):
     ''' Return a nice dictionary of the information in raw_data '''
     
     lines = [str(line, encoding='utf8') for line in raw_data[28:48]
              if str(line, encoding='utf8').startswith("<yweather")]
     items = lines[day_index].split("\"")[1:-1]
-    items = ['text'] + [item.strip().strip('=') for item in items]
+    pre = ['text'] if day_index == 0 else ['day']
+    items = pre + [item.strip().strip('=') for item in items]
     conditions = {}
     for i in range(0, len(items), 2):
         conditions[items[i]] = items[i+1]
+    conditions['text'] = replace_text(conditions['text'])
     return conditions
 
 

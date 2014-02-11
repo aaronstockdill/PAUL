@@ -126,7 +126,7 @@ def interact(statement, response=None, end=True):
             send(statement)
     if response:
         if not send:
-            bringback = input(system.flags["user"]["prompt"] + " ")
+            bringback = input(system.flags["USER"]["prompt"] + " ")
         else:
             bringback = get()
         negatives = ['no', 'nope']
@@ -610,7 +610,7 @@ class Sentence(object):
     def clean(self, word):
         ''' Clean the text, removing unwanted characters '''
 
-        for to_remove in list(" ,.?'\";:\\!$&<>@#%^*}{[]+-=_"):
+        for to_remove in list(" ,.?'\";:\\!$&<>@#%}{[]_"):
             word = word.strip(to_remove)
         return word
 

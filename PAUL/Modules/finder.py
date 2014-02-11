@@ -74,13 +74,11 @@ def has_one_of_substrings(string, substrings):
 def find(params="", look_in=False):
     ''' Find the item that was searched for with necessary paramenters '''
     
-    home = (look_in if look_in 
-            else paul.run_script('echo $HOME', response=True).strip('\n'))
+    home = look_in if look_in else "~"
     
     avoiders = [
         "Library",
         "Cache",
-        "~",
         ".log",
         ".properties",
     ]

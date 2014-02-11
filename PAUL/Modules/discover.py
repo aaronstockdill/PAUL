@@ -19,9 +19,20 @@ VERBS = [
     paul.user_info.info['search_engine'].lower(),
 ]
 
+def is_math(sentence):
+    ''' Determines if any part of the sentence is math '''
+    for word, _ in sentence:
+        if paul.has_one_of(word, "+/^*-="):
+            return True
+    return False
+
 
 def process(sentence):
     ''' Process the sentence, and go to Google '''
+    
+    if is_math(sentence):
+        return sentence.forward("math")
+    
     sentence.replace_it()
     
     engines = {

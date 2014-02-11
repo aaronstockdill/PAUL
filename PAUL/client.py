@@ -1,5 +1,8 @@
 '''
 PAUL server client.
+
+THIS FILE IS MARKED FOR DELETION. PLEASE DO NOT USE.
+
 '''
 
 import socket
@@ -26,7 +29,7 @@ def show_splash():
         + "\n"
         + " " * x, byline + "\n"
         + " " * y, author + "\n\n")
-    print("WARNING: This program is marked for removal from Paul. Cease use.")
+    print("WARNING: This program is marked for removal from Paul in 0.3.3. Cease use.")
 
 def end_line(s):
     s.send(bytes(" "*1024, "utf-8"))

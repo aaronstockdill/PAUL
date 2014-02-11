@@ -18,6 +18,12 @@ VERBS = [
     "more",
     "again",
     "mute",
+    "louder",
+    "quieter",
+    "brighter",
+    "dimmer",
+    "silent",
+    "silence",
 ]
 
 VERBS_UP = [
@@ -66,9 +72,13 @@ def change_volume(keywords):
     ''' Change the volume up or down, depending on the keywords '''
     
     code = "set volume output volume (output volume of (get volume settings) {} 6.25)"
-    if paul.has_one_of(keywords, VERBS_UP+['turn up', 'adjust up']):
+    if paul.has_one_of(keywords, VERBS_UP+['turn up', 
+                                           'adjust up', 
+                                           'louder']):
         code = code.format("+")
-    elif paul.has_one_of(keywords, VERBS_DOWN+['turn down', 'adjust down']):
+    elif paul.has_one_of(keywords, VERBS_DOWN+['turn down', 
+                                               'adjust down', 
+                                               'quieter']):
         code = code.format("-")
     else:
         return "I'm not sure how you wanted me adjust the volume."
@@ -84,9 +94,13 @@ def change_brightness(keywords):
     up = "113"
     down = "107"
     
-    if paul.has_one_of(keywords, VERBS_UP+['turn up', 'adjust up']):
+    if paul.has_one_of(keywords, VERBS_UP+['turn up', 
+                                           'adjust up', 
+                                           'brighter']):
         code = code.format(up)
-    elif paul.has_one_of(keywords, VERBS_DOWN+['turn down', 'adjust down']):
+    elif paul.has_one_of(keywords, VERBS_DOWN+['turn down', 
+                                               'adjust down', 
+                                               'dimmer']):
         code = code.format(down)
     else: 
         return "I can't tell how you wanted the brightness changed."
@@ -117,12 +131,12 @@ def process(sentence):
     keywords = sentence.keywords(include=['VB', 'NS'])
     paul.log("KEYWORDS:", keywords)
     
-    if paul.has_one_of(keywords, ["mute", "silence", "unmute"]):
+    if paul.has_one_of(keywords, ["mute", "silence", "silent, ""unmute"]):
         mute()
         return "Toggling mute."
-    elif paul.has_word(keywords, "volume"):
+    elif paul.has_one_of(keywords, ["volume", "louder", "quieter"]):
         return change_volume(keywords)
-    elif paul.has_word(keywords, "brightness"):
+    elif paul.has_one_of(keywords, ["brightness", "brighter", "dimmer"]):
         return change_brightness(keywords)
     elif paul.has_word(keywords, "screensaver"):
         screensaver()

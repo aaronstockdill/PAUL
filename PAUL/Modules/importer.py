@@ -3,6 +3,7 @@ import Modules.controls as controls
 import Modules.discover as discover
 import Modules.finder as finder
 import Modules.loader as loader
+import Modules.math as math
 import Modules.media as media
 import Modules.personality as personality
 import Modules.settings as settings

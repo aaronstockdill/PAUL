@@ -1,7 +1,11 @@
 #!/bin/bash
 
+# Download this file to have Paul installed for the first time.
+# This will take care of ensuring that the correct files are downloaded
+# and installed. This is still very experimental.
+
 clear
-echo "WARNING: This script is as-yet untested. Use at your own peril. No responsibility will be taken for a broken Paul install, or a broken operating system."
+echo "WARNING: This script is tested to *NOT WORK*. Use at your own peril. No responsibility will be taken for a broken Paul install, or a broken operating system."
 echo ""
 echo "You have been warned..."
 echo ""
@@ -21,7 +25,7 @@ if curl -o paul.zip "https://codeload.github.com/aaronstockdill/PAUL/zip/master"
         echo "Moving the files into position..."
         if cp -R ./PAUL-master/ /opt/PAUL ; then
             echo "Done."
-            echo "Setting up command line prompt..."
+            echo "Setting up command line..."            
             PATH=$PATH:/opt/PAUL/bin
             if export PATH ; then
                 echo "Done."
