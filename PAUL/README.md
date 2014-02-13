@@ -3,7 +3,7 @@
 
 ####Contents
 
-* [Laying out your Module](#laying_out_your_module)
+* [Laying out your Module](#laying-out-your-module)
 * [log](#log)
 * [update\_words](#update_words)
 * [associate](#associate)
@@ -72,7 +72,7 @@ Replace `module` with the name of your module, and adjust the words dictionary t
 * * *
 
 ####log
-`paul.log(*to_log)` is used to log some data. If paul.user\_info.flags['LOGGING'] is True, this will be written to the file log.txt inside the same directory as this reference. If paul.user\_info.flags['VERBOSE'] is True, this data will also be shown in the terminal interface. This function will return True if the data was written to the file log.txt, otherwise it will return False, even if the data was written to the terminal interface. `paul.log(to_log)` actually takes as many arguments as you want, so long as they have a string representation. It converts all of these arguments to a string representation, and joins them, separated by a space. Log entries are written with a time and date in front of them. log.txt will remove items from the start of the log after is reaches  the size stated in paul.user\_info.flags['MAX\_LOG\_SIZE'].
+`paul.log(*to_log)` is used to log some data. If paul.system.flags['LOGGING'] is True, this will be written to the file log.txt inside the same directory as this reference. If paul.system.flags['VERBOSE'] is True, this data will also be shown in the terminal interface. This function will return True if the data was written to the file log.txt, otherwise it will return False, even if the data was written to the terminal interface. `paul.log(to_log)` actually takes as many arguments as you want, so long as they have a string representation. It converts all of these arguments to a string representation, and joins them, separated by a space. Log entries are written with a time and date in front of them. log.txt will remove items from the start of the log after is reaches  the size stated in paul.system.flags['MAX\_LOG\_SIZE'].
 
 * * *
 
@@ -105,7 +105,7 @@ Do not call this function. Paul will handle this.
 
 * `list` assumes that the statement is a list of numbered options, and the user will reply with a the option they want. The function will return None if no number is found in their response, or an integer which details their response. You may need to deal with off-by-one errors, as people will ask for list item 0 by using words like "first" or "one", which will result in the function returning 1.
 * `y_n` assumes the statement is a yes-no style question. Words that seem to be in the affirmative will return True, words in the negatives will return False, and if neither kind is found None is returned.
-* `arb` means arbitrary. You have to deal with this, we will give you the raw string. If you want to handle it like any other sentence, use `sentence = paul.Sentence(returned_arb)`.
+* `arb` means arbitrary. You have to deal with this, we will give you the raw string. If you want to handle it like any other sentence, use `response = paul.Sentence(returned_arb)`.
 
 `end` defaults to True. This means that you're done talking to the user, and it is their turn to talk. Most of the time this is what you want, but if you have given a response that is interim, such as "Hang on a sec...", you don't want them talking again as you haven't given them what they asked for yet. In this case, set end to False. For functions like loading and acknowledge (see below) end is defaulting to False, as it is more likely that these are being used as a gap-fill while data is loading.
 
@@ -184,13 +184,13 @@ Do not call this function. Paul will handle this.
 
 ####get\_user\_title
 
-`paul.get_user_title()` is the same ias get\_user\_name, except is returns the title instead.
+`paul.get_user_title()` is the same as get\_user\_name, except is returns the title instead.
 
 * * *
 
 ####get\_woeid
 
-`paul.get_woeid()` returns the woeid as a string, which is the Yahoo weather ID for the user's location. This is really only useful for weather modules.
+`paul.get_woeid()` returns the WOEID as a string, which is the Yahoo weather ID for the user's location. This is really only useful for weather modules.
 
 * * *
 
@@ -277,3 +277,26 @@ A method you should not have to touch, this is run when the sentence is created 
 
 #####has\_one\_of
 `Sentence.has_one_of(confirm_list)` is a method used to determine if any of the words confirm_list appear in the sentence. Equivalent to `paul.has_one_of(Sentence, confirm_list)`.
+
+* * *
+
+####Element
+`paul.Element(tag_code)` is the class used to represent HTML elements in the DOM class. This is actually the class with most of the useful DOM methods, so are listed here. You will _never_ have to call this class, it is created through the DOM object. There are many methods not listed as they are internal use only, and should be avoided. When using any of the methods below, it is advised to provide an error handler of `AttributeError` in case something goes wrong.
+
+#####\_\_getitem\_\_
+`Element.__getitem__(item)` is a method you will never call straight, as it is accessed by slice or dict notation. It has 4 main uses: Accessing child number *i* with `Element[i]`, finding element that is the child (or is itself the element) with id *a* with `Element["#a"]`, finding all elements that are children (and/or itself) with the class *c* with `Element[".c"]`, and finally finding all children (and/or itself) with the tag name *t* with `Element["t"]`. It sounds complicated, but it really isn't. Here is an example. If we have DOM object d, we can access all the `<a>` elements inside the `<div>` with the id "links" using this code: `list_of_links = d["#links"]["a"]`.
+    
+#####get\_immediate\_child
+`Element.get_immediate_child(item)` works the same as `Element.__getitem__(item)`, except it is not recursive. If the element you are looking for is not PRECISELY a direct child of the element you are searching from, this will not find it. This is useful if you only want top-level items from an element. For example, a list has a nested list. Using `Element.get_immediate_child(item)` will return a list of elements that are only the top list, whereas `Element.__getitem__(item)` would return all the list elements that match, at any depth.
+
+#####extract\_raw\_text
+`Element.extrac_raw_text()` strips out all the tags in the code, leaving you with only the plain-text. Useful if you have, for example, isolated a paragraph using the above methods, and want to print the contents, without showing things like `<strong>` or `<a>` tags.
+
+
+* * *
+
+####DOM
+`paul.DOM(html)` is an object that can be used to more easily traverse an HTML document that you have probably just found on the web. Initialize it with the html code downloaded. There is only one useful method associated with this class, except for `DOM.__getitem__(item)`, which is simply a pass-through to the underlying element system. Refer above to find usage details.
+
+#####fromURL
+`DOM.fromURL(url)` returns a new DOM object using the html retrieved from the url supplied. The url should be a string. The returned object can then be treated like any other DOM object, as described above.

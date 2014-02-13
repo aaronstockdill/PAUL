@@ -4,7 +4,6 @@ This is where the words, their classes, and how to deal with them are all
 stored for Paul to deal with.
 Author: Aaron Stockdill
 """
-import user_info
 
 VOWELS = ['a', 'e', 'i', 'o', 'u']
 NEVER_DOUBLE = ['h', 'w', 'x', 'y', 'n'] # n? Not sure, added to fix a one-off, maybe
@@ -377,7 +376,6 @@ def create_ordinals():
 
 vocabulary = {
     'paul':        Name('paul'),
-    user_info.info['name']:        Name(user_info.info['name']),
 
     'be':          Verb("be"),
     'will':        Verb("will"),

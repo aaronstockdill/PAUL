@@ -8,6 +8,8 @@
 #  search_engine can be Google, Bing, Yahoo, DuckDuckGo or Baidu.
 #  prompt is the little thing in front of what you type in, e.g. "?".
 #  first_run determines if the user is new or not. Not implemented.
+#  actions is a dict mapping statements to automator workflow documents, e.g.
+#     "actions": {"I'm home": "/Users/user/Documents/welcome_home.workflow",}
 
 info = {
     "username": "default",
@@ -18,4 +20,5 @@ info = {
     "search_engine": "Google",
     "prompt": "?",
     "first_run": "False",
+    "actions": {},
 }

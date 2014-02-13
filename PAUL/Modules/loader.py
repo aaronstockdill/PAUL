@@ -21,10 +21,7 @@ def process(sentence):
     importer.write("\nimport paul\npaul.update_words()")
     importer.close()
     
-    if paul.user_info.flags["SEND"]:
-        return "Restart not supported in this mode."
-    else:
-        os.execl("/bin/bash", os.getcwd(), "./bin/PAUL")
+    os.execl("/bin/bash", os.getcwd(), "./bin/PAUL")
         
 
 def main():

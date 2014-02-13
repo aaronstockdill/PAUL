@@ -4,7 +4,7 @@ Search wikipedia for information on a certain topic.
 Author: Aaron Stockdill
 """
 
-import urllib.request
+import urllib.error
 import re
 import os
 
@@ -21,19 +21,11 @@ def stripIt(s):
 def scrape_first_paragraph(url):
     ''' Get the first paragraph of the specified (print-formatted) 
         wikipedia article '''
-    opener = urllib.request.build_opener()
-    opener.addheaders = [('User-agent',
-                          'PAUL/{}'.format(paul.get_version()))]
+        
     gross_url = url.replace("/wiki/", "/w/index.php?title=")+"&printable=yes"
-    
     paul.log("URL ATTEMPT: " + gross_url)
-    infile = opener.open(gross_url)
-    page = [str(line, encoding='utf8').strip() for line
-            in infile.readlines()]
-    
-    content_start = page.index([line for line in page
-        if line.startswith("<div id=\"mw-content-text\"")][0])
-    para = ''.join(page[content_start:]).split("<p>")[1].split("</p>")[0]
+    d = paul.DOM.fromURL(gross_url)
+    para = d["#mw-content-text"].get_immediate_child('p')[0].extract_raw_text()
    
     paul.set_it(url)
     para = stripIt(para)
@@ -57,6 +49,10 @@ def findIt(what, sentence):
             return "I found nothing!"
     except urllib.error.URLError:
         return "I couldn't complete the research for some reason. Are you connected to the internet?"
+    except AttributeError:
+        paul.set_it(url)
+        paul.run_script("open {}".format(url))
+        return "I can't seem to read about this. Let me open it for you..."
 
 
 

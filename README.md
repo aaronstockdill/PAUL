@@ -1,4 +1,4 @@
-#P.A.U.L. alpha-0.3
+#P.A.U.L. alpha-0.4
 ##Natural Language Assistant
 [View Website](http://aaronstockdill.github.io/paul.html)
 
@@ -23,13 +23,6 @@ Paul is run from inside his directory in the following way:
     $ ./bin/paul [query]
 
 If no query is provided, you enter 'discussion mode' where you can continually interact with Paul, and he keeps track of the conversation. For example, in discussion mode, if you just asked Paul to find some file for you, you would then just say "open that", or something of the sort, and he would. If you are not in discussion mode, Paul has no recollection of previous statements.
-
-Paul also has two other programs that are useful:
-
-    $ ./bin/server
-    $ ./bin/client host [query]
-
-'client' is only useful once 'server' is running. 'host' can be either an address and port in the format "address:port", or "default", which is the same as putting "localhost:32012". Usually default is what is desired. If you need to customize this, it is straightforward enough inside the scripts. Once the server is running, 'client' acts pretty much the same as 'paul'. This functionality has not been extensively tested, and should not yet be relied upon.
  
 Modules are stored in PAUL/Modules/, and extend Paul's functionality. These are built using the paul API via `import paul`.
 

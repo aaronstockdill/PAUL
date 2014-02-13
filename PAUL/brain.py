@@ -7,7 +7,24 @@ Author: Aaron Stockdill
 """
 
 import paul
-import Modules
+import importlib
+
+Modules = None
+
+def custom_statements(line):
+    ''' Provide access to the user's custom actions, stored in a dict in
+        the user's profile. '''
+    actions = paul.system.flags["USER"]["actions"]
+    paul.log(type(actions))
+    if actions != {}:
+        for key, value in actions.items():
+            actions[key.lower()] = value
+        try:
+            scpt = actions[line.lower()]
+            paul.run_script('automator "{}"'.format(scpt), language="bash")
+            return True
+        except KeyError:
+            return False
 
 def transform_idioms(sentence):
     ''' Take simple idioms, and transform them into a more literal sentence
@@ -16,6 +33,7 @@ def transform_idioms(sentence):
         "how are you" : "what are you feeling",
         "how do you do" : "hello",
         "paul": "", # Paul doesn't need to respond to just his name...
+        "tell me more": "open it",
     }
     for idiom in idioms.keys():
         if idiom in sentence:
@@ -28,22 +46,10 @@ def load_settings(username):
     ''' Load the settings for the given user. 
         Returns a dictionary of settings. '''
     
-    f = open("PAUL/Settings/{}.py".format(username))
-    lines = f.readlines()
-    f.close()
-    
-    lines = [line.strip("\n").strip() for line in lines 
-             if not (line.startswith("#") 
-                     or line.startswith("info = {")
-                     or line.startswith("}")
-                     or line.strip() == "")]
-    info = {}
-    for line in lines:
-        key, value = line.split(":")
-        key = key.strip().strip("\"")
-        value = value.strip().strip(",").strip("\"")
-        info[key] = value
-    
+    i = importlib.import_module("Settings.{}".format(username))
+    info = i.info.copy()
+    name = info["name"]
+    paul.vocab.vocabulary[name] = paul.vocab.Name(name)
     return info
 
 
@@ -68,9 +74,9 @@ def set_IO(output_fun, input_fun, exec_fun=None):
         command line. Requires an input function and an output function.
         Optionally needs an execute function, if execution is not to be on
         the same computer as Paul (e.g. networked clients). '''
-    paul.user_info.flags["SEND"] = output_fun
-    paul.user_info.flags["GET"] = input_fun
-    paul.user_info.flags["EXEC"] = exec_fun
+    paul.system.flags["SEND"] = output_fun
+    paul.system.flags["GET"] = input_fun
+    paul.system.flags["EXEC"] = exec_fun
     
 
 
@@ -116,7 +122,13 @@ def split_into_parts(line, i=0):
 
 def process(line):
     ''' Process the given line. '''
+    global Modules
+    if not Modules:
+        import Modules
     
+    custom = custom_statements(line)
+    if custom:
+        return None
     parts = split_into_parts(line)
     parts = [transform_idioms(i.strip()) for i in parts if i.strip() != ""]
     paul.log("PARTS:", parts)

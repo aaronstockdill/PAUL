@@ -104,7 +104,7 @@ def runtime_change(key, val):
 
 
 def make_change(key, val, confirm):
-    ''' Write the changes to the user_info file. '''
+    ''' Write the changes to the system file. '''
     if key in ["VERBOSE", "NOISY", "LOGGING"]:
         file = "system"
     else:

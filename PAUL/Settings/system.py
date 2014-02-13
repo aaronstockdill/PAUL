@@ -12,7 +12,7 @@
 #  EXEC is the function that is used to send executable scripts to the user.
 
 flags = {
-    "VERSION": "0.3.2",
+    "VERSION": "0.4.0",
     "VERBOSE": True,
     "NOISY": False,
     "MAX_LOG_SIZE": "500",

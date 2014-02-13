@@ -16,7 +16,6 @@ NOUNS = [
 VERBS = [
     "discover",
     "search",
-    paul.user_info.info['search_engine'].lower(),
 ]
 
 def is_math(sentence):
@@ -42,7 +41,7 @@ def process(sentence):
         "duckduckgo": "https://duckduckgo.com/?q={}",
         "baidu": "http://www.baidu.com/s?wd={}",
     }
-    engine = paul.user_info.info["search_engine"].lower()
+    engine = paul.get_search_engine.lower()
     
     keywords = sentence.keywords(ignore=[engine])
     paul.log("KEYWORDS:", keywords)
@@ -53,12 +52,12 @@ def process(sentence):
     
     paul.log("URL: " + url)
     paul.loading()
-    paul.run_script("open " + url)
+    paul.run_script("open \"{}\"".format(url))
     return "Here, try this."
 
 def main():
     ''' The main function '''
-    
+    VERBS.append(paul.get_search_engine().lower())
     words = {word: ("discover", "noun") for word in NOUNS}
     words.update({word: ("discover", "verb") for word in VERBS})
     

@@ -6,32 +6,48 @@ Author: Aaron Stockdill
 
 from tkinter import *
 from tkinter.ttk import *
+from tkinter.scrolledtext import *
 
 import brain
+from sys import argv
 
-REPLY = None
-
-def set_text(text):
+def set_text(text, ending=True):
     paul.talkLabel['text'] = text
+    paul.output.set(text)
 
 def get_text():
-    q = paul.talkLabel['text']
-    print(q)
-    code = ('display dialog "' + q + '" default answer ""\n'
-            + 'set res to text returned of result\n'
-            + 'return res')
-    result = brain.paul.run_script(code, language="applescript", response=True)
-    return result
-
-brain.set_IO(set_text, get_text)
+    paul.set_io(2)
+    paul.enterText.delete(0, len(paul.enterText.get()))
+    paul.wait_variable(paul.response)
+    value = paul.response.get()
+    paul.set_io(1)
+    return value
 
 class Application(Frame):
     
     def __init__(self, master=None):
         Frame.__init__(self, master)
+        self.bg = "#E9E9E9"
         self.pack()
-        self.createWidgets()
-
+        self.master.configure(width=300, bg=self.bg)
+        self.master.bind("<Escape>", lambda e: e.widget.quit())
+        self.response = StringVar()
+        self.output = StringVar()
+        if brain.paul.system.flags["SKIP_LOGIN"]:
+            self.authenticate(brain.paul.system.flags["SKIP_LOGIN"], True)
+        else:
+            self.login()
+        
+    def set_io(self, mode):
+        ''' mode 1: think. mode 2: send'''
+        if mode == 1:
+            f = lambda e: self.think(self.enterText)
+            g = lambda: self.think(self.enterText)
+        elif mode == 2:
+            f = lambda e: self.set_response(self.enterText)
+            g = lambda: self.set_response(self.enterText)
+        self.goButton.configure(command=g)
+        self.enterText.bind("<Return>", f)
         
     def think(self, command):
         com = command.get()
@@ -40,21 +56,91 @@ class Application(Frame):
         else:
             brain.process(com)
             command.delete(0, len(command.get()))
+    
+    def set_response(self, command):
+        com = command.get()
+        paul.response.set(com)
+        command.delete(0, len(command.get()))
         
     def createWidgets(self):
-        self.enterText = Entry(self)
-        self.enterText.pack()
+        self.enterText = Entry(self, width=280)
         self.enterText.bind("<Return>", lambda e: self.think(self.enterText))
-        self.talkLabel = Label (self, text="Hi!")
-        self.goButton = Button (self, text='Go', command=lambda: self.think(self.enterText))
-        self.endButton = Button (self, text='Bye!', command=lambda: self.master.destroy())
+        self.talkLabel = Message(self, text="Hi!", 
+                                 textvariable=self.output,
+                                 width=500, bg=self.bg)
+        self.goButton = Button (self, text='Ask...', 
+                                command=lambda: self.think(self.enterText))
+        self.endButton = Button (self, text='Bye!', 
+                                 command=lambda: self.master.destroy())
+        self.enterText.pack()
         self.goButton.pack() 
         self.endButton.pack()       
         self.talkLabel.pack()
+    
+    
+    def purge_login(self):
+        self.loginLabel.pack_forget()
+        self.userName.pack_forget()
+        self.loginButton.pack_forget()
+        self.defaultButton.pack_forget()
+    
+    
+    def authenticate(self, name, skipped=False):
+        logged_in = brain.login(name)
+        if logged_in:
+            if not skipped:
+                self.purge_login()
+            self.createWidgets()
+        else:
+            self.loginLabel['text'] = 'Login Failed.'
+            self.userName.delete(0, len(name))
+            
+    
+    def login(self):
+        self.loginLabel = Label(self, text='User Name:')
+        self.loginLabel.pack()
+        self.userName = Entry(self)
+        self.userName.pack()
+        self.userName.bind("<Return>", 
+                           lambda e: self.authenticate(self.userName.get()))
+        self.loginButton = Button(self, text='Login', 
+                           command=lambda: self.authenticate(
+                                                self.userName.get()))
+        self.loginButton.pack()
+        self.defaultButton = Button(self, text='Guest',
+                             command=lambda: self.authenticate('default'))
+        self.defaultButton.pack()
 
-        
-        
+
 paul = Application(Tk())
-paul.master.title("PAUL")
-paul.mainloop()
+paul.master.title("P.A.U.L. v{}".format(brain.paul.system.flags['VERSION']))
+w, h = paul.winfo_screenwidth(), paul.winfo_screenheight()
+paul.master.geometry("%dx%d+%d+%d" % (500, 300, w/2 - 250, h/2 - 250))
 
+def main():
+    brain.set_IO(set_text, get_text)
+    paul.mainloop()
+
+temp_holder = ""
+temp_q_holder = ""
+
+def get_text_simple():
+    q = temp_holder
+    code = ('display dialog "' + q + '" default answer ""\n'
+            + 'set res to text returned of result\n'
+            + 'return res')
+    result = brain.paul.run_script(code, language="applescript", response=True)
+    return result
+
+def set_text_simple(text):
+    global temp_holder
+    temp_holder = text
+    brain.paul.send_notification(temp_q_holder, text)
+
+if len(argv) > 1:
+    brain.set_IO(set_text_simple, get_text_simple)
+    brain.login("default")
+    temp_q_holder = " ".join(argv[1:])
+    brain.process(temp_q_holder)
+else:
+    main()

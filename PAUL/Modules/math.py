@@ -560,7 +560,7 @@ def process(sentence):
             eqn_string = eqns[0]
     
     paul.log("SUBS:", subs, "REARRANGE:", rearrange)
-    
+    paul.log("EQUATION:", eqn_string)
     had_equals = True
     if not paul.has_word(eqn_string, "="):
         eqn_string = "y=" + eqn_string
@@ -571,7 +571,7 @@ def process(sentence):
     
     eqn = Equation(eqn_string)
     
-    if subs:
+    if subs and len(eqns) > 1:
         eq2 = Equation(eqns[0])
         if type(eq2.head.right.value) == float:
             eqn.substitute((eq2.head.left.value, eq2.head.right.value))
