@@ -1,4 +1,4 @@
-#P.A.U.L. alpha-0.3
+#P.A.U.L. alpha-0.4
 ### API Reference
 
 ####Contents
@@ -46,6 +46,12 @@
   * [forward](#forward)
   * [has\_word](#has_word-1)
   * [has\_one\_of](#has_one_of-1)
+* [Element](#element)
+  * [\_\_getitem\_\_](#__getitem__)
+  * [get\_immediate\_child](#get_immediate_child)
+  * [extract\_raw\_text](#extract_raw_text)
+* [DOM](#dom)
+  * [fromURL](#fromurl)
 
 * * *
 
