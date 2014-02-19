@@ -61,7 +61,30 @@ def process(sentence):
     
     paul.log("DAY: " + str(day_index))
     
-    return weather(day_index)
+    return weather(day_index, sentence)
+
+
+
+def comment(sentence, temp, condition):
+    ''' Make a comment on what the weather will be like. '''
+    warm = 25 if paul.get_temp().lower() == "c" else 77
+    cold = 0 if paul.get_temp().lower() == "c" else 32
+    if sentence.has_one_of(["hot", "warm", "boiling", "roasting"]):
+        if int(temp) <  warm:
+            return "Not really. "
+        elif int(temp) < cold:
+            return "Absolutely not! "
+        elif int(temp) > warm:
+            return "Yes, it will be warm. "
+    elif sentence.has_one_of(["cold", "cool", "freezing"]):
+        if int(temp) > warm:
+            return "Definitely not, it'll be quite hot. "
+        elif int(temp) > cold:
+            return "Not really. "
+        elif int(temp) < cold:
+            return "Yes, so wrap up warm! "
+    return ""
+
 
 
 def replace_text(condition):
@@ -94,7 +117,7 @@ def get_conditions(raw_data, day_index):
 
 
 
-def weather(day_index=0):
+def weather(day_index, sentence):
     ''' Simply get the weather for any day '''
     if day_index > 5 or day_index < 0:
         return "I can't see that far ahead. Sorry!"
@@ -104,7 +127,8 @@ def weather(day_index=0):
                "forecastrss?u=" + paul.get_temp().lower() + "&w="
                + paul.get_woeid())
     except urllib.error.URLError:
-        return "I couldn't retrieve the weather. Are you connected to the internet?"
+        return ("I couldn't retrieve the weather. " + 
+                "Are you connected to the internet?")
     lines = page.readlines()    
     conditions = get_conditions(lines, day_index)
     
@@ -124,15 +148,16 @@ def weather(day_index=0):
         condition2 = conditions2['text'].lower()
         temp2 = "{}".format(conditions2['high'])
         
-        return "It's {0}°{1}{2}. The high today is {3}°{1}, {4}.".format(
-        temp, paul.get_temp(), condition, temp2, condition2)
+        com = comment(sentence, temp, conditions['text'])
+        return "{0}It's {1}°{2}{3}. The high today is {4}°{2}, {5}.".format(
+        com, temp, paul.get_temp(), condition, temp2, condition2)
     
     else:
         condition = conditions['text'].lower()
-    
-        rep = ("It will have a low of "
-               "{0}°{1}, a high of {2}°{1}, and will be {3}.".format(
-               conditions['low'], paul.get_temp(), 
+        com = comment(sentence, conditions['high'], conditions['text'])
+        rep = ("{0}It will have a low of "
+               "{1}°{2}, a high of {3}°{2}, and will be {4}.".format(
+               com, conditions['low'], paul.get_temp(), 
                conditions['high'], condition))
         return rep
 

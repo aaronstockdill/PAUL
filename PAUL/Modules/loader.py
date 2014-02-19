@@ -21,7 +21,10 @@ def process(sentence):
     importer.write("\nimport paul\npaul.update_words()")
     importer.close()
     
-    os.execl("/bin/bash", os.getcwd(), "./bin/PAUL")
+    try:
+        os.execl("/bin/bash", os.getcwd(), "./bin/PAUL")
+    except:
+        return "Oh dear. Perhaps restart me manually?"
         
 
 def main():

@@ -21,7 +21,7 @@ VERBS = [
 def is_math(sentence):
     ''' Determines if any part of the sentence is math '''
     for word, _ in sentence:
-        if paul.has_one_of(word, "+/^*-="):
+        if paul.has_one_of(word, "+/^*-=") and not word.startswith("http"):
             return True
     return False
 
@@ -41,7 +41,7 @@ def process(sentence):
         "duckduckgo": "https://duckduckgo.com/?q={}",
         "baidu": "http://www.baidu.com/s?wd={}",
     }
-    engine = paul.get_search_engine.lower()
+    engine = paul.get_search_engine().lower()
     
     keywords = sentence.keywords(ignore=[engine])
     paul.log("KEYWORDS:", keywords)
@@ -52,7 +52,7 @@ def process(sentence):
     
     paul.log("URL: " + url)
     paul.loading()
-    paul.run_script("open \"{}\"".format(url))
+    paul.open_URL(url)
     return "Here, try this."
 
 def main():

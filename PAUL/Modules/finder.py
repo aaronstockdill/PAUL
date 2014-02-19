@@ -260,8 +260,10 @@ def process(sentence):
     search = filters[0]
     paul.log(search)
     
-    if search.startswith("http"):
-        return commands["open"](search)
+    if search.startswith("http") or search.startswith("www."):
+        s = search
+        paul.open_URL(s if s.startswith("http") else "http://"+s)
+        return "Opening the website..."
     elif paul.has_word(keywords, "all"):
         return show_all(params)
     else:

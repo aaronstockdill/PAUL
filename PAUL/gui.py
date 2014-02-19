@@ -11,9 +11,14 @@ from tkinter.scrolledtext import *
 import brain
 from sys import argv
 
+WIDTH = 500
+HEIGHT = 180
+
 def set_text(text, ending=True):
     paul.talkLabel['text'] = text
     paul.output.set(text)
+    height = paul.talkLabel.winfo_reqheight()
+    paul.master.geometry("500x{}".format(height + 80 if height > 100 else HEIGHT))
 
 def get_text():
     paul.set_io(2)
@@ -29,7 +34,7 @@ class Application(Frame):
         Frame.__init__(self, master)
         self.bg = "#E9E9E9"
         self.pack()
-        self.master.configure(width=300, bg=self.bg)
+        self.master.configure(bg=self.bg)
         self.master.bind("<Escape>", lambda e: e.widget.quit())
         self.response = StringVar()
         self.output = StringVar()
@@ -67,14 +72,14 @@ class Application(Frame):
         self.enterText.bind("<Return>", lambda e: self.think(self.enterText))
         self.talkLabel = Message(self, text="Hi!", 
                                  textvariable=self.output,
-                                 width=500, bg=self.bg)
+                                 width=WIDTH-20, bg=self.bg)
         self.goButton = Button (self, text='Ask...', 
                                 command=lambda: self.think(self.enterText))
         self.endButton = Button (self, text='Bye!', 
                                  command=lambda: self.master.destroy())
         self.enterText.pack()
-        self.goButton.pack() 
-        self.endButton.pack()       
+        self.goButton.pack()
+        self.endButton.pack()
         self.talkLabel.pack()
     
     
@@ -115,7 +120,9 @@ class Application(Frame):
 paul = Application(Tk())
 paul.master.title("P.A.U.L. v{}".format(brain.paul.system.flags['VERSION']))
 w, h = paul.winfo_screenwidth(), paul.winfo_screenheight()
-paul.master.geometry("%dx%d+%d+%d" % (500, 300, w/2 - 250, h/2 - 250))
+paul.master.geometry("%dx%d+%d+%d" % (WIDTH, HEIGHT, 
+                                      w/2 - WIDTH/2, h/2 - WIDTH/2))
+paul.master.resizable(0,0)
 
 def main():
     brain.set_IO(set_text, get_text)

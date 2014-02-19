@@ -29,8 +29,8 @@ def scrape_first_paragraph(url):
    
     paul.set_it(url)
     para = stripIt(para)
-    if para.endswith("may refer to:"):
-        paul.run_script("open {}".format(url))
+    if para.endswith("may refer to:") or para.endswith("may refer to"):
+        paul.open_URL(url)
         return "This is a diambiguation page. I'll bring it up now..."
     return para + "\n\n" + url
 
@@ -51,7 +51,7 @@ def findIt(what, sentence):
         return "I couldn't complete the research for some reason. Are you connected to the internet?"
     except AttributeError:
         paul.set_it(url)
-        paul.run_script("open {}".format(url))
+        paul.open_URL(url)
         return "I can't seem to read about this. Let me open it for you..."
 
 
@@ -70,6 +70,13 @@ def process(sentence):
     paul.loading()
     if filtered_keywords == []:
         return "I don't understand. Sorry!"
+    if filtered_keywords[0][0] in ["joke", "jokes"]:
+        if sentence.has_word("about"):
+            pass
+        else:
+            return sentence.forward("personality")
+    elif filtered_keywords[0][0].startswith("http"):
+        paul.open_URL(filtered_keywords[0][0])
     return findIt(filtered_keywords[0][0], sentence)
 
 

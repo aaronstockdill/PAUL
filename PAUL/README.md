@@ -20,6 +20,7 @@
 * [filter\_unless\_listed](#filter_unless_listed)
 * [filter\_out](#filter_out)
 * [run\_script](#run_script)
+* [open\_URL](#open_url)
 * [set\_it](#set_it)
 * [get\_it](#get_it)
 * [get\_version](#get_version)
@@ -164,6 +165,11 @@ Do not call this function. Paul will handle this.
 
 ####run\_script
 `paul.run_script(code[, language='bash', response=False])` is used to execute a small helper script that you need the result of to carry on. This is the main way to interface with other applications, as Applescript provides a good way to communicate. The language parameter requests the language that your script is written in. It defaults to a standard bash script, i.e. terminal commands, but can take in applescript, ruby, python3 and perl. The response parameter defaults to False, meaning it will return None, as there is no need of a result. However, if there is a need of a result, set response to True. Then, `paul.run_script` will return the result of the code than ran.
+
+* * *
+
+####open\_URL
+`paul.open_URL(url)` is rather self-explanitory. The url supplied is a string, and Paul will open the URL. It's that easy. It will return True if he believes he succeeded, or False. Often, this is not necessary to store.
 
 * * *
 

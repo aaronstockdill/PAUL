@@ -15,7 +15,6 @@ def custom_statements(line):
     ''' Provide access to the user's custom actions, stored in a dict in
         the user's profile. '''
     actions = paul.system.flags["USER"]["actions"]
-    paul.log(type(actions))
     if actions != {}:
         for key, value in actions.items():
             actions[key.lower()] = value

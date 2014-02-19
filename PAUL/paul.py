@@ -155,7 +155,7 @@ def interact(statement, response=None, end=True):
 
 
 def random_choice(list):
-    ''' Return one of the supplied statements in list, each of which must
+    ''' Return one of the supplied statements in list, each of which can
         have room for a name to be inserted into it. '''
     name = random.choice(['', 
             ', {}'.format(get_user_name()),
@@ -325,6 +325,19 @@ def run_script(code, language='bash', response=False):
     else:
         data = system.flags["EXEC"](code, response)
         return data
+
+
+
+def open_URL(url):
+    ''' Open the url that was passed in as a string. Returns True if 
+        successful, False otherwise. '''
+    log("OPENING URL: ", url)
+    try:
+        run_script('open "{}"'.format(url), language="bash")
+        return True
+    except:
+        log("OPEN_URL FAILED TO OPEN {}".format(url))
+        return False
 
 
 

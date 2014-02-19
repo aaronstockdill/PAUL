@@ -41,7 +41,23 @@ FEELING = [
     "feel",
     "feeling",
 ]
-    
+
+RANDOM = [
+    "asdf",
+    "1234",
+    "joke",
+] 
+
+class Point(object):
+    """ A pointer class, so all variations of a word
+        point to the base word """
+
+    def __init__(self, name, dict):
+        self.name = name
+        self.dict = dict
+
+    def value(self):
+        return self.dict[self.name]
 
 
 def about_me():
@@ -53,6 +69,27 @@ def about_me():
     ]
     return paul.random_choice(responses)
 
+
+def random(sentence):
+    ''' Reply to something a bit random. '''
+    key_words = {
+        "asdf": ["jkl;", 
+                 "ghjk", 
+                 "fdsa", 
+                 "No, it's pronounced \"Paul\""],
+        "1234": ["♪Tell me that you love me more.♪", 
+                 "I declaire a thumb war!", 
+                 "5, 6, 7, 8.",
+                 "5, 6, 9, 10."],
+        "joke": ["Knock Knock... Oh blast I forgot how it goes.",
+                 ("Why did the virtual assistant think he was funny?\n\n"
+                  + "I'm not sure either."),
+                 "Yo mama. I'm sorry, that was mean."],
+    }
+    key_words["jokes"] = key_words["joke"]
+    for word, _ in sentence:
+        if word in key_words.keys():
+            return paul.random_choice(key_words[word])
 
 
 def greet():
@@ -109,6 +146,8 @@ def process(sentence):
         takeback = thank()
     elif paul.has_one_of(keywords, FEELING):
         takeback = feeling()
+    elif paul.has_one_of(keywords, RANDOM):
+        takeback = random(sentence)
     elif paul.has_one_of(keywords, ["name", "call", "called", "named"]):
         return sentence.forward("settings")
     return takeback
@@ -116,7 +155,7 @@ def process(sentence):
 def main():
     ''' The main function '''
     
-    NOUNS = KEYWORDS + GREETINGS + THANKS + FEELING
+    NOUNS = KEYWORDS + GREETINGS + THANKS + FEELING + RANDOM
     
     words = {word: ("personality", "noun") for word in NOUNS}
     
