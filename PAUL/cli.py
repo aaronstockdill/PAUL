@@ -31,6 +31,8 @@ def show_splash():
 
 def login():
     ''' Attempt to log the user in. '''
+    print("To log in, enter your username below.")
+    print("To create a new user, type 'new user' without quotes.")
     if brain.paul.system.flags["SKIP_LOGIN"] == False:
         name = input("Name: ")
         logged_in = brain.login(name)

@@ -88,6 +88,14 @@ class Application(Frame):
         self.userName.pack_forget()
         self.loginButton.pack_forget()
         self.defaultButton.pack_forget()
+        self.newUserButton.pack_forget()
+    
+    
+    def new_user(self):
+        self.purge_login()
+        self.createWidgets()
+        logged_in = brain.login('new user')
+        # brain.tutorial.run()
     
     
     def authenticate(self, name, skipped=False):
@@ -115,6 +123,9 @@ class Application(Frame):
         self.defaultButton = Button(self, text='Guest',
                              command=lambda: self.authenticate('default'))
         self.defaultButton.pack()
+        self.newUserButton = Button(self, text='New User',
+                             command=lambda: self.new_user())
+        self.newUserButton.pack()
 
 
 paul = Application(Tk())

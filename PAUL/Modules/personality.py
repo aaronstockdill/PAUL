@@ -46,6 +46,8 @@ RANDOM = [
     "asdf",
     "1234",
     "joke",
+    "sing",
+    "song",
 ] 
 
 class Point(object):
@@ -76,17 +78,23 @@ def random(sentence):
         "asdf": ["jkl;", 
                  "ghjk", 
                  "fdsa", 
-                 "No, it's pronounced \"Paul\""],
+                 "No, it's pronounced \"Paul\"!"],
         "1234": ["♪Tell me that you love me more.♪", 
                  "I declaire a thumb war!", 
                  "5, 6, 7, 8.",
                  "5, 6, 9, 10."],
-        "joke": ["Knock Knock... Oh blast I forgot how it goes.",
+        "joke": ["Knock Knock... Oh blast, I forgot how it goes.",
                  ("Why did the virtual assistant think he was funny?\n\n"
                   + "I'm not sure either."),
-                 "Yo mama. I'm sorry, that was mean."],
+                 "Yo' mama. I'm sorry, that was mean."],
+        "sing": [("Twinkle Twinkle, virtual assistant,\n" 
+                 + "How I wonder, if you existed."),
+                 "Sorry, my 'tune' module was never installed.",
+                 ("I would, but humans tend to like it when their "
+                  + "ears DON'T bleed."),],
     }
     key_words["jokes"] = key_words["joke"]
+    key_words["song"] = key_words["sing"]
     for word, _ in sentence:
         if word in key_words.keys():
             return paul.random_choice(key_words[word])

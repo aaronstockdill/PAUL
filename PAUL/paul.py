@@ -15,6 +15,7 @@ import os
 import subprocess
 import operator
 import urllib.request
+import sys
 
 import vocab
 import Settings.system as system
@@ -27,18 +28,20 @@ def log(*to_log):
         otherwise. '''
     return_value = False
     log_string = ' '.join([str(log) for log in to_log])
+    log_file_name = "./PAUL/log.txt"
     if system.flags["LOGGING"]:
-        log_file = open("./PAUL/log.txt", 'r')
+        mode = 'w' if not os.path.isfile(log_file_name) else 'r'
+        log_file = open(log_file_name, mode)
         lines = log_file.readlines()
         log_file.close()
         max_len = int(system.flags["MAX_LOG_SIZE"])
         time_str = time.strftime("%a,%d-%b-%Y~%H:%M ")
         lines.append(time_str + log_string + "\n")
         if len(lines) < max_len:
-            log_file = open("./PAUL/log.txt", 'a')
+            log_file = open(log_file_name, 'a')
             log_file.write(lines[-1])
         else:
-            log_file = open("./PAUL/log.txt", 'w')
+            log_file = open(log_file_name, 'w')
             log_file.write("".join(lines[-max_len:]))
         log_file.close()
         return_value = True
@@ -97,8 +100,19 @@ def simple_speech_filter(statement):
     replacements = [("°C", " degrees celcius")]
     for find, rep in replacements:
         statement = statement.replace(find, rep)
-    return statement    
-    
+    return statement
+
+
+
+def speak(statement):
+    ''' Say the statement to the user. This attempts to abstract away the
+        implementation to be platform agnostic. '''
+    speech = simple_speech_filter(statement)
+    if sys.platform == "darwin":
+        subprocess.Popen('say "{}"'.format(speech), shell=True)
+    elif sys.platform == "linux":
+        subprocess.Popen('espeak "{}"'.format(speech), shell=True)
+
 
 
 def interact(statement, response=None, end=True):
@@ -116,15 +130,14 @@ def interact(statement, response=None, end=True):
     log("INTERACTION:", statement)
     print(statement)
     if system.flags["NOISY"]:
-        speech = simple_speech_filter(statement)
-        subprocess.Popen('say "{}"'.format(speech), shell=True)
+        speak(statement)
     if send:
         log("CONNECTION: " + repr(send))
         try:
             send(statement, end=end)
         except TypeError:
             send(statement)
-    if response:
+    if response in ["list", "y_n", "arb"]:
         if not send:
             bringback = input(system.flags["USER"]["prompt"] + " ")
         else:
@@ -1062,6 +1075,9 @@ class DOM(object):
                     stack.append(e)
             else:
                 stack.append(t)
+        for item in stack:
+            if isinstance(item, Element):
+                return item
         return stack[0]
 
 update_words()

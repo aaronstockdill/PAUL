@@ -8,6 +8,7 @@ Author: Aaron Stockdill
 
 import paul
 import importlib
+import tutorial
 
 Modules = None
 
@@ -55,8 +56,15 @@ def load_settings(username):
 
 def login(username):
     ''' Try and log in under the name given '''
-    if username == "default":
+    if username == "default" or username == "guest":
         paul.system.flags["USER"] = load_settings("default")
+        return True
+    elif username == "new user":
+        import new_user
+        name = paul.interact("Absolutely! What is your name? ",
+                             response="arb")
+        new_user.main(name)
+        paul.system.flags["USER"] = load_settings(name.lower())
         return True
     else:
         if username.lower() in paul.system.users:

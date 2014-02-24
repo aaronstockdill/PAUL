@@ -55,7 +55,7 @@ def process(sentence):
         for day in weekdays:
             if paul.has_word(keywords, day):
                 paul.log("DAY:", day)
-                day_index = (weekdays.index(day) + today - 4) % 7
+                day_index = (weekdays.index(day) + today) % 7 + 1
             if day_index == 1:
                 day_index = 0
     
@@ -71,18 +71,18 @@ def comment(sentence, temp, condition):
     cold = 0 if paul.get_temp().lower() == "c" else 32
     if sentence.has_one_of(["hot", "warm", "boiling", "roasting"]):
         if int(temp) <  warm:
-            return "Not really. "
+            return "Meh. "
         elif int(temp) < cold:
             return "Absolutely not! "
         elif int(temp) > warm:
-            return "Yes, it will be warm. "
+            return "It will be warm. "
     elif sentence.has_one_of(["cold", "cool", "freezing"]):
         if int(temp) > warm:
-            return "Definitely not, it'll be quite hot. "
+            return "Definitely not cold, it'll be quite hot. "
         elif int(temp) > cold:
-            return "Not really. "
+            return "Not particularly. "
         elif int(temp) < cold:
-            return "Yes, so wrap up warm! "
+            return "It'll be cold, so wrap up warm! "
     return ""
 
 

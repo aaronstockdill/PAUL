@@ -1,500 +1,500 @@
-Fri,14-Feb-2014~23:17 CONNECTION: <function set_text at 0x101820f80>
-Fri,14-Feb-2014~23:17 PARTS: ['tell me about athena']
-Fri,14-Feb-2014~23:17 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('athena', '??')]
-Fri,14-Feb-2014~23:17 KIND: IMP
-Fri,14-Feb-2014~23:17 WEIGHTS: {2.0: ['wikipedia']}
-Fri,14-Feb-2014~23:17 BEST: wikipedia
-Fri,14-Feb-2014~23:17 KEYWORDS: [('athena', 4)]
-Fri,14-Feb-2014~23:17 INTERACTION: Just a moment, Aaron.
-Fri,14-Feb-2014~23:17 CONNECTION: <function set_text at 0x101820f80>
-Fri,14-Feb-2014~23:17 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=athena&printable=yes
-Fri,14-Feb-2014~23:17 INTERACTION: In Greek religion and mythology, Athena or Athene (/əˈθiːnə/ or /əˈθiːniː/; Attic: Ἀθηνᾶ, Athēnā or Ἀθηναία, Athēnaia; Epic: Ἀθηναίη, Athēnaiē; Ionic: Ἀθήνη, Athēnē; Doric: Ἀθάνα, Athānā), also referred to as Pallas Athena/Athene (/ˈpæləs/; Παλλὰς Ἀθηνᾶ; Παλλὰς Ἀθήνη), is the goddess of wisdom, courage, inspiration, civilization, law and justice, just warfare, mathematics, strength, strategy, the arts, crafts, and skill. Minerva is the Roman goddess identified with Athena.
-
-http://en.wikipedia.org/wiki/athena
-Fri,14-Feb-2014~23:17 CONNECTION: <function set_text at 0x101820f80>
-Fri,14-Feb-2014~23:18 PARTS: ['what time is it']
-Fri,14-Feb-2014~23:18 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Fri,14-Feb-2014~23:18 KIND: INT
-Fri,14-Feb-2014~23:18 WEIGHTS: {1.0: ['clock']}
-Fri,14-Feb-2014~23:18 BEST: clock
-Fri,14-Feb-2014~23:18 KEYWORDS: ['time']
-Fri,14-Feb-2014~23:18 INTERACTION: It is 11:18pm.
-Fri,14-Feb-2014~23:18 CONNECTION: <function set_text at 0x101820f80>
-Fri,14-Feb-2014~23:18 Successfully imported Modules.clock
-Fri,14-Feb-2014~23:18 Successfully imported Modules.controls
-Fri,14-Feb-2014~23:18 Successfully imported Modules.discover
-Fri,14-Feb-2014~23:18 Successfully imported Modules.finder
-Fri,14-Feb-2014~23:18 Successfully imported Modules.loader
-Fri,14-Feb-2014~23:18 Successfully imported Modules.math
-Fri,14-Feb-2014~23:18 Successfully imported Modules.media
-Fri,14-Feb-2014~23:18 Successfully imported Modules.personality
-Fri,14-Feb-2014~23:18 Successfully imported Modules.settings
-Fri,14-Feb-2014~23:18 Successfully imported Modules.weather
-Fri,14-Feb-2014~23:18 Successfully imported Modules.wikipedia
-Fri,14-Feb-2014~23:18 PARTS: ['what time is it']
-Fri,14-Feb-2014~23:18 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Fri,14-Feb-2014~23:18 KIND: INT
-Fri,14-Feb-2014~23:18 WEIGHTS: {1.0: ['clock']}
-Fri,14-Feb-2014~23:18 BEST: clock
-Fri,14-Feb-2014~23:18 KEYWORDS: ['time']
-Fri,14-Feb-2014~23:18 INTERACTION: It is 11:18pm.
-Fri,14-Feb-2014~23:18 CONNECTION: <function set_text at 0x1006f1f80>
-Fri,14-Feb-2014~23:18 Successfully imported Modules.clock
-Fri,14-Feb-2014~23:18 Successfully imported Modules.controls
-Fri,14-Feb-2014~23:18 Successfully imported Modules.discover
-Fri,14-Feb-2014~23:18 Successfully imported Modules.finder
-Fri,14-Feb-2014~23:18 Successfully imported Modules.loader
-Fri,14-Feb-2014~23:18 Successfully imported Modules.math
-Fri,14-Feb-2014~23:18 Successfully imported Modules.media
-Fri,14-Feb-2014~23:18 Successfully imported Modules.personality
-Fri,14-Feb-2014~23:18 Successfully imported Modules.settings
-Fri,14-Feb-2014~23:18 Successfully imported Modules.weather
-Fri,14-Feb-2014~23:18 Successfully imported Modules.wikipedia
-Fri,14-Feb-2014~23:18 PARTS: ['what time is it']
-Fri,14-Feb-2014~23:18 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Fri,14-Feb-2014~23:18 KIND: INT
-Fri,14-Feb-2014~23:18 WEIGHTS: {1.0: ['clock']}
-Fri,14-Feb-2014~23:18 BEST: clock
-Fri,14-Feb-2014~23:18 KEYWORDS: ['time']
-Fri,14-Feb-2014~23:18 INTERACTION: It is 11:18pm.
-Fri,14-Feb-2014~23:18 CONNECTION: <function set_text at 0x1006f1f80>
-Fri,14-Feb-2014~23:19 PARTS: ['tell me about deadly nightshade']
-Fri,14-Feb-2014~23:19 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('deadly', '??'), ('nightshade', '??')]
-Fri,14-Feb-2014~23:19 KIND: IMP
-Fri,14-Feb-2014~23:19 WEIGHTS: {2.0: ['wikipedia']}
-Fri,14-Feb-2014~23:19 BEST: wikipedia
-Fri,14-Feb-2014~23:19 KEYWORDS: [('deadly nightshade', 4)]
-Fri,14-Feb-2014~23:19 INTERACTION: Coming up, sir.
-Fri,14-Feb-2014~23:19 CONNECTION: <function set_text at 0x1006f1f80>
-Fri,14-Feb-2014~23:19 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=deadly_nightshade&printable=yes
-Fri,14-Feb-2014~23:19 INTERACTION: Atropa belladonna or Atropa bella-donna, commonly known as Belladonna or Deadly Nightshade, is a perennial herbaceous plant in the family Solanaceae, native to Europe, North Africa, and Western Asia. The foliage and berries are extremely toxic, containing tropane alkaloids. These toxins include scopolamine and hyoscyamine, which cause a bizarre delirium and hallucinations, and are also used as pharmaceutical anticholinergics. The drug atropine is derived from the plant.
-
-http://en.wikipedia.org/wiki/deadly_nightshade
-Fri,14-Feb-2014~23:19 CONNECTION: <function set_text at 0x1006f1f80>
-Fri,14-Feb-2014~23:20 Successfully imported Modules.clock
-Fri,14-Feb-2014~23:20 Successfully imported Modules.controls
-Fri,14-Feb-2014~23:20 Successfully imported Modules.discover
-Fri,14-Feb-2014~23:20 Successfully imported Modules.finder
-Fri,14-Feb-2014~23:20 Successfully imported Modules.loader
-Fri,14-Feb-2014~23:20 Successfully imported Modules.math
-Fri,14-Feb-2014~23:20 Successfully imported Modules.media
-Fri,14-Feb-2014~23:20 Successfully imported Modules.personality
-Fri,14-Feb-2014~23:20 Successfully imported Modules.settings
-Fri,14-Feb-2014~23:20 Successfully imported Modules.weather
-Fri,14-Feb-2014~23:20 Successfully imported Modules.wikipedia
-Fri,14-Feb-2014~23:20 PARTS: ['what time is it']
-Fri,14-Feb-2014~23:20 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Fri,14-Feb-2014~23:20 KIND: INT
-Fri,14-Feb-2014~23:20 WEIGHTS: {1.0: ['clock']}
-Fri,14-Feb-2014~23:20 BEST: clock
-Fri,14-Feb-2014~23:20 KEYWORDS: ['time']
-Fri,14-Feb-2014~23:20 INTERACTION: It is 11:20pm.
-Fri,14-Feb-2014~23:20 CONNECTION: <function set_text at 0x1006f1f80>
-Fri,14-Feb-2014~23:21 Successfully imported Modules.clock
-Fri,14-Feb-2014~23:21 Successfully imported Modules.controls
-Fri,14-Feb-2014~23:21 Successfully imported Modules.discover
-Fri,14-Feb-2014~23:21 Successfully imported Modules.finder
-Fri,14-Feb-2014~23:21 Successfully imported Modules.loader
-Fri,14-Feb-2014~23:21 Successfully imported Modules.math
-Fri,14-Feb-2014~23:21 Successfully imported Modules.media
-Fri,14-Feb-2014~23:21 Successfully imported Modules.personality
-Fri,14-Feb-2014~23:21 Successfully imported Modules.settings
-Fri,14-Feb-2014~23:21 Successfully imported Modules.weather
-Fri,14-Feb-2014~23:21 Successfully imported Modules.wikipedia
-Fri,14-Feb-2014~23:21 PARTS: ['what time is it']
-Fri,14-Feb-2014~23:21 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Fri,14-Feb-2014~23:21 KIND: INT
-Fri,14-Feb-2014~23:21 WEIGHTS: {1.0: ['clock']}
-Fri,14-Feb-2014~23:21 BEST: clock
-Fri,14-Feb-2014~23:21 KEYWORDS: ['time']
-Fri,14-Feb-2014~23:21 INTERACTION: It is 11:21pm.
-Fri,14-Feb-2014~23:21 CONNECTION: <function set_text at 0x1006f1f80>
-Fri,14-Feb-2014~23:21 PARTS: ['tell me about belladonna']
-Fri,14-Feb-2014~23:21 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('belladonna', '??')]
-Fri,14-Feb-2014~23:21 KIND: IMP
-Fri,14-Feb-2014~23:21 WEIGHTS: {2.0: ['wikipedia']}
-Fri,14-Feb-2014~23:21 BEST: wikipedia
-Fri,14-Feb-2014~23:21 KEYWORDS: [('belladonna', 4)]
-Fri,14-Feb-2014~23:21 INTERACTION: Let me see...
-Fri,14-Feb-2014~23:21 CONNECTION: <function set_text at 0x1006f1f80>
-Fri,14-Feb-2014~23:21 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=belladonna&printable=yes
-Fri,14-Feb-2014~23:21 INTERACTION: Belladonna or Bella Donna may refer to
-
-http://en.wikipedia.org/wiki/belladonna
-Fri,14-Feb-2014~23:21 CONNECTION: <function set_text at 0x1006f1f80>
-Fri,14-Feb-2014~23:21 PARTS: ['open that']
-Fri,14-Feb-2014~23:21 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
-Fri,14-Feb-2014~23:21 KIND: IMP
-Fri,14-Feb-2014~23:21 WEIGHTS: {1.0: ['finder']}
-Fri,14-Feb-2014~23:21 BEST: finder
-Fri,14-Feb-2014~23:21 IT: http://en.wikipedia.org/wiki/belladonna
-Fri,14-Feb-2014~23:21 CODE: open "http://en.wikipedia.org/wiki/belladonna"
-Fri,14-Feb-2014~23:21 INTERACTION: Opening it.
-Fri,14-Feb-2014~23:21 CONNECTION: <function set_text at 0x1006f1f80>
-Fri,14-Feb-2014~23:22 Successfully imported Modules.clock
-Fri,14-Feb-2014~23:22 Successfully imported Modules.controls
-Fri,14-Feb-2014~23:22 Successfully imported Modules.discover
-Fri,14-Feb-2014~23:22 Successfully imported Modules.finder
-Fri,14-Feb-2014~23:22 Successfully imported Modules.loader
-Fri,14-Feb-2014~23:22 Successfully imported Modules.math
-Fri,14-Feb-2014~23:22 Successfully imported Modules.media
-Fri,14-Feb-2014~23:22 Successfully imported Modules.personality
-Fri,14-Feb-2014~23:22 Successfully imported Modules.settings
-Fri,14-Feb-2014~23:22 Successfully imported Modules.weather
-Fri,14-Feb-2014~23:22 Successfully imported Modules.wikipedia
-Fri,14-Feb-2014~23:22 PARTS: ['what is belladonna']
-Fri,14-Feb-2014~23:22 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('belladonna', '??')]
-Fri,14-Feb-2014~23:22 KIND: INT
-Fri,14-Feb-2014~23:22 WEIGHTS: {}
-Fri,14-Feb-2014~23:22 KEYWORDS: [('belladonna', 2)]
-Fri,14-Feb-2014~23:22 URL: http://www.google.com/search?q=belladonna
-Fri,14-Feb-2014~23:22 INTERACTION: Let me see, sir...
-Fri,14-Feb-2014~23:22 CONNECTION: <function set_text at 0x1006fc0e0>
-Fri,14-Feb-2014~23:22 OPENING URL:  http://www.google.com/search?q=belladonna
-Fri,14-Feb-2014~23:22 CODE: open "http://www.google.com/search?q=belladonna"
-Fri,14-Feb-2014~23:22 INTERACTION: Here, try this.
-Fri,14-Feb-2014~23:22 CONNECTION: <function set_text at 0x1006fc0e0>
-Fri,14-Feb-2014~23:22 PARTS: ['tell me about athena']
-Fri,14-Feb-2014~23:22 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('athena', '??')]
-Fri,14-Feb-2014~23:22 KIND: IMP
-Fri,14-Feb-2014~23:22 WEIGHTS: {2.0: ['wikipedia']}
-Fri,14-Feb-2014~23:22 BEST: wikipedia
-Fri,14-Feb-2014~23:22 KEYWORDS: [('athena', 4)]
-Fri,14-Feb-2014~23:22 INTERACTION: Just a moment, Aaron.
-Fri,14-Feb-2014~23:22 CONNECTION: <function set_text at 0x1006fc0e0>
-Fri,14-Feb-2014~23:22 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=athena&printable=yes
-Fri,14-Feb-2014~23:22 INTERACTION: In Greek religion and mythology, Athena or Athene (/əˈθiːnə/ or /əˈθiːniː/; Attic: Ἀθηνᾶ, Athēnā or Ἀθηναία, Athēnaia; Epic: Ἀθηναίη, Athēnaiē; Ionic: Ἀθήνη, Athēnē; Doric: Ἀθάνα, Athānā), also referred to as Pallas Athena/Athene (/ˈpæləs/; Παλλὰς Ἀθηνᾶ; Παλλὰς Ἀθήνη), is the goddess of wisdom, courage, inspiration, civilization, law and justice, just warfare, mathematics, strength, strategy, the arts, crafts, and skill. Minerva is the Roman goddess identified with Athena.
-
-http://en.wikipedia.org/wiki/athena
-Fri,14-Feb-2014~23:22 CONNECTION: <function set_text at 0x1006fc0e0>
-Fri,14-Feb-2014~23:22 Successfully imported Modules.clock
-Fri,14-Feb-2014~23:22 Successfully imported Modules.controls
-Fri,14-Feb-2014~23:22 Successfully imported Modules.discover
-Fri,14-Feb-2014~23:22 Successfully imported Modules.finder
-Fri,14-Feb-2014~23:22 Successfully imported Modules.loader
-Fri,14-Feb-2014~23:22 Successfully imported Modules.math
-Fri,14-Feb-2014~23:22 Successfully imported Modules.media
-Fri,14-Feb-2014~23:22 Successfully imported Modules.personality
-Fri,14-Feb-2014~23:22 Successfully imported Modules.settings
-Fri,14-Feb-2014~23:22 Successfully imported Modules.weather
-Fri,14-Feb-2014~23:22 Successfully imported Modules.wikipedia
-Fri,14-Feb-2014~23:22 PARTS: ['tell me about athena']
-Fri,14-Feb-2014~23:22 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('athena', '??')]
-Fri,14-Feb-2014~23:22 KIND: IMP
-Fri,14-Feb-2014~23:22 WEIGHTS: {2.0: ['wikipedia']}
-Fri,14-Feb-2014~23:22 BEST: wikipedia
-Fri,14-Feb-2014~23:22 KEYWORDS: [('athena', 4)]
-Fri,14-Feb-2014~23:22 INTERACTION: Hang on, Aaron...
-Fri,14-Feb-2014~23:22 CONNECTION: <function set_text at 0x1006f1f80>
-Fri,14-Feb-2014~23:22 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=athena&printable=yes
-Fri,14-Feb-2014~23:22 INTERACTION: In Greek religion and mythology, Athena or Athene (/əˈθiːnə/ or /əˈθiːniː/; Attic: Ἀθηνᾶ, Athēnā or Ἀθηναία, Athēnaia; Epic: Ἀθηναίη, Athēnaiē; Ionic: Ἀθήνη, Athēnē; Doric: Ἀθάνα, Athānā), also referred to as Pallas Athena/Athene (/ˈpæləs/; Παλλὰς Ἀθηνᾶ; Παλλὰς Ἀθήνη), is the goddess of wisdom, courage, inspiration, civilization, law and justice, just warfare, mathematics, strength, strategy, the arts, crafts, and skill. Minerva is the Roman goddess identified with Athena.
-
-http://en.wikipedia.org/wiki/athena
-Fri,14-Feb-2014~23:22 CONNECTION: <function set_text at 0x1006f1f80>
-Fri,14-Feb-2014~23:24 Successfully imported Modules.clock
-Fri,14-Feb-2014~23:24 Successfully imported Modules.controls
-Fri,14-Feb-2014~23:24 Successfully imported Modules.discover
-Fri,14-Feb-2014~23:24 Successfully imported Modules.finder
-Fri,14-Feb-2014~23:24 Successfully imported Modules.loader
-Fri,14-Feb-2014~23:24 Successfully imported Modules.math
-Fri,14-Feb-2014~23:24 Successfully imported Modules.media
-Fri,14-Feb-2014~23:24 Successfully imported Modules.personality
-Fri,14-Feb-2014~23:24 Successfully imported Modules.settings
-Fri,14-Feb-2014~23:24 Successfully imported Modules.weather
-Fri,14-Feb-2014~23:24 Successfully imported Modules.wikipedia
-Fri,14-Feb-2014~23:24 PARTS: ['what time is it']
-Fri,14-Feb-2014~23:24 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Fri,14-Feb-2014~23:24 KIND: INT
-Fri,14-Feb-2014~23:24 WEIGHTS: {1.0: ['clock']}
-Fri,14-Feb-2014~23:24 BEST: clock
-Fri,14-Feb-2014~23:24 KEYWORDS: ['time']
-Fri,14-Feb-2014~23:24 INTERACTION: It is 11:24pm.
-Fri,14-Feb-2014~23:24 CONNECTION: <function set_text at 0x1006f1f80>
-Fri,14-Feb-2014~23:24 PARTS: ['tell me about athena']
-Fri,14-Feb-2014~23:24 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('athena', '??')]
-Fri,14-Feb-2014~23:24 KIND: IMP
-Fri,14-Feb-2014~23:24 WEIGHTS: {2.0: ['wikipedia']}
-Fri,14-Feb-2014~23:24 BEST: wikipedia
-Fri,14-Feb-2014~23:24 KEYWORDS: [('athena', 4)]
-Fri,14-Feb-2014~23:24 INTERACTION: Just a moment, Aaron.
-Fri,14-Feb-2014~23:24 CONNECTION: <function set_text at 0x1006f1f80>
-Fri,14-Feb-2014~23:24 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=athena&printable=yes
-Fri,14-Feb-2014~23:24 INTERACTION: In Greek religion and mythology, Athena or Athene (/əˈθiːnə/ or /əˈθiːniː/; Attic: Ἀθηνᾶ, Athēnā or Ἀθηναία, Athēnaia; Epic: Ἀθηναίη, Athēnaiē; Ionic: Ἀθήνη, Athēnē; Doric: Ἀθάνα, Athānā), also referred to as Pallas Athena/Athene (/ˈpæləs/; Παλλὰς Ἀθηνᾶ; Παλλὰς Ἀθήνη), is the goddess of wisdom, courage, inspiration, civilization, law and justice, just warfare, mathematics, strength, strategy, the arts, crafts, and skill. Minerva is the Roman goddess identified with Athena.
-
-http://en.wikipedia.org/wiki/athena
-Fri,14-Feb-2014~23:24 CONNECTION: <function set_text at 0x1006f1f80>
-Fri,14-Feb-2014~23:24 PARTS: ['tell me about asclepius']
-Fri,14-Feb-2014~23:24 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('asclepius', '??')]
-Fri,14-Feb-2014~23:24 KIND: IMP
-Fri,14-Feb-2014~23:24 WEIGHTS: {2.0: ['wikipedia']}
-Fri,14-Feb-2014~23:24 BEST: wikipedia
-Fri,14-Feb-2014~23:24 KEYWORDS: [('asclepius', 4)]
-Fri,14-Feb-2014~23:24 INTERACTION: Hang on, Aaron...
-Fri,14-Feb-2014~23:24 CONNECTION: <function set_text at 0x1006f1f80>
-Fri,14-Feb-2014~23:24 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=asclepius&printable=yes
-Fri,14-Feb-2014~23:24 INTERACTION: Asclepius (/æsˈkliːpiəs/; Greek: Ἀσκληπιός, Asklēpiós [asklɛːpiós]; Latin: Aesculapius) was a god of medicine and healing in ancient Greek religion. Asclepius represents the healing aspect of the medical arts; his daughters are Hygieia ("Hygiene", the goddess/personification of health, cleanliness, and sanitation), Iaso (the goddess of recuperation from illness), Aceso (the goddess of the healing process), Aglæa/Ægle (the goddess of beauty, splendor, glory, magnificence, and adornment), and Panacea (the goddess of universal remedy). He was associated with the Roman/Etruscan god Vediovis. He was one of Apollo's sons, sharing with Apollo the epithet Paean ("the Healer"). The rod of Asclepius, a snake-entwined staff, remains a symbol of medicine today. Those physicians and attendants who served this god were known as the Therapeutae of Asclepius.
-
-http://en.wikipedia.org/wiki/asclepius
-Fri,14-Feb-2014~23:24 CONNECTION: <function set_text at 0x1006f1f80>
-Fri,14-Feb-2014~23:26 Successfully imported Modules.clock
-Fri,14-Feb-2014~23:26 Successfully imported Modules.controls
-Fri,14-Feb-2014~23:26 Successfully imported Modules.discover
-Fri,14-Feb-2014~23:26 Successfully imported Modules.finder
-Fri,14-Feb-2014~23:26 Successfully imported Modules.loader
-Fri,14-Feb-2014~23:26 Successfully imported Modules.math
-Fri,14-Feb-2014~23:26 Successfully imported Modules.media
-Fri,14-Feb-2014~23:26 Successfully imported Modules.personality
-Fri,14-Feb-2014~23:26 Successfully imported Modules.settings
-Fri,14-Feb-2014~23:26 Successfully imported Modules.weather
-Fri,14-Feb-2014~23:26 Successfully imported Modules.wikipedia
-Fri,14-Feb-2014~23:26 PARTS: ['tell me about asclepius']
-Fri,14-Feb-2014~23:26 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('asclepius', '??')]
-Fri,14-Feb-2014~23:26 KIND: IMP
-Fri,14-Feb-2014~23:26 WEIGHTS: {2.0: ['wikipedia']}
-Fri,14-Feb-2014~23:26 BEST: wikipedia
-Fri,14-Feb-2014~23:26 KEYWORDS: [('asclepius', 4)]
-Fri,14-Feb-2014~23:26 INTERACTION: Let me see, Aaron...
-Fri,14-Feb-2014~23:26 CONNECTION: <function set_text at 0x1006f1ef0>
-Fri,14-Feb-2014~23:26 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=asclepius&printable=yes
-Fri,14-Feb-2014~23:26 INTERACTION: Asclepius (/æsˈkliːpiəs/; Greek: Ἀσκληπιός, Asklēpiós [asklɛːpiós]; Latin: Aesculapius) was a god of medicine and healing in ancient Greek religion. Asclepius represents the healing aspect of the medical arts; his daughters are Hygieia ("Hygiene", the goddess/personification of health, cleanliness, and sanitation), Iaso (the goddess of recuperation from illness), Aceso (the goddess of the healing process), Aglæa/Ægle (the goddess of beauty, splendor, glory, magnificence, and adornment), and Panacea (the goddess of universal remedy). He was associated with the Roman/Etruscan god Vediovis. He was one of Apollo's sons, sharing with Apollo the epithet Paean ("the Healer"). The rod of Asclepius, a snake-entwined staff, remains a symbol of medicine today. Those physicians and attendants who served this god were known as the Therapeutae of Asclepius.
-
-http://en.wikipedia.org/wiki/asclepius
-Fri,14-Feb-2014~23:26 CONNECTION: <function set_text at 0x1006f1ef0>
-Fri,14-Feb-2014~23:26 PARTS: ['tell me about spartacus']
-Fri,14-Feb-2014~23:26 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('spartacus', '??')]
-Fri,14-Feb-2014~23:26 KIND: IMP
-Fri,14-Feb-2014~23:26 WEIGHTS: {2.0: ['wikipedia']}
-Fri,14-Feb-2014~23:26 BEST: wikipedia
-Fri,14-Feb-2014~23:26 KEYWORDS: [('spartacus', 4)]
-Fri,14-Feb-2014~23:26 INTERACTION: Coming up, sir.
-Fri,14-Feb-2014~23:26 CONNECTION: <function set_text at 0x1006f1ef0>
-Fri,14-Feb-2014~23:26 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=spartacus&printable=yes
-Fri,14-Feb-2014~23:26 INTERACTION: Spartacus (Greek: Σπάρτακος, Spártakos; Latin: Spartacus) (c. 109–71BC) was a Thracian gladiator, who, along with the Gauls Crixus, Oenomaus, Castus and Gannicus, was one of the slave leaders in the Third Servile War, a major slave uprising against the Roman Republic. Little is known about Spartacus beyond the events of the war, and surviving historical accounts are sometimes contradictory and may not always be reliable. All sources agree that he was a former gladiator and an accomplished military leader.
-
-http://en.wikipedia.org/wiki/spartacus
-Fri,14-Feb-2014~23:26 CONNECTION: <function set_text at 0x1006f1ef0>
-Fri,14-Feb-2014~23:26 PARTS: ['tell me about kaleb']
-Fri,14-Feb-2014~23:26 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('kaleb', '??')]
-Fri,14-Feb-2014~23:26 KIND: IMP
-Fri,14-Feb-2014~23:26 WEIGHTS: {2.0: ['wikipedia']}
-Fri,14-Feb-2014~23:26 BEST: wikipedia
-Fri,14-Feb-2014~23:26 KEYWORDS: [('kaleb', 4)]
-Fri,14-Feb-2014~23:26 INTERACTION: Coming up.
-Fri,14-Feb-2014~23:26 CONNECTION: <function set_text at 0x1006f1ef0>
-Fri,14-Feb-2014~23:26 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=kaleb&printable=yes
-Fri,14-Feb-2014~23:26 INTERACTION: Kaleb (c. 520) is perhaps the best-documented, if not best-known, king of Axum situated in modern day Eritrea and Ethiopia.
-
-http://en.wikipedia.org/wiki/kaleb
-Fri,14-Feb-2014~23:26 CONNECTION: <function set_text at 0x1006f1ef0>
-Fri,14-Feb-2014~23:26 PARTS: ['open that']
-Fri,14-Feb-2014~23:26 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
-Fri,14-Feb-2014~23:26 KIND: IMP
-Fri,14-Feb-2014~23:26 WEIGHTS: {1.0: ['finder']}
-Fri,14-Feb-2014~23:26 BEST: finder
-Fri,14-Feb-2014~23:26 IT: http://en.wikipedia.org/wiki/kaleb
-Fri,14-Feb-2014~23:26 CODE: open "http://en.wikipedia.org/wiki/kaleb"
-Fri,14-Feb-2014~23:26 INTERACTION: Opening it.
-Fri,14-Feb-2014~23:26 CONNECTION: <function set_text at 0x1006f1ef0>
-Fri,14-Feb-2014~23:26 PARTS: ['open it']
-Fri,14-Feb-2014~23:26 SENTENCE: [('You', 'PS'), ('open', 'VB'), ('it', 'PO')]
-Fri,14-Feb-2014~23:26 KIND: IMP
-Fri,14-Feb-2014~23:26 WEIGHTS: {1.0: ['finder']}
-Fri,14-Feb-2014~23:26 BEST: finder
-Fri,14-Feb-2014~23:26 IT: http://en.wikipedia.org/wiki/kaleb
-Fri,14-Feb-2014~23:26 CODE: open "http://en.wikipedia.org/wiki/kaleb"
-Fri,14-Feb-2014~23:26 INTERACTION: Opening it.
-Fri,14-Feb-2014~23:26 CONNECTION: <function set_text at 0x1006f1ef0>
-Fri,14-Feb-2014~23:27 Successfully imported Modules.clock
-Fri,14-Feb-2014~23:27 Successfully imported Modules.controls
-Fri,14-Feb-2014~23:27 Successfully imported Modules.discover
-Fri,14-Feb-2014~23:27 Successfully imported Modules.finder
-Fri,14-Feb-2014~23:27 Successfully imported Modules.loader
-Fri,14-Feb-2014~23:27 Successfully imported Modules.math
-Fri,14-Feb-2014~23:27 Successfully imported Modules.media
-Fri,14-Feb-2014~23:27 Successfully imported Modules.personality
-Fri,14-Feb-2014~23:27 Successfully imported Modules.settings
-Fri,14-Feb-2014~23:27 Successfully imported Modules.weather
-Fri,14-Feb-2014~23:27 Successfully imported Modules.wikipedia
-Fri,14-Feb-2014~23:27 PARTS: ['hi']
-Fri,14-Feb-2014~23:27 SENTENCE: [('hi', 'NS')]
-Fri,14-Feb-2014~23:27 KIND: DEC
-Fri,14-Feb-2014~23:27 WEIGHTS: {1.0: ['personality']}
-Fri,14-Feb-2014~23:27 BEST: personality
-Fri,14-Feb-2014~23:27 INTERACTION: Hi.
-Fri,14-Feb-2014~23:27 CONNECTION: <function set_text at 0x1006fc050>
-Mon,17-Feb-2014~11:58 PARTS: ['what time is it']
-Mon,17-Feb-2014~11:58 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
-Mon,17-Feb-2014~11:58 KIND: INT
-Mon,17-Feb-2014~11:58 WEIGHTS: {1.0: ['clock']}
-Mon,17-Feb-2014~11:58 BEST: clock
-Mon,17-Feb-2014~11:58 KEYWORDS: ['time']
-Mon,17-Feb-2014~11:58 INTERACTION: It is 11:58am.
-Mon,17-Feb-2014~11:58 CONNECTION: <function set_text at 0x1006fc050>
-Mon,17-Feb-2014~11:58 PARTS: ['will it be cold today']
-Mon,17-Feb-2014~11:58 SENTENCE: [('You', 'PS'), ('will', 'VB'), ('it', 'PO'), ('be', 'VB'), ('cold', 'NO'), ('today', 'NO')]
-Mon,17-Feb-2014~11:58 KIND: IMP
-Mon,17-Feb-2014~11:58 WEIGHTS: {0.5: ['clock'], 1.5: ['weather']}
-Mon,17-Feb-2014~11:58 BEST: weather
-Mon,17-Feb-2014~11:58 INTERACTION: Just a moment.
-Mon,17-Feb-2014~11:58 CONNECTION: <function set_text at 0x1006fc050>
-Mon,17-Feb-2014~11:58 KEYWORDS: [('cold today', 4)]
-Mon,17-Feb-2014~11:58 TODAY: 0
-Mon,17-Feb-2014~11:58 DAY: 0
-Mon,17-Feb-2014~11:58 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 17 Feb 2014 11:29 am NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="26"   direction="50"   speed="14.48" />\n', b'<yweather:atmosphere humidity="39"  visibility="9.99"  pressure="982.05"  rising="2" />\n', b'<yweather:astronomy sunrise="6:52 am"   sunset="8:36 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 11:29 am NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 17 Feb 2014 11:29 am NZDT</pubDate>\n', b'<yweather:condition  text="Unknown"  code="3200"  temp="26"  date="Mon, 17 Feb 2014 11:29 am NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/3200.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Unknown, 26 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Cloudy. High: 26 Low: 17<br />\n', b'Tue - AM Clouds/PM Sun. High: 25 Low: 14<br />\n', b'Wed - Partly Cloudy. High: 21 Low: 13<br />\n', b'Thu - Partly Cloudy. High: 22 Low: 16<br />\n', b'Fri - Partly Cloudy. High: 23 Low: 15<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="17 Feb 2014" low="17" high="26" text="Cloudy" code="26" />\n', b'<yweather:forecast day="Tue" date="18 Feb 2014" low="14" high="25" text="AM Clouds/PM Sun" code="30" />\n', b'<yweather:forecast day="Wed" date="19 Feb 2014" low="13" high="21" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Thu" date="20 Feb 2014" low="16" high="22" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Fri" date="21 Feb 2014" low="15" high="23" text="Partly Cloudy" code="30" />\n', b'<guid isPermaLink="false">NZXX0006_2014_02_21_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fe494.global.media.gq1.yahoo.com Sun Feb 16 22:57:43 PST 2014 -->\n']
-Mon,17-Feb-2014~11:58 CONDITIONS: {'code': '3200', 'temp': '26', 'date': 'Mon, 17 Feb 2014 11:29 am NZDT', 'text': 'Unknown'}
-Mon,17-Feb-2014~11:58 CONDITIONS2: {'high': '26', 'low': '17', 'date': '17 Feb 2014', 'text': 'Cloudy', 'code': '26', 'day': 'Mon'}
-Mon,17-Feb-2014~11:58 INTERACTION: It's 26°C. The high today is 26°C, cloudy.
-Mon,17-Feb-2014~11:58 CONNECTION: <function set_text at 0x1006fc050>
-Mon,17-Feb-2014~12:11 PARTS: ['restart']
-Mon,17-Feb-2014~12:11 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Mon,17-Feb-2014~12:11 KIND: IMP
-Mon,17-Feb-2014~12:11 WEIGHTS: {1.0: ['loader']}
-Mon,17-Feb-2014~12:11 BEST: loader
-Mon,17-Feb-2014~12:11 Successfully imported Modules.clock
-Mon,17-Feb-2014~12:11 Successfully imported Modules.controls
-Mon,17-Feb-2014~12:11 Successfully imported Modules.discover
-Mon,17-Feb-2014~12:11 Successfully imported Modules.finder
-Mon,17-Feb-2014~12:11 Successfully imported Modules.loader
-Mon,17-Feb-2014~12:11 Successfully imported Modules.math
-Mon,17-Feb-2014~12:11 Successfully imported Modules.media
-Mon,17-Feb-2014~12:11 Successfully imported Modules.personality
-Mon,17-Feb-2014~12:11 Successfully imported Modules.settings
-Mon,17-Feb-2014~12:11 Successfully imported Modules.weather
-Mon,17-Feb-2014~12:11 Successfully imported Modules.wikipedia
-Mon,17-Feb-2014~12:11 PARTS: ['will it be hot today']
-Mon,17-Feb-2014~12:11 SENTENCE: [('You', 'PS'), ('will', 'VB'), ('it', 'PO'), ('be', 'VB'), ('hot', 'NO'), ('today', 'NO')]
-Mon,17-Feb-2014~12:11 KIND: IMP
-Mon,17-Feb-2014~12:11 WEIGHTS: {0.5: ['clock'], 1.5: ['weather']}
-Mon,17-Feb-2014~12:11 BEST: weather
-Mon,17-Feb-2014~12:11 INTERACTION: Just a moment, Aaron.
-Mon,17-Feb-2014~12:11 CONNECTION: <function set_text at 0x102d2b050>
-Mon,17-Feb-2014~12:11 KEYWORDS: [('hot today', 4)]
-Mon,17-Feb-2014~12:11 TODAY: 0
-Mon,17-Feb-2014~12:11 DAY: 0
-Mon,17-Feb-2014~12:11 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 17 Feb 2014 11:29 am NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="26"   direction="50"   speed="14.48" />\n', b'<yweather:atmosphere humidity="39"  visibility="9.99"  pressure="982.05"  rising="2" />\n', b'<yweather:astronomy sunrise="6:52 am"   sunset="8:36 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 11:29 am NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 17 Feb 2014 11:29 am NZDT</pubDate>\n', b'<yweather:condition  text="Unknown"  code="3200"  temp="26"  date="Mon, 17 Feb 2014 11:29 am NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/3200.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Unknown, 26 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Cloudy. High: 26 Low: 17<br />\n', b'Tue - AM Clouds/PM Sun. High: 25 Low: 14<br />\n', b'Wed - Partly Cloudy. High: 21 Low: 13<br />\n', b'Thu - Partly Cloudy. High: 22 Low: 16<br />\n', b'Fri - Partly Cloudy. High: 23 Low: 15<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="17 Feb 2014" low="17" high="26" text="Cloudy" code="26" />\n', b'<yweather:forecast day="Tue" date="18 Feb 2014" low="14" high="25" text="AM Clouds/PM Sun" code="30" />\n', b'<yweather:forecast day="Wed" date="19 Feb 2014" low="13" high="21" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Thu" date="20 Feb 2014" low="16" high="22" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Fri" date="21 Feb 2014" low="15" high="23" text="Partly Cloudy" code="30" />\n', b'<guid isPermaLink="false">NZXX0006_2014_02_21_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan494.sports.gq1.yahoo.com Sun Feb 16 23:10:19 PST 2014 -->\n']
-Mon,17-Feb-2014~12:11 CONDITIONS: {'code': '3200', 'date': 'Mon, 17 Feb 2014 11:29 am NZDT', 'text': 'Unknown', 'temp': '26'}
-Mon,17-Feb-2014~12:11 CONDITIONS2: {'high': '26', 'low': '17', 'day': 'Mon', 'code': '26', 'date': '17 Feb 2014', 'text': 'Cloudy'}
-Mon,17-Feb-2014~12:12 Successfully imported Modules.clock
-Mon,17-Feb-2014~12:12 Successfully imported Modules.controls
-Mon,17-Feb-2014~12:12 Successfully imported Modules.discover
-Mon,17-Feb-2014~12:12 Successfully imported Modules.finder
-Mon,17-Feb-2014~12:12 Successfully imported Modules.loader
-Mon,17-Feb-2014~12:12 Successfully imported Modules.math
-Mon,17-Feb-2014~12:12 Successfully imported Modules.media
-Mon,17-Feb-2014~12:12 Successfully imported Modules.personality
-Mon,17-Feb-2014~12:12 Successfully imported Modules.settings
-Mon,17-Feb-2014~12:14 Successfully imported Modules.clock
-Mon,17-Feb-2014~12:14 Successfully imported Modules.controls
-Mon,17-Feb-2014~12:14 Successfully imported Modules.discover
-Mon,17-Feb-2014~12:14 Successfully imported Modules.finder
-Mon,17-Feb-2014~12:14 Successfully imported Modules.loader
-Mon,17-Feb-2014~12:14 Successfully imported Modules.math
-Mon,17-Feb-2014~12:14 Successfully imported Modules.media
-Mon,17-Feb-2014~12:14 Successfully imported Modules.personality
-Mon,17-Feb-2014~12:14 Successfully imported Modules.settings
-Mon,17-Feb-2014~12:14 Successfully imported Modules.weather
-Mon,17-Feb-2014~12:14 Successfully imported Modules.wikipedia
-Mon,17-Feb-2014~12:14 PARTS: ['is it hot outside']
-Mon,17-Feb-2014~12:14 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('hot', 'NO'), ('outside', 'PP')]
-Mon,17-Feb-2014~12:14 KIND: IMP
-Mon,17-Feb-2014~12:14 WEIGHTS: {1.0: ['weather']}
-Mon,17-Feb-2014~12:14 BEST: weather
-Mon,17-Feb-2014~12:14 INTERACTION: Just a moment.
-Mon,17-Feb-2014~12:14 CONNECTION: <function set_text at 0x1006fc050>
-Mon,17-Feb-2014~12:14 KEYWORDS: [('hot', 3)]
-Mon,17-Feb-2014~12:14 TODAY: 0
-Mon,17-Feb-2014~12:14 DAY: 0
-Mon,17-Feb-2014~12:14 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 17 Feb 2014 11:29 am NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="26"   direction="50"   speed="14.48" />\n', b'<yweather:atmosphere humidity="39"  visibility="9.99"  pressure="982.05"  rising="2" />\n', b'<yweather:astronomy sunrise="6:52 am"   sunset="8:36 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 11:29 am NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 17 Feb 2014 11:29 am NZDT</pubDate>\n', b'<yweather:condition  text="Unknown"  code="3200"  temp="26"  date="Mon, 17 Feb 2014 11:29 am NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/3200.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Unknown, 26 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Cloudy. High: 26 Low: 17<br />\n', b'Tue - AM Clouds/PM Sun. High: 25 Low: 14<br />\n', b'Wed - Partly Cloudy. High: 21 Low: 13<br />\n', b'Thu - Partly Cloudy. High: 22 Low: 16<br />\n', b'Fri - Partly Cloudy. High: 23 Low: 15<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="17 Feb 2014" low="17" high="26" text="Cloudy" code="26" />\n', b'<yweather:forecast day="Tue" date="18 Feb 2014" low="14" high="25" text="AM Clouds/PM Sun" code="30" />\n', b'<yweather:forecast day="Wed" date="19 Feb 2014" low="13" high="21" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Thu" date="20 Feb 2014" low="16" high="22" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Fri" date="21 Feb 2014" low="15" high="23" text="Partly Cloudy" code="30" />\n', b'<guid isPermaLink="false">NZXX0006_2014_02_21_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan451.sports.gq1.yahoo.com Sun Feb 16 23:14:15 PST 2014 -->\n']
-Mon,17-Feb-2014~12:14 CONDITIONS: {'code': '3200', 'date': 'Mon, 17 Feb 2014 11:29 am NZDT', 'text': 'Unknown', 'temp': '26'}
-Mon,17-Feb-2014~12:14 CONDITIONS2: {'code': '26', 'high': '26', 'low': '17', 'date': '17 Feb 2014', 'text': 'Cloudy', 'day': 'Mon'}
-Mon,17-Feb-2014~12:15 PARTS: ['restart']
-Mon,17-Feb-2014~12:15 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Mon,17-Feb-2014~12:15 KIND: IMP
-Mon,17-Feb-2014~12:15 WEIGHTS: {1.0: ['loader']}
-Mon,17-Feb-2014~12:15 BEST: loader
-Mon,17-Feb-2014~12:15 Successfully imported Modules.clock
-Mon,17-Feb-2014~12:15 Successfully imported Modules.controls
-Mon,17-Feb-2014~12:15 Successfully imported Modules.discover
-Mon,17-Feb-2014~12:15 Successfully imported Modules.finder
-Mon,17-Feb-2014~12:15 Successfully imported Modules.loader
-Mon,17-Feb-2014~12:15 Successfully imported Modules.math
-Mon,17-Feb-2014~12:15 Successfully imported Modules.media
-Mon,17-Feb-2014~12:15 Successfully imported Modules.personality
-Mon,17-Feb-2014~12:15 Successfully imported Modules.settings
-Mon,17-Feb-2014~12:15 Successfully imported Modules.weather
-Mon,17-Feb-2014~12:15 Successfully imported Modules.wikipedia
-Mon,17-Feb-2014~12:15 PARTS: ['hi']
-Mon,17-Feb-2014~12:15 SENTENCE: [('hi', 'NS')]
-Mon,17-Feb-2014~12:15 KIND: DEC
-Mon,17-Feb-2014~12:15 WEIGHTS: {1.0: ['personality']}
-Mon,17-Feb-2014~12:15 BEST: personality
-Mon,17-Feb-2014~12:15 INTERACTION: Hello.
-Mon,17-Feb-2014~12:15 CONNECTION: <function set_text at 0x10232b050>
-Mon,17-Feb-2014~12:15 PARTS: ['is it hot today']
-Mon,17-Feb-2014~12:15 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('hot', 'NO'), ('today', 'NO')]
-Mon,17-Feb-2014~12:15 KIND: IMP
-Mon,17-Feb-2014~12:15 WEIGHTS: {0.5: ['clock'], 1.5: ['weather']}
-Mon,17-Feb-2014~12:15 BEST: weather
-Mon,17-Feb-2014~12:15 INTERACTION: Let me see, sir...
-Mon,17-Feb-2014~12:15 CONNECTION: <function set_text at 0x10232b050>
-Mon,17-Feb-2014~12:15 KEYWORDS: [('hot today', 3)]
-Mon,17-Feb-2014~12:15 TODAY: 0
-Mon,17-Feb-2014~12:15 DAY: 0
-Mon,17-Feb-2014~12:15 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 17 Feb 2014 11:29 am NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="26"   direction="50"   speed="14.48" />\n', b'<yweather:atmosphere humidity="39"  visibility="9.99"  pressure="982.05"  rising="2" />\n', b'<yweather:astronomy sunrise="6:52 am"   sunset="8:36 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 11:29 am NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 17 Feb 2014 11:29 am NZDT</pubDate>\n', b'<yweather:condition  text="Unknown"  code="3200"  temp="26"  date="Mon, 17 Feb 2014 11:29 am NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/3200.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Unknown, 26 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Cloudy. High: 26 Low: 17<br />\n', b'Tue - AM Clouds/PM Sun. High: 25 Low: 14<br />\n', b'Wed - Partly Cloudy. High: 21 Low: 13<br />\n', b'Thu - Partly Cloudy. High: 22 Low: 16<br />\n', b'Fri - Partly Cloudy. High: 23 Low: 15<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="17 Feb 2014" low="17" high="26" text="Cloudy" code="26" />\n', b'<yweather:forecast day="Tue" date="18 Feb 2014" low="14" high="25" text="AM Clouds/PM Sun" code="30" />\n', b'<yweather:forecast day="Wed" date="19 Feb 2014" low="13" high="21" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Thu" date="20 Feb 2014" low="16" high="22" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Fri" date="21 Feb 2014" low="15" high="23" text="Partly Cloudy" code="30" />\n', b'<guid isPermaLink="false">NZXX0006_2014_02_21_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan451.sports.gq1.yahoo.com Sun Feb 16 23:14:15 PST 2014 -->\n']
-Mon,17-Feb-2014~12:15 CONDITIONS: {'date': 'Mon, 17 Feb 2014 11:29 am NZDT', 'text': 'Unknown', 'temp': '26', 'code': '3200'}
-Mon,17-Feb-2014~12:15 CONDITIONS2: {'day': 'Mon', 'text': 'Cloudy', 'date': '17 Feb 2014', 'low': '17', 'high': '26', 'code': '26'}
-Mon,17-Feb-2014~12:15 INTERACTION: Yes, it will be warm. It's 26°C. The high today is 26°C, cloudy.
-Mon,17-Feb-2014~12:15 CONNECTION: <function set_text at 0x10232b050>
-Mon,17-Feb-2014~12:16 PARTS: ['is it cold outside']
-Mon,17-Feb-2014~12:16 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cold', 'NO'), ('outside', 'PP')]
-Mon,17-Feb-2014~12:16 KIND: IMP
-Mon,17-Feb-2014~12:16 WEIGHTS: {1.0: ['weather']}
-Mon,17-Feb-2014~12:16 BEST: weather
-Mon,17-Feb-2014~12:16 INTERACTION: Just a moment, sir.
-Mon,17-Feb-2014~12:16 CONNECTION: <function set_text at 0x10232b050>
-Mon,17-Feb-2014~12:16 KEYWORDS: [('cold', 3)]
-Mon,17-Feb-2014~12:16 TODAY: 0
-Mon,17-Feb-2014~12:16 DAY: 0
-Mon,17-Feb-2014~12:16 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 17 Feb 2014 11:29 am NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="26"   direction="50"   speed="14.48" />\n', b'<yweather:atmosphere humidity="39"  visibility="9.99"  pressure="982.05"  rising="2" />\n', b'<yweather:astronomy sunrise="6:52 am"   sunset="8:36 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 11:29 am NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 17 Feb 2014 11:29 am NZDT</pubDate>\n', b'<yweather:condition  text="Unknown"  code="3200"  temp="26"  date="Mon, 17 Feb 2014 11:29 am NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/3200.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Unknown, 26 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Cloudy. High: 26 Low: 17<br />\n', b'Tue - AM Clouds/PM Sun. High: 25 Low: 14<br />\n', b'Wed - Partly Cloudy. High: 21 Low: 13<br />\n', b'Thu - Partly Cloudy. High: 22 Low: 16<br />\n', b'Fri - Partly Cloudy. High: 23 Low: 15<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="17 Feb 2014" low="17" high="26" text="Cloudy" code="26" />\n', b'<yweather:forecast day="Tue" date="18 Feb 2014" low="14" high="25" text="AM Clouds/PM Sun" code="30" />\n', b'<yweather:forecast day="Wed" date="19 Feb 2014" low="13" high="21" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Thu" date="20 Feb 2014" low="16" high="22" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Fri" date="21 Feb 2014" low="15" high="23" text="Partly Cloudy" code="30" />\n', b'<guid isPermaLink="false">NZXX0006_2014_02_21_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan451.sports.gq1.yahoo.com Sun Feb 16 23:14:15 PST 2014 -->\n']
-Mon,17-Feb-2014~12:16 CONDITIONS: {'date': 'Mon, 17 Feb 2014 11:29 am NZDT', 'text': 'Unknown', 'temp': '26', 'code': '3200'}
-Mon,17-Feb-2014~12:16 CONDITIONS2: {'day': 'Mon', 'text': 'Cloudy', 'date': '17 Feb 2014', 'low': '17', 'high': '26', 'code': '26'}
-Mon,17-Feb-2014~12:16 INTERACTION: Not really. It's 26°C. The high today is 26°C, cloudy.
-Mon,17-Feb-2014~12:16 CONNECTION: <function set_text at 0x10232b050>
-Mon,17-Feb-2014~12:16 PARTS: ['restart']
-Mon,17-Feb-2014~12:16 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
-Mon,17-Feb-2014~12:16 KIND: IMP
-Mon,17-Feb-2014~12:16 WEIGHTS: {1.0: ['loader']}
-Mon,17-Feb-2014~12:16 BEST: loader
-Mon,17-Feb-2014~12:16 Successfully imported Modules.clock
-Mon,17-Feb-2014~12:16 Successfully imported Modules.controls
-Mon,17-Feb-2014~12:16 Successfully imported Modules.discover
-Mon,17-Feb-2014~12:16 Successfully imported Modules.finder
-Mon,17-Feb-2014~12:16 Successfully imported Modules.loader
-Mon,17-Feb-2014~12:16 Successfully imported Modules.math
-Mon,17-Feb-2014~12:16 Successfully imported Modules.media
-Mon,17-Feb-2014~12:16 Successfully imported Modules.personality
-Mon,17-Feb-2014~12:16 Successfully imported Modules.settings
-Mon,17-Feb-2014~12:16 Successfully imported Modules.weather
-Mon,17-Feb-2014~12:16 Successfully imported Modules.wikipedia
-Mon,17-Feb-2014~12:16 PARTS: ['is it cold outside']
-Mon,17-Feb-2014~12:16 SENTENCE: [('You', 'PS'), ('be', 'VB'), ('it', 'PO'), ('cold', 'NO'), ('outside', 'PP')]
-Mon,17-Feb-2014~12:16 KIND: IMP
-Mon,17-Feb-2014~12:16 WEIGHTS: {1.0: ['weather']}
-Mon,17-Feb-2014~12:16 BEST: weather
-Mon,17-Feb-2014~12:16 INTERACTION: Coming up.
-Mon,17-Feb-2014~12:16 CONNECTION: <function set_text at 0x101a2b050>
-Mon,17-Feb-2014~12:16 KEYWORDS: [('cold', 3)]
-Mon,17-Feb-2014~12:16 TODAY: 0
-Mon,17-Feb-2014~12:16 DAY: 0
-Mon,17-Feb-2014~12:16 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 17 Feb 2014 11:29 am NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="26"   direction="50"   speed="14.48" />\n', b'<yweather:atmosphere humidity="39"  visibility="9.99"  pressure="982.05"  rising="2" />\n', b'<yweather:astronomy sunrise="6:52 am"   sunset="8:36 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 11:29 am NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 17 Feb 2014 11:29 am NZDT</pubDate>\n', b'<yweather:condition  text="Unknown"  code="3200"  temp="26"  date="Mon, 17 Feb 2014 11:29 am NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/3200.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Unknown, 26 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Cloudy. High: 26 Low: 17<br />\n', b'Tue - AM Clouds/PM Sun. High: 25 Low: 14<br />\n', b'Wed - Partly Cloudy. High: 21 Low: 13<br />\n', b'Thu - Partly Cloudy. High: 22 Low: 16<br />\n', b'Fri - Partly Cloudy. High: 23 Low: 15<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="17 Feb 2014" low="17" high="26" text="Cloudy" code="26" />\n', b'<yweather:forecast day="Tue" date="18 Feb 2014" low="14" high="25" text="AM Clouds/PM Sun" code="30" />\n', b'<yweather:forecast day="Wed" date="19 Feb 2014" low="13" high="21" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Thu" date="20 Feb 2014" low="16" high="22" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Fri" date="21 Feb 2014" low="15" high="23" text="Partly Cloudy" code="30" />\n', b'<guid isPermaLink="false">NZXX0006_2014_02_21_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan451.sports.gq1.yahoo.com Sun Feb 16 23:14:15 PST 2014 -->\n']
-Mon,17-Feb-2014~12:16 CONDITIONS: {'temp': '26', 'text': 'Unknown', 'date': 'Mon, 17 Feb 2014 11:29 am NZDT', 'code': '3200'}
-Mon,17-Feb-2014~12:16 CONDITIONS2: {'day': 'Mon', 'text': 'Cloudy', 'date': '17 Feb 2014', 'low': '17', 'high': '26', 'code': '26'}
-Mon,17-Feb-2014~12:16 INTERACTION: Definitely not, it'll be quite hot. It's 26°C. The high today is 26°C, cloudy.
-Mon,17-Feb-2014~12:16 CONNECTION: <function set_text at 0x101a2b050>
-Mon,17-Feb-2014~12:17 PARTS: ['thanks']
-Mon,17-Feb-2014~12:17 SENTENCE: [('thank', 'NS')]
-Mon,17-Feb-2014~12:17 KIND: DEC
-Mon,17-Feb-2014~12:17 WEIGHTS: {1.0: ['personality']}
-Mon,17-Feb-2014~12:17 BEST: personality
-Mon,17-Feb-2014~12:17 INTERACTION: You're most welcome, Aaron.
-Mon,17-Feb-2014~12:17 CONNECTION: <function set_text at 0x101a2b050>
+Mon,24-Feb-2014~15:22 Successfully imported Modules.loader
+Mon,24-Feb-2014~15:22 Successfully imported Modules.math
+Mon,24-Feb-2014~15:22 Successfully imported Modules.media
+Mon,24-Feb-2014~15:22 Successfully imported Modules.personality
+Mon,24-Feb-2014~15:22 Successfully imported Modules.settings
+Mon,24-Feb-2014~15:22 Successfully imported Modules.weather
+Mon,24-Feb-2014~15:22 Successfully imported Modules.wikipedia
+Mon,24-Feb-2014~15:22 PARTS: ["what's the weather on wednesday"]
+Mon,24-Feb-2014~15:22 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('on', 'PP'), ('wednesday', 'NO')]
+Mon,24-Feb-2014~15:22 KIND: INT
+Mon,24-Feb-2014~15:22 WEIGHTS: {0.5: ['clock'], 1.5: ['weather']}
+Mon,24-Feb-2014~15:22 BEST: weather
+Mon,24-Feb-2014~15:22 INTERACTION: Hang on, sir...
+Mon,24-Feb-2014~15:22 KEYWORDS: [('weather', 3), ('wednesday', 5)]
+Mon,24-Feb-2014~15:22 TODAY: 0
+Mon,24-Feb-2014~15:22 DAY: wednesday
+Mon,24-Feb-2014~15:22 DAY: 5
+Mon,24-Feb-2014~15:22 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 24 Feb 2014 2:31 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="20"   direction="80"   speed="32.19" />\n', b'<yweather:atmosphere humidity="56"  visibility="9.99"  pressure="982.05"  rising="2" />\n', b'<yweather:astronomy sunrise="6:58 am"   sunset="8:25 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 2:31 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 24 Feb 2014 2:31 pm NZDT</pubDate>\n', b'<yweather:condition  text="Unknown"  code="3200"  temp="20"  date="Mon, 24 Feb 2014 2:31 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/3200.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Unknown, 20 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Sunny. High: 22 Low: 13<br />\n', b'Tue - Partly Cloudy. High: 16 Low: 13<br />\n', b'Wed - Mostly Sunny. High: 21 Low: 9<br />\n', b'Thu - Mostly Sunny. High: 23 Low: 14<br />\n', b'Fri - Showers. High: 18 Low: 8<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="24 Feb 2014" low="13" high="22" text="Sunny" code="32" />\n', b'<yweather:forecast day="Tue" date="25 Feb 2014" low="13" high="16" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Wed" date="26 Feb 2014" low="9" high="21" text="Mostly Sunny" code="34" />\n', b'<yweather:forecast day="Thu" date="27 Feb 2014" low="14" high="23" text="Mostly Sunny" code="34" />\n', b'<yweather:forecast day="Fri" date="28 Feb 2014" low="8" high="18" text="Showers" code="11" />\n', b'<guid isPermaLink="false">NZXX0006_2014_02_28_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan508.sports.gq1.yahoo.com Mon Feb 24 02:21:18 PST 2014 -->\n']
+Mon,24-Feb-2014~15:22 CONDITIONS: {'date': '28 Feb 2014', 'text': 'Showers', 'code': '11', 'day': 'Fri', 'high': '18', 'low': '8'}
+Mon,24-Feb-2014~15:22 INTERACTION: It will have a low of 8°C, a high of 18°C, and will be showers.
+Mon,24-Feb-2014~15:27 PARTS: ['what is the weather on wednesday']
+Mon,24-Feb-2014~15:27 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('on', 'PP'), ('wednesday', 'NO')]
+Mon,24-Feb-2014~15:27 KIND: INT
+Mon,24-Feb-2014~15:27 WEIGHTS: {0.5: ['clock'], 1.5: ['weather']}
+Mon,24-Feb-2014~15:27 BEST: weather
+Mon,24-Feb-2014~15:27 INTERACTION: Let me see, sir...
+Mon,24-Feb-2014~15:27 KEYWORDS: [('weather', 3), ('wednesday', 5)]
+Mon,24-Feb-2014~15:27 TODAY: 0
+Mon,24-Feb-2014~15:27 DAY: wednesday
+Mon,24-Feb-2014~15:27 DAY: 5
+Mon,24-Feb-2014~15:27 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 24 Feb 2014 2:31 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="20"   direction="80"   speed="32.19" />\n', b'<yweather:atmosphere humidity="56"  visibility="9.99"  pressure="982.05"  rising="2" />\n', b'<yweather:astronomy sunrise="6:58 am"   sunset="8:25 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 2:31 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 24 Feb 2014 2:31 pm NZDT</pubDate>\n', b'<yweather:condition  text="Unknown"  code="3200"  temp="20"  date="Mon, 24 Feb 2014 2:31 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/3200.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Unknown, 20 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Sunny. High: 22 Low: 13<br />\n', b'Tue - Partly Cloudy. High: 16 Low: 13<br />\n', b'Wed - Mostly Sunny. High: 21 Low: 9<br />\n', b'Thu - Mostly Sunny. High: 23 Low: 14<br />\n', b'Fri - Showers. High: 18 Low: 8<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="24 Feb 2014" low="13" high="22" text="Sunny" code="32" />\n', b'<yweather:forecast day="Tue" date="25 Feb 2014" low="13" high="16" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Wed" date="26 Feb 2014" low="9" high="21" text="Mostly Sunny" code="34" />\n', b'<yweather:forecast day="Thu" date="27 Feb 2014" low="14" high="23" text="Mostly Sunny" code="34" />\n', b'<yweather:forecast day="Fri" date="28 Feb 2014" low="8" high="18" text="Showers" code="11" />\n', b'<guid isPermaLink="false">NZXX0006_2014_02_28_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan441.sports.gq1.yahoo.com Mon Feb 24 02:24:13 PST 2014 -->\n']
+Mon,24-Feb-2014~15:27 CONDITIONS: {'date': '28 Feb 2014', 'text': 'Showers', 'code': '11', 'day': 'Fri', 'high': '18', 'low': '8'}
+Mon,24-Feb-2014~15:27 INTERACTION: It will have a low of 8°C, a high of 18°C, and will be showers.
+Mon,24-Feb-2014~15:28 PARTS: ['what is the weather on wednesday?']
+Mon,24-Feb-2014~15:28 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('on', 'PP'), ('wednesday', 'NO')]
+Mon,24-Feb-2014~15:28 KIND: INT
+Mon,24-Feb-2014~15:28 WEIGHTS: {0.5: ['clock'], 1.5: ['weather']}
+Mon,24-Feb-2014~15:28 BEST: weather
+Mon,24-Feb-2014~15:28 INTERACTION: Just a moment.
+Mon,24-Feb-2014~15:28 KEYWORDS: [('weather', 3), ('wednesday', 5)]
+Mon,24-Feb-2014~15:28 TODAY: 0
+Mon,24-Feb-2014~15:28 DAY: wednesday
+Mon,24-Feb-2014~15:28 DAY: 5
+Mon,24-Feb-2014~15:28 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 24 Feb 2014 2:31 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="20"   direction="80"   speed="32.19" />\n', b'<yweather:atmosphere humidity="56"  visibility="9.99"  pressure="982.05"  rising="2" />\n', b'<yweather:astronomy sunrise="6:58 am"   sunset="8:25 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 2:31 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 24 Feb 2014 2:31 pm NZDT</pubDate>\n', b'<yweather:condition  text="Unknown"  code="3200"  temp="20"  date="Mon, 24 Feb 2014 2:31 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/3200.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Unknown, 20 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Sunny. High: 22 Low: 13<br />\n', b'Tue - Partly Cloudy. High: 16 Low: 13<br />\n', b'Wed - Mostly Sunny. High: 21 Low: 9<br />\n', b'Thu - Mostly Sunny. High: 23 Low: 14<br />\n', b'Fri - Showers. High: 18 Low: 8<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="24 Feb 2014" low="13" high="22" text="Sunny" code="32" />\n', b'<yweather:forecast day="Tue" date="25 Feb 2014" low="13" high="16" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Wed" date="26 Feb 2014" low="9" high="21" text="Mostly Sunny" code="34" />\n', b'<yweather:forecast day="Thu" date="27 Feb 2014" low="14" high="23" text="Mostly Sunny" code="34" />\n', b'<yweather:forecast day="Fri" date="28 Feb 2014" low="8" high="18" text="Showers" code="11" />\n', b'<guid isPermaLink="false">NZXX0006_2014_02_28_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan524.sports.gq1.yahoo.com Mon Feb 24 02:27:18 PST 2014 -->\n']
+Mon,24-Feb-2014~15:28 CONDITIONS: {'date': '28 Feb 2014', 'text': 'Showers', 'code': '11', 'day': 'Fri', 'high': '18', 'low': '8'}
+Mon,24-Feb-2014~15:28 INTERACTION: It will have a low of 8°C, a high of 18°C, and will be showers.
+Mon,24-Feb-2014~15:47 PARTS: ['restart']
+Mon,24-Feb-2014~15:47 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,24-Feb-2014~15:47 KIND: IMP
+Mon,24-Feb-2014~15:47 WEIGHTS: {1.0: ['loader']}
+Mon,24-Feb-2014~15:47 BEST: loader
+Mon,24-Feb-2014~15:47 Successfully imported Modules.clock
+Mon,24-Feb-2014~15:47 Successfully imported Modules.controls
+Mon,24-Feb-2014~15:47 Successfully imported Modules.discover
+Mon,24-Feb-2014~15:47 Successfully imported Modules.finder
+Mon,24-Feb-2014~15:47 Successfully imported Modules.loader
+Mon,24-Feb-2014~15:47 Successfully imported Modules.math
+Mon,24-Feb-2014~15:47 Successfully imported Modules.media
+Mon,24-Feb-2014~15:47 Successfully imported Modules.personality
+Mon,24-Feb-2014~15:47 Successfully imported Modules.settings
+Mon,24-Feb-2014~15:47 Successfully imported Modules.weather
+Mon,24-Feb-2014~15:47 Successfully imported Modules.wikipedia
+Mon,24-Feb-2014~15:47 PARTS: ['what is the weather on wednesday']
+Mon,24-Feb-2014~15:47 SENTENCE: [('what', 'WH'), ('be', 'VB'), ('the', 'AR'), ('weather', 'NO'), ('on', 'PP'), ('wednesday', 'NO')]
+Mon,24-Feb-2014~15:47 KIND: INT
+Mon,24-Feb-2014~15:47 WEIGHTS: {0.5: ['clock'], 1.5: ['weather']}
+Mon,24-Feb-2014~15:47 BEST: weather
+Mon,24-Feb-2014~15:47 INTERACTION: Just a moment, sir.
+Mon,24-Feb-2014~15:47 KEYWORDS: [('weather', 3), ('wednesday', 5)]
+Mon,24-Feb-2014~15:47 TODAY: 0
+Mon,24-Feb-2014~15:47 DAY: wednesday
+Mon,24-Feb-2014~15:47 DAY: 3
+Mon,24-Feb-2014~15:47 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 24 Feb 2014 3:01 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="20"   direction="70"   speed="32.19" />\n', b'<yweather:atmosphere humidity="56"  visibility="9.99"  pressure="982.05"  rising="0" />\n', b'<yweather:astronomy sunrise="6:58 am"   sunset="8:25 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 3:01 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 24 Feb 2014 3:01 pm NZDT</pubDate>\n', b'<yweather:condition  text="Unknown"  code="3200"  temp="20"  date="Mon, 24 Feb 2014 3:01 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/3200.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Unknown, 20 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Sunny. High: 22 Low: 13<br />\n', b'Tue - Partly Cloudy. High: 16 Low: 13<br />\n', b'Wed - Mostly Sunny. High: 21 Low: 9<br />\n', b'Thu - Mostly Sunny. High: 23 Low: 14<br />\n', b'Fri - Showers. High: 18 Low: 8<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="24 Feb 2014" low="13" high="22" text="Sunny" code="32" />\n', b'<yweather:forecast day="Tue" date="25 Feb 2014" low="13" high="16" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Wed" date="26 Feb 2014" low="9" high="21" text="Mostly Sunny" code="34" />\n', b'<yweather:forecast day="Thu" date="27 Feb 2014" low="14" high="23" text="Mostly Sunny" code="34" />\n', b'<yweather:forecast day="Fri" date="28 Feb 2014" low="8" high="18" text="Showers" code="11" />\n', b'<guid isPermaLink="false">NZXX0006_2014_02_28_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan515.sports.gq1.yahoo.com Mon Feb 24 02:44:22 PST 2014 -->\n']
+Mon,24-Feb-2014~15:47 CONDITIONS: {'day': 'Wed', 'code': '34', 'text': 'Mostly Sunny', 'date': '26 Feb 2014', 'low': '9', 'high': '21'}
+Mon,24-Feb-2014~15:47 INTERACTION: It will have a low of 9°C, a high of 21°C, and will be mostly sunny.
+Mon,24-Feb-2014~19:26 INTERACTION: Bye!
+Mon,24-Feb-2014~19:29 Successfully imported Modules.clock
+Mon,24-Feb-2014~19:29 Successfully imported Modules.controls
+Mon,24-Feb-2014~19:29 Successfully imported Modules.discover
+Mon,24-Feb-2014~19:29 Successfully imported Modules.finder
+Mon,24-Feb-2014~19:29 Successfully imported Modules.loader
+Mon,24-Feb-2014~19:29 Successfully imported Modules.math
+Mon,24-Feb-2014~19:29 Successfully imported Modules.media
+Mon,24-Feb-2014~19:29 Successfully imported Modules.personality
+Mon,24-Feb-2014~19:29 Successfully imported Modules.settings
+Mon,24-Feb-2014~19:29 Successfully imported Modules.weather
+Mon,24-Feb-2014~19:29 Successfully imported Modules.wikipedia
+Mon,24-Feb-2014~19:29 PARTS: ['what time is it']
+Mon,24-Feb-2014~19:29 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,24-Feb-2014~19:29 KIND: INT
+Mon,24-Feb-2014~19:29 WEIGHTS: {1.0: ['clock']}
+Mon,24-Feb-2014~19:29 BEST: clock
+Mon,24-Feb-2014~19:29 KEYWORDS: ['time']
+Mon,24-Feb-2014~19:29 INTERACTION: It is 7:29pm.
+Mon,24-Feb-2014~19:29 PARTS: ['restart']
+Mon,24-Feb-2014~19:29 SENTENCE: [('You', 'PS'), ('restart', 'VB')]
+Mon,24-Feb-2014~19:29 KIND: IMP
+Mon,24-Feb-2014~19:29 WEIGHTS: {1.0: ['loader']}
+Mon,24-Feb-2014~19:29 BEST: loader
+Mon,24-Feb-2014~19:29 Successfully imported Modules.clock
+Mon,24-Feb-2014~19:29 Successfully imported Modules.controls
+Mon,24-Feb-2014~19:29 Successfully imported Modules.discover
+Mon,24-Feb-2014~19:29 Successfully imported Modules.finder
+Mon,24-Feb-2014~19:29 Successfully imported Modules.loader
+Mon,24-Feb-2014~19:29 Successfully imported Modules.math
+Mon,24-Feb-2014~19:29 Successfully imported Modules.media
+Mon,24-Feb-2014~19:29 Successfully imported Modules.personality
+Mon,24-Feb-2014~19:29 Successfully imported Modules.settings
+Mon,24-Feb-2014~19:29 Successfully imported Modules.weather
+Mon,24-Feb-2014~19:29 Successfully imported Modules.wikipedia
+Mon,24-Feb-2014~19:29 PARTS: ['what time is it']
+Mon,24-Feb-2014~19:29 SENTENCE: [('what', 'WH'), ('time', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Mon,24-Feb-2014~19:29 KIND: INT
+Mon,24-Feb-2014~19:29 WEIGHTS: {1.0: ['clock']}
+Mon,24-Feb-2014~19:29 BEST: clock
+Mon,24-Feb-2014~19:29 KEYWORDS: ['time']
+Mon,24-Feb-2014~19:29 INTERACTION: It is 7:29pm.
+Mon,24-Feb-2014~19:29 CONNECTION: <function set_text at 0x10182b050>
+Mon,24-Feb-2014~19:29 PARTS: ['will it be hot on wednesday']
+Mon,24-Feb-2014~19:29 SENTENCE: [('You', 'PS'), ('will', 'VB'), ('it', 'PO'), ('be', 'VB'), ('hot', 'NO'), ('on', 'PP'), ('wednesday', 'NO')]
+Mon,24-Feb-2014~19:29 KIND: IMP
+Mon,24-Feb-2014~19:29 WEIGHTS: {0.5: ['clock'], 1.5: ['weather']}
+Mon,24-Feb-2014~19:29 BEST: weather
+Mon,24-Feb-2014~19:29 INTERACTION: Just a moment.
+Mon,24-Feb-2014~19:29 CONNECTION: <function set_text at 0x10182b050>
+Mon,24-Feb-2014~19:29 KEYWORDS: [('hot', 4), ('wednesday', 6)]
+Mon,24-Feb-2014~19:29 TODAY: 0
+Mon,24-Feb-2014~19:29 DAY: wednesday
+Mon,24-Feb-2014~19:29 DAY: 3
+Mon,24-Feb-2014~19:29 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Mon, 24 Feb 2014 7:00 pm NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="24"   direction="290"   speed="27.36" />\n', b'<yweather:atmosphere humidity="25"  visibility="9.99"  pressure="982.05"  rising="0" />\n', b'<yweather:astronomy sunrise="6:58 am"   sunset="8:25 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 7:00 pm NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Mon, 24 Feb 2014 7:00 pm NZDT</pubDate>\n', b'<yweather:condition  text="Unknown"  code="3200"  temp="24"  date="Mon, 24 Feb 2014 7:00 pm NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/3200.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Unknown, 24 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Mon - Clear. High: 22 Low: 13<br />\n', b'Tue - Mostly Cloudy. High: 16 Low: 12<br />\n', b'Wed - Mostly Sunny. High: 22 Low: 9<br />\n', b'Thu - Mostly Sunny. High: 26 Low: 14<br />\n', b'Fri - Showers. High: 16 Low: 8<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Mon" date="24 Feb 2014" low="13" high="22" text="Clear" code="31" />\n', b'<yweather:forecast day="Tue" date="25 Feb 2014" low="12" high="16" text="Mostly Cloudy" code="28" />\n', b'<yweather:forecast day="Wed" date="26 Feb 2014" low="9" high="22" text="Mostly Sunny" code="34" />\n', b'<yweather:forecast day="Thu" date="27 Feb 2014" low="14" high="26" text="Mostly Sunny" code="34" />\n', b'<yweather:forecast day="Fri" date="28 Feb 2014" low="8" high="16" text="Showers" code="11" />\n', b'<guid isPermaLink="false">NZXX0006_2014_02_28_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- fan514.sports.gq1.yahoo.com Mon Feb 24 06:28:57 PST 2014 -->\n']
+Mon,24-Feb-2014~19:29 CONDITIONS: {'date': '26 Feb 2014', 'text': 'Mostly Sunny', 'day': 'Wed', 'high': '22', 'code': '34', 'low': '9'}
+Mon,24-Feb-2014~19:29 INTERACTION: Not really. It will have a low of 9°C, a high of 22°C, and will be mostly sunny.
+Mon,24-Feb-2014~19:29 CONNECTION: <function set_text at 0x10182b050>
+Mon,24-Feb-2014~20:08 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:08 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:09 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:09 CONNECTION: <function set_text at 0x10182b0e0>
+Mon,24-Feb-2014~20:10 INTERACTION: Hi there, Kaleb!
+Mon,24-Feb-2014~20:10 CONNECTION: <function set_text at 0x10182b0e0>
+Mon,24-Feb-2014~20:10 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:10 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:10 INTERACTION: Hi there, Tom! I'm just creating you an account now.
+Mon,24-Feb-2014~20:10 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:11 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:11 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:11 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Mon,24-Feb-2014~20:11 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:13 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:13 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:13 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Mon,24-Feb-2014~20:13 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:13 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:13 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:13 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Mon,24-Feb-2014~20:13 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:14 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:14 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:14 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Mon,24-Feb-2014~20:14 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:14 INTERACTION: Ok, that should all be set up for you now!
+Mon,24-Feb-2014~20:14 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:31 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:31 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:31 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Mon,24-Feb-2014~20:31 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:32 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:32 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:32 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Mon,24-Feb-2014~20:32 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:32 INTERACTION: Ok, {}, quick few questions
+What would you like me to use as a title?
+For example, sir, ma'am...
+Mon,24-Feb-2014~20:32 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:33 INTERACTION: Fantastic. Now, do you prefer to use Fahrenheit or Celcius?
+Mon,24-Feb-2014~20:33 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:33 INTERACTION: Awesome. And lastly, where do you live, Kaleb?
+Mon,24-Feb-2014~20:33 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:36 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:36 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:36 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Mon,24-Feb-2014~20:36 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:36 INTERACTION: Ok, Kaleb, quick few questions
+What would you like me to use as a title?
+For example, sir, ma'am...
+Mon,24-Feb-2014~20:36 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:36 INTERACTION: Fantastic. Now, do you prefer to use Fahrenheit or Celcius?
+Mon,24-Feb-2014~20:36 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:36 INTERACTION: Awesome. And lastly, where do you live, Kaleb?
+Mon,24-Feb-2014~20:36 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:36 DOM:  <?xml version="1.0" encoding="UTF-8"?>
+Mon,24-Feb-2014~20:39 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:39 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:39 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Mon,24-Feb-2014~20:39 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:39 INTERACTION: Ok, Kaleb, quick few questions
+What would you like me to use as a title?
+For example, sir, ma'am...
+Mon,24-Feb-2014~20:39 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:39 INTERACTION: Fantastic. Now, do you prefer to use Fahrenheit or Celcius?
+Mon,24-Feb-2014~20:39 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:39 INTERACTION: Awesome. And lastly, where do you live, Kaleb?
+Mon,24-Feb-2014~20:39 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:39 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:39 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:39 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Mon,24-Feb-2014~20:39 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:39 INTERACTION: Ok, Kaleb, quick few questions
+What would you like me to use as a title?
+For example, sir, ma'am...
+Mon,24-Feb-2014~20:39 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:39 INTERACTION: Fantastic. Now, do you prefer to use Fahrenheit or Celcius?
+Mon,24-Feb-2014~20:39 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:39 INTERACTION: Awesome. And lastly, where do you live, Kaleb?
+Mon,24-Feb-2014~20:39 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:39 DOM:  <?xml version="1.0" encoding="UTF-8"?>
+Mon,24-Feb-2014~20:40 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:40 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:40 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Mon,24-Feb-2014~20:40 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:40 INTERACTION: Ok, Kaleb, quick few questions
+What would you like me to use as a title?
+For example, sir, ma'am...
+Mon,24-Feb-2014~20:40 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:40 INTERACTION: Fantastic. Now, do you prefer to use Fahrenheit or Celcius?
+Mon,24-Feb-2014~20:40 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:40 INTERACTION: Awesome. And lastly, where do you live, Kaleb?
+Mon,24-Feb-2014~20:40 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:40 <?xml version="1.0" encoding="UTF-8"?>
+Mon,24-Feb-2014~20:40 (query, [(results, [(place, [(woeid, ['2348327']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['New Zealand']), (admin1, ['Canterbury']), (admin2, ['Christchurch City']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['-43.527519']), (longitude, ['172.635422'])]), (boundingbox, [(southwest, [(latitude, ['-43.587769']), (longitude, ['172.499084'])]), (northeast, [(latitude, ['-43.463268']), (longitude, ['172.778503'])])]), (arearank, ['5']), (poprank, ['12']), (timezone, ['Pacific/Auckland'])]), (place, [(woeid, ['16017']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2/, []), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['50.741859']), (longitude, ['-1.750190'])]), (boundingbox, [(southwest, [(latitude, ['50.723450']), (longitude, ['-1.811270'])]), (northeast, [(latitude, ['50.763260']), (longitude, ['-1.684170'])])]), (arearank, ['3']), (poprank, ['10']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2380077']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United States']), (admin1, ['Virginia']), (admin2, ['Middlesex']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal, ['23149']), (centroid, [(latitude, ['37.605659']), (longitude, ['-76.537857'])]), (boundingbox, [(southwest, [(latitude, ['37.596561']), (longitude, ['-76.549332'])]), (northeast, [(latitude, ['37.614750']), (longitude, ['-76.526382'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['America/New_York'])]), (place, [(woeid, ['16018']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Gloucestershire']), (admin3, ['Forest of Dean District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['GL16']), (centroid, [(latitude, ['51.813980']), (longitude, ['-2.634310'])]), (boundingbox, [(southwest, [(latitude, ['51.804878']), (longitude, ['-2.649010'])]), (northeast, [(latitude, ['51.823071']), (longitude, ['-2.619600'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16019']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Cambridgeshire']), (admin3, ['Fenland District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['PE14']), (centroid, [(latitude, ['52.548161']), (longitude, ['0.200160'])]), (boundingbox, [(southwest, [(latitude, ['52.543701']), (longitude, ['0.193590'])]), (northeast, [(latitude, ['52.553150']), (longitude, ['0.204540'])])]), (arearank, ['0']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16020']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['Wales']), (admin2, ['Newport City']), (admin3, ['Newport City']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['NP18 1']), (centroid, [(latitude, ['51.599171']), (longitude, ['-2.945190'])]), (boundingbox, [(southwest, [(latitude, ['51.590069']), (longitude, ['-2.959820'])]), (northeast, [(latitude, ['51.608261']), (longitude, ['-2.930550'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2344730']), (placetypename, ['Parish']), (name, ['Christ Church']), (country, ['Barbados']), (admin1, ['Christ Church']), (admin2/, []), (admin3/, []), (locality1/, []), (locality2/, []), (postal/, []), (centroid, [(latitude, ['13.073090']), (longitude, ['-59.543530'])]), (boundingbox, [(southwest, [(latitude, ['13.039840']), (longitude, ['-59.609810'])]), (northeast, [(latitude, ['13.106330']), (longitude, ['-59.477242'])])]), (arearank, ['4']), (poprank, ['0']), (timezone, ['America/Barbados'])]), (place, [(woeid, ['91738152']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['East Sussex']), (admin3, ['Wealden District']), (locality1, ['Hailsham']), (locality2/, []), (postal, ['BN27']), (centroid, [(latitude, ['50.861870']), (longitude, ['0.258030'])]), (boundingbox, [(southwest, [(latitude, ['50.861408']), (longitude, ['0.257300'])]), (northeast, [(latitude, ['50.862320']), (longitude, ['0.258750'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734607']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Leicestershire']), (admin3/, []), (locality1, ['Leicester']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['52.617310']), (longitude, ['-1.115520'])]), (boundingbox, [(southwest, [(latitude, ['52.616852']), (longitude, ['-1.116260'])]), (northeast, [(latitude, ['52.617760']), (longitude, ['-1.114770'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734427']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Nottinghamshire']), (admin3, ['Bassetlaw District']), (locality1, ['Worksop']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['53.324821']), (longitude, ['-1.110510'])]), (boundingbox, [(southwest, [(latitude, ['53.324360']), (longitude, ['-1.111270'])]), (northeast, [(latitude, ['53.325272']), (longitude, ['-1.109740'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])])])])
+Mon,24-Feb-2014~20:40 <!-- total: 26 -->
+Mon,24-Feb-2014~20:40 <!-- engine6.yql.gq1.yahoo.com -->
+Mon,24-Feb-2014~20:40 DOM:  <?xml version="1.0" encoding="UTF-8"?>
+Mon,24-Feb-2014~20:42 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:42 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:42 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Mon,24-Feb-2014~20:42 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:42 INTERACTION: Ok, Kaleb, quick few questions
+What would you like me to use as a title?
+For example, sir, ma'am...
+Mon,24-Feb-2014~20:42 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:42 INTERACTION: Fantastic. Now, do you prefer to use Fahrenheit or Celcius?
+Mon,24-Feb-2014~20:42 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:42 INTERACTION: Awesome. And lastly, where do you live, Kaleb?
+Mon,24-Feb-2014~20:42 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:42 <?xml version="1.0" encoding="UTF-8"?>
+Mon,24-Feb-2014~20:42 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:42 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:43 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Mon,24-Feb-2014~20:43 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:43 INTERACTION: Ok, Kaleb, quick few questions
+What would you like me to use as a title?
+For example, sir, ma'am...
+Mon,24-Feb-2014~20:43 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:43 INTERACTION: Fantastic. Now, do you prefer to use Fahrenheit or Celcius?
+Mon,24-Feb-2014~20:43 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:43 INTERACTION: Awesome. And lastly, where do you live, Kaleb?
+Mon,24-Feb-2014~20:43 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:43 <?xml version="1.0" encoding="UTF-8"?>
+Mon,24-Feb-2014~20:43 (query, [(results, [(place, [(woeid, ['2348327']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['New Zealand']), (admin1, ['Canterbury']), (admin2, ['Christchurch City']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['-43.527519']), (longitude, ['172.635422'])]), (boundingbox, [(southwest, [(latitude, ['-43.587769']), (longitude, ['172.499084'])]), (northeast, [(latitude, ['-43.463268']), (longitude, ['172.778503'])])]), (arearank, ['5']), (poprank, ['12']), (timezone, ['Pacific/Auckland'])]), (place, [(woeid, ['16017']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2/, []), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['50.741859']), (longitude, ['-1.750190'])]), (boundingbox, [(southwest, [(latitude, ['50.723450']), (longitude, ['-1.811270'])]), (northeast, [(latitude, ['50.763260']), (longitude, ['-1.684170'])])]), (arearank, ['3']), (poprank, ['10']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2380077']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United States']), (admin1, ['Virginia']), (admin2, ['Middlesex']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal, ['23149']), (centroid, [(latitude, ['37.605659']), (longitude, ['-76.537857'])]), (boundingbox, [(southwest, [(latitude, ['37.596561']), (longitude, ['-76.549332'])]), (northeast, [(latitude, ['37.614750']), (longitude, ['-76.526382'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['America/New_York'])]), (place, [(woeid, ['16018']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Gloucestershire']), (admin3, ['Forest of Dean District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['GL16']), (centroid, [(latitude, ['51.813980']), (longitude, ['-2.634310'])]), (boundingbox, [(southwest, [(latitude, ['51.804878']), (longitude, ['-2.649010'])]), (northeast, [(latitude, ['51.823071']), (longitude, ['-2.619600'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16019']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Cambridgeshire']), (admin3, ['Fenland District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['PE14']), (centroid, [(latitude, ['52.548161']), (longitude, ['0.200160'])]), (boundingbox, [(southwest, [(latitude, ['52.543701']), (longitude, ['0.193590'])]), (northeast, [(latitude, ['52.553150']), (longitude, ['0.204540'])])]), (arearank, ['0']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16020']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['Wales']), (admin2, ['Newport City']), (admin3, ['Newport City']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['NP18 1']), (centroid, [(latitude, ['51.599171']), (longitude, ['-2.945190'])]), (boundingbox, [(southwest, [(latitude, ['51.590069']), (longitude, ['-2.959820'])]), (northeast, [(latitude, ['51.608261']), (longitude, ['-2.930550'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2344730']), (placetypename, ['Parish']), (name, ['Christ Church']), (country, ['Barbados']), (admin1, ['Christ Church']), (admin2/, []), (admin3/, []), (locality1/, []), (locality2/, []), (postal/, []), (centroid, [(latitude, ['13.073090']), (longitude, ['-59.543530'])]), (boundingbox, [(southwest, [(latitude, ['13.039840']), (longitude, ['-59.609810'])]), (northeast, [(latitude, ['13.106330']), (longitude, ['-59.477242'])])]), (arearank, ['4']), (poprank, ['0']), (timezone, ['America/Barbados'])]), (place, [(woeid, ['91738152']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['East Sussex']), (admin3, ['Wealden District']), (locality1, ['Hailsham']), (locality2/, []), (postal, ['BN27']), (centroid, [(latitude, ['50.861870']), (longitude, ['0.258030'])]), (boundingbox, [(southwest, [(latitude, ['50.861408']), (longitude, ['0.257300'])]), (northeast, [(latitude, ['50.862320']), (longitude, ['0.258750'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734607']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Leicestershire']), (admin3/, []), (locality1, ['Leicester']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['52.617310']), (longitude, ['-1.115520'])]), (boundingbox, [(southwest, [(latitude, ['52.616852']), (longitude, ['-1.116260'])]), (northeast, [(latitude, ['52.617760']), (longitude, ['-1.114770'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734427']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Nottinghamshire']), (admin3, ['Bassetlaw District']), (locality1, ['Worksop']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['53.324821']), (longitude, ['-1.110510'])]), (boundingbox, [(southwest, [(latitude, ['53.324360']), (longitude, ['-1.111270'])]), (northeast, [(latitude, ['53.325272']), (longitude, ['-1.109740'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])])])])
+Mon,24-Feb-2014~20:43 DOM:  (query, [(results, [(place, [(woeid, ['2348327']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['New Zealand']), (admin1, ['Canterbury']), (admin2, ['Christchurch City']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['-43.527519']), (longitude, ['172.635422'])]), (boundingbox, [(southwest, [(latitude, ['-43.587769']), (longitude, ['172.499084'])]), (northeast, [(latitude, ['-43.463268']), (longitude, ['172.778503'])])]), (arearank, ['5']), (poprank, ['12']), (timezone, ['Pacific/Auckland'])]), (place, [(woeid, ['16017']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2/, []), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['50.741859']), (longitude, ['-1.750190'])]), (boundingbox, [(southwest, [(latitude, ['50.723450']), (longitude, ['-1.811270'])]), (northeast, [(latitude, ['50.763260']), (longitude, ['-1.684170'])])]), (arearank, ['3']), (poprank, ['10']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2380077']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United States']), (admin1, ['Virginia']), (admin2, ['Middlesex']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal, ['23149']), (centroid, [(latitude, ['37.605659']), (longitude, ['-76.537857'])]), (boundingbox, [(southwest, [(latitude, ['37.596561']), (longitude, ['-76.549332'])]), (northeast, [(latitude, ['37.614750']), (longitude, ['-76.526382'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['America/New_York'])]), (place, [(woeid, ['16018']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Gloucestershire']), (admin3, ['Forest of Dean District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['GL16']), (centroid, [(latitude, ['51.813980']), (longitude, ['-2.634310'])]), (boundingbox, [(southwest, [(latitude, ['51.804878']), (longitude, ['-2.649010'])]), (northeast, [(latitude, ['51.823071']), (longitude, ['-2.619600'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16019']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Cambridgeshire']), (admin3, ['Fenland District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['PE14']), (centroid, [(latitude, ['52.548161']), (longitude, ['0.200160'])]), (boundingbox, [(southwest, [(latitude, ['52.543701']), (longitude, ['0.193590'])]), (northeast, [(latitude, ['52.553150']), (longitude, ['0.204540'])])]), (arearank, ['0']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16020']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['Wales']), (admin2, ['Newport City']), (admin3, ['Newport City']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['NP18 1']), (centroid, [(latitude, ['51.599171']), (longitude, ['-2.945190'])]), (boundingbox, [(southwest, [(latitude, ['51.590069']), (longitude, ['-2.959820'])]), (northeast, [(latitude, ['51.608261']), (longitude, ['-2.930550'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2344730']), (placetypename, ['Parish']), (name, ['Christ Church']), (country, ['Barbados']), (admin1, ['Christ Church']), (admin2/, []), (admin3/, []), (locality1/, []), (locality2/, []), (postal/, []), (centroid, [(latitude, ['13.073090']), (longitude, ['-59.543530'])]), (boundingbox, [(southwest, [(latitude, ['13.039840']), (longitude, ['-59.609810'])]), (northeast, [(latitude, ['13.106330']), (longitude, ['-59.477242'])])]), (arearank, ['4']), (poprank, ['0']), (timezone, ['America/Barbados'])]), (place, [(woeid, ['91738152']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['East Sussex']), (admin3, ['Wealden District']), (locality1, ['Hailsham']), (locality2/, []), (postal, ['BN27']), (centroid, [(latitude, ['50.861870']), (longitude, ['0.258030'])]), (boundingbox, [(southwest, [(latitude, ['50.861408']), (longitude, ['0.257300'])]), (northeast, [(latitude, ['50.862320']), (longitude, ['0.258750'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734607']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Leicestershire']), (admin3/, []), (locality1, ['Leicester']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['52.617310']), (longitude, ['-1.115520'])]), (boundingbox, [(southwest, [(latitude, ['52.616852']), (longitude, ['-1.116260'])]), (northeast, [(latitude, ['52.617760']), (longitude, ['-1.114770'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734427']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Nottinghamshire']), (admin3, ['Bassetlaw District']), (locality1, ['Worksop']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['53.324821']), (longitude, ['-1.110510'])]), (boundingbox, [(southwest, [(latitude, ['53.324360']), (longitude, ['-1.111270'])]), (northeast, [(latitude, ['53.325272']), (longitude, ['-1.109740'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])])])])
+Mon,24-Feb-2014~20:43 WOEID:  [(woeid, ['2348327']), (woeid, ['16017']), (woeid, ['2380077']), (woeid, ['16018']), (woeid, ['16019']), (woeid, ['16020']), (woeid, ['2344730']), (woeid, ['91738152']), (woeid, ['91734607']), (woeid, ['91734427'])]
+Mon,24-Feb-2014~20:43 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:43 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:43 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Mon,24-Feb-2014~20:43 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:43 INTERACTION: Ok, Kaleb, quick few questions
+What would you like me to use as a title?
+For example, sir, ma'am...
+Mon,24-Feb-2014~20:43 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:43 INTERACTION: Fantastic. Now, do you prefer to use Fahrenheit or Celcius?
+Mon,24-Feb-2014~20:43 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:43 INTERACTION: Awesome. And lastly, where do you live, Kaleb?
+Mon,24-Feb-2014~20:43 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:44 <?xml version="1.0" encoding="UTF-8"?>
+Mon,24-Feb-2014~20:44 (query, [(results, [(place, [(woeid, ['2348327']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['New Zealand']), (admin1, ['Canterbury']), (admin2, ['Christchurch City']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['-43.527519']), (longitude, ['172.635422'])]), (boundingbox, [(southwest, [(latitude, ['-43.587769']), (longitude, ['172.499084'])]), (northeast, [(latitude, ['-43.463268']), (longitude, ['172.778503'])])]), (arearank, ['5']), (poprank, ['12']), (timezone, ['Pacific/Auckland'])]), (place, [(woeid, ['16017']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2/, []), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['50.741859']), (longitude, ['-1.750190'])]), (boundingbox, [(southwest, [(latitude, ['50.723450']), (longitude, ['-1.811270'])]), (northeast, [(latitude, ['50.763260']), (longitude, ['-1.684170'])])]), (arearank, ['3']), (poprank, ['10']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2380077']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United States']), (admin1, ['Virginia']), (admin2, ['Middlesex']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal, ['23149']), (centroid, [(latitude, ['37.605659']), (longitude, ['-76.537857'])]), (boundingbox, [(southwest, [(latitude, ['37.596561']), (longitude, ['-76.549332'])]), (northeast, [(latitude, ['37.614750']), (longitude, ['-76.526382'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['America/New_York'])]), (place, [(woeid, ['16018']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Gloucestershire']), (admin3, ['Forest of Dean District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['GL16']), (centroid, [(latitude, ['51.813980']), (longitude, ['-2.634310'])]), (boundingbox, [(southwest, [(latitude, ['51.804878']), (longitude, ['-2.649010'])]), (northeast, [(latitude, ['51.823071']), (longitude, ['-2.619600'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16019']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Cambridgeshire']), (admin3, ['Fenland District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['PE14']), (centroid, [(latitude, ['52.548161']), (longitude, ['0.200160'])]), (boundingbox, [(southwest, [(latitude, ['52.543701']), (longitude, ['0.193590'])]), (northeast, [(latitude, ['52.553150']), (longitude, ['0.204540'])])]), (arearank, ['0']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16020']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['Wales']), (admin2, ['Newport City']), (admin3, ['Newport City']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['NP18 1']), (centroid, [(latitude, ['51.599171']), (longitude, ['-2.945190'])]), (boundingbox, [(southwest, [(latitude, ['51.590069']), (longitude, ['-2.959820'])]), (northeast, [(latitude, ['51.608261']), (longitude, ['-2.930550'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2344730']), (placetypename, ['Parish']), (name, ['Christ Church']), (country, ['Barbados']), (admin1, ['Christ Church']), (admin2/, []), (admin3/, []), (locality1/, []), (locality2/, []), (postal/, []), (centroid, [(latitude, ['13.073090']), (longitude, ['-59.543530'])]), (boundingbox, [(southwest, [(latitude, ['13.039840']), (longitude, ['-59.609810'])]), (northeast, [(latitude, ['13.106330']), (longitude, ['-59.477242'])])]), (arearank, ['4']), (poprank, ['0']), (timezone, ['America/Barbados'])]), (place, [(woeid, ['91738152']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['East Sussex']), (admin3, ['Wealden District']), (locality1, ['Hailsham']), (locality2/, []), (postal, ['BN27']), (centroid, [(latitude, ['50.861870']), (longitude, ['0.258030'])]), (boundingbox, [(southwest, [(latitude, ['50.861408']), (longitude, ['0.257300'])]), (northeast, [(latitude, ['50.862320']), (longitude, ['0.258750'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734607']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Leicestershire']), (admin3/, []), (locality1, ['Leicester']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['52.617310']), (longitude, ['-1.115520'])]), (boundingbox, [(southwest, [(latitude, ['52.616852']), (longitude, ['-1.116260'])]), (northeast, [(latitude, ['52.617760']), (longitude, ['-1.114770'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734427']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Nottinghamshire']), (admin3, ['Bassetlaw District']), (locality1, ['Worksop']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['53.324821']), (longitude, ['-1.110510'])]), (boundingbox, [(southwest, [(latitude, ['53.324360']), (longitude, ['-1.111270'])]), (northeast, [(latitude, ['53.325272']), (longitude, ['-1.109740'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])])])])
+Mon,24-Feb-2014~20:44 DOM:  (query, [(results, [(place, [(woeid, ['2348327']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['New Zealand']), (admin1, ['Canterbury']), (admin2, ['Christchurch City']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['-43.527519']), (longitude, ['172.635422'])]), (boundingbox, [(southwest, [(latitude, ['-43.587769']), (longitude, ['172.499084'])]), (northeast, [(latitude, ['-43.463268']), (longitude, ['172.778503'])])]), (arearank, ['5']), (poprank, ['12']), (timezone, ['Pacific/Auckland'])]), (place, [(woeid, ['16017']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2/, []), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['50.741859']), (longitude, ['-1.750190'])]), (boundingbox, [(southwest, [(latitude, ['50.723450']), (longitude, ['-1.811270'])]), (northeast, [(latitude, ['50.763260']), (longitude, ['-1.684170'])])]), (arearank, ['3']), (poprank, ['10']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2380077']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United States']), (admin1, ['Virginia']), (admin2, ['Middlesex']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal, ['23149']), (centroid, [(latitude, ['37.605659']), (longitude, ['-76.537857'])]), (boundingbox, [(southwest, [(latitude, ['37.596561']), (longitude, ['-76.549332'])]), (northeast, [(latitude, ['37.614750']), (longitude, ['-76.526382'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['America/New_York'])]), (place, [(woeid, ['16018']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Gloucestershire']), (admin3, ['Forest of Dean District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['GL16']), (centroid, [(latitude, ['51.813980']), (longitude, ['-2.634310'])]), (boundingbox, [(southwest, [(latitude, ['51.804878']), (longitude, ['-2.649010'])]), (northeast, [(latitude, ['51.823071']), (longitude, ['-2.619600'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16019']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Cambridgeshire']), (admin3, ['Fenland District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['PE14']), (centroid, [(latitude, ['52.548161']), (longitude, ['0.200160'])]), (boundingbox, [(southwest, [(latitude, ['52.543701']), (longitude, ['0.193590'])]), (northeast, [(latitude, ['52.553150']), (longitude, ['0.204540'])])]), (arearank, ['0']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16020']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['Wales']), (admin2, ['Newport City']), (admin3, ['Newport City']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['NP18 1']), (centroid, [(latitude, ['51.599171']), (longitude, ['-2.945190'])]), (boundingbox, [(southwest, [(latitude, ['51.590069']), (longitude, ['-2.959820'])]), (northeast, [(latitude, ['51.608261']), (longitude, ['-2.930550'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2344730']), (placetypename, ['Parish']), (name, ['Christ Church']), (country, ['Barbados']), (admin1, ['Christ Church']), (admin2/, []), (admin3/, []), (locality1/, []), (locality2/, []), (postal/, []), (centroid, [(latitude, ['13.073090']), (longitude, ['-59.543530'])]), (boundingbox, [(southwest, [(latitude, ['13.039840']), (longitude, ['-59.609810'])]), (northeast, [(latitude, ['13.106330']), (longitude, ['-59.477242'])])]), (arearank, ['4']), (poprank, ['0']), (timezone, ['America/Barbados'])]), (place, [(woeid, ['91738152']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['East Sussex']), (admin3, ['Wealden District']), (locality1, ['Hailsham']), (locality2/, []), (postal, ['BN27']), (centroid, [(latitude, ['50.861870']), (longitude, ['0.258030'])]), (boundingbox, [(southwest, [(latitude, ['50.861408']), (longitude, ['0.257300'])]), (northeast, [(latitude, ['50.862320']), (longitude, ['0.258750'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734607']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Leicestershire']), (admin3/, []), (locality1, ['Leicester']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['52.617310']), (longitude, ['-1.115520'])]), (boundingbox, [(southwest, [(latitude, ['52.616852']), (longitude, ['-1.116260'])]), (northeast, [(latitude, ['52.617760']), (longitude, ['-1.114770'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734427']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Nottinghamshire']), (admin3, ['Bassetlaw District']), (locality1, ['Worksop']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['53.324821']), (longitude, ['-1.110510'])]), (boundingbox, [(southwest, [(latitude, ['53.324360']), (longitude, ['-1.111270'])]), (northeast, [(latitude, ['53.325272']), (longitude, ['-1.109740'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])])])])
+Mon,24-Feb-2014~20:44 WOEID:  [(woeid, ['2348327']), (woeid, ['16017']), (woeid, ['2380077']), (woeid, ['16018']), (woeid, ['16019']), (woeid, ['16020']), (woeid, ['2344730']), (woeid, ['91738152']), (woeid, ['91734607']), (woeid, ['91734427'])]
+Mon,24-Feb-2014~20:44 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:44 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:44 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Mon,24-Feb-2014~20:44 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:44 INTERACTION: Ok, Kaleb, quick few questions
+What would you like me to use as a title?
+For example, sir, ma'am...
+Mon,24-Feb-2014~20:44 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:44 INTERACTION: Fantastic. Now, do you prefer to use Fahrenheit or Celcius?
+Mon,24-Feb-2014~20:44 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:44 INTERACTION: Awesome. And lastly, where do you live, Kaleb?
+Mon,24-Feb-2014~20:44 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:44 <?xml version="1.0" encoding="UTF-8"?>
+Mon,24-Feb-2014~20:44 (query, [(results, [(place, [(woeid, ['2348327']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['New Zealand']), (admin1, ['Canterbury']), (admin2, ['Christchurch City']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['-43.527519']), (longitude, ['172.635422'])]), (boundingbox, [(southwest, [(latitude, ['-43.587769']), (longitude, ['172.499084'])]), (northeast, [(latitude, ['-43.463268']), (longitude, ['172.778503'])])]), (arearank, ['5']), (poprank, ['12']), (timezone, ['Pacific/Auckland'])]), (place, [(woeid, ['16017']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2/, []), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['50.741859']), (longitude, ['-1.750190'])]), (boundingbox, [(southwest, [(latitude, ['50.723450']), (longitude, ['-1.811270'])]), (northeast, [(latitude, ['50.763260']), (longitude, ['-1.684170'])])]), (arearank, ['3']), (poprank, ['10']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2380077']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United States']), (admin1, ['Virginia']), (admin2, ['Middlesex']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal, ['23149']), (centroid, [(latitude, ['37.605659']), (longitude, ['-76.537857'])]), (boundingbox, [(southwest, [(latitude, ['37.596561']), (longitude, ['-76.549332'])]), (northeast, [(latitude, ['37.614750']), (longitude, ['-76.526382'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['America/New_York'])]), (place, [(woeid, ['16018']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Gloucestershire']), (admin3, ['Forest of Dean District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['GL16']), (centroid, [(latitude, ['51.813980']), (longitude, ['-2.634310'])]), (boundingbox, [(southwest, [(latitude, ['51.804878']), (longitude, ['-2.649010'])]), (northeast, [(latitude, ['51.823071']), (longitude, ['-2.619600'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16019']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Cambridgeshire']), (admin3, ['Fenland District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['PE14']), (centroid, [(latitude, ['52.548161']), (longitude, ['0.200160'])]), (boundingbox, [(southwest, [(latitude, ['52.543701']), (longitude, ['0.193590'])]), (northeast, [(latitude, ['52.553150']), (longitude, ['0.204540'])])]), (arearank, ['0']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16020']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['Wales']), (admin2, ['Newport City']), (admin3, ['Newport City']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['NP18 1']), (centroid, [(latitude, ['51.599171']), (longitude, ['-2.945190'])]), (boundingbox, [(southwest, [(latitude, ['51.590069']), (longitude, ['-2.959820'])]), (northeast, [(latitude, ['51.608261']), (longitude, ['-2.930550'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2344730']), (placetypename, ['Parish']), (name, ['Christ Church']), (country, ['Barbados']), (admin1, ['Christ Church']), (admin2/, []), (admin3/, []), (locality1/, []), (locality2/, []), (postal/, []), (centroid, [(latitude, ['13.073090']), (longitude, ['-59.543530'])]), (boundingbox, [(southwest, [(latitude, ['13.039840']), (longitude, ['-59.609810'])]), (northeast, [(latitude, ['13.106330']), (longitude, ['-59.477242'])])]), (arearank, ['4']), (poprank, ['0']), (timezone, ['America/Barbados'])]), (place, [(woeid, ['91738152']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['East Sussex']), (admin3, ['Wealden District']), (locality1, ['Hailsham']), (locality2/, []), (postal, ['BN27']), (centroid, [(latitude, ['50.861870']), (longitude, ['0.258030'])]), (boundingbox, [(southwest, [(latitude, ['50.861408']), (longitude, ['0.257300'])]), (northeast, [(latitude, ['50.862320']), (longitude, ['0.258750'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734607']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Leicestershire']), (admin3/, []), (locality1, ['Leicester']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['52.617310']), (longitude, ['-1.115520'])]), (boundingbox, [(southwest, [(latitude, ['52.616852']), (longitude, ['-1.116260'])]), (northeast, [(latitude, ['52.617760']), (longitude, ['-1.114770'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734427']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Nottinghamshire']), (admin3, ['Bassetlaw District']), (locality1, ['Worksop']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['53.324821']), (longitude, ['-1.110510'])]), (boundingbox, [(southwest, [(latitude, ['53.324360']), (longitude, ['-1.111270'])]), (northeast, [(latitude, ['53.325272']), (longitude, ['-1.109740'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])])])])
+Mon,24-Feb-2014~20:44 DOM:  (query, [(results, [(place, [(woeid, ['2348327']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['New Zealand']), (admin1, ['Canterbury']), (admin2, ['Christchurch City']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['-43.527519']), (longitude, ['172.635422'])]), (boundingbox, [(southwest, [(latitude, ['-43.587769']), (longitude, ['172.499084'])]), (northeast, [(latitude, ['-43.463268']), (longitude, ['172.778503'])])]), (arearank, ['5']), (poprank, ['12']), (timezone, ['Pacific/Auckland'])]), (place, [(woeid, ['16017']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2/, []), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['50.741859']), (longitude, ['-1.750190'])]), (boundingbox, [(southwest, [(latitude, ['50.723450']), (longitude, ['-1.811270'])]), (northeast, [(latitude, ['50.763260']), (longitude, ['-1.684170'])])]), (arearank, ['3']), (poprank, ['10']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2380077']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United States']), (admin1, ['Virginia']), (admin2, ['Middlesex']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal, ['23149']), (centroid, [(latitude, ['37.605659']), (longitude, ['-76.537857'])]), (boundingbox, [(southwest, [(latitude, ['37.596561']), (longitude, ['-76.549332'])]), (northeast, [(latitude, ['37.614750']), (longitude, ['-76.526382'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['America/New_York'])]), (place, [(woeid, ['16018']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Gloucestershire']), (admin3, ['Forest of Dean District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['GL16']), (centroid, [(latitude, ['51.813980']), (longitude, ['-2.634310'])]), (boundingbox, [(southwest, [(latitude, ['51.804878']), (longitude, ['-2.649010'])]), (northeast, [(latitude, ['51.823071']), (longitude, ['-2.619600'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16019']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Cambridgeshire']), (admin3, ['Fenland District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['PE14']), (centroid, [(latitude, ['52.548161']), (longitude, ['0.200160'])]), (boundingbox, [(southwest, [(latitude, ['52.543701']), (longitude, ['0.193590'])]), (northeast, [(latitude, ['52.553150']), (longitude, ['0.204540'])])]), (arearank, ['0']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16020']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['Wales']), (admin2, ['Newport City']), (admin3, ['Newport City']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['NP18 1']), (centroid, [(latitude, ['51.599171']), (longitude, ['-2.945190'])]), (boundingbox, [(southwest, [(latitude, ['51.590069']), (longitude, ['-2.959820'])]), (northeast, [(latitude, ['51.608261']), (longitude, ['-2.930550'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2344730']), (placetypename, ['Parish']), (name, ['Christ Church']), (country, ['Barbados']), (admin1, ['Christ Church']), (admin2/, []), (admin3/, []), (locality1/, []), (locality2/, []), (postal/, []), (centroid, [(latitude, ['13.073090']), (longitude, ['-59.543530'])]), (boundingbox, [(southwest, [(latitude, ['13.039840']), (longitude, ['-59.609810'])]), (northeast, [(latitude, ['13.106330']), (longitude, ['-59.477242'])])]), (arearank, ['4']), (poprank, ['0']), (timezone, ['America/Barbados'])]), (place, [(woeid, ['91738152']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['East Sussex']), (admin3, ['Wealden District']), (locality1, ['Hailsham']), (locality2/, []), (postal, ['BN27']), (centroid, [(latitude, ['50.861870']), (longitude, ['0.258030'])]), (boundingbox, [(southwest, [(latitude, ['50.861408']), (longitude, ['0.257300'])]), (northeast, [(latitude, ['50.862320']), (longitude, ['0.258750'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734607']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Leicestershire']), (admin3/, []), (locality1, ['Leicester']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['52.617310']), (longitude, ['-1.115520'])]), (boundingbox, [(southwest, [(latitude, ['52.616852']), (longitude, ['-1.116260'])]), (northeast, [(latitude, ['52.617760']), (longitude, ['-1.114770'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734427']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Nottinghamshire']), (admin3, ['Bassetlaw District']), (locality1, ['Worksop']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['53.324821']), (longitude, ['-1.110510'])]), (boundingbox, [(southwest, [(latitude, ['53.324360']), (longitude, ['-1.111270'])]), (northeast, [(latitude, ['53.325272']), (longitude, ['-1.109740'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])])])])
+Mon,24-Feb-2014~20:44 WOEID:  [(woeid, ['2348327']), (woeid, ['16017']), (woeid, ['2380077']), (woeid, ['16018']), (woeid, ['16019']), (woeid, ['16020']), (woeid, ['2344730']), (woeid, ['91738152']), (woeid, ['91734607']), (woeid, ['91734427'])]
+Mon,24-Feb-2014~20:44 INTERACTION: Ok, that should all be set up for you now!
+Mon,24-Feb-2014~20:44 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:45 INTERACTION: Absolutely! What is your name? 
+Mon,24-Feb-2014~20:45 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:45 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Mon,24-Feb-2014~20:45 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:45 INTERACTION: Ok, Kaleb, quick few questions
+What would you like me to use as a title?
+For example, sir, ma'am...
+Mon,24-Feb-2014~20:45 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:45 INTERACTION: Fantastic. Now, do you prefer to use Fahrenheit or Celcius?
+Mon,24-Feb-2014~20:45 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:45 INTERACTION: Awesome. And lastly, where do you live, Kaleb?
+Mon,24-Feb-2014~20:45 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:46 <?xml version="1.0" encoding="UTF-8"?>
+Mon,24-Feb-2014~20:46 (query, [(results, [(place, [(woeid, ['2348327']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['New Zealand']), (admin1, ['Canterbury']), (admin2, ['Christchurch City']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['-43.527519']), (longitude, ['172.635422'])]), (boundingbox, [(southwest, [(latitude, ['-43.587769']), (longitude, ['172.499084'])]), (northeast, [(latitude, ['-43.463268']), (longitude, ['172.778503'])])]), (arearank, ['5']), (poprank, ['12']), (timezone, ['Pacific/Auckland'])]), (place, [(woeid, ['16017']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2/, []), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['50.741859']), (longitude, ['-1.750190'])]), (boundingbox, [(southwest, [(latitude, ['50.723450']), (longitude, ['-1.811270'])]), (northeast, [(latitude, ['50.763260']), (longitude, ['-1.684170'])])]), (arearank, ['3']), (poprank, ['10']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2380077']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United States']), (admin1, ['Virginia']), (admin2, ['Middlesex']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal, ['23149']), (centroid, [(latitude, ['37.605659']), (longitude, ['-76.537857'])]), (boundingbox, [(southwest, [(latitude, ['37.596561']), (longitude, ['-76.549332'])]), (northeast, [(latitude, ['37.614750']), (longitude, ['-76.526382'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['America/New_York'])]), (place, [(woeid, ['16018']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Gloucestershire']), (admin3, ['Forest of Dean District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['GL16']), (centroid, [(latitude, ['51.813980']), (longitude, ['-2.634310'])]), (boundingbox, [(southwest, [(latitude, ['51.804878']), (longitude, ['-2.649010'])]), (northeast, [(latitude, ['51.823071']), (longitude, ['-2.619600'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16019']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Cambridgeshire']), (admin3, ['Fenland District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['PE14']), (centroid, [(latitude, ['52.548161']), (longitude, ['0.200160'])]), (boundingbox, [(southwest, [(latitude, ['52.543701']), (longitude, ['0.193590'])]), (northeast, [(latitude, ['52.553150']), (longitude, ['0.204540'])])]), (arearank, ['0']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16020']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['Wales']), (admin2, ['Newport City']), (admin3, ['Newport City']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['NP18 1']), (centroid, [(latitude, ['51.599171']), (longitude, ['-2.945190'])]), (boundingbox, [(southwest, [(latitude, ['51.590069']), (longitude, ['-2.959820'])]), (northeast, [(latitude, ['51.608261']), (longitude, ['-2.930550'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2344730']), (placetypename, ['Parish']), (name, ['Christ Church']), (country, ['Barbados']), (admin1, ['Christ Church']), (admin2/, []), (admin3/, []), (locality1/, []), (locality2/, []), (postal/, []), (centroid, [(latitude, ['13.073090']), (longitude, ['-59.543530'])]), (boundingbox, [(southwest, [(latitude, ['13.039840']), (longitude, ['-59.609810'])]), (northeast, [(latitude, ['13.106330']), (longitude, ['-59.477242'])])]), (arearank, ['4']), (poprank, ['0']), (timezone, ['America/Barbados'])]), (place, [(woeid, ['91738152']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['East Sussex']), (admin3, ['Wealden District']), (locality1, ['Hailsham']), (locality2/, []), (postal, ['BN27']), (centroid, [(latitude, ['50.861870']), (longitude, ['0.258030'])]), (boundingbox, [(southwest, [(latitude, ['50.861408']), (longitude, ['0.257300'])]), (northeast, [(latitude, ['50.862320']), (longitude, ['0.258750'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734607']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Leicestershire']), (admin3/, []), (locality1, ['Leicester']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['52.617310']), (longitude, ['-1.115520'])]), (boundingbox, [(southwest, [(latitude, ['52.616852']), (longitude, ['-1.116260'])]), (northeast, [(latitude, ['52.617760']), (longitude, ['-1.114770'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734427']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Nottinghamshire']), (admin3, ['Bassetlaw District']), (locality1, ['Worksop']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['53.324821']), (longitude, ['-1.110510'])]), (boundingbox, [(southwest, [(latitude, ['53.324360']), (longitude, ['-1.111270'])]), (northeast, [(latitude, ['53.325272']), (longitude, ['-1.109740'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])])])])
+Mon,24-Feb-2014~20:46 INTERACTION: Ok, that should all be set up for you now!
+Mon,24-Feb-2014~20:46 CONNECTION: <function set_text at 0x1006fc0e0>
+Mon,24-Feb-2014~20:46 Successfully imported Modules.clock
+Mon,24-Feb-2014~20:46 Successfully imported Modules.controls
+Mon,24-Feb-2014~20:46 Successfully imported Modules.discover
+Mon,24-Feb-2014~20:46 Successfully imported Modules.finder
+Mon,24-Feb-2014~20:46 Successfully imported Modules.loader
+Mon,24-Feb-2014~20:46 Successfully imported Modules.math
+Mon,24-Feb-2014~20:46 Successfully imported Modules.media
+Mon,24-Feb-2014~20:46 Successfully imported Modules.personality
+Mon,24-Feb-2014~20:46 Successfully imported Modules.settings
+Mon,24-Feb-2014~20:46 Successfully imported Modules.weather
+Mon,24-Feb-2014~20:46 Successfully imported Modules.wikipedia
+Mon,24-Feb-2014~20:46 PARTS: ['thanks']
+Mon,24-Feb-2014~20:46 SENTENCE: [('thank', 'NS')]
+Mon,24-Feb-2014~20:46 KIND: DEC
+Mon,24-Feb-2014~20:46 WEIGHTS: {1.0: ['personality']}
+Mon,24-Feb-2014~20:46 BEST: personality
+Mon,24-Feb-2014~20:46 INTERACTION: You're most welcome, Kaleb.
+Mon,24-Feb-2014~20:46 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:55 INTERACTION: Absolutely! What is your name? 
+Tue,25-Feb-2014~07:55 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:55 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Tue,25-Feb-2014~07:55 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:55 INTERACTION: Ok, Kaleb, quick few questions
+What would you like me to use as a title?
+For example, sir, ma'am...
+Tue,25-Feb-2014~07:55 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:55 INTERACTION: Fantastic. Now, do you prefer to use Fahrenheit or Celcius?
+Tue,25-Feb-2014~07:55 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:55 INTERACTION: Awesome. And lastly, where do you live, Kaleb?
+Tue,25-Feb-2014~07:55 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:56 <?xml version="1.0" encoding="UTF-8"?>
+Tue,25-Feb-2014~07:56 (query, [(results, [(place, [(woeid, ['2348327']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['New Zealand']), (admin1, ['Canterbury']), (admin2, ['Christchurch City']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['-43.527519']), (longitude, ['172.635422'])]), (boundingbox, [(southwest, [(latitude, ['-43.587769']), (longitude, ['172.499084'])]), (northeast, [(latitude, ['-43.463268']), (longitude, ['172.778503'])])]), (arearank, ['5']), (poprank, ['12']), (timezone, ['Pacific/Auckland'])]), (place, [(woeid, ['16017']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2/, []), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['50.741859']), (longitude, ['-1.750190'])]), (boundingbox, [(southwest, [(latitude, ['50.723450']), (longitude, ['-1.811270'])]), (northeast, [(latitude, ['50.763260']), (longitude, ['-1.684170'])])]), (arearank, ['3']), (poprank, ['10']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2380077']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United States']), (admin1, ['Virginia']), (admin2, ['Middlesex']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal, ['23149']), (centroid, [(latitude, ['37.605659']), (longitude, ['-76.537857'])]), (boundingbox, [(southwest, [(latitude, ['37.596561']), (longitude, ['-76.549332'])]), (northeast, [(latitude, ['37.614750']), (longitude, ['-76.526382'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['America/New_York'])]), (place, [(woeid, ['16018']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Gloucestershire']), (admin3, ['Forest of Dean District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['GL16']), (centroid, [(latitude, ['51.813980']), (longitude, ['-2.634310'])]), (boundingbox, [(southwest, [(latitude, ['51.804878']), (longitude, ['-2.649010'])]), (northeast, [(latitude, ['51.823071']), (longitude, ['-2.619600'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16019']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Cambridgeshire']), (admin3, ['Fenland District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['PE14']), (centroid, [(latitude, ['52.548161']), (longitude, ['0.200160'])]), (boundingbox, [(southwest, [(latitude, ['52.543701']), (longitude, ['0.193590'])]), (northeast, [(latitude, ['52.553150']), (longitude, ['0.204540'])])]), (arearank, ['0']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16020']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['Wales']), (admin2, ['Newport City']), (admin3, ['Newport City']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['NP18 1']), (centroid, [(latitude, ['51.599171']), (longitude, ['-2.945190'])]), (boundingbox, [(southwest, [(latitude, ['51.590069']), (longitude, ['-2.959820'])]), (northeast, [(latitude, ['51.608261']), (longitude, ['-2.930550'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2344730']), (placetypename, ['Parish']), (name, ['Christ Church']), (country, ['Barbados']), (admin1, ['Christ Church']), (admin2/, []), (admin3/, []), (locality1/, []), (locality2/, []), (postal/, []), (centroid, [(latitude, ['13.073090']), (longitude, ['-59.543530'])]), (boundingbox, [(southwest, [(latitude, ['13.039840']), (longitude, ['-59.609810'])]), (northeast, [(latitude, ['13.106330']), (longitude, ['-59.477242'])])]), (arearank, ['4']), (poprank, ['0']), (timezone, ['America/Barbados'])]), (place, [(woeid, ['91738152']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['East Sussex']), (admin3, ['Wealden District']), (locality1, ['Hailsham']), (locality2/, []), (postal, ['BN27']), (centroid, [(latitude, ['50.861870']), (longitude, ['0.258030'])]), (boundingbox, [(southwest, [(latitude, ['50.861408']), (longitude, ['0.257300'])]), (northeast, [(latitude, ['50.862320']), (longitude, ['0.258750'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734607']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Leicestershire']), (admin3/, []), (locality1, ['Leicester']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['52.617310']), (longitude, ['-1.115520'])]), (boundingbox, [(southwest, [(latitude, ['52.616852']), (longitude, ['-1.116260'])]), (northeast, [(latitude, ['52.617760']), (longitude, ['-1.114770'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734427']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Nottinghamshire']), (admin3, ['Bassetlaw District']), (locality1, ['Worksop']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['53.324821']), (longitude, ['-1.110510'])]), (boundingbox, [(southwest, [(latitude, ['53.324360']), (longitude, ['-1.111270'])]), (northeast, [(latitude, ['53.325272']), (longitude, ['-1.109740'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])])])])
+Tue,25-Feb-2014~07:56 INTERACTION: Absolutely! What is your name? 
+Tue,25-Feb-2014~07:56 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:56 INTERACTION: Hi there, Kaleb!
+I'm just creating you an account now.
+Tue,25-Feb-2014~07:56 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:56 INTERACTION: Ok, Kaleb, quick few questions
+What would you like me to use as a title?
+For example, sir, ma'am...
+Tue,25-Feb-2014~07:56 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:56 INTERACTION: Fantastic. Now, do you prefer to use Fahrenheit or Celcius?
+Tue,25-Feb-2014~07:56 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:56 INTERACTION: Awesome. And lastly, where do you live, Kaleb?
+Tue,25-Feb-2014~07:56 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:57 <?xml version="1.0" encoding="UTF-8"?>
+Tue,25-Feb-2014~07:57 (query, [(results, [(place, [(woeid, ['2348327']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['New Zealand']), (admin1, ['Canterbury']), (admin2, ['Christchurch City']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['-43.527519']), (longitude, ['172.635422'])]), (boundingbox, [(southwest, [(latitude, ['-43.587769']), (longitude, ['172.499084'])]), (northeast, [(latitude, ['-43.463268']), (longitude, ['172.778503'])])]), (arearank, ['5']), (poprank, ['12']), (timezone, ['Pacific/Auckland'])]), (place, [(woeid, ['16017']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2/, []), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['50.741859']), (longitude, ['-1.750190'])]), (boundingbox, [(southwest, [(latitude, ['50.723450']), (longitude, ['-1.811270'])]), (northeast, [(latitude, ['50.763260']), (longitude, ['-1.684170'])])]), (arearank, ['3']), (poprank, ['10']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2380077']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United States']), (admin1, ['Virginia']), (admin2, ['Middlesex']), (admin3/, []), (locality1, ['Christchurch']), (locality2/, []), (postal, ['23149']), (centroid, [(latitude, ['37.605659']), (longitude, ['-76.537857'])]), (boundingbox, [(southwest, [(latitude, ['37.596561']), (longitude, ['-76.549332'])]), (northeast, [(latitude, ['37.614750']), (longitude, ['-76.526382'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['America/New_York'])]), (place, [(woeid, ['16018']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Gloucestershire']), (admin3, ['Forest of Dean District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['GL16']), (centroid, [(latitude, ['51.813980']), (longitude, ['-2.634310'])]), (boundingbox, [(southwest, [(latitude, ['51.804878']), (longitude, ['-2.649010'])]), (northeast, [(latitude, ['51.823071']), (longitude, ['-2.619600'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16019']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Cambridgeshire']), (admin3, ['Fenland District']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['PE14']), (centroid, [(latitude, ['52.548161']), (longitude, ['0.200160'])]), (boundingbox, [(southwest, [(latitude, ['52.543701']), (longitude, ['0.193590'])]), (northeast, [(latitude, ['52.553150']), (longitude, ['0.204540'])])]), (arearank, ['0']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['16020']), (placetypename, ['Town']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['Wales']), (admin2, ['Newport City']), (admin3, ['Newport City']), (locality1, ['Christchurch']), (locality2/, []), (postal, ['NP18 1']), (centroid, [(latitude, ['51.599171']), (longitude, ['-2.945190'])]), (boundingbox, [(southwest, [(latitude, ['51.590069']), (longitude, ['-2.959820'])]), (northeast, [(latitude, ['51.608261']), (longitude, ['-2.930550'])])]), (arearank, ['2']), (poprank, ['1']), (timezone, ['Europe/London'])]), (place, [(woeid, ['2344730']), (placetypename, ['Parish']), (name, ['Christ Church']), (country, ['Barbados']), (admin1, ['Christ Church']), (admin2/, []), (admin3/, []), (locality1/, []), (locality2/, []), (postal/, []), (centroid, [(latitude, ['13.073090']), (longitude, ['-59.543530'])]), (boundingbox, [(southwest, [(latitude, ['13.039840']), (longitude, ['-59.609810'])]), (northeast, [(latitude, ['13.106330']), (longitude, ['-59.477242'])])]), (arearank, ['4']), (poprank, ['0']), (timezone, ['America/Barbados'])]), (place, [(woeid, ['91738152']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['East Sussex']), (admin3, ['Wealden District']), (locality1, ['Hailsham']), (locality2/, []), (postal, ['BN27']), (centroid, [(latitude, ['50.861870']), (longitude, ['0.258030'])]), (boundingbox, [(southwest, [(latitude, ['50.861408']), (longitude, ['0.257300'])]), (northeast, [(latitude, ['50.862320']), (longitude, ['0.258750'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734607']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Leicestershire']), (admin3/, []), (locality1, ['Leicester']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['52.617310']), (longitude, ['-1.115520'])]), (boundingbox, [(southwest, [(latitude, ['52.616852']), (longitude, ['-1.116260'])]), (northeast, [(latitude, ['52.617760']), (longitude, ['-1.114770'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])]), (place, [(woeid, ['91734427']), (placetypename, ['Point of Interest']), (name, ['Christchurch']), (country, ['United Kingdom']), (admin1, ['England']), (admin2, ['Nottinghamshire']), (admin3, ['Bassetlaw District']), (locality1, ['Worksop']), (locality2/, []), (postal/, []), (centroid, [(latitude, ['53.324821']), (longitude, ['-1.110510'])]), (boundingbox, [(southwest, [(latitude, ['53.324360']), (longitude, ['-1.111270'])]), (northeast, [(latitude, ['53.325272']), (longitude, ['-1.109740'])])]), (arearank, ['0']), (poprank, ['0']), (timezone, ['Europe/London'])])])])
+Tue,25-Feb-2014~07:57 INTERACTION: Ok, that should all be set up for you now!
+Tue,25-Feb-2014~07:57 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:57 Successfully imported Modules.clock
+Tue,25-Feb-2014~07:57 Successfully imported Modules.controls
+Tue,25-Feb-2014~07:57 Successfully imported Modules.discover
+Tue,25-Feb-2014~07:57 Successfully imported Modules.finder
+Tue,25-Feb-2014~07:57 Successfully imported Modules.loader
+Tue,25-Feb-2014~07:57 Successfully imported Modules.math
+Tue,25-Feb-2014~07:57 Successfully imported Modules.media
+Tue,25-Feb-2014~07:57 Successfully imported Modules.personality
+Tue,25-Feb-2014~07:57 Successfully imported Modules.settings
+Tue,25-Feb-2014~07:57 Successfully imported Modules.weather
+Tue,25-Feb-2014~07:57 Successfully imported Modules.wikipedia
+Tue,25-Feb-2014~07:57 PARTS: ['how cold is it']
+Tue,25-Feb-2014~07:57 SENTENCE: [('how', 'WH'), ('cold', 'NS'), ('be', 'VB'), ('it', 'PO')]
+Tue,25-Feb-2014~07:57 KIND: INT
+Tue,25-Feb-2014~07:57 WEIGHTS: {1.0: ['weather']}
+Tue,25-Feb-2014~07:57 BEST: weather
+Tue,25-Feb-2014~07:57 INTERACTION: Let me see, Kaleb...
+Tue,25-Feb-2014~07:57 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:57 KEYWORDS: []
+Tue,25-Feb-2014~07:57 TODAY: 1
+Tue,25-Feb-2014~07:57 DAY: 0
+Tue,25-Feb-2014~07:57 WEATHER_RAW: [b'<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>\n', b'\t\t<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">\n', b'\t\t\t<channel>\n', b'\t\t\n', b'<title>Yahoo! Weather - Christchurch, NZ</title>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<description>Yahoo! Weather for Christchurch, NZ</description>\n', b'<language>en-us</language>\n', b'<lastBuildDate>Tue, 25 Feb 2014 7:01 am NZDT</lastBuildDate>\n', b'<ttl>60</ttl>\n', b'<yweather:location city="Christchurch" region=""   country="New Zealand"/>\n', b'<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>\n', b'<yweather:wind chill="11"   direction="220"   speed="3.22" />\n', b'<yweather:atmosphere humidity="88"  visibility="9.99"  pressure="1015.92"  rising="1" />\n', b'<yweather:astronomy sunrise="7:01 am"   sunset="8:23 pm"/>\n', b'<image>\n', b'<title>Yahoo! Weather</title>\n', b'<width>142</width>\n', b'<height>18</height>\n', b'<link>http://weather.yahoo.com</link>\n', b'<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>\n', b'</image>\n', b'<item>\n', b'<title>Conditions for Christchurch, NZ at 7:01 am NZDT</title>\n', b'<geo:lat>-43.53</geo:lat>\n', b'<geo:long>172.64</geo:long>\n', b'<link>http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html</link>\n', b'<pubDate>Tue, 25 Feb 2014 7:01 am NZDT</pubDate>\n', b'<yweather:condition  text="Cloudy"  code="26"  temp="11"  date="Tue, 25 Feb 2014 7:01 am NZDT" />\n', b'<description><![CDATA[\n', b'<img src="http://l.yimg.com/a/i/us/we/52/26.gif"/><br />\n', b'<b>Current Conditions:</b><br />\n', b'Cloudy, 11 C<BR />\n', b'<BR /><b>Forecast:</b><BR />\n', b'Tue - Mostly Cloudy. High: 15 Low: 12<br />\n', b'Wed - Partly Cloudy. High: 22 Low: 10<br />\n', b'Thu - Mostly Sunny. High: 26 Low: 14<br />\n', b'Fri - Showers. High: 16 Low: 9<br />\n', b'Sat - Partly Cloudy. High: 15 Low: 8<br />\n', b'<br />\n', b'<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Christchurch__NZ/*http://weather.yahoo.com/forecast/NZXX0006_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n', b'(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>\n', b']]></description>\n', b'<yweather:forecast day="Tue" date="25 Feb 2014" low="12" high="15" text="Mostly Cloudy" code="28" />\n', b'<yweather:forecast day="Wed" date="26 Feb 2014" low="10" high="22" text="Partly Cloudy" code="30" />\n', b'<yweather:forecast day="Thu" date="27 Feb 2014" low="14" high="26" text="Mostly Sunny" code="34" />\n', b'<yweather:forecast day="Fri" date="28 Feb 2014" low="9" high="16" text="Showers" code="11" />\n', b'<yweather:forecast day="Sat" date="1 Mar 2014" low="8" high="15" text="Partly Cloudy" code="30" />\n', b'<guid isPermaLink="false">NZXX0006_2014_03_01_7_00_NZDT</guid>\n', b'</item>\n', b'</channel>\n', b'</rss>\n', b'\n', b'<!-- api21.weather.gq1.yahoo.com Mon Feb 24 18:52:01 PST 2014 -->\n']
+Tue,25-Feb-2014~07:57 CONDITIONS: {'text': 'Cloudy', 'date': 'Tue, 25 Feb 2014 7:01 am NZDT', 'code': '26', 'temp': '11'}
+Tue,25-Feb-2014~07:57 CONDITIONS2: {'text': 'Mostly Cloudy', 'day': 'Tue', 'high': '15', 'low': '12', 'date': '25 Feb 2014', 'code': '28'}
+Tue,25-Feb-2014~07:57 INTERACTION: Not really. It's 11°C, and cloudy. The high today is 15°C, mostly cloudy.
+Tue,25-Feb-2014~07:57 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:58 Successfully imported Modules.clock
+Tue,25-Feb-2014~07:58 Successfully imported Modules.controls
+Tue,25-Feb-2014~07:58 Successfully imported Modules.discover
+Tue,25-Feb-2014~07:58 Successfully imported Modules.finder
+Tue,25-Feb-2014~07:58 Successfully imported Modules.loader
+Tue,25-Feb-2014~07:58 Successfully imported Modules.math
+Tue,25-Feb-2014~07:58 Successfully imported Modules.media
+Tue,25-Feb-2014~07:58 Successfully imported Modules.personality
+Tue,25-Feb-2014~07:58 Successfully imported Modules.settings
+Tue,25-Feb-2014~07:58 Successfully imported Modules.weather
+Tue,25-Feb-2014~07:58 Successfully imported Modules.wikipedia
+Tue,25-Feb-2014~07:58 PARTS: ['hi']
+Tue,25-Feb-2014~07:58 SENTENCE: [('hi', 'NS')]
+Tue,25-Feb-2014~07:58 KIND: DEC
+Tue,25-Feb-2014~07:58 WEIGHTS: {1.0: ['personality']}
+Tue,25-Feb-2014~07:58 BEST: personality
+Tue,25-Feb-2014~07:58 INTERACTION: Hello, lord.
+Tue,25-Feb-2014~07:58 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:59 PARTS: ['hi']
+Tue,25-Feb-2014~07:59 SENTENCE: [('hi', 'NS')]
+Tue,25-Feb-2014~07:59 KIND: DEC
+Tue,25-Feb-2014~07:59 WEIGHTS: {1.0: ['personality']}
+Tue,25-Feb-2014~07:59 BEST: personality
+Tue,25-Feb-2014~07:59 INTERACTION: Hi.
+Tue,25-Feb-2014~07:59 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:59 PARTS: ['hi']
+Tue,25-Feb-2014~07:59 SENTENCE: [('hi', 'NS')]
+Tue,25-Feb-2014~07:59 KIND: DEC
+Tue,25-Feb-2014~07:59 WEIGHTS: {1.0: ['personality']}
+Tue,25-Feb-2014~07:59 BEST: personality
+Tue,25-Feb-2014~07:59 INTERACTION: Good Morning.
+Tue,25-Feb-2014~07:59 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:59 PARTS: ['hi']
+Tue,25-Feb-2014~07:59 SENTENCE: [('hi', 'NS')]
+Tue,25-Feb-2014~07:59 KIND: DEC
+Tue,25-Feb-2014~07:59 WEIGHTS: {1.0: ['personality']}
+Tue,25-Feb-2014~07:59 BEST: personality
+Tue,25-Feb-2014~07:59 INTERACTION: Hi, lord.
+Tue,25-Feb-2014~07:59 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:59 PARTS: ['hi']
+Tue,25-Feb-2014~07:59 SENTENCE: [('hi', 'NS')]
+Tue,25-Feb-2014~07:59 KIND: DEC
+Tue,25-Feb-2014~07:59 WEIGHTS: {1.0: ['personality']}
+Tue,25-Feb-2014~07:59 BEST: personality
+Tue,25-Feb-2014~07:59 INTERACTION: Hi, Kaleb.
+Tue,25-Feb-2014~07:59 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:59 PARTS: ['hi']
+Tue,25-Feb-2014~07:59 SENTENCE: [('hi', 'NS')]
+Tue,25-Feb-2014~07:59 KIND: DEC
+Tue,25-Feb-2014~07:59 WEIGHTS: {1.0: ['personality']}
+Tue,25-Feb-2014~07:59 BEST: personality
+Tue,25-Feb-2014~07:59 INTERACTION: Hello.
+Tue,25-Feb-2014~07:59 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:59 PARTS: ['hi']
+Tue,25-Feb-2014~07:59 SENTENCE: [('hi', 'NS')]
+Tue,25-Feb-2014~07:59 KIND: DEC
+Tue,25-Feb-2014~07:59 WEIGHTS: {1.0: ['personality']}
+Tue,25-Feb-2014~07:59 BEST: personality
+Tue,25-Feb-2014~07:59 INTERACTION: Hi.
+Tue,25-Feb-2014~07:59 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:59 PARTS: ['hi']
+Tue,25-Feb-2014~07:59 SENTENCE: [('hi', 'NS')]
+Tue,25-Feb-2014~07:59 KIND: DEC
+Tue,25-Feb-2014~07:59 WEIGHTS: {1.0: ['personality']}
+Tue,25-Feb-2014~07:59 BEST: personality
+Tue,25-Feb-2014~07:59 INTERACTION: Good Morning.
+Tue,25-Feb-2014~07:59 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~07:59 PARTS: ['hi']
+Tue,25-Feb-2014~07:59 SENTENCE: [('hi', 'NS')]
+Tue,25-Feb-2014~07:59 KIND: DEC
+Tue,25-Feb-2014~07:59 WEIGHTS: {1.0: ['personality']}
+Tue,25-Feb-2014~07:59 BEST: personality
+Tue,25-Feb-2014~07:59 INTERACTION: Hello, lord.
+Tue,25-Feb-2014~07:59 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~08:00 Successfully imported Modules.clock
+Tue,25-Feb-2014~08:00 Successfully imported Modules.controls
+Tue,25-Feb-2014~08:00 Successfully imported Modules.discover
+Tue,25-Feb-2014~08:00 Successfully imported Modules.finder
+Tue,25-Feb-2014~08:00 Successfully imported Modules.loader
+Tue,25-Feb-2014~08:00 Successfully imported Modules.math
+Tue,25-Feb-2014~08:00 Successfully imported Modules.media
+Tue,25-Feb-2014~08:00 Successfully imported Modules.personality
+Tue,25-Feb-2014~08:00 Successfully imported Modules.settings
+Tue,25-Feb-2014~08:00 Successfully imported Modules.weather
+Tue,25-Feb-2014~08:00 Successfully imported Modules.wikipedia
+Tue,25-Feb-2014~08:00 PARTS: ['tell me about zeus']
+Tue,25-Feb-2014~08:00 SENTENCE: [('You', 'PS'), ('tell', 'VB'), ('me', 'PO'), ('about', 'PP'), ('zeus', '??')]
+Tue,25-Feb-2014~08:00 KIND: IMP
+Tue,25-Feb-2014~08:00 WEIGHTS: {2.0: ['wikipedia']}
+Tue,25-Feb-2014~08:00 BEST: wikipedia
+Tue,25-Feb-2014~08:00 KEYWORDS: [('zeus', 4)]
+Tue,25-Feb-2014~08:00 INTERACTION: Let me see, sir...
+Tue,25-Feb-2014~08:00 CONNECTION: <function set_text at 0x1006fc0e0>
+Tue,25-Feb-2014~08:00 URL ATTEMPT: http://en.wikipedia.org/w/index.php?title=zeus&printable=yes
+Tue,25-Feb-2014~08:00 OPENING URL:  http://en.wikipedia.org/wiki/zeus
+Tue,25-Feb-2014~08:00 CODE: open "http://en.wikipedia.org/wiki/zeus"
+Tue,25-Feb-2014~08:00 INTERACTION: I can't seem to read about this. Let me open it for you...
+Tue,25-Feb-2014~08:00 CONNECTION: <function set_text at 0x1006fc0e0>
