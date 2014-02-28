@@ -22,7 +22,6 @@ import Settings.system as system
 LOG_FILE = "./PAUL/log.txt"
 
 
-
 def acknowledge(end=False):
     ''' Simply acknowledge the user, without any real thought into the
         respose. Returns what was said, incase it matters. Optional end
@@ -58,6 +57,7 @@ def filter_out(main_list, *rest):
         Arguments are a main_list that you are filtering, and any lists
         with words that you want to remove from the main_list. Returns
         the main_list without the words in the other lists. '''
+
     return_list = []
     for item in main_list:
         comparative = join_lists(*rest)
@@ -75,6 +75,7 @@ def filter_unless_listed(main_list, *rest):
         Arguments are the main_list that you are filtering, and any lists
         of words that need to be retained. Returns the main_list with only
         the words in the other lists. '''
+
     return_list = []
     comparative = join_lists(*rest)
     for item in main_list:
@@ -396,6 +397,7 @@ def random_choice(list):
 def register(module, function):
     ''' Register your module into Paul, providing your module name and the
         function you will use to process the sentences you are passed. '''
+
     try:
         vocab.word_actions[module] = function
         log("Successfully imported Modules." + module)
@@ -436,6 +438,7 @@ def run_script(code, language='bash', response=False):
 def send_notification(title, message):
     ''' Send the user a notification using the system notifications
         with a title and message as the arguments. No return. '''
+
     notification = ('display' +
     ' notification "{}" with title "PAUL" subtitle "{}"'.format(
         message, title
@@ -531,8 +534,7 @@ class Sentence(object):
             >>> s = Sentence(42)
             Traceback (most recent call last):
                 ...
-            TypeError: init_string must be a string
-        '''
+            TypeError: init_string must be a string '''
 
 
         if type(init_string) != str:
@@ -549,8 +551,7 @@ class Sentence(object):
         ''' Reveal how the sentence is thought of in Python
 
             >>> Sentence("This is a doctest.")
-            [('this', 'PS'), ('be', 'VB'), ('the', 'AR'), ('doctest', '??')]
-        '''
+            [('this', 'PS'), ('be', 'VB'), ('the', 'AR'), ('doctest', '??')] '''
         return str(self.sentence)
 
 
@@ -558,8 +559,7 @@ class Sentence(object):
         ''' A 'pretty' representation of the sentence.
 
             >>> print(Sentence("This is a doctest."))
-            this is a doctest
-        '''
+            this is a doctest '''
         return self.sentence_string
 
 
@@ -573,8 +573,7 @@ class Sentence(object):
             "belong" together. Ignore certain words by putting them in the
             ignore list. Include a certain type of word by listing the types
             in include. By default, keywords gets ?? (unknowns), NO (objects)
-            and XO (names).
-        '''
+            and XO (names). '''
 
         if ignore is None:
             ignore = []
@@ -618,8 +617,7 @@ class Sentence(object):
             Set indexes if you want the index of the word in the sentence,
             and pronouns if pronouns can be included in the sentence. If
             nothing is found without pronouns, it tries again with pronouns
-            anyway. If there is still nothing, it returns None.
-        '''
+            anyway. If there is still nothing, it returns None. '''
 
         if part == "NO" or part == "XO":
             if pronouns:
@@ -777,11 +775,14 @@ class Element(object):
         self.children = []
         self.attributes = self.get_attributes()
 
+
     def __str__(self):
         return "({}, {})".format(self.tag, str(self.children))
 
+
     def __repr__(self):
         return self.__str__()
+
 
     def __getitem__(self, i):
         ''' Get item via slice notation, changes based on input '''
@@ -799,6 +800,7 @@ class Element(object):
     def get_id(self, target):
         ''' Get the element with id "target" recursively, return
             the first suitable element '''
+
         if self.attributes.get("id", None) == target:
             return self
         else:
@@ -811,9 +813,11 @@ class Element(object):
                     pass
         return None
 
+
     def get_class(self, target):
         ''' Get the elements with class "target" recursively, return
             a list of suitable elements '''
+
         result = []
         if self.attributes.get("class", None) == target:
             result += [self]
@@ -826,9 +830,11 @@ class Element(object):
                 pass
         return result
 
+
     def get_elem(self, target):
         ''' Get the element "target" recursively, return a list of suitable
             elements '''
+
         result = []
         if self.tag == target:
             result += [self]
@@ -841,15 +847,19 @@ class Element(object):
                 pass
         return result
 
+
     def get_name(self):
         ''' Try and get the name of the tag '''
+
         try:
             return self.code.split()[0][1:].lower().strip(">")
         except IndexError:
             print ("'{}'".format(self.code))
 
+
     def get_parts(self, string):
         ''' Extract the parts of the element tag, the attributes. '''
+
         parts = {}
         key = ""
         value = ""
@@ -897,16 +907,20 @@ class Element(object):
             pass
         return parts
 
+
     def get_attributes(self):
         ''' Try and get attributes of element, e.g. id and class '''
+
         c = self.code.strip().strip(">").strip("<")
         c = " ".join(c.split()[1:])
         parts = self.get_parts(c)
         return parts
 
+
     def get_immediate_child(self, target):
         ''' Useful if you only want immediate children of an element,
             not EVERY child of an element. '''
+
         if target[0] == "#":
             for c in self.children:
                 try:
@@ -933,8 +947,10 @@ class Element(object):
                     pass
             return result
 
+
     def extract_raw_text(self):
         ''' Extract out raw text, so there are no tags or anything. '''
+
         out = ""
         for c in self.children:
             if type(c) == Element:
@@ -954,6 +970,7 @@ class DOM(object):
         self.tokens = self.tokenize(html)
         self.dom = self.domify(self.tokens)
 
+
     @classmethod
     def fromURL(self, url):
         ''' Create a new DOM object from a given URL '''
@@ -965,16 +982,20 @@ class DOM(object):
         newDOM = DOM(page)
         return newDOM
 
+
     def __getitem__(self, key):
         ''' Nice access straight to the DOM. '''
         return self.dom[key]
+
 
     def __str__(self):
         ''' Pretty-print DOM '''
         return str(self.dom)
 
+
     def remove_non_html(self, tokens):
         ''' Remove scripts and styles '''
+
         cont = True
         j = 0
         new_tokens = []
@@ -1005,8 +1026,10 @@ class DOM(object):
                 cont = False
         return new_tokens
 
+
     def tokenize(self, code):
         ''' Turn the code into tokens '''
+
         tokens = []
         i = 0
         for char in code:
@@ -1093,5 +1116,6 @@ class DOM(object):
             if isinstance(item, Element):
                 return item
         return stack[0]
+
 
 update_words()
