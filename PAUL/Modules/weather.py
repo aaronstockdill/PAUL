@@ -11,7 +11,7 @@ import paul
 
 NOUNS = [
     "weather",   "forecast",   "rainy",    "rain",
-    "raining",   "sun",        "sunny",    "temperature",
+    "raining",   "sunny",      "temperature",
     "cold",      "hot",        "humid",    "today",
     "tomorrow",  "monday",     "tuesday",  "wednesday",
     "thursday",  "friday",     "saturday", "sunday",
@@ -27,7 +27,6 @@ def process(sentence):
         "rainy",
         "rain",
         "raining",
-        "sun",
         "sunny",
         "temperature",
         "cold",

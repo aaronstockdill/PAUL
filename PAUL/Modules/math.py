@@ -587,7 +587,14 @@ def process(sentence):
         for word, _ in targets:
             if len(word) == 1:
                 targ = word
-        eqn.rearrange_linear_for(targ)
+        try:
+            eqn.rearrange_linear_for(targ)
+        except RuntimeError:
+            url = "http://www.wolframalpha.com/input/?i="
+            query = " ".join([word for word, _ in sentence])
+            query.replace("+", "%2D").replace("=", "%3D").replace("/", "%2F")
+            paul.open_URL(url+query)
+            return "Oh dear, not a clue. Try this instead."
     
     result = str(eqn)
     if not had_equals:

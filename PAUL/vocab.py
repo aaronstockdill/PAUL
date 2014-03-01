@@ -344,7 +344,7 @@ def generate_transforms():
 
 
 def create_irregulars():
-    ''' Fix the irregular verb 'to be' (Extend as necessary) '''
+    ''' Fix the irregular verbs (Extend as necessary) '''
     vocabulary['be']['past_perf'] = 'had'
     vocabulary['be']['past_imp'] = 'have'
     vocabulary['be']['pres_first'] = 'am'
