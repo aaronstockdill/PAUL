@@ -23,25 +23,25 @@
 
 import brain
 import os
-import common
+from importlib import import_module
 
-DECLARATIVE = 0
-IMPERATIVE = 1
-INTERROGATIVE = 2
 MODULES_FOLDER = "Modules"
 
 class Parser(object):
     """ Main Parsing object, handles module lists and session information """
 
-    def __init__(self):
-        """ Constructor """
+    def __init__(self, logger):
+        """ Constructor, parameter is a pointer to the logger function """
+
         self.memory = {}
         self.modules = [{}, {}, {}]
         self.working_sentance = None
+        self.log_func = logger
 
 
     def parse(self, sentance):
         """ Takes a sentance, processes, and directs it to the relevant module """
+
         self.working_sentance = sentance
         if sentance.kind == "IMP":
             # Imperative
@@ -58,12 +58,24 @@ class Parser(object):
 
     def load_modules(self):
         """ Load all modules in the Modules folder """
-        modules = common.filenames("{}\\{}".format(__file__, MODULES_FOLDER), ".py")
+
+        modules = os.listdir("{}\\{}".format(__file__, MODULES_FOLDER))
         keywords = {}
         for module in modules:
-            func = common.import_func(module, "main")
-            module_type, name, keywords = func()
-            self.modules[module_type][name] = module
+            if module.endswith(".py") and not module.endswith("lib.py"):
+                func = self._import_func(module, "main")
+                module_type, name, keywords = func()
+                for m_type in module_type:
+                    self.modules[m_type][name] = module
+
+
+    def _import_func(self, module, func):
+        """ Imports a function from a given module, function maintains useability
+            with the rest of its' own module ie it still has access to constants,
+            supporting functions etc """
+
+        mod = import_module(module)
+        return getattr(mod, func)
 
 
     def _declarative(self, info):
