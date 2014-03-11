@@ -14,19 +14,21 @@ from sys import argv
 WIDTH = 500
 HEIGHT = 180
 
-def set_text(text, ending=True):
-    paul.talkLabel['text'] = text
-    paul.output.set(text)
-    height = paul.talkLabel.winfo_reqheight()
-    paul.master.geometry("500x{}".format(height + 80 if height > 100 else HEIGHT))
+def IO(paul):
+    def set_text(text, ending=True):
+        paul.talkLabel['text'] = text
+        paul.output.set(text)
+        height = paul.talkLabel.winfo_reqheight()
+        paul.master.geometry("500x{}".format(height + 80 if height > 100 else HEIGHT))
 
-def get_text():
-    paul.set_io(2)
-    paul.enterText.delete(0, len(paul.enterText.get()))
-    paul.wait_variable(paul.response)
-    value = paul.response.get()
-    paul.set_io(1)
-    return value
+    def get_text():
+        paul.set_io(2)
+        paul.enterText.delete(0, len(paul.enterText.get()))
+        paul.wait_variable(paul.response)
+        value = paul.response.get()
+        paul.set_io(1)
+        return value
+    return (set_text, get_text)
 
 class Application(Frame):
     
@@ -128,19 +130,29 @@ class Application(Frame):
         self.newUserButton.pack()
 
 
-paul = Application(Tk())
-paul.master.title("P.A.U.L. v{}".format(brain.paul.system.flags['VERSION']))
-w, h = paul.winfo_screenwidth(), paul.winfo_screenheight()
-paul.master.geometry("%dx%d+%d+%d" % (WIDTH, HEIGHT, 
-                                      w/2 - WIDTH/2, h/2 - WIDTH/2))
-paul.master.resizable(0,0)
+
+def setup_gui(paul):
+    paul.master.title("P.A.U.L. v{}".format(brain.paul.system.flags['VERSION']))
+    w, h = paul.winfo_screenwidth(), paul.winfo_screenheight()
+    paul.master.geometry("%dx%d+%d+%d" % (WIDTH, HEIGHT, 
+                                          w/2 - WIDTH/2, h/2 - WIDTH/2))
+    paul.master.resizable(0,0)
+
+
 
 def main():
-    brain.set_IO(set_text, get_text)
+    paul = Application(Tk())
+    setup_gui(paul)
+    res = IO(paul)
+    brain.set_IO(res[0], res[1])
     paul.mainloop()
+
+
 
 temp_holder = ""
 temp_q_holder = ""
+
+
 
 def get_text_simple():
     q = temp_holder
@@ -150,14 +162,19 @@ def get_text_simple():
     result = brain.paul.run_script(code, language="applescript", response=True)
     return result
 
+
+
 def set_text_simple(text):
     global temp_holder
     temp_holder = text
     brain.paul.send_notification(temp_q_holder, text)
 
+
+
 if len(argv) > 1:
-    brain.set_IO(set_text_simple, get_text_simple)
     brain.login("default")
+    setup_gui()
+    brain.set_IO(set_text_simple, get_text_simple)
     temp_q_holder = " ".join(argv[1:])
     brain.process(temp_q_holder)
 else:

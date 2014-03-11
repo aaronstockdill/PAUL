@@ -20,6 +20,15 @@ def join_lists(*lists):
             connected += item
     return connected
 
+
+
+def iterable(item):
+    ''' Determine if the item in question is iterable. Argument is an object.
+        Returns true if is is, false otherwise. '''
+    return type(item) in [list, tuple, dict, Sentence]
+
+
+
 class Sentence(object):
     ''' This is the sentence object to contain all the methods needed
         when working with them. Only initialization argument is the sentence
@@ -45,7 +54,7 @@ class Sentence(object):
         self.sentence_string = " ".join(words)
         self.sentence = self.tag_sentence(words)
         self.kind = self.classify()
-        self.diagram = self.diagram()
+        # self.diagram = self.diagram()
 
 
     def __repr__(self):
@@ -298,7 +307,7 @@ class Sentence(object):
         for i, word in enumerate(self.sentence):
             if word[0] == 'it':
                 it = get_it()
-                log("IT:", str(it))
+                # log("IT:", str(it))
                 if it == None:
                     return False
                 self.sentence.pop(i)
@@ -312,20 +321,33 @@ class Sentence(object):
         ''' Forward sentence to the module specified.
             Returns the new result of successful, else False. '''
 
-        log("FORWADING TO:", module)
+        # log("FORWADING TO:", module)
         if module in vocab.word_actions.keys():
             return vocab.word_actions[module](self)
         else:
             return False
 
 
-    def has_word(self, word):
+    def has_word(self, word, word_list=None):
         ''' The sentence object's version of paul.has_word, where the assumed
             list of words is the sentence. '''
-        return has_word(self.sentence, word)
+        word_list = self.sentence if word_list is None else word_list
+        for item in word_list:
+            if not iterable(item):
+                if type(item) == str and word in item.split():
+                    return True
+            else:
+                found = self.has_word(word, item)
+                if found:
+                    return True
+        return False
 
 
     def has_one_of(self, confirm_list):
         ''' The sentence object's version of paul.has_one_of, where the
             assumed list of words is the sentence. '''
-        return has_one_of(self.sentence, confirm_list)
+        list_to_search = self.sentence
+        for word in confirm_list:
+            if self.has_word(list_to_search, word):
+                return True
+        return False

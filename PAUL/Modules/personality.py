@@ -48,6 +48,8 @@ RANDOM = [
     "joke",
     "sing",
     "song",
+    "test",
+    "testing",
 ] 
 
 class Point(object):
@@ -93,9 +95,12 @@ def random(sentence):
                  "Sorry, my 'tune' module was never installed.",
                  ("I would, but humans tend to like it when their "
                   + "ears DON'T bleed."),],
+        "test": ["Reading you loud and clear!",
+                 "Alpha bravo charlie, the line seems clear!",],
     }
     key_words["jokes"] = key_words["joke"]
     key_words["song"] = key_words["sing"]
+    key_words["testing"] = key_words["test"]
     for word, _ in sentence:
         if word in key_words.keys():
             return paul.random_choice(key_words[word])

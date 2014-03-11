@@ -29,10 +29,11 @@ def show_splash():
         + " " * y, author + "\n\n")
 
 
-def login():
+def login(splash):
     ''' Attempt to log the user in. '''
-    print("To log in, enter your username below.")
-    print("To create a new user, type 'new user' without quotes.")
+    if splash:
+        print("To log in, enter your username below.")
+        print("To create a new user, type 'new user' without quotes.")
     if brain.paul.system.flags["SKIP_LOGIN"] == False:
         name = input("Name: ")
         logged_in = brain.login(name)
@@ -52,14 +53,15 @@ def login():
         brain.login(brain.paul.system.flags["SKIP_LOGIN"])
     
 
-def main():
+def main(splash=True):
     """ The main function, how the system is mostly interacted with. """
-    show_splash()
-    login()
-    print("Type below to interact with Paul.",
-          "\nEnter 'bye' without quotes to exit.",
-          "\n",
-          "\nHello, {}".format(brain.paul.system.flags["USER"]["name"]))
+    login(splash)
+    if splash: 
+        show_splash()
+        print("Type below to interact with Paul.",
+              "\nEnter 'bye' without quotes to exit.",
+              "\n",
+              "\nHello, {}".format(brain.paul.system.flags["USER"]["name"]))
 
     exit = False
     while not exit:
@@ -79,6 +81,16 @@ def main():
 
 if len(argv) > 1:
     brain.login("default")
-    brain.process(" ".join(argv[1:]))
+    items = None
+    if argv[1] == "-nw":
+        if len(argv) > 2:
+            items = argv[2:]
+        else:
+            main()
+    elif argv[1] == '-qnw':
+        main(False) 
+    else:
+        items = argv[1:]
+    if items: brain.process(" ".join(items))
 else:
     main()
