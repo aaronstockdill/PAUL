@@ -309,7 +309,8 @@ def open_URL(url):
 def parse_number(string):
     ''' Attempt to parse a number into it's value. Takes a string,
         returns an integer. If it finds a valid integer, e.g. "42", it
-        just returns that, 42. '''
+        just returns that, 42. If it finds a Roman numeral it will
+        return just the value ie XIV returns 14'''
 
     numbers = string.lower().split()
 
@@ -388,6 +389,24 @@ def parse_number(string):
 
 
 
+def parse_numeral(numeral, total=0):
+    ''' Recursivley parses a numeral '''
+
+    numerals = {"m":1000, "d":500, "c":100, "l":50, "x":10, "v":5, "i":1}
+    numeral = numeral.lower()
+    try:
+        if len(numeral) == 1:
+            return total + numerals[numeral[0]]
+        first, second = numeral[0], numeral[1]
+        if numerals[first] < numerals[second]:
+            return parse_numeral(numeral[1:], total - numerals[first])
+        return parse_numeral(numeral[1:], total + numerals[first])
+    except KeyError:
+        raise ValueError("Expected a Roman numeral. \
+                        Unproccessed numeral: ".format(numeral))
+
+
+
 def random_choice(list):
     ''' Return one of the supplied statements in list, each of which can
         have room for a name to be inserted into it. '''
@@ -462,11 +481,11 @@ def set_it(value):
 
 
 def simple_speech_filter(statement):
-    ''' Replace a couple of common "error spots" such as Â°C to degrees
+    ''' Replace a couple of common "error spots" such as Ãƒâ€šÃ‚Â°C to degrees
         celcius. Takes in a string, returns a string with replacements.
         You should never need to call this. '''
 
-    replacements = [("Â°C", " degrees celcius")]
+    replacements = [("Ãƒâ€šÃ‚Â°C", " degrees celcius")]
     for find, rep in replacements:
         statement = statement.replace(find, rep)
     return statement
