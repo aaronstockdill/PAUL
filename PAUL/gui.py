@@ -66,7 +66,7 @@ class Application(Frame):
     
     def set_response(self, command):
         com = command.get()
-        paul.response.set(com)
+        self.response.set(com)
         command.delete(0, len(command.get()))
         
     def createWidgets(self):

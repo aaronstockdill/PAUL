@@ -346,8 +346,7 @@ class Sentence(object):
     def has_one_of(self, confirm_list):
         ''' The sentence object's version of paul.has_one_of, where the
             assumed list of words is the sentence. '''
-        list_to_search = self.sentence
         for word in confirm_list:
-            if self.has_word(list_to_search, word):
+            if self.has_word(word):
                 return True
         return False
