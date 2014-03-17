@@ -7,12 +7,30 @@ Author: Aaron Stockdill
 """
 
 import brain
-from sys import argv
+import sys
 import os
 import time
 
+WINDOWS = "win32"
+HASHTAG_MACFAG = "darwin"
+
+def clear_cli(platform):
+    ''' Clear the command line interface '''
+    if platform == WINDOWS:
+        os.system("cls")
+    elif platform == HASHTAG_MACFAG:
+        os.system("clear")
+
+def get_platform():
+    if sys.platform.startswith(WINDOWS):
+        return WINDOWS
+    elif sys.platform.startswith(HASHTAG_MACFAG):
+        return HASHTAG_MACFAG
+
 def show_splash():
-    os.system("clear")
+    platform = get_platform()
+    clear_cli(platform)
+
     rows, cols = [int(i) for i in os.popen('stty size', 'r').read().split()]
     title =  "P.A.U.L"
     byline = "Python Actions Using Language, v{}".format(
@@ -51,12 +69,12 @@ def login(splash):
         show_splash()
     else:
         brain.login(brain.paul.system.flags["SKIP_LOGIN"])
-    
+
 
 def main(splash=True):
     """ The main function, how the system is mostly interacted with. """
     login(splash)
-    if splash: 
+    if splash:
         show_splash()
         print("Type below to interact with Paul.",
               "\nEnter 'bye' without quotes to exit.",
@@ -77,22 +95,22 @@ def main(splash=True):
         except EOFError:
             exit = True
             print()
-    
+
     brain.paul.interact("Bye!")
 
 
-if len(argv) > 1:
+if len(sys.argv) > 1:
     brain.login("default")
     items = None
-    if argv[1] == "-nw":
-        if len(argv) > 2:
-            items = argv[2:]
+    if sys.argv[1] == "-nw":
+        if len(sys.argv) > 2:
+            items = sys.argv[2:]
         else:
             main()
-    elif argv[1] == '-qnw':
-        main(False) 
+    elif sys.argv[1] == '-qnw':
+        main(False)
     else:
-        items = argv[1:]
+        items = sys.argv[1:]
     if items: brain.process(" ".join(items))
 else:
     main()
