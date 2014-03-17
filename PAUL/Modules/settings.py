@@ -109,7 +109,7 @@ def make_change(key, val, confirm):
         file = "system"
     else:
         file = paul.system.flags["USER"]["username"]
-    settings_file = "PAUL/Settings/{}.py".format(file)
+    settings_file = paul.PAUL_ROOT + "/Settings/{}.py".format(file)
     sub = "    \"{}\": {},\n".format(key, val)
     paul.log("SETTING:", sub)
     

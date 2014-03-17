@@ -18,7 +18,8 @@ import Settings.system as system
 import sentence
 import dom
 
-LOG_FILE = os.path.dirname(os.path.abspath(__file__)) + "/log.txt"
+PAUL_ROOT = os.path.dirname(os.path.abspath(__file__))
+LOG_FILE = PAUL_ROOT + "/log.txt"
 
 Sentence = sentence.Sentence
 DOM = dom.DOM
