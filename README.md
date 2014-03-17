@@ -8,13 +8,13 @@ Paul is a simple attempt at a system that can do something useful given a senten
 
 ###2. Technologies in Paul
 
-As Paul is written in Python3 and Applescript, it is Mac OS X only. It uses mdfind, the command line version of spotlight, to find files. Using OS X's dictation it is possible to talk to Paul, too!
+As Paul is written in Python3 and Applescript, it is Mac OS X only. It uses mdfind, the command line version of spotlight, to find files. Using OS X's dictation it is possible to talk to Paul, too, using the command line interface.
 
 ###3. Installing Paul
 
-The `install` script has not been tested. Run this at your own peril. No responsibility will be taken for loss of Paul, data, or a working operating system.
+~~The `install` script has not been tested. Run this at your own peril. No responsibility will be taken for loss of Paul, data, or a working operating system.~~ This `install` script __DOES NOT WORK__. Please __DO NOT USE IT__.
 
-Paul has the functionality in place for a 'first run setup' interface, but it has not yet been created. As such, you have to learn they way around yourself at the moment.
+Paul has the functionality in place for a 'first run setup' interface, so on first run, please click "New User". Paul will then guide you through the set-up, and provide a quick run-down on how to interact with him.
 
 ###4. Paul's Structure
 

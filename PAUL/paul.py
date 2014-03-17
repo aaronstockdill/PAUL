@@ -468,6 +468,12 @@ def send_notification(title, message):
         message, title
     ))
     run_script(notification, language='applescript')
+    
+    # CURRENTLY, THESE ARE ALL POSSIBLE LINUX IMPLEMENTATIONS
+    #   notify-send "This message will be displayed for 3 seconds" -t 3000
+    #   gmessage -center -nofocus -font 'Sans Bold 48' "This Message"
+    #   zenity --warning --text="This Message"
+    #   kdialog --passivepopup "This Message"
 
 
 

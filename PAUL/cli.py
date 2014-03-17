@@ -73,8 +73,10 @@ def main(splash=True):
                 brain.process(command)
         except KeyboardInterrupt:
             exit = True
+            print()
         except EOFError:
             exit = True
+            print()
     
     brain.paul.interact("Bye!")
 

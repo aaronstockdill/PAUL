@@ -6,7 +6,10 @@ Author: Aaron Stockdill
 
 import shutil
 
-import paul
+import brain
+import tutorial
+
+paul = brain.paul
 
 def edit_file(name):
     ''' Bring the basic user data up to date. '''
@@ -76,4 +79,7 @@ def main(name):
                     "PAUL/Settings/{}.py".format(name.lower()))
     add_to_system(name)
     edit_file(name)
-    paul.interact("Ok, that should all be set up for you now!")
+    brain.login(name.lower())
+    paul.interact("Ok, that should all be set up for you now! "
+                + "Let's give you a run-through of the system.")
+    tutorial.run(name)
