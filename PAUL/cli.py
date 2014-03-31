@@ -12,20 +12,23 @@ import os
 import time
 
 WINDOWS = "win32"
-HASHTAG_MACFAG = "darwin"
+OSX = "darwin"
+LINUX = "linux"
 
 def clear_cli(platform):
     ''' Clear the command line interface '''
     if platform == WINDOWS:
         os.system("cls")
-    elif platform == HASHTAG_MACFAG:
+    elif platform in [OSX, LINUX]:
         os.system("clear")
 
 def get_platform():
     if sys.platform.startswith(WINDOWS):
         return WINDOWS
-    elif sys.platform.startswith(HASHTAG_MACFAG):
-        return HASHTAG_MACFAG
+    elif sys.platform.startswith(OSX):
+        return OSX
+    elif sys.platform.startswith(LINUX):
+        return LINUX
 
 def show_splash():
     platform = get_platform()

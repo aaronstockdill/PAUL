@@ -9,6 +9,7 @@ more organised.
 import vocab
 import itertools
 import operator
+import Settings.system as system
 
 def join_lists(*lists):
     ''' Joins the lists. Arguments are lists that get joined, but are
@@ -306,8 +307,7 @@ class Sentence(object):
 
         for i, word in enumerate(self.sentence):
             if word[0] == 'it':
-                it = get_it()
-                # log("IT:", str(it))
+                it = system.flags["IT"]
                 if it == None:
                     return False
                 self.sentence.pop(i)
@@ -320,8 +320,7 @@ class Sentence(object):
     def forward(self, module):
         ''' Forward sentence to the module specified.
             Returns the new result of successful, else False. '''
-
-        # log("FORWADING TO:", module)
+        
         if module in vocab.word_actions.keys():
             return vocab.word_actions[module](self)
         else:

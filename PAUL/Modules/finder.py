@@ -26,8 +26,6 @@ NOUNS = [
     'video',
     'audio',
     'music',
-    'email',
-    'event',
     'pdf',
     'preference',
     'bookmark',
