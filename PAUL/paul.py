@@ -488,11 +488,11 @@ def set_it(value):
 
 
 def simple_speech_filter(statement):
-    ''' Replace a couple of common "error spots" such as Ãƒâ€šÃ‚Â°C to degrees
+    ''' Replace a couple of common "error spots" such as °C to degrees
         celcius. Takes in a string, returns a string with replacements.
         You should never need to call this. '''
 
-    replacements = [("Ãƒâ€šÃ‚Â°C", " degrees celcius")]
+    replacements = [("°C", " degrees celcius")]
     for find, rep in replacements:
         statement = statement.replace(find, rep)
     return statement

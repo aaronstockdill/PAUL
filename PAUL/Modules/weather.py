@@ -72,14 +72,14 @@ def comment(sentence, temp, condition):
         if int(temp) <  warm:
             return "Meh. "
         elif int(temp) < cold:
-            return "Absolutely not! "
+            return "Absolutely not hot! "
         elif int(temp) > warm:
             return "It will be warm. "
     elif sentence.has_one_of(["cold", "cool", "freezing"]):
         if int(temp) > warm:
             return "Definitely not cold, it'll be quite hot. "
         elif int(temp) > cold:
-            return "Not particularly. "
+            return "Not particularly cold. "
         elif int(temp) < cold:
             return "It'll be cold, so wrap up warm! "
     return ""
@@ -90,14 +90,14 @@ def replace_text(condition):
     ''' Set up a more coherant response as to the conditions. Takes a string,
         returns a string. '''
     
-    subs = {
-        ' pm ': ' afternoon ',
-        ' am ': ' morning ',
-    }
+    words = condition.split()
+    if words[0].lower() == "am":
+        words = words[1:] + ["in", "the", "morning"]
+    elif words[0].lower() == "pm":
+        words = words[1:] + ["in", "the", "afternoon"]
+    return " ".join(words)
     
-    for key, val in subs.items():
-        condition = condition.replace(key, val)
-    return condition
+
 
 
 def get_conditions(raw_data, day_index):

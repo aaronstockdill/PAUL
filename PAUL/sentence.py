@@ -55,7 +55,8 @@ class Sentence(object):
         self.sentence_string = " ".join(words)
         self.sentence = self.tag_sentence(words)
         self.kind = self.classify()
-        # self.diagram = self.diagram()
+        self.diagram = self.diagram()
+
 
 
     def __repr__(self):
@@ -66,12 +67,14 @@ class Sentence(object):
         return str(self.sentence)
 
 
+
     def __str__(self):
         ''' A 'pretty' representation of the sentence.
 
             >>> print(Sentence("This is a doctest."))
             this is a doctest '''
         return self.sentence_string
+
 
 
     def __iter__(self):
@@ -112,11 +115,24 @@ class Sentence(object):
             else:
                 return []
         
+        def cleaner(a_list):
+            newlist = []
+            for item in a_list:
+                if len(item[1]) > 1 and type(item[1][0]) != tuple:
+                    newlist.append(cleaner(item))
+                elif item[1] != []:
+                    newlist.append(item)
+            return newlist
+        
         S = []
         NP = []
         VP = []
+        Q = []
         verbed = False
         for word, part in self.sentence:
+            if part == "WH":
+                Q.append((part, [word]))
+                continue
             if part == "VB":
                 verbed = True
             if not verbed:
@@ -136,11 +152,14 @@ class Sentence(object):
             else:
                 NO.append((word, part))
         NP2 = nouner(NO)
-        VP1 = [("V", [VP[0][0]]), ("MOD", MOD)]
+        if VP:
+            VP1 = [("V", [VP[0][0]]), ("MOD", MOD)]
+        else:
+            VP1 = VP
         if NO:
             VP1.append(("NP", NP2))
-        S = [("NP", NP1), ("VP", VP1)]
-        return S
+        S = cleaner([("NP", NP1), ("VP", VP1)])
+        return ('S', Q + S) if Q else ('S', S)
     
 
 
@@ -148,8 +167,8 @@ class Sentence(object):
         ''' Join things not split by prepositions and stuff, as they probably
             "belong" together. Ignore certain words by putting them in the
             ignore list. Include a certain type of word by listing the types
-            in include. By default, keywords gets ?? (unknowns), NO (objects)
-            and XO (names). '''
+            in include. By default, keywords gets ?? (unknowns), NO (objects),
+            XO (names), and NU (numbers). '''
 
         if ignore is None:
             ignore = []

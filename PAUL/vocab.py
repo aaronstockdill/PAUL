@@ -345,12 +345,14 @@ def generate_transforms():
 
 def create_irregulars():
     ''' Fix the irregular verbs (Extend as necessary) '''
-    vocabulary['be']['past_perf'] = 'had'
-    vocabulary['be']['past_imp'] = 'have'
+    vocabulary['be']['past_perf'] = 'was'
+    vocabulary['be']['past_imp'] = 'was'
     vocabulary['be']['pres_first'] = 'am'
     vocabulary['be']['pres_second'] = 'are'
     vocabulary['be']['pres_third'] = 'is'
     vocabulary['be']['fut_imp'] = 'am going to be'
+    
+    vocabulary['have']['past_perf'] = 'had'
 
     vocabulary['get']['past_perf'] = 'got'
 
@@ -378,6 +380,7 @@ vocabulary = {
     'paul':        Name('paul'),
 
     'be':          Verb("be"),
+    'have':        Verb("have"),
     'will':        Verb("will"),
     'close':       Verb("close"),
     'open':        Verb("open"),

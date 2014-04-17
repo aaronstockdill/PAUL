@@ -33,7 +33,7 @@ def process(sentence):
     paul.trim_word(verbs, "go")
     paul.log(verbs)
     
-    keywords = sentence.keywords()
+    keywords = sentence.keywords(ignore=['song'])
     paul.log("MUSIC KEYWORDS:", keywords)
     
     commands = {
@@ -82,7 +82,7 @@ def main():
     
     words = {
         "itunes": ("media", "noun"),
-        "music": ("media", "verb"),
+        "music": ("media", "noun"),
         "play": ("media", "verb"), 
         "pause": ("media", "verb"), 
         "stop": ("media", "verb"), 
@@ -92,6 +92,7 @@ def main():
         "back": ("media", "verb"),
         "forward": ("media", "verb"),
         "go": ("media", "verb"),
+        "song": ("media", "noun"),
     }
     
     paul.associate(words)

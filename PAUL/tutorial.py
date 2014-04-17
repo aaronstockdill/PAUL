@@ -2,6 +2,8 @@
 tutorial.py
 Provide users with a first-time walkthrough.
 Author: Aaron Stockdill
+
+This module is a bit rough, it feels like I've made some crappy Monads. Clean up at some point.
 '''
 
 import paul

@@ -173,7 +173,8 @@ def set_text_simple(text):
 
 if len(argv) > 1:
     brain.login("default")
-    setup_gui()
+    paul = Application(Tk())
+    setup_gui(paul)
     brain.set_IO(set_text_simple, get_text_simple)
     temp_q_holder = " ".join(argv[1:])
     brain.process(temp_q_holder)

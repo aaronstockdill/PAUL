@@ -1,6 +1,6 @@
 """
 math.py
-Paul's main Math module. This is still in its infancy, and is very buggy and limited. Use with caution. Check all the values it produces.
+Paul's main Math module. This is still in its infancy, and is very buggy and limited. Use with caution. 
 Author: Aaron Stockdill
 """
 
@@ -19,12 +19,32 @@ class Node(object):
     def __str__(self):
         if self.left is None and self.right is None:
             return str(self.value)
-        s =" ".join([str(item) for item in [self.left, self.value, self.right]
+        if (self.right.is_terminal() 
+           and type(self.right.value) == int
+           and self.right.value < 0 
+           and self.value == "+"):
+            v = "-"
+            r = -1*self.right.value
+        else:
+            v = self.value
+            r = self.right
+        s =" ".join([str(item) for item in [self.left, v, r]
                       if item is not None])
         return "({})".format(s)
     
     def __repr__(self):
         return self.__str__()
+    
+    def __eq__(self, other):
+        if type(other) != Node:
+            return False
+        if self.is_terminal() and other.is_terminal():
+            return self.value == other.value
+        else:
+            l = self.left == other.left
+            r = self.right == other.right
+            t = self.value == other.value
+            return l and r and t
     
     def replace(self, new_val, left=None, right=None):
         self.value = new_val
@@ -48,29 +68,60 @@ class Equation(object):
     
     
     def __str__(self):
-        self.simplify()
+        s = self.head
+        count = 0
+        while s == self.head and count < 5:
+            s = self.simplify()
+            count += 1
         return str(self.head)[1:-1]
+    
+    
+    def __repr__(self):
+        return self.__str__()
             
 
     def treeify(self, expression):
         ''' Create a tree representing the equation '''
         tokens = list(expression)
         tokens = self.join_digits(tokens)
+        tokens = self.add_mult(tokens)
         equals = tokens.index("=")
         lhs = self.create_postfix(tokens[:equals])
         rhs = self.create_postfix(tokens[equals+1:])
         self.head.left = self.create_nodes(lhs)
         self.head.right = self.create_nodes(rhs)
+        self.fix_add_inv()
+    
+    
+    def add_mult(self, tokens):
+        i = 0
+        ops = list("=+-*/()^\\")
+        new_toks = []
+        while i < len(tokens)-1:
+            new_toks.append(tokens[i])
+            if tokens[i] not in ops and tokens[i+1] not in ops:
+                new_toks.append("*")
+            elif tokens[i] == ")" and tokens[i+1] == "(":
+                new_toks.append("*")
+            elif tokens[i] not in ops and tokens[i+1] == "(":
+                new_toks.append("*")
+            i += 1
+        new_toks.append(tokens[i])
+        paul.log("TOKENS:", new_toks)
+        return(new_toks)
     
     
     def join_digits(self, expression):
         ''' Join two-or-more digit numbers together. Also spots pi and e '''
         numbers = list("1234567890.")
         letters = list("abcdefghijklmnopqrstuvwxyz")
-        
+        ops = list("(+*-^\\/")
+        paul.log("DIGITIZING", expression)
         new_expression = []
         i = 0
+        neg = False
         while i < len(expression):
+            paul.log(expression[i], new_expression)
             if expression[i] == " ":
                 i += 1
             elif expression[i] in letters:
@@ -83,6 +134,9 @@ class Equation(object):
                 else:
                     new_expression.append(expression[i])
                     i += 1
+            elif expression[i] == "-" and new_expression[-1] in ops:
+                neg = True
+                i += 1
             elif expression[i] not in numbers:
                 new_expression.append(expression[i])
                 i += 1
@@ -93,6 +147,9 @@ class Equation(object):
                     number += expression[j]
                     j += 1
                 i = j
+                if neg:
+                    number = "-" + number
+                    neg = False
                 new_expression.append(float(number))
         return new_expression
     
@@ -101,6 +158,7 @@ class Equation(object):
     
     def create_postfix(self, expression):
         ''' Create the postfix version of the expression '''
+        paul.log("STARTED POSTFIX ON", expression)
         operators = {"^":3,"\\":3,"*":2,"/":2,"+":1,"-":1,"(":0}
         stack = []
         postfix = []
@@ -121,37 +179,30 @@ class Equation(object):
                 stack.append(item)
         while len(stack) != 0:
             postfix.append(stack.pop())
-        
+        paul.log("ENDED POSTFIX ON", postfix)
         return postfix
     
     
     def create_nodes(self, stack):
         operators = list("^\\*/+-")
-        
+        paul.log("STARTED NODES ON", stack)
         if len(stack) == 1:
-            return Node(stack[0])
-        elif len(stack) == 3:
-            n = Node(stack[2])
-            n.left = stack[0] if type(stack[0]) == Node else Node(stack[0])
-            n.right = stack[1] if type(stack[1]) == Node else Node(stack[1])
-            return n
+            return stack[0] if type(stack[0]) == Node else Node(stack[0])
         else:
-            next_ops = []
-            for op in operators:
-                if op in stack:
-                    next_ops.append(stack.index(op))
-            next_op = min(next_ops)
-            n = Node(stack[next_op])
-            vl = stack[next_op - 2]
-            vr = stack[next_op - 1]
-            n.left = vl if type(vl) == Node else Node(vl)
-            n.right = vr if type(vr) == Node else Node(vr)
-            return self.create_nodes(stack[:next_op - 2] + [n] + stack[next_op + 1:])
+            pos = 2
+            for i in range(len(stack)):
+                if stack[i] in operators:
+                    pos = i
+                    break
+            n = Node(stack[pos])
+            n.left = stack[pos-2] if type(stack[pos-2]) == Node else Node(stack[pos-2])
+            n.right = stack[pos-1] if type(stack[pos-1]) == Node else Node(stack[pos-1])
+            paul.log("STACK NOW", stack[:pos-2] + [n] + stack[pos + 1:])
+            return self.create_nodes(stack[:pos-2] + [n] + stack[pos + 1:])
     
     
     
     def common_factor(self, node):
-        
         op = node.value
         ll = node.left.left
         lr = node.left.right
@@ -189,9 +240,9 @@ class Equation(object):
         node.value = n.value
         node.left = n.left
         node.right = n.right
+    
         
     def gcd_help(self, a, b):
-        
         if a % b == 0:
             return b
         else:
@@ -312,37 +363,35 @@ class Equation(object):
         if node == -1:
             node = self.head
         
-        if node.value == "*" and node.left.is_terminal() and not node.right.is_terminal():
+        if (node.value == "*" 
+            and node.left.is_terminal() 
+            and not node.right.is_terminal() 
+            and node.right.value in ["+", "-"]):
             left, right, op = self.expand_helper_left(node.left, node.right)
             node.value = op
             node.left = left
             node.right = right
-        elif node.value == "*" and node.right.is_terminal() and not node.left.is_terminal():
+        elif (node.value == "*" 
+              and node.right.is_terminal() 
+              and not node.left.is_terminal() 
+              and node.left.value in ["+", "-"]):
             right, left, op = self.expand_helper_right(node.right, node.left)
             node.value = op
             node.right = right
             node.left = left
-        elif node.value == "*" and not node.left.is_terminal() and not node.right.is_terminal():
-            sign = self.correct_sign(node.left.value, node.right.value)
-            new_left = Node(node.right.value)
-            new_left.left = Node("*")
-            new_left.left.left = node.left.left
-            new_left.left.right = node.right.left
-            new_left.right = Node("*")
-            new_left.right.left = node.left.left
-            new_left.right.right = node.right.right
-        
-            new_right = Node(sign)
-            new_right.left = Node("*")
-            new_right.left.left = node.left.right
-            new_right.left.right = node.right.left
-            new_right.right = Node("*")
-            new_right.right.left = node.left.right
-            new_right.right.right = node.right.right
-        
-            node.value = node.left.value
-            node.left = new_left
-            node.right = new_right
+        elif (node.value == "*" 
+              and not node.left.is_terminal() 
+              and not node.right.is_terminal()):
+            a = node.left.left
+            b = node.left.right
+            c = node.right.left
+            d = node.right.right
+            n = self.create_nodes([a, d, "*", a, c, "*", b, d, "*", "+", b, c, "*", "+", "+"])
+            node.value = n.value
+            node.left = n.left
+            node.right = n.right
+            self.simplify(node.left)
+            self.simplify(node.right)
         elif node.value == "^" and node.right.value == 2 and not node.left.is_terminal():
             self.fps(node)
         else:
@@ -388,6 +437,7 @@ class Equation(object):
             "\\": lambda x, y: x ** (1 / y),
             "=": lambda x, y: x == y
         }
+        
         if node.value in ops.keys():
             self.simplify(node.left)
             self.simplify(node.right)
@@ -405,30 +455,61 @@ class Equation(object):
                 self.gcd(node)
             elif val in ["*", "^"]:
                 self.expand(node)
+            
+            if val == "*":
+                self.associativity(node, "*")
+            elif val == "+":
+                self.associativity(node, "+")
+                
+            paul.log("SIMPLIFYING", node)
+            paul.log("VAL", val, "LEFT", left, "RIGHT", right)
             if type(left) in nums and type(right) in nums:
-                node.value = Node(ops[val](left, right))
+                paul.log("Simplify Option 1")
+                node.value = ops[val](left, right)
+                if node.value % 1 == 0:
+                    node.value = int(node.value)
                 node.left = None
                 node.right = None
             elif val in ["+", "-"] and left == 0:
+                paul.log("Simplify Option 2")
                 node.value = node.right
                 node.left = None
                 node.right = None
             elif val in ["+", "-"] and right == 0:
+                paul.log("Simplify Option 3")
                 node.value = node.left
                 node.left = None
                 node.right = None
             elif val in ["*", "/"] and left == 1:
+                paul.log("Simplify Option 4")
                 node.value = node.right
                 node.left = None
                 node.right = None
             elif val in ["*", "/"] and right == 1:
+                paul.log("Simplify Option 5")
                 node.value = node.left
                 node.left = None
                 node.right = None
             elif val == "*" and (left == 0 or right == 0):
-                node.value = 0.0
+                paul.log("Simplify Option 6")
+                node.value = 0
                 node.left = None
                 node.right = None
+            elif val == "*" and (node.left == node.right):
+                paul.log("Simplify Option 7")
+                node.value = "^"
+                node.right = Node(2)
+            elif val == "^" and left == 0:
+                paul.log("Simplify Option 8")
+                node.value = 0
+                node.left = None
+                node.right = None
+            elif val == "^" and right == 0:
+                paul.log("Simplify Option 9")
+                node.value = 1
+                node.left = None
+                node.right = None
+        
         if type(node.value) == Node:
             node.left = node.value.left
             node.right = node.value.right
@@ -436,7 +517,6 @@ class Equation(object):
     
     
     def replace(self, node, var, val):
-        
         if node.value == var:
             node.value = val
         elif node.left is None and node.right is None:
@@ -461,6 +541,62 @@ class Equation(object):
         else:
             return (self.target_in_branch(node.left, target) 
                     or self.target_in_branch(node.right, target))
+    
+    
+    def collect_values(self, node, condition):
+        ''' Condition takes a node, returns a bool. '''
+        if node.is_terminal():
+            return ([node.value], True)
+        if condition(node):
+            a, i = self.collect_values(node.left, condition)
+            b, j = self.collect_values(node.right, condition)
+            return (a+b, i and j)
+        else: 
+            return ([node], False)
+    
+    
+    def split(self, lst, cond):
+        ''' Condition takes a value, returns a bool. '''
+        a = []
+        b = []
+        for i in lst:
+            if cond(i):
+                a.append(i)
+            else:
+                b.append(i)
+        return a, b
+    
+    
+    def associativity(self, node, symbol):
+        cond1 = lambda n: n.value == symbol
+        cond2 = lambda n: type(n) in [int, float]
+        vals, succ = self.collect_values(node, cond1)
+        if succ:
+            nums, varis = self.split(vals, cond2)
+        else:
+            return None
+        if symbol == "*":
+            n = 1
+            check = 1
+            for i in nums: n *= i
+        elif symbol == "+":
+            n = 0
+            check = 0
+            for i in nums: n += i
+        if check != n:
+            node.value = symbol
+            node.left = Node(n)
+            if varis:
+                paul.log("VARIS:", varis)
+                if len(varis) == 1:
+                    node.right = Node(varis[0])
+                else:
+                    varis.sort()
+                    oths = [varis[0]]
+                    for i in varis[1:]:
+                        oths.append(i)
+                        oths.append(symbol)
+                    node.right = self.create_nodes(oths)
     
     
     
@@ -522,6 +658,24 @@ class Equation(object):
                     node.right.right = node.left.right
                     node.left = node.left.left
             self.rearrange_linear_for(target, show_steps)
+        
+    
+    def fix_add_inv(self, node=-1):
+        if node == -1:
+            node = self.head
+        if node.is_terminal():
+                    pass
+        elif node.left.is_terminal() and node.right.is_terminal():
+            if node.value == "-":
+                node.value = "+"
+                new_right = Node("*")
+                new_right.left = Node(-1.0)
+                new_right.right = node.right
+                node.right = new_right
+        else:
+            self.fix_add_inv(node.left)
+            self.fix_add_inv(node.right)
+
 
 
 def make_equations(sentence):
@@ -529,7 +683,8 @@ def make_equations(sentence):
     eqn_string = []
     index = 0
     for word, _ in sentence:
-        is_eq = paul.has_one_of(word, "+/^*-=1234567890")
+        is_eq = (paul.has_one_of(word, "+/^*-=1234567890") 
+                 or word in list("abcdefghijklmnopqrstuvwxyz"))
         if not is_eq:
             if len(eqn_string) != index:
                 index += 1
@@ -550,14 +705,22 @@ def process(sentence):
     eqns = make_equations(sentence)
     if len(eqns) == 0:
         return "I'm not sure what you want me try try and solve. Sorry!"
-    eqn_string = eqns[0]
     subs = sentence.has_one_of(["sub", "substitute", "solve"])
     rearrange = sentence.has_one_of(["rearrange", "solve"])
+    if (paul.get_it() and
+        paul.Sentence(paul.get_it()).has_one_of("+/^*-=1234567890")):
+        eqns.append(paul.get_it())
+    paul.log(eqns)
+    eqn_string = eqns[0]
     if subs:
         try:
             eqn_string = eqns[1]
         except IndexError:
             eqn_string = eqns[0]
+    if rearrange:
+        for e in eqns:
+            if len(e) > 1:
+                eqn_string = e
     
     paul.log("SUBS:", subs, "REARRANGE:", rearrange)
     paul.log("EQUATION:", eqn_string)
@@ -569,8 +732,11 @@ def process(sentence):
         eqn_string = "y" + eqn_string
     paul.log("EQUATION:", eqn_string)
     
+    # try:
     eqn = Equation(eqn_string)
-    
+    # except:
+    #     return "Something went horribly wrong when I tried to math. Oops."
+    # 
     if subs and len(eqns) > 1:
         eq2 = Equation(eqns[0])
         if type(eq2.head.right.value) == float:
@@ -579,6 +745,10 @@ def process(sentence):
             eq2.substitute((eqn.head.left.value, eqn.head.right.value))
             eqn, eq2 = eq2, eqn
         else:
+            url = "http://www.wolframalpha.com/input/?i="
+            query = "sub {} into {}".format(eq2, eqn)
+            query.replace("+", "%2D").replace("=", "%3D").replace("/", "%2F")
+            paul.open_URL(url+query)
             return '''I was unsuccessful in finding the solution:\n{}\n{}'''.format(eq2, eqn)
     
     if rearrange:
@@ -591,7 +761,7 @@ def process(sentence):
             eqn.rearrange_linear_for(targ)
         except RuntimeError:
             url = "http://www.wolframalpha.com/input/?i="
-            query = " ".join([word for word, _ in sentence])
+            query = "rearrange {} for {}".format(eqn, targ)
             query.replace("+", "%2D").replace("=", "%3D").replace("/", "%2F")
             paul.open_URL(url+query)
             return "Oh dear, not a clue. Try this instead."
@@ -601,6 +771,10 @@ def process(sentence):
         result = result[4:]
     
     paul.set_it(result)
+    try:
+        if result[0] == "(" and result[-1] == ")": result = result[1:-1]
+    except IndexError:
+        pass
     return result
     
     
