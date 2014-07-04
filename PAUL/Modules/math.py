@@ -9,6 +9,32 @@ import paul
 pi = 3.141592653589793
 e = 2.718281828459045
 
+def manual():
+    ''' Return some helpful info for the user.  '''
+    s = """
+        I'm quite good at maths! If you need anything done with basic math,
+        I am more than capable, just ask! For example, ask me '(2^(7-4))*6'.
+        However, I'm a bit more clevererer than that. I can do algebra, so I
+        can reduce down something like '3x+7x-2x'. If course, I can do even
+        better, so if you ask me to then 'sub in x=9', well, I'd know straight
+        away that the answer is 72. How about 'rearrange y=2x+1 for x'? I can
+        do that. If I ever can't do something, I will take you to Wolfram
+        Alpha. Simple.
+        """
+    return s
+
+
+
+def NUMBER_WORDS(): return [ 
+    "zero", "one", "two", "three", "four", "five", "six", "seven",
+    "eight", "nine", "eleven", "twelve", "thirteen", "fourteen",
+    "fifteen", "sixteen", "seventeen", "eighteen", "nineteen",  "ten",
+    "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty",
+    "ninety", "hundred", "thousand", "million", "billion", "trillion",
+]
+
+def LETTERS(): return list("abcdefghijklmnopqrstuvxyz")
+
 class Node(object):
     
     def __init__(self, value):
@@ -455,6 +481,18 @@ class Equation(object):
                 self.gcd(node)
             elif val in ["*", "^"]:
                 self.expand(node)
+            elif val in ["+", "-"] and node.left.is_terminal() and left in LETTERS():
+                node.left = self.create_nodes([1.0, left, "*"])
+                try:
+                    self.common_factor(node)
+                except:
+                    self.simplify(node.left)
+            elif val in ["+", "-"] and node.right.is_terminal() and right in LETTERS():
+                node.right = self.create_nodes([1.0, right, "*"])
+                try:
+                    self.common_factor(node)
+                except:
+                    self.simplify(node.right)
             
             if val == "*":
                 self.associativity(node, "*")
@@ -553,18 +591,7 @@ class Equation(object):
             return (a+b, i and j)
         else: 
             return ([node], False)
-    
-    
-    def split(self, lst, cond):
-        ''' Condition takes a value, returns a bool. '''
-        a = []
-        b = []
-        for i in lst:
-            if cond(i):
-                a.append(i)
-            else:
-                b.append(i)
-        return a, b
+
     
     
     def associativity(self, node, symbol):
@@ -572,7 +599,7 @@ class Equation(object):
         cond2 = lambda n: type(n) in [int, float]
         vals, succ = self.collect_values(node, cond1)
         if succ:
-            nums, varis = self.split(vals, cond2)
+            nums, varis = paul.partition(vals, cond2)
         else:
             return None
         if symbol == "*":
@@ -678,6 +705,51 @@ class Equation(object):
 
 
 
+def make_from_words(string):
+    sym_rep = {
+        "plus":            "+",
+        "times":           "*",
+        "minus":           "-",
+        "take away":       "-",
+        "over":            "/",
+        "divided by":      "/",
+        "divide":          "/",
+        "to the power of": "^",
+        "power":           "^",
+        "squared":         "^ 2",
+        "cubed":           "^ 3",
+        "double":          "* 2",
+        "triple":          "* 3",
+        "root":            "\\",
+        "square root":     "\\ 2",
+    }
+    symbs = list("+*-/^\\") + list("1234567890")
+    
+    new = []
+    num = []
+    newstring = string
+    for old, rep in sym_rep.items():
+        newstring = newstring.replace(old, rep)
+    paul.log("NEWSTR:", newstring)
+    for word in newstring.split():
+        paul.log("   WORD:", word)
+        if word in NUMBER_WORDS():
+            num.append(word)
+        elif word in symbs:
+            s = " ".join(num)
+            if s.strip():
+                n = paul.parse_number(s)
+                new.append(n)
+                num = []
+            new.append(word)
+    if num:
+        s = " ".join(num)
+        n = paul.parse_number(s)
+        new.append(n)
+    return " ".join([str(j) for j in new])
+
+
+
 def make_equations(sentence):
     ''' Create a set of equations to work with '''
     eqn_string = []
@@ -693,7 +765,9 @@ def make_equations(sentence):
                 eqn_string[index] += word
             except IndexError:
                 eqn_string.append(word)
-        paul.log("EQN_STRING:", eqn_string, "INDEX:", index)
+    if eqn_string == []:
+        eqn_string = [make_from_words(sentence.sentence_string)]
+    paul.log("EQN_STRING:", eqn_string, "INDEX:", index)
     return eqn_string
 
 
@@ -707,9 +781,10 @@ def process(sentence):
         return "I'm not sure what you want me try try and solve. Sorry!"
     subs = sentence.has_one_of(["sub", "substitute", "solve"])
     rearrange = sentence.has_one_of(["rearrange", "solve"])
+    if subs: rearrange = False
     if (paul.get_it() and
         paul.Sentence(paul.get_it()).has_one_of("+/^*-=1234567890")):
-        eqns.append(paul.get_it())
+        eqns.append(paul.get_it()) if len(eqns) < 2 else 0
     paul.log(eqns)
     eqn_string = eqns[0]
     if subs:
@@ -721,6 +796,7 @@ def process(sentence):
         for e in eqns:
             if len(e) > 1:
                 eqn_string = e
+                break
     
     paul.log("SUBS:", subs, "REARRANGE:", rearrange)
     paul.log("EQUATION:", eqn_string)
@@ -786,7 +862,17 @@ def main():
         "solve": ("math", "verb"),
         "substitute": ("math", "verb"),
         "rearrange": ("math", "verb"),
+        "plus": ("math", "noun"),
+        "minus": ("math", "noun"),
+        "times": ("math", "noun"),
+        "multiply": ("math", "verb"),
+        "divide": ("math", "noun"),
+        "power": ("math", "noun"),
+        "root": ("math", "noun"),
+        "square": ("math", "verb"),
     }
+    
+    words.update({word:("math", "noun") for word in NUMBER_WORDS()})
     
     paul.associate(words)
     paul.register("math", process)

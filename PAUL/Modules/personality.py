@@ -35,6 +35,7 @@ THANKS = [
     "thank",
     "gratitude",
     "thx",
+    "ok",
 ]
 
 FEELING = [
@@ -50,6 +51,8 @@ RANDOM = [
     "song",
     "test",
     "testing",
+    "describe",
+    "yourself",
 ] 
 
 class Point(object):
@@ -160,6 +163,8 @@ def process(sentence):
         takeback = thank()
     elif paul.has_one_of(keywords, FEELING):
         takeback = feeling()
+    elif paul.has_word(keywords, "yourself"):
+        takeback = about_me()
     elif paul.has_one_of(keywords, RANDOM):
         takeback = random(sentence)
     elif paul.has_one_of(keywords, ["name", "call", "called", "named"]):

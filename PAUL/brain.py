@@ -26,6 +26,8 @@ def custom_statements(line):
         except KeyError:
             return False
 
+
+
 def transform_idioms(sentence):
     ''' Take simple idioms, and transform them into a more literal sentence
         for Paul to parse. Takes in a string, returns a string. '''
@@ -34,6 +36,7 @@ def transform_idioms(sentence):
         "how do you do" : "hello",
         "paul": "", # Paul doesn't need to respond to just his name...
         "tell me more": "open it",
+        "who are you": "describe yourself",
     }
     for idiom in idioms.keys():
         if idiom in sentence:
@@ -93,14 +96,17 @@ def commands(sentence):
     actions = {}
     weights = {}
 
-    for word, _ in sentence:
+    for word, kind in sentence:
         if word in paul.vocab.word_associations:
             modules = [mod for mod, _ in paul.vocab.word_associations[word]]
             for module in modules:
-                actions[module] = actions.get(module, 0) + 1/(len(modules))
+                x = 1 if kind == "VB" else 0.9
+                actions[module] = actions.get(module, 0) + x/(len(modules))
 
     for key, value in actions.items():
         weights[value] = weights.get(value, []) + [key]
+        if key == "help":
+            return Modules.help.process(sentence)
 
     paul.log("WEIGHTS: " + str(weights))
 

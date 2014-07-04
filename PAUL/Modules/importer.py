@@ -3,6 +3,7 @@ import Modules.controls as controls
 import Modules.discover as discover
 import Modules.email as email
 import Modules.finder as finder
+import Modules.help as help
 import Modules.loader as loader
 import Modules.math as math
 import Modules.media as media

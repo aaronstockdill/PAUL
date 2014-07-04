@@ -18,6 +18,15 @@ VERBS = [
     "search",
 ]
 
+def manual():
+    ''' Return some helpful info for the user. '''
+    s = """
+        I can search for stuff on the internet for you using your favourite
+        search engine! Sometimes I even do this without you explicitly asking,
+        generally because, like you, if I don't know, I'm going to Google it!
+        """
+    return s
+
 def is_math(sentence):
     ''' Determines if any part of the sentence is math '''
     for word, _ in sentence:

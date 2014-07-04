@@ -48,11 +48,24 @@ VERBS = [
     "locate",
 ]
 
+def manual():
+    ''' Return some helpful info for the user. '''
+    s = """
+        Finder is all about your stuff. If you have a file you want to work
+        with, I will do my best to track it down. You can then open it, or get
+        me to show you where it is in the Finder. If there are two files with
+        the same name, I'll ask you which one you want me to open.
+        """
+    return s
+
+
+
 def choose(list_choices):
     ''' Choose the item from what we found '''
     
     question = "Which of these do you want? \n"
-    options = "\n".join([str(index + 1) + ". " + item.split("/").pop() for 
+    options = "\n".join([str(index + 1) + ". " +
+                         "/".join(item.split("/")[3:]) for 
                          index, item in enumerate(list_choices)])
     choice = paul.interact(question + options, "list")
     if choice is not None and choice <= 5 and choice > 0:
@@ -187,6 +200,7 @@ def process(sentence):
         'launch': lambda location: get(location),
         'show': lambda location: reveal(location),
         'find': lambda location: reveal(location),
+        'search': lambda location: reveal(location),
         'reveal': lambda location: reveal(location),
         'locate': lambda location: reveal(location),
         'be': lambda location: reveal(location), # Catch in case, use safer reveal than get
@@ -225,6 +239,9 @@ def process(sentence):
     
     replaced = sentence.replace_it()
     preps = sentence.get_part("PP", indexes=True)
+    paul.log(preps)
+    preps = paul.filter_out(preps, "for")
+    paul.log(preps)
     
     try:
         object = sentence.get_part("NO")[0]

@@ -5,17 +5,16 @@ Author: Aaron Stockdill
 """
 
 import os
-import sys
 import paul
 
 def process(sentence):
     ''' Load the files, then restart Paul '''
-    
-    files = [file[:-3] for file in os.listdir("PAUL/Modules/") 
+    r = paul.PAUL_ROOT
+    files = [file[:-3] for file in os.listdir(r + "/Modules/") 
              if file[-3:] == ".py" 
              and file != "__init__.py"
              and file != "importer.py"]
-    importer = open("PAUL/Modules/importer.py", 'w')
+    importer = open(r + "/Modules/importer.py", 'w')
     for file in files:
         importer.write("import Modules.{0} as {0}\n".format(file))
     importer.write("\nimport paul\npaul.update_words()")

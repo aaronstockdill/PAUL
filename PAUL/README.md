@@ -234,6 +234,11 @@ Do not call this function. Paul will handle this.
 
 * * *
 
+####partition
+`paul.partition(a_list, condition)` will split one list into two, based on whether each item matches the condition function. It is recommended, for simple conditons, to write condition as a lambda, e.g. `paul.partition([1, 2, 3, 4, 5], lambda n: n%2 == 0)` will return `([2, 4], [1, 3, 5])`.
+
+* * *
+
 ####Sentence
 `paul.Sentence(init_string)` is the class that is used to represent a sentence inside the brain and modules. Its internal structure is a series of tuples containing (word, type) pairs. For example, the `init_string` "What's the weather like today?" produces the following sentence object (obtained through the `__repr__()` method):
 

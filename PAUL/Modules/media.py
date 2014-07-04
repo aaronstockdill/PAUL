@@ -6,8 +6,19 @@ Author: Aaron Stockdill
 """
 
 import os
-
 import paul
+
+def manual():
+    ''' Return some helpful info for the user. '''
+    s = """
+        Who doesn't love a bit of music? I can work with your iTunes Library
+        to help you play, pause, skip, go back, and all that stuff. I can even
+        play a requested song! And if you want to know what's playing, just ask
+        me, and I'll let you know.
+        """
+    return s
+
+
 
 def simple_commands(action):
     ''' Execute simple commands '''

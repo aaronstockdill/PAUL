@@ -44,6 +44,14 @@ MONTHS = [
     'december',
 ]
 
+def manual():
+    ''' Return some helpful info for the user. '''
+    s = """
+        I'm good with time. I can let you know the time, date, day, all sorts
+        of things. For example, ask me 'Is it tuesday?'.
+        """
+    return s
+
 def process(sentence):
     ''' Process the sentence '''
     

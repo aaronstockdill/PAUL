@@ -17,6 +17,18 @@ NOUNS = [
     "thursday",  "friday",     "saturday", "sunday",
 ]
 
+def manual():
+    ''' Return some helpful info for the user. '''
+    s = """
+        Is it raining, sunny, or a bit cold? I can find out for you, for today,
+        or any day in the next 5 or so days. I'll let you know the expected
+        temperature, and the conditions for the day. If you ask about today,
+        I'll also say how hot it is right now.
+        """
+    return s
+
+
+
 def process(sentence):
     ''' Process the sentence, act as necessary '''
     

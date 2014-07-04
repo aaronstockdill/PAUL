@@ -61,8 +61,10 @@ def filter_out(main_list, *rest):
         the main_list without the words in the other lists. '''
 
     return_list = []
+    if not main_list:
+        return []
     for item in main_list:
-        comparative = join_lists(*rest)
+        comparative = join_lists([r for r in rest])
         if iterable(item):
             if not has_one_of(item, comparative):
                 return_list.append(item)
@@ -194,7 +196,7 @@ def interact(statement, response=None, end=True):
         except TypeError:
             send(statement)
     if response in ["list", "y_n", "arb"]:
-        if not send:
+        if not get:
             bringback = input(system.flags["USER"]["prompt"] + " ")
         else:
             bringback = get()
@@ -331,7 +333,7 @@ def parse_number(string):
         "seventeen": 17, "eighteen": 18, "nineteen": 19,
     }
     teens_ordinals = {
-        "twelfth": 12,
+        "twelfth": 12, 
     }
     tens = {
         "ten": 10, "twenty": 20, "thirty": 30,
@@ -342,31 +344,33 @@ def parse_number(string):
         "hundred": 100, "thousand": 1000, "million": 1000000,
         "billion": 1000000000, "trillion": 1000000000000,
     }
-
+    
+    log("NUMBERS:", numbers)
     if numbers[0] in multipliers:
         numbers = ["one"] + numbers
 
     number = 0
-    for word in numbers:
+    for i in range(len(numbers)):
+        word = numbers[i]
         if word in ones:
             number += ones[word]
-            if numbers[numbers.index(word)+1] not in multipliers:
+            if i+1 < len(numbers) and numbers[i+1] not in multipliers:
                 return number
         elif word in ones_ordinals:
             number += ones_ordinals[word]
-            if numbers[numbers.index(word)+1] not in multipliers:
+            if i+1 < len(numbers) and numbers[i+1] not in multipliers:
                 return number
         elif word in teens:
             number += teens[word]
-            if numbers[numbers.index(word)+1] not in multipliers:
+            if i+1 < len(numbers) and numbers[i+1] not in multipliers:
                 return number
         elif word[:-2] in teens:
             number += teens[word[:-2]]
-            if numbers[numbers.index(word)+1] not in multipliers:
+            if i+1 < len(numbers) and numbers[i+1] not in multipliers:
                 return number
         elif word in teens_ordinals:
             number += teens_ordinals[word]
-            if numbers[numbers.index(word)+1] not in multipliers:
+            if i+1 < len(numbers) and numbers[i+1] not in multipliers:
                 return number
         elif word in tens:
             number += tens[word]
@@ -405,6 +409,20 @@ def parse_numeral(numeral, total=0):
     except KeyError:
         raise ValueError("Expected a Roman numeral. \
                         Unproccessed numeral: ".format(numeral))
+
+
+
+def partition(a_list, condition):
+    ''' Takes a list, and a condition function. Returns a tuple of 2 lists:
+        ([items that match], [items that don't]). '''
+    a = []
+    b = []
+    for i in a_list:
+        if condition(i):
+            a.append(i)
+        else:
+            b.append(i)
+    return a, b
 
 
 

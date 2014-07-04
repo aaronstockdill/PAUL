@@ -12,8 +12,21 @@ Author: Aaron Stockdill
 """
 
 import os
-
 import paul
+
+def manual():
+    ''' Return some helpful info for the user. '''
+    s = """
+        This is how I can change myself to be more helpful to you. If I keep
+        calling you the wrong name, let me know, and I'll change. If you're not
+        happy using the same search engine as I am, I can change that for you
+        too. In fact, I can change heaps: your name, title, search engine, 
+        whether I talk out loud, the showing of debugging info, and whether I
+        log our conversations.
+        """
+    return s
+
+
 
 def get_key(keywords):
     ''' Decide on the key to use '''
@@ -21,7 +34,8 @@ def get_key(keywords):
     flag = True
     if paul.has_one_of(keywords, ["noisy", "noisiness", "talk", "talking"]):
         key = "NOISY"
-    elif paul.has_one_of(keywords, ["verbose", "verbosity"]):
+    elif paul.has_one_of(keywords, ["verbose", "verbosity", 
+                                    "debug", "debugging"]):
         key = "VERBOSE"
     elif paul.has_word(keywords, "logging"):
         key  = "LOGGING"
@@ -170,6 +184,8 @@ def main():
         "stop": ("settings", "verb"),
         "verbose": ("settings", "noun"),
         "verbosity": ("settings", "noun"),
+        "debug": ("settings", "noun"),
+        "debugging": ("settings", "noun"),
         "noisy": ("settings", "noun"),
         "noisiness": ("settings", "noun"),
         "talk": ("settings", "noun"),

@@ -10,6 +10,20 @@ import os
 
 import paul
 
+def manual():
+    ''' Return some helpful info for the user. '''
+    s = """
+        You may not enjoy researching stuff, but I do! Ask me about anything, 
+        and I will consult the great encyclopedia in the sky! Or Wikipedia.
+        Actually just Wikipedia. I'll read you the first paragraph, or if it
+        is a 'Disambiguation' page, show that to you. If you need more info,
+        just ask to see it. To see both in action, ask first to research
+        deadly nightshade, and then belladonna.
+        """
+    return s
+
+
+
 def stripIt(s):
     ''' remove useless stuff '''
     txt = re.sub('<[^<]+?>', '', s)

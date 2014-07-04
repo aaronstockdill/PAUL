@@ -68,6 +68,17 @@ mute = lambda: paul.run_script(
     + "end if",
     language="applescript")
 
+def manual():
+    ''' Return some helpful info for the user. '''
+    s = """
+        If you ever need to tweak anything, I'll give it a go. I can change
+        brightness, volume, I can mute, unmute, show the desktop, sleep the
+        computer and start your screen saver! Your wish is my command.
+        """
+    return s
+
+
+
 def change_volume(keywords):
     ''' Change the volume up or down, depending on the keywords '''
     

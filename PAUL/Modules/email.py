@@ -5,8 +5,17 @@ Author: Aaron Stockdill
 '''
 
 import imaplib, email, smtplib
-
 import paul
+
+def manual():
+    ''' Return some helpful info for the user. '''
+    s = """
+        I can fetch your email for you! Any new messages you recieve, I will
+        find. If you want, I can read them out for you! Easy as that.
+        """
+    return s
+
+
 
 class Mailbox(object):
     ''' A simple representation of a mailbox for PAUL '''
